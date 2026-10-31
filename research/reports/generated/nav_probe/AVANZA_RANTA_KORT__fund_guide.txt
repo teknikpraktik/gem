@@ -1,0 +1,125 @@
+retrieved_at: 2026-10-31T09:35:34Z
+GET https://www.avanza.se/_api/fund-guide/guide/1684019
+body: null
+{
+ "status": 200,
+ "content_type": "application/json",
+ "bytes": 3372,
+ "final_url": "https://www.avanza.se/_api/fund-guide/guide/1684019",
+ "json_keys": [
+  "adminCompany",
+  "aumCoveredCarbon",
+  "capital",
+  "carbonRiskScore",
+  "carbonSolutionsInvolvement",
+  "categories",
+  "controversyScore",
+  "countryChartData",
+  "currency",
+  "description",
+  "developmentFiveYears",
+  "developmentOneDay",
+  "developmentOneMonth",
+  "developmentOneYear",
+  "developmentSixMonths",
+  "developmentThisYear",
+  "developmentThreeMonths",
+  "developmentThreeYears",
+  "environmentalScore",
+  "esgScore",
+  "fossilFuelInvolvement",
+  "fundManagers",
+  "fundRatingViews",
+  "fundType",
+  "fundTypeName",
+  "governanceScore",
+  "hedgeFund",
+  "holdingChartData",
+  "indexFund",
+  "isin",
+  "lowCarbon",
+  "managementFee",
+  "name",
+  "nav",
+  "navDate",
+  "portfolioDate",
+  "ppmCode",
+  "pricingFrequency",
+  "primaryBenchmark",
+  "productFee",
+  "productInvolvements",
+  "prospectusLink",
+  "rating",
+  "recommendedHoldingPeriod",
+  "risk",
+  "riskText",
+  "sectorChartData",
+  "sharpeRatio",
+  "socialScore",
+  "standardDeviation",
+  "startDate",
+  "superloanOrderbook",
+  "sustainabilityRating",
+  "sustainabilityRatingCategoryName",
+  "svanen",
+  "ucitsFund"
+ ],
+ "nav": 108.62,
+ "navDate": "2026-10-29T00:00:00",
+ "isin": "SE0021021425",
+ "name": "Avanza R\u00e4nta Kort",
+ "startDate": "2023-12-14",
+ "currency": "SEK",
+ "list:holdingChartData": {
+  "len": 1,
+  "first": {
+   "name": "Captor Perenne Short Term Bond A",
+   "y": 99.65,
+   "type": "HOLDING_TYPE_FUND",
+   "currency": "SEK",
+   "countryCode": "SE",
+   "isin": "SE0020552602",
+   "orderbookId": null
+  },
+  "last": {
+   "name": "Captor Perenne Short Term Bond A",
+   "y": 99.65,
+   "type": "HOLDING_TYPE_FUND",
+   "currency": "SEK",
+   "countryCode": "SE",
+   "isin": "SE0020552602",
+   "orderbookId": null
+  }
+ },
+ "list:fundManagers": {
+  "len": 2,
+  "first": {
+   "name": "Daniel Karlgren",
+   "startDate": "2023-12-14"
+  },
+  "last": {
+   "name": "William Sj\u00f6berg",
+   "startDate": "2023-12-14"
+  }
+ },
+ "list:categories": {
+  "len": 2,
+  "first": "R\u00e4nte - SEK obligationer",
+  "last": "Korta"
+ },
+ "list:productInvolvements": {
+  "len": 16,
+  "first": {
+   "product": "alcohol",
+   "productDescription": "Alkohol",
+   "value": 0.0
+  },
+  "last": {
+   "product": "oilSandsExtractionInvolvement",
+   "productDescription": "Utvinning av oljesand",
+   "value": 0.0
+  }
+ }
+}
+---
+{"isin":"SE0021021425","name":"Avanza Ränta Kort","description":"En investering i fonden ger dig en exponering mot huvudsakligen svenska AAA-bostadsobligationer med en förväntad genomsnittlig löptid på under ett år. Fonden är en matarfond som placerar minst 85% (och i praktiken 100%) av sina medel i mottagarfonden Captor Perenne Short Term Bond som förvaltas av Captor Fund Management.","nav":108.62,"navDate":"2026-10-29T00:00:00","currency":"SEK","rating":null,"productFee":0.09,"managementFee":0.03,"risk":1,"riskText":"Låg","developmentOneDay":0.03684,"developmentOneMonth":0.13829,"developmentThreeMonths":0.23994,"developmentSixMonths":0.97611,"developmentOneYear":1.9810299999999998,"developmentThisYear":1.58047,"developmentThreeYears":null,"developmentFiveYears":null,"countryChartData":[],"holdingChartData":[{"name":"Captor Perenne Short Term Bond A","y":99.65,"type":"HOLDING_TYPE_FUND","currency":"SEK","countryCode":"SE","isin":"SE0020552602","orderbookId":null}],"sectorChartData":[],"lowCarbon":null,"indexFund":false,"sharpeRatio":null,"standardDeviation":null,"capital":2.419846077E9,"startDate":"2023-12-14","fundManagers":[{"name":"Daniel Karlgren","startDate":"2023-12-14"},{"name":"William Sjöberg","startDate":"2023-12-14"}],"adminCompany":{"name":"Avanza","country":"Sverige","url":"http://www.avanzafonder.se"},"pricingFrequency":"Dagligen","prospectusLink":"/_api/fund-reference/reference/1684019/prospectus","aumCoveredCarbon":null,"fossilFuelInvolvement":null,"carbonRiskScore":3.61,"categories":["Ränte - SEK obligationer","Korta"],"fundTypeName":"Räntefond","fundType":"INTEREST_FUND","primaryBenchmark":null,"hedgeFund":false,"ucitsFund":true,"recommendedHoldingPeriod":"Minst 3 år","portfolioDate":"2026-09-30","ppmCode":null,"superloanOrderbook":true,"esgScore":null,"environmentalScore":null,"socialScore":null,"governanceScore":null,"controversyScore":null,"carbonSolutionsInvolvement":null,"productInvolvements":[{"product":"alcohol","productDescription":"Alkohol","value":0.0},{"product":"arcticOilAndGasExplorationInvolvement","productDescription":"Arktisk olja och gasproduktion","value":0.0},{"product":"pesticides","productDescription":"Bekämpningsmedel","value":0.0},{"product":"animalTesting","productDescription":"Djurförsök","value":0.0},{"product":"gmo","productDescription":"Genmodifierade organismer","value":0.0},{"product":"smallArms","productDescription":"Handeldvapen","value":0.0},{"product":"thermalCoal","productDescription":"Kolkraft","value":0.0},{"product":"convtroversialWeapons","productDescription":"Kontroversiella vapen","value":0.0},{"product":"nuclear","productDescription":"Kärnkraft","value":0.0},{"product":"militaryContracting","productDescription":"Militärindustri","value":0.0},{"product":"palmOil","productDescription":"Palmolja","value":0.0},{"product":"adultEntertainment","productDescription":"Pornografi","value":0.0},{"product":"furAndSpecialityLeather","productDescription":"Päls- och läderindustri","value":0.0},{"product":"gambling","productDescription":"Spel och kasino","value":0.0},{"product":"tobacco","productDescription":"Tobak","value":0.0},{"product":"oilSandsExtractionInvolvement","productDescription":"Utvinning av oljesand","value":0.0}],"sustainabilityRating":null,"sustainabilityRatingCategoryName":"Obligationer, euro","svanen":false,"fundRatingViews":[]}

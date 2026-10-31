@@ -1,0 +1,180 @@
+retrieved_at: 2026-10-31T09:35:07Z
+GET https://www.avanza.se/_api/fund-guide/guide/1025150
+body: null
+{
+ "status": 200,
+ "content_type": "application/json",
+ "bytes": 8791,
+ "final_url": "https://www.avanza.se/_api/fund-guide/guide/1025150",
+ "json_keys": [
+  "adminCompany",
+  "aumCoveredCarbon",
+  "capital",
+  "carbonRiskScore",
+  "carbonSolutionsInvolvement",
+  "categories",
+  "controversyScore",
+  "countryChartData",
+  "currency",
+  "description",
+  "developmentFiveYears",
+  "developmentOneDay",
+  "developmentOneMonth",
+  "developmentOneYear",
+  "developmentSixMonths",
+  "developmentThisYear",
+  "developmentThreeMonths",
+  "developmentThreeYears",
+  "environmentalScore",
+  "esgScore",
+  "fossilFuelInvolvement",
+  "fundManagers",
+  "fundRatingViews",
+  "fundType",
+  "fundTypeName",
+  "governanceScore",
+  "hedgeFund",
+  "holdingChartData",
+  "indexFund",
+  "isin",
+  "lowCarbon",
+  "managementFee",
+  "name",
+  "nav",
+  "navDate",
+  "portfolioDate",
+  "ppmCode",
+  "pricingFrequency",
+  "primaryBenchmark",
+  "productFee",
+  "productInvolvements",
+  "prospectusLink",
+  "rating",
+  "recommendedHoldingPeriod",
+  "risk",
+  "riskText",
+  "sectorChartData",
+  "sharpeRatio",
+  "socialScore",
+  "standardDeviation",
+  "startDate",
+  "superloanOrderbook",
+  "sustainabilityRating",
+  "sustainabilityRatingCategoryName",
+  "svanen",
+  "ucitsFund"
+ ],
+ "nav": 263.49,
+ "navDate": "2026-10-29T00:00:00",
+ "isin": "SE0012741163",
+ "name": "Avanza USA",
+ "startDate": "2019-12-17",
+ "currency": "SEK",
+ "list:countryChartData": {
+  "len": 5,
+  "first": {
+   "name": "USA",
+   "y": 99.43,
+   "type": "",
+   "currency": "",
+   "countryCode": "US",
+   "isin": null,
+   "orderbookId": null
+  },
+  "last": {
+   "name": "Mexiko",
+   "y": 0.01,
+   "type": "",
+   "currency": "",
+   "countryCode": "MX",
+   "isin": null,
+   "orderbookId": null
+  }
+ },
+ "list:holdingChartData": {
+  "len": 25,
+  "first": {
+   "name": "Apple",
+   "y": 7.9,
+   "type": "HOLDING_TYPE_EQUITY",
+   "currency": "USD",
+   "countryCode": "US",
+   "isin": "US0378331005",
+   "orderbookId": "3323"
+  },
+  "last": {
+   "name": "Linde",
+   "y": 0.6,
+   "type": "HOLDING_TYPE_EQUITY",
+   "currency": "USD",
+   "countryCode": "US",
+   "isin": "IE000S9YS762",
+   "orderbookId": "909013"
+  }
+ },
+ "list:sectorChartData": {
+  "len": 10,
+  "first": {
+   "name": "Teknik",
+   "y": 41.96,
+   "type": "",
+   "currency": "",
+   "countryCode": null,
+   "isin": null,
+   "orderbookId": null
+  },
+  "last": {
+   "name": "Allm\u00e4nnyttigt",
+   "y": 0.97,
+   "type": "",
+   "currency": "",
+   "countryCode": null,
+   "isin": null,
+   "orderbookId": null
+  }
+ },
+ "list:fundManagers": {
+  "len": 2,
+  "first": {
+   "name": "Peter Steng\u00e5rd",
+   "startDate": "2024-04-15"
+  },
+  "last": {
+   "name": "Martin Sandstedt",
+   "startDate": "2022-10-01"
+  }
+ },
+ "list:categories": {
+  "len": 2,
+  "first": "USA",
+  "last": "Mix bolag"
+ },
+ "list:productInvolvements": {
+  "len": 16,
+  "first": {
+   "product": "alcohol",
+   "productDescription": "Alkohol",
+   "value": 0.0
+  },
+  "last": {
+   "product": "oilSandsExtractionInvolvement",
+   "productDescription": "Utvinning av oljesand",
+   "value": 0.0
+  }
+ },
+ "list:fundRatingViews": {
+  "len": 3,
+  "first": {
+   "date": "2026-09-30T00:00:00",
+   "fundRatingType": "THREE_YEARS",
+   "fundRating": 3
+  },
+  "last": {
+   "date": "2026-09-30T00:00:00",
+   "fundRatingType": "ALL_TIME",
+   "fundRating": 3
+  }
+ }
+}
+---
+{"isin":"SE0012741163","name":"Avanza USA","description":"Avanza USA är en indexfond vars mål är att följa utvecklingen för Morningstar US TME Paris Aligned Benchmark Sustainability Select Index. För att uppnå detta investerar fonden i de aktier som ingår i indexet. Indexet består av cirka 500 aktier och syftar till att återspegla utvecklingen av aktiemarknaderna i USA exklusive de bolag som inte uppfyller indexets hållbarhetskrav. Fonden uppfyller minimikraven för EU Paris-aligned Benchmark (EU PAB), vilket innebär att fonden förvaltas i linje med Parisavtalet.","nav":263.49,"navDate":"2026-10-29T00:00:00","currency":"SEK","rating":3,"productFee":0.18,"managementFee":0.17,"risk":4,"riskText":"Medel","developmentOneDay":-1.10348,"developmentOneMonth":-1.27393,"developmentThreeMonths":7.30605,"developmentSixMonths":15.875809999999998,"developmentOneYear":17.42502,"developmentThisYear":19.28562,"developmentThreeYears":63.566942999999995,"developmentFiveYears":82.801417,"countryChartData":[{"name":"USA","y":99.43,"type":"","currency":"","countryCode":"US","isin":null,"orderbookId":null},{"name":"Schweiz","y":0.23,"type":"","currency":"","countryCode":"CH","isin":null,"orderbookId":null},{"name":"Kina","y":0.18,"type":"","currency":"","countryCode":"CN","isin":null,"orderbookId":null},{"name":"Brasilien","y":0.15,"type":"","currency":"","countryCode":"BR","isin":null,"orderbookId":null},{"name":"Mexiko","y":0.01,"type":"","currency":"","countryCode":"MX","isin":null,"orderbookId":null}],"holdingChartData":[{"name":"Apple","y":7.9,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US0378331005","orderbookId":"3323"},{"name":"NVIDIA","y":7.87,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US67066G1040","orderbookId":"4478"},{"name":"Microsoft","y":6.39,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US5949181045","orderbookId":"3873"},{"name":"Amazon.com","y":4.44,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US0231351067","orderbookId":"3986"},{"name":"Alphabet Inc Class A","y":3.35,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US02079K3059","orderbookId":"472095"},{"name":"Meta Platforms A","y":2.85,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US30303M1027","orderbookId":"350795"},{"name":"Alphabet Inc Class C","y":2.68,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US02079K1079","orderbookId":"4457"},{"name":"Micron Technology","y":2.33,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US5951121038","orderbookId":"214533"},{"name":"Broadcom","y":2.29,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US11135F1012","orderbookId":"369636"},{"name":"Advanced Micro Devices","y":2.14,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US0079031078","orderbookId":"529720"},{"name":"Tesla","y":1.88,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US88160R1014","orderbookId":"238449"},{"name":"Johnson & Johnson","y":1.37,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US4781601046","orderbookId":"3666"},{"name":"Visa","y":1.21,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US92826C8394","orderbookId":"29747"},{"name":"Walmart","y":1.01,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US9311421039","orderbookId":"4008"},{"name":"Cisco Systems","y":1.0,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US17275R1023","orderbookId":"3619"},{"name":"Merck & Co","y":0.97,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US58933Y1055","orderbookId":"3820"},{"name":"Eli Lilly","y":0.96,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US5324571083","orderbookId":"4026"},{"name":"Lam Research","y":0.96,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US5128073062","orderbookId":"3914"},{"name":"Procter & Gamble","y":0.96,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US7427181091","orderbookId":"3644"},{"name":"Coca-Cola","y":0.94,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US1912161007","orderbookId":"3803"},{"name":"Applied Materials","y":0.91,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US0382221051","orderbookId":"3575"},{"name":"JP Morgan Chase & Co","y":0.85,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US46625H1005","orderbookId":"3574"},{"name":"Mastercard","y":0.83,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US57636Q1040","orderbookId":"51149"},{"name":"Bank Of America","y":0.64,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"US0605051046","orderbookId":"4089"},{"name":"Linde","y":0.6,"type":"HOLDING_TYPE_EQUITY","currency":"USD","countryCode":"US","isin":"IE000S9YS762","orderbookId":"909013"}],"sectorChartData":[{"name":"Teknik","y":41.96,"type":"","currency":"","countryCode":null,"isin":null,"orderbookId":null},{"name":"Kommunikation","y":11.32,"type":"","currency":"","countryCode":null,"isin":null,"orderbookId":null},{"name":"Finans","y":10.7,"type":"","currency":"","countryCode":null,"isin":null,"orderbookId":null},{"name":"Konsument, cyklisk","y":9.97,"type":"","currency":"","countryCode":null,"isin":null,"orderbookId":null},{"name":"Sjukvård","y":9.82,"type":"","currency":"","countryCode":null,"isin":null,"orderbookId":null},{"name":"Industri","y":6.54,"type":"","currency":"","countryCode":null,"isin":null,"orderbookId":null},{"name":"Konsument, stabil","y":5.02,"type":"","currency":"","countryCode":null,"isin":null,"orderbookId":null},{"name":"Råvaror","y":1.86,"type":"","currency":"","countryCode":null,"isin":null,"orderbookId":null},{"name":"Fastigheter","y":1.85,"type":"","currency":"","countryCode

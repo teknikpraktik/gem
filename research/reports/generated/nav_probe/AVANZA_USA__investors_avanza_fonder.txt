@@ -1,0 +1,91 @@
+retrieved_at: 2026-10-31T09:35:02Z
+GET https://investors.avanza.se/sv/om-avanza/avanza-fonder/
+body: null
+{
+ "status": 404,
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 31662,
+ "final_url": "https://investors.avanza.se/sv/om-avanza/avanza-fonder/"
+}
+---
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	
+
+<title>Sidan hittades inte | Avanza</title>
+<meta property="og:title" content="Sidan hittades inte | Avanza" />
+<meta name="twitter:title" content="Sidan hittades inte | Avanza" />
+<link rel="canonical" href="https://investors.avanza.se/404/">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta property="og:url" content="https://investors.avanza.se/404/" />
+<meta name="twitter:url" content="https://investors.avanza.se/404/" />
+<meta property="og:type" content="website"/>
+
+<meta name="Description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:card" content="summary">
+
+
+<meta name="robots" content="noindex" />
+
+<style id="_cssgrid">#_2-1{grid-area:1/1/20/25;}@media(max-width: 667px) {._section-container[data-id^="2-"] ._grid { display: block; }}
+#_165-2{grid-area:1/2/26/6;}#_165-3{grid-area:1/6/26/11;}#_165-4{grid-area:1/11/16/16;}#_165-5{grid-area:1/16/11/21;}#_165-6{grid-area:1/21/7/25;}#_165-7{grid-area:26/1/40/25;}@media(max-width: 768px){#_165-2{grid-area:1/1/14/13;}#_165-3{grid-area:1/13/14/25;}#_165-4{grid-area:14/1/39/13;}#_165-5{grid-area:14/13/39/25;}#_165-6{grid-area:39/1/52/13;}#_165-7{grid-area:52/1/66/25;}}
+</style>
+<style id="_iegrid">#_2-1{-ms-grid-row:1;-ms-grid-column:1;-ms-grid-row-span:19;-ms-grid-column-span:24;}#_165-2{-ms-grid-row:1;-ms-grid-column:2;-ms-grid-row-span:25;-ms-grid-column-span:4;}#_165-3{-ms-grid-row:1;-ms-grid-column:6;-ms-grid-row-span:25;-ms-grid-column-span:5;}#_165-4{-ms-grid-row:1;-ms-grid-column:11;-ms-grid-row-span:15;-ms-grid-column-span:5;}#_165-5{-ms-grid-row:1;-ms-grid-column:16;-ms-grid-row-span:10;-ms-grid-column-span:5;}#_165-6{-ms-grid-row:1;-ms-grid-column:21;-ms-grid-row-span:6;-ms-grid-column-span:4;}#_165-7{-ms-grid-row:26;-ms-grid-column:1;-ms-grid-row-span:14;-ms-grid-column-span:24;}@media(max-width: 768px){#_165-2{-ms-grid-row:1;-ms-grid-column:1;-ms-grid-row-span:13;-ms-grid-column-span:12;}#_165-3{-ms-grid-row:1;-ms-grid-column:13;-ms-grid-row-span:13;-ms-grid-column-span:12;}#_165-4{-ms-grid-row:14;-ms-grid-column:1;-ms-grid-row-span:25;-ms-grid-column-span:12;}#_165-5{-ms-grid-row:14;-ms-grid-column:13;-ms-grid-row-span:25;-ms-grid-column-span:12;}#_165-6{-ms-grid-row:39;-ms-grid-column:1;-ms-grid-row-span:13;-ms-grid-column-span:12;}#_165-7{-ms-grid-row:52;-ms-grid-column:1;-ms-grid-row-span:14;-ms-grid-column-span:24;}}</style>
+
+
+<link rel="stylesheet" href="/main_1717497363766.css" type="text/css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="manifest" href="/favicons/site.webmanifest">
+<link rel="shortcut icon" href="/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="alternate" hreflang="en" href="https://investors.avanza.se/en/404/" />
+<link rel="alternate" hreflang="sv" href="https://investors.avanza.se/404/" />
+<link rel="alternate" hreflang="x-default" href="https://investors.avanza.se/404/" />
+
+
+
+
+
+
+
+
+
+</head>
+<body class="no-js live page2 subnav-type-click subnav-width-auto nav-thirdlevel-toggle nav-swipe-right nav-toggle-right">
+    
+<div id="_cookiebanner-opt-in-out" class="hidden _cookiebanner-opt-in-out" data-nosnippet="true">
+    <div class="_cookiebanner-opt-in-out--inner">
+        <p><svg role="img" aria-label="[title]"  viewBox="0 0 30 30">
+    <title></title>
+    <use xlink:href="#svg-Exclamation"></use>
+</svg>
+<span>
+Vi använder cookies på vår sajt för att den ska fungera korrekt. Dessa kallas nödvändiga cookies och måste användas. Om du godkänner alla cookies accepterar du fler cookies, så att vi kan analysera hur sajten används. Genom att klicka på länken Inställningar kan du läsa mer om vilka val du kan göra och justera dina cookieinställningar. <a href="/cookie-policy/">Läs mer om cookies</a>.
+</span>
+</p>
+        <div class="_cookie-buttons">
+            <button role="button" class="_cookie-buttons-settings"><span>Inställningar</span></button> <button class="_cookie-buttons-required"><span>Acceptera nödvändiga</span></button> <button><span>Acceptera alla</span></button> 
+        </div>
+
+        
+
+    </div>
+    <div class="_cookiebanner-opt-in-out--settings"><p><strong>Inst&auml;llningar</strong></p>
+<p><input id="accept-required" checked="checked" disabled="disabled" type="checkbox" value="required" /> <label for="accept-required">N&ouml;dv&auml;ndiga cookies </label></p>
+<p class="explaination">Det h&auml;r &auml;r cookies som v&aring;r sajt beh&ouml;ver f&ouml;r att fungera korrekt. Den h&auml;r typen av cookies sparar inte person&shy;uppgifter.</p>
+<p><input id="accept-stats" type="checkbox" value="stats" /> <label for="accept-stats">Avancerad analys och m&aring;lgrupper</label></p>
+<p class="explaination"><span>Google Analytics &auml;r en tj&auml;nst vi anv&auml;nder f&ouml;r att f&aring; b&auml;ttre f&ouml;rst&aring;else f&ouml;r hur anv&auml;ndare upplever v&aring;r sajt. Dessa cookies registrerar ett unikt id och samlar in statistisk om hur bes&ouml;karna anv&auml;nder webb&shy;platsen. De f&ouml;ljer ocks&aring; anv&auml;ndarna mellan enheter och marknads&shy;f&ouml;rings&shy;kanaler, och samlar in data om anv&auml;ndarens enheter. Google Analytics lagrar ingen information som direkt kan identifiera en person, men den kan anv&auml;ndas f&ouml;r att identifiera en person indirekt tillsammans med annan information vi har om dig.</span></p>
+<div class="cookie-settings-buttons"><button class="button--primary _cookie-settings-buttons-save">Godk&auml;nn 

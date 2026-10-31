@@ -1,0 +1,22 @@
+retrieved_at: 2026-10-31T09:35:36Z
+GET https://www.avanza.se/_api/price-chart/fund/1684019?timePeriod=all_time
+body: null
+{
+ "status": 404,
+ "content_type": "application/json",
+ "bytes": 150,
+ "final_url": "https://www.avanza.se/_api/price-chart/fund/1684019?timePeriod=all_time",
+ "json_keys": [
+  "message",
+  "servlet",
+  "status",
+  "url"
+ ]
+}
+---
+{
+"servlet":"dispatcherServlet",
+"message":"No endpoint GET /_api/price-chart/fund/1684019.",
+"url":"/_api/price-chart/fund/1684019",
+"status":"404"
+}

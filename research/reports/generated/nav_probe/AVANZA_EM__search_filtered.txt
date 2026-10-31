@@ -1,0 +1,118 @@
+retrieved_at: 2026-10-31T09:35:19Z
+POST https://www.avanza.se/_api/search/filtered-search
+body: {"query": "SE0012454338", "searchFilter": {"types": ["FUND"]}, "pagination": {"from": 0, "size": 5}}
+{
+ "status": 200,
+ "content_type": "application/json",
+ "bytes": 1114,
+ "final_url": "https://www.avanza.se/_api/search/filtered-search",
+ "json_keys": [
+  "facets",
+  "hits",
+  "pagination",
+  "searchFilter",
+  "searchQuery",
+  "totalNumberOfHits"
+ ],
+ "list:hits": {
+  "len": 1,
+  "first": {
+   "type": "FUND",
+   "title": "Avanza Emerging Markets",
+   "highlightedTitle": "Avanza Emerging Markets",
+   "description": "Avanza Emerging Markets \u00e4r en s.k. matarfond som\u2026",
+   "highlightedDescription": "",
+   "path": null,
+   "flagCode": null,
+   "orderBookId": "944976",
+   "urlSlugName": "avanza-emerging-markets",
+   "tradeable": true,
+   "sellable": true,
+   "buyable": true,
+   "price": {
+    "last": "186,69",
+    "currency": "SEK",
+    "todayChangePercent": "\u22121,62",
+    "todayChangeValue": "\u22123,08",
+    "todayChangeDirection": -1,
+    "threeMonthsAgoChangePercent": "3,91",
+    "threeMonthsAgoChangeDirection": 1,
+    "spread": null
+   },
+   "stockSectors": [],
+   "fundTags": [
+    {
+     "title": "Aktiefond",
+     "category": "fund-type",
+     "tagCategory": "TYPE",
+     "highlightedTitle": null
+    },
+    {
+     "title": "Index",
+     "category": "index-fund",
+     "tagCategory": "INDEX",
+     "highlightedTitle": null
+    },
+    {
+     "title": "Tillv\u00e4xtmarknader",
+     "category": "fund-category",
+     "tagCategory": "COMMON_REGION",
+     "highlightedTitle": null
+    }
+   ],
+   "marketPlaceName": "Fondmarknaden",
+   "subType": null,
+   "highlightedSubType": ""
+  },
+  "last": {
+   "type": "FUND",
+   "title": "Avanza Emerging Markets",
+   "highlightedTitle": "Avanza Emerging Markets",
+   "description": "Avanza Emerging Markets \u00e4r en s.k. matarfond som\u2026",
+   "highlightedDescription": "",
+   "path": null,
+   "flagCode": null,
+   "orderBookId": "944976",
+   "urlSlugName": "avanza-emerging-markets",
+   "tradeable": true,
+   "sellable": true,
+   "buyable": true,
+   "price": {
+    "last": "186,69",
+    "currency": "SEK",
+    "todayChangePercent": "\u22121,62",
+    "todayChangeValue": "\u22123,08",
+    "todayChangeDirection": -1,
+    "threeMonthsAgoChangePercent": "3,91",
+    "threeMonthsAgoChangeDirection": 1,
+    "spread": null
+   },
+   "stockSectors": [],
+   "fundTags": [
+    {
+     "title": "Aktiefond",
+     "category": "fund-type",
+     "tagCategory": "TYPE",
+     "highlightedTitle": null
+    },
+    {
+     "title": "Index",
+     "category": "index-fund",
+     "tagCategory": "INDEX",
+     "highlightedTitle": null
+    },
+    {
+     "title": "Tillv\u00e4xtmarknader",
+     "category": "fund-category",
+     "tagCategory": "COMMON_REGION",
+     "highlightedTitle": null
+    }
+   ],
+   "marketPlaceName": "Fondmarknaden",
+   "subType": null,
+   "highlightedSubType": ""
+  }
+ }
+}
+---
+{"totalNumberOfHits":1,"hits":[{"type":"FUND","title":"Avanza Emerging Markets","highlightedTitle":"Avanza Emerging Markets","description":"Avanza Emerging Markets är en s.k. matarfond som…","highlightedDescription":"","path":null,"flagCode":null,"orderBookId":"944976","urlSlugName":"avanza-emerging-markets","tradeable":true,"sellable":true,"buyable":true,"price":{"last":"186,69","currency":"SEK","todayChangePercent":"−1,62","todayChangeValue":"−3,08","todayChangeDirection":-1,"threeMonthsAgoChangePercent":"3,91","threeMonthsAgoChangeDirection":1,"spread":null},"stockSectors":[],"fundTags":[{"title":"Aktiefond","category":"fund-type","tagCategory":"TYPE","highlightedTitle":null},{"title":"Index","category":"index-fund","tagCategory":"INDEX","highlightedTitle":null},{"title":"Tillväxtmarknader","category":"fund-category","tagCategory":"COMMON_REGION","highlightedTitle":null}],"marketPlaceName":"Fondmarknaden","subType":null,"highlightedSubType":""}],"searchQuery":"SE0012454338","searchFilter":{"types":["FUND"]},"facets":{"types":[{"type":"FUND","count":1}]},"pagination":{"size":5,"from":0}}

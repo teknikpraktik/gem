@@ -1,0 +1,109 @@
+{
+  "cost_per_side_bps": 10.0,
+  "data_tier": "EXTENDED_PROXY",
+  "execution": "IDEALIZED_CLOSE",
+  "lookahead_free": false,
+  "metrics": {
+    "annual_turnover": 1.3924914675767917,
+    "average_holding_period_months": 8.371428571428572,
+    "best_year": 2013,
+    "best_year_return": 0.32539217713087076,
+    "cagr": 0.10630445558126134,
+    "calmar": 0.43909104510868674,
+    "end_date": "2026-09-30",
+    "end_value": 117834.64147831092,
+    "longest_drawdown_months": 37,
+    "longest_drawdown_span": "2007-10-31..2010-11-30",
+    "longest_underperformance_span": "2009-02-28..2026-09-30",
+    "longest_underperformance_vs_benchmark_months": 211,
+    "max_drawdown": -0.2421011695990023,
+    "months": 293,
+    "no_signal_count": 910,
+    "number_of_switches": 34,
+    "sharpe": 0.7327343193765667,
+    "sharpe_rf": "hurdle/T-bill series of the run",
+    "sortino": 1.1184799346760128,
+    "start_date": "2002-05-31",
+    "start_value": 10000.0,
+    "switches_per_year": 1.3924914675767917,
+    "time_in_asset": {
+      "EX_US_EQUITIES": 0.3003412969283277,
+      "US_AGG_BONDS": 0.21160409556313994,
+      "US_EQUITIES": 0.4880546075085324
+    },
+    "volatility": 0.12668978721210936,
+    "worst_year": 2022,
+    "worst_year_return": -0.16417690614412705
+  },
+  "notes": [
+    "GEM rule on the same open equity legs as GEM_SEK_OPEN_* (USD); bonds = synthetic 5y Treasury from GS5 (EXPERIMENTAL); hurdle = Ken French RF. Comparison partner only."
+  ],
+  "provenance": {
+    "run_id": "GEM_ORIGINAL_OPEN_V1__SE_OPEN_SSVX",
+    "series": [
+      {
+        "class": "PROXY",
+        "data_period": "1926-06-30..2026-09-30",
+        "id": "FF_RF",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "F-F_Research_Data_Factors (RF)",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T09:35:51Z",
+        "sha256": "b03d39e4bb253dda0f14893db3b78e64b40b8d6549a0fc0fd4111dae84c98618",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "1926-06-30..2026-09-30",
+        "id": "FF_US_MKT_TR",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "F-F_Research_Data_Factors (Mkt-RF + RF)",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T09:35:51Z",
+        "sha256": "b03d39e4bb253dda0f14893db3b78e64b40b8d6549a0fc0fd4111dae84c98618",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "1953-04-01..2026-09-01",
+        "id": "FRED_GS5",
+        "provider": "FRED",
+        "provider_series_id": "GS5",
+        "quality_status": "EXPERIMENTAL",
+        "retrieved_at": "2026-10-31T09:35:54Z",
+        "sha256": "e4c0186a43a35524ff6e06bebe14ad38c67d309da8beff9e4af0c74283df3afb",
+        "verification": "ASSUMPTION"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "2001-03-30..2026-10-29",
+        "id": "FRED_NASDAQ_GLOBAL_EXUS_LM_NTR",
+        "provider": "FRED (Nasdaq, Inc.)",
+        "provider_series_id": "NASDAQNQGXUSLMN",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T09:35:54Z",
+        "sha256": "febe8e1d43e2ea288edf359b709531e73f5d414b02c353c051f0e41003602b90",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PRIMARY_SOURCE_VERIFIED",
+        "data_period": "1993-01-04..2026-10-30",
+        "id": "RB_SEK_PER_USD",
+        "provider": "Sveriges Riksbank SWEA API",
+        "provider_series_id": "SEKUSDPMI",
+        "quality_status": "VERIFIED",
+        "retrieved_at": "2026-10-31T09:35:56Z",
+        "sha256": "58d9b62ce7ef1a8f9884ea0dde96696e1acfe9de7cd56ce16e0202484d3c5079",
+        "verification": "VERIFIED FROM PRIMARY SOURCE"
+      }
+    ],
+    "strategy_id": "GEM_ORIGINAL",
+    "strategy_version": "1.0.0",
+    "tier": "EXTENDED_PROXY",
+    "weakest_class": "PROXY"
+  },
+  "run_id": "GEM_ORIGINAL_OPEN_V1__SE_OPEN_SSVX__COMMON_SE_OPEN_SSVX__IDEALIZED_CLOSE__COST_10BPS",
+  "stop_reason": null,
+  "strategy_id": "GEM_ORIGINAL",
+  "strategy_version": "1.0.0"
+}

@@ -1,0 +1,109 @@
+{
+  "cost_per_side_bps": 0.0,
+  "data_tier": "SWEDISH",
+  "execution": "IDEALIZED_CLOSE",
+  "lookahead_free": false,
+  "metrics": {
+    "annual_turnover": 1.989795918367347,
+    "average_holding_period_months": 5.9393939393939394,
+    "best_year": 1997,
+    "best_year_return": 0.5035143272832621,
+    "cagr": 0.11711235803287456,
+    "calmar": 0.6976689960596383,
+    "end_date": "2026-09-30",
+    "end_value": 372532.33077926195,
+    "longest_drawdown_months": 57,
+    "longest_drawdown_span": "2000-08-31..2005-05-31",
+    "longest_underperformance_span": "2009-03-31..2026-09-30",
+    "longest_underperformance_vs_benchmark_months": 210,
+    "max_drawdown": -0.16786235119277615,
+    "months": 392,
+    "no_signal_count": 812,
+    "number_of_switches": 65,
+    "sharpe": 0.7771430667330294,
+    "sharpe_rf": "hurdle/T-bill series of the run",
+    "sortino": 1.2835267606696252,
+    "start_date": "1994-02-28",
+    "start_value": 10000.0,
+    "switches_per_year": 1.989795918367347,
+    "time_in_asset": {
+      "SEK_EXUS_EQ": 0.21173469387755103,
+      "SEK_US_EQ": 0.5357142857142857,
+      "SE_SHORT_RATE": 0.25255102040816324
+    },
+    "volatility": 0.12294673340711942,
+    "worst_year": 2000,
+    "worst_year_return": -0.06628058200251641
+  },
+  "notes": [
+    "NOT GEM. US = Ken French CRSP US, ex-US = Ken French Developed ex US (no EM), FX = Riksbank. Identical to GEM_SEK_FF_PROXY_SSVXSYNTH_V1 (Riksbank SSVX proxy cash), evaluated on the OMRX window."
+  ],
+  "provenance": {
+    "run_id": "GEM_SEK_FF_PROXY_SSVXSYNTH_V1__OMRX_WINDOW",
+    "series": [
+      {
+        "class": "PROXY",
+        "data_period": "1990-06-30..2026-09-30",
+        "id": "FF_DEVELOPED_MKT_TR",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "Developed_3_Factors (Mkt-RF + RF)",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T09:35:48Z",
+        "sha256": "3f99cfdeddd1914e3d8f84ce51d775aeed3e98ed0c290957e88f4df9912f8a23",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "1990-06-30..2026-09-30",
+        "id": "FF_DEV_EXUS_MKT_TR",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "Developed_ex_US_3_Factors (Mkt-RF + RF)",
+        "quality_status": "EXPERIMENTAL",
+        "retrieved_at": "2026-10-31T09:35:48Z",
+        "sha256": "689c242b62e430fecbb8b3cc98269761b38d1d3f7ca15a22c3fb79771c932aee",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "1926-06-30..2026-09-30",
+        "id": "FF_US_MKT_TR",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "F-F_Research_Data_Factors (Mkt-RF + RF)",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T09:35:51Z",
+        "sha256": "b03d39e4bb253dda0f14893db3b78e64b40b8d6549a0fc0fd4111dae84c98618",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PRIMARY_SOURCE_VERIFIED",
+        "data_period": "1993-01-04..2026-10-30",
+        "id": "RB_SEK_PER_USD",
+        "provider": "Sveriges Riksbank SWEA API",
+        "provider_series_id": "SEKUSDPMI",
+        "quality_status": "VERIFIED",
+        "retrieved_at": "2026-10-31T09:35:56Z",
+        "sha256": "58d9b62ce7ef1a8f9884ea0dde96696e1acfe9de7cd56ce16e0202484d3c5079",
+        "verification": "VERIFIED FROM PRIMARY SOURCE"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "1983-01-03..2026-10-30",
+        "id": "RB_SSVX_3M",
+        "provider": "Sveriges Riksbank SWEA API",
+        "provider_series_id": "SETB3MBENCH",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T09:35:59Z",
+        "sha256": "45daac754529587fe08b0c7cbff8b3ccc07f0a541df4b9e8fae03304631314ff",
+        "verification": "VERIFIED FROM PRIMARY SOURCE"
+      }
+    ],
+    "strategy_id": "GEM_SEK",
+    "strategy_version": "1.0.0",
+    "tier": "SWEDISH",
+    "weakest_class": "PROXY"
+  },
+  "run_id": "GEM_SEK_FF_PROXY_SSVXSYNTH_V1__OMRX_WINDOW__FULL__IDEALIZED_CLOSE__COST_0",
+  "stop_reason": "stopped before 2026-10-31: no return for held asset(s) ['SEK_EXUS_EQ']",
+  "strategy_id": "GEM_SEK",
+  "strategy_version": "1.0.0"
+}

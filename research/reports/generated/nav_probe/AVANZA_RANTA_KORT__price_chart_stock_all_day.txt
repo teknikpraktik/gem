@@ -1,0 +1,19 @@
+retrieved_at: 2026-10-31T09:35:35Z
+GET https://www.avanza.se/_api/price-chart/stock/1684019?timePeriod=all_time&resolution=day
+body: null
+{
+ "status": 400,
+ "content_type": "application/json",
+ "bytes": 158,
+ "final_url": "https://www.avanza.se/_api/price-chart/stock/1684019?timePeriod=all_time&resolution=day",
+ "json_keys": [
+  "additional",
+  "errors",
+  "message",
+  "statusCode",
+  "time",
+  "traceId"
+ ]
+}
+---
+{"traceId":"af4505755047ef2f19184002e51ea93e","statusCode":400,"message":"Bad request","time":"2026-10-31T10:35:35.708950118","errors":null,"additional":null}

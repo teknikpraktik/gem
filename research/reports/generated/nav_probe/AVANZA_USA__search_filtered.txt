@@ -1,0 +1,130 @@
+retrieved_at: 2026-10-31T09:35:03Z
+POST https://www.avanza.se/_api/search/filtered-search
+body: {"query": "SE0012741163", "searchFilter": {"types": ["FUND"]}, "pagination": {"from": 0, "size": 5}}
+{
+ "status": 200,
+ "content_type": "application/json",
+ "bytes": 1163,
+ "final_url": "https://www.avanza.se/_api/search/filtered-search",
+ "json_keys": [
+  "facets",
+  "hits",
+  "pagination",
+  "searchFilter",
+  "searchQuery",
+  "totalNumberOfHits"
+ ],
+ "list:hits": {
+  "len": 1,
+  "first": {
+   "type": "FUND",
+   "title": "Avanza USA",
+   "highlightedTitle": "Avanza USA",
+   "description": "Avanza USA \u00e4r en indexfond vars m\u00e5l \u00e4r att f\u00f6lja\u2026",
+   "highlightedDescription": "",
+   "path": null,
+   "flagCode": null,
+   "orderBookId": "1025150",
+   "urlSlugName": "avanza-usa",
+   "tradeable": true,
+   "sellable": true,
+   "buyable": true,
+   "price": {
+    "last": "263,49",
+    "currency": "SEK",
+    "todayChangePercent": "\u22121,10",
+    "todayChangeValue": "\u22122,94",
+    "todayChangeDirection": -1,
+    "threeMonthsAgoChangePercent": "7,31",
+    "threeMonthsAgoChangeDirection": 1,
+    "spread": null
+   },
+   "stockSectors": [],
+   "fundTags": [
+    {
+     "title": "Aktiefond",
+     "category": "fund-type",
+     "tagCategory": "TYPE",
+     "highlightedTitle": null
+    },
+    {
+     "title": "Index",
+     "category": "index-fund",
+     "tagCategory": "INDEX",
+     "highlightedTitle": null
+    },
+    {
+     "title": "Mix bolag",
+     "category": "fund-category",
+     "tagCategory": "ALIGNMENT",
+     "highlightedTitle": null
+    },
+    {
+     "title": "USA",
+     "category": "fund-category",
+     "tagCategory": "COMMON_REGION",
+     "highlightedTitle": null
+    }
+   ],
+   "marketPlaceName": "Fondmarknaden",
+   "subType": null,
+   "highlightedSubType": ""
+  },
+  "last": {
+   "type": "FUND",
+   "title": "Avanza USA",
+   "highlightedTitle": "Avanza USA",
+   "description": "Avanza USA \u00e4r en indexfond vars m\u00e5l \u00e4r att f\u00f6lja\u2026",
+   "highlightedDescription": "",
+   "path": null,
+   "flagCode": null,
+   "orderBookId": "1025150",
+   "urlSlugName": "avanza-usa",
+   "tradeable": true,
+   "sellable": true,
+   "buyable": true,
+   "price": {
+    "last": "263,49",
+    "currency": "SEK",
+    "todayChangePercent": "\u22121,10",
+    "todayChangeValue": "\u22122,94",
+    "todayChangeDirection": -1,
+    "threeMonthsAgoChangePercent": "7,31",
+    "threeMonthsAgoChangeDirection": 1,
+    "spread": null
+   },
+   "stockSectors": [],
+   "fundTags": [
+    {
+     "title": "Aktiefond",
+     "category": "fund-type",
+     "tagCategory": "TYPE",
+     "highlightedTitle": null
+    },
+    {
+     "title": "Index",
+     "category": "index-fund",
+     "tagCategory": "INDEX",
+     "highlightedTitle": null
+    },
+    {
+     "title": "Mix bolag",
+     "category": "fund-category",
+     "tagCategory": "ALIGNMENT",
+     "highlightedTitle": null
+    },
+    {
+     "title": "USA",
+     "category": "fund-category",
+     "tagCategory": "COMMON_REGION",
+     "highlightedTitle": null
+    }
+   ],
+   "marketPlaceName": "Fondmarknaden",
+   "subType": null,
+   "highlightedSubType": ""
+  }
+ }
+}
+---
+{"totalNumberOfHits":1,"hits":[{"type":"FUND","title":"Avanza USA","highlightedTitle":"Avanza USA","description":"Avanza USA är en indexfond vars mål är att följa…","highlightedDescription":"","path":null,"flagCode":null,"orderBookId":"1025150","urlSlugName":"avanza-usa","tradeable":true,"sellable":true,"buyable":true,"price":{"last":"263,49","currency":"SEK","todayChangePercent":"−1,10","todayChangeValue":"−2,94","todayChangeDirection":-1,"threeMonthsAgoChangePercent":"7,31","threeMonthsAgoChangeDirection":1,"spread":null},"stockSectors":[],"fundTags":[{"title":"Aktiefond","category":"fund-type","tagCategory":"TYPE","highlightedTitle":null},{"title":"Index","category":"index-fund","tagCategory":"INDEX","highlightedTitle":null},{"title":"Mix bolag","category":"fund-category","tagCategory":"ALIGNMENT","highlightedTitle":null},{"title":"USA","category":"fund-category","tagCategory":"COMMON_REGION","highlightedTitle":null}],"marketPlaceName":"Fondmarknaden","subType":null,"highlightedSubType":""}],"searchQuery":"SE0012741163","searchFilter":{"types":["FUND"]},"facets":{"types":[{"type":"FUND","count":1}]},"pagination":{"size":5,"from":0}}

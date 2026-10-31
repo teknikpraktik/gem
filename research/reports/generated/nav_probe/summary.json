@@ -1,0 +1,1630 @@
+[
+ {
+  "fund": "AVANZA_USA",
+  "label": "avanza_fonder_site",
+  "url": "https://www.avanzafonder.se/",
+  "retrieved_at": "2026-10-31T09:34:59Z",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "bytes": 32896,
+  "final_url": "https://investors.avanza.se/om/avanza-fonder/om-avanza-fonder/"
+ },
+ {
+  "fund": "AVANZA_USA",
+  "label": "investors_avanza_fonder",
+  "url": "https://investors.avanza.se/sv/om-avanza/avanza-fonder/",
+  "retrieved_at": "2026-10-31T09:35:02Z",
+  "status": 404,
+  "content_type": "text/html; charset=utf-8",
+  "bytes": 31662,
+  "final_url": "https://investors.avanza.se/sv/om-avanza/avanza-fonder/"
+ },
+ {
+  "fund": "AVANZA_USA",
+  "label": "search_filtered",
+  "url": "https://www.avanza.se/_api/search/filtered-search",
+  "retrieved_at": "2026-10-31T09:35:03Z",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 1163,
+  "final_url": "https://www.avanza.se/_api/search/filtered-search",
+  "json_keys": [
+   "facets",
+   "hits",
+   "pagination",
+   "searchFilter",
+   "searchQuery",
+   "totalNumberOfHits"
+  ],
+  "list:hits": {
+   "len": 1,
+   "first": {
+    "type": "FUND",
+    "title": "Avanza USA",
+    "highlightedTitle": "Avanza USA",
+    "description": "Avanza USA \u00e4r en indexfond vars m\u00e5l \u00e4r att f\u00f6lja\u2026",
+    "highlightedDescription": "",
+    "path": null,
+    "flagCode": null,
+    "orderBookId": "1025150",
+    "urlSlugName": "avanza-usa",
+    "tradeable": true,
+    "sellable": true,
+    "buyable": true,
+    "price": {
+     "last": "263,49",
+     "currency": "SEK",
+     "todayChangePercent": "\u22121,10",
+     "todayChangeValue": "\u22122,94",
+     "todayChangeDirection": -1,
+     "threeMonthsAgoChangePercent": "7,31",
+     "threeMonthsAgoChangeDirection": 1,
+     "spread": null
+    },
+    "stockSectors": [],
+    "fundTags": [
+     {
+      "title": "Aktiefond",
+      "category": "fund-type",
+      "tagCategory": "TYPE",
+      "highlightedTitle": null
+     },
+     {
+      "title": "Index",
+      "category": "index-fund",
+      "tagCategory": "INDEX",
+      "highlightedTitle": null
+     },
+     {
+      "title": "Mix bolag",
+      "category": "fund-category",
+      "tagCategory": "ALIGNMENT",
+      "highlightedTitle": null
+     },
+     {
+      "title": "USA",
+      "category": "fund-category",
+      "tagCategory": "COMMON_REGION",
+      "highlightedTitle": null
+     }
+    ],
+    "marketPlaceName": "Fondmarknaden",
+    "subType": null,
+    "highlightedSubType": ""
+   },
+   "last": {
+    "type": "FUND",
+    "title": "Avanza USA",
+    "highlightedTitle": "Avanza USA",
+    "description": "Avanza USA \u00e4r en indexfond vars m\u00e5l \u00e4r att f\u00f6lja\u2026",
+    "highlightedDescription": "",
+    "path": null,
+    "flagCode": null,
+    "orderBookId": "1025150",
+    "urlSlugName": "avanza-usa",
+    "tradeable": true,
+    "sellable": true,
+    "buyable": true,
+    "price": {
+     "last": "263,49",
+     "currency": "SEK",
+     "todayChangePercent": "\u22121,10",
+     "todayChangeValue": "\u22122,94",
+     "todayChangeDirection": -1,
+     "threeMonthsAgoChangePercent": "7,31",
+     "threeMonthsAgoChangeDirection": 1,
+     "spread": null
+    },
+    "stockSectors": [],
+    "fundTags": [
+     {
+      "title": "Aktiefond",
+      "category": "fund-type",
+      "tagCategory": "TYPE",
+      "highlightedTitle": null
+     },
+     {
+      "title": "Index",
+      "category": "index-fund",
+      "tagCategory": "INDEX",
+      "highlightedTitle": null
+     },
+     {
+      "title": "Mix bolag",
+      "category": "fund-category",
+      "tagCategory": "ALIGNMENT",
+      "highlightedTitle": null
+     },
+     {
+      "title": "USA",
+      "category": "fund-category",
+      "tagCategory": "COMMON_REGION",
+      "highlightedTitle": null
+     }
+    ],
+    "marketPlaceName": "Fondmarknaden",
+    "subType": null,
+    "highlightedSubType": ""
+   }
+  }
+ },
+ {
+  "fund": "AVANZA_USA",
+  "label": "search_global",
+  "url": "https://www.avanza.se/_api/search/global-search?query=SE0012741163",
+  "retrieved_at": "2026-10-31T09:35:05Z",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 71,
+  "final_url": "https://www.avanza.se/_api/search/global-search?query=SE0012741163",
+  "json_keys": [
+   "statusCode",
+   "traceId"
+  ]
+ },
+ {
+  "fund": "AVANZA_USA",
+  "label": "fund_page_html",
+  "url": "https://www.avanza.se/fonder/om-fonden.html/1025150/avanza-usa",
+  "retrieved_at": "2026-10-31T09:35:06Z",
+  "status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "bytes": 10090,
+  "final_url": "https://www.avanza.se/fonder/om-fonden.html/1025150/avanza-usa"
+ },
+ {
+  "fund": "AVANZA_USA",
+  "label": "fund_guide",
+  "url": "https://www.avanza.se/_api/fund-guide/guide/1025150",
+  "retrieved_at": "2026-10-31T09:35:07Z",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 8791,
+  "final_url": "https://www.avanza.se/_api/fund-guide/guide/1025150",
+  "json_keys": [
+   "adminCompany",
+   "aumCoveredCarbon",
+   "capital",
+   "carbonRiskScore",
+   "carbonSolutionsInvolvement",
+   "categories",
+   "controversyScore",
+   "countryChartData",
+   "currency",
+   "description",
+   "developmentFiveYears",
+   "developmentOneDay",
+   "developmentOneMonth",
+   "developmentOneYear",
+   "developmentSixMonths",
+   "developmentThisYear",
+   "developmentThreeMonths",
+   "developmentThreeYears",
+   "environmentalScore",
+   "esgScore",
+   "fossilFuelInvolvement",
+   "fundManagers",
+   "fundRatingViews",
+   "fundType",
+   "fundTypeName",
+   "governanceScore",
+   "hedgeFund",
+   "holdingChartData",
+   "indexFund",
+   "isin",
+   "lowCarbon",
+   "managementFee",
+   "name",
+   "nav",
+   "navDate",
+   "portfolioDate",
+   "ppmCode",
+   "pricingFrequency",
+   "primaryBenchmark",
+   "productFee",
+   "productInvolvements",
+   "prospectusLink",
+   "rating",
+   "recommendedHoldingPeriod",
+   "risk",
+   "riskText",
+   "sectorChartData",
+   "sharpeRatio",
+   "socialScore",
+   "standardDeviation",
+   "startDate",
+   "superloanOrderbook",
+   "sustainabilityRating",
+   "sustainabilityRatingCategoryName",
+   "svanen",
+   "ucitsFund"
+  ],
+  "nav": 263.49,
+  "navDate": "2026-10-29T00:00:00",
+  "isin": "SE0012741163",
+  "name": "Avanza USA",
+  "startDate": "2019-12-17",
+  "currency": "SEK",
+  "list:countryChartData": {
+   "len": 5,
+   "first": {
+    "name": "USA",
+    "y": 99.43,
+    "type": "",
+    "currency": "",
+    "countryCode": "US",
+    "isin": null,
+    "orderbookId": null
+   },
+   "last": {
+    "name": "Mexiko",
+    "y": 0.01,
+    "type": "",
+    "currency": "",
+    "countryCode": "MX",
+    "isin": null,
+    "orderbookId": null
+   }
+  },
+  "list:holdingChartData": {
+   "len": 25,
+   "first": {
+    "name": "Apple",
+    "y": 7.9,
+    "type": "HOLDING_TYPE_EQUITY",
+    "currency": "USD",
+    "countryCode": "US",
+    "isin": "US0378331005",
+    "orderbookId": "3323"
+   },
+   "last": {
+    "name": "Linde",
+    "y": 0.6,
+    "type": "HOLDING_TYPE_EQUITY",
+    "currency": "USD",
+    "countryCode": "US",
+    "isin": "IE000S9YS762",
+    "orderbookId": "909013"
+   }
+  },
+  "list:sectorChartData": {
+   "len": 10,
+   "first": {
+    "name": "Teknik",
+    "y": 41.96,
+    "type": "",
+    "currency": "",
+    "countryCode": null,
+    "isin": null,
+    "orderbookId": null
+   },
+   "last": {
+    "name": "Allm\u00e4nnyttigt",
+    "y": 0.97,
+    "type": "",
+    "currency": "",
+    "countryCode": null,
+    "isin": null,
+    "orderbookId": null
+   }
+  },
+  "list:fundManagers": {
+   "len": 2,
+   "first": {
+    "name": "Peter Steng\u00e5rd",
+    "startDate": "2024-04-15"
+   },
+   "last": {
+    "name": "Martin Sandstedt",
+    "startDate": "2022-10-01"
+   }
+  },
+  "list:categories": {
+   "len": 2,
+   "first": "USA",
+   "last": "Mix bolag"
+  },
+  "list:productInvolvements": {
+   "len": 16,
+   "first": {
+    "product": "alcohol",
+    "productDescription": "Alkohol",
+    "value": 0.0
+   },
+   "last": {
+    "product": "oilSandsExtractionInvolvement",
+    "productDescription": "Utvinning av oljesand",
+    "value": 0.0
+   }
+  },
+  "list:fundRatingViews": {
+   "len": 3,
+   "first": {
+    "date": "2026-09-30T00:00:00",
+    "fundRatingType": "THREE_YEARS",
+    "fundRating": 3
+   },
+   "last": {
+    "date": "2026-09-30T00:00:00",
+    "fundRatingType": "ALL_TIME",
+    "fundRating": 3
+   }
+  }
+ },
+ {
+  "fund": "AVANZA_USA",
+  "label": "price_chart_stock_all_day",
+  "url": "https://www.avanza.se/_api/price-chart/stock/1025150?timePeriod=all_time&resolution=day",
+  "retrieved_at": "2026-10-31T09:35:08Z",
+  "status": 400,
+  "content_type": "application/json",
+  "bytes": 158,
+  "final_url": "https://www.avanza.se/_api/price-chart/stock/1025150?timePeriod=all_time&resolution=day",
+  "json_keys": [
+   "additional",
+   "errors",
+   "message",
+   "statusCode",
+   "time",
+   "traceId"
+  ]
+ },
+ {
+  "fund": "AVANZA_USA",
+  "label": "price_chart_fund_all",
+  "url": "https://www.avanza.se/_api/price-chart/fund/1025150?timePeriod=all_time",
+  "retrieved_at": "2026-10-31T09:35:09Z",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 150,
+  "final_url": "https://www.avanza.se/_api/price-chart/fund/1025150?timePeriod=all_time",
+  "json_keys": [
+   "message",
+   "servlet",
+   "status",
+   "url"
+  ]
+ },
+ {
+  "fund": "AVANZA_USA",
+  "label": "fund_guide_chart_all",
+  "url": "https://www.avanza.se/_api/fund-guide/chart/1025150/all_time",
+  "retrieved_at": "2026-10-31T09:35:11Z",
+  "status": 400,
+  "content_type": "application/json",
+  "bytes": 158,
+  "final_url": "https://www.avanza.se/_api/fund-guide/chart/1025150/all_time",
+  "json_keys": [
+   "additional",
+   "errors",
+   "message",
+   "statusCode",
+   "time",
+   "traceId"
+  ]
+ },
+ {
+  "fund": "AVANZA_USA",
+  "label": "fund_guide_chart_range_raw",
+  "url": "https://www.avanza.se/_api/fund-guide/chart/1025150/2015-01-01/2026-10-31?raw=true",
+  "retrieved_at": "2026-10-31T09:35:12Z",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 4341,
+  "final_url": "https://www.avanza.se/_api/fund-guide/chart/1025150/2015-01-01/2026-10-31?raw=true",
+  "json_keys": [
+   "dataSerie",
+   "fromDate",
+   "id",
+   "name",
+   "toDate"
+  ],
+  "name": "Avanza USA",
+  "list:dataSerie": {
+   "len": 141,
+   "first": {
+    "x": 1420153200000,
+    "y": null
+   },
+   "last": {
+    "x": 1790805600000,
+    "y": 263.49
+   }
+  }
+ },
+ {
+  "fund": "AVANZA_USA",
+  "label": "fund_guide_chart_range",
+  "url": "https://www.avanza.se/_api/fund-guide/chart/1025150/2015-01-01/2026-10-31",
+  "retrieved_at": "2026-10-31T09:35:13Z",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 2836,
+  "final_url": "https://www.avanza.se/_api/fund-guide/chart/1025150/2015-01-01/2026-10-31",
+  "json_keys": [
+   "dataSerie",
+   "fromDate",
+   "id",
+   "name",
+   "toDate"
+  ],
+  "name": "Avanza USA",
+  "list:dataSerie": {
+   "len": 82,
+   "first": {
+    "x": 1577746800000,
+    "y": 0.22999999999999998
+   },
+   "last": {
+    "x": 1790719200000,
+    "y": 165.72
+   }
+  }
+ },
+ {
+  "fund": "AVANZA_USA",
+  "label": "fund_guide_chart_recent_raw",
+  "url": "https://www.avanza.se/_api/fund-guide/chart/1025150/2026-09-01/2026-10-31?raw=true",
+  "retrieved_at": "2026-10-31T09:35:14Z",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 1396,
+  "final_url": "https://www.avanza.se/_api/fund-guide/chart/1025150/2026-09-01/2026-10-31?raw=true",
+  "json_keys": [
+   "dataSerie",
+   "fromDate",
+   "id",
+   "name",
+   "toDate"
+  ],
+  "name": "Avanza USA",
+  "list:dataSerie": {
+   "len": 42,
+   "first": {
+    "x": 1788213600000,
+    "y": 253.94
+   },
+   "last": {
+    "x": 1793228400000,
+    "y": 263.49
+   }
+  }
+ },
+ {
+  "fund": "AVANZA_EUROPA",
+  "label": "search_filtered",
+  "url": "https://www.avanza.se/_api/search/filtered-search",
+  "retrieved_at": "2026-10-31T09:35:16Z",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 1169,
+  "final_url": "https://www.avanza.se/_api/search/filtered-search",
+  "json_keys": [
+   "facets",
+   "hits",
+   "pagination",
+   "searchFilter",
+   "searchQuery",
+   "totalNumberOfHits"
+  ],
+  "list:hits": {
+   "len": 1,
+   "first": {
+    "type": "FUND",
+    "title": "Avanza Europa",
+    "highlightedTitle": "Avanza Europa",
+    "description": "Avanza Europa \u00e4r en indexfond vars m\u00e5l \u00e4r att f\u00f6l\u2026",
+    "highlightedDescription": "",
+    "path": null,
+    "flagCode": null,
+    "orderBookId": "1041067",
+    "urlSlugName": "avanza-europa",
+    "tradeable": true,
+    "sellable": true,
+    "buyable": true,
+    "price": {
+     "last": "173,72",
+     "currency": "SEK",
+     "todayChangePercent": "0,25",
+     "todayChangeValue": "0,44",
+     "todayChangeDirection": 1,
+     "threeMonthsAgoChangePercent": "0,64",
+     "threeMonthsAgoChangeDirection": 1,
+     "spread": null
+    },
+    "stockSectors": [],
+    "fundTags": [
+     {
+      "title": "Aktiefond",
+      "category": "fund-type",
+      "tagCategory": "TYPE",
+      "highlightedTitle": null
+     },
+     {
+      "title": "Index",
+      "category": "index-fund",
+      "tagCategory": "INDEX",
+      "highlightedTitle": null
+     },
+     {
+      "title": "Mix bolag",
+      "category": "fund-category",
+      "tagCategory": "ALIGNMENT",
+      "highlightedTitle": null
+     },
+     {
+      "title": "Europa",
+      "category": "fund-category",
+      "tagCategory": "COMMON_REGION",
+      "highlightedTitle": null
+     }
+    ],
+    "marketPlaceName": "Fondmarknaden",
+    "subType": null,
+    "highlightedSubType": ""
+   },
+   "last": {
+    "type": "FUND",
+    "title": "Avanza Europa",
+    "highlightedTitle": "Avanza Europa",
+    "description": "Avanza Europa \u00e4r en indexfond vars m\u00e5l \u00e4r att f\u00f6l\u2026",
+    "highlightedDescription": "",
+    "path": null,
+    "flagCode": null,
+    "orderBookId": "1041067",
+    "urlSlugName": "avanza-europa",
+    "tradeable": true,
+    "sellable": true,
+    "buyable": true,
+    "price": {
+     "last": "173,72",
+     "currency": "SEK",
+     "todayChangePercent": "0,25",
+     "todayChangeValue": "0,44",
+     "todayChangeDirection": 1,
+     "threeMonthsAgoChangePercent": "0,64",
+     "threeMonthsAgoChangeDirection": 1,
+     "spread": null
+    },
+    "stockSectors": [],
+    "fundTags": [
+     {
+      "title": "Aktiefond",
+      "category": "fund-type",
+      "tagCategory": "TYPE",
+      "highlightedTitle": null
+     },
+     {
+      "title": "Index",
+      "category": "index-fund",
+      "tagCategory": "INDEX",
+      "highlightedTitle": null
+     },
+     {
+      "title": "Mix bolag",
+      "category": "fund-category",
+      "tagCategory": "ALIGNMENT",
+      "highlightedTitle": null
+     },
+     {
+      "title": "Europa",
+      "category": "fund-category",
+      "tagCategory": "COMMON_REGION",
+      "highlightedTitle": null
+     }
+    ],
+    "marketPlaceName": "Fondmarknaden",
+    "subType": null,
+    "highlightedSubType": ""
+   }
+  }
+ },
+ {
+  "fund": "AVANZA_EUROPA",
+  "label": "search_global",
+  "url": "https://www.avanza.se/_api/search/global-search?query=SE0013718699",
+  "retrieved_at": "2026-10-31T09:35:18Z",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 71,
+  "final_url": "https://www.avanza.se/_api/search/global-search?query=SE0013718699",
+  "json_keys": [
+   "statusCode",
+   "traceId"
+  ]
+ },
+ {
+  "fund": "AVANZA_EM",
+  "label": "search_filtered",
+  "url": "https://www.avanza.se/_api/search/filtered-search",
+  "retrieved_at": "2026-10-31T09:35:19Z",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 1114,
+  "final_url": "https://www.avanza.se/_api/search/filtered-search",
+  "json_keys": [
+   "facets",
+   "hits",
+   "pagination",
+   "searchFilter",
+   "searchQuery",
+   "totalNumberOfHits"
+  ],
+  "list:hits": {
+   "len": 1,
+   "first": {
+    "type": "FUND",
+    "title": "Avanza Emerging Markets",
+    "highlightedTitle": "Avanza Emerging Markets",
+    "description": "Avanza Emerging Markets \u00e4r en s.k. matarfond som\u2026",
+    "highlightedDescription": "",
+    "path": null,
+    "flagCode": null,
+    "orderBookId": "944976",
+    "urlSlugName": "avanza-emerging-markets",
+    "tradeable": true,
+    "sellable": true,
+    "buyable": true,
+    "price": {
+     "last": "186,69",
+     "currency": "SEK",
+     "todayChangePercent": "\u22121,62",
+     "todayChangeValue": "\u22123,08",
+     "todayChangeDirection": -1,
+     "threeMonthsAgoChangePercent": "3,91",
+     "threeMonthsAgoChangeDirection": 1,
+     "spread": null
+    },
+    "stockSectors": [],
+    "fundTags": [
+     {
+      "title": "Aktiefond",
+      "category": "fund-type",
+      "tagCategory": "TYPE",
+      "highlightedTitle": null
+     },
+     {
+      "title": "Index",
+      "category": "index-fund",
+      "tagCategory": "INDEX",
+      "highlightedTitle": null
+     },
+     {
+      "title": "Tillv\u00e4xtmarknader",
+      "category": "fund-category",
+      "tagCategory": "COMMON_REGION",
+      "highlightedTitle": null
+     }
+    ],
+    "marketPlaceName": "Fondmarknaden",
+    "subType": null,
+    "highlightedSubType": ""
+   },
+   "last": {
+    "type": "FUND",
+    "title": "Avanza Emerging Markets",
+    "highlightedTitle": "Avanza Emerging Markets",
+    "description": "Avanza Emerging Markets \u00e4r en s.k. matarfond som\u2026",
+    "highlightedDescription": "",
+    "path": null,
+    "flagCode": null,
+    "orderBookId": "944976",
+    "urlSlugName": "avanza-emerging-markets",
+    "tradeable": true,
+    "sellable": true,
+    "buyable": true,
+    "price": {
+     "last": "186,69",
+     "currency": "SEK",
+     "todayChangePercent": "\u22121,62",
+     "todayChangeValue": "\u22123,08",
+     "todayChangeDirection": -1,
+     "threeMonthsAgoChangePercent": "3,91",
+     "threeMonthsAgoChangeDirection": 1,
+     "spread": null
+    },
+    "stockSectors": [],
+    "fundTags": [
+     {
+      "title": "Aktiefond",
+      "category": "fund-type",
+      "tagCategory": "TYPE",
+      "highlightedTitle": null
+     },
+     {
+      "title": "Index",
+      "category": "index-fund",
+      "tagCategory": "INDEX",
+      "highlightedTitle": null
+     },
+     {
+      "title": "Tillv\u00e4xtmarknader",
+      "category": "fund-category",
+      "tagCategory": "COMMON_REGION",
+      "highlightedTitle": null
+     }
+    ],
+    "marketPlaceName": "Fondmarknaden",
+    "subType": null,
+    "highlightedSubType": ""
+   }
+  }
+ },
+ {
+  "fund": "AVANZA_EM",
+  "label": "search_global",
+  "url": "https://www.avanza.se/_api/search/global-search?query=SE0012454338",
+  "retrieved_at": "2026-10-31T09:35:20Z",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 71,
+  "final_url": "https://www.avanza.se/_api/search/global-search?query=SE0012454338",
+  "json_keys": [
+   "statusCode",
+   "traceId"
+  ]
+ },
+ {
+  "fund": "AVANZA_EM",
+  "label": "fund_page_html",
+  "url": "https://www.avanza.se/fonder/om-fonden.html/944976/avanza-emerging-markets",
+  "retrieved_at": "2026-10-31T09:35:21Z",
+  "status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "bytes": 10090,
+  "final_url": "https://www.avanza.se/fonder/om-fonden.html/944976/avanza-emerging-markets"
+ },
+ {
+  "fund": "AVANZA_EM",
+  "label": "fund_guide",
+  "url": "https://www.avanza.se/_api/fund-guide/guide/944976",
+  "retrieved_at": "2026-10-31T09:35:22Z",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 11335,
+  "final_url": "https://www.avanza.se/_api/fund-guide/guide/944976",
+  "json_keys": [
+   "adminCompany",
+   "aumCoveredCarbon",
+   "capital",
+   "carbonRiskScore",
+   "carbonSolutionsInvolvement",
+   "categories",
+   "controversyScore",
+   "countryChartData",
+   "currency",
+   "description",
+   "developmentFiveYears",
+   "developmentOneDay",
+   "developmentOneMonth",
+   "developmentOneYear",
+   "developmentSixMonths",
+   "developmentThisYear",
+   "developmentThreeMonths",
+   "developmentThreeYears",
+   "environmentalScore",
+   "esgScore",
+   "fossilFuelInvolvement",
+   "fundManagers",
+   "fundRatingViews",
+   "fundType",
+   "fundTypeName",
+   "governanceScore",
+   "hedgeFund",
+   "holdingChartData",
+   "indexFund",
+   "isin",
+   "lowCarbon",
+   "managementFee",
+   "name",
+   "nav",
+   "navDate",
+   "portfolioDate",
+   "ppmCode",
+   "pricingFrequency",
+   "primaryBenchmark",
+   "productFee",
+   "productInvolvements",
+   "prospectusLink",
+   "rating",
+   "recommendedHoldingPeriod",
+   "risk",
+   "riskText",
+   "sectorChartData",
+   "sharpeRatio",
+   "socialScore",
+   "standardDeviation",
+   "startDate",
+   "superloanOrderbook",
+   "sustainabilityRating",
+   "sustainabilityRatingCategoryName",
+   "svanen",
+   "ucitsFund"
+  ],
+  "nav": 186.69,
+  "navDate": "2026-10-29T00:00:00",
+  "isin": "SE0012454338",
+  "name": "Avanza Emerging Markets",
+  "startDate": "2019-04-01",
+  "currency": "SEK",
+  "list:countryChartData": {
+   "len": 28,
+   "first": {
+    "name": "Taiwan",
+    "y": 28.49,
+    "type": "",
+    "currency": "",
+    "countryCode": "TW",
+    "isin": null,
+    "orderbookId": null
+   },
+   "last": {
+    "name": "Luxemburg",
+    "y": 0.03,
+    "type": "",
+    "currency": "",
+    "countryCode": "LU",
+    "isin": null,
+    "orderbookId": null
+   }
+  },
+  "list:holdingChartData": {
+   "len": 25,
+   "first": {
+    "name": "Taiwan Semiconductor Manufacturing Co Ltd",
+    "y": 15.97,
+    "type": "HOLDING_TYPE_EQUITY",
+    "currency": "TWD",
+    "countryCode": "TW",
+    "isin": "TW0002330008",
+    "orderbookId": null
+   },
+   "last": {
+    "name": "Nu Holdings",
+    "y": 0.4,
+    "type": "HOLDING_TYPE_EQUITY",
+    "currency": "USD",
+    "countryCode": "BR",
+    "isin": "KYG6683N1034",
+    "orderbookId": null
+   }
+  },
+  "list:sectorChartData": {
+   "len": 11,
+   "first": {
+    "name": "Teknik",
+    "y": 44.2,
+    "type": "",
+    "currency": "",
+    "countryCode": null,
+    "isin": null,
+    "orderbookId": null
+   },
+   "last": {
+    "name": "Fastigheter",
+    "y": 0.94,
+    "type": "",
+    "currency": "",
+    "countryCode": null,
+    "isin": null,
+    "orderbookId": null
+   }
+  },
+  "list:fundManagers": {
+   "len": 1,
+   "first": {
+    "name": "Martin Sandstedt",
+    "startDate": "2022-10-01"
+   },
+   "last": {
+    "name": "Martin Sandstedt",
+    "startDate": "2022-10-01"
+   }
+  },
+  "list:categories": {
+   "len": 1,
+   "first": "Tillv\u00e4xtmarknader",
+   "last": "Tillv\u00e4xtmarknader"
+  },
+  "list:productInvolvements": {
+   "len": 16,
+   "first": {
+    "product": "alcohol",
+    "productDescription": "Alkohol",
+    "value": 0.37
+   },
+   "last": {
+    "product": "oilSandsExtractionInvolvement",
+    "productDescription": "Utvinning av oljesand",
+    "value": 0.36
+   }
+  },
+  "list:fundRatingViews": {
+   "len": 3,
+   "first": {
+    "date": "2026-09-30T00:00:00",
+    "fundRatingType": "THREE_YEARS",
+    "fundRating": 3
+   },
+   "last": {
+    "date": "2026-09-30T00:00:00",
+    "fundRatingType": "ALL_TIME",
+    "fundRating": 3
+   }
+  }
+ },
+ {
+  "fund": "AVANZA_EM",
+  "label": "price_chart_stock_all_day",
+  "url": "https://www.avanza.se/_api/price-chart/stock/944976?timePeriod=all_time&resolution=day",
+  "retrieved_at": "2026-10-31T09:35:23Z",
+  "status": 400,
+  "content_type": "application/json",
+  "bytes": 158,
+  "final_url": "https://www.avanza.se/_api/price-chart/stock/944976?timePeriod=all_time&resolution=day",
+  "json_keys": [
+   "additional",
+   "errors",
+   "message",
+   "statusCode",
+   "time",
+   "traceId"
+  ]
+ },
+ {
+  "fund": "AVANZA_EM",
+  "label": "price_chart_fund_all",
+  "url": "https://www.avanza.se/_api/price-chart/fund/944976?timePeriod=all_time",
+  "retrieved_at": "2026-10-31T09:35:25Z",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 148,
+  "final_url": "https://www.avanza.se/_api/price-chart/fund/944976?timePeriod=all_time",
+  "json_keys": [
+   "message",
+   "servlet",
+   "status",
+   "url"
+  ]
+ },
+ {
+  "fund": "AVANZA_EM",
+  "label": "fund_guide_chart_all",
+  "url": "https://www.avanza.se/_api/fund-guide/chart/944976/all_time",
+  "retrieved_at": "2026-10-31T09:35:26Z",
+  "status": 400,
+  "content_type": "application/json",
+  "bytes": 158,
+  "final_url": "https://www.avanza.se/_api/fund-guide/chart/944976/all_time",
+  "json_keys": [
+   "additional",
+   "errors",
+   "message",
+   "statusCode",
+   "time",
+   "traceId"
+  ]
+ },
+ {
+  "fund": "AVANZA_EM",
+  "label": "fund_guide_chart_range_raw",
+  "url": "https://www.avanza.se/_api/fund-guide/chart/944976/2015-01-01/2026-10-31?raw=true",
+  "retrieved_at": "2026-10-31T09:35:27Z",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 4392,
+  "final_url": "https://www.avanza.se/_api/fund-guide/chart/944976/2015-01-01/2026-10-31?raw=true",
+  "json_keys": [
+   "dataSerie",
+   "fromDate",
+   "id",
+   "name",
+   "toDate"
+  ],
+  "name": "Avanza Emerging Markets",
+  "list:dataSerie": {
+   "len": 142,
+   "first": {
+    "x": 1420153200000,
+    "y": null
+   },
+   "last": {
+    "x": 1790805600000,
+    "y": 186.69
+   }
+  }
+ },
+ {
+  "fund": "AVANZA_EM",
+  "label": "fund_guide_chart_range",
+  "url": "https://www.avanza.se/_api/fund-guide/chart/944976/2015-01-01/2026-10-31",
+  "retrieved_at": "2026-10-31T09:35:28Z",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 3117,
+  "final_url": "https://www.avanza.se/_api/fund-guide/chart/944976/2015-01-01/2026-10-31",
+  "json_keys": [
+   "dataSerie",
+   "fromDate",
+   "id",
+   "name",
+   "toDate"
+  ],
+  "name": "Avanza Emerging Markets",
+  "list:dataSerie": {
+   "len": 90,
+   "first": {
+    "x": 1556575200000,
+    "y": 3.53
+   },
+   "last": {
+    "x": 1790719200000,
+    "y": 100.71000000000001
+   }
+  }
+ },
+ {
+  "fund": "AVANZA_EM",
+  "label": "fund_guide_chart_recent_raw",
+  "url": "https://www.avanza.se/_api/fund-guide/chart/944976/2026-09-01/2026-10-31?raw=true",
+  "retrieved_at": "2026-10-31T09:35:29Z",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 1162,
+  "final_url": "https://www.avanza.se/_api/fund-guide/chart/944976/2026-09-01/2026-10-31?raw=true",
+  "json_keys": [
+   "dataSerie",
+   "fromDate",
+   "id",
+   "name",
+   "toDate"
+  ],
+  "name": "Avanza Emerging Markets",
+  "list:dataSerie": {
+   "len": 34,
+   "first": {
+    "x": 1788213600000,
+    "y": 194.79
+   },
+   "last": {
+    "x": 1793228400000,
+    "y": 186.69
+   }
+  }
+ },
+ {
+  "fund": "AVANZA_RANTA_KORT",
+  "label": "search_filtered",
+  "url": "https://www.avanza.se/_api/search/filtered-search",
+  "retrieved_at": "2026-10-31T09:35:31Z",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 985,
+  "final_url": "https://www.avanza.se/_api/search/filtered-search",
+  "json_keys": [
+   "facets",
+   "hits",
+   "pagination",
+   "searchFilter",
+   "searchQuery",
+   "totalNumberOfHits"
+  ],
+  "list:hits": {
+   "len": 1,
+   "first": {
+    "type": "FUND",
+    "title": "Avanza R\u00e4nta Kort",
+    "highlightedTitle": "Avanza R\u00e4nta Kort",
+    "description": "En investering i fonden ger dig en exponering mot\u2026",
+    "highlightedDescription": "",
+    "path": null,
+    "flagCode": null,
+    "orderBookId": "1684019",
+    "urlSlugName": "avanza-ranta-kort",
+    "tradeable": true,
+    "sellable": true,
+    "buyable": true,
+    "price": {
+     "last": "108,62",
+     "currency": "SEK",
+     "todayChangePercent": "0,04",
+     "todayChangeValue": "0,04",
+     "todayChangeDirection": 1,
+     "threeMonthsAgoChangePercent": "0,24",
+     "threeMonthsAgoChangeDirection": 1,
+     "spread": null
+    },
+    "stockSectors": [],
+    "fundTags": [
+     {
+      "title": "R\u00e4ntefond",
+      "category": "fund-type",
+      "tagCategory": "TYPE",
+      "highlightedTitle": null
+     },
+     {
+      "title": "SEK",
+      "category": "fund-category",
+      "tagCategory": "INTEREST",
+      "highlightedTitle": null
+     }
+    ],
+    "marketPlaceName": "Fondmarknaden",
+    "subType": null,
+    "highlightedSubType": ""
+   },
+   "last": {
+    "type": "FUND",
+    "title": "Avanza R\u00e4nta Kort",
+    "highlightedTitle": "Avanza R\u00e4nta Kort",
+    "description": "En investering i fonden ger dig en exponering mot\u2026",
+    "highlightedDescription": "",
+    "path": null,
+    "flagCode": null,
+    "orderBookId": "1684019",
+    "urlSlugName": "avanza-ranta-kort",
+    "tradeable": true,
+    "sellable": true,
+    "buyable": true,
+    "price": {
+     "last": "108,62",
+     "currency": "SEK",
+     "todayChangePercent": "0,04",
+     "todayChangeValue": "0,04",
+     "todayChangeDirection": 1,
+     "threeMonthsAgoChangePercent": "0,24",
+     "threeMonthsAgoChangeDirection": 1,
+     "spread": null
+    },
+    "stockSectors": [],
+    "fundTags": [
+     {
+      "title": "R\u00e4ntefond",
+      "category": "fund-type",
+      "tagCategory": "TYPE",
+      "highlightedTitle": null
+     },
+     {
+      "title": "SEK",
+      "category": "fund-category",
+      "tagCategory": "INTEREST",
+      "highlightedTitle": null
+     }
+    ],
+    "marketPlaceName": "Fondmarknaden",
+    "subType": null,
+    "highlightedSubType": ""
+   }
+  }
+ },
+ {
+  "fund": "AVANZA_RANTA_KORT",
+  "label": "search_global",
+  "url": "https://www.avanza.se/_api/search/global-search?query=SE0021021425",
+  "retrieved_at": "2026-10-31T09:35:32Z",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 71,
+  "final_url": "https://www.avanza.se/_api/search/global-search?query=SE0021021425",
+  "json_keys": [
+   "statusCode",
+   "traceId"
+  ]
+ },
+ {
+  "fund": "AVANZA_RANTA_KORT",
+  "label": "fund_page_html",
+  "url": "https://www.avanza.se/fonder/om-fonden.html/1684019/avanza-ranta-kort",
+  "retrieved_at": "2026-10-31T09:35:33Z",
+  "status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "bytes": 10090,
+  "final_url": "https://www.avanza.se/fonder/om-fonden.html/1684019/avanza-ranta-kort"
+ },
+ {
+  "fund": "AVANZA_RANTA_KORT",
+  "label": "fund_guide",
+  "url": "https://www.avanza.se/_api/fund-guide/guide/1684019",
+  "retrieved_at": "2026-10-31T09:35:34Z",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 3372,
+  "final_url": "https://www.avanza.se/_api/fund-guide/guide/1684019",
+  "json_keys": [
+   "adminCompany",
+   "aumCoveredCarbon",
+   "capital",
+   "carbonRiskScore",
+   "carbonSolutionsInvolvement",
+   "categories",
+   "controversyScore",
+   "countryChartData",
+   "currency",
+   "description",
+   "developmentFiveYears",
+   "developmentOneDay",
+   "developmentOneMonth",
+   "developmentOneYear",
+   "developmentSixMonths",
+   "developmentThisYear",
+   "developmentThreeMonths",
+   "developmentThreeYears",
+   "environmentalScore",
+   "esgScore",
+   "fossilFuelInvolvement",
+   "fundManagers",
+   "fundRatingViews",
+   "fundType",
+   "fundTypeName",
+   "governanceScore",
+   "hedgeFund",
+   "holdingChartData",
+   "indexFund",
+   "isin",
+   "lowCarbon",
+   "managementFee",
+   "name",
+   "nav",
+   "navDate",
+   "portfolioDate",
+   "ppmCode",
+   "pricingFrequency",
+   "primaryBenchmark",
+   "productFee",
+   "productInvolvements",
+   "prospectusLink",
+   "rating",
+   "recommendedHoldingPeriod",
+   "risk",
+   "riskText",
+   "sectorChartData",
+   "sharpeRatio",
+   "socialScore",
+   "standardDeviation",
+   "startDate",
+   "superloanOrderbook",
+   "sustainabilityRating",
+   "sustainabilityRatingCategoryName",
+   "svanen",
+   "ucitsFund"
+  ],
+  "nav": 108.62,
+  "navDate": "2026-10-29T00:00:00",
+  "isin": "SE0021021425",
+  "name": "Avanza R\u00e4nta Kort",
+  "startDate": "2023-12-14",
+  "currency": "SEK",
+  "list:holdingChartData": {
+   "len": 1,
+   "first": {
+    "name": "Captor Perenne Short Term Bond A",
+    "y": 99.65,
+    "type": "HOLDING_TYPE_FUND",
+    "currency": "SEK",
+    "countryCode": "SE",
+    "isin": "SE0020552602",
+    "orderbookId": null
+   },
+   "last": {
+    "name": "Captor Perenne Short Term Bond A",
+    "y": 99.65,
+    "type": "HOLDING_TYPE_FUND",
+    "currency": "SEK",
+    "countryCode": "SE",
+    "isin": "SE0020552602",
+    "orderbookId": null
+   }
+  },
+  "list:fundManagers": {
+   "len": 2,
+   "first": {
+    "name": "Daniel Karlgren",
+    "startDate": "2023-12-14"
+   },
+   "last": {
+    "name": "William Sj\u00f6berg",
+    "startDate": "2023-12-14"
+   }
+  },
+  "list:categories": {
+   "len": 2,
+   "first": "R\u00e4nte - SEK obligationer",
+   "last": "Korta"
+  },
+  "list:productInvolvements": {
+   "len": 16,
+   "first": {
+    "product": "alcohol",
+    "productDescription": "Alkohol",
+    "value": 0.0
+   },
+   "last": {
+    "product": "oilSandsExtractionInvolvement",
+    "productDescription": "Utvinning av oljesand",
+    "value": 0.0
+   }
+  }
+ },
+ {
+  "fund": "AVANZA_RANTA_KORT",
+  "label": "price_chart_stock_all_day",
+  "url": "https://www.avanza.se/_api/price-chart/stock/1684019?timePeriod=all_time&resolution=day",
+  "retrieved_at": "2026-10-31T09:35:35Z",
+  "status": 400,
+  "content_type": "application/json",
+  "bytes": 158,
+  "final_url": "https://www.avanza.se/_api/price-chart/stock/1684019?timePeriod=all_time&resolution=day",
+  "json_keys": [
+   "additional",
+   "errors",
+   "message",
+   "statusCode",
+   "time",
+   "traceId"
+  ]
+ },
+ {
+  "fund": "AVANZA_RANTA_KORT",
+  "label": "price_chart_fund_all",
+  "url": "https://www.avanza.se/_api/price-chart/fund/1684019?timePeriod=all_time",
+  "retrieved_at": "2026-10-31T09:35:36Z",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 150,
+  "final_url": "https://www.avanza.se/_api/price-chart/fund/1684019?timePeriod=all_time",
+  "json_keys": [
+   "message",
+   "servlet",
+   "status",
+   "url"
+  ]
+ },
+ {
+  "fund": "AVANZA_RANTA_KORT",
+  "label": "fund_guide_chart_all",
+  "url": "https://www.avanza.se/_api/fund-guide/chart/1684019/all_time",
+  "retrieved_at": "2026-10-31T09:35:37Z",
+  "status": 400,
+  "content_type": "application/json",
+  "bytes": 158,
+  "final_url": "https://www.avanza.se/_api/fund-guide/chart/1684019/all_time",
+  "json_keys": [
+   "additional",
+   "errors",
+   "message",
+   "statusCode",
+   "time",
+   "traceId"
+  ]
+ },
+ {
+  "fund": "AVANZA_RANTA_KORT",
+  "label": "fund_guide_chart_range_raw",
+  "url": "https://www.avanza.se/_api/fund-guide/chart/1684019/2015-01-01/2026-10-31?raw=true",
+  "retrieved_at": "2026-10-31T09:35:39Z",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 4232,
+  "final_url": "https://www.avanza.se/_api/fund-guide/chart/1684019/2015-01-01/2026-10-31?raw=true",
+  "json_keys": [
+   "dataSerie",
+   "fromDate",
+   "id",
+   "name",
+   "toDate"
+  ],
+  "name": "Avanza R\u00e4nta Kort",
+  "list:dataSerie": {
+   "len": 140,
+   "first": {
+    "x": 1420153200000,
+    "y": null
+   },
+   "last": {
+    "x": 1790805600000,
+    "y": 108.62
+   }
+  }
+ },
+ {
+  "fund": "AVANZA_RANTA_KORT",
+  "label": "fund_guide_chart_range",
+  "url": "https://www.avanza.se/_api/fund-guide/chart/1684019/2015-01-01/2026-10-31",
+  "retrieved_at": "2026-10-31T09:35:40Z",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 1268,
+  "final_url": "https://www.avanza.se/_api/fund-guide/chart/1684019/2015-01-01/2026-10-31",
+  "json_keys": [
+   "dataSerie",
+   "fromDate",
+   "id",
+   "name",
+   "toDate"
+  ],
+  "name": "Avanza R\u00e4nta Kort",
+  "list:dataSerie": {
+   "len": 34,
+   "first": {
+    "x": 1703977200000,
+    "y": 0.16999999999999998
+   },
+   "last": {
+    "x": 1790719200000,
+    "y": 8.469999999999999
+   }
+  }
+ },
+ {
+  "fund": "AVANZA_RANTA_KORT",
+  "label": "fund_guide_chart_recent_raw",
+  "url": "https://www.avanza.se/_api/fund-guide/chart/1684019/2026-09-01/2026-10-31?raw=true",
+  "retrieved_at": "2026-10-31T09:35:41Z",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 1435,
+  "final_url": "https://www.avanza.se/_api/fund-guide/chart/1684019/2026-09-01/2026-10-31?raw=true",
+  "json_keys": [
+   "dataSerie",
+   "fromDate",
+   "id",
+   "name",
+   "toDate"
+  ],
+  "name": "Avanza R\u00e4nta Kort",
+  "list:dataSerie": {
+   "len": 43,
+   "first": {
+    "x": 1788213600000,
+    "y": 108.47
+   },
+   "last": {
+    "x": 1793228400000,
+    "y": 108.62
+   }
+  }
+ },
+ {
+  "fund": "AVANZA_GLOBAL",
+  "label": "search_filtered",
+  "url": "https://www.avanza.se/_api/search/filtered-search",
+  "retrieved_at": "2026-10-31T09:35:43Z",
+  "status": 200,
+  "content_type": "application/json",
+  "bytes": 1175,
+  "final_url": "https://www.avanza.se/_api/search/filtered-search",
+  "json_keys": [
+   "facets",
+   "hits",
+   "pagination",
+   "searchFilter",
+   "searchQuery",
+   "totalNumberOfHits"
+  ],
+  "list:hits": {
+   "len": 1,
+   "first": {
+    "type": "FUND",
+    "title": "Avanza Global",
+    "highlightedTitle": "Avanza Global",
+    "description": "Avanza Global \u00e4r en indexfond vars m\u00e5l \u00e4r att f\u00f6l\u2026",
+    "highlightedDescription": "",
+    "path": null,
+    "flagCode": null,
+    "orderBookId": "878733",
+    "urlSlugName": "avanza-global",
+    "tradeable": true,
+    "sellable": true,
+    "buyable": true,
+    "price": {
+     "last": "268,75",
+     "currency": "SEK",
+     "todayChangePercent": "\u22120,80",
+     "todayChangeValue": "\u22122,17",
+     "todayChangeDirection": -1,
+     "threeMonthsAgoChangePercent": "5,86",
+     "threeMonthsAgoChangeDirection": 1,
+     "spread": null
+    },
+    "stockSectors": [],
+    "fundTags": [
+     {
+      "title": "Aktiefond",
+      "category": "fund-type",
+      "tagCategory": "TYPE",
+      "highlightedTitle": null
+     },
+     {
+      "title": "Index",
+      "category": "index-fund",
+      "tagCategory": "INDEX",
+      "highlightedTitle": null
+     },
+     {
+      "title": "Mix bolag",
+      "category": "fund-category",
+      "tagCategory": "ALIGNMENT",
+      "highlightedTitle": null
+     },
+     {
+      "title": "Global",
+      "category": "fund-category",
+      "tagCategory": "COMMON_REGION",
+      "highlightedTitle": null
+     }
+    ],
+    "marketPlaceName": "Fondmarknaden",
+    "subType": null,
+    "highlightedSubType": ""
+   },
+   "last": {
+    "type": "FUND",
+    "title": "Avanza Global",
+    "highlightedTitle": "Avanza Global",
+    "description": "Avanza Global \u00e4r en indexfond vars m\u00e5l \u00e4r att f\u00f6l\u2026",
+    "highlightedDescription": "",
+    "path": null,
+    "flagCode": null,
+    "orderBookId": "878733",
+    "urlSlugName": "avanza-global",
+    "tradeable": true,
+    "sellable": true,
+    "buyable": true,
+    "price": {
+     "last": "268,75",
+     "currency": "SEK",
+     "todayChangePercent": "\u22120,80",
+     "todayChangeValue": "\u22122,17",
+     "todayChangeDirection": -1,
+     "threeMonthsAgoChangePercent": "5,86",
+     "threeMonthsAgoChangeDirection": 1,
+     "spread": null
+    },
+    "stockSectors": [],
+    "fundTags": [
+     {
+      "title": "Aktiefond",
+      "category": "fund-type",
+      "tagCategory": "TYPE",
+      "highlightedTitle": null
+     },
+     {
+      "title": "Index",
+      "category": "index-fund",
+      "tagCategory": "INDEX",
+      "highlightedTitle": null
+     },
+     {
+      "title": "Mix bolag",
+      "category": "fund-category",
+      "tagCategory": "ALIGNMENT",
+      "highlightedTitle": null
+     },
+     {
+      "title": "Global",
+      "category": "fund-category",
+      "tagCategory": "COMMON_REGION",
+      "highlightedTitle": null
+     }
+    ],
+    "marketPlaceName": "Fondmarknaden",
+    "subType": null,
+    "highlightedSubType": ""
+   }
+  }
+ },
+ {
+  "fund": "AVANZA_GLOBAL",
+  "label": "search_global",
+  "url": "https://www.avanza.se/_api/search/global-search?query=SE0011527613",
+  "retrieved_at": "2026-10-31T09:35:45Z",
+  "status": 404,
+  "content_type": "application/json",
+  "bytes": 71,
+  "final_url": "https://www.avanza.se/_api/search/global-search?query=SE0011527613",
+  "json_keys": [
+   "statusCode",
+   "traceId"
+  ]
+ }
+]

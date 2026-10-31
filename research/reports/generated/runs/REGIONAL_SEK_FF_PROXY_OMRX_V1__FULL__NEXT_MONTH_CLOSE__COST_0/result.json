@@ -1,0 +1,121 @@
+{
+  "cost_per_side_bps": 0.0,
+  "data_tier": "SWEDISH",
+  "execution": "NEXT_MONTH_CLOSE",
+  "lookahead_free": true,
+  "metrics": {
+    "annual_turnover": 2.388059701492537,
+    "average_holding_period_months": 4.902439024390244,
+    "best_year": 2024,
+    "best_year_return": 0.3692659298901111,
+    "cagr": 0.10588901648509008,
+    "calmar": 0.5286126310394748,
+    "end_date": "2026-09-30",
+    "end_value": 53971.982934618776,
+    "longest_drawdown_months": 20,
+    "longest_drawdown_span": "2015-07-31..2017-03-31",
+    "longest_underperformance_span": "2010-09-30..2026-09-30",
+    "longest_underperformance_vs_benchmark_months": 192,
+    "max_drawdown": -0.20031495705440816,
+    "months": 201,
+    "no_signal_count": 1002,
+    "number_of_switches": 40,
+    "sharpe": 0.7533813678003158,
+    "sharpe_rf": "hurdle/T-bill series of the run",
+    "sortino": 1.2060864766659838,
+    "start_date": "2010-01-31",
+    "start_value": 10000.0,
+    "switches_per_year": 2.388059701492537,
+    "time_in_asset": {
+      "SE_EM_EQ": 0.1890547263681592,
+      "SE_EUROPE_EQ": 0.18407960199004975,
+      "SE_SHORT_RATE": 0.03980099502487562,
+      "SE_USA_EQ": 0.5870646766169154
+    },
+    "volatility": 0.1377103788739105,
+    "worst_year": 2011,
+    "worst_year_return": -0.09053338233668795
+  },
+  "notes": [
+    "NOT GEM. Regions = Ken French US (CRSP all US stocks), Europe (developed Europe) and Emerging market portfolios, value-weighted, USD converted to SEK; cash = OMRX T-bill (VERIFIED)."
+  ],
+  "provenance": {
+    "run_id": "REGIONAL_SEK_FF_PROXY_OMRX_V1",
+    "series": [
+      {
+        "class": "PROXY",
+        "data_period": "1990-06-30..2026-09-30",
+        "id": "FF_DEVELOPED_MKT_TR",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "Developed_3_Factors (Mkt-RF + RF)",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T09:35:48Z",
+        "sha256": "3f99cfdeddd1914e3d8f84ce51d775aeed3e98ed0c290957e88f4df9912f8a23",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "1989-06-30..2026-09-30",
+        "id": "FF_EMERGING_MKT_TR",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "Emerging_5_Factors (Mkt-RF + RF)",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T09:35:49Z",
+        "sha256": "0573fd60948178daad54f577a6c87d1e5a183dfdc4a1a89ced3991cc95fd8ad3",
+        "verification": "ASSUMPTION"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "1990-06-30..2026-09-30",
+        "id": "FF_EUROPE_MKT_TR",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "Europe_3_Factors (Mkt-RF + RF)",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T09:35:50Z",
+        "sha256": "842332540d9c86681cbda628c6acc9d75d0c1563e364a2bf6a535072f651471e",
+        "verification": "ASSUMPTION"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "1926-06-30..2026-09-30",
+        "id": "FF_US_MKT_TR",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "F-F_Research_Data_Factors (Mkt-RF + RF)",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T09:35:51Z",
+        "sha256": "b03d39e4bb253dda0f14893db3b78e64b40b8d6549a0fc0fd4111dae84c98618",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PRIMARY_SOURCE_VERIFIED",
+        "data_period": "2008-11-17..2026-10-29",
+        "id": "FRED_OMRXTBILL",
+        "provider": "FRED (Nasdaq, Inc.)",
+        "provider_series_id": "NASDAQOMRXTBILL",
+        "quality_status": "VERIFIED",
+        "retrieved_at": "2026-10-31T09:35:55Z",
+        "sha256": "4409893008aaaa382139ae417a6a99a8d25efcd0079f8139e8e10388da6fe030",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PRIMARY_SOURCE_VERIFIED",
+        "data_period": "1993-01-04..2026-10-30",
+        "id": "RB_SEK_PER_USD",
+        "provider": "Sveriges Riksbank SWEA API",
+        "provider_series_id": "SEKUSDPMI",
+        "quality_status": "VERIFIED",
+        "retrieved_at": "2026-10-31T09:35:56Z",
+        "sha256": "58d9b62ce7ef1a8f9884ea0dde96696e1acfe9de7cd56ce16e0202484d3c5079",
+        "verification": "VERIFIED FROM PRIMARY SOURCE"
+      }
+    ],
+    "strategy_id": "REGIONAL_SEK",
+    "strategy_version": "1.0.0",
+    "tier": "SWEDISH",
+    "weakest_class": "PROXY"
+  },
+  "run_id": "REGIONAL_SEK_FF_PROXY_OMRX_V1__FULL__NEXT_MONTH_CLOSE__COST_0",
+  "stop_reason": "stopped before 2026-10-31: no return for held asset(s) ['SE_EM_EQ']",
+  "strategy_id": "REGIONAL_SEK",
+  "strategy_version": "1.0.0"
+}

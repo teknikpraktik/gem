@@ -1,0 +1,19 @@
+retrieved_at: 2026-10-31T09:35:23Z
+GET https://www.avanza.se/_api/price-chart/stock/944976?timePeriod=all_time&resolution=day
+body: null
+{
+ "status": 400,
+ "content_type": "application/json",
+ "bytes": 158,
+ "final_url": "https://www.avanza.se/_api/price-chart/stock/944976?timePeriod=all_time&resolution=day",
+ "json_keys": [
+  "additional",
+  "errors",
+  "message",
+  "statusCode",
+  "time",
+  "traceId"
+ ]
+}
+---
+{"traceId":"51569150a207ca71044979d9f9742351","statusCode":400,"message":"Bad request","time":"2026-10-31T10:35:24.004876354","errors":null,"additional":null}

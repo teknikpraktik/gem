@@ -1,0 +1,15 @@
+retrieved_at: 2026-10-31T09:35:20Z
+GET https://www.avanza.se/_api/search/global-search?query=SE0012454338
+body: null
+{
+ "status": 404,
+ "content_type": "application/json",
+ "bytes": 71,
+ "final_url": "https://www.avanza.se/_api/search/global-search?query=SE0012454338",
+ "json_keys": [
+  "statusCode",
+  "traceId"
+ ]
+}
+---
+{"statusCode":"NOT_FOUND","traceId":"a049cfda8b8596afb129b7108f42ece4"}

@@ -1,0 +1,106 @@
+retrieved_at: 2026-10-31T09:35:31Z
+POST https://www.avanza.se/_api/search/filtered-search
+body: {"query": "SE0021021425", "searchFilter": {"types": ["FUND"]}, "pagination": {"from": 0, "size": 5}}
+{
+ "status": 200,
+ "content_type": "application/json",
+ "bytes": 985,
+ "final_url": "https://www.avanza.se/_api/search/filtered-search",
+ "json_keys": [
+  "facets",
+  "hits",
+  "pagination",
+  "searchFilter",
+  "searchQuery",
+  "totalNumberOfHits"
+ ],
+ "list:hits": {
+  "len": 1,
+  "first": {
+   "type": "FUND",
+   "title": "Avanza R\u00e4nta Kort",
+   "highlightedTitle": "Avanza R\u00e4nta Kort",
+   "description": "En investering i fonden ger dig en exponering mot\u2026",
+   "highlightedDescription": "",
+   "path": null,
+   "flagCode": null,
+   "orderBookId": "1684019",
+   "urlSlugName": "avanza-ranta-kort",
+   "tradeable": true,
+   "sellable": true,
+   "buyable": true,
+   "price": {
+    "last": "108,62",
+    "currency": "SEK",
+    "todayChangePercent": "0,04",
+    "todayChangeValue": "0,04",
+    "todayChangeDirection": 1,
+    "threeMonthsAgoChangePercent": "0,24",
+    "threeMonthsAgoChangeDirection": 1,
+    "spread": null
+   },
+   "stockSectors": [],
+   "fundTags": [
+    {
+     "title": "R\u00e4ntefond",
+     "category": "fund-type",
+     "tagCategory": "TYPE",
+     "highlightedTitle": null
+    },
+    {
+     "title": "SEK",
+     "category": "fund-category",
+     "tagCategory": "INTEREST",
+     "highlightedTitle": null
+    }
+   ],
+   "marketPlaceName": "Fondmarknaden",
+   "subType": null,
+   "highlightedSubType": ""
+  },
+  "last": {
+   "type": "FUND",
+   "title": "Avanza R\u00e4nta Kort",
+   "highlightedTitle": "Avanza R\u00e4nta Kort",
+   "description": "En investering i fonden ger dig en exponering mot\u2026",
+   "highlightedDescription": "",
+   "path": null,
+   "flagCode": null,
+   "orderBookId": "1684019",
+   "urlSlugName": "avanza-ranta-kort",
+   "tradeable": true,
+   "sellable": true,
+   "buyable": true,
+   "price": {
+    "last": "108,62",
+    "currency": "SEK",
+    "todayChangePercent": "0,04",
+    "todayChangeValue": "0,04",
+    "todayChangeDirection": 1,
+    "threeMonthsAgoChangePercent": "0,24",
+    "threeMonthsAgoChangeDirection": 1,
+    "spread": null
+   },
+   "stockSectors": [],
+   "fundTags": [
+    {
+     "title": "R\u00e4ntefond",
+     "category": "fund-type",
+     "tagCategory": "TYPE",
+     "highlightedTitle": null
+    },
+    {
+     "title": "SEK",
+     "category": "fund-category",
+     "tagCategory": "INTEREST",
+     "highlightedTitle": null
+    }
+   ],
+   "marketPlaceName": "Fondmarknaden",
+   "subType": null,
+   "highlightedSubType": ""
+  }
+ }
+}
+---
+{"totalNumberOfHits":1,"hits":[{"type":"FUND","title":"Avanza Ränta Kort","highlightedTitle":"Avanza Ränta Kort","description":"En investering i fonden ger dig en exponering mot…","highlightedDescription":"","path":null,"flagCode":null,"orderBookId":"1684019","urlSlugName":"avanza-ranta-kort","tradeable":true,"sellable":true,"buyable":true,"price":{"last":"108,62","currency":"SEK","todayChangePercent":"0,04","todayChangeValue":"0,04","todayChangeDirection":1,"threeMonthsAgoChangePercent":"0,24","threeMonthsAgoChangeDirection":1,"spread":null},"stockSectors":[],"fundTags":[{"title":"Räntefond","category":"fund-type","tagCategory":"TYPE","highlightedTitle":null},{"title":"SEK","category":"fund-category","tagCategory":"INTEREST","highlightedTitle":null}],"marketPlaceName":"Fondmarknaden","subType":null,"highlightedSubType":""}],"searchQuery":"SE0021021425","searchFilter":{"types":["FUND"]},"facets":{"types":[{"type":"FUND","count":1}]},"pagination":{"size":5,"from":0}}

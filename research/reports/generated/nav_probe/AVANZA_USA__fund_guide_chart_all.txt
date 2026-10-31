@@ -1,0 +1,19 @@
+retrieved_at: 2026-10-31T09:35:11Z
+GET https://www.avanza.se/_api/fund-guide/chart/1025150/all_time
+body: null
+{
+ "status": 400,
+ "content_type": "application/json",
+ "bytes": 158,
+ "final_url": "https://www.avanza.se/_api/fund-guide/chart/1025150/all_time",
+ "json_keys": [
+  "additional",
+  "errors",
+  "message",
+  "statusCode",
+  "time",
+  "traceId"
+ ]
+}
+---
+{"traceId":"3a308b16a29cc4319ac0ed79c0afbfbb","statusCode":400,"message":"Bad request","time":"2026-10-31T10:35:11.127911532","errors":null,"additional":null}

@@ -1,0 +1,109 @@
+{
+  "cost_per_side_bps": 0.0,
+  "data_tier": "SWEDISH",
+  "execution": "NEXT_MONTH_CLOSE",
+  "lookahead_free": true,
+  "metrics": {
+    "annual_turnover": 1.7313432835820894,
+    "average_holding_period_months": 6.7,
+    "best_year": 2024,
+    "best_year_return": 0.3692659298901111,
+    "cagr": 0.13336161522067158,
+    "calmar": 0.6657596476155738,
+    "end_date": "2026-09-30",
+    "end_value": 81408.99103765239,
+    "longest_drawdown_months": 20,
+    "longest_drawdown_span": "2025-01-31..2026-09-30",
+    "longest_underperformance_span": "2016-03-31..2024-09-30",
+    "longest_underperformance_vs_benchmark_months": 102,
+    "max_drawdown": -0.20031495705440816,
+    "months": 201,
+    "no_signal_count": 1002,
+    "number_of_switches": 29,
+    "sharpe": 0.9810285990538027,
+    "sharpe_rf": "hurdle/T-bill series of the run",
+    "sortino": 1.6639226745969993,
+    "start_date": "2010-01-31",
+    "start_value": 10000.0,
+    "switches_per_year": 1.7313432835820894,
+    "time_in_asset": {
+      "SEK_EXUS_EQ": 0.15422885572139303,
+      "SEK_US_EQ": 0.7711442786069652,
+      "SE_SHORT_RATE": 0.07462686567164178
+    },
+    "volatility": 0.12986498549614003,
+    "worst_year": 2025,
+    "worst_year_return": -0.09211930348223485
+  },
+  "notes": [
+    "NOT GEM. US = CRSP US market (Ken French), ex-US = Nasdaq Global ex US LM NTR (FRED, DM+EM), Swedish cash = OMRX Treasury Bill Index (FRED, VERIFIED, from 2008-11-17)."
+  ],
+  "provenance": {
+    "run_id": "GEM_SEK_OPEN_OMRX_V1",
+    "series": [
+      {
+        "class": "PROXY",
+        "data_period": "1990-06-30..2026-09-30",
+        "id": "FF_DEVELOPED_MKT_TR",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "Developed_3_Factors (Mkt-RF + RF)",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T09:35:48Z",
+        "sha256": "3f99cfdeddd1914e3d8f84ce51d775aeed3e98ed0c290957e88f4df9912f8a23",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "1926-06-30..2026-09-30",
+        "id": "FF_US_MKT_TR",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "F-F_Research_Data_Factors (Mkt-RF + RF)",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T09:35:51Z",
+        "sha256": "b03d39e4bb253dda0f14893db3b78e64b40b8d6549a0fc0fd4111dae84c98618",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "2001-03-30..2026-10-29",
+        "id": "FRED_NASDAQ_GLOBAL_EXUS_LM_NTR",
+        "provider": "FRED (Nasdaq, Inc.)",
+        "provider_series_id": "NASDAQNQGXUSLMN",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T09:35:54Z",
+        "sha256": "febe8e1d43e2ea288edf359b709531e73f5d414b02c353c051f0e41003602b90",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PRIMARY_SOURCE_VERIFIED",
+        "data_period": "2008-11-17..2026-10-29",
+        "id": "FRED_OMRXTBILL",
+        "provider": "FRED (Nasdaq, Inc.)",
+        "provider_series_id": "NASDAQOMRXTBILL",
+        "quality_status": "VERIFIED",
+        "retrieved_at": "2026-10-31T09:35:55Z",
+        "sha256": "4409893008aaaa382139ae417a6a99a8d25efcd0079f8139e8e10388da6fe030",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PRIMARY_SOURCE_VERIFIED",
+        "data_period": "1993-01-04..2026-10-30",
+        "id": "RB_SEK_PER_USD",
+        "provider": "Sveriges Riksbank SWEA API",
+        "provider_series_id": "SEKUSDPMI",
+        "quality_status": "VERIFIED",
+        "retrieved_at": "2026-10-31T09:35:56Z",
+        "sha256": "58d9b62ce7ef1a8f9884ea0dde96696e1acfe9de7cd56ce16e0202484d3c5079",
+        "verification": "VERIFIED FROM PRIMARY SOURCE"
+      }
+    ],
+    "strategy_id": "GEM_SEK",
+    "strategy_version": "1.0.0",
+    "tier": "SWEDISH",
+    "weakest_class": "PROXY"
+  },
+  "run_id": "GEM_SEK_OPEN_OMRX_V1__COMMON_SE_OPEN_OMRX__NEXT_MONTH_CLOSE__COST_0",
+  "stop_reason": null,
+  "strategy_id": "GEM_SEK",
+  "strategy_version": "1.0.0"
+}

@@ -1,0 +1,108 @@
+{
+  "cost_per_side_bps": 10.0,
+  "data_tier": "SWEDISH",
+  "execution": "NEXT_MONTH_CLOSE",
+  "lookahead_free": true,
+  "metrics": {
+    "annual_turnover": 1.836734693877551,
+    "average_holding_period_months": 6.391304347826087,
+    "best_year": 2021,
+    "best_year_return": 0.36797394809042316,
+    "cagr": 0.10647937870133228,
+    "calmar": 0.5313572567741621,
+    "end_date": "2026-10-31",
+    "end_value": 119292.0355118274,
+    "longest_drawdown_months": 21,
+    "longest_drawdown_span": "2025-01-31..2026-10-31",
+    "longest_underperformance_vs_benchmark_months": null,
+    "max_drawdown": -0.20039131364792528,
+    "months": 294,
+    "no_signal_count": 910,
+    "number_of_switches": 45,
+    "sharpe": 0.8232468014652337,
+    "sharpe_rf": "hurdle/T-bill series of the run",
+    "sortino": 1.3924528733264412,
+    "start_date": "2002-05-31",
+    "start_value": 10000.0,
+    "switches_per_year": 1.836734693877551,
+    "time_in_asset": {
+      "SEK_EXUS_EQ": 0.22448979591836735,
+      "SEK_US_EQ": 0.5306122448979592,
+      "SE_SHORT_RATE": 0.24489795918367346
+    },
+    "volatility": 0.11471634742123166,
+    "worst_year": 2025,
+    "worst_year_return": -0.09936335120966389
+  },
+  "notes": [
+    "NOT GEM. As GEM_SEK_OPEN_OMRX_V1 but Swedish cash = synthetic SSVX model (PROXY, longer)."
+  ],
+  "provenance": {
+    "run_id": "GEM_SEK_OPEN_SSVXSYNTH_V1",
+    "series": [
+      {
+        "class": "PROXY",
+        "data_period": "1990-06-30..2026-09-30",
+        "id": "FF_DEVELOPED_MKT_TR",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "Developed_3_Factors (Mkt-RF + RF)",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T09:35:48Z",
+        "sha256": "3f99cfdeddd1914e3d8f84ce51d775aeed3e98ed0c290957e88f4df9912f8a23",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "1926-06-30..2026-09-30",
+        "id": "FF_US_MKT_TR",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "F-F_Research_Data_Factors (Mkt-RF + RF)",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T09:35:51Z",
+        "sha256": "b03d39e4bb253dda0f14893db3b78e64b40b8d6549a0fc0fd4111dae84c98618",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "2001-03-30..2026-10-29",
+        "id": "FRED_NASDAQ_GLOBAL_EXUS_LM_NTR",
+        "provider": "FRED (Nasdaq, Inc.)",
+        "provider_series_id": "NASDAQNQGXUSLMN",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T09:35:54Z",
+        "sha256": "febe8e1d43e2ea288edf359b709531e73f5d414b02c353c051f0e41003602b90",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PRIMARY_SOURCE_VERIFIED",
+        "data_period": "1993-01-04..2026-10-30",
+        "id": "RB_SEK_PER_USD",
+        "provider": "Sveriges Riksbank SWEA API",
+        "provider_series_id": "SEKUSDPMI",
+        "quality_status": "VERIFIED",
+        "retrieved_at": "2026-10-31T09:35:56Z",
+        "sha256": "58d9b62ce7ef1a8f9884ea0dde96696e1acfe9de7cd56ce16e0202484d3c5079",
+        "verification": "VERIFIED FROM PRIMARY SOURCE"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "1983-01-03..2026-10-30",
+        "id": "RB_SSVX_3M",
+        "provider": "Sveriges Riksbank SWEA API",
+        "provider_series_id": "SETB3MBENCH",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T09:35:59Z",
+        "sha256": "45daac754529587fe08b0c7cbff8b3ccc07f0a541df4b9e8fae03304631314ff",
+        "verification": "VERIFIED FROM PRIMARY SOURCE"
+      }
+    ],
+    "strategy_id": "GEM_SEK",
+    "strategy_version": "1.0.0",
+    "tier": "SWEDISH",
+    "weakest_class": "PROXY"
+  },
+  "run_id": "GEM_SEK_OPEN_SSVXSYNTH_V1__FULL__NEXT_MONTH_CLOSE__COST_10BPS",
+  "stop_reason": null,
+  "strategy_id": "GEM_SEK",
+  "strategy_version": "1.0.0"
+}

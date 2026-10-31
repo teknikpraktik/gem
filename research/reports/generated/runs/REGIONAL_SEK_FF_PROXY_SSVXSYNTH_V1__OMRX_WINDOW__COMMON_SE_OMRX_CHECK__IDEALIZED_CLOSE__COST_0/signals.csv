@@ -1,0 +1,1206 @@
+signal_date,data_available_date,order_date,execution_date,first_return_month,target,reason,in_SE_USA_EQ_return,in_SE_EUROPE_EQ_return,in_SE_EM_EQ_return,in_hurdle_return
+1926-06-30,1926-06-30,1926-06-30,1926-06-30,1926-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1926-07-31,1926-07-31,1926-07-31,1926-07-31,1926-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1926-08-31,1926-08-31,1926-08-31,1926-08-31,1926-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1926-09-30,1926-09-30,1926-09-30,1926-09-30,1926-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1926-10-31,1926-10-31,1926-10-31,1926-10-31,1926-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1926-11-30,1926-11-30,1926-11-30,1926-11-30,1926-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1926-12-31,1926-12-31,1926-12-31,1926-12-31,1927-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1927-01-31,1927-01-31,1927-01-31,1927-01-31,1927-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1927-02-28,1927-02-28,1927-02-28,1927-02-28,1927-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1927-03-31,1927-03-31,1927-03-31,1927-03-31,1927-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1927-04-30,1927-04-30,1927-04-30,1927-04-30,1927-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1927-05-31,1927-05-31,1927-05-31,1927-05-31,1927-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1927-06-30,1927-06-30,1927-06-30,1927-06-30,1927-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1927-07-31,1927-07-31,1927-07-31,1927-07-31,1927-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1927-08-31,1927-08-31,1927-08-31,1927-08-31,1927-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1927-09-30,1927-09-30,1927-09-30,1927-09-30,1927-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1927-10-31,1927-10-31,1927-10-31,1927-10-31,1927-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1927-11-30,1927-11-30,1927-11-30,1927-11-30,1927-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1927-12-31,1927-12-31,1927-12-31,1927-12-31,1928-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1928-01-31,1928-01-31,1928-01-31,1928-01-31,1928-02-29,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1928-02-29,1928-02-29,1928-02-29,1928-02-29,1928-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1928-03-31,1928-03-31,1928-03-31,1928-03-31,1928-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1928-04-30,1928-04-30,1928-04-30,1928-04-30,1928-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1928-05-31,1928-05-31,1928-05-31,1928-05-31,1928-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1928-06-30,1928-06-30,1928-06-30,1928-06-30,1928-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1928-07-31,1928-07-31,1928-07-31,1928-07-31,1928-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1928-08-31,1928-08-31,1928-08-31,1928-08-31,1928-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1928-09-30,1928-09-30,1928-09-30,1928-09-30,1928-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1928-10-31,1928-10-31,1928-10-31,1928-10-31,1928-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1928-11-30,1928-11-30,1928-11-30,1928-11-30,1928-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1928-12-31,1928-12-31,1928-12-31,1928-12-31,1929-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1929-01-31,1929-01-31,1929-01-31,1929-01-31,1929-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1929-02-28,1929-02-28,1929-02-28,1929-02-28,1929-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1929-03-31,1929-03-31,1929-03-31,1929-03-31,1929-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1929-04-30,1929-04-30,1929-04-30,1929-04-30,1929-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1929-05-31,1929-05-31,1929-05-31,1929-05-31,1929-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1929-06-30,1929-06-30,1929-06-30,1929-06-30,1929-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1929-07-31,1929-07-31,1929-07-31,1929-07-31,1929-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1929-08-31,1929-08-31,1929-08-31,1929-08-31,1929-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1929-09-30,1929-09-30,1929-09-30,1929-09-30,1929-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1929-10-31,1929-10-31,1929-10-31,1929-10-31,1929-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1929-11-30,1929-11-30,1929-11-30,1929-11-30,1929-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1929-12-31,1929-12-31,1929-12-31,1929-12-31,1930-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1930-01-31,1930-01-31,1930-01-31,1930-01-31,1930-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1930-02-28,1930-02-28,1930-02-28,1930-02-28,1930-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1930-03-31,1930-03-31,1930-03-31,1930-03-31,1930-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1930-04-30,1930-04-30,1930-04-30,1930-04-30,1930-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1930-05-31,1930-05-31,1930-05-31,1930-05-31,1930-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1930-06-30,1930-06-30,1930-06-30,1930-06-30,1930-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1930-07-31,1930-07-31,1930-07-31,1930-07-31,1930-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1930-08-31,1930-08-31,1930-08-31,1930-08-31,1930-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1930-09-30,1930-09-30,1930-09-30,1930-09-30,1930-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1930-10-31,1930-10-31,1930-10-31,1930-10-31,1930-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1930-11-30,1930-11-30,1930-11-30,1930-11-30,1930-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1930-12-31,1930-12-31,1930-12-31,1930-12-31,1931-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1931-01-31,1931-01-31,1931-01-31,1931-01-31,1931-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1931-02-28,1931-02-28,1931-02-28,1931-02-28,1931-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1931-03-31,1931-03-31,1931-03-31,1931-03-31,1931-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1931-04-30,1931-04-30,1931-04-30,1931-04-30,1931-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1931-05-31,1931-05-31,1931-05-31,1931-05-31,1931-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1931-06-30,1931-06-30,1931-06-30,1931-06-30,1931-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1931-07-31,1931-07-31,1931-07-31,1931-07-31,1931-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1931-08-31,1931-08-31,1931-08-31,1931-08-31,1931-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1931-09-30,1931-09-30,1931-09-30,1931-09-30,1931-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1931-10-31,1931-10-31,1931-10-31,1931-10-31,1931-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1931-11-30,1931-11-30,1931-11-30,1931-11-30,1931-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1931-12-31,1931-12-31,1931-12-31,1931-12-31,1932-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1932-01-31,1932-01-31,1932-01-31,1932-01-31,1932-02-29,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1932-02-29,1932-02-29,1932-02-29,1932-02-29,1932-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1932-03-31,1932-03-31,1932-03-31,1932-03-31,1932-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1932-04-30,1932-04-30,1932-04-30,1932-04-30,1932-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1932-05-31,1932-05-31,1932-05-31,1932-05-31,1932-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1932-06-30,1932-06-30,1932-06-30,1932-06-30,1932-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1932-07-31,1932-07-31,1932-07-31,1932-07-31,1932-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1932-08-31,1932-08-31,1932-08-31,1932-08-31,1932-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1932-09-30,1932-09-30,1932-09-30,1932-09-30,1932-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1932-10-31,1932-10-31,1932-10-31,1932-10-31,1932-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1932-11-30,1932-11-30,1932-11-30,1932-11-30,1932-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1932-12-31,1932-12-31,1932-12-31,1932-12-31,1933-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1933-01-31,1933-01-31,1933-01-31,1933-01-31,1933-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1933-02-28,1933-02-28,1933-02-28,1933-02-28,1933-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1933-03-31,1933-03-31,1933-03-31,1933-03-31,1933-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1933-04-30,1933-04-30,1933-04-30,1933-04-30,1933-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1933-05-31,1933-05-31,1933-05-31,1933-05-31,1933-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1933-06-30,1933-06-30,1933-06-30,1933-06-30,1933-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1933-07-31,1933-07-31,1933-07-31,1933-07-31,1933-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1933-08-31,1933-08-31,1933-08-31,1933-08-31,1933-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1933-09-30,1933-09-30,1933-09-30,1933-09-30,1933-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1933-10-31,1933-10-31,1933-10-31,1933-10-31,1933-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1933-11-30,1933-11-30,1933-11-30,1933-11-30,1933-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1933-12-31,1933-12-31,1933-12-31,1933-12-31,1934-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1934-01-31,1934-01-31,1934-01-31,1934-01-31,1934-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1934-02-28,1934-02-28,1934-02-28,1934-02-28,1934-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1934-03-31,1934-03-31,1934-03-31,1934-03-31,1934-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1934-04-30,1934-04-30,1934-04-30,1934-04-30,1934-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1934-05-31,1934-05-31,1934-05-31,1934-05-31,1934-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1934-06-30,1934-06-30,1934-06-30,1934-06-30,1934-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1934-07-31,1934-07-31,1934-07-31,1934-07-31,1934-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1934-08-31,1934-08-31,1934-08-31,1934-08-31,1934-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1934-09-30,1934-09-30,1934-09-30,1934-09-30,1934-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1934-10-31,1934-10-31,1934-10-31,1934-10-31,1934-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1934-11-30,1934-11-30,1934-11-30,1934-11-30,1934-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1934-12-31,1934-12-31,1934-12-31,1934-12-31,1935-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1935-01-31,1935-01-31,1935-01-31,1935-01-31,1935-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1935-02-28,1935-02-28,1935-02-28,1935-02-28,1935-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1935-03-31,1935-03-31,1935-03-31,1935-03-31,1935-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1935-04-30,1935-04-30,1935-04-30,1935-04-30,1935-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1935-05-31,1935-05-31,1935-05-31,1935-05-31,1935-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1935-06-30,1935-06-30,1935-06-30,1935-06-30,1935-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1935-07-31,1935-07-31,1935-07-31,1935-07-31,1935-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1935-08-31,1935-08-31,1935-08-31,1935-08-31,1935-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1935-09-30,1935-09-30,1935-09-30,1935-09-30,1935-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1935-10-31,1935-10-31,1935-10-31,1935-10-31,1935-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1935-11-30,1935-11-30,1935-11-30,1935-11-30,1935-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1935-12-31,1935-12-31,1935-12-31,1935-12-31,1936-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1936-01-31,1936-01-31,1936-01-31,1936-01-31,1936-02-29,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1936-02-29,1936-02-29,1936-02-29,1936-02-29,1936-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1936-03-31,1936-03-31,1936-03-31,1936-03-31,1936-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1936-04-30,1936-04-30,1936-04-30,1936-04-30,1936-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1936-05-31,1936-05-31,1936-05-31,1936-05-31,1936-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1936-06-30,1936-06-30,1936-06-30,1936-06-30,1936-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1936-07-31,1936-07-31,1936-07-31,1936-07-31,1936-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1936-08-31,1936-08-31,1936-08-31,1936-08-31,1936-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1936-09-30,1936-09-30,1936-09-30,1936-09-30,1936-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1936-10-31,1936-10-31,1936-10-31,1936-10-31,1936-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1936-11-30,1936-11-30,1936-11-30,1936-11-30,1936-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1936-12-31,1936-12-31,1936-12-31,1936-12-31,1937-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1937-01-31,1937-01-31,1937-01-31,1937-01-31,1937-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1937-02-28,1937-02-28,1937-02-28,1937-02-28,1937-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1937-03-31,1937-03-31,1937-03-31,1937-03-31,1937-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1937-04-30,1937-04-30,1937-04-30,1937-04-30,1937-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1937-05-31,1937-05-31,1937-05-31,1937-05-31,1937-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1937-06-30,1937-06-30,1937-06-30,1937-06-30,1937-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1937-07-31,1937-07-31,1937-07-31,1937-07-31,1937-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1937-08-31,1937-08-31,1937-08-31,1937-08-31,1937-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1937-09-30,1937-09-30,1937-09-30,1937-09-30,1937-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1937-10-31,1937-10-31,1937-10-31,1937-10-31,1937-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1937-11-30,1937-11-30,1937-11-30,1937-11-30,1937-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1937-12-31,1937-12-31,1937-12-31,1937-12-31,1938-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1938-01-31,1938-01-31,1938-01-31,1938-01-31,1938-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1938-02-28,1938-02-28,1938-02-28,1938-02-28,1938-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1938-03-31,1938-03-31,1938-03-31,1938-03-31,1938-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1938-04-30,1938-04-30,1938-04-30,1938-04-30,1938-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1938-05-31,1938-05-31,1938-05-31,1938-05-31,1938-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1938-06-30,1938-06-30,1938-06-30,1938-06-30,1938-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1938-07-31,1938-07-31,1938-07-31,1938-07-31,1938-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1938-08-31,1938-08-31,1938-08-31,1938-08-31,1938-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1938-09-30,1938-09-30,1938-09-30,1938-09-30,1938-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1938-10-31,1938-10-31,1938-10-31,1938-10-31,1938-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1938-11-30,1938-11-30,1938-11-30,1938-11-30,1938-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1938-12-31,1938-12-31,1938-12-31,1938-12-31,1939-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1939-01-31,1939-01-31,1939-01-31,1939-01-31,1939-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1939-02-28,1939-02-28,1939-02-28,1939-02-28,1939-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1939-03-31,1939-03-31,1939-03-31,1939-03-31,1939-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1939-04-30,1939-04-30,1939-04-30,1939-04-30,1939-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1939-05-31,1939-05-31,1939-05-31,1939-05-31,1939-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1939-06-30,1939-06-30,1939-06-30,1939-06-30,1939-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1939-07-31,1939-07-31,1939-07-31,1939-07-31,1939-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1939-08-31,1939-08-31,1939-08-31,1939-08-31,1939-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1939-09-30,1939-09-30,1939-09-30,1939-09-30,1939-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1939-10-31,1939-10-31,1939-10-31,1939-10-31,1939-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1939-11-30,1939-11-30,1939-11-30,1939-11-30,1939-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1939-12-31,1939-12-31,1939-12-31,1939-12-31,1940-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1940-01-31,1940-01-31,1940-01-31,1940-01-31,1940-02-29,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1940-02-29,1940-02-29,1940-02-29,1940-02-29,1940-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1940-03-31,1940-03-31,1940-03-31,1940-03-31,1940-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1940-04-30,1940-04-30,1940-04-30,1940-04-30,1940-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1940-05-31,1940-05-31,1940-05-31,1940-05-31,1940-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1940-06-30,1940-06-30,1940-06-30,1940-06-30,1940-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1940-07-31,1940-07-31,1940-07-31,1940-07-31,1940-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1940-08-31,1940-08-31,1940-08-31,1940-08-31,1940-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1940-09-30,1940-09-30,1940-09-30,1940-09-30,1940-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1940-10-31,1940-10-31,1940-10-31,1940-10-31,1940-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1940-11-30,1940-11-30,1940-11-30,1940-11-30,1940-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1940-12-31,1940-12-31,1940-12-31,1940-12-31,1941-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1941-01-31,1941-01-31,1941-01-31,1941-01-31,1941-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1941-02-28,1941-02-28,1941-02-28,1941-02-28,1941-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1941-03-31,1941-03-31,1941-03-31,1941-03-31,1941-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1941-04-30,1941-04-30,1941-04-30,1941-04-30,1941-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1941-05-31,1941-05-31,1941-05-31,1941-05-31,1941-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1941-06-30,1941-06-30,1941-06-30,1941-06-30,1941-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1941-07-31,1941-07-31,1941-07-31,1941-07-31,1941-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1941-08-31,1941-08-31,1941-08-31,1941-08-31,1941-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1941-09-30,1941-09-30,1941-09-30,1941-09-30,1941-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1941-10-31,1941-10-31,1941-10-31,1941-10-31,1941-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1941-11-30,1941-11-30,1941-11-30,1941-11-30,1941-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1941-12-31,1941-12-31,1941-12-31,1941-12-31,1942-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1942-01-31,1942-01-31,1942-01-31,1942-01-31,1942-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1942-02-28,1942-02-28,1942-02-28,1942-02-28,1942-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1942-03-31,1942-03-31,1942-03-31,1942-03-31,1942-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1942-04-30,1942-04-30,1942-04-30,1942-04-30,1942-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1942-05-31,1942-05-31,1942-05-31,1942-05-31,1942-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1942-06-30,1942-06-30,1942-06-30,1942-06-30,1942-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1942-07-31,1942-07-31,1942-07-31,1942-07-31,1942-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1942-08-31,1942-08-31,1942-08-31,1942-08-31,1942-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1942-09-30,1942-09-30,1942-09-30,1942-09-30,1942-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1942-10-31,1942-10-31,1942-10-31,1942-10-31,1942-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1942-11-30,1942-11-30,1942-11-30,1942-11-30,1942-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1942-12-31,1942-12-31,1942-12-31,1942-12-31,1943-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1943-01-31,1943-01-31,1943-01-31,1943-01-31,1943-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1943-02-28,1943-02-28,1943-02-28,1943-02-28,1943-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1943-03-31,1943-03-31,1943-03-31,1943-03-31,1943-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1943-04-30,1943-04-30,1943-04-30,1943-04-30,1943-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1943-05-31,1943-05-31,1943-05-31,1943-05-31,1943-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1943-06-30,1943-06-30,1943-06-30,1943-06-30,1943-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1943-07-31,1943-07-31,1943-07-31,1943-07-31,1943-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1943-08-31,1943-08-31,1943-08-31,1943-08-31,1943-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1943-09-30,1943-09-30,1943-09-30,1943-09-30,1943-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1943-10-31,1943-10-31,1943-10-31,1943-10-31,1943-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1943-11-30,1943-11-30,1943-11-30,1943-11-30,1943-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1943-12-31,1943-12-31,1943-12-31,1943-12-31,1944-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1944-01-31,1944-01-31,1944-01-31,1944-01-31,1944-02-29,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1944-02-29,1944-02-29,1944-02-29,1944-02-29,1944-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1944-03-31,1944-03-31,1944-03-31,1944-03-31,1944-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1944-04-30,1944-04-30,1944-04-30,1944-04-30,1944-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1944-05-31,1944-05-31,1944-05-31,1944-05-31,1944-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1944-06-30,1944-06-30,1944-06-30,1944-06-30,1944-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1944-07-31,1944-07-31,1944-07-31,1944-07-31,1944-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1944-08-31,1944-08-31,1944-08-31,1944-08-31,1944-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1944-09-30,1944-09-30,1944-09-30,1944-09-30,1944-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1944-10-31,1944-10-31,1944-10-31,1944-10-31,1944-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1944-11-30,1944-11-30,1944-11-30,1944-11-30,1944-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1944-12-31,1944-12-31,1944-12-31,1944-12-31,1945-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1945-01-31,1945-01-31,1945-01-31,1945-01-31,1945-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1945-02-28,1945-02-28,1945-02-28,1945-02-28,1945-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1945-03-31,1945-03-31,1945-03-31,1945-03-31,1945-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1945-04-30,1945-04-30,1945-04-30,1945-04-30,1945-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1945-05-31,1945-05-31,1945-05-31,1945-05-31,1945-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1945-06-30,1945-06-30,1945-06-30,1945-06-30,1945-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1945-07-31,1945-07-31,1945-07-31,1945-07-31,1945-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1945-08-31,1945-08-31,1945-08-31,1945-08-31,1945-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1945-09-30,1945-09-30,1945-09-30,1945-09-30,1945-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1945-10-31,1945-10-31,1945-10-31,1945-10-31,1945-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1945-11-30,1945-11-30,1945-11-30,1945-11-30,1945-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1945-12-31,1945-12-31,1945-12-31,1945-12-31,1946-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1946-01-31,1946-01-31,1946-01-31,1946-01-31,1946-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1946-02-28,1946-02-28,1946-02-28,1946-02-28,1946-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1946-03-31,1946-03-31,1946-03-31,1946-03-31,1946-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1946-04-30,1946-04-30,1946-04-30,1946-04-30,1946-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1946-05-31,1946-05-31,1946-05-31,1946-05-31,1946-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1946-06-30,1946-06-30,1946-06-30,1946-06-30,1946-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1946-07-31,1946-07-31,1946-07-31,1946-07-31,1946-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1946-08-31,1946-08-31,1946-08-31,1946-08-31,1946-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1946-09-30,1946-09-30,1946-09-30,1946-09-30,1946-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1946-10-31,1946-10-31,1946-10-31,1946-10-31,1946-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1946-11-30,1946-11-30,1946-11-30,1946-11-30,1946-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1946-12-31,1946-12-31,1946-12-31,1946-12-31,1947-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1947-01-31,1947-01-31,1947-01-31,1947-01-31,1947-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1947-02-28,1947-02-28,1947-02-28,1947-02-28,1947-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1947-03-31,1947-03-31,1947-03-31,1947-03-31,1947-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1947-04-30,1947-04-30,1947-04-30,1947-04-30,1947-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1947-05-31,1947-05-31,1947-05-31,1947-05-31,1947-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1947-06-30,1947-06-30,1947-06-30,1947-06-30,1947-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1947-07-31,1947-07-31,1947-07-31,1947-07-31,1947-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1947-08-31,1947-08-31,1947-08-31,1947-08-31,1947-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1947-09-30,1947-09-30,1947-09-30,1947-09-30,1947-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1947-10-31,1947-10-31,1947-10-31,1947-10-31,1947-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1947-11-30,1947-11-30,1947-11-30,1947-11-30,1947-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1947-12-31,1947-12-31,1947-12-31,1947-12-31,1948-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1948-01-31,1948-01-31,1948-01-31,1948-01-31,1948-02-29,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1948-02-29,1948-02-29,1948-02-29,1948-02-29,1948-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1948-03-31,1948-03-31,1948-03-31,1948-03-31,1948-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1948-04-30,1948-04-30,1948-04-30,1948-04-30,1948-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1948-05-31,1948-05-31,1948-05-31,1948-05-31,1948-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1948-06-30,1948-06-30,1948-06-30,1948-06-30,1948-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1948-07-31,1948-07-31,1948-07-31,1948-07-31,1948-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1948-08-31,1948-08-31,1948-08-31,1948-08-31,1948-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1948-09-30,1948-09-30,1948-09-30,1948-09-30,1948-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1948-10-31,1948-10-31,1948-10-31,1948-10-31,1948-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1948-11-30,1948-11-30,1948-11-30,1948-11-30,1948-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1948-12-31,1948-12-31,1948-12-31,1948-12-31,1949-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1949-01-31,1949-01-31,1949-01-31,1949-01-31,1949-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1949-02-28,1949-02-28,1949-02-28,1949-02-28,1949-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1949-03-31,1949-03-31,1949-03-31,1949-03-31,1949-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1949-04-30,1949-04-30,1949-04-30,1949-04-30,1949-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1949-05-31,1949-05-31,1949-05-31,1949-05-31,1949-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1949-06-30,1949-06-30,1949-06-30,1949-06-30,1949-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1949-07-31,1949-07-31,1949-07-31,1949-07-31,1949-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1949-08-31,1949-08-31,1949-08-31,1949-08-31,1949-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1949-09-30,1949-09-30,1949-09-30,1949-09-30,1949-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1949-10-31,1949-10-31,1949-10-31,1949-10-31,1949-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1949-11-30,1949-11-30,1949-11-30,1949-11-30,1949-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1949-12-31,1949-12-31,1949-12-31,1949-12-31,1950-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1950-01-31,1950-01-31,1950-01-31,1950-01-31,1950-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1950-02-28,1950-02-28,1950-02-28,1950-02-28,1950-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1950-03-31,1950-03-31,1950-03-31,1950-03-31,1950-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1950-04-30,1950-04-30,1950-04-30,1950-04-30,1950-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1950-05-31,1950-05-31,1950-05-31,1950-05-31,1950-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1950-06-30,1950-06-30,1950-06-30,1950-06-30,1950-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1950-07-31,1950-07-31,1950-07-31,1950-07-31,1950-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1950-08-31,1950-08-31,1950-08-31,1950-08-31,1950-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1950-09-30,1950-09-30,1950-09-30,1950-09-30,1950-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1950-10-31,1950-10-31,1950-10-31,1950-10-31,1950-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1950-11-30,1950-11-30,1950-11-30,1950-11-30,1950-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1950-12-31,1950-12-31,1950-12-31,1950-12-31,1951-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1951-01-31,1951-01-31,1951-01-31,1951-01-31,1951-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1951-02-28,1951-02-28,1951-02-28,1951-02-28,1951-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1951-03-31,1951-03-31,1951-03-31,1951-03-31,1951-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1951-04-30,1951-04-30,1951-04-30,1951-04-30,1951-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1951-05-31,1951-05-31,1951-05-31,1951-05-31,1951-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1951-06-30,1951-06-30,1951-06-30,1951-06-30,1951-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1951-07-31,1951-07-31,1951-07-31,1951-07-31,1951-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1951-08-31,1951-08-31,1951-08-31,1951-08-31,1951-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1951-09-30,1951-09-30,1951-09-30,1951-09-30,1951-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1951-10-31,1951-10-31,1951-10-31,1951-10-31,1951-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1951-11-30,1951-11-30,1951-11-30,1951-11-30,1951-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1951-12-31,1951-12-31,1951-12-31,1951-12-31,1952-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1952-01-31,1952-01-31,1952-01-31,1952-01-31,1952-02-29,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1952-02-29,1952-02-29,1952-02-29,1952-02-29,1952-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1952-03-31,1952-03-31,1952-03-31,1952-03-31,1952-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1952-04-30,1952-04-30,1952-04-30,1952-04-30,1952-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1952-05-31,1952-05-31,1952-05-31,1952-05-31,1952-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1952-06-30,1952-06-30,1952-06-30,1952-06-30,1952-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1952-07-31,1952-07-31,1952-07-31,1952-07-31,1952-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1952-08-31,1952-08-31,1952-08-31,1952-08-31,1952-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1952-09-30,1952-09-30,1952-09-30,1952-09-30,1952-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1952-10-31,1952-10-31,1952-10-31,1952-10-31,1952-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1952-11-30,1952-11-30,1952-11-30,1952-11-30,1952-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1952-12-31,1952-12-31,1952-12-31,1952-12-31,1953-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1953-01-31,1953-01-31,1953-01-31,1953-01-31,1953-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1953-02-28,1953-02-28,1953-02-28,1953-02-28,1953-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1953-03-31,1953-03-31,1953-03-31,1953-03-31,1953-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1953-04-30,1953-04-30,1953-04-30,1953-04-30,1953-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1953-05-31,1953-05-31,1953-05-31,1953-05-31,1953-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1953-06-30,1953-06-30,1953-06-30,1953-06-30,1953-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1953-07-31,1953-07-31,1953-07-31,1953-07-31,1953-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1953-08-31,1953-08-31,1953-08-31,1953-08-31,1953-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1953-09-30,1953-09-30,1953-09-30,1953-09-30,1953-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1953-10-31,1953-10-31,1953-10-31,1953-10-31,1953-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1953-11-30,1953-11-30,1953-11-30,1953-11-30,1953-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1953-12-31,1953-12-31,1953-12-31,1953-12-31,1954-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1954-01-31,1954-01-31,1954-01-31,1954-01-31,1954-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1954-02-28,1954-02-28,1954-02-28,1954-02-28,1954-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1954-03-31,1954-03-31,1954-03-31,1954-03-31,1954-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1954-04-30,1954-04-30,1954-04-30,1954-04-30,1954-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1954-05-31,1954-05-31,1954-05-31,1954-05-31,1954-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1954-06-30,1954-06-30,1954-06-30,1954-06-30,1954-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1954-07-31,1954-07-31,1954-07-31,1954-07-31,1954-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1954-08-31,1954-08-31,1954-08-31,1954-08-31,1954-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1954-09-30,1954-09-30,1954-09-30,1954-09-30,1954-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1954-10-31,1954-10-31,1954-10-31,1954-10-31,1954-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1954-11-30,1954-11-30,1954-11-30,1954-11-30,1954-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1954-12-31,1954-12-31,1954-12-31,1954-12-31,1955-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1955-01-31,1955-01-31,1955-01-31,1955-01-31,1955-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1955-02-28,1955-02-28,1955-02-28,1955-02-28,1955-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1955-03-31,1955-03-31,1955-03-31,1955-03-31,1955-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1955-04-30,1955-04-30,1955-04-30,1955-04-30,1955-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1955-05-31,1955-05-31,1955-05-31,1955-05-31,1955-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1955-06-30,1955-06-30,1955-06-30,1955-06-30,1955-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1955-07-31,1955-07-31,1955-07-31,1955-07-31,1955-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1955-08-31,1955-08-31,1955-08-31,1955-08-31,1955-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1955-09-30,1955-09-30,1955-09-30,1955-09-30,1955-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1955-10-31,1955-10-31,1955-10-31,1955-10-31,1955-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1955-11-30,1955-11-30,1955-11-30,1955-11-30,1955-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1955-12-31,1955-12-31,1955-12-31,1955-12-31,1956-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1956-01-31,1956-01-31,1956-01-31,1956-01-31,1956-02-29,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1956-02-29,1956-02-29,1956-02-29,1956-02-29,1956-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1956-03-31,1956-03-31,1956-03-31,1956-03-31,1956-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1956-04-30,1956-04-30,1956-04-30,1956-04-30,1956-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1956-05-31,1956-05-31,1956-05-31,1956-05-31,1956-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1956-06-30,1956-06-30,1956-06-30,1956-06-30,1956-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1956-07-31,1956-07-31,1956-07-31,1956-07-31,1956-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1956-08-31,1956-08-31,1956-08-31,1956-08-31,1956-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1956-09-30,1956-09-30,1956-09-30,1956-09-30,1956-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1956-10-31,1956-10-31,1956-10-31,1956-10-31,1956-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1956-11-30,1956-11-30,1956-11-30,1956-11-30,1956-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1956-12-31,1956-12-31,1956-12-31,1956-12-31,1957-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1957-01-31,1957-01-31,1957-01-31,1957-01-31,1957-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1957-02-28,1957-02-28,1957-02-28,1957-02-28,1957-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1957-03-31,1957-03-31,1957-03-31,1957-03-31,1957-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1957-04-30,1957-04-30,1957-04-30,1957-04-30,1957-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1957-05-31,1957-05-31,1957-05-31,1957-05-31,1957-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1957-06-30,1957-06-30,1957-06-30,1957-06-30,1957-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1957-07-31,1957-07-31,1957-07-31,1957-07-31,1957-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1957-08-31,1957-08-31,1957-08-31,1957-08-31,1957-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1957-09-30,1957-09-30,1957-09-30,1957-09-30,1957-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1957-10-31,1957-10-31,1957-10-31,1957-10-31,1957-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1957-11-30,1957-11-30,1957-11-30,1957-11-30,1957-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1957-12-31,1957-12-31,1957-12-31,1957-12-31,1958-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1958-01-31,1958-01-31,1958-01-31,1958-01-31,1958-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1958-02-28,1958-02-28,1958-02-28,1958-02-28,1958-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1958-03-31,1958-03-31,1958-03-31,1958-03-31,1958-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1958-04-30,1958-04-30,1958-04-30,1958-04-30,1958-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1958-05-31,1958-05-31,1958-05-31,1958-05-31,1958-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1958-06-30,1958-06-30,1958-06-30,1958-06-30,1958-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1958-07-31,1958-07-31,1958-07-31,1958-07-31,1958-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1958-08-31,1958-08-31,1958-08-31,1958-08-31,1958-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1958-09-30,1958-09-30,1958-09-30,1958-09-30,1958-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1958-10-31,1958-10-31,1958-10-31,1958-10-31,1958-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1958-11-30,1958-11-30,1958-11-30,1958-11-30,1958-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1958-12-31,1958-12-31,1958-12-31,1958-12-31,1959-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1959-01-31,1959-01-31,1959-01-31,1959-01-31,1959-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1959-02-28,1959-02-28,1959-02-28,1959-02-28,1959-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1959-03-31,1959-03-31,1959-03-31,1959-03-31,1959-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1959-04-30,1959-04-30,1959-04-30,1959-04-30,1959-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1959-05-31,1959-05-31,1959-05-31,1959-05-31,1959-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1959-06-30,1959-06-30,1959-06-30,1959-06-30,1959-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1959-07-31,1959-07-31,1959-07-31,1959-07-31,1959-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1959-08-31,1959-08-31,1959-08-31,1959-08-31,1959-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1959-09-30,1959-09-30,1959-09-30,1959-09-30,1959-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1959-10-31,1959-10-31,1959-10-31,1959-10-31,1959-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1959-11-30,1959-11-30,1959-11-30,1959-11-30,1959-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1959-12-31,1959-12-31,1959-12-31,1959-12-31,1960-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1960-01-31,1960-01-31,1960-01-31,1960-01-31,1960-02-29,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1960-02-29,1960-02-29,1960-02-29,1960-02-29,1960-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1960-03-31,1960-03-31,1960-03-31,1960-03-31,1960-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1960-04-30,1960-04-30,1960-04-30,1960-04-30,1960-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1960-05-31,1960-05-31,1960-05-31,1960-05-31,1960-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1960-06-30,1960-06-30,1960-06-30,1960-06-30,1960-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1960-07-31,1960-07-31,1960-07-31,1960-07-31,1960-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1960-08-31,1960-08-31,1960-08-31,1960-08-31,1960-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1960-09-30,1960-09-30,1960-09-30,1960-09-30,1960-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1960-10-31,1960-10-31,1960-10-31,1960-10-31,1960-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1960-11-30,1960-11-30,1960-11-30,1960-11-30,1960-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1960-12-31,1960-12-31,1960-12-31,1960-12-31,1961-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1961-01-31,1961-01-31,1961-01-31,1961-01-31,1961-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1961-02-28,1961-02-28,1961-02-28,1961-02-28,1961-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1961-03-31,1961-03-31,1961-03-31,1961-03-31,1961-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1961-04-30,1961-04-30,1961-04-30,1961-04-30,1961-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1961-05-31,1961-05-31,1961-05-31,1961-05-31,1961-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1961-06-30,1961-06-30,1961-06-30,1961-06-30,1961-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1961-07-31,1961-07-31,1961-07-31,1961-07-31,1961-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1961-08-31,1961-08-31,1961-08-31,1961-08-31,1961-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1961-09-30,1961-09-30,1961-09-30,1961-09-30,1961-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1961-10-31,1961-10-31,1961-10-31,1961-10-31,1961-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1961-11-30,1961-11-30,1961-11-30,1961-11-30,1961-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1961-12-31,1961-12-31,1961-12-31,1961-12-31,1962-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1962-01-31,1962-01-31,1962-01-31,1962-01-31,1962-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1962-02-28,1962-02-28,1962-02-28,1962-02-28,1962-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1962-03-31,1962-03-31,1962-03-31,1962-03-31,1962-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1962-04-30,1962-04-30,1962-04-30,1962-04-30,1962-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1962-05-31,1962-05-31,1962-05-31,1962-05-31,1962-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1962-06-30,1962-06-30,1962-06-30,1962-06-30,1962-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1962-07-31,1962-07-31,1962-07-31,1962-07-31,1962-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1962-08-31,1962-08-31,1962-08-31,1962-08-31,1962-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1962-09-30,1962-09-30,1962-09-30,1962-09-30,1962-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1962-10-31,1962-10-31,1962-10-31,1962-10-31,1962-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1962-11-30,1962-11-30,1962-11-30,1962-11-30,1962-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1962-12-31,1962-12-31,1962-12-31,1962-12-31,1963-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1963-01-31,1963-01-31,1963-01-31,1963-01-31,1963-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1963-02-28,1963-02-28,1963-02-28,1963-02-28,1963-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1963-03-31,1963-03-31,1963-03-31,1963-03-31,1963-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1963-04-30,1963-04-30,1963-04-30,1963-04-30,1963-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1963-05-31,1963-05-31,1963-05-31,1963-05-31,1963-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1963-06-30,1963-06-30,1963-06-30,1963-06-30,1963-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1963-07-31,1963-07-31,1963-07-31,1963-07-31,1963-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1963-08-31,1963-08-31,1963-08-31,1963-08-31,1963-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1963-09-30,1963-09-30,1963-09-30,1963-09-30,1963-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1963-10-31,1963-10-31,1963-10-31,1963-10-31,1963-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1963-11-30,1963-11-30,1963-11-30,1963-11-30,1963-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1963-12-31,1963-12-31,1963-12-31,1963-12-31,1964-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1964-01-31,1964-01-31,1964-01-31,1964-01-31,1964-02-29,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1964-02-29,1964-02-29,1964-02-29,1964-02-29,1964-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1964-03-31,1964-03-31,1964-03-31,1964-03-31,1964-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1964-04-30,1964-04-30,1964-04-30,1964-04-30,1964-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1964-05-31,1964-05-31,1964-05-31,1964-05-31,1964-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1964-06-30,1964-06-30,1964-06-30,1964-06-30,1964-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1964-07-31,1964-07-31,1964-07-31,1964-07-31,1964-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1964-08-31,1964-08-31,1964-08-31,1964-08-31,1964-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1964-09-30,1964-09-30,1964-09-30,1964-09-30,1964-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1964-10-31,1964-10-31,1964-10-31,1964-10-31,1964-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1964-11-30,1964-11-30,1964-11-30,1964-11-30,1964-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1964-12-31,1964-12-31,1964-12-31,1964-12-31,1965-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1965-01-31,1965-01-31,1965-01-31,1965-01-31,1965-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1965-02-28,1965-02-28,1965-02-28,1965-02-28,1965-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1965-03-31,1965-03-31,1965-03-31,1965-03-31,1965-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1965-04-30,1965-04-30,1965-04-30,1965-04-30,1965-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1965-05-31,1965-05-31,1965-05-31,1965-05-31,1965-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1965-06-30,1965-06-30,1965-06-30,1965-06-30,1965-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1965-07-31,1965-07-31,1965-07-31,1965-07-31,1965-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1965-08-31,1965-08-31,1965-08-31,1965-08-31,1965-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1965-09-30,1965-09-30,1965-09-30,1965-09-30,1965-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1965-10-31,1965-10-31,1965-10-31,1965-10-31,1965-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1965-11-30,1965-11-30,1965-11-30,1965-11-30,1965-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1965-12-31,1965-12-31,1965-12-31,1965-12-31,1966-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1966-01-31,1966-01-31,1966-01-31,1966-01-31,1966-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1966-02-28,1966-02-28,1966-02-28,1966-02-28,1966-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1966-03-31,1966-03-31,1966-03-31,1966-03-31,1966-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1966-04-30,1966-04-30,1966-04-30,1966-04-30,1966-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1966-05-31,1966-05-31,1966-05-31,1966-05-31,1966-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1966-06-30,1966-06-30,1966-06-30,1966-06-30,1966-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1966-07-31,1966-07-31,1966-07-31,1966-07-31,1966-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1966-08-31,1966-08-31,1966-08-31,1966-08-31,1966-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1966-09-30,1966-09-30,1966-09-30,1966-09-30,1966-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1966-10-31,1966-10-31,1966-10-31,1966-10-31,1966-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1966-11-30,1966-11-30,1966-11-30,1966-11-30,1966-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1966-12-31,1966-12-31,1966-12-31,1966-12-31,1967-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1967-01-31,1967-01-31,1967-01-31,1967-01-31,1967-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1967-02-28,1967-02-28,1967-02-28,1967-02-28,1967-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1967-03-31,1967-03-31,1967-03-31,1967-03-31,1967-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1967-04-30,1967-04-30,1967-04-30,1967-04-30,1967-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1967-05-31,1967-05-31,1967-05-31,1967-05-31,1967-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1967-06-30,1967-06-30,1967-06-30,1967-06-30,1967-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1967-07-31,1967-07-31,1967-07-31,1967-07-31,1967-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1967-08-31,1967-08-31,1967-08-31,1967-08-31,1967-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1967-09-30,1967-09-30,1967-09-30,1967-09-30,1967-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1967-10-31,1967-10-31,1967-10-31,1967-10-31,1967-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1967-11-30,1967-11-30,1967-11-30,1967-11-30,1967-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1967-12-31,1967-12-31,1967-12-31,1967-12-31,1968-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1968-01-31,1968-01-31,1968-01-31,1968-01-31,1968-02-29,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1968-02-29,1968-02-29,1968-02-29,1968-02-29,1968-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1968-03-31,1968-03-31,1968-03-31,1968-03-31,1968-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1968-04-30,1968-04-30,1968-04-30,1968-04-30,1968-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1968-05-31,1968-05-31,1968-05-31,1968-05-31,1968-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1968-06-30,1968-06-30,1968-06-30,1968-06-30,1968-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1968-07-31,1968-07-31,1968-07-31,1968-07-31,1968-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1968-08-31,1968-08-31,1968-08-31,1968-08-31,1968-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1968-09-30,1968-09-30,1968-09-30,1968-09-30,1968-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1968-10-31,1968-10-31,1968-10-31,1968-10-31,1968-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1968-11-30,1968-11-30,1968-11-30,1968-11-30,1968-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1968-12-31,1968-12-31,1968-12-31,1968-12-31,1969-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1969-01-31,1969-01-31,1969-01-31,1969-01-31,1969-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1969-02-28,1969-02-28,1969-02-28,1969-02-28,1969-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1969-03-31,1969-03-31,1969-03-31,1969-03-31,1969-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1969-04-30,1969-04-30,1969-04-30,1969-04-30,1969-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1969-05-31,1969-05-31,1969-05-31,1969-05-31,1969-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1969-06-30,1969-06-30,1969-06-30,1969-06-30,1969-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1969-07-31,1969-07-31,1969-07-31,1969-07-31,1969-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1969-08-31,1969-08-31,1969-08-31,1969-08-31,1969-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1969-09-30,1969-09-30,1969-09-30,1969-09-30,1969-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1969-10-31,1969-10-31,1969-10-31,1969-10-31,1969-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1969-11-30,1969-11-30,1969-11-30,1969-11-30,1969-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1969-12-31,1969-12-31,1969-12-31,1969-12-31,1970-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1970-01-31,1970-01-31,1970-01-31,1970-01-31,1970-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1970-02-28,1970-02-28,1970-02-28,1970-02-28,1970-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1970-03-31,1970-03-31,1970-03-31,1970-03-31,1970-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1970-04-30,1970-04-30,1970-04-30,1970-04-30,1970-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1970-05-31,1970-05-31,1970-05-31,1970-05-31,1970-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1970-06-30,1970-06-30,1970-06-30,1970-06-30,1970-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1970-07-31,1970-07-31,1970-07-31,1970-07-31,1970-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1970-08-31,1970-08-31,1970-08-31,1970-08-31,1970-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1970-09-30,1970-09-30,1970-09-30,1970-09-30,1970-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1970-10-31,1970-10-31,1970-10-31,1970-10-31,1970-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1970-11-30,1970-11-30,1970-11-30,1970-11-30,1970-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1970-12-31,1970-12-31,1970-12-31,1970-12-31,1971-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1971-01-31,1971-01-31,1971-01-31,1971-01-31,1971-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1971-02-28,1971-02-28,1971-02-28,1971-02-28,1971-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1971-03-31,1971-03-31,1971-03-31,1971-03-31,1971-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1971-04-30,1971-04-30,1971-04-30,1971-04-30,1971-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1971-05-31,1971-05-31,1971-05-31,1971-05-31,1971-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1971-06-30,1971-06-30,1971-06-30,1971-06-30,1971-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1971-07-31,1971-07-31,1971-07-31,1971-07-31,1971-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1971-08-31,1971-08-31,1971-08-31,1971-08-31,1971-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1971-09-30,1971-09-30,1971-09-30,1971-09-30,1971-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1971-10-31,1971-10-31,1971-10-31,1971-10-31,1971-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1971-11-30,1971-11-30,1971-11-30,1971-11-30,1971-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1971-12-31,1971-12-31,1971-12-31,1971-12-31,1972-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1972-01-31,1972-01-31,1972-01-31,1972-01-31,1972-02-29,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1972-02-29,1972-02-29,1972-02-29,1972-02-29,1972-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1972-03-31,1972-03-31,1972-03-31,1972-03-31,1972-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1972-04-30,1972-04-30,1972-04-30,1972-04-30,1972-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1972-05-31,1972-05-31,1972-05-31,1972-05-31,1972-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1972-06-30,1972-06-30,1972-06-30,1972-06-30,1972-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1972-07-31,1972-07-31,1972-07-31,1972-07-31,1972-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1972-08-31,1972-08-31,1972-08-31,1972-08-31,1972-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1972-09-30,1972-09-30,1972-09-30,1972-09-30,1972-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1972-10-31,1972-10-31,1972-10-31,1972-10-31,1972-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1972-11-30,1972-11-30,1972-11-30,1972-11-30,1972-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1972-12-31,1972-12-31,1972-12-31,1972-12-31,1973-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1973-01-31,1973-01-31,1973-01-31,1973-01-31,1973-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1973-02-28,1973-02-28,1973-02-28,1973-02-28,1973-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1973-03-31,1973-03-31,1973-03-31,1973-03-31,1973-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1973-04-30,1973-04-30,1973-04-30,1973-04-30,1973-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1973-05-31,1973-05-31,1973-05-31,1973-05-31,1973-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1973-06-30,1973-06-30,1973-06-30,1973-06-30,1973-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1973-07-31,1973-07-31,1973-07-31,1973-07-31,1973-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1973-08-31,1973-08-31,1973-08-31,1973-08-31,1973-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1973-09-30,1973-09-30,1973-09-30,1973-09-30,1973-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1973-10-31,1973-10-31,1973-10-31,1973-10-31,1973-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1973-11-30,1973-11-30,1973-11-30,1973-11-30,1973-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1973-12-31,1973-12-31,1973-12-31,1973-12-31,1974-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1974-01-31,1974-01-31,1974-01-31,1974-01-31,1974-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1974-02-28,1974-02-28,1974-02-28,1974-02-28,1974-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1974-03-31,1974-03-31,1974-03-31,1974-03-31,1974-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1974-04-30,1974-04-30,1974-04-30,1974-04-30,1974-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1974-05-31,1974-05-31,1974-05-31,1974-05-31,1974-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1974-06-30,1974-06-30,1974-06-30,1974-06-30,1974-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1974-07-31,1974-07-31,1974-07-31,1974-07-31,1974-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1974-08-31,1974-08-31,1974-08-31,1974-08-31,1974-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1974-09-30,1974-09-30,1974-09-30,1974-09-30,1974-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1974-10-31,1974-10-31,1974-10-31,1974-10-31,1974-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1974-11-30,1974-11-30,1974-11-30,1974-11-30,1974-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1974-12-31,1974-12-31,1974-12-31,1974-12-31,1975-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1975-01-31,1975-01-31,1975-01-31,1975-01-31,1975-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1975-02-28,1975-02-28,1975-02-28,1975-02-28,1975-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1975-03-31,1975-03-31,1975-03-31,1975-03-31,1975-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1975-04-30,1975-04-30,1975-04-30,1975-04-30,1975-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1975-05-31,1975-05-31,1975-05-31,1975-05-31,1975-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1975-06-30,1975-06-30,1975-06-30,1975-06-30,1975-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1975-07-31,1975-07-31,1975-07-31,1975-07-31,1975-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1975-08-31,1975-08-31,1975-08-31,1975-08-31,1975-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1975-09-30,1975-09-30,1975-09-30,1975-09-30,1975-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1975-10-31,1975-10-31,1975-10-31,1975-10-31,1975-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1975-11-30,1975-11-30,1975-11-30,1975-11-30,1975-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1975-12-31,1975-12-31,1975-12-31,1975-12-31,1976-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1976-01-31,1976-01-31,1976-01-31,1976-01-31,1976-02-29,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1976-02-29,1976-02-29,1976-02-29,1976-02-29,1976-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1976-03-31,1976-03-31,1976-03-31,1976-03-31,1976-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1976-04-30,1976-04-30,1976-04-30,1976-04-30,1976-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1976-05-31,1976-05-31,1976-05-31,1976-05-31,1976-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1976-06-30,1976-06-30,1976-06-30,1976-06-30,1976-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1976-07-31,1976-07-31,1976-07-31,1976-07-31,1976-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1976-08-31,1976-08-31,1976-08-31,1976-08-31,1976-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1976-09-30,1976-09-30,1976-09-30,1976-09-30,1976-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1976-10-31,1976-10-31,1976-10-31,1976-10-31,1976-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1976-11-30,1976-11-30,1976-11-30,1976-11-30,1976-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1976-12-31,1976-12-31,1976-12-31,1976-12-31,1977-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1977-01-31,1977-01-31,1977-01-31,1977-01-31,1977-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1977-02-28,1977-02-28,1977-02-28,1977-02-28,1977-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1977-03-31,1977-03-31,1977-03-31,1977-03-31,1977-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1977-04-30,1977-04-30,1977-04-30,1977-04-30,1977-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1977-05-31,1977-05-31,1977-05-31,1977-05-31,1977-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1977-06-30,1977-06-30,1977-06-30,1977-06-30,1977-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1977-07-31,1977-07-31,1977-07-31,1977-07-31,1977-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1977-08-31,1977-08-31,1977-08-31,1977-08-31,1977-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1977-09-30,1977-09-30,1977-09-30,1977-09-30,1977-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1977-10-31,1977-10-31,1977-10-31,1977-10-31,1977-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1977-11-30,1977-11-30,1977-11-30,1977-11-30,1977-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1977-12-31,1977-12-31,1977-12-31,1977-12-31,1978-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1978-01-31,1978-01-31,1978-01-31,1978-01-31,1978-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1978-02-28,1978-02-28,1978-02-28,1978-02-28,1978-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1978-03-31,1978-03-31,1978-03-31,1978-03-31,1978-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1978-04-30,1978-04-30,1978-04-30,1978-04-30,1978-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1978-05-31,1978-05-31,1978-05-31,1978-05-31,1978-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1978-06-30,1978-06-30,1978-06-30,1978-06-30,1978-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1978-07-31,1978-07-31,1978-07-31,1978-07-31,1978-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1978-08-31,1978-08-31,1978-08-31,1978-08-31,1978-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1978-09-30,1978-09-30,1978-09-30,1978-09-30,1978-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1978-10-31,1978-10-31,1978-10-31,1978-10-31,1978-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1978-11-30,1978-11-30,1978-11-30,1978-11-30,1978-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1978-12-31,1978-12-31,1978-12-31,1978-12-31,1979-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1979-01-31,1979-01-31,1979-01-31,1979-01-31,1979-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1979-02-28,1979-02-28,1979-02-28,1979-02-28,1979-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1979-03-31,1979-03-31,1979-03-31,1979-03-31,1979-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1979-04-30,1979-04-30,1979-04-30,1979-04-30,1979-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1979-05-31,1979-05-31,1979-05-31,1979-05-31,1979-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1979-06-30,1979-06-30,1979-06-30,1979-06-30,1979-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1979-07-31,1979-07-31,1979-07-31,1979-07-31,1979-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1979-08-31,1979-08-31,1979-08-31,1979-08-31,1979-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1979-09-30,1979-09-30,1979-09-30,1979-09-30,1979-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1979-10-31,1979-10-31,1979-10-31,1979-10-31,1979-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1979-11-30,1979-11-30,1979-11-30,1979-11-30,1979-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1979-12-31,1979-12-31,1979-12-31,1979-12-31,1980-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1980-01-31,1980-01-31,1980-01-31,1980-01-31,1980-02-29,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1980-02-29,1980-02-29,1980-02-29,1980-02-29,1980-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1980-03-31,1980-03-31,1980-03-31,1980-03-31,1980-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1980-04-30,1980-04-30,1980-04-30,1980-04-30,1980-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1980-05-31,1980-05-31,1980-05-31,1980-05-31,1980-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1980-06-30,1980-06-30,1980-06-30,1980-06-30,1980-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1980-07-31,1980-07-31,1980-07-31,1980-07-31,1980-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1980-08-31,1980-08-31,1980-08-31,1980-08-31,1980-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1980-09-30,1980-09-30,1980-09-30,1980-09-30,1980-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1980-10-31,1980-10-31,1980-10-31,1980-10-31,1980-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1980-11-30,1980-11-30,1980-11-30,1980-11-30,1980-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1980-12-31,1980-12-31,1980-12-31,1980-12-31,1981-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1981-01-31,1981-01-31,1981-01-31,1981-01-31,1981-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1981-02-28,1981-02-28,1981-02-28,1981-02-28,1981-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1981-03-31,1981-03-31,1981-03-31,1981-03-31,1981-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1981-04-30,1981-04-30,1981-04-30,1981-04-30,1981-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1981-05-31,1981-05-31,1981-05-31,1981-05-31,1981-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1981-06-30,1981-06-30,1981-06-30,1981-06-30,1981-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1981-07-31,1981-07-31,1981-07-31,1981-07-31,1981-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1981-08-31,1981-08-31,1981-08-31,1981-08-31,1981-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1981-09-30,1981-09-30,1981-09-30,1981-09-30,1981-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1981-10-31,1981-10-31,1981-10-31,1981-10-31,1981-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1981-11-30,1981-11-30,1981-11-30,1981-11-30,1981-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1981-12-31,1981-12-31,1981-12-31,1981-12-31,1982-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1982-01-31,1982-01-31,1982-01-31,1982-01-31,1982-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1982-02-28,1982-02-28,1982-02-28,1982-02-28,1982-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1982-03-31,1982-03-31,1982-03-31,1982-03-31,1982-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1982-04-30,1982-04-30,1982-04-30,1982-04-30,1982-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1982-05-31,1982-05-31,1982-05-31,1982-05-31,1982-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1982-06-30,1982-06-30,1982-06-30,1982-06-30,1982-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1982-07-31,1982-07-31,1982-07-31,1982-07-31,1982-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1982-08-31,1982-08-31,1982-08-31,1982-08-31,1982-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1982-09-30,1982-09-30,1982-09-30,1982-09-30,1982-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1982-10-31,1982-10-31,1982-10-31,1982-10-31,1982-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1982-11-30,1982-11-30,1982-11-30,1982-11-30,1982-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1982-12-31,1982-12-31,1982-12-31,1982-12-31,1983-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1983-01-31,1983-01-31,1983-01-31,1983-01-31,1983-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1983-02-28,1983-02-28,1983-02-28,1983-02-28,1983-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1983-03-31,1983-03-31,1983-03-31,1983-03-31,1983-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1983-04-30,1983-04-30,1983-04-30,1983-04-30,1983-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1983-05-31,1983-05-31,1983-05-31,1983-05-31,1983-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1983-06-30,1983-06-30,1983-06-30,1983-06-30,1983-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1983-07-31,1983-07-31,1983-07-31,1983-07-31,1983-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1983-08-31,1983-08-31,1983-08-31,1983-08-31,1983-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1983-09-30,1983-09-30,1983-09-30,1983-09-30,1983-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1983-10-31,1983-10-31,1983-10-31,1983-10-31,1983-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1983-11-30,1983-11-30,1983-11-30,1983-11-30,1983-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1983-12-31,1983-12-31,1983-12-31,1983-12-31,1984-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return, hurdle_return",,,,
+1984-01-31,1984-01-31,1984-01-31,1984-01-31,1984-02-29,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1204716362
+1984-02-29,1984-02-29,1984-02-29,1984-02-29,1984-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1203328724
+1984-03-31,1984-03-31,1984-03-31,1984-03-31,1984-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.120471642
+1984-04-30,1984-04-30,1984-04-30,1984-04-30,1984-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1202403116
+1984-05-31,1984-05-31,1984-05-31,1984-05-31,1984-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1201940456
+1984-06-30,1984-06-30,1984-06-30,1984-06-30,1984-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1204715274
+1984-07-31,1984-07-31,1984-07-31,1984-07-31,1984-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1226452246
+1984-08-31,1984-08-31,1984-08-31,1984-08-31,1984-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1248694773
+1984-09-30,1984-09-30,1984-09-30,1984-09-30,1984-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1270983208
+1984-10-31,1984-10-31,1984-10-31,1984-10-31,1984-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1284001422
+1984-11-30,1984-11-30,1984-11-30,1984-11-30,1984-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1277020188
+1984-12-31,1984-12-31,1984-12-31,1984-12-31,1985-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1270508937
+1985-01-31,1985-01-31,1985-01-31,1985-01-31,1985-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.126911367
+1985-02-28,1985-02-28,1985-02-28,1985-02-28,1985-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.128911994
+1985-03-31,1985-03-31,1985-03-31,1985-03-31,1985-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1312422421
+1985-04-30,1985-04-30,1985-04-30,1985-04-30,1985-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.13413891
+1985-05-31,1985-05-31,1985-05-31,1985-05-31,1985-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1371086939
+1985-06-30,1985-06-30,1985-06-30,1985-06-30,1985-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1416612588
+1985-07-31,1985-07-31,1985-07-31,1985-07-31,1985-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1443891303
+1985-08-31,1985-08-31,1985-08-31,1985-08-31,1985-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1455205552
+1985-09-30,1985-09-30,1985-09-30,1985-09-30,1985-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1464644192
+1985-10-31,1985-10-31,1985-10-31,1985-10-31,1985-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1478059763
+1985-11-30,1985-11-30,1985-11-30,1985-11-30,1985-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1502408598
+1985-12-31,1985-12-31,1985-12-31,1985-12-31,1986-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1512946025
+1986-01-31,1986-01-31,1986-01-31,1986-01-31,1986-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1519693191
+1986-02-28,1986-02-28,1986-02-28,1986-02-28,1986-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1505735106
+1986-03-31,1986-03-31,1986-03-31,1986-03-31,1986-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1481560406
+1986-04-30,1986-04-30,1986-04-30,1986-04-30,1986-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1451762741
+1986-05-31,1986-05-31,1986-05-31,1986-05-31,1986-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1418080254
+1986-06-30,1986-06-30,1986-06-30,1986-06-30,1986-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1358466844
+1986-07-31,1986-07-31,1986-07-31,1986-07-31,1986-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1294793702
+1986-08-31,1986-08-31,1986-08-31,1986-08-31,1986-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1242547321
+1986-09-30,1986-09-30,1986-09-30,1986-09-30,1986-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1192566046
+1986-10-31,1986-10-31,1986-10-31,1986-10-31,1986-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1134803075
+1986-11-30,1986-11-30,1986-11-30,1986-11-30,1986-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1083351145
+1986-12-31,1986-12-31,1986-12-31,1986-12-31,1987-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1049171477
+1987-01-31,1987-01-31,1987-01-31,1987-01-31,1987-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1021553334
+1987-02-28,1987-02-28,1987-02-28,1987-02-28,1987-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1007636887
+1987-03-31,1987-03-31,1987-03-31,1987-03-31,1987-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1004910199
+1987-04-30,1987-04-30,1987-04-30,1987-04-30,1987-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1001546729
+1987-05-31,1987-05-31,1987-05-31,1987-05-31,1987-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.09927287652
+1987-06-30,1987-06-30,1987-06-30,1987-06-30,1987-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.09860962402
+1987-07-31,1987-07-31,1987-07-31,1987-07-31,1987-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.09751081461
+1987-08-31,1987-08-31,1987-08-31,1987-08-31,1987-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.09715687547
+1987-09-30,1987-09-30,1987-09-30,1987-09-30,1987-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.09702077993
+1987-10-31,1987-10-31,1987-10-31,1987-10-31,1987-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.09735660725
+1987-11-30,1987-11-30,1987-11-30,1987-11-30,1987-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.09809213747
+1987-12-31,1987-12-31,1987-12-31,1987-12-31,1988-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.09824653993
+1988-01-31,1988-01-31,1988-01-31,1988-01-31,1988-02-29,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.09811030134
+1988-02-29,1988-02-29,1988-02-29,1988-02-29,1988-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.09719384835
+1988-03-31,1988-03-31,1988-03-31,1988-03-31,1988-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.09582552765
+1988-04-30,1988-04-30,1988-04-30,1988-04-30,1988-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.09525508229
+1988-05-31,1988-05-31,1988-05-31,1988-05-31,1988-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.0967676779
+1988-06-30,1988-06-30,1988-06-30,1988-06-30,1988-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.09777449425
+1988-07-31,1988-07-31,1988-07-31,1988-07-31,1988-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.09939131297
+1988-08-31,1988-08-31,1988-08-31,1988-08-31,1988-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1007826713
+1988-09-30,1988-09-30,1988-09-30,1988-09-30,1988-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1020390439
+1988-10-31,1988-10-31,1988-10-31,1988-10-31,1988-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1033698548
+1988-11-30,1988-11-30,1988-11-30,1988-11-30,1988-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1045833819
+1988-12-31,1988-12-31,1988-12-31,1988-12-31,1989-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1059170777
+1989-01-31,1989-01-31,1989-01-31,1989-01-31,1989-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1071245007
+1989-02-28,1989-02-28,1989-02-28,1989-02-28,1989-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.108214055
+1989-03-31,1989-03-31,1989-03-31,1989-03-31,1989-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1100102325
+1989-04-30,1989-04-30,1989-04-30,1989-04-30,1989-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1117354468
+1989-05-31,1989-05-31,1989-05-31,1989-05-31,1989-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1123689405
+1989-06-30,1989-06-30,1989-06-30,1989-06-30,1989-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1135821531
+1989-07-31,1989-07-31,1989-07-31,1989-07-31,1989-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1148794232
+1989-08-31,1989-08-31,1989-08-31,1989-08-31,1989-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1161688655
+1989-09-30,1989-09-30,1989-09-30,1989-09-30,1989-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1172477082
+1989-10-31,1989-10-31,1989-10-31,1989-10-31,1989-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1184845002
+1989-11-30,1989-11-30,1989-11-30,1989-11-30,1989-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1196393867
+1989-12-31,1989-12-31,1989-12-31,1989-12-31,1990-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1208509075
+1990-01-31,1990-01-31,1990-01-31,1990-01-31,1990-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1227030179
+1990-02-28,1990-02-28,1990-02-28,1990-02-28,1990-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1249477189
+1990-03-31,1990-03-31,1990-03-31,1990-03-31,1990-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1282912168
+1990-04-30,1990-04-30,1990-04-30,1990-04-30,1990-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1311038423
+1990-05-31,1990-05-31,1990-05-31,1990-05-31,1990-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1328402821
+1990-06-30,1990-06-30,1990-06-30,1990-06-30,1990-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.134055776
+1990-07-31,1990-07-31,1990-07-31,1990-07-31,1990-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1347763996
+1990-08-31,1990-08-31,1990-08-31,1990-08-31,1990-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1354599604
+1990-09-30,1990-09-30,1990-09-30,1990-09-30,1990-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1368187826
+1990-10-31,1990-10-31,1990-10-31,1990-10-31,1990-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1380195616
+1990-11-30,1990-11-30,1990-11-30,1990-11-30,1990-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.14144719
+1990-12-31,1990-12-31,1990-12-31,1990-12-31,1991-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1446022843
+1991-01-31,1991-01-31,1991-01-31,1991-01-31,1991-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1460467859
+1991-02-28,1991-02-28,1991-02-28,1991-02-28,1991-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1460089875
+1991-03-31,1991-03-31,1991-03-31,1991-03-31,1991-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.143282753
+1991-04-30,1991-04-30,1991-04-30,1991-04-30,1991-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1411458639
+1991-05-31,1991-05-31,1991-05-31,1991-05-31,1991-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1401678329
+1991-06-30,1991-06-30,1991-06-30,1991-06-30,1991-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1384945715
+1991-07-31,1991-07-31,1991-07-31,1991-07-31,1991-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1367199723
+1991-08-31,1991-08-31,1991-08-31,1991-08-31,1991-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1349482415
+1991-09-30,1991-09-30,1991-09-30,1991-09-30,1991-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1325812322
+1991-10-31,1991-10-31,1991-10-31,1991-10-31,1991-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1299764167
+1991-11-30,1991-11-30,1991-11-30,1991-11-30,1991-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1256257054
+1991-12-31,1991-12-31,1991-12-31,1991-12-31,1992-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1224117754
+1992-01-31,1992-01-31,1992-01-31,1992-01-31,1992-02-29,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1219309584
+1992-02-29,1992-02-29,1992-02-29,1992-02-29,1992-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1214221504
+1992-03-31,1992-03-31,1992-03-31,1992-03-31,1992-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1213758856
+1992-04-30,1992-04-30,1992-04-30,1992-04-30,1992-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1208301049
+1992-05-31,1992-05-31,1992-05-31,1992-05-31,1992-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1204140958
+1992-06-30,1992-06-30,1992-06-30,1992-06-30,1992-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1207193807
+1992-07-31,1992-07-31,1992-07-31,1992-07-31,1992-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1216636199
+1992-08-31,1992-08-31,1992-08-31,1992-08-31,1992-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1233775545
+1992-09-30,1992-09-30,1992-09-30,1992-09-30,1992-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1273956821
+1992-10-31,1992-10-31,1992-10-31,1992-10-31,1992-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1345588658
+1992-11-30,1992-11-30,1992-11-30,1992-11-30,1992-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1364141593
+1992-12-31,1992-12-31,1992-12-31,1992-12-31,1993-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1361703419
+1993-01-31,1993-01-31,1993-01-31,1993-01-31,1993-02-28,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1328368165
+1993-02-28,1993-02-28,1993-02-28,1993-02-28,1993-03-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1307061065
+1993-03-31,1993-03-31,1993-03-31,1993-03-31,1993-04-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1285695477
+1993-04-30,1993-04-30,1993-04-30,1993-04-30,1993-05-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1271071875
+1993-05-31,1993-05-31,1993-05-31,1993-05-31,1993-06-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1244753239
+1993-06-30,1993-06-30,1993-06-30,1993-06-30,1993-07-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1216535773
+1993-07-31,1993-07-31,1993-07-31,1993-07-31,1993-08-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1184783699
+1993-08-31,1993-08-31,1993-08-31,1993-08-31,1993-09-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.1143182974
+1993-09-30,1993-09-30,1993-09-30,1993-09-30,1993-10-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.107696042
+1993-10-31,1993-10-31,1993-10-31,1993-10-31,1993-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.09829244836
+1993-11-30,1993-11-30,1993-11-30,1993-11-30,1993-12-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.09327551221
+1993-12-31,1993-12-31,1993-12-31,1993-12-31,1994-01-31,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.08922393736
+1994-01-31,1994-01-31,1994-01-31,1994-01-31,1994-02-28,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.2535354327,0.494826731,1.083702872,0.08657695573
+1994-02-28,1994-02-28,1994-02-28,1994-02-28,1994-03-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1362086003,0.3291763986,0.859008444,0.08394567088
+1994-03-31,1994-03-31,1994-03-31,1994-03-31,1994-04-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.03958042727,0.2049492335,0.5658046357,0.08157099452
+1994-04-30,1994-04-30,1994-04-30,1994-04-30,1994-05-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1288477472,0.2831109827,0.565070144,0.07892532101
+1994-05-31,1994-05-31,1994-05-31,1994-05-31,1994-06-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1204252709,0.2395322614,0.5501391374,0.07718530597
+1994-06-30,1994-06-30,1994-06-30,1994-06-30,1994-07-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.002260897873,0.1713598488,0.3837747135,0.07590167969
+1994-07-31,1994-07-31,1994-07-31,1994-07-31,1994-08-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,-0.0217041044,0.1480131179,0.3444849364,0.07483310664
+1994-08-31,1994-08-31,1994-08-31,1994-08-31,1994-09-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,-0.00108563745,0.09681643398,0.4135422225,0.07430816849
+1994-09-30,1994-09-30,1994-09-30,1994-09-30,1994-10-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,-0.04420207612,0.0409708765,0.3506439885,0.07432595976
+1994-10-31,1994-10-31,1994-10-31,1994-10-31,1994-11-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,-0.08974272574,0.002938840869,0.1388671248,0.07455725396
+1994-11-30,1994-11-30,1994-11-30,1994-11-30,1994-12-31,SE_SHORT_RATE,best region SE_EM_EQ <= hurdle -> defensive,-0.1048436403,-0.01451332029,0.02961075254,0.07535832541
+1994-12-31,1994-12-31,1994-12-31,1994-12-31,1995-01-31,SE_SHORT_RATE,best region SE_EUROPE_EQ <= hurdle -> defensive,-0.1057377643,-0.0737556529,-0.2060057588,0.07622246775
+1995-01-31,1995-01-31,1995-01-31,1995-01-31,1995-02-28,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,-0.07761279988,-0.1022272366,-0.2679693303,0.07736391312
+1995-02-28,1995-02-28,1995-02-28,1995-02-28,1995-03-31,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,-0.03020855536,-0.06241347384,-0.266236397,0.07820295378
+1995-03-31,1995-03-31,1995-03-31,1995-03-31,1995-04-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.07963184815,0.03501949937,-0.144020683,0.07944465996
+1995-04-30,1995-04-30,1995-04-30,1995-04-30,1995-05-31,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,0.07732450707,0.006434713749,-0.1351530903,0.08091121168
+1995-05-31,1995-05-31,1995-05-31,1995-05-31,1995-06-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.09679561571,0.06151610748,-0.1080123594,0.08245130287
+1995-06-30,1995-06-30,1995-06-30,1995-06-30,1995-07-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1873110141,0.1085406535,-0.05676890604,0.08417322347
+1995-07-31,1995-07-31,1995-07-31,1995-07-31,1995-08-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1473142142,0.05524426252,-0.1274625658,0.08628403022
+1995-08-31,1995-08-31,1995-08-31,1995-08-31,1995-09-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1543966711,0.03441806331,-0.2106180883,0.08792138213
+1995-09-30,1995-09-30,1995-09-30,1995-09-30,1995-10-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1992519768,0.07865688626,-0.2478744536,0.08923658062
+1995-10-31,1995-10-31,1995-10-31,1995-10-31,1995-11-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1623275562,0.0311911233,-0.2556407348,0.09015636116
+1995-11-30,1995-11-30,1995-11-30,1995-11-30,1995-12-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1800463178,0.009326380946,-0.2790997906,0.09072482768
+1995-12-31,1995-12-31,1995-12-31,1995-12-31,1996-01-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2236428274,0.06368270748,-0.1515482565,0.09142003993
+1996-01-31,1996-01-31,1996-01-31,1996-01-31,1996-02-29,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2845143693,0.1339701077,0.101576006,0.09171815821
+1996-02-29,1996-02-29,1996-02-29,1996-02-29,1996-03-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2270509752,0.1067589535,0.04557965185,0.0915916283
+1996-03-31,1996-03-31,1996-03-31,1996-03-31,1996-04-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1859029498,0.05824172886,0.03946767569,0.09068826206
+1996-04-30,1996-04-30,1996-04-30,1996-04-30,1996-05-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2442749846,0.08984570414,0.0903130967,0.08884751413
+1996-05-31,1996-05-31,1996-05-31,1996-05-31,1996-06-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2283232669,0.07876042285,0.009945203393,0.0863525951
+1996-06-30,1996-06-30,1996-06-30,1996-06-30,1996-07-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1565786528,0.04701702088,-0.005691221537,0.0839352631
+1996-07-31,1996-07-31,1996-07-31,1996-07-31,1996-08-31,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,0.07443767295,0.01285941047,-0.06509790872,0.08055631195
+1996-08-31,1996-08-31,1996-08-31,1996-08-31,1996-09-30,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,0.0613834387,0.04310618915,-0.04558240258,0.07708038905
+1996-09-30,1996-09-30,1996-09-30,1996-09-30,1996-10-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1373400842,0.08742377898,0.02643858254,0.07339261174
+1996-10-31,1996-10-31,1996-10-31,1996-10-31,1996-11-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2029176718,0.1485594499,0.07944186415,0.06969015571
+1996-11-30,1996-11-30,1996-11-30,1996-11-30,1996-12-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2790055967,0.247516746,0.1529463397,0.06600886198
+1996-12-31,1996-12-31,1996-12-31,1996-12-31,1997-01-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.247943974,0.2530721983,0.1254169645,0.06187297723
+1997-01-31,1997-01-31,1997-01-31,1997-01-31,1997-02-28,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2988909592,0.2608751843,0.122165969,0.05762889464
+1997-02-28,1997-02-28,1997-02-28,1997-02-28,1997-03-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3646800696,0.3329125425,0.2924056995,0.05430136542
+1997-03-31,1997-03-31,1997-03-31,1997-03-31,1997-04-30,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.3099731755,0.3721208486,0.2713172354,0.05145463996
+1997-04-30,1997-04-30,1997-04-30,1997-04-30,1997-05-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.3513297749,0.3697808978,0.2299930106,0.04912816227
+1997-05-31,1997-05-31,1997-05-31,1997-05-31,1997-06-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.400551452,0.3970709054,0.2781199392,0.0473798038
+1997-06-30,1997-06-30,1997-06-30,1997-06-30,1997-07-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.4998187104,0.4698020883,0.3471415923,0.04559972703
+1997-07-31,1997-07-31,1997-07-31,1997-07-31,1997-08-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.7702479402,0.596879187,0.4859003089,0.0442727908
+1997-08-31,1997-08-31,1997-08-31,1997-08-31,1997-09-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.6215246905,0.451823925,0.2566190466,0.04324185093
+1997-09-30,1997-09-30,1997-09-30,1997-09-30,1997-10-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.5759048228,0.5113673213,0.2202139442,0.0425059664
+1997-10-31,1997-10-31,1997-10-31,1997-10-31,1997-11-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.5053446958,0.4180395877,0.04650384384,0.04202138981
+1997-11-30,1997-11-30,1997-11-30,1997-11-30,1997-12-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.4741758738,0.3868036296,-0.01452793887,0.04175323558
+1997-12-31,1997-12-31,1997-12-31,1997-12-31,1998-01-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.5035143273,0.3756460651,-0.03103076427,0.04201277846
+1998-01-31,1998-01-31,1998-01-31,1998-01-31,1998-02-28,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.4058461813,0.3950535626,-0.167883145,0.04277461028
+1998-02-28,1998-02-28,1998-02-28,1998-02-28,1998-03-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.436111506,0.4147630926,-0.1688782606,0.04312104702
+1998-03-31,1998-03-31,1998-03-31,1998-03-31,1998-04-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.5601705624,0.4603442461,-0.1284719746,0.04345890701
+1998-04-30,1998-04-30,1998-04-30,1998-04-30,1998-05-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.4227874112,0.4157514144,-0.1560935246,0.04386622378
+1998-05-31,1998-05-31,1998-05-31,1998-05-31,1998-06-30,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.3222248454,0.4215337277,-0.249842058,0.04423899599
+1998-06-30,1998-06-30,1998-06-30,1998-06-30,1998-07-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.3351439464,0.3901515413,-0.3451058736,0.04441243601
+1998-07-31,1998-07-31,1998-07-31,1998-07-31,1998-08-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.1764423885,0.325855443,-0.3562769266,0.04449050152
+1998-08-31,1998-08-31,1998-08-31,1998-08-31,1998-09-30,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.06604109988,0.2736967316,-0.4340937161,0.04446448033
+1998-09-30,1998-09-30,1998-09-30,1998-09-30,1998-10-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.07651464272,0.1172757673,-0.4203263445,0.04453387017
+1998-10-31,1998-10-31,1998-10-31,1998-10-31,1998-11-30,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.2012831218,0.2562793379,-0.2516196423,0.04455989222
+1998-11-30,1998-11-30,1998-11-30,1998-11-30,1998-12-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.2503357055,0.3135454513,-0.1483657754,0.04427366866
+1998-12-31,1998-12-31,1998-12-31,1998-12-31,1999-01-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.2733956895,0.2849697877,-0.1857540042,0.04352803139
+1999-01-31,1999-01-31,1999-01-31,1999-01-31,1999-02-28,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2267292236,0.1566490943,-0.2027330726,0.04258371701
+1999-02-28,1999-02-28,1999-02-28,1999-02-28,1999-03-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1754446083,0.125234054,-0.2273056257,0.04155359859
+1999-03-31,1999-03-31,1999-03-31,1999-03-31,1999-04-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1816097105,0.07102762655,-0.1760005639,0.0404553968
+1999-04-30,1999-04-30,1999-04-30,1999-04-30,1999-05-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2757844138,0.1249154761,-0.05578504557,0.03905604126
+1999-05-31,1999-05-31,1999-05-31,1999-05-31,1999-06-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2953330959,0.06844484577,0.07662124494,0.03758097935
+1999-06-30,1999-06-30,1999-06-30,1999-06-30,1999-07-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.2750146062,0.05879773869,0.2858271177,0.03641791685
+1999-07-31,1999-07-31,1999-07-31,1999-07-31,1999-08-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.226594414,0.02570228949,0.2063810999,0.03534635693
+1999-08-31,1999-08-31,1999-08-31,1999-08-31,1999-09-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.4300625223,0.1733685871,0.6325779668,0.03432319395
+1999-09-30,1999-09-30,1999-09-30,1999-09-30,1999-10-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.3293639365,0.2470978827,0.5455025641,0.03325816529
+1999-10-31,1999-10-31,1999-10-31,1999-10-31,1999-11-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.3311900565,0.2019276886,0.4910035408,0.03240014848
+1999-11-30,1999-11-30,1999-11-30,1999-11-30,1999-12-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.2863851066,0.1744007363,0.5082847848,0.03179133603
+1999-12-31,1999-12-31,1999-12-31,1999-12-31,2000-01-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.3238580334,0.2653406685,0.740598187,0.03163702768
+2000-01-31,2000-01-31,2000-01-31,2000-01-31,2000-02-29,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.3006118142,0.2596314456,0.9007540873,0.03170560746
+2000-02-29,2000-02-29,2000-02-29,2000-02-29,2000-03-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.3124114306,0.2879005329,0.8432991074,0.03216006177
+2000-03-31,2000-03-31,2000-03-31,2000-03-31,2000-04-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.310276583,0.2734624181,0.6690246471,0.03292353184
+2000-04-30,2000-04-30,2000-04-30,2000-04-30,2000-05-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.19909297,0.1912510713,0.369005403,0.03386810356
+2000-05-31,2000-05-31,2000-05-31,2000-05-31,2000-06-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1603794162,0.2213271607,0.2987991235,0.03489953062
+2000-06-30,2000-06-30,2000-06-30,2000-06-30,2000-07-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.152320488,0.2016390949,0.192967324,0.03569097499
+2000-07-31,2000-07-31,2000-07-31,2000-07-31,2000-08-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.2496370586,0.255358569,0.2367780799,0.03662513523
+2000-08-31,2000-08-31,2000-08-31,2000-08-31,2000-09-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3832161852,0.244360447,0.2265491539,0.03757302102
+2000-09-30,2000-09-30,2000-09-30,2000-09-30,2000-10-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3972845194,0.2320453874,0.1905361305,0.03838375296
+2000-10-31,2000-10-31,2000-10-31,2000-10-31,2000-11-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3304442646,0.2243159012,0.09144558688,0.03910003443
+2000-11-30,2000-11-30,2000-11-30,2000-11-30,2000-12-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1127475957,0.1010015346,-0.1114019769,0.03969588829
+2000-12-31,2000-12-31,2000-12-31,2000-12-31,2001-01-31,SE_SHORT_RATE,best region SE_EUROPE_EQ <= hurdle -> defensive,-0.01117981503,0.00678058682,-0.2394879229,0.04028338472
+2001-01-31,2001-01-31,2001-01-31,2001-01-31,2001-02-28,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.0398625736,0.05584191625,-0.1810600992,0.04078472194
+2001-02-28,2001-02-28,2001-02-28,2001-02-28,2001-03-31,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,-0.04857607078,-0.05107750866,-0.2251284704,0.04101817092
+2001-03-31,2001-03-31,2001-03-31,2001-03-31,2001-04-30,SE_SHORT_RATE,best region SE_EUROPE_EQ <= hurdle -> defensive,-0.1103873059,-0.09360528332,-0.2502022727,0.04102681646
+2001-04-30,2001-04-30,2001-04-30,2001-04-30,2001-05-31,SE_SHORT_RATE,best region SE_EUROPE_EQ <= hurdle -> defensive,-0.0236086786,-0.01850838612,-0.1666516644,0.04098358409
+2001-05-31,2001-05-31,2001-05-31,2001-05-31,2001-06-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.07156048804,-0.02745335108,-0.09700178116,0.04097493834
+2001-06-30,2001-06-30,2001-06-30,2001-06-30,2001-07-31,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,0.03480829662,-0.04062088738,-0.1047593396,0.04107869688
+2001-07-31,2001-07-31,2001-07-31,2001-07-31,2001-08-31,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,-0.03169927407,-0.09749223785,-0.18120047,0.04137268677
+2001-08-31,2001-08-31,2001-08-31,2001-08-31,2001-09-30,SE_SHORT_RATE,best region SE_EUROPE_EQ <= hurdle -> defensive,-0.1913043007,-0.1426053568,-0.2291189787,0.04155430947
+2001-09-30,2001-09-30,2001-09-30,2001-09-30,2001-10-31,SE_SHORT_RATE,best region SE_EUROPE_EQ <= hurdle -> defensive,-0.2244267173,-0.202451805,-0.2718588381,0.04184844832
+2001-10-31,2001-10-31,2001-10-31,2001-10-31,2001-11-30,SE_SHORT_RATE,best region SE_EUROPE_EQ <= hurdle -> defensive,-0.2230398507,-0.195771068,-0.1995331402,0.04155425573
+2001-11-30,2001-11-30,2001-11-30,2001-11-30,2001-12-31,SE_SHORT_RATE,best region SE_EM_EQ <= hurdle -> defensive,-0.06075181735,-0.1191584624,-0.03205837109,0.04128607477
+2001-12-31,2001-12-31,2001-12-31,2001-12-31,2002-01-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,-0.006545289438,-0.1059668264,0.09308429773,0.0409574515
+2002-01-31,2002-01-31,2002-01-31,2002-01-31,2002-02-28,SE_SHORT_RATE,best region SE_EM_EQ <= hurdle -> defensive,-0.05464734317,-0.1540437055,0.006596470616,0.04062028949
+2002-02-28,2002-02-28,2002-02-28,2002-02-28,2002-03-31,SE_SHORT_RATE,best region SE_EM_EQ <= hurdle -> defensive,-0.02551554874,-0.1169160274,0.03854706614,0.04047335928
+2002-03-31,2002-03-31,2002-03-31,2002-03-31,2002-04-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.01933216904,-0.04747314302,0.1258506181,0.04036966795
+2002-04-30,2002-04-30,2002-04-30,2002-04-30,2002-05-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,-0.1000559991,-0.1113740147,0.09424192023,0.04057706094
+2002-05-31,2002-05-31,2002-05-31,2002-05-31,2002-06-30,SE_SHORT_RATE,best region SE_EM_EQ <= hurdle -> defensive,-0.2040412608,-0.151859986,-0.04167886993,0.04081040713
+2002-06-30,2002-06-30,2002-06-30,2002-06-30,2002-07-31,SE_SHORT_RATE,best region SE_EM_EQ <= hurdle -> defensive,-0.299239829,-0.2012310662,-0.1575439686,0.0410438037
+2002-07-31,2002-07-31,2002-07-31,2002-07-31,2002-08-31,SE_SHORT_RATE,best region SE_EM_EQ <= hurdle -> defensive,-0.3056966964,-0.2403114824,-0.1035952795,0.04100058355
+2002-08-31,2002-08-31,2002-08-31,2002-08-31,2002-09-30,SE_SHORT_RATE,best region SE_EM_EQ <= hurdle -> defensive,-0.2540024816,-0.2228334439,-0.07698328081,0.04094871893
+2002-09-30,2002-09-30,2002-09-30,2002-09-30,2002-10-31,SE_SHORT_RATE,best region SE_EM_EQ <= hurdle -> defensive,-0.2848193121,-0.2595489583,-0.06715623667,0.04087092589
+2002-10-31,2002-10-31,2002-10-31,2002-10-31,2002-11-30,SE_SHORT_RATE,best region SE_EM_EQ <= hurdle -> defensive,-0.2498341701,-0.2237494193,-0.06247539993,0.04123842536
+2002-11-30,2002-11-30,2002-11-30,2002-11-30,2002-12-31,SE_SHORT_RATE,best region SE_EM_EQ <= hurdle -> defensive,-0.2718704937,-0.2296163428,-0.1073268453,0.04155849766
+2002-12-31,2002-12-31,2002-12-31,2002-12-31,2003-01-31,SE_SHORT_RATE,best region SE_EM_EQ <= hurdle -> defensive,-0.3475975528,-0.2891837432,-0.2249379983,0.0416450274
+2003-01-31,2003-01-31,2003-01-31,2003-01-31,2003-02-28,SE_SHORT_RATE,best region SE_EM_EQ <= hurdle -> defensive,-0.3772118043,-0.3046035026,-0.2728904771,0.04153252939
+2003-02-28,2003-02-28,2003-02-28,2003-02-28,2003-03-31,SE_SHORT_RATE,best region SE_EM_EQ <= hurdle -> defensive,-0.368128195,-0.3236841917,-0.2956772862,0.0413681461
+2003-03-31,2003-03-31,2003-03-31,2003-03-31,2003-04-30,SE_SHORT_RATE,best region SE_EM_EQ <= hurdle -> defensive,-0.3759937266,-0.3543286095,-0.3486681627,0.04092703501
+2003-04-30,2003-04-30,2003-04-30,2003-04-30,2003-05-31,SE_SHORT_RATE,best region SE_EUROPE_EQ <= hurdle -> defensive,-0.3063710001,-0.2863676494,-0.3079668931,0.04022684824
+2003-05-31,2003-05-31,2003-05-31,2003-05-31,2003-06-30,SE_SHORT_RATE,best region SE_EUROPE_EQ <= hurdle -> defensive,-0.2631077149,-0.2440552347,-0.2507664439,0.03947537655
+2003-06-30,2003-06-30,2003-06-30,2003-06-30,2003-07-31,SE_SHORT_RATE,best region SE_EM_EQ <= hurdle -> defensive,-0.1128708868,-0.136334536,-0.0557445158,0.03837057091
+2003-07-31,2003-07-31,2003-07-31,2003-07-31,2003-08-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,-0.02792756201,-0.03416104307,0.03978836019,0.03704275336
+2003-08-31,2003-08-31,2003-08-31,2003-08-31,2003-09-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.04498568589,0.02033736734,0.1576633748,0.035707945
+2003-09-30,2003-09-30,2003-09-30,2003-09-30,2003-10-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.04560436835,0.09725084701,0.2023264113,0.03444362788
+2003-10-31,2003-10-31,2003-10-31,2003-10-31,2003-11-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.05261398541,0.09822509714,0.2475030197,0.03318510226
+2003-11-30,2003-11-30,2003-11-30,2003-11-30,2003-12-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,-0.0148727759,0.07053465237,0.1647796842,0.03206956475
+2003-12-31,2003-12-31,2003-12-31,2003-12-31,2004-01-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.08562714139,0.1764650727,0.2817222328,0.03113506082
+2004-01-31,2004-01-31,2004-01-31,2004-01-31,2004-02-29,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.2040197042,0.3208943852,0.4041082395,0.03034686881
+2004-02-29,2004-02-29,2004-02-29,2004-02-29,2004-03-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.247165842,0.4121470407,0.5170121169,0.02940524828
+2004-03-31,2004-03-31,2004-03-31,2004-03-31,2004-04-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.2380018123,0.4091733979,0.6207040309,0.02848147021
+2004-04-30,2004-04-30,2004-04-30,2004-04-30,2004-05-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1803136307,0.2925869069,0.4505869163,0.0273704022
+2004-05-31,2004-05-31,2004-05-31,2004-05-31,2004-06-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1579672004,0.2521279631,0.3650353729,0.02616668261
+2004-06-30,2004-06-30,2004-06-30,2004-06-30,2004-07-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.140933369,0.2383319479,0.2711653599,0.02528384302
+2004-07-31,2004-07-31,2004-07-31,2004-07-31,2004-08-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.07319074019,0.1831255132,0.1905623199,0.0246189378
+2004-08-31,2004-08-31,2004-08-31,2004-08-31,2004-09-30,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,-0.005508998021,0.1230065819,0.1019898935,0.02403535449
+2004-09-30,2004-09-30,2004-09-30,2004-09-30,2004-10-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.09660354831,0.2178768541,0.2303203187,0.02343935643
+2004-10-31,2004-10-31,2004-10-31,2004-10-31,2004-11-30,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,-0.002490941056,0.1354526893,0.1203170122,0.02284368544
+2004-11-30,2004-11-30,2004-11-30,2004-11-30,2004-12-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.005437511415,0.1348173333,0.1734985669,0.02223137224
+2004-12-31,2004-12-31,2004-12-31,2004-12-31,2005-01-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.01738390615,0.1248466805,0.1760035404,0.02161091602
+2005-01-31,2005-01-31,2005-01-31,2005-01-31,2005-02-28,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.006207641802,0.125985893,0.1875392689,0.02105026811
+2005-02-28,2005-02-28,2005-02-28,2005-02-28,2005-03-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,-0.01264285661,0.1155440315,0.202742444,0.02057054302
+2005-03-31,2005-03-31,2005-03-31,2005-03-31,2005-04-30,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,-0.003936317467,0.1413939303,0.1290891247,0.02018859615
+2005-04-30,2005-04-30,2005-04-30,2005-04-30,2005-05-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,-0.02060104292,0.1159413198,0.1691864835,0.02012070069
+2005-05-31,2005-05-31,2005-05-31,2005-05-31,2005-06-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.08594686061,0.1906915982,0.3317294865,0.02008251045
+2005-06-30,2005-06-30,2005-06-30,2005-06-30,2005-07-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1143154884,0.2317393781,0.4247029529,0.0199849148
+2005-07-31,2005-07-31,2005-07-31,2005-07-31,2005-08-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1787250529,0.289336941,0.5104807916,0.01957759291
+2005-08-31,2005-08-31,2005-08-31,2005-08-31,2005-09-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1692288284,0.3165631776,0.4691169788,0.01913650926
+2005-09-30,2005-09-30,2005-09-30,2005-09-30,2005-10-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.2093692979,0.3434426742,0.5735363541,0.01867443311
+2005-10-31,2005-10-31,2005-10-31,2005-10-31,2005-11-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.2312137786,0.3144549619,0.5153140818,0.01825916304
+2005-11-30,2005-11-30,2005-11-30,2005-11-30,2005-12-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.317817633,0.3455550707,0.6226275658,0.01780594829
+2005-12-31,2005-12-31,2005-12-31,2005-12-31,2006-01-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.2760173626,0.3446938555,0.6365786568,0.01745877077
+2006-01-31,2006-01-31,2006-01-31,2006-01-31,2006-02-28,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.2290963062,0.3169402555,0.6245766937,0.01720059481
+2006-02-28,2006-02-28,2006-02-28,2006-02-28,2006-03-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.2916658917,0.3596314709,0.6113783026,0.01712866209
+2006-03-31,2006-03-31,2006-03-31,2006-03-31,2006-04-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.255072935,0.3625387,0.6227019801,0.01711173759
+2006-04-30,2006-04-30,2006-04-30,2006-04-30,2006-05-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.241506176,0.4077859507,0.711210162,0.01713712328
+2006-05-31,2006-05-31,2006-05-31,2006-05-31,2006-06-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.07391545428,0.2614257985,0.3841325677,0.01721751433
+2006-06-30,2006-06-30,2006-06-30,2006-06-30,2006-07-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.01767517541,0.1858632146,0.2612007721,0.01743756671
+2006-07-31,2006-07-31,2006-07-31,2006-07-31,2006-08-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,-0.0198644662,0.1636419065,0.2053942553,0.01806420324
+2006-08-31,2006-08-31,2006-08-31,2006-08-31,2006-09-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.01783294576,0.1780230485,0.2349186612,0.01883528747
+2006-09-30,2006-09-30,2006-09-30,2006-09-30,2006-10-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.03415458417,0.1718231347,0.1496483022,0.01968411549
+2006-10-31,2006-10-31,2006-10-31,2006-10-31,2006-11-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.06818838909,0.2346145145,0.2508582119,0.02061935635
+2006-11-30,2006-11-30,2006-11-30,2006-11-30,2006-12-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,-0.0290543364,0.1710014393,0.1549882693,0.02174235831
+2006-12-31,2006-12-31,2006-12-31,2006-12-31,2007-01-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,-0.002734012322,0.1842792591,0.1546020729,0.02290137097
+2007-01-31,2007-01-31,2007-01-31,2007-01-31,2007-02-28,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.04089486089,0.1882374165,0.1014198251,0.0241067021
+2007-02-28,2007-02-28,2007-02-28,2007-02-28,2007-03-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,-0.01630831615,0.1298807499,0.05518112949,0.02526892986
+2007-03-31,2007-03-31,2007-03-31,2007-03-31,2007-04-30,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.003661709485,0.1583502845,0.1184698488,0.02640258246
+2007-04-30,2007-04-30,2007-04-30,2007-04-30,2007-05-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.03771367623,0.1690046432,0.09825687816,0.02747080897
+2007-05-31,2007-05-31,2007-05-31,2007-05-31,2007-06-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1760225443,0.3045423062,0.3629013091,0.02861532086
+2007-06-30,2007-06-30,2007-06-30,2007-06-30,2007-07-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1388627047,0.284624087,0.418958349,0.02972082521
+2007-07-31,2007-07-31,2007-07-31,2007-07-31,2007-08-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.08079379678,0.2163071702,0.4519636649,0.03080173059
+2007-08-31,2007-08-31,2007-08-31,2007-08-31,2007-09-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.09847304942,0.1915780381,0.4048571231,0.03178505089
+2007-09-30,2007-09-30,2007-09-30,2007-09-30,2007-10-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.03775624625,0.1561133422,0.4168876521,0.03274605939
+2007-10-31,2007-10-31,2007-10-31,2007-10-31,2007-11-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.007926479754,0.1442979678,0.4663041262,0.03364689825
+2007-11-30,2007-11-30,2007-11-30,2007-11-30,2007-12-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,-0.002781601158,0.1186987515,0.343628915,0.03466611032
+2007-12-31,2007-12-31,2007-12-31,2007-12-31,2008-01-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,-0.004932985606,0.07621770168,0.3216964814,0.03562858402
+2008-01-31,2008-01-31,2008-01-31,2008-01-31,2008-02-29,SE_EM_EQ,SE_EM_EQ best and > hurdle,-0.1132936422,-0.07155142289,0.1300421661,0.03655394334
+2008-02-29,2008-02-29,2008-02-29,2008-02-29,2008-03-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,-0.1561225351,-0.08390998639,0.1641020508,0.03724052043
+2008-03-31,2008-03-31,2008-03-31,2008-03-31,2008-04-30,SE_SHORT_RATE,best region SE_EM_EQ <= hurdle -> defensive,-0.1983643471,-0.1446149987,0.02922812601,0.03812064164
+2008-04-30,2008-04-30,2008-04-30,2008-04-30,2008-05-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,-0.152124643,-0.1144686227,0.1016600142,0.03890488033
+2008-05-31,2008-05-31,2008-05-31,2008-05-31,2008-06-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,-0.1844004751,-0.1428807788,0.03974166394,0.03951350793
+2008-06-30,2008-06-30,2008-06-30,2008-06-30,2008-07-31,SE_SHORT_RATE,best region SE_EM_EQ <= hurdle -> defensive,-0.2410061994,-0.2188257164,-0.1017024097,0.04010347706
+2008-07-31,2008-07-31,2008-07-31,2008-07-31,2008-08-31,SE_SHORT_RATE,best region SE_EM_EQ <= hurdle -> defensive,-0.1898324297,-0.2043386401,-0.1555676105,0.04070411745
+2008-08-31,2008-08-31,2008-08-31,2008-08-31,2008-09-30,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,-0.158681305,-0.1994722599,-0.1713712545,0.04139761352
+2008-09-30,2008-09-30,2008-09-30,2008-09-30,2008-10-31,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,-0.1762959153,-0.2767825663,-0.304961456,0.04213219491
+2008-10-31,2008-10-31,2008-10-31,2008-10-31,2008-11-30,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,-0.2166382603,-0.367986473,-0.4606728492,0.04289324126
+2008-11-30,2008-11-30,2008-11-30,2008-11-30,2008-12-31,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,-0.2259118031,-0.3767022216,-0.4546782717,0.04238478032
+2008-12-31,2008-12-31,2008-12-31,2008-12-31,2009-01-31,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,-0.2407054475,-0.3509656896,-0.4458261299,0.04136841247
+2009-01-31,2009-01-31,2009-01-31,2009-01-31,2009-02-28,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,-0.1967109141,-0.3078952714,-0.3618041789,0.03892968348
+2009-02-28,2009-02-28,2009-02-28,2009-02-28,2009-03-31,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,-0.1566768193,-0.3079610354,-0.3579048263,0.03646537048
+2009-03-31,2009-03-31,2009-03-31,2009-03-31,2009-04-30,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,-0.121307027,-0.3010782209,-0.2729870501,0.0332474213
+2009-04-30,2009-04-30,2009-04-30,2009-04-30,2009-05-31,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,-0.1180871411,-0.2748496355,-0.2424291577,0.02991732676
+2009-05-31,2009-05-31,2009-05-31,2009-05-31,2009-06-30,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,-0.1310395647,-0.22580907,-0.1625444066,0.02669871216
+2009-06-30,2009-06-30,2009-06-30,2009-06-30,2009-07-31,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,-0.03733048936,-0.1595865536,-0.07737159293,0.02361635222
+2009-07-31,2009-07-31,2009-07-31,2009-07-31,2009-08-31,SE_SHORT_RATE,best region SE_EM_EQ <= hurdle -> defensive,-0.01195321985,-0.08969254977,0.01160405721,0.02034624599
+2009-08-31,2009-08-31,2009-08-31,2009-08-31,2009-09-30,SE_SHORT_RATE,best region SE_EM_EQ <= hurdle -> defensive,-0.08042552264,-0.07846122739,0.007471846209,0.0168014414
+2009-09-30,2009-09-30,2009-09-30,2009-09-30,2009-10-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,-0.02231468679,0.05920628878,0.2454939181,0.01318404251
+2009-10-31,2009-10-31,2009-10-31,2009-10-31,2009-11-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.002434397987,0.1611222666,0.4884621192,0.009483005769
+2009-11-30,2009-11-30,2009-11-30,2009-11-30,2009-12-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1123114887,0.2487373405,0.6308643445,0.006802003268
+2009-12-31,2009-12-31,2009-12-31,2009-12-31,2010-01-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1966831392,0.2582014078,0.6920298357,0.004518682877
+2010-01-31,2010-01-31,2010-01-31,2010-01-31,2010-02-28,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.2043776323,0.2814376268,0.6515773531,0.003552088797
+2010-02-28,2010-02-28,2010-02-28,2010-02-28,2010-03-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.2337940581,0.2405453529,0.5592753641,0.002712457053
+2010-03-31,2010-03-31,2010-03-31,2010-03-31,2010-04-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.3291091398,0.3636545648,0.6375911947,0.002436002472
+2010-04-30,2010-04-30,2010-04-30,2010-04-30,2010-05-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.2709440943,0.2186053183,0.4678333868,0.002399255642
+2010-05-31,2010-05-31,2010-05-31,2010-05-31,2010-06-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.2574331689,0.07328966358,0.2812634671,0.002339964362
+2010-06-30,2010-06-30,2010-06-30,2010-06-30,2010-07-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1693038502,0.07088205308,0.2820619051,0.002139579863
+2010-07-31,2010-07-31,2010-07-31,2010-07-31,2010-08-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1263024276,0.05544615865,0.2113421053,0.002097836222
+2010-08-31,2010-08-31,2010-08-31,2010-08-31,2010-09-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1017430848,0.01527629406,0.2669434343,0.002306580511
+2010-09-30,2010-09-30,2010-09-30,2010-09-30,2010-10-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.07033093983,-0.008435401239,0.1887152362,0.00254041892
+2010-10-31,2010-10-31,2010-10-31,2010-10-31,2010-11-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1458427124,0.06542920488,0.232837782,0.002907977255
+2010-11-30,2010-11-30,2010-11-30,2010-11-30,2010-12-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1372396211,-0.008490107015,0.2051027299,0.003593183505
+2010-12-31,2010-12-31,2010-12-31,2010-12-31,2011-01-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1073749046,0.003693760833,0.1574665956,0.00442940663
+2011-01-31,2011-01-31,2011-01-31,2011-01-31,2011-02-28,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1046566634,0.03865978181,0.119161415,0.005366717857
+2011-02-28,2011-02-28,2011-02-28,2011-02-28,2011-03-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1062771036,0.09405626022,0.09357923318,0.006556203559
+2011-03-31,2011-03-31,2011-03-31,2011-03-31,2011-04-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.01772959451,-0.0007586507061,0.0389323379,0.007864486772
+2011-04-30,2011-04-30,2011-04-30,2011-04-30,2011-05-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,-0.01735430237,0.05155440886,0.01598988365,0.009077865748
+2011-05-31,2011-05-31,2011-05-31,2011-05-31,2011-06-30,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,-0.002132435938,0.09795145251,0.02909225624,0.01046502414
+2011-06-30,2011-06-30,2011-06-30,2011-06-30,2011-07-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.07013543672,0.1194684051,0.04775195851,0.01181201899
+2011-07-31,2011-07-31,2011-07-31,2011-07-31,2011-08-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.06041595905,0.04948712344,0.05490697309,0.0130764679
+2011-08-31,2011-08-31,2011-08-31,2011-08-31,2011-09-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.01639165447,-0.04358550568,-0.05545972894,0.01425799661
+2011-09-30,2011-09-30,2011-09-30,2011-09-30,2011-10-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.0208868835,-0.09779663427,-0.1386536514,0.01522962949
+2011-10-31,2011-10-31,2011-10-31,2011-10-31,2011-11-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.02216851425,-0.109104633,-0.1237124448,0.01605834005
+2011-11-30,2011-11-30,2011-11-30,2011-11-30,2011-12-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.05325081188,-0.04199187252,-0.1273067533,0.01633751879
+2011-12-31,2011-12-31,2011-12-31,2011-12-31,2012-01-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.02287223927,-0.1152508757,-0.1728062887,0.01653213032
+2012-01-31,2012-01-31,2012-01-31,2012-01-31,2012-02-29,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.06911219472,-0.08496122478,-0.04435448017,0.01659982466
+2012-02-29,2012-02-29,2012-02-29,2012-02-29,2012-03-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.06991486471,-0.06302004254,0.02516927598,0.01662520539
+2012-03-31,2012-03-31,2012-03-31,2012-03-31,2012-04-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.126284715,-0.03736462428,-0.03265594926,0.01643064083
+2012-04-30,2012-04-30,2012-04-30,2012-04-30,2012-05-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1562074989,-0.07276180022,-0.02245266641,0.01623610056
+2012-05-31,2012-05-31,2012-05-31,2012-05-31,2012-06-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1518650592,-0.1208452428,-0.05729914406,0.01583025885
+2012-06-30,2012-06-30,2012-06-30,2012-06-30,2012-07-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1457913794,-0.09535340171,-0.06700926559,0.01537384267
+2012-07-31,2012-07-31,2012-07-31,2012-07-31,2012-08-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1443092943,-0.08944710831,-0.08851859643,0.01478242839
+2012-08-31,2012-08-31,2012-08-31,2012-08-31,2012-09-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2275825217,0.04132293585,-0.0082635119,0.01419135858
+2012-09-30,2012-09-30,2012-09-30,2012-09-30,2012-10-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2364991095,0.1048216204,0.1160220824,0.01381154324
+2012-10-31,2012-10-31,2012-10-31,2012-10-31,2012-11-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1801459573,0.09471474318,0.06899459802,0.01334747903
+2012-11-30,2012-11-30,2012-11-30,2012-11-30,2012-12-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1122534002,0.09727035481,0.07621414302,0.01313660221
+2012-12-31,2012-12-31,2012-12-31,2012-12-31,2013-01-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.09494518021,0.1369710837,0.1230325846,0.01287517589
+2013-01-31,2013-01-31,2013-01-31,2013-01-31,2013-02-28,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.1013692941,0.1436081848,0.02899539582,0.01252108269
+2013-02-28,2013-02-28,2013-02-28,2013-02-28,2013-03-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1127545531,0.09161722531,-0.0003123135391,0.01192283031
+2013-03-31,2013-03-31,2013-03-31,2013-03-31,2013-04-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1260992524,0.08880933518,0.02039286115,0.01145120884
+2013-04-30,2013-04-30,2013-04-30,2013-04-30,2013-05-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.1438766383,0.1503228279,0.0396740257,0.01102186802
+2013-05-31,2013-05-31,2013-05-31,2013-05-31,2013-06-30,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.168919736,0.2365348803,0.06147313575,0.01062636235
+2013-06-30,2013-06-30,2013-06-30,2013-06-30,2013-07-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1772377324,0.1656221532,0.01447746837,0.01027303179
+2013-07-31,2013-07-31,2013-07-31,2013-07-31,2013-08-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.2360450765,0.2475473193,0.01876381838,0.01007957346
+2013-08-31,2013-08-31,2013-08-31,2013-08-31,2013-09-30,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.1993722167,0.2123710703,0.01037953428,0.009894561801
+2013-09-30,2013-09-30,2013-09-30,2013-09-30,2013-10-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.2078649656,0.2502994252,0.01705238224,0.009754993473
+2013-10-31,2013-10-31,2013-10-31,2013-10-31,2013-11-30,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.2587231759,0.2629834975,0.04915749722,0.009628879194
+2013-11-30,2013-11-30,2013-11-30,2013-11-30,2013-12-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3144304792,0.2772298212,0.04392452487,0.009511197033
+2013-12-31,2013-12-31,2013-12-31,2013-12-31,2014-01-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3500363517,0.278419235,-0.0007208399791,0.009368310354
+2014-01-31,2014-01-31,2014-01-31,2014-01-31,2014-02-28,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2700622986,0.1991392453,-0.050651918,0.009156515974
+2014-02-28,2014-02-28,2014-02-28,2014-02-28,2014-03-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.2900750538,0.2984897437,-0.02524401048,0.008982572731
+2014-03-31,2014-03-31,2014-03-31,2014-03-31,2014-04-30,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.23286343,0.285509817,0.001741037725,0.008766660424
+2014-04-30,2014-04-30,2014-04-30,2014-04-30,2014-05-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.2152305979,0.259630167,-0.0006413268111,0.008563388432
+2014-05-31,2014-05-31,2014-05-31,2014-05-31,2014-06-30,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.2172750581,0.2675004636,0.06770231481,0.008305574846
+2014-06-30,2014-06-30,2014-06-30,2014-06-30,2014-07-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.256001609,0.3190810286,0.1685873087,0.008078876116
+2014-07-31,2014-07-31,2014-07-31,2014-07-31,2014-08-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.2169771474,0.2301336034,0.2222417516,0.007777511009
+2014-08-31,2014-08-31,2014-08-31,2014-08-31,2014-09-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3143628965,0.248483579,0.2909161095,0.007215247558
+2014-09-30,2014-09-30,2014-09-30,2014-09-30,2014-10-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3219476673,0.1944937007,0.206457014,0.006564448686
+2014-10-31,2014-10-31,2014-10-31,2014-10-31,2014-11-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3228417272,0.1310766279,0.1823396249,0.006002848003
+2014-11-30,2014-11-30,2014-11-30,2014-11-30,2014-12-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3033610027,0.1291311882,0.175097311,0.005237221668
+2014-12-31,2014-12-31,2014-12-31,2014-12-31,2015-01-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3411827148,0.1242781568,0.2003044115,0.004522363989
+2015-01-31,2015-01-31,2015-01-31,2015-01-31,2015-02-28,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.4185308494,0.2196962133,0.3565625858,0.003984433766
+2015-02-28,2015-02-28,2015-02-28,2015-02-28,2015-03-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.4643568251,0.2276727981,0.3672587486,0.003465188994
+2015-03-31,2015-03-31,2015-03-31,2015-03-31,2015-04-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.4820099244,0.2397465791,0.3558206191,0.002783249217
+2015-04-30,2015-04-30,2015-04-30,2015-04-30,2015-05-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.4269271017,0.2196814437,0.3821323973,0.001978161717
+2015-05-31,2015-05-31,2015-05-31,2015-05-31,2015-06-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.4258371571,0.2157238346,0.3001321844,0.001192884252
+2015-06-30,2015-06-30,2015-06-30,2015-06-30,2015-07-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3132733938,0.1348238176,0.1822208912,0.000429041368
+2015-07-31,2015-07-31,2015-07-31,2015-07-31,2015-08-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3946554916,0.2411001527,0.1109412187,-0.000315961021
+2015-08-31,2015-08-31,2015-08-31,2015-08-31,2015-09-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2184903722,0.1305330423,-0.03869879934,-0.0008781849037
+2015-09-30,2015-09-30,2015-09-30,2015-09-30,2015-10-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1507732637,0.07443229253,-0.04078872543,-0.00142427684
+2015-10-31,2015-10-31,2015-10-31,2015-10-31,2015-11-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2096125385,0.1726146203,0.02261783619,-0.001980067291
+2015-11-30,2015-11-30,2015-11-30,2015-11-30,2015-12-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1992722187,0.1436835461,0.01636913197,-0.002343498951
+2015-12-31,2015-12-31,2015-12-31,2015-12-31,2016-01-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.07148770013,0.06369445093,-0.04993539794,-0.00266523084
+2016-01-31,2016-01-31,2016-01-31,2016-01-31,2016-02-29,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.004481727475,-0.03782634968,-0.148452549,-0.003113999698
+2016-02-29,2016-02-29,2016-02-29,2016-02-29,2016-03-31,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,-0.06327711173,-0.1182067815,-0.1827744749,-0.003585815036
+2016-03-31,2016-03-31,2016-03-31,2016-03-31,2016-04-30,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,-0.06155502639,-0.1080979249,-0.1425946272,-0.003954513786
+2016-04-30,2016-04-30,2016-04-30,2016-04-30,2016-05-31,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,-0.03675026222,-0.1085037949,-0.1721922267,-0.004255049117
+2016-05-31,2016-05-31,2016-05-31,2016-05-31,2016-06-30,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,-0.01642570025,-0.09544669465,-0.1637592644,-0.004528940148
+2016-06-30,2016-06-30,2016-06-30,2016-06-30,2016-07-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.04600015514,-0.07352858343,-0.06608679524,-0.004788654081
+2016-07-31,2016-07-31,2016-07-31,2016-07-31,2016-08-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.03855615961,-0.08310010696,0.01657077759,-0.005009329695
+2016-08-31,2016-08-31,2016-08-31,2016-08-31,2016-09-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.12309815,-0.005600477279,0.1540935473,-0.005187667963
+2016-09-30,2016-09-30,2016-09-30,2016-09-30,2016-10-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1823357164,0.06726848589,0.2138281088,-0.005446415768
+2016-10-31,2016-10-31,2016-10-31,2016-10-31,2016-11-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1056174386,0.001622429205,0.1631686916,-0.005662819177
+2016-11-30,2016-11-30,2016-11-30,2016-11-30,2016-12-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1452315246,-0.01513098403,0.1355886206,-0.005971164172
+2016-12-31,2016-12-31,2016-12-31,2016-12-31,2017-01-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2371108428,0.09104921783,0.203316346,-0.006357288427
+2017-01-31,2017-01-31,2017-01-31,2017-01-31,2017-02-28,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.2717729091,0.1398605223,0.2837934694,-0.006557749048
+2017-02-28,2017-02-28,2017-02-28,2017-02-28,2017-03-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.348317746,0.1947054066,0.3670066676,-0.006789640359
+2017-03-31,2017-03-31,2017-03-31,2017-03-31,2017-04-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3078686926,0.2091090965,0.298506229,-0.006896457383
+2017-04-30,2017-04-30,2017-04-30,2017-04-30,2017-05-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3139556893,0.2394485431,0.3085271276,-0.00691881354
+2017-05-31,2017-05-31,2017-05-31,2017-05-31,2017-06-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.2419708982,0.2438143702,0.3217994773,-0.006944480928
+2017-06-30,2017-06-30,2017-06-30,2017-06-30,2017-07-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.1958574399,0.2421601676,0.2211517102,-0.006970975634
+2017-07-31,2017-07-31,2017-07-31,2017-07-31,2017-08-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.1084486048,0.1639513031,0.1612673152,-0.007053772832
+2017-08-31,2017-08-31,2017-08-31,2017-08-31,2017-09-30,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.09349599304,0.1441471766,0.1440840523,-0.007110899612
+2017-09-30,2017-09-30,2017-09-30,2017-09-30,2017-10-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.1274611344,0.1743680213,0.1364270339,-0.0070587399
+2017-10-31,2017-10-31,2017-10-31,2017-10-31,2017-11-30,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.1621459849,0.2038879195,0.1604779953,-0.006982566858
+2017-11-30,2017-11-30,2017-11-30,2017-11-30,2017-12-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.1238557726,0.2141218224,0.1998587503,-0.006913011412
+2017-12-31,2017-12-31,2017-12-31,2017-12-31,2018-01-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1068882944,0.1672842973,0.227597417,-0.006838479766
+2018-01-31,2018-01-31,2018-01-31,2018-01-31,2018-02-28,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1279678329,0.1784387025,0.2358519157,-0.006897275973
+2018-02-28,2018-02-28,2018-02-28,2018-02-28,2018-03-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.07814167005,0.1379442975,0.1727002944,-0.006834340867
+2018-03-31,2018-03-31,2018-03-31,2018-03-31,2018-04-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.0779305903,0.1113320533,0.151822015,-0.00683765323
+2018-04-30,2018-04-30,2018-04-30,2018-04-30,2018-05-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1228588783,0.1398900422,0.1813605171,-0.006889821859
+2018-05-31,2018-05-31,2018-05-31,2018-05-31,2018-06-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1723021614,0.08519152187,0.1495143868,-0.006946955642
+2018-06-30,2018-06-30,2018-06-30,2018-06-30,2018-07-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2273113399,0.1366494218,0.1451646419,-0.007001602295
+2018-07-31,2018-07-31,2018-07-31,2018-07-31,2018-08-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2656252969,0.1482168582,0.1277511369,-0.006956061443
+2018-08-31,2018-08-31,2018-08-31,2018-08-31,2018-09-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3878305673,0.1857851221,0.1428329441,-0.006886504952
+2018-09-30,2018-09-30,2018-09-30,2018-09-30,2018-10-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2968313224,0.1062169997,0.08285382674,-0.006917143748
+2018-10-31,2018-10-31,2018-10-31,2018-10-31,2018-11-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1773896411,0.01117112971,-0.03866991941,-0.006951920688
+2018-11-30,2018-11-30,2018-11-30,2018-11-30,2018-12-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1522114492,-0.009748733047,-0.009776008919,-0.006990837091
+2018-12-31,2018-12-31,2018-12-31,2018-12-31,2019-01-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.03490498874,-0.06568162275,-0.06177158687,-0.006998289113
+2019-01-31,2019-01-31,2019-01-31,2019-01-31,2019-02-28,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1214174134,-0.007340930294,-0.012880263,-0.006816122212
+2019-02-28,2019-02-28,2019-02-28,2019-02-28,2019-03-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1726814092,0.05177081971,0.008027198258,-0.006599985844
+2019-03-31,2019-03-31,2019-03-31,2019-03-31,2019-04-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2052597535,0.05769867632,0.02478710578,-0.00638380244
+2019-04-30,2019-04-30,2019-04-30,2019-04-30,2019-05-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2344355646,0.06011816898,0.03428674202,-0.006137739304
+2019-05-31,2019-05-31,2019-05-31,2019-05-31,2019-06-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1106334316,0.02362285332,-0.008490644718,-0.00588830043
+2019-06-30,2019-06-30,2019-06-30,2019-06-30,2019-07-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1262958997,0.04180737224,0.04182148674,-0.0056429437
+2019-07-31,2019-07-31,2019-07-31,2019-07-31,2019-08-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1670778061,0.04434170435,0.06134897572,-0.005400014358
+2019-08-31,2019-08-31,2019-08-31,2019-08-31,2019-09-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.08201259905,0.03037313354,0.02411074182,-0.005181910328
+2019-09-30,2019-09-30,2019-09-30,2019-09-30,2019-10-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1291499757,0.08244515008,0.08962570248,-0.00494715547
+2019-10-31,2019-10-31,2019-10-31,2019-10-31,2019-11-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1838625741,0.1593678243,0.1770519841,-0.004699906658
+2019-11-30,2019-11-30,2019-11-30,2019-11-30,2019-12-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2083957277,0.1949126129,0.1239808821,-0.004470019138
+2019-12-31,2019-12-31,2019-12-31,2019-12-31,2020-01-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3560092535,0.2873701637,0.2141069532,-0.004279923826
+2020-01-31,2020-01-31,2020-01-31,2020-01-31,2020-02-29,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2887811863,0.2181538636,0.1130436125,-0.004115554951
+2020-02-29,2020-02-29,2020-02-29,2020-02-29,2020-03-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1178973083,0.05207494034,0.02445469814,-0.003910500556
+2020-03-31,2020-03-31,2020-03-31,2020-03-31,2020-04-30,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,-0.00725333969,-0.08329441161,-0.1266606348,-0.003705403939
+2020-04-30,2020-04-30,2020-04-30,2020-04-30,2020-05-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.03225121713,-0.1023853252,-0.09876490314,-0.003501925797
+2020-05-31,2020-05-31,2020-05-31,2020-05-31,2020-06-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.118744637,-0.04464355233,-0.06522594507,-0.003319174023
+2020-06-30,2020-06-30,2020-06-30,2020-06-30,2020-07-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.08791583644,-0.04658921117,-0.0336189649,-0.003066597144
+2020-07-31,2020-07-31,2020-07-31,2020-07-31,2020-08-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.01875058304,-0.08866833861,-0.04530515229,-0.002792348814
+2020-08-31,2020-08-31,2020-08-31,2020-08-31,2020-09-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.0958229466,-0.04550736773,-0.0003559344847,-0.002534650508
+2020-09-30,2020-09-30,2020-09-30,2020-09-30,2020-10-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.0796181415,-0.05993197985,-0.0009257669272,-0.002268559743
+2020-10-31,2020-10-31,2020-10-31,2020-10-31,2020-11-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.04433834972,-0.1254326759,-0.0131734412,-0.002043163406
+2020-11-30,2020-11-30,2020-11-30,2020-11-30,2020-12-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.08354030875,-0.03956206498,0.04568523657,-0.001776941971
+2020-12-31,2020-12-31,2020-12-31,2020-12-31,2021-01-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.09039124578,-0.0360603486,0.03866963574,-0.001477350973
+2021-01-31,2021-01-31,2021-01-31,2021-01-31,2021-02-28,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.07324205346,-0.03898000436,0.094078865,-0.001338349363
+2021-02-28,2021-02-28,2021-02-28,2021-02-28,2021-03-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1900334437,0.07310711139,0.1720461064,-0.001311715012
+2021-03-31,2021-03-31,2021-03-31,2021-03-31,2021-04-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.4266279332,0.3180301856,0.4136605528,-0.00129673279
+2021-04-30,2021-04-30,2021-04-30,2021-04-30,2021-05-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.2964143498,0.2793137205,0.3006978613,-0.00130588876
+2021-05-31,2021-05-31,2021-05-31,2021-05-31,2021-06-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.2687717591,0.3064459892,0.3499929196,-0.001285079563
+2021-06-30,2021-06-30,2021-06-30,2021-06-30,2021-07-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3201519441,0.2812526768,0.3133716915,-0.001328360708
+2021-07-31,2021-07-31,2021-07-31,2021-07-31,2021-08-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3732856851,0.3664399631,0.2458528081,-0.001389116828
+2021-08-31,2021-08-31,2021-08-31,2021-08-31,2021-09-30,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.3204785529,0.3278175956,0.2495938809,-0.001443212398
+2021-09-30,2021-09-30,2021-09-30,2021-09-30,2021-10-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2885693476,0.278843383,0.2118357012,-0.001472340151
+2021-10-31,2021-10-31,2021-10-31,2021-10-31,2021-11-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3711540336,0.3666350266,0.1717110407,-0.001509788995
+2021-11-30,2021-11-30,2021-11-30,2021-11-30,2021-12-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3364091431,0.2490145545,0.142498209,-0.001678718415
+2021-12-31,2021-12-31,2021-12-31,2021-12-31,2022-01-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3679739481,0.2895990129,0.1297376657,-0.001840132117
+2022-01-31,2022-01-31,2022-01-31,2022-01-31,2022-02-28,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3045250414,0.2546919511,0.09916747165,-0.002003189762
+2022-02-28,2022-02-28,2022-02-28,2022-02-28,2022-03-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2676575885,0.2030998655,0.06879588845,-0.00202731043
+2022-03-31,2022-03-31,2022-03-31,2022-03-31,2022-04-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1729920864,0.0763233331,-0.01932177942,-0.002039786482
+2022-04-30,2022-04-30,2022-04-30,2022-04-30,2022-05-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1106227757,0.05561001039,-0.01025600723,-0.002067234208
+2022-05-31,2022-05-31,2022-05-31,2022-05-31,2022-06-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1181686517,0.03634323898,-0.01828413729,-0.001682981421
+2022-06-30,2022-06-30,2022-06-30,2022-06-30,2022-07-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.0152472604,-0.03753775567,-0.07358842059,-0.001346007586
+2022-07-31,2022-07-31,2022-07-31,2022-07-31,2022-08-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.08345723373,-0.02049642973,-0.03051258405,-0.0006968045868
+2022-08-31,2022-08-31,2022-08-31,2022-08-31,2022-09-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.06388563024,-0.05351826994,0.002640288041,0.0001918587712
+2022-09-30,2022-09-30,2022-09-30,2022-09-30,2022-10-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.03023438282,-0.08283994538,-0.0570717168,0.001528966856
+2022-10-31,2022-10-31,2022-10-31,2022-10-31,2022-11-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.06486272413,-0.04058578763,-0.060917243,0.003088241008
+2022-11-30,2022-11-30,2022-11-30,2022-11-30,2022-12-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.02923106557,0.02617096388,-0.003869266925,0.004671886757
+2022-12-31,2022-12-31,2022-12-31,2022-12-31,2023-01-31,SE_SHORT_RATE,best region SE_EUROPE_EQ <= hurdle -> defensive,-0.07578045588,-0.04450575204,-0.05103441593,0.006489169686
+2023-01-31,2023-01-31,2023-01-31,2023-01-31,2023-02-28,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.01342791882,0.05396219233,-0.005049652409,0.008559836398
+2023-02-28,2023-02-28,2023-02-28,2023-02-28,2023-03-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,-0.004010245765,0.06477529526,-0.04683386244,0.01101682514
+2023-03-31,2023-03-31,2023-03-31,2023-03-31,2023-04-30,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.01832262483,0.1210792867,0.01849362,0.01383538451
+2023-04-30,2023-04-30,2023-04-30,2023-04-30,2023-05-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.0698069586,0.165672536,0.009437417061,0.01675656215
+2023-05-31,2023-05-31,2023-05-31,2023-05-31,2023-06-30,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.1339952146,0.1430403143,0.04469591901,0.01945874194
+2023-06-30,2023-06-30,2023-06-30,2023-06-30,2023-07-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.2698438267,0.2797081638,0.1199347948,0.02223532513
+2023-07-31,2023-07-31,2023-07-31,2023-07-31,2023-08-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.1736977741,0.2221834591,0.1545484895,0.02479892522
+2023-08-31,2023-08-31,2023-08-31,2023-08-31,2023-09-30,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.1715595453,0.2291954398,0.0675081444,0.02717465713
+2023-09-30,2023-09-30,2023-09-30,2023-09-30,2023-10-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.1747711715,0.2427710001,0.1171300087,0.02925561605
+2023-10-31,2023-10-31,2023-10-31,2023-10-31,2023-11-30,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.09799956406,0.159763787,0.1337175157,0.03116219535
+2023-11-30,2023-11-30,2023-11-30,2023-11-30,2023-12-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1196521374,0.1022782411,0.05979470252,0.03331881365
+2023-12-31,2023-12-31,2023-12-31,2023-12-31,2024-01-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2189080115,0.1382941332,0.08217428341,0.03523182726
+2024-01-31,2024-01-31,2024-01-31,2024-01-31,2024-02-29,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1966841307,0.07694743171,0.01022284002,0.03686378988
+2024-02-29,2024-02-29,2024-02-29,2024-02-29,2024-03-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2894673147,0.1050815066,0.1084217308,0.03791464146
+2024-03-31,2024-03-31,2024-03-31,2024-03-31,2024-04-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3371946474,0.1555890321,0.1336201096,0.03863148814
+2024-04-30,2024-04-30,2024-04-30,2024-04-30,2024-05-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3136219175,0.1282706656,0.1849165306,0.03930045529
+2024-05-31,2024-05-31,2024-05-31,2024-05-31,2024-06-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.245673954,0.1451309023,0.1029058799,0.03963379137
+2024-06-30,2024-06-30,2024-06-30,2024-06-30,2024-07-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2111788597,0.07046908311,0.09759862747,0.03982469648
+2024-07-31,2024-07-31,2024-07-31,2024-07-31,2024-08-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2380594529,0.1053443191,0.08671193882,0.03980050742
+2024-08-31,2024-08-31,2024-08-31,2024-08-31,2024-09-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1893892716,0.1012921684,0.06899528113,0.03964587984
+2024-09-30,2024-09-30,2024-09-30,2024-09-30,2024-10-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2624289308,0.1515830354,0.1444946175,0.03913636465
+2024-10-31,2024-10-31,2024-10-31,2024-10-31,2024-11-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3310005526,0.1675689867,0.1853425748,0.03827151026
+2024-11-30,2024-11-30,2024-11-30,2024-11-30,2024-12-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.4120985022,0.1324992297,0.157849488,0.03719018852
+2024-12-31,2024-12-31,2024-12-31,2024-12-31,2025-01-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.3692659299,0.1044180208,0.1657357742,0.03592478038
+2025-01-31,2025-01-31,2025-01-31,2025-01-31,2025-02-28,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.353232033,0.1495539253,0.190172381,0.03458081359
+2025-02-28,2025-02-28,2025-02-28,2025-02-28,2025-03-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.2268743091,0.1377091611,0.1142945241,0.03313720406
+2025-03-31,2025-03-31,2025-03-31,2025-03-31,2025-04-30,SE_SHORT_RATE,best region SE_USA_EQ <= hurdle -> defensive,0.0124693977,-0.002809843474,-0.0002526812611,0.03163987516
+2025-04-30,2025-04-30,2025-04-30,2025-04-30,2025-05-31,SE_SHORT_RATE,best region SE_EUROPE_EQ <= hurdle -> defensive,-0.01698516674,-0.007092646701,-0.05761871613,0.03016185898
+2025-05-31,2025-05-31,2025-05-31,2025-05-31,2025-06-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.0343615894,0.0271105299,0.01392620051,0.02879616627
+2025-06-30,2025-06-30,2025-06-30,2025-06-30,2025-07-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,0.03706177333,0.07199364465,0.02486144844,0.02755263282
+2025-07-31,2025-07-31,2025-07-31,2025-07-31,2025-08-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.05844852341,0.0423634001,0.05041861643,0.02626351685
+2025-08-31,2025-08-31,2025-08-31,2025-08-31,2025-09-30,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.08152632193,0.06373456133,0.08052257178,0.02502536475
+2025-09-30,2025-09-30,2025-09-30,2025-09-30,2025-10-31,SE_USA_EQ,SE_USA_EQ best and > hurdle,0.1050396331,0.07720207946,0.0839017761,0.02395543113
+2025-10-31,2025-10-31,2025-10-31,2025-10-31,2025-11-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.07877105425,0.09085967787,0.1038870362,0.02307100628
+2025-11-30,2025-11-30,2025-11-30,2025-11-30,2025-12-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,-0.006164951621,0.1052129927,0.09504227019,0.0222400095
+2025-12-31,2025-12-31,2025-12-31,2025-12-31,2026-01-31,SE_EUROPE_EQ,SE_EUROPE_EQ best and > hurdle,-0.01662682907,0.1278622627,0.08437235309,0.02164158945
+2026-01-31,2026-01-31,2026-01-31,2026-01-31,2026-02-28,SE_EM_EQ,SE_EM_EQ best and > hurdle,-0.07701256656,0.0513376143,0.1050973886,0.02123885387
+2026-02-28,2026-02-28,2026-02-28,2026-02-28,2026-03-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,-0.01744175668,0.1090641428,0.2262920629,0.02095600528
+2026-03-31,2026-03-31,2026-03-31,2026-03-31,2026-04-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.122619714,0.1367655833,0.2105431418,0.02060784074
+2026-04-30,2026-04-30,2026-04-30,2026-04-30,2026-05-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.2605295937,0.1792353351,0.3781755631,0.02032092113
+2026-05-31,2026-05-31,2026-05-31,2026-05-31,2026-06-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.2501074645,0.1621441808,0.4197864322,0.0200493538
+2026-06-30,2026-06-30,2026-06-30,2026-06-30,2026-07-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.251158042,0.1900247715,0.4003595384,0.01976937475
+2026-07-31,2026-07-31,2026-07-31,2026-07-31,2026-08-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.1687676271,0.1887206456,0.2702222116,0.01962261593
+2026-08-31,2026-08-31,2026-08-31,2026-08-31,2026-09-30,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.2108556549,0.19996765,0.3396468148,0.01953185561
+2026-09-30,2026-09-30,2026-09-30,2026-09-30,2026-10-31,SE_EM_EQ,SE_EM_EQ best and > hurdle,0.215105219,0.1813291168,0.3159566801,0.01947417952
+2026-10-31,2026-10-31,2026-10-31,2026-10-31,2026-11-30,NO_SIGNAL,"missing input(s): SE_USA_EQ_return, SE_EUROPE_EQ_return, SE_EM_EQ_return",,,,0.0195208324

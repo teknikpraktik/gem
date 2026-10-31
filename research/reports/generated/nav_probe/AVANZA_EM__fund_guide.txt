@@ -1,0 +1,180 @@
+retrieved_at: 2026-10-31T09:35:22Z
+GET https://www.avanza.se/_api/fund-guide/guide/944976
+body: null
+{
+ "status": 200,
+ "content_type": "application/json",
+ "bytes": 11335,
+ "final_url": "https://www.avanza.se/_api/fund-guide/guide/944976",
+ "json_keys": [
+  "adminCompany",
+  "aumCoveredCarbon",
+  "capital",
+  "carbonRiskScore",
+  "carbonSolutionsInvolvement",
+  "categories",
+  "controversyScore",
+  "countryChartData",
+  "currency",
+  "description",
+  "developmentFiveYears",
+  "developmentOneDay",
+  "developmentOneMonth",
+  "developmentOneYear",
+  "developmentSixMonths",
+  "developmentThisYear",
+  "developmentThreeMonths",
+  "developmentThreeYears",
+  "environmentalScore",
+  "esgScore",
+  "fossilFuelInvolvement",
+  "fundManagers",
+  "fundRatingViews",
+  "fundType",
+  "fundTypeName",
+  "governanceScore",
+  "hedgeFund",
+  "holdingChartData",
+  "indexFund",
+  "isin",
+  "lowCarbon",
+  "managementFee",
+  "name",
+  "nav",
+  "navDate",
+  "portfolioDate",
+  "ppmCode",
+  "pricingFrequency",
+  "primaryBenchmark",
+  "productFee",
+  "productInvolvements",
+  "prospectusLink",
+  "rating",
+  "recommendedHoldingPeriod",
+  "risk",
+  "riskText",
+  "sectorChartData",
+  "sharpeRatio",
+  "socialScore",
+  "standardDeviation",
+  "startDate",
+  "superloanOrderbook",
+  "sustainabilityRating",
+  "sustainabilityRatingCategoryName",
+  "svanen",
+  "ucitsFund"
+ ],
+ "nav": 186.69,
+ "navDate": "2026-10-29T00:00:00",
+ "isin": "SE0012454338",
+ "name": "Avanza Emerging Markets",
+ "startDate": "2019-04-01",
+ "currency": "SEK",
+ "list:countryChartData": {
+  "len": 28,
+  "first": {
+   "name": "Taiwan",
+   "y": 28.49,
+   "type": "",
+   "currency": "",
+   "countryCode": "TW",
+   "isin": null,
+   "orderbookId": null
+  },
+  "last": {
+   "name": "Luxemburg",
+   "y": 0.03,
+   "type": "",
+   "currency": "",
+   "countryCode": "LU",
+   "isin": null,
+   "orderbookId": null
+  }
+ },
+ "list:holdingChartData": {
+  "len": 25,
+  "first": {
+   "name": "Taiwan Semiconductor Manufacturing Co Ltd",
+   "y": 15.97,
+   "type": "HOLDING_TYPE_EQUITY",
+   "currency": "TWD",
+   "countryCode": "TW",
+   "isin": "TW0002330008",
+   "orderbookId": null
+  },
+  "last": {
+   "name": "Nu Holdings",
+   "y": 0.4,
+   "type": "HOLDING_TYPE_EQUITY",
+   "currency": "USD",
+   "countryCode": "BR",
+   "isin": "KYG6683N1034",
+   "orderbookId": null
+  }
+ },
+ "list:sectorChartData": {
+  "len": 11,
+  "first": {
+   "name": "Teknik",
+   "y": 44.2,
+   "type": "",
+   "currency": "",
+   "countryCode": null,
+   "isin": null,
+   "orderbookId": null
+  },
+  "last": {
+   "name": "Fastigheter",
+   "y": 0.94,
+   "type": "",
+   "currency": "",
+   "countryCode": null,
+   "isin": null,
+   "orderbookId": null
+  }
+ },
+ "list:fundManagers": {
+  "len": 1,
+  "first": {
+   "name": "Martin Sandstedt",
+   "startDate": "2022-10-01"
+  },
+  "last": {
+   "name": "Martin Sandstedt",
+   "startDate": "2022-10-01"
+  }
+ },
+ "list:categories": {
+  "len": 1,
+  "first": "Tillv\u00e4xtmarknader",
+  "last": "Tillv\u00e4xtmarknader"
+ },
+ "list:productInvolvements": {
+  "len": 16,
+  "first": {
+   "product": "alcohol",
+   "productDescription": "Alkohol",
+   "value": 0.37
+  },
+  "last": {
+   "product": "oilSandsExtractionInvolvement",
+   "productDescription": "Utvinning av oljesand",
+   "value": 0.36
+  }
+ },
+ "list:fundRatingViews": {
+  "len": 3,
+  "first": {
+   "date": "2026-09-30T00:00:00",
+   "fundRatingType": "THREE_YEARS",
+   "fundRating": 3
+  },
+  "last": {
+   "date": "2026-09-30T00:00:00",
+   "fundRatingType": "ALL_TIME",
+   "fundRating": 3
+  }
+ }
+}
+---
+{"isin":"SE0012454338","name":"Avanza Emerging Markets","description":"Avanza Emerging Markets är en s.k. matarfond som investerar i en indexfond och dess underliggande placeringar utgörs av ca 1400 värdepapper i stora och medelstora bolag i tillväxtländer. Att fonden är en s.k. matarfond innebär att den investerar minst 85 % i en annan fond, och målsättningen är att ge andelsägarna en avkastning som överensstämmer med mottagarfondens utveckling.","nav":186.69,"navDate":"2026-10-29T00:00:00","currency":"SEK","rating":3,"productFee":0.3,"managementFee":0.15,"risk":4,"riskText":"Medel","developmentOneDay":-1.62302,"developmentOneMonth":-7.757300000000001,"developmentThreeMonths":3.91295,"developmentSixMonths":6.442779999999999,"developmentOneYear":21.55088,"developmentThisYear":23.358,"developmentThreeYears":62.96264,"developmentFiveYears":61.916748,"countryChartData":[{"name":"Taiwan","y":28.49,"type":"","currency":"","countryCode":"TW","isin":null,"orderbookId":null},{"name":"Sydkorea","y":21.54,"type":"","currency":"","countryCode":"KR","isin":null,"orderbookId":null},{"name":"Kina","y":18.86,"type":"","currency":"","countryCode":"CN","isin":null,"orderbookId":null},{"name":"Indien","y":10.63,"type":"","currency":"","countryCode":"IN","isin":null,"orderbookId":null},{"name":"Brasilien","y":3.92,"type":"","currency":"","countryCode":"BR","isin":null,"orderbookId":null},{"name":"Sydafrika","y":2.49,"type":"","currency":"","countryCode":"ZA","isin":null,"orderbookId":null},{"name":"Saudiarabien","y":2.31,"type":"","currency":"","countryCode":"SA","isin":null,"orderbookId":null},{"name":"Mexiko","y":1.59,"type":"","currency":"","countryCode":"MX","isin":null,"orderbookId":null},{"name":"Förenade Arabemiraten","y":1.24,"type":"","currency":"","countryCode":"AE","isin":null,"orderbookId":null},{"name":"USA","y":1.18,"type":"","currency":"","countryCode":"US","isin":null,"orderbookId":null},{"name":"Polen","y":1.16,"type":"","currency":"","countryCode":"PL","isin":null,"orderbookId":null},{"name":"Thailand","y":0.99,"type":"","currency":"","countryCode":"TH","isin":null,"orderbookId":null},{"name":"Malaysia","y":0.95,"type":"","currency":"","countryCode":"MY","isin":null,"orderbookId":null},{"name":"Grekland","y":0.61,"type":"","currency":"","countryCode":"GR","isin":null,"orderbookId":null},{"name":"Hongkong SAR","y":0.56,"type":"","currency":"","countryCode":"HK","isin":null,"orderbookId":null},{"name":"Kuwait","y":0.54,"type":"","currency":"","countryCode":"KW","isin":null,"orderbookId":null},{"name":"Indonesien","y":0.46,"type":"","currency":"","countryCode":"ID","isin":null,"orderbookId":null},{"name":"Qatar","y":0.43,"type":"","currency":"","countryCode":"QA","isin":null,"orderbookId":null},{"name":"Chile","y":0.42,"type":"","currency":"","countryCode":"CL","isin":null,"orderbookId":null},{"name":"Turkiet","y":0.39,"type":"","currency":"","countryCode":"TR","isin":null,"orderbookId":null},{"name":"Ungern","y":0.33,"type":"","currency":"","countryCode":"HU","isin":null,"orderbookId":null},{"name":"Peru","y":0.26,"type":"","currency":"","countryCode":"PE","isin":null,"orderbookId":null},{"name":"Filippinerna","y":0.24,"type":"","currency":"","countryCode":"PH","isin":null,"orderbookId":null},{"name":"Colombia","y":0.16,"type":"","currency":"","countryCode":"CO","isin":null,"orderbookId":null},{"name":"Tjeckien","y":0.11,"type":"","currency":"","countryCode":"CZ","isin":null,"orderbookId":null},{"name":"Egypten","y":0.06,"type":"","currency":"","countryCode":"EG","isin":null,"orderbookId":null},{"name":"Rumänien","y":0.04,"type":"","currency":"","countryCode":"RO","isin":null,"orderbookId":null},{"name":"Luxemburg","y":0.03,"type":"","currency":"","countryCode":"LU","isin":null,"orderbookId":null}],"holdingChartData":[{"name":"Taiwan Semiconductor Manufacturing Co Ltd","y":15.97,"type":"HOLDING_TYPE_EQUITY","currency":"TWD","countryCode":"TW","isin":"TW0002330008","orderbookId":null},{"name":"Samsung Electronics Co Ltd","y":6.68,"type":"HOLDING_TYPE_EQUITY","currency":"KRW","countryCode":"KR","isin":"KR7005930003","orderbookId":null},{"name":"SK hynix Inc","y":4.72,"type":"HOLDING_TYPE_EQUITY","currency":"KRW","countryCode":"KR","isin":"KR7000660001","orderbookId":null},{"name":"Tencent Holdings Ltd","y":2.68,"type":"HOLDING_TYPE_EQUITY","currency":"HKD","countryCode":"CN","isin":"KYG875721634","orderbookId":null},{"name":"Alibaba Group Holding Ltd Ordinary Shares","y":1.86,"type":"HOLDING_TYPE_EQUITY","currency":"HKD","countryCode":"CN","isin":"KYG017191142","orderbookId":null},{"name":"MediaTek Inc","y":1.58,"type":"HOLDING_TYPE_EQUITY","currency":"TWD","countryCode":"TW","isin":"TW0002454006","orderbookId":null},{"name":"China Construction Bank Corp Class H","y":0.94,"type":"HOLDING_TYPE_EQUITY","currency":"HKD","countryCode":"CN","isin":"CNE1000002H1","orderbookId":null},{"name":"Samsung Electronics Co Ltd Pfd Registered Shs Non-Voting","y":0.89,"type":"HOLDING_TYPE_EQUITY","currency":"KRW","countryCode":"KR","isin":"KR7005931001","orderbookId":null},{"name":"Delta Electronics Inc","y":0.83,"type":"HOLDING_TYPE_EQUITY","currency":"TWD","countryCode":"TW","isin":"TW0002308004","orderbookId":null},{"name":"Hon Hai Precision Industry Co Ltd","y":0.82,"type":"HOLDING_TYPE_EQUITY","currency":"TWD","countryCode":"TW","isin":"TW0002317005","orderbookId":null},{"name":"HDFC Bank Ltd","y":0.73,"type":"HOLDING_TYPE_EQUITY","currency":"INR","countryCode":"IN","isin":"INE040A01034","orderbookId":null},{"name":"ICICI Bank Ltd","y":0.7,"type":"HOLDING_TYPE_EQUITY","currency":"INR","countryCode":"IN","isin":"INE090A01021","orderbookId":null},{"name":"Reliance Industries Ltd","y":0.65,"type":"HOLDING_TYPE_EQUITY","currency":"INR","countryCode":"IN","isin":"INE002A01018","orderbookId":null},{"name":"ASE Technology Holding Co Ltd","y":0.59,"type":"HOLDING_TYPE_EQUITY","currency":"TWD","countryCode":"TW","isin":"TW0003711008","orderbookId":null},{"name":"Industrial And Commercial Bank Of China Ltd Class H

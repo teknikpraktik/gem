@@ -1,0 +1,98 @@
+{
+  "cost_per_side_bps": 0.0,
+  "data_tier": "EXTENDED_PROXY",
+  "execution": "NEXT_MONTH_CLOSE",
+  "lookahead_free": true,
+  "metrics": {
+    "annual_turnover": 1.4786729857819907,
+    "average_holding_period_months": 7.962264150943396,
+    "best_year": 1995,
+    "best_year_return": 0.31586870120556054,
+    "cagr": 0.11092242625355975,
+    "calmar": 0.462109194475579,
+    "end_date": "2026-09-30",
+    "end_value": 404151.9188768409,
+    "longest_drawdown_months": 42,
+    "longest_drawdown_span": "2000-03-31..2003-09-30",
+    "longest_underperformance_span": "2009-02-28..2026-09-30",
+    "longest_underperformance_vs_benchmark_months": 211,
+    "max_drawdown": -0.2400350990190515,
+    "months": 422,
+    "no_signal_count": 780,
+    "number_of_switches": 52,
+    "sharpe": 0.6874079340480397,
+    "sharpe_rf": "hurdle/T-bill series of the run",
+    "sortino": 1.0579473826008865,
+    "start_date": "1991-08-31",
+    "start_value": 10000.0,
+    "switches_per_year": 1.4786729857819907,
+    "time_in_asset": {
+      "EX_US_EQUITIES": 0.2725118483412322,
+      "US_AGG_BONDS": 0.20853080568720378,
+      "US_EQUITIES": 0.518957345971564
+    },
+    "volatility": 0.12950568801206847,
+    "worst_year": 2000,
+    "worst_year_return": -0.21005864056854007
+  },
+  "notes": [
+    "Open-data proxy: CRSP US market, Developed ex US (no EM), synthetic 5y Treasury par bond from GS5, 1-month T-bill. NOT GEM_ORIGINAL."
+  ],
+  "provenance": {
+    "run_id": "GEM_PROXY_FF",
+    "series": [
+      {
+        "class": "PROXY",
+        "data_period": "1990-06-30..2026-09-30",
+        "id": "FF_DEV_EXUS_MKT_TR",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "Developed_ex_US_3_Factors (Mkt-RF + RF)",
+        "quality_status": "EXPERIMENTAL",
+        "retrieved_at": "2026-10-31T09:35:48Z",
+        "sha256": "689c242b62e430fecbb8b3cc98269761b38d1d3f7ca15a22c3fb79771c932aee",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "1926-06-30..2026-09-30",
+        "id": "FF_RF",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "F-F_Research_Data_Factors (RF)",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T09:35:51Z",
+        "sha256": "b03d39e4bb253dda0f14893db3b78e64b40b8d6549a0fc0fd4111dae84c98618",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "1926-06-30..2026-09-30",
+        "id": "FF_US_MKT_TR",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "F-F_Research_Data_Factors (Mkt-RF + RF)",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T09:35:51Z",
+        "sha256": "b03d39e4bb253dda0f14893db3b78e64b40b8d6549a0fc0fd4111dae84c98618",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "1953-04-01..2026-09-01",
+        "id": "FRED_GS5",
+        "provider": "FRED",
+        "provider_series_id": "GS5",
+        "quality_status": "EXPERIMENTAL",
+        "retrieved_at": "2026-10-31T09:35:54Z",
+        "sha256": "e4c0186a43a35524ff6e06bebe14ad38c67d309da8beff9e4af0c74283df3afb",
+        "verification": "ASSUMPTION"
+      }
+    ],
+    "strategy_id": "GEM_PROXY_FF",
+    "strategy_version": "1.0.0",
+    "tier": "EXTENDED_PROXY",
+    "weakest_class": "PROXY"
+  },
+  "run_id": "GEM_PROXY_FF__FULL__NEXT_MONTH_CLOSE__COST_0",
+  "stop_reason": null,
+  "strategy_id": "GEM_PROXY_FF",
+  "strategy_version": "1.0.0"
+}

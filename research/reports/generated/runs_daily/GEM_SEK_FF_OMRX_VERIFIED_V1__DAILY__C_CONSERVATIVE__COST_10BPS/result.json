@@ -1,0 +1,103 @@
+{
+  "cost_per_side_bps": 10.0,
+  "daily_series": [
+    "FF_DEV_EXUS_MKT_TR_DAILY",
+    "FF_US_MKT_TR_DAILY",
+    "FRED_OMRXTBILL",
+    "RB_SEK_PER_USD"
+  ],
+  "label": "CONSERVATIVE",
+  "lookahead_free": true,
+  "metrics": {
+    "average_holding_period_months": 5.378378378378378,
+    "avg_bdays_out_of_market_per_switch": 1.9722222222222223,
+    "avg_bdays_signal_to_execution": 4.027027027027027,
+    "best_year": 2024,
+    "best_year_return": 0.3679000519625599,
+    "cagr": 0.12232546151308554,
+    "calmar": 0.6264175343007019,
+    "end_date": "2026-09-30",
+    "end_value": 67785.5345847835,
+    "longest_drawdown_months": 19,
+    "longest_drawdown_span": "2010-03-31..2011-10-31",
+    "max_drawdown": -0.195277837568265,
+    "months": 199,
+    "number_of_switches": 36,
+    "number_of_trades": 36,
+    "sharpe": 0.9311725905293631,
+    "sharpe_rf": "hurdle/T-bill series of the run",
+    "sortino": 1.5528558464863649,
+    "start_date": "2010-03-31",
+    "start_value": 10000.0,
+    "switches_per_year": 2.170854271356784,
+    "volatility": 0.12547619591331452,
+    "worst_year": 2025,
+    "worst_year_return": -0.05178749746017697
+  },
+  "provenance": {
+    "run_id": "GEM_SEK_FF_OMRX_VERIFIED_V1",
+    "series": [
+      {
+        "class": "PROXY",
+        "data_period": "1990-06-30..2026-09-30",
+        "id": "FF_DEVELOPED_MKT_TR",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "Developed_3_Factors (Mkt-RF + RF)",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T09:35:48Z",
+        "sha256": "3f99cfdeddd1914e3d8f84ce51d775aeed3e98ed0c290957e88f4df9912f8a23",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "1990-06-30..2026-09-30",
+        "id": "FF_DEV_EXUS_MKT_TR",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "Developed_ex_US_3_Factors (Mkt-RF + RF)",
+        "quality_status": "EXPERIMENTAL",
+        "retrieved_at": "2026-10-31T09:35:48Z",
+        "sha256": "689c242b62e430fecbb8b3cc98269761b38d1d3f7ca15a22c3fb79771c932aee",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "1926-06-30..2026-09-30",
+        "id": "FF_US_MKT_TR",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "F-F_Research_Data_Factors (Mkt-RF + RF)",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T09:35:51Z",
+        "sha256": "b03d39e4bb253dda0f14893db3b78e64b40b8d6549a0fc0fd4111dae84c98618",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PRIMARY_SOURCE_VERIFIED",
+        "data_period": "2008-11-17..2026-10-29",
+        "id": "FRED_OMRXTBILL",
+        "provider": "FRED (Nasdaq, Inc.)",
+        "provider_series_id": "NASDAQOMRXTBILL",
+        "quality_status": "VERIFIED",
+        "retrieved_at": "2026-10-31T09:35:55Z",
+        "sha256": "4409893008aaaa382139ae417a6a99a8d25efcd0079f8139e8e10388da6fe030",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PRIMARY_SOURCE_VERIFIED",
+        "data_period": "1993-01-04..2026-10-30",
+        "id": "RB_SEK_PER_USD",
+        "provider": "Sveriges Riksbank SWEA API",
+        "provider_series_id": "SEKUSDPMI",
+        "quality_status": "VERIFIED",
+        "retrieved_at": "2026-10-31T09:35:56Z",
+        "sha256": "58d9b62ce7ef1a8f9884ea0dde96696e1acfe9de7cd56ce16e0202484d3c5079",
+        "verification": "VERIFIED FROM PRIMARY SOURCE"
+      }
+    ],
+    "strategy_id": "GEM_SEK",
+    "strategy_version": "1.0.0",
+    "tier": "SWEDISH",
+    "weakest_class": "PROXY"
+  },
+  "run_id": "GEM_SEK_FF_OMRX_VERIFIED_V1__DAILY__C_CONSERVATIVE__COST_10BPS",
+  "scenario": "C_CONSERVATIVE"
+}
