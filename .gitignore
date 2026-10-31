@@ -22,3 +22,12 @@ research/reports/generated/runs/BUY_HOLD_US_AGG_*3P*/**
 research/reports/generated/runs/STATIC_70_30_US_*3P*/**
 research/.venv/
 research/data/manual/**
+# Local secrets and local databases (never committed)
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite
+*.sqlite3
+.DS_Store
+.ipynb_checkpoints/

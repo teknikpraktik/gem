@@ -1,0 +1,1023 @@
+{
+ "exported_at": "2026-10-31T19:51:09Z",
+ "research_commit": "be1ebee",
+ "source": "research/reports/generated (GitHub Actions workflow 'GEM phase 2 research')",
+ "note": "Signals recomputed by the research pipeline on real Avanza NAVs with the same rule as the live engine (gem.live). Live cron snapshots take precedence.",
+ "signals": [
+  {
+   "signalPeriod": "2021-02-28",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EM",
+   "previousFund": null,
+   "switched": false,
+   "returns": {
+    "cash": -0.0013117150115683485,
+    "em": 0.1707317073170731,
+    "europe": 0.07940033314825112,
+    "usa": 0.1529036243822075
+   },
+   "reason": "em best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2021-03-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EM",
+   "previousFund": "AVANZA_EM",
+   "switched": false,
+   "returns": {
+    "cash": -0.0012967327895453407,
+    "em": 0.3947490168864216,
+    "europe": 0.2643847380689486,
+    "usa": 0.39277986561894984
+   },
+   "reason": "em best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2021-04-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EM",
+   "previousFund": "AVANZA_EM",
+   "switched": false,
+   "returns": {
+    "cash": -0.0013058887597710012,
+    "em": 0.28099528099528115,
+    "europe": 0.23003980332474816,
+    "usa": 0.28060224811797463
+   },
+   "reason": "em best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2021-05-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EM",
+   "previousFund": "AVANZA_EM",
+   "switched": false,
+   "returns": {
+    "cash": -0.0012850795630970913,
+    "em": 0.3248126928162185,
+    "europe": 0.23843046739757634,
+    "usa": 0.2530989636252794
+   },
+   "reason": "em best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2021-06-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_EM",
+   "switched": true,
+   "returns": {
+    "cash": -0.0013283607082084092,
+    "em": 0.2938847796645485,
+    "europe": 0.23638807976697285,
+    "usa": 0.305021636308745
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2021-07-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": -0.001389116827669179,
+    "em": 0.18447889047521926,
+    "europe": 0.31525229357798157,
+    "usa": 0.34516585760517793
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2021-08-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EUROPA",
+   "previousFund": "AVANZA_USA",
+   "switched": true,
+   "returns": {
+    "cash": -0.0014432123978347366,
+    "em": 0.21523982999392843,
+    "europe": 0.3139973380656611,
+    "usa": 0.2993113857183285
+   },
+   "reason": "europe best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2021-09-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_EUROPA",
+   "switched": true,
+   "returns": {
+    "cash": -0.00147234015058606,
+    "em": 0.1535105117017055,
+    "europe": 0.24335989375830014,
+    "usa": 0.24725841222232625
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2021-10-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": -0.0015097889947884857,
+    "em": 0.12641656897225473,
+    "europe": 0.3783622946917402,
+    "usa": 0.40200369613850784
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2021-11-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": -0.001678718415396463,
+    "em": 0.08738404452690163,
+    "europe": 0.23704649430790514,
+    "usa": 0.37686975556366287
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2021-12-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": -0.0018401321173169283,
+    "em": 0.06732333273088753,
+    "europe": 0.2910955320707336,
+    "usa": 0.46316179192891527
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2022-01-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": -0.00200318976202829,
+    "em": 0.0273747841105354,
+    "europe": 0.24377429862351585,
+    "usa": 0.3735190377136657
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2022-02-28",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": -0.002027310430342877,
+    "em": -0.0037414965986394266,
+    "europe": 0.18436213991769557,
+    "usa": 0.3325890863624186
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2022-03-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": -0.002039786482121664,
+    "em": -0.05522846007131599,
+    "europe": 0.10906268193285462,
+    "usa": 0.23736713000817677
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2022-04-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": -0.00206723420780186,
+    "em": -0.05383456128600128,
+    "europe": 0.06814504615970307,
+    "usa": 0.17514897729102907
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2022-05-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": -0.0016829814209522453,
+    "em": -0.05688622754491013,
+    "europe": 0.023669741869350336,
+    "usa": 0.16800454066326131
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2022-06-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": -0.0013460075862639087,
+    "em": -0.10756843800322058,
+    "europe": -0.046574845958680666,
+    "usa": 0.0738741517581738
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2022-07-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": -0.0006968045868350758,
+    "em": -0.05260439087387003,
+    "europe": -0.02886040631266895,
+    "usa": 0.14036538606119864
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2022-08-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": 0.00019185877120930783,
+    "em": -0.04912981930219007,
+    "europe": -0.09276610112264705,
+    "usa": 0.09438071729345143
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2022-09-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": 0.001528966855718572,
+    "em": -0.08768913342503426,
+    "europe": -0.09773030707610142,
+    "usa": 0.0743969339445405
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2022-10-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": 0.0030882410082710976,
+    "em": -0.11179531656548136,
+    "europe": -0.07512304636905276,
+    "usa": 0.06445122797280445
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2022-11-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": 0.0046718867573201095,
+    "em": -0.04103395325029857,
+    "europe": -0.008170637309710127,
+    "usa": 0.04418388977212495
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2022-12-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_RANTA_KORT",
+   "previousFund": "AVANZA_USA",
+   "switched": true,
+   "returns": {
+    "cash": 0.006489169686413998,
+    "em": -0.07484548302429939,
+    "europe": -0.07010292568279441,
+    "usa": -0.08957489878542524
+   },
+   "reason": "best region europe <= hurdle -> defensive",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2023-01-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EUROPA",
+   "previousFund": "AVANZA_RANTA_KORT",
+   "switched": true,
+   "returns": {
+    "cash": 0.008559836397638687,
+    "em": -0.004034630579137666,
+    "europe": 0.04485933935963504,
+    "usa": 0.029630605122802356
+   },
+   "reason": "europe best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2023-02-28",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EUROPA",
+   "previousFund": "AVANZA_EUROPA",
+   "switched": false,
+   "returns": {
+    "cash": 0.011016825141899833,
+    "em": -0.057869580061454484,
+    "europe": 0.061327310632383725,
+    "usa": 0.02881844380403442
+   },
+   "reason": "europe best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2023-03-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EUROPA",
+   "previousFund": "AVANZA_EUROPA",
+   "switched": false,
+   "returns": {
+    "cash": 0.013835384513104731,
+    "em": -0.00763626788378835,
+    "europe": 0.10174978127734047,
+    "usa": 0.0322474063305358
+   },
+   "reason": "europe best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2023-04-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EUROPA",
+   "previousFund": "AVANZA_EUROPA",
+   "switched": false,
+   "returns": {
+    "cash": 0.01675656214626131,
+    "em": -0.021679497389611613,
+    "europe": 0.1546823487481066,
+    "usa": 0.06167340505721919
+   },
+   "reason": "europe best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2023-05-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EUROPA",
+   "previousFund": "AVANZA_EUROPA",
+   "switched": false,
+   "returns": {
+    "cash": 0.019458741944186064,
+    "em": 0.00855379188712524,
+    "europe": 0.17724169321802452,
+    "usa": 0.1334953141270392
+   },
+   "reason": "europe best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2023-06-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EUROPA",
+   "previousFund": "AVANZA_EUROPA",
+   "switched": false,
+   "returns": {
+    "cash": 0.022235325129285943,
+    "em": 0.07127390833634051,
+    "europe": 0.26677437749477284,
+    "usa": 0.26109435588108587
+   },
+   "reason": "europe best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2023-07-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EUROPA",
+   "previousFund": "AVANZA_EUROPA",
+   "switched": false,
+   "returns": {
+    "cash": 0.024798925224539525,
+    "em": 0.10596146855688837,
+    "europe": 0.1964446040581791,
+    "usa": 0.15717299578059074
+   },
+   "reason": "europe best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2023-08-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EUROPA",
+   "previousFund": "AVANZA_EUROPA",
+   "switched": false,
+   "returns": {
+    "cash": 0.027174657134361624,
+    "em": 0.04072160434363781,
+    "europe": 0.24199851135094907,
+    "usa": 0.18800583786652525
+   },
+   "reason": "europe best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2023-09-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EUROPA",
+   "previousFund": "AVANZA_EUROPA",
+   "switched": false,
+   "returns": {
+    "cash": 0.029255616048150968,
+    "em": 0.08066339992461358,
+    "europe": 0.24080102594455943,
+    "usa": 0.17129467720500813
+   },
+   "reason": "europe best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2023-10-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EUROPA",
+   "previousFund": "AVANZA_EUROPA",
+   "switched": false,
+   "returns": {
+    "cash": 0.031162195350288302,
+    "em": 0.10711844546431015,
+    "europe": 0.1721594622350855,
+    "usa": 0.07084664016163722
+   },
+   "reason": "europe best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2023-11-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EUROPA",
+   "previousFund": "AVANZA_EUROPA",
+   "switched": false,
+   "returns": {
+    "cash": 0.03331881364956435,
+    "em": 0.021884174005871504,
+    "europe": 0.13631633714880342,
+    "usa": 0.08494575905601742
+   },
+   "reason": "europe best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2023-12-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_EUROPA",
+   "switched": true,
+   "returns": {
+    "cash": 0.03523182725652063,
+    "em": 0.049510387114487076,
+    "europe": 0.14502353146243685,
+    "usa": 0.21400778210116744
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2024-01-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": 0.036863789875470676,
+    "em": -0.0444763271162123,
+    "europe": 0.10510996119016824,
+    "usa": 0.13902922555477404
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2024-02-29",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": 0.03791464145677992,
+    "em": 0.07591955064323264,
+    "europe": 0.1468325421509249,
+    "usa": 0.208781186893362
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2024-03-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": 0.038631488144311055,
+    "em": 0.09605519193348666,
+    "europe": 0.17605018661160954,
+    "usa": 0.2505601433967095
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2024-04-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": 0.039300455292071046,
+    "em": 0.15783285094066568,
+    "europe": 0.14229493016436456,
+    "usa": 0.21848576776608786
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2024-05-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": 0.039633791374948046,
+    "em": 0.09154498557313984,
+    "europe": 0.1585988246210952,
+    "usa": 0.1716070553650173
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2024-06-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": 0.03982469648111042,
+    "em": 0.09996631295266978,
+    "europe": 0.12198964663515666,
+    "usa": 0.14844550734540474
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2024-07-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": 0.03980050741944874,
+    "em": 0.0889071487263764,
+    "europe": 0.1468557706738709,
+    "usa": 0.1721171376481312
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2024-08-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EUROPA",
+   "previousFund": "AVANZA_USA",
+   "switched": true,
+   "returns": {
+    "cash": 0.039645879838993814,
+    "em": 0.08305284416021541,
+    "europe": 0.14570379803730615,
+    "usa": 0.12190082644628086
+   },
+   "reason": "europe best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2024-09-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_EUROPA",
+   "switched": true,
+   "returns": {
+    "cash": 0.039136364650415034,
+    "em": 0.18460062783397269,
+    "europe": 0.19470504054698679,
+    "usa": 0.21354353278394833
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2024-10-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": 0.03827151025624076,
+    "em": 0.20956076909507848,
+    "europe": 0.17809637594583827,
+    "usa": 0.28995739500912965
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2024-11-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": 0.037190188516430966,
+    "em": 0.15408722904152516,
+    "europe": 0.12683150183150182,
+    "usa": 0.3414220558998946
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2024-12-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": 0.03592478037622393,
+    "em": 0.19087896756191136,
+    "europe": 0.09986299284518196,
+    "usa": 0.3064331501831501
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2025-01-31",
+   "status": "NO_SIGNAL",
+   "selectedFund": null,
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {},
+   "reason": "month 2025-01 not complete for AVANZA_EM: last NAV 2025-01-22 (> 3 bdays before 2025-01-31)",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2025-02-28",
+   "status": "VALID",
+   "selectedFund": "AVANZA_USA",
+   "previousFund": "AVANZA_USA",
+   "switched": false,
+   "returns": {
+    "cash": 0.03313720406184295,
+    "em": 0.16807005725833601,
+    "europe": 0.10569511846988289,
+    "usa": 0.19276783789609842
+   },
+   "reason": "usa best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2025-03-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EM",
+   "previousFund": "AVANZA_USA",
+   "switched": true,
+   "returns": {
+    "cash": 0.031639875163830045,
+    "em": 0.041559070367979345,
+    "europe": -0.03720459149223487,
+    "usa": -0.00675710263629381
+   },
+   "reason": "em best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2025-04-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_RANTA_KORT",
+   "previousFund": "AVANZA_EM",
+   "switched": true,
+   "returns": {
+    "cash": 0.030161858977667988,
+    "em": -0.031091320990547566,
+    "europe": -0.03039924339660882,
+    "usa": -0.02304269520076274
+   },
+   "reason": "best region usa <= hurdle -> defensive",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2025-05-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EM",
+   "previousFund": "AVANZA_RANTA_KORT",
+   "switched": true,
+   "returns": {
+    "cash": 0.028796166273434842,
+    "em": 0.04061198333867355,
+    "europe": -0.011079223119535686,
+    "usa": 0.02268687924725543
+   },
+   "reason": "em best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2025-06-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EM",
+   "previousFund": "AVANZA_EM",
+   "switched": false,
+   "returns": {
+    "cash": 0.027552632818762968,
+    "em": 0.037439705994946726,
+    "europe": -0.008692744901370841,
+    "usa": 0.01046159948435732
+   },
+   "reason": "em best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2025-07-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EM",
+   "previousFund": "AVANZA_EM",
+   "switched": false,
+   "returns": {
+    "cash": 0.026263516848047397,
+    "em": 0.05297313613039534,
+    "europe": -0.04311980632074852,
+    "usa": 0.03898313323287805
+   },
+   "reason": "em best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2025-08-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EM",
+   "previousFund": "AVANZA_EM",
+   "switched": false,
+   "returns": {
+    "cash": 0.02502536474652528,
+    "em": 0.06712765130914455,
+    "europe": -0.03988492219170914,
+    "usa": 0.05345677168881591
+   },
+   "reason": "em best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2025-09-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EM",
+   "previousFund": "AVANZA_EM",
+   "switched": false,
+   "returns": {
+    "cash": 0.023955431133189764,
+    "em": 0.09009937430990078,
+    "europe": -0.010714048046849056,
+    "usa": 0.07366400944788909
+   },
+   "reason": "em best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2025-10-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EM",
+   "previousFund": "AVANZA_EM",
+   "switched": false,
+   "returns": {
+    "cash": 0.02307100627848513,
+    "em": 0.13511739827913094,
+    "europe": 0.025826516124670462,
+    "usa": 0.06766065867698412
+   },
+   "reason": "em best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2025-11-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EM",
+   "previousFund": "AVANZA_EM",
+   "switched": false,
+   "returns": {
+    "cash": 0.022240009502460634,
+    "em": 0.13864373538507957,
+    "europe": 0.0358255451713394,
+    "usa": -0.0259796870232335
+   },
+   "reason": "em best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2025-12-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EM",
+   "previousFund": "AVANZA_EM",
+   "switched": false,
+   "returns": {
+    "cash": 0.02164158944692285,
+    "em": 0.10814966683751925,
+    "europe": 0.06726643598615922,
+    "usa": -0.032287742048541124
+   },
+   "reason": "em best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2026-01-31",
+   "status": "NO_SIGNAL",
+   "selectedFund": null,
+   "previousFund": "AVANZA_EM",
+   "switched": false,
+   "returns": {
+    "cash": 0.021238853873723373,
+    "em": null,
+    "europe": -0.014530190506942153,
+    "usa": -0.08549834671705236
+   },
+   "reason": "missing input(s): em_return",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2026-02-28",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EM",
+   "previousFund": "AVANZA_EM",
+   "switched": false,
+   "returns": {
+    "cash": 0.02095600528243291,
+    "em": 0.2278690888119954,
+    "europe": 0.04247079326147274,
+    "usa": -0.033795689694121944
+   },
+   "reason": "em best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2026-03-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EM",
+   "previousFund": "AVANZA_EM",
+   "switched": false,
+   "returns": {
+    "cash": 0.02060784074019928,
+    "em": 0.22817076005268477,
+    "europe": 0.05112560488112772,
+    "usa": 0.09812915528526522
+   },
+   "reason": "em best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2026-04-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EM",
+   "previousFund": "AVANZA_EM",
+   "switched": false,
+   "returns": {
+    "cash": 0.020320921134665104,
+    "em": 0.4059501733451585,
+    "europe": 0.0940569915697067,
+    "usa": 0.23976576478880873
+   },
+   "reason": "em best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2026-05-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EM",
+   "previousFund": "AVANZA_EM",
+   "switched": false,
+   "returns": {
+    "cash": 0.020049353796699698,
+    "em": 0.4685551535678547,
+    "europe": 0.09144901127083771,
+    "usa": 0.23282559803721137
+   },
+   "reason": "em best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2026-06-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EM",
+   "previousFund": "AVANZA_EM",
+   "switched": false,
+   "returns": {
+    "cash": 0.01976937475106655,
+    "em": 0.45490774907749065,
+    "europe": 0.16094435075885327,
+    "usa": 0.2318940137389598
+   },
+   "reason": "em best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2026-07-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EM",
+   "previousFund": "AVANZA_EM",
+   "switched": false,
+   "returns": {
+    "cash": 0.01962261592817116,
+    "em": 0.34893220581912,
+    "europe": 0.16972100656455136,
+    "usa": 0.15476023391812865
+   },
+   "reason": "em best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2026-08-31",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EM",
+   "previousFund": "AVANZA_EM",
+   "switched": false,
+   "returns": {
+    "cash": 0.01953185561036408,
+    "em": 0.42380779031670923,
+    "europe": 0.19429310814491974,
+    "usa": 0.20996928892038724
+   },
+   "reason": "em best and > hurdle",
+   "origin": "research_pipeline"
+  },
+  {
+   "signalPeriod": "2026-09-30",
+   "status": "VALID",
+   "selectedFund": "AVANZA_EM",
+   "previousFund": "AVANZA_EM",
+   "switched": false,
+   "returns": {
+    "cash": 0.019474179515020396,
+    "em": 0.3553244648524545,
+    "europe": 0.16103861159693267,
+    "usa": 0.21783766442091768
+   },
+   "reason": "em best and > hurdle",
+   "origin": "research_pipeline"
+  }
+ ]
+}

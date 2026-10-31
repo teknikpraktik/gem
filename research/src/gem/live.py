@@ -4,9 +4,9 @@ Pure function: same inputs -> same output. No trading, no account access.
 
 Steps at each month change (as_of = the moment the signal is computed):
   1. signal_period_end = last calendar month end strictly before as_of
-  2. every fund must have a NAV for the LAST COMMON NAV DATE of that month, and
-     that date must be within `max_stale_bdays` business days of the month end
-     (otherwise the month is not complete -> NO_SIGNAL)
+  2. per fund: its last NAV in the month must be within `max_stale_bdays`
+     business days of the month's last business day (otherwise the month is not
+     complete for that fund -> NO_SIGNAL); funds need not share the same NAV date
   3. 12-month NAV return per region: NAV(month end t) / NAV(month end t-12) - 1
   4. Swedish cash hurdle: SE_CASH_SSVX_SYNTH_V1 from Riksbank SETB3MBENCH,
      12-month product of r_m = y_{m-1}/1200 (never the Ränta Kort fund NAV)
@@ -28,6 +28,8 @@ REGION_TO_INSTRUMENT = {"usa": "AVANZA_USA", "europe": "AVANZA_EUROPA", "em": "A
 DEFENSIVE_INSTRUMENT = "AVANZA_RANTA_KORT"
 STRATEGY = RegionalMomentumStrategy("REGIONAL_SEK", "1.0.0", regions=("usa", "europe", "em"),
                                     defensive_asset="cash")
+# Explicit, machine-readable version of the live rule (identity of stored live snapshots).
+STRATEGY_VERSION = f"regional-sek-v{STRATEGY.version}"
 
 
 def _bdays_between(a: pd.Timestamp, b: pd.Timestamp) -> int:
@@ -38,9 +40,12 @@ def regional_live_signal(as_of: date, navs: dict[str, pd.Series], ssvx_3m_yield:
                          *, nav_sources: dict[str, str] | None = None, max_stale_bdays: int = 3) -> dict:
     as_of_ts = pd.Timestamp(as_of)
     period_end = (as_of_ts.normalize().replace(day=1) - pd.offsets.Day(1)).normalize()  # previous month end
-    out = {"strategy": STRATEGY.strategy_id, "strategy_version": STRATEGY.version, "as_of": str(as_of),
+    out = {"strategy": STRATEGY.strategy_id, "strategy_version": STRATEGY_VERSION, "as_of": str(as_of),
            "signal_period_end": str(period_end.date()), "status": NO_SIGNAL, "target": None,
-           "returns": {}, "nav_dates": {}, "sources": nav_sources or {}, "reason": ""}
+           "returns": {}, "nav_dates": {}, "sources": nav_sources or {}, "reason": "",
+           # intermediate values (no effect on the decision; compared by the TS differential test)
+           "diagnostics": {"endpoints": {}, "cash_window": []}}
+    diag = out["diagnostics"]
 
     # 2. completeness, PER FUND: the fund's last NAV in the month must lie within
     #    max_stale_bdays of the month's last business day. Funds may legitimately carry
@@ -66,6 +71,8 @@ def regional_live_signal(as_of: date, navs: dict[str, pd.Series], ssvx_3m_yield:
         v_now, d_now = endpoint(s, period_end)
         out["nav_dates"][iid] = str(d_now.date()) if d_now is not None else None
         if v_now is None:
+            diag["endpoints"][iid] = {"start_date": None, "start_nav": None,
+                                      "end_date": str(d_now.date()) if d_now is not None else None, "end_nav": None}
             out["reason"] = (f"month {period_end:%Y-%m} not complete for {iid}: last NAV "
                              f"{d_now.date() if d_now is not None else 'none'} (> {max_stale_bdays} bdays before {last_bday.date()})")
             return out
@@ -73,11 +80,14 @@ def regional_live_signal(as_of: date, navs: dict[str, pd.Series], ssvx_3m_yield:
         #    months are not needed). The start endpoint gets the same staleness test.
         v_then, d_then = endpoint(s, period_end - pd.offsets.MonthEnd(12))
         rets[region] = None if v_then is None else v_now / v_then - 1
+        diag["endpoints"][iid] = {"start_date": str(d_then.date()) if d_then is not None else None, "start_nav": v_then,
+                                  "end_date": str(d_now.date()), "end_nav": v_now}
     # 4. cash hurdle from Riksbank yields (month-end sampled, prior-month rule)
     y = to_month_end(ssvx_3m_yield[ssvx_3m_yield.index <= period_end])["value"]
     r_cash = yield_to_monthly_return(y).dropna()
     window = r_cash[(r_cash.index > period_end - pd.offsets.MonthEnd(12)) & (r_cash.index <= period_end)]
     cash = float((1 + window).prod() - 1) if len(window) == 12 else None
+    diag["cash_window"] = [[str(d.date()), float(v)] for d, v in window.items()]
     out["returns"] = {**rets, "cash": cash}
 
     sig = STRATEGY.evaluate(period_end.date(), {k: rets[k] for k in ("usa", "europe", "em")}, cash)

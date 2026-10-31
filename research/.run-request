@@ -11,3 +11,4 @@ request: 2026-10-31T11:35:37Z run 8 - Avanza NAV benchmarks over implementation 
 request: 2026-10-31T11:41:19Z run 9 - fund facts incl. primaryBenchmark, benchmark gap diagnostics
 request: 2026-10-31T11:42:29Z run 10 - fund facts incl. primaryBenchmark (actual change), benchmark gap diagnostics
 request: 2026-10-31T11:52:49Z run 11 - live completeness per fund, point-to-point 12m NAV return, NAV gap diagnostics
+2026-10-31T19:47:47Z PWA v1: regenerate reports + web/data (benchmark monthly series)

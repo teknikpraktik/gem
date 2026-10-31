@@ -226,5 +226,10 @@ def regional_nav_implementation(navs: dict, ssvx_yield: pd.Series, rules: dict, 
                  "missing_by_fund": {c: [str(d.date()) for d in months[mr[c].reindex(months).isna()]][:12]
                                      for c in mr.columns}})
             for k, v in bench.items()}
+    # monthly benchmark returns over the hybrid window (for charts in the web app)
+    hm = hyb_b.monthly_returns.index
+    out["nav_benchmark_monthly"] = {
+        k: {str(d.date()): (None if pd.isna(x) else float(x)) for d, x in v.reindex(hm).items()}
+        for k, v in bench.items()}
     out["fees"] = fees
     return out

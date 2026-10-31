@@ -134,10 +134,10 @@ instruments:
   currency_hedged: "n/a (SEK assets)"
   ongoing_charge: "0.09% total, 0.03% management fee (Avanza fund page / Feb-2026 brochure, search extract)"
   launch_date: "2023-12-14 (avanza.se fund guide startDate, 2026-10-31)"
-  cutoff_time: "UNRESOLVED (09:30 day before holiday per 2026 brochure extract; normal-day cut-off unclear)"
+  cutoff_time: "15:00 on banking days, 12:00 day before holiday (fund brochure 2026-03-09, search extract, verified 2026-10-31); a combined Avanza brochure extract says 09:30 day before holiday - conflict noted. Backtest keeps the more conservative 12:00 assumption."
   trading_day: "every Swedish banking day"
   settlement_notes: "Forward pricing; NAV T+1; payment within 2 banking days."
-  trading_rules: {cutoff: "12:00", nav_lag_bdays: 0, settlement_bdays: 2, source: "ASSUMPTION - conservative 12:00"}
+  trading_rules: {cutoff: "12:00", nav_lag_bdays: 0, settlement_bdays: 2, source: "CONSERVATIVE ASSUMPTION 12:00 (documented cut-off 15:00, see cutoff_time) - kept so published results are unchanged"}
   signal_index_mapping: "Defensive leg. Covered bonds, not T-bills: credit/spread risk the OMRX T-bill hurdle does not have. Its return must never be used as the hurdle."
   source:
     - https://www.avanza.se/fonder/om-fonden.html/1684019/avanza-ranta-kort
