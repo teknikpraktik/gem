@@ -151,7 +151,10 @@ def access_report(status: dict, catalog: dict, store_manifest: Path) -> list[dic
     rows = []
     for sid, st in sorted(status.items()):
         e = catalog[sid]
-        url = st.get("url") or entry_url(e) or f"manual:{e['fetch'].get('file', '')}"
+        try:
+            url = st.get("url") or entry_url(e) or f"manual:{e['fetch'].get('file', '')}"
+        except FetchError:  # e.g. BLOCKED_MISSING_FRED_API_KEY
+            url = f"https://api.stlouisfed.org/fred/series/observations?series_id={e['provider_series_id']}"
         host = urlparse(url).netloc or url
         err = st.get("error", "")
         import re as _re
@@ -178,6 +181,41 @@ def write_result_checksums(gen: Path) -> None:
         if rel.parts[0] in ("runs", "runs_daily") or (len(rel.parts) == 1 and p.name in CHECKSUM_INCLUDE_TOP):
             lines.append(f"{hashlib.sha256(p.read_bytes()).hexdigest()}  {rel}")
     (gen / "checksums.sha256").write_text("\n".join(lines) + "\n")
+
+
+def omrx_validation(data: dict, status: dict) -> dict:
+    """Is NASDAQOMRXTBILL (FRED API) usable as a Swedish cash total-return series?"""
+    sid = "FRED_OMRXTBILL"
+    if sid not in data:
+        return {"status": "BLOCKED", "reason": status.get(sid, {}).get("error", "not loaded")}
+    s = data[sid].sort_index()
+    raw_missing = None
+    p = status.get(sid, {}).get("path")
+    if p:
+        try:
+            doc = json.loads(Path(p).read_bytes())
+            raw_missing = sum(1 for o in doc.get("observations", []) if o.get("value") == ".")
+        except Exception:  # noqa: BLE001 - csv or unreadable: leave None
+            pass
+    gaps = s.index.to_series().diff().dt.days.dropna()
+    me = to_month_end(s)
+    mret = simple_returns(me["value"]).dropna()
+    dret = s.pct_change().dropna()
+    yrs = (s.index[-1] - s.index[0]).days / 365.25
+    return {
+        "status": "OK",
+        "first_observation": str(s.index[0].date()), "last_observation": str(s.index[-1].date()),
+        "observations": int(len(s)), "missing_values_in_raw": raw_missing,
+        "median_gap_days": float(gaps.median()), "max_gap_days": int(gaps.max()),
+        "frequency_inferred": "daily (business days)" if gaps.median() <= 3 else "lower than daily",
+        "level_first": float(s.iloc[0]), "level_last": float(s.iloc[-1]),
+        "cagr": float((s.iloc[-1] / s.iloc[0]) ** (1 / yrs) - 1),
+        "negative_months": int((mret < 0).sum()), "months": int(len(mret)),
+        "largest_daily_move": float(dret.abs().max()), "largest_daily_move_date": str(dret.abs().idxmax().date()),
+        "stale_month_ends": [str(d.date()) for d in me.index[me["stale"]]],
+        "assessment": ("accumulating index level (no coupons to add); monthly returns small and mostly positive; "
+                       "negative months expected in 2015-2019 negative-rate period"),
+    }
 
 
 def write_fx_diagnostics(data: dict, out_dir: Path) -> None:
@@ -319,6 +357,7 @@ def main(argv=None) -> int:
     quality = {sid: quality_report(s, catalog[sid]) for sid, s in data.items()}
     xval = cross_validation(data)
     write_fx_diagnostics(data, root / "reports" / "generated" / "diagnostics")
+    omrx_check = omrx_validation(data, status)
 
     gen = root / "reports" / "generated"
     gen.mkdir(parents=True, exist_ok=True)
@@ -408,18 +447,33 @@ def main(argv=None) -> int:
 
     # ---- hurdle sensitivity: OMRX (verified) vs Riksbank SSVX proxy, same strategy ----
     from .analysis import hurdle_sensitivity
+    from .runs import HURDLE_PAIRS
     hurdle = {}
-    for a_id, b_id in (("GEM_SEK_OPEN_OMRX_V1", "GEM_SEK_OPEN_SSVXSYNTH_V1"),
-                       ("REGIONAL_SEK_FF_PROXY_OMRX_V1", "REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1")):
-        if a_id in ran and b_id in ran:
-            pick_full = lambda rid: next(x for x in results if x.run_spec.run_id == rid and x.window == "FULL"
-                                         and x.execution == IDEALIZED_CLOSE.name and x.cost_per_side_bps == 0)
-            sa = pick_full(a_id).signals.set_index(pd.to_datetime(pick_full(a_id).signals["signal_date"]))["target"]
-            sb = pick_full(b_id).signals.set_index(pd.to_datetime(pick_full(b_id).signals["signal_date"]))["target"]
-            sa, sb = sa[sa != "NO_SIGNAL"], sb[sb != "NO_SIGNAL"]
-            hurdle[f"{a_id} vs {b_id}"] = hurdle_sensitivity(sa, sb)
-        else:
-            hurdle[f"{a_id} vs {b_id}"] = {"status": "BLOCKED"}
+    for a_id, b_id in HURDLE_PAIRS:
+        key = f"{a_id} vs {b_id}"
+        if a_id not in ran or b_id not in ran:
+            hurdle[key] = {"status": "BLOCKED", "missing_runs": [x for x in (a_id, b_id) if x not in ran]}
+            continue
+        spec_a = next(x for x in runs if x.run_id == a_id)
+        w = (group_windows.get(spec_a.group) or {}).get("common_window")
+        win = f"COMMON_{spec_a.group}" if w else "FULL"
+        pick = lambda rid, ex: next(x for x in results if x.run_spec.run_id == rid and x.window == win
+                                    and x.execution == ex and x.cost_per_side_bps == 0)
+        sa, sb = pick(a_id, IDEALIZED_CLOSE.name).signals, pick(b_id, IDEALIZED_CLOSE.name).signals
+        ta = sa.set_index(pd.to_datetime(sa["signal_date"]))["target"]
+        tb = sb.set_index(pd.to_datetime(sb["signal_date"]))["target"]
+        ta, tb = ta[ta != "NO_SIGNAL"], tb[tb != "NO_SIGNAL"]
+        if w:
+            ta = ta[(ta.index >= pd.Timestamp(w[0])) & (ta.index <= pd.Timestamp(w[1]))]
+        h = hurdle_sensitivity(ta, tb)
+        h["window"] = win
+        for ex in (NEXT_MONTH_CLOSE.name, IDEALIZED_CLOSE.name):
+            ma, mb = pick(a_id, ex).metrics, pick(b_id, ex).metrics
+            h[ex] = {"omrx": {k: ma.get(k) for k in ("cagr", "max_drawdown", "sharpe", "number_of_switches")},
+                     "proxy": {k: mb.get(k) for k in ("cagr", "max_drawdown", "sharpe", "number_of_switches")},
+                     "cagr_diff_omrx_minus_proxy": ma.get("cagr", float("nan")) - mb.get("cagr", float("nan")),
+                     "maxdd_diff_omrx_minus_proxy": ma.get("max_drawdown", float("nan")) - mb.get("max_drawdown", float("nan"))}
+        hurdle[key] = h
 
     # ---- implementation gap (REGIONAL_SEK on Avanza funds) ----
     from .implementation import implementation_gap, rules_from_instruments
@@ -446,7 +500,7 @@ def main(argv=None) -> int:
     access = access_report(status, catalog, store.manifest)
     reporting.write_all(root, catalog, status, quality, xval, results, blocked, instruments)
     reporting.write_phase2(root, catalog, status, access, results, blocked, group_windows, daily_results,
-                           daily_blocked, agreement, impl, runs, hurdle)
+                           daily_blocked, agreement, impl, runs, hurdle, omrx_check)
     write_result_checksums(gen)  # last: covers every result file written above
     log.info("runs completed: %d monthly result sets, %d daily result sets, %d blocked runs",
              len(results), len(daily_results), len(blocked))

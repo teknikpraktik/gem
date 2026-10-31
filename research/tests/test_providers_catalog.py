@@ -211,4 +211,6 @@ def test_fred_api_json_and_key_redaction(monkeypatch):
     u = fred_url({"provider_series_id": "DTB3"})
     assert "api.stlouisfed.org" in u and "secret123" not in redact_url(u)
     monkeypatch.delenv("FRED_API_KEY")
-    assert "fredgraph.csv" in fred_url({"provider_series_id": "DTB3"})
+    from gem.data.base import FetchError
+    with pytest.raises(FetchError, match="BLOCKED_MISSING_FRED_API_KEY"):
+        fred_url({"provider_series_id": "DTB3"})

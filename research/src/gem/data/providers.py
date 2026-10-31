@@ -40,10 +40,12 @@ def fred_url(entry: dict) -> str:
 
     sid = entry["provider_series_id"]
     key = os.environ.get("FRED_API_KEY")
-    if key:
-        return ("https://api.stlouisfed.org/fred/series/observations"
-                f"?series_id={sid}&api_key={key}&file_type=json&observation_start=1776-07-04")
-    return f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={sid}"
+    if not key:
+        # No silent fallback (fredgraph.csv does not answer cloud runners, and nothing
+        # third-party may stand in for FRED). The caller reports the series as BLOCKED.
+        raise FetchError(f"BLOCKED_MISSING_FRED_API_KEY: set env FRED_API_KEY to fetch {sid} from api.stlouisfed.org")
+    return ("https://api.stlouisfed.org/fred/series/observations"
+            f"?series_id={sid}&api_key={key}&file_type=json&observation_start=1776-07-04")
 
 
 def parse_fred_csv(raw: bytes, entry: dict) -> pd.Series:
@@ -328,6 +330,14 @@ def fetch_raw(entry: dict, store: RawStore, *, refresh: bool, offline: bool, man
                 return cached
             raise FetchError(f"arch package unavailable: {e}") from e
         return _store_bytes(store, p, "frenchdata", src, b)
+    if p == "fred":
+        cached = store.latest_cached(p, entry["fetch"].get("cache_key", entry["id"]))
+        if cached is not None and not refresh:
+            return cached
+        if offline:
+            if cached is not None:
+                return cached
+            raise FetchError(f"offline and no cache for fred/{entry['id']}")
     url = entry_url(entry)
     headers = {}
     if p == "riksbank" and os.environ.get("RIKSBANK_API_KEY"):

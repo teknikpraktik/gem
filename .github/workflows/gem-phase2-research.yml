@@ -96,6 +96,10 @@ jobs:
           python -m pytest -q -rs --junitxml=reports/generated/pytest.xml 2>&1 | tee reports/generated/pytest.txt
           tail -1 reports/generated/pytest.txt >> "$GITHUB_STEP_SUMMARY"
 
+      - name: NAV source probe (Avanza funds; responses stored for parser development)
+        continue-on-error: true
+        run: python -m gem.navprobe | tee reports/generated/nav_probe.log
+
       - name: "Run 1: refresh from sources"
         run: |
           set -o pipefail

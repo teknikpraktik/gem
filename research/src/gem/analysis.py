@@ -62,9 +62,12 @@ def hurdle_sensitivity(sig_a: pd.Series, sig_b: pd.Series) -> dict:
     m = x.notna() & y.notna()
     x, y = x[m], y[m]
     d = x != y
+    by_year = d.groupby(x.index.year).sum() if len(x) else pd.Series(dtype=int)
     return {"months": int(len(x)), "signals_changed": int(d.sum()),
+            "signal_agreement_pct": float(1 - d.mean()) if len(x) else float("nan"),
             "changed_pct": float(d.mean()) if len(x) else float("nan"),
-            "changed_dates": [str(t.date()) for t in x.index[d]][:40]}
+            "changed_by_year": {int(k): int(v) for k, v in by_year.items() if v > 0},
+            "changed_dates": [str(t.date()) for t in x.index[d]][:60]}
 
 
 def usd_strategy_returns_in_sek(usd_returns: pd.Series, fx_raw: pd.Series) -> pd.Series:

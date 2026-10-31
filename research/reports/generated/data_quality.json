@@ -136,21 +136,6 @@
       "tracking_error_ann": 0.018667356608737022
     },
     {
-      "a": "RB_SEK_PER_USD",
-      "b": "H10_SEK_PER_USD",
-      "cagr_a": 0.009256999031903135,
-      "cagr_b": 0.009139332823222768,
-      "cagr_diff": 0.00011766620868036703,
-      "correlation": 0.9671417787180534,
-      "label": "USD/SEK: Riksbank fixing vs H.10 New York noon (monthly changes)",
-      "max_abs_diff_month": "2011-11-30",
-      "max_abs_monthly_diff": 0.029889596471835533,
-      "mean_abs_monthly_diff": 0.006049997438556984,
-      "overlap": "1993-02-28..2026-10-31",
-      "overlap_months": 405,
-      "tracking_error_ann": 0.02773523688393379
-    },
-    {
       "a": "tr_index",
       "b": "yield_simple_prior",
       "cagr_a": 0.0490924340521135,
@@ -434,180 +419,6 @@
       "stale_month_ends": [],
       "verification": "VERIFIED FROM SECONDARY SOURCE"
     },
-    "FF_DEVELOPED_MKT_TR": {
-      "extreme_moves": {},
-      "id": "FF_DEVELOPED_MKT_TR",
-      "is_total_return": true,
-      "missing_month_ends": [],
-      "month_end_first": "1990-06-30",
-      "month_end_last": "2026-09-30",
-      "month_ends": 436,
-      "non_positive": 0,
-      "quality_status": "PROXY",
-      "raw_duplicates": 0,
-      "raw_first": "1990-06-30",
-      "raw_last": "2026-09-30",
-      "raw_nan": 0,
-      "raw_obs": 436,
-      "stale_month_ends": [],
-      "verification": "VERIFIED FROM SECONDARY SOURCE"
-    },
-    "FF_DEV_EXUS_MKT_TR": {
-      "extreme_moves": {},
-      "id": "FF_DEV_EXUS_MKT_TR",
-      "is_total_return": true,
-      "missing_month_ends": [],
-      "month_end_first": "1990-06-30",
-      "month_end_last": "2026-09-30",
-      "month_ends": 436,
-      "non_positive": 0,
-      "quality_status": "EXPERIMENTAL",
-      "raw_duplicates": 0,
-      "raw_first": "1990-06-30",
-      "raw_last": "2026-09-30",
-      "raw_nan": 0,
-      "raw_obs": 436,
-      "stale_month_ends": [],
-      "verification": "VERIFIED FROM SECONDARY SOURCE"
-    },
-    "FF_DEV_EXUS_MKT_TR_DAILY": {
-      "extreme_moves": {},
-      "id": "FF_DEV_EXUS_MKT_TR_DAILY",
-      "is_total_return": true,
-      "missing_month_ends": [],
-      "month_end_first": "1990-06-30",
-      "month_end_last": "2026-09-30",
-      "month_ends": 436,
-      "non_positive": 0,
-      "quality_status": "EXPERIMENTAL",
-      "raw_duplicates": 0,
-      "raw_first": "1990-06-29",
-      "raw_last": "2026-09-30",
-      "raw_nan": 0,
-      "raw_obs": 9459,
-      "stale_month_ends": [],
-      "verification": "ASSUMPTION"
-    },
-    "FF_EMERGING_MKT_TR": {
-      "extreme_moves": {
-        "2008-10-31": -0.2723
-      },
-      "id": "FF_EMERGING_MKT_TR",
-      "is_total_return": true,
-      "missing_month_ends": [],
-      "month_end_first": "1989-06-30",
-      "month_end_last": "2026-09-30",
-      "month_ends": 448,
-      "non_positive": 0,
-      "quality_status": "PROXY",
-      "raw_duplicates": 0,
-      "raw_first": "1989-06-30",
-      "raw_last": "2026-09-30",
-      "raw_nan": 0,
-      "raw_obs": 448,
-      "stale_month_ends": [],
-      "verification": "ASSUMPTION"
-    },
-    "FF_EUROPE_MKT_TR": {
-      "extreme_moves": {},
-      "id": "FF_EUROPE_MKT_TR",
-      "is_total_return": true,
-      "missing_month_ends": [],
-      "month_end_first": "1990-06-30",
-      "month_end_last": "2026-09-30",
-      "month_ends": 436,
-      "non_positive": 0,
-      "quality_status": "PROXY",
-      "raw_duplicates": 0,
-      "raw_first": "1990-06-30",
-      "raw_last": "2026-09-30",
-      "raw_nan": 0,
-      "raw_obs": 436,
-      "stale_month_ends": [],
-      "verification": "ASSUMPTION"
-    },
-    "FF_EUROPE_MKT_TR_DAILY": {
-      "extreme_moves": {},
-      "id": "FF_EUROPE_MKT_TR_DAILY",
-      "is_total_return": true,
-      "missing_month_ends": [],
-      "month_end_first": "1990-06-30",
-      "month_end_last": "2026-09-30",
-      "month_ends": 436,
-      "non_positive": 0,
-      "quality_status": "PROXY",
-      "raw_duplicates": 0,
-      "raw_first": "1990-06-29",
-      "raw_last": "2026-09-30",
-      "raw_nan": 0,
-      "raw_obs": 9459,
-      "stale_month_ends": [],
-      "verification": "ASSUMPTION"
-    },
-    "FF_RF": {
-      "extreme_moves": {},
-      "id": "FF_RF",
-      "is_total_return": true,
-      "missing_month_ends": [],
-      "month_end_first": "1926-06-30",
-      "month_end_last": "2026-09-30",
-      "month_ends": 1204,
-      "non_positive": 0,
-      "quality_status": "PROXY",
-      "raw_duplicates": 0,
-      "raw_first": "1926-06-30",
-      "raw_last": "2026-09-30",
-      "raw_nan": 0,
-      "raw_obs": 1204,
-      "stale_month_ends": [],
-      "verification": "VERIFIED FROM SECONDARY SOURCE"
-    },
-    "FF_US_MKT_TR": {
-      "extreme_moves": {
-        "1931-09-30": -0.2871,
-        "1932-07-31": 0.3363,
-        "1932-08-31": 0.3715,
-        "1933-04-30": 0.3891
-      },
-      "id": "FF_US_MKT_TR",
-      "is_total_return": true,
-      "missing_month_ends": [],
-      "month_end_first": "1926-06-30",
-      "month_end_last": "2026-09-30",
-      "month_ends": 1204,
-      "non_positive": 0,
-      "quality_status": "PROXY",
-      "raw_duplicates": 0,
-      "raw_first": "1926-06-30",
-      "raw_last": "2026-09-30",
-      "raw_nan": 0,
-      "raw_obs": 1204,
-      "stale_month_ends": [],
-      "verification": "VERIFIED FROM SECONDARY SOURCE"
-    },
-    "FF_US_MKT_TR_DAILY": {
-      "extreme_moves": {
-        "1931-09-30": -0.2911,
-        "1932-07-31": 0.3361,
-        "1932-08-31": 0.3713,
-        "1933-04-30": 0.388
-      },
-      "id": "FF_US_MKT_TR_DAILY",
-      "is_total_return": true,
-      "missing_month_ends": [],
-      "month_end_first": "1926-06-30",
-      "month_end_last": "2026-09-30",
-      "month_ends": 1204,
-      "non_positive": 0,
-      "quality_status": "PROXY",
-      "raw_duplicates": 0,
-      "raw_first": "1926-06-30",
-      "raw_last": "2026-09-30",
-      "raw_nan": 0,
-      "raw_obs": 26339,
-      "stale_month_ends": [],
-      "verification": "VERIFIED FROM SECONDARY SOURCE"
-    },
     "H10_SEK_PER_USD": {
       "extreme_moves": {
         "1982-10-31": 0.1873,
@@ -628,94 +439,6 @@
       "raw_obs": 13994,
       "stale_month_ends": [],
       "verification": "VERIFIED FROM SECONDARY SOURCE"
-    },
-    "RB_SEK_PER_USD": {
-      "extreme_moves": {},
-      "id": "RB_SEK_PER_USD",
-      "is_total_return": false,
-      "missing_month_ends": [],
-      "month_end_first": "1993-01-31",
-      "month_end_last": "2026-10-31",
-      "month_ends": 406,
-      "non_positive": 0,
-      "quality_status": "VERIFIED",
-      "raw_duplicates": 0,
-      "raw_first": "1993-01-04",
-      "raw_last": "2026-10-30",
-      "raw_nan": 0,
-      "raw_obs": 8496,
-      "stale_month_ends": [],
-      "verification": "VERIFIED FROM PRIMARY SOURCE"
-    },
-    "RB_SSVX_1M": {
-      "extreme_moves": {
-        "1990-10-31": 3.5,
-        "1992-08-31": 3.37,
-        "1992-09-30": 10.4,
-        "1992-10-31": -13.4
-      },
-      "id": "RB_SSVX_1M",
-      "is_total_return": false,
-      "missing_month_ends": [],
-      "month_end_first": "1983-01-31",
-      "month_end_last": "2026-10-31",
-      "month_ends": 526,
-      "non_positive": 0,
-      "quality_status": "PROXY",
-      "raw_duplicates": 0,
-      "raw_first": "1983-01-03",
-      "raw_last": "2026-10-30",
-      "raw_nan": 0,
-      "raw_obs": 10889,
-      "stale_month_ends": [
-        "2001-12-31"
-      ],
-      "verification": "VERIFIED FROM PRIMARY SOURCE"
-    },
-    "RB_SSVX_3M": {
-      "extreme_moves": {
-        "1992-09-30": 3.1,
-        "1992-10-31": -5.2
-      },
-      "id": "RB_SSVX_3M",
-      "is_total_return": false,
-      "missing_month_ends": [],
-      "month_end_first": "1983-01-31",
-      "month_end_last": "2026-10-31",
-      "month_ends": 526,
-      "non_positive": 0,
-      "quality_status": "PROXY",
-      "raw_duplicates": 0,
-      "raw_first": "1983-01-03",
-      "raw_last": "2026-10-30",
-      "raw_nan": 0,
-      "raw_obs": 10948,
-      "stale_month_ends": [],
-      "verification": "VERIFIED FROM PRIMARY SOURCE"
-    },
-    "RB_SSVX_6M": {
-      "extreme_moves": {
-        "1992-10-31": -3.82
-      },
-      "id": "RB_SSVX_6M",
-      "is_total_return": false,
-      "missing_month_ends": [
-        "2018-09-30"
-      ],
-      "month_end_first": "1984-01-31",
-      "month_end_last": "2026-10-31",
-      "month_ends": 514,
-      "non_positive": 0,
-      "quality_status": "PROXY",
-      "raw_duplicates": 0,
-      "raw_first": "1984-01-02",
-      "raw_last": "2026-10-30",
-      "raw_nan": 0,
-      "raw_obs": 10687,
-      "stale_month_ends": [
-        "2018-08-31"
-      ],
-      "verification": "VERIFIED FROM PRIMARY SOURCE"
     },
     "SHILLER_SP_TR": {
       "extreme_moves": {
@@ -743,8 +466,8 @@
   "status": {
     "AJ_IBBOTSON_IT_GOVT": {
       "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T083456Z_11513db1bb43.csv",
-      "retrieved_at": "2026-10-31T08:34:56Z",
+      "path": "/home/user/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T072455Z_11513db1bb43.csv",
+      "retrieved_at": "2026-10-31T07:24:55Z",
       "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
       "status": "OK",
       "transform": "level (total-return index)",
@@ -752,8 +475,8 @@
     },
     "AJ_IBBOTSON_LARGE": {
       "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T083456Z_11513db1bb43.csv",
-      "retrieved_at": "2026-10-31T08:34:56Z",
+      "path": "/home/user/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T072455Z_11513db1bb43.csv",
+      "retrieved_at": "2026-10-31T07:24:55Z",
       "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
       "status": "OK",
       "transform": "level (total-return index)",
@@ -761,8 +484,8 @@
     },
     "AJ_IBBOTSON_TBILL_30D": {
       "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T083456Z_11513db1bb43.csv",
-      "retrieved_at": "2026-10-31T08:34:56Z",
+      "path": "/home/user/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T072455Z_11513db1bb43.csv",
+      "retrieved_at": "2026-10-31T07:24:55Z",
       "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
       "status": "OK",
       "transform": "level (total-return index)",
@@ -770,8 +493,8 @@
     },
     "AJ_MSCI_ACWI_EXUS_GR": {
       "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T083456Z_11513db1bb43.csv",
-      "retrieved_at": "2026-10-31T08:34:56Z",
+      "path": "/home/user/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T072455Z_11513db1bb43.csv",
+      "retrieved_at": "2026-10-31T07:24:55Z",
       "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
       "status": "OK",
       "transform": "level (total-return index)",
@@ -779,8 +502,8 @@
     },
     "AJ_MSCI_USA_GR": {
       "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T083456Z_11513db1bb43.csv",
-      "retrieved_at": "2026-10-31T08:34:56Z",
+      "path": "/home/user/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T072455Z_11513db1bb43.csv",
+      "retrieved_at": "2026-10-31T07:24:55Z",
       "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
       "status": "OK",
       "transform": "level (total-return index)",
@@ -788,8 +511,8 @@
     },
     "AJ_MSCI_WORLD_EXUS_GR": {
       "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T083456Z_11513db1bb43.csv",
-      "retrieved_at": "2026-10-31T08:34:56Z",
+      "path": "/home/user/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T072455Z_11513db1bb43.csv",
+      "retrieved_at": "2026-10-31T07:24:55Z",
       "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
       "status": "OK",
       "transform": "level (total-return index)",
@@ -797,8 +520,8 @@
     },
     "AJ_SP500TR": {
       "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T083456Z_11513db1bb43.csv",
-      "retrieved_at": "2026-10-31T08:34:56Z",
+      "path": "/home/user/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T072455Z_11513db1bb43.csv",
+      "retrieved_at": "2026-10-31T07:24:55Z",
       "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
       "status": "OK",
       "transform": "level (total-return index)",
@@ -806,8 +529,8 @@
     },
     "AJ_TB3MS_YIELD": {
       "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T083456Z_11513db1bb43.csv",
-      "retrieved_at": "2026-10-31T08:34:56Z",
+      "path": "/home/user/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T072455Z_11513db1bb43.csv",
+      "retrieved_at": "2026-10-31T07:24:55Z",
       "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
       "status": "OK",
       "transform": "none (not a return series)",
@@ -815,8 +538,8 @@
     },
     "AJ_TBILL_3M_TR": {
       "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T083456Z_11513db1bb43.csv",
-      "retrieved_at": "2026-10-31T08:34:56Z",
+      "path": "/home/user/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T072455Z_11513db1bb43.csv",
+      "retrieved_at": "2026-10-31T07:24:55Z",
       "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
       "status": "OK",
       "transform": "level (total-return index)",
@@ -824,8 +547,8 @@
     },
     "AJ_US_AGG": {
       "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T083456Z_11513db1bb43.csv",
-      "retrieved_at": "2026-10-31T08:34:56Z",
+      "path": "/home/user/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T072455Z_11513db1bb43.csv",
+      "retrieved_at": "2026-10-31T07:24:55Z",
       "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
       "status": "OK",
       "transform": "level (total-return index)",
@@ -833,8 +556,8 @@
     },
     "ARCH_FF_RF": {
       "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/pypi_arch_french/frenchdata/20261031T083458Z_f23436727b01.bin",
-      "retrieved_at": "2026-10-31T08:34:58Z",
+      "path": "/home/user/gem/research/data/raw/pypi_arch_french/frenchdata/20261031T072456Z_f23436727b01.bin",
+      "retrieved_at": "2026-10-31T07:24:56Z",
       "sha256": "f23436727b01d879e1372e3ee277514b0962a23d2b158f1aee6a402a90994f52",
       "status": "OK",
       "transform": "level (total-return index)",
@@ -842,78 +565,62 @@
     },
     "ARCH_FF_US_MKT_TR": {
       "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/pypi_arch_french/frenchdata/20261031T083458Z_f23436727b01.bin",
-      "retrieved_at": "2026-10-31T08:34:58Z",
+      "path": "/home/user/gem/research/data/raw/pypi_arch_french/frenchdata/20261031T072456Z_f23436727b01.bin",
+      "retrieved_at": "2026-10-31T07:24:56Z",
       "sha256": "f23436727b01d879e1372e3ee277514b0962a23d2b158f1aee6a402a90994f52",
       "status": "OK",
       "transform": "level (total-return index)",
       "url": "pypi://arch==8.0.0/arch/data/frenchdata/frenchdata.csv.gz"
     },
     "AVZ_NAV_EM": {
-      "error": "manual file not supplied: /home/runner/work/gem/gem/research/data/manual/nav_SE0012454338.csv",
+      "error": "manual file not supplied: /home/user/gem/research/data/manual/nav_SE0012454338.csv",
       "status": "UNAVAILABLE",
       "transform": "level (total-return index)"
     },
     "AVZ_NAV_EUROPA": {
-      "error": "manual file not supplied: /home/runner/work/gem/gem/research/data/manual/nav_SE0013718699.csv",
+      "error": "manual file not supplied: /home/user/gem/research/data/manual/nav_SE0013718699.csv",
       "status": "UNAVAILABLE",
       "transform": "level (total-return index)"
     },
     "AVZ_NAV_GLOBAL": {
-      "error": "manual file not supplied: /home/runner/work/gem/gem/research/data/manual/nav_SE0011527613.csv",
+      "error": "manual file not supplied: /home/user/gem/research/data/manual/nav_SE0011527613.csv",
       "status": "UNAVAILABLE",
       "transform": "level (total-return index)"
     },
     "AVZ_NAV_RANTA_KORT": {
-      "error": "manual file not supplied: /home/runner/work/gem/gem/research/data/manual/nav_SE0021021425.csv",
+      "error": "manual file not supplied: /home/user/gem/research/data/manual/nav_SE0021021425.csv",
       "status": "UNAVAILABLE",
       "transform": "level (total-return index)"
     },
     "AVZ_NAV_USA": {
-      "error": "manual file not supplied: /home/runner/work/gem/gem/research/data/manual/nav_SE0012741163.csv",
+      "error": "manual file not supplied: /home/user/gem/research/data/manual/nav_SE0012741163.csv",
       "status": "UNAVAILABLE",
       "transform": "level (total-return index)"
     },
     "BBG_US_AGG_OFFICIAL": {
-      "error": "manual file not supplied: /home/runner/work/gem/gem/research/data/manual/us_agg.csv",
+      "error": "manual file not supplied: /home/user/gem/research/data/manual/us_agg.csv",
       "status": "UNAVAILABLE",
       "transform": "level (total-return index)"
     },
     "FF_DEVELOPED_MKT_TR": {
-      "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/french/FF_DEVELOPED_MKT_TR/20261031T083458Z_3f99cfdeddd1.zip",
-      "retrieved_at": "2026-10-31T08:34:58Z",
-      "sha256": "3f99cfdeddd1914e3d8f84ce51d775aeed3e98ed0c290957e88f4df9912f8a23",
-      "status": "OK",
-      "transform": "level (total-return index)",
-      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/Developed_3_Factors_CSV.zip"
+      "error": "offline and no cache for french/FF_DEVELOPED_MKT_TR",
+      "status": "UNAVAILABLE",
+      "transform": "level (total-return index)"
     },
     "FF_DEV_EXUS_MKT_TR": {
-      "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/french/FF_DEV_EXUS_MKT_TR/20261031T083458Z_689c242b62e4.zip",
-      "retrieved_at": "2026-10-31T08:34:58Z",
-      "sha256": "689c242b62e430fecbb8b3cc98269761b38d1d3f7ca15a22c3fb79771c932aee",
-      "status": "OK",
-      "transform": "level (total-return index)",
-      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/Developed_ex_US_3_Factors_CSV.zip"
+      "error": "offline and no cache for french/FF_DEV_EXUS_MKT_TR",
+      "status": "UNAVAILABLE",
+      "transform": "level (total-return index)"
     },
     "FF_DEV_EXUS_MKT_TR_DAILY": {
-      "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/french/FF_DEV_EXUS_MKT_TR_DAILY/20261031T083458Z_baddecb71011.zip",
-      "retrieved_at": "2026-10-31T08:34:58Z",
-      "sha256": "baddecb710119038aaf4ec59ce4bca1a75dcec8910b4012191d8c10fb1849442",
-      "status": "OK",
-      "transform": "level (total-return index)",
-      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/Developed_ex_US_3_Factors_Daily_CSV.zip"
+      "error": "offline and no cache for french/FF_DEV_EXUS_MKT_TR_DAILY",
+      "status": "UNAVAILABLE",
+      "transform": "level (total-return index)"
     },
     "FF_EMERGING_MKT_TR": {
-      "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/french/FF_EMERGING_MKT_TR/20261031T083459Z_0573fd609481.zip",
-      "retrieved_at": "2026-10-31T08:34:59Z",
-      "sha256": "0573fd60948178daad54f577a6c87d1e5a183dfdc4a1a89ced3991cc95fd8ad3",
-      "status": "OK",
-      "transform": "level (total-return index)",
-      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/Emerging_5_Factors_CSV.zip"
+      "error": "offline and no cache for french/FF_EMERGING_MKT_TR",
+      "status": "UNAVAILABLE",
+      "transform": "level (total-return index)"
     },
     "FF_EMERGING_MKT_TR_DAILY": {
       "error": "offline and no cache for french/FF_EMERGING_MKT_TR_DAILY",
@@ -921,49 +628,29 @@
       "transform": "level (total-return index)"
     },
     "FF_EUROPE_MKT_TR": {
-      "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/french/FF_EUROPE_MKT_TR/20261031T083500Z_842332540d9c.zip",
-      "retrieved_at": "2026-10-31T08:35:00Z",
-      "sha256": "842332540d9c86681cbda628c6acc9d75d0c1563e364a2bf6a535072f651471e",
-      "status": "OK",
-      "transform": "level (total-return index)",
-      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/Europe_3_Factors_CSV.zip"
+      "error": "offline and no cache for french/FF_EUROPE_MKT_TR",
+      "status": "UNAVAILABLE",
+      "transform": "level (total-return index)"
     },
     "FF_EUROPE_MKT_TR_DAILY": {
-      "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/french/FF_EUROPE_MKT_TR_DAILY/20261031T083500Z_53598ec5af30.zip",
-      "retrieved_at": "2026-10-31T08:35:00Z",
-      "sha256": "53598ec5af305d321ee93db492a32076fc882f976e67d27eba724d0266d20ad2",
-      "status": "OK",
-      "transform": "level (total-return index)",
-      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/Europe_3_Factors_Daily_CSV.zip"
+      "error": "offline and no cache for french/FF_EUROPE_MKT_TR_DAILY",
+      "status": "UNAVAILABLE",
+      "transform": "level (total-return index)"
     },
     "FF_RF": {
-      "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/french/ff_factors/20261031T083501Z_b03d39e4bb25.zip",
-      "retrieved_at": "2026-10-31T08:35:01Z",
-      "sha256": "b03d39e4bb253dda0f14893db3b78e64b40b8d6549a0fc0fd4111dae84c98618",
-      "status": "OK",
-      "transform": "level (total-return index)",
-      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip"
+      "error": "offline and no cache for french/ff_factors",
+      "status": "UNAVAILABLE",
+      "transform": "level (total-return index)"
     },
     "FF_US_MKT_TR": {
-      "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/french/ff_factors/20261031T083501Z_b03d39e4bb25.zip",
-      "retrieved_at": "2026-10-31T08:35:01Z",
-      "sha256": "b03d39e4bb253dda0f14893db3b78e64b40b8d6549a0fc0fd4111dae84c98618",
-      "status": "OK",
-      "transform": "level (total-return index)",
-      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip"
+      "error": "offline and no cache for french/ff_factors",
+      "status": "UNAVAILABLE",
+      "transform": "level (total-return index)"
     },
     "FF_US_MKT_TR_DAILY": {
-      "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/french/FF_US_MKT_TR_DAILY/20261031T083501Z_96c23b88e651.zip",
-      "retrieved_at": "2026-10-31T08:35:01Z",
-      "sha256": "96c23b88e651cbfff3740a53f8225e59ee39893371e96385a1d8125ec2cd9c89",
-      "status": "OK",
-      "transform": "level (total-return index)",
-      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_daily_CSV.zip"
+      "error": "offline and no cache for french/FF_US_MKT_TR_DAILY",
+      "status": "UNAVAILABLE",
+      "transform": "level (total-return index)"
     },
     "FRED_DEXSDUS": {
       "error": "offline and no cache for fred/FRED_DEXSDUS",
@@ -997,79 +684,63 @@
     },
     "H10_SEK_PER_USD": {
       "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/github_h10/H10_SEK_PER_USD/20261031T084102Z_5f82c543467a.csv",
-      "retrieved_at": "2026-10-31T08:41:02Z",
+      "path": "/home/user/gem/research/data/raw/github_h10/H10_SEK_PER_USD/20261031T072458Z_5f82c543467a.csv",
+      "retrieved_at": "2026-10-31T07:24:58Z",
       "sha256": "5f82c543467ae6398e766fb110fe57abe446b95c4ad13b2eaca8954911c6259d",
       "status": "OK",
       "transform": "none (not a return series)",
       "url": "https://raw.githubusercontent.com/datasets/exchange-rates/main/data/daily.csv"
     },
     "MSCI_ACWI_EXUS_OFFICIAL": {
-      "error": "manual file not supplied: /home/runner/work/gem/gem/research/data/manual/msci_acwi_exus.csv",
+      "error": "manual file not supplied: /home/user/gem/research/data/manual/msci_acwi_exus.csv",
       "status": "UNAVAILABLE",
       "transform": "level (total-return index)"
     },
     "MSCI_ACWI_OFFICIAL": {
-      "error": "manual file not supplied: /home/runner/work/gem/gem/research/data/manual/msci_acwi.csv",
+      "error": "manual file not supplied: /home/user/gem/research/data/manual/msci_acwi.csv",
       "status": "UNAVAILABLE",
       "transform": "level (total-return index)"
     },
     "NASDAQ_OMRXTBILL_FULL": {
-      "error": "manual file not supplied: /home/runner/work/gem/gem/research/data/manual/omrxtbill.csv",
+      "error": "manual file not supplied: /home/user/gem/research/data/manual/omrxtbill.csv",
       "status": "UNAVAILABLE",
       "transform": "level (total-return index)"
     },
     "RB_SEK_PER_USD": {
-      "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/riksbank/RB_SEK_PER_USD/20261031T084103Z_58d9b62ce7ef.bin",
-      "retrieved_at": "2026-10-31T08:41:03Z",
-      "sha256": "58d9b62ce7ef1a8f9884ea0dde96696e1acfe9de7cd56ce16e0202484d3c5079",
-      "status": "OK",
-      "transform": "none (not a return series)",
-      "url": "https://api.riksbank.se/swea/v1/Observations/SEKUSDPMI/1993-01-01/2026-10-31"
+      "error": "offline and no cache for riksbank/RB_SEK_PER_USD",
+      "status": "UNAVAILABLE",
+      "transform": "none (not a return series)"
     },
     "RB_SSVX_1M": {
-      "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/riksbank/RB_SSVX_1M/20261031T084105Z_d19d3ad9f205.bin",
-      "retrieved_at": "2026-10-31T08:41:05Z",
-      "sha256": "d19d3ad9f205ef0c6d351fd2c698322b1aa9b5787253e1da195feeeb86bf1557",
-      "status": "OK",
-      "transform": "none (not a return series)",
-      "url": "https://api.riksbank.se/swea/v1/Observations/SETB1MBENCHC/1983-01-01/2026-10-31"
+      "error": "offline and no cache for riksbank/RB_SSVX_1M",
+      "status": "UNAVAILABLE",
+      "transform": "none (not a return series)"
     },
     "RB_SSVX_3M": {
-      "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/riksbank/RB_SSVX_3M/20261031T084106Z_45daac754529.bin",
-      "retrieved_at": "2026-10-31T08:41:06Z",
-      "sha256": "45daac754529587fe08b0c7cbff8b3ccc07f0a541df4b9e8fae03304631314ff",
-      "status": "OK",
+      "error": "offline and no cache for riksbank/RB_SSVX_3M",
+      "status": "UNAVAILABLE",
       "transform": {
         "method": "simple_prior",
         "model": "SE_CASH_SSVX_SYNTH_V1",
         "sampling": "month_end_last_valid"
-      },
-      "url": "https://api.riksbank.se/swea/v1/Observations/SETB3MBENCH/1983-01-01/2026-10-31"
+      }
     },
     "RB_SSVX_6M": {
-      "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/riksbank/RB_SSVX_6M/20261031T084107Z_80ca3c9b98fd.bin",
-      "retrieved_at": "2026-10-31T08:41:07Z",
-      "sha256": "80ca3c9b98fd5e023a3e73e6d60c77d3de34a88ae50717a8bb116e1860d9ff47",
-      "status": "OK",
-      "transform": "none (not a return series)",
-      "url": "https://api.riksbank.se/swea/v1/Observations/SETB6MBENCH/1983-01-01/2026-10-31"
+      "error": "offline and no cache for riksbank/RB_SSVX_6M",
+      "status": "UNAVAILABLE",
+      "transform": "none (not a return series)"
     },
     "SHILLER_SP_TR": {
       "fetch": "CACHED",
-      "path": "/home/runner/work/gem/gem/research/data/raw/github_shiller/SHILLER_SP_TR/20261031T084109Z_3a45dffabc41.csv",
-      "retrieved_at": "2026-10-31T08:41:09Z",
+      "path": "/home/user/gem/research/data/raw/github_shiller/SHILLER_SP_TR/20261031T072459Z_3a45dffabc41.csv",
+      "retrieved_at": "2026-10-31T07:24:59Z",
       "sha256": "3a45dffabc414afc298c12159abc84c2875f88175ff3d4473ef7417e725ecac6",
       "status": "OK",
       "transform": "level (total-return index)",
       "url": "https://raw.githubusercontent.com/datasets/s-and-p-500/main/data/data.csv"
     },
     "SPX_TR_OFFICIAL": {
-      "error": "manual file not supplied: /home/runner/work/gem/gem/research/data/manual/spx_tr.csv",
+      "error": "manual file not supplied: /home/user/gem/research/data/manual/spx_tr.csv",
       "status": "UNAVAILABLE",
       "transform": "level (total-return index)"
     }

@@ -241,6 +241,18 @@ def swedish_runs() -> list[RunSpec]:
         notes=("GEM rule in USD on the same equity legs as GEM_SEK_FF_PROXY_SSVXSYNTH_V1; hurdle = Ken French RF. "
                "Defensive asset = US T-bills (FF RF) because no open US bond TR series is reachable without FRED - "
                "this changes returns in risk-off months, NOT the signals. Comparison partner only.",)))
+    # ---- SE_OMRX_CHECK: verified OMRX cash vs Riksbank proxy, identical legs, OMRX window ----
+    ff_daily = {"SEK_US_EQ": sek("FF_US_MKT_TR_DAILY", FX_DAILY), "SEK_EXUS_EQ": sek("FF_DEV_EXUS_MKT_TR_DAILY", FX_DAILY)}
+    for rid, cash, label in (("GEM_SEK_FF_OMRX_VERIFIED_V1", SE_CASH_OMRX,
+                              "Swedish cash = OMRX Treasury Bill Index via FRED API (VERIFIED TR index, from 2008-11-17)"),
+                             ("GEM_SEK_FF_PROXY_SSVXSYNTH_V1__OMRX_WINDOW", SE_CASH_SSVX,
+                              "Identical to GEM_SEK_FF_PROXY_SSVXSYNTH_V1 (Riksbank SSVX proxy cash), evaluated on the OMRX window")):
+        out.append(RunSpec(
+            rid, "SWEDISH", GEM_SEK, legs={**ff_eq, "SE_SHORT_RATE": cash, "BENCH_GLOBAL_SEK": BENCH_OPEN},
+            roles=GEM_SEK_ROLES, rf_asset="SE_SHORT_RATE", benchmark_asset="BENCH_GLOBAL_SEK", group="SE_OMRX_CHECK",
+            daily_legs={**ff_daily, "SE_SHORT_RATE": cash},
+            notes=("NOT GEM. US = Ken French CRSP US, ex-US = Ken French Developed ex US (no EM), FX = Riksbank. "
+                   + label + ".",)))
     # ---- REGIONAL_SEK -------------------------------------------------------------------
     reg_legs = {"SE_USA_EQ": sek("FF_US_MKT_TR"), "SE_EUROPE_EQ": sek("FF_EUROPE_MKT_TR"),
                 "SE_EM_EQ": sek("FF_EMERGING_MKT_TR")}
@@ -248,7 +260,7 @@ def swedish_runs() -> list[RunSpec]:
                  "SE_EM_EQ": sek("FF_EMERGING_MKT_TR_DAILY", FX_DAILY)}
     out.append(RunSpec(
         "REGIONAL_SEK_FF_PROXY_OMRX_V1", "SWEDISH", REGIONAL, legs={**reg_legs, "SE_SHORT_RATE": SE_CASH_OMRX, "BENCH_GLOBAL_SEK": BENCH_OPEN},
-        roles=REG_ROLES, rf_asset="SE_SHORT_RATE", benchmark_asset="BENCH_GLOBAL_SEK", group="SE_OPEN_OMRX",
+        roles=REG_ROLES, rf_asset="SE_SHORT_RATE", benchmark_asset="BENCH_GLOBAL_SEK", group="SE_OMRX_CHECK",
         daily_legs={**reg_daily, "SE_SHORT_RATE": SE_CASH_OMRX},
         notes=("NOT GEM. Regions = Ken French US (CRSP all US stocks), Europe (developed Europe) and Emerging "
                "market portfolios, value-weighted, USD converted to SEK; cash = OMRX T-bill (VERIFIED).",)))
@@ -259,6 +271,11 @@ def swedish_runs() -> list[RunSpec]:
         notes=("NOT GEM. Regions = Ken French US (CRSP all US stocks), Developed Europe and Emerging markets "
                "portfolios (value-weighted, USD -> SEK with Riksbank SEKUSDPMI); Swedish cash = SE_CASH_SSVX_SYNTH_V1 "
                "(PROXY).",)))
+    out.append(RunSpec(
+        "REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1__OMRX_WINDOW", "SWEDISH", REGIONAL,
+        legs={**reg_legs, "SE_SHORT_RATE": SE_CASH_SSVX, "BENCH_GLOBAL_SEK": BENCH_OPEN},
+        roles=REG_ROLES, rf_asset="SE_SHORT_RATE", benchmark_asset="BENCH_GLOBAL_SEK", group="SE_OMRX_CHECK",
+        notes=("Identical to REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1 (Riksbank proxy cash), evaluated on the OMRX window.",)))
     # ---- SE_STRICT: licensed exports ----------------------------------------------------
     out.append(RunSpec(
         "GEM_SEK_STRICT_V1", "SWEDISH", GEM_SEK,
@@ -268,7 +285,7 @@ def swedish_runs() -> list[RunSpec]:
         notes=("NOT GEM. Official S&P 500 TR and MSCI ACWI ex USA in SEK; cash = full OMRX history (manual).",)))
     # ---- SEK benchmarks (each group) ------------------------------------------------------
     for grp, cash in (("SE_OPEN_OMRX", SE_CASH_OMRX), ("SE_OPEN_SSVX", SE_CASH_SSVX), ("SE_3P", SE_CASH_SSVX),
-                      ("SE_FF_SSVX", SE_CASH_SSVX)):
+                      ("SE_FF_SSVX", SE_CASH_SSVX), ("SE_OMRX_CHECK", SE_CASH_OMRX)):
         out.append(RunSpec(
             f"BUY_HOLD_GLOBAL_SEK_FF_DEV_PROXY_V1__{grp}", "BENCHMARK",
             FixedWeightStrategy("BUY_HOLD_GLOBAL", {"GLOBAL_EQ_SEK": 1.0}),
@@ -284,7 +301,7 @@ def swedish_runs() -> list[RunSpec]:
             rf_asset="SE_SHORT_RATE", group=grp,
             notes=("70 % global equity (FF Developed, SEK) / 30 % Swedish short rate, monthly rebalanced. The 30 % "
                    "leg is Swedish cash, not bonds - the defensive asset a Swedish investor actually uses here.",)))
-    for grp, cash in (("SE_OPEN_OMRX", SE_CASH_OMRX), ("SE_FF_SSVX", SE_CASH_SSVX)):
+    for grp, cash in (("SE_OMRX_CHECK", SE_CASH_OMRX), ("SE_FF_SSVX", SE_CASH_SSVX)):
         out.append(RunSpec(
             f"STATIC_REGIONAL_EQUAL_SEK_FF_V1__{grp}", "BENCHMARK",
             FixedWeightStrategy("STATIC_REGIONAL_EQUAL", {"SE_USA_EQ": 1 / 3, "SE_EUROPE_EQ": 1 / 3,
@@ -307,6 +324,12 @@ def swedish_runs() -> list[RunSpec]:
         group="SE_STRICT", notes=("70 % MSCI ACWI (SEK) / 30 % OMRX T-bill.",)))
     return out
 
+
+# Same strategy, OMRX (verified) vs Riksbank proxy cash: hurdle/defensive sensitivity
+HURDLE_PAIRS = (
+    ("GEM_SEK_FF_OMRX_VERIFIED_V1", "GEM_SEK_FF_PROXY_SSVXSYNTH_V1__OMRX_WINDOW"),
+    ("REGIONAL_SEK_FF_PROXY_OMRX_V1", "REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1__OMRX_WINDOW"),
+)
 
 # GEM_ORIGINAL vs GEM_SEK pairs for the signal-agreement analysis
 AGREEMENT_PAIRS = (
