@@ -8,3 +8,4 @@ request: 2026-10-31T11:15:18Z run 5 - Avanza NAV provider, investable implementa
 request: 2026-10-31T11:21:02Z run 6 - NAV window fix (median spacing)
 request: 2026-10-31T11:26:31Z run 7 - Global first-NAV date, robust fund facts
 request: 2026-10-31T11:35:37Z run 8 - Avanza NAV benchmarks over implementation windows, NAV lag snapshot
+request: 2026-10-31T11:41:19Z run 9 - fund facts incl. primaryBenchmark, benchmark gap diagnostics
