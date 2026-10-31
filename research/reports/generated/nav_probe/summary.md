@@ -8,7 +8,7 @@
 | AVANZA_USA | search_global | 404 | application/json | 71 |  |  |
 | AVANZA_USA | fund_page_html | 200 | text/html; charset=UTF-8 | 10090 |  |  |
 | AVANZA_USA | fund_guide | 200 | application/json | 8791 | 263.49 | 2026-10-29T00:00:00 |
-| AVANZA_USA | price_chart_stock_all_day | 400 | application/json | 158 |  |  |
+| AVANZA_USA | price_chart_stock_all_day | 400 | application/json | 155 |  |  |
 | AVANZA_USA | price_chart_fund_all | 404 | application/json | 150 |  |  |
 | AVANZA_USA | fund_guide_chart_all | 400 | application/json | 158 |  |  |
 | AVANZA_USA | fund_guide_chart_range_raw | 200 | application/json | 4341 |  |  |

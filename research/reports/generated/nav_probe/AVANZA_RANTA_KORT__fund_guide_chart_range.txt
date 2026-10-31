@@ -1,4 +1,4 @@
-retrieved_at: 2026-10-31T09:35:40Z
+retrieved_at: 2026-10-31T11:23:06Z
 GET https://www.avanza.se/_api/fund-guide/chart/1684019/2015-01-01/2026-10-31
 body: null
 {
