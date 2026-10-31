@@ -48,7 +48,7 @@
         "provider": "alexjansenhome/GEM (GitHub), labelled source MSCI",
         "provider_series_id": "msci_all_gross.csv: ACWI ex USA",
         "quality_status": "EXPERIMENTAL",
-        "retrieved_at": "2026-10-31T08:22:37Z",
+        "retrieved_at": "2026-10-31T08:34:56Z",
         "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -59,7 +59,7 @@
         "provider": "alexjansenhome/GEM (GitHub), labelled source Yahoo",
         "provider_series_id": "msci_all_gross.csv: SP500TR",
         "quality_status": "EXPERIMENTAL",
-        "retrieved_at": "2026-10-31T08:22:37Z",
+        "retrieved_at": "2026-10-31T08:34:56Z",
         "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -70,7 +70,7 @@
         "provider": "alexjansenhome/GEM (GitHub), labelled source FRED (TB3MS)",
         "provider_series_id": "msci_all_gross.csv: 3 MONTH",
         "quality_status": "EXPERIMENTAL",
-        "retrieved_at": "2026-10-31T08:22:37Z",
+        "retrieved_at": "2026-10-31T08:34:56Z",
         "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -81,20 +81,20 @@
         "provider": "alexjansenhome/GEM (GitHub), labelled source Morningstar",
         "provider_series_id": "msci_all_gross.csv: AGG",
         "quality_status": "EXPERIMENTAL",
-        "retrieved_at": "2026-10-31T08:22:37Z",
+        "retrieved_at": "2026-10-31T08:34:56Z",
         "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
       {
-        "class": "THIRD_PARTY",
-        "data_period": "1971-01-04..2026-10-23",
-        "id": "H10_SEK_PER_USD",
-        "provider": "datahub.io core datasets (GitHub mirror of FRED)",
-        "provider_series_id": "exchange-rates/data/daily.csv, Country=Sweden",
+        "class": "PRIMARY_SOURCE_VERIFIED",
+        "data_period": "1993-01-04..2026-10-30",
+        "id": "RB_SEK_PER_USD",
+        "provider": "Sveriges Riksbank SWEA API",
+        "provider_series_id": "SEKUSDPMI",
         "quality_status": "VERIFIED",
-        "retrieved_at": "2026-10-31T08:28:44Z",
-        "sha256": "5f82c543467ae6398e766fb110fe57abe446b95c4ad13b2eaca8954911c6259d",
-        "verification": "VERIFIED FROM SECONDARY SOURCE"
+        "retrieved_at": "2026-10-31T08:41:03Z",
+        "sha256": "58d9b62ce7ef1a8f9884ea0dde96696e1acfe9de7cd56ce16e0202484d3c5079",
+        "verification": "VERIFIED FROM PRIMARY SOURCE"
       }
     ],
     "strategy_id": "GEM_ORIGINAL",

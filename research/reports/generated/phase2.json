@@ -141,6 +141,13 @@
       "status": "OK"
     },
     {
+      "endpoint": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/Developed_ex_US_3_Factors_Daily_CSV.zip",
+      "error": "",
+      "host": "mba.tuck.dartmouth.edu",
+      "series": "FF_DEV_EXUS_MKT_TR_DAILY",
+      "status": "OK"
+    },
+    {
       "endpoint": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/Emerging_5_Factors_CSV.zip",
       "error": "",
       "host": "mba.tuck.dartmouth.edu",
@@ -267,13 +274,6 @@
       "status": "OK"
     },
     {
-      "endpoint": "https://raw.githubusercontent.com/datasets/exchange-rates/main/data/daily.csv",
-      "error": "",
-      "host": "raw.githubusercontent.com",
-      "series": "RB_SEK_PER_USD_DAILY_H10",
-      "status": "OK"
-    },
-    {
       "endpoint": "https://api.riksbank.se/swea/v1/Observations/SETB1MBENCHC/1983-01-01/2026-10-31",
       "error": "",
       "host": "api.riksbank.se",
@@ -310,6 +310,108 @@
     }
   ],
   "agreement": {
+    "GEM_ORIGINAL_FF_V1__SE_FF_SSVX vs GEM_SEK_FF_PROXY_SSVXSYNTH_V1": {
+      "agreement_pct": 0.8491048593350383,
+      "cagr_diff_sek_minus_original": 0.011625727535732544,
+      "crosstab": {
+        "DEFENSIVE->DEFENSIVE": 64,
+        "DEFENSIVE->EX_US": 4,
+        "DEFENSIVE->US": 20,
+        "EX_US->DEFENSIVE": 28,
+        "EX_US->EX_US": 78,
+        "EX_US->US": 0,
+        "US->DEFENSIVE": 7,
+        "US->EX_US": 0,
+        "US->US": 190
+      },
+      "differences_absolute_momentum": 59,
+      "differences_by_year": {
+        "1994": 2,
+        "1995": 2,
+        "1996": 2,
+        "1998": 2,
+        "2000": 1,
+        "2001": 1,
+        "2003": 3,
+        "2004": 4,
+        "2005": 4,
+        "2006": 4,
+        "2007": 5,
+        "2009": 1,
+        "2011": 2,
+        "2012": 1,
+        "2015": 1,
+        "2016": 1,
+        "2018": 1,
+        "2019": 3,
+        "2020": 1,
+        "2022": 8,
+        "2023": 4,
+        "2025": 4,
+        "2026": 2
+      },
+      "differences_relative_momentum": 0,
+      "different": 59,
+      "first_signal": "1994-03-31",
+      "identical": 332,
+      "last_signal": "2026-09-30",
+      "maxdd_diff_sek_minus_original": 0.10555975569895892,
+      "months": 391,
+      "original_in_sek": {
+        "best_year": 1997,
+        "best_year_return": 0.5035143272832623,
+        "cagr": 0.10565449978405672,
+        "calmar": 0.38641535238367536,
+        "end_date": "2026-09-30",
+        "end_value": 263795.0730783428,
+        "longest_drawdown_months": 56,
+        "longest_drawdown_span": "2000-08-31..2005-04-30",
+        "max_drawdown": -0.27342210689173496,
+        "months": 391,
+        "sharpe": 0.8057266254209255,
+        "sharpe_rf": "none (rf=0)",
+        "sortino": 1.3256237853842952,
+        "start_date": "1994-03-31",
+        "start_value": 10000.0,
+        "volatility": 0.13674979523963604,
+        "worst_year": 2002,
+        "worst_year_return": -0.1592190639246739
+      },
+      "ranking_invariance": {
+        "mismatch_months": [],
+        "months": 393,
+        "ranking_mismatches": 0
+      },
+      "sek_model": {
+        "best_year": 1997,
+        "best_year_return": 0.5035143272832621,
+        "cagr": 0.11728022731978927,
+        "calmar": 0.6986690373775511,
+        "end_date": "2026-09-30",
+        "end_value": 370921.65066231723,
+        "longest_drawdown_months": 57,
+        "longest_drawdown_span": "2000-08-31..2005-05-31",
+        "max_drawdown": -0.16786235119277604,
+        "months": 391,
+        "sharpe": 0.9663940668816843,
+        "sharpe_rf": "none (rf=0)",
+        "sortino": 1.6431047344012923,
+        "start_date": "1994-03-31",
+        "start_value": 10000.0,
+        "volatility": 0.12310038735424271,
+        "worst_year": 2000,
+        "worst_year_return": -0.06628058200251641
+      },
+      "status": "OK",
+      "top_years": [
+        2022,
+        2007,
+        2023,
+        2004,
+        2005
+      ],
+      "window": "COMMON_SE_FF_SSVX"
+    },
     "GEM_ORIGINAL_OPEN_V1__SE_OPEN_OMRX vs GEM_SEK_OPEN_OMRX_V1": {
       "missing_runs": [
         "GEM_ORIGINAL_OPEN_V1__SE_OPEN_OMRX",
@@ -332,98 +434,96 @@
       "status": "BLOCKED"
     },
     "GEM_ORIGINAL_STRICT_3P vs GEM_SEK_3P_SSVXSYNTH_V1": {
-      "agreement_pct": 0.8454258675078864,
-      "cagr_diff_sek_minus_original": -0.021502500474492203,
+      "agreement_pct": 0.8540145985401459,
+      "cagr_diff_sek_minus_original": -0.014265709161019657,
       "crosstab": {
-        "DEFENSIVE->DEFENSIVE": 62,
+        "DEFENSIVE->DEFENSIVE": 57,
         "DEFENSIVE->EX_US": 0,
         "DEFENSIVE->US": 7,
-        "EX_US->DEFENSIVE": 25,
-        "EX_US->EX_US": 63,
+        "EX_US->DEFENSIVE": 26,
+        "EX_US->EX_US": 51,
         "EX_US->US": 0,
-        "US->DEFENSIVE": 17,
+        "US->DEFENSIVE": 7,
         "US->EX_US": 0,
-        "US->US": 143
+        "US->US": 126
       },
-      "differences_absolute_momentum": 49,
+      "differences_absolute_momentum": 40,
       "differences_by_year": {
-        "1991": 3,
-        "1992": 8,
         "1994": 2,
         "1995": 1,
         "1996": 1,
         "2000": 1,
         "2001": 3,
-        "2003": 4,
-        "2004": 3,
+        "2003": 5,
+        "2004": 4,
         "2005": 4,
         "2006": 4,
-        "2007": 6,
+        "2007": 5,
         "2009": 1,
-        "2011": 2,
+        "2011": 4,
         "2012": 1,
         "2015": 1,
-        "2016": 4
+        "2016": 3
       },
       "differences_relative_momentum": 0,
-      "different": 49,
-      "first_signal": "1990-08-31",
-      "identical": 268,
+      "different": 40,
+      "first_signal": "1994-03-31",
+      "identical": 234,
       "last_signal": "2016-12-31",
-      "maxdd_diff_sek_minus_original": -0.008750878092082859,
-      "months": 317,
+      "maxdd_diff_sek_minus_original": -0.00026733009894330806,
+      "months": 274,
       "original_in_sek": {
         "best_year": 1997,
-        "best_year_return": 0.5515023881550218,
-        "cagr": 0.15402415747495102,
-        "calmar": 0.7595427151413966,
+        "best_year_return": 0.5277510715257749,
+        "cagr": 0.13627355112207362,
+        "calmar": 0.6628293732884069,
         "end_date": "2016-12-31",
-        "end_value": 440058.36200810963,
-        "longest_drawdown_months": 37,
-        "longest_drawdown_span": "2001-10-31..2004-11-30",
-        "max_drawdown": -0.20278537915576988,
-        "months": 317,
-        "sharpe": 1.0816099422613983,
+        "end_value": 184867.04504294702,
+        "longest_drawdown_months": 38,
+        "longest_drawdown_span": "2009-02-28..2012-04-30",
+        "max_drawdown": -0.20559371176626928,
+        "months": 274,
+        "sharpe": 1.0197463781314973,
         "sharpe_rf": "none (rf=0)",
-        "sortino": 2.026081232898181,
-        "start_date": "1990-08-31",
+        "sortino": 1.7842122127876796,
+        "start_date": "1994-03-31",
         "start_value": 10000.0,
-        "volatility": 0.14243163019557928,
+        "volatility": 0.13477780477407847,
         "worst_year": 2002,
-        "worst_year_return": -0.08323815559225056
+        "worst_year_return": -0.08788359468012608
       },
       "ranking_invariance": {
         "mismatch_months": [],
-        "months": 336,
+        "months": 276,
         "ranking_mismatches": 0
       },
       "sek_model": {
         "best_year": 1997,
-        "best_year_return": 0.5515023881550218,
-        "cagr": 0.13252165700045881,
-        "calmar": 0.6264725429323724,
+        "best_year_return": 0.5277510715257747,
+        "cagr": 0.12200784196105396,
+        "calmar": 0.5926708660152343,
         "end_date": "2016-12-31",
-        "end_value": 267749.57469584455,
-        "longest_drawdown_months": 42,
-        "longest_drawdown_span": "2000-08-31..2004-02-29",
-        "max_drawdown": -0.21153625724785274,
-        "months": 317,
-        "sharpe": 1.136000944018052,
+        "end_value": 138539.2634730824,
+        "longest_drawdown_months": 55,
+        "longest_drawdown_span": "2000-10-31..2005-05-31",
+        "max_drawdown": -0.2058610418652126,
+        "months": 274,
+        "sharpe": 1.0580255608224427,
         "sharpe_rf": "none (rf=0)",
-        "sortino": 2.115145268193433,
-        "start_date": "1990-08-31",
+        "sortino": 1.9197070946651251,
+        "start_date": "1994-03-31",
         "start_value": 10000.0,
-        "volatility": 0.11595243303440865,
+        "volatility": 0.11556178342947468,
         "worst_year": 2000,
-        "worst_year_return": -0.0886384052711644
+        "worst_year_return": -0.0820154488341962
       },
       "status": "OK",
       "top_years": [
-        1992,
-        2007,
         2003,
-        2006,
-        2005
+        2007,
+        2005,
+        2004,
+        2006
       ],
       "window": "COMMON_SE_3P"
     }
@@ -436,13 +536,209 @@
     "REGIONAL_SEK_FF_PROXY_OMRX_V1": {
       "FF_EMERGING_MKT_TR_DAILY": "offline and no cache for french/FF_EMERGING_MKT_TR_DAILY",
       "FRED_OMRXTBILL": "offline and no cache for fred/FRED_OMRXTBILL"
+    },
+    "REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1": {
+      "FF_EMERGING_MKT_TR_DAILY": "offline and no cache for french/FF_EMERGING_MKT_TR_DAILY"
     }
   },
-  "daily_results": [],
+  "daily_results": [
+    {
+      "cost": 0.0,
+      "label": "LOOKAHEAD_REFERENCE_ONLY",
+      "metrics": {
+        "average_holding_period_months": 6.09375,
+        "avg_bdays_out_of_market_per_switch": 0.0,
+        "avg_bdays_signal_to_execution": 0.030303030303030304,
+        "best_year": 1997,
+        "best_year_return": 0.5022342595932592,
+        "cagr": 0.11928512964108773,
+        "calmar": 0.715885368864638,
+        "end_date": "2026-09-30",
+        "end_value": 389559.54787601455,
+        "longest_drawdown_months": 57,
+        "longest_drawdown_span": "2000-08-31..2005-05-31",
+        "max_drawdown": -0.16662601979178393,
+        "months": 390,
+        "number_of_switches": 63,
+        "number_of_trades": 65,
+        "sharpe": 0.7956860135052957,
+        "sharpe_rf": "hurdle/T-bill series of the run",
+        "sortino": 1.3194939691833858,
+        "start_date": "1994-04-30",
+        "start_value": 10000.0,
+        "switches_per_year": 1.9384615384615385,
+        "volatility": 0.12289805023117299,
+        "worst_year": 2000,
+        "worst_year_return": -0.06622608620678128
+      },
+      "run": "GEM_SEK_FF_PROXY_SSVXSYNTH_V1",
+      "scenario": "A_PUBLISHED_CLOSE"
+    },
+    {
+      "cost": 10.0,
+      "label": "LOOKAHEAD_REFERENCE_ONLY",
+      "metrics": {
+        "average_holding_period_months": 6.09375,
+        "avg_bdays_out_of_market_per_switch": 0.0,
+        "avg_bdays_signal_to_execution": 0.030303030303030304,
+        "best_year": 1997,
+        "best_year_return": 0.5022342595932583,
+        "cagr": 0.11488334077676465,
+        "calmar": 0.6759652028494278,
+        "end_date": "2026-09-30",
+        "end_value": 342733.33430624247,
+        "longest_drawdown_months": 57,
+        "longest_drawdown_span": "2000-08-31..2005-05-31",
+        "max_drawdown": -0.1699545188013991,
+        "months": 390,
+        "number_of_switches": 63,
+        "number_of_trades": 65,
+        "sharpe": 0.7612112799297835,
+        "sharpe_rf": "hurdle/T-bill series of the run",
+        "sortino": 1.2569380323473307,
+        "start_date": "1994-04-30",
+        "start_value": 10000.0,
+        "switches_per_year": 1.9384615384615385,
+        "volatility": 0.12331171527252942,
+        "worst_year": 2000,
+        "worst_year_return": -0.06995558295263293
+      },
+      "run": "GEM_SEK_FF_PROXY_SSVXSYNTH_V1",
+      "scenario": "A_PUBLISHED_CLOSE"
+    },
+    {
+      "cost": 0.0,
+      "label": "MAIN",
+      "metrics": {
+        "average_holding_period_months": 6.0,
+        "avg_bdays_out_of_market_per_switch": 0.07692307692307693,
+        "avg_bdays_signal_to_execution": 1.1515151515151516,
+        "best_year": 1997,
+        "best_year_return": 0.5022342595932587,
+        "cagr": 0.11392561541144008,
+        "calmar": 0.5346794846955393,
+        "end_date": "2026-09-30",
+        "end_value": 333293.0098402386,
+        "longest_drawdown_months": 57,
+        "longest_drawdown_span": "2000-08-31..2005-05-31",
+        "max_drawdown": -0.21307272613295114,
+        "months": 390,
+        "number_of_switches": 64,
+        "number_of_trades": 65,
+        "sharpe": 0.749173991041066,
+        "sharpe_rf": "hurdle/T-bill series of the run",
+        "sortino": 1.2194670877313094,
+        "start_date": "1994-04-30",
+        "start_value": 10000.0,
+        "switches_per_year": 1.9692307692307693,
+        "volatility": 0.12432905677470127,
+        "worst_year": 2000,
+        "worst_year_return": -0.07004768038381304
+      },
+      "run": "GEM_SEK_FF_PROXY_SSVXSYNTH_V1",
+      "scenario": "B_NEXT_TRADABLE"
+    },
+    {
+      "cost": 10.0,
+      "label": "MAIN",
+      "metrics": {
+        "average_holding_period_months": 6.0,
+        "avg_bdays_out_of_market_per_switch": 0.07692307692307693,
+        "avg_bdays_signal_to_execution": 1.1515151515151516,
+        "best_year": 1997,
+        "best_year_return": 0.5022342595932598,
+        "cagr": 0.10947659204889804,
+        "calmar": 0.510033717104498,
+        "end_date": "2026-09-30",
+        "end_value": 292644.033926459,
+        "longest_drawdown_months": 58,
+        "longest_drawdown_span": "2000-08-31..2005-06-30",
+        "max_drawdown": -0.21464579375341175,
+        "months": 390,
+        "number_of_switches": 64,
+        "number_of_trades": 65,
+        "sharpe": 0.7170722525070077,
+        "sharpe_rf": "hurdle/T-bill series of the run",
+        "sortino": 1.1605022837944727,
+        "start_date": "1994-04-30",
+        "start_value": 10000.0,
+        "switches_per_year": 1.9692307692307693,
+        "volatility": 0.12425376282554979,
+        "worst_year": 2000,
+        "worst_year_return": -0.07190665507072735
+      },
+      "run": "GEM_SEK_FF_PROXY_SSVXSYNTH_V1",
+      "scenario": "B_NEXT_TRADABLE"
+    },
+    {
+      "cost": 0.0,
+      "label": "CONSERVATIVE",
+      "metrics": {
+        "average_holding_period_months": 6.0,
+        "avg_bdays_out_of_market_per_switch": 1.9846153846153847,
+        "avg_bdays_signal_to_execution": 4.015151515151516,
+        "best_year": 1997,
+        "best_year_return": 0.5022342595932545,
+        "cagr": 0.11283581294974576,
+        "calmar": 0.5137910992101368,
+        "end_date": "2026-09-30",
+        "end_value": 322857.2477167296,
+        "longest_drawdown_months": 60,
+        "longest_drawdown_span": "2000-08-31..2005-08-31",
+        "max_drawdown": -0.2196141839031679,
+        "months": 390,
+        "number_of_switches": 64,
+        "number_of_trades": 65,
+        "sharpe": 0.7505323980487401,
+        "sharpe_rf": "hurdle/T-bill series of the run",
+        "sortino": 1.2181210472779742,
+        "start_date": "1994-04-30",
+        "start_value": 10000.0,
+        "switches_per_year": 1.9692307692307693,
+        "volatility": 0.12248593750865329,
+        "worst_year": 2000,
+        "worst_year_return": -0.09253181969017155
+      },
+      "run": "GEM_SEK_FF_PROXY_SSVXSYNTH_V1",
+      "scenario": "C_CONSERVATIVE"
+    },
+    {
+      "cost": 10.0,
+      "label": "CONSERVATIVE",
+      "metrics": {
+        "average_holding_period_months": 6.0,
+        "avg_bdays_out_of_market_per_switch": 1.9846153846153847,
+        "avg_bdays_signal_to_execution": 4.015151515151516,
+        "best_year": 1997,
+        "best_year_return": 0.5022342595932563,
+        "cagr": 0.10839114226259361,
+        "calmar": 0.47995625084830457,
+        "end_date": "2026-09-30",
+        "end_value": 283481.0348993118,
+        "longest_drawdown_months": 60,
+        "longest_drawdown_span": "2000-08-31..2005-08-31",
+        "max_drawdown": -0.22583546327611392,
+        "months": 390,
+        "number_of_switches": 64,
+        "number_of_trades": 65,
+        "sharpe": 0.7178363848605629,
+        "sharpe_rf": "hurdle/T-bill series of the run",
+        "sortino": 1.1586216757550238,
+        "start_date": "1994-04-30",
+        "start_value": 10000.0,
+        "switches_per_year": 1.9692307692307693,
+        "volatility": 0.12243352312316041,
+        "worst_year": 2000,
+        "worst_year_return": -0.09434584858261119
+      },
+      "run": "GEM_SEK_FF_PROXY_SSVXSYNTH_V1",
+      "scenario": "C_CONSERVATIVE"
+    }
+  ],
   "group_windows": {
     "SE_3P": {
       "common_window": [
-        "1990-08-31",
+        "1994-03-31",
         "2016-12-31"
       ],
       "members": [
@@ -458,6 +754,28 @@
         "STATIC_70_30_SEK_FF_DEV_PROXY_V1__SE_3P"
       ]
     },
+    "SE_FF_SSVX": {
+      "common_window": [
+        "1994-03-31",
+        "2026-09-30"
+      ],
+      "members": [
+        "GEM_SEK_FF_PROXY_SSVXSYNTH_V1",
+        "GEM_ORIGINAL_FF_V1__SE_FF_SSVX",
+        "REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1",
+        "BUY_HOLD_GLOBAL_SEK_FF_DEV_PROXY_V1__SE_FF_SSVX",
+        "STATIC_70_30_SEK_FF_DEV_PROXY_V1__SE_FF_SSVX",
+        "STATIC_REGIONAL_EQUAL_SEK_FF_V1__SE_FF_SSVX"
+      ],
+      "ran": [
+        "GEM_SEK_FF_PROXY_SSVXSYNTH_V1",
+        "GEM_ORIGINAL_FF_V1__SE_FF_SSVX",
+        "REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1",
+        "BUY_HOLD_GLOBAL_SEK_FF_DEV_PROXY_V1__SE_FF_SSVX",
+        "STATIC_70_30_SEK_FF_DEV_PROXY_V1__SE_FF_SSVX",
+        "STATIC_REGIONAL_EQUAL_SEK_FF_V1__SE_FF_SSVX"
+      ]
+    },
     "SE_OPEN_OMRX": {
       "common_window": null,
       "members": [
@@ -471,23 +789,16 @@
       "ran": []
     },
     "SE_OPEN_SSVX": {
-      "common_window": [
-        "1991-08-31",
-        "2026-09-30"
-      ],
+      "common_window": null,
       "members": [
         "GEM_SEK_OPEN_SSVXSYNTH_V1",
         "GEM_ORIGINAL_OPEN_V1__SE_OPEN_SSVX",
-        "REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1",
         "BUY_HOLD_GLOBAL_SEK_FF_DEV_PROXY_V1__SE_OPEN_SSVX",
-        "STATIC_70_30_SEK_FF_DEV_PROXY_V1__SE_OPEN_SSVX",
-        "STATIC_REGIONAL_EQUAL_SEK_FF_V1__SE_OPEN_SSVX"
+        "STATIC_70_30_SEK_FF_DEV_PROXY_V1__SE_OPEN_SSVX"
       ],
       "ran": [
-        "REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1",
         "BUY_HOLD_GLOBAL_SEK_FF_DEV_PROXY_V1__SE_OPEN_SSVX",
-        "STATIC_70_30_SEK_FF_DEV_PROXY_V1__SE_OPEN_SSVX",
-        "STATIC_REGIONAL_EQUAL_SEK_FF_V1__SE_OPEN_SSVX"
+        "STATIC_70_30_SEK_FF_DEV_PROXY_V1__SE_OPEN_SSVX"
       ]
     },
     "SE_STRICT": {

@@ -15,4 +15,4 @@ WARNING series MSCI_ACWI_EXUS_OFFICIAL unavailable: manual file not supplied: /h
 WARNING series MSCI_ACWI_OFFICIAL unavailable: manual file not supplied: /home/runner/work/gem/gem/research/data/manual/msci_acwi.csv
 WARNING series NASDAQ_OMRXTBILL_FULL unavailable: manual file not supplied: /home/runner/work/gem/gem/research/data/manual/omrxtbill.csv
 WARNING series SPX_TR_OFFICIAL unavailable: manual file not supplied: /home/runner/work/gem/gem/research/data/manual/spx_tr.csv
-INFO runs completed: 92 monthly result sets, 0 daily result sets, 13 blocked runs
+INFO runs completed: 112 monthly result sets, 6 daily result sets, 13 blocked runs

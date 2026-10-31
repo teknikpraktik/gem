@@ -1,0 +1,98 @@
+{
+  "cost_per_side_bps": 10.0,
+  "data_tier": "EXTENDED_PROXY",
+  "execution": "IDEALIZED_CLOSE",
+  "lookahead_free": false,
+  "metrics": {
+    "annual_turnover": 1.5652173913043477,
+    "average_holding_period_months": 7.519230769230769,
+    "best_year": 1997,
+    "best_year_return": 0.31247057540482936,
+    "cagr": 0.09478586818017742,
+    "calmar": 0.39515141608923643,
+    "end_date": "2026-09-30",
+    "end_value": 191194.710007885,
+    "longest_drawdown_months": 44,
+    "longest_drawdown_span": "2000-03-31..2003-11-30",
+    "longest_underperformance_span": "2009-02-28..2026-09-30",
+    "longest_underperformance_vs_benchmark_months": 211,
+    "max_drawdown": -0.23987227255380017,
+    "months": 391,
+    "no_signal_count": 780,
+    "number_of_switches": 51,
+    "sharpe": 0.6035753514677787,
+    "sharpe_rf": "hurdle/T-bill series of the run",
+    "sortino": 0.9016789078976858,
+    "start_date": "1994-03-31",
+    "start_value": 10000.0,
+    "switches_per_year": 1.5652173913043477,
+    "time_in_asset": {
+      "EX_US_EQUITIES": 0.2710997442455243,
+      "US_EQUITIES": 0.5038363171355499,
+      "US_TBILL_DEF": 0.22506393861892582
+    },
+    "volatility": 0.12300470651821763,
+    "worst_year": 2000,
+    "worst_year_return": -0.17817057324339458
+  },
+  "notes": [
+    "GEM rule in USD on the same equity legs as GEM_SEK_FF_PROXY_SSVXSYNTH_V1; hurdle = Ken French RF. Defensive asset = US T-bills (FF RF) because no open US bond TR series is reachable without FRED - this changes returns in risk-off months, NOT the signals. Comparison partner only."
+  ],
+  "provenance": {
+    "run_id": "GEM_ORIGINAL_FF_V1__SE_FF_SSVX",
+    "series": [
+      {
+        "class": "PROXY",
+        "data_period": "1990-06-30..2026-09-30",
+        "id": "FF_DEV_EXUS_MKT_TR",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "Developed_ex_US_3_Factors (Mkt-RF + RF)",
+        "quality_status": "EXPERIMENTAL",
+        "retrieved_at": "2026-10-31T08:34:58Z",
+        "sha256": "689c242b62e430fecbb8b3cc98269761b38d1d3f7ca15a22c3fb79771c932aee",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "1926-06-30..2026-09-30",
+        "id": "FF_RF",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "F-F_Research_Data_Factors (RF)",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T08:35:01Z",
+        "sha256": "b03d39e4bb253dda0f14893db3b78e64b40b8d6549a0fc0fd4111dae84c98618",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "1926-06-30..2026-09-30",
+        "id": "FF_US_MKT_TR",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "F-F_Research_Data_Factors (Mkt-RF + RF)",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T08:35:01Z",
+        "sha256": "b03d39e4bb253dda0f14893db3b78e64b40b8d6549a0fc0fd4111dae84c98618",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PRIMARY_SOURCE_VERIFIED",
+        "data_period": "1993-01-04..2026-10-30",
+        "id": "RB_SEK_PER_USD",
+        "provider": "Sveriges Riksbank SWEA API",
+        "provider_series_id": "SEKUSDPMI",
+        "quality_status": "VERIFIED",
+        "retrieved_at": "2026-10-31T08:41:03Z",
+        "sha256": "58d9b62ce7ef1a8f9884ea0dde96696e1acfe9de7cd56ce16e0202484d3c5079",
+        "verification": "VERIFIED FROM PRIMARY SOURCE"
+      }
+    ],
+    "strategy_id": "GEM_ORIGINAL",
+    "strategy_version": "1.0.0",
+    "tier": "EXTENDED_PROXY",
+    "weakest_class": "PROXY"
+  },
+  "run_id": "GEM_ORIGINAL_FF_V1__SE_FF_SSVX__COMMON_SE_FF_SSVX__IDEALIZED_CLOSE__COST_10BPS",
+  "stop_reason": null,
+  "strategy_id": "GEM_ORIGINAL",
+  "strategy_version": "1.0.0"
+}

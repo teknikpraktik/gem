@@ -4,40 +4,40 @@
   "execution": "IDEALIZED_CLOSE",
   "lookahead_free": false,
   "metrics": {
-    "annual_turnover": 2.4113475177304964,
-    "average_holding_period_months": 4.9186046511627906,
-    "best_year": 1993,
-    "best_year_return": 1.0130189209591527,
-    "cagr": 0.13715833828366475,
-    "calmar": 0.567274156696595,
+    "annual_turnover": 2.479591836734694,
+    "average_holding_period_months": 4.780487804878049,
+    "best_year": 2005,
+    "best_year_return": 0.6399384979817868,
+    "cagr": 0.11597872669175935,
+    "calmar": 0.42806930684008193,
     "end_date": "2026-09-30",
-    "end_value": 928299.5543904626,
-    "longest_drawdown_months": 48,
-    "longest_drawdown_span": "2000-02-29..2004-02-29",
+    "end_value": 360379.36958388187,
+    "longest_drawdown_months": 64,
+    "longest_drawdown_span": "2007-10-31..2013-02-28",
     "longest_underperformance_span": "2009-03-31..2026-09-30",
     "longest_underperformance_vs_benchmark_months": 210,
-    "max_drawdown": -0.24178492297688703,
-    "months": 423,
-    "no_signal_count": 781,
-    "number_of_switches": 85,
-    "sharpe": 0.7474524415234953,
+    "max_drawdown": -0.27093446046830605,
+    "months": 392,
+    "no_signal_count": 812,
+    "number_of_switches": 81,
+    "sharpe": 0.6711752262772847,
     "sharpe_rf": "hurdle/T-bill series of the run",
-    "sortino": 1.2140987469046598,
-    "start_date": "1991-07-31",
+    "sortino": 1.04413503366744,
+    "start_date": "1994-02-28",
     "start_value": 10000.0,
-    "switches_per_year": 2.4113475177304964,
+    "switches_per_year": 2.479591836734694,
     "time_in_asset": {
-      "SE_EM_EQ": 0.29550827423167847,
-      "SE_EUROPE_EQ": 0.14420803782505912,
-      "SE_SHORT_RATE": 0.1536643026004728,
-      "SE_USA_EQ": 0.4066193853427896
+      "SE_EM_EQ": 0.288265306122449,
+      "SE_EUROPE_EQ": 0.1556122448979592,
+      "SE_SHORT_RATE": 0.14540816326530612,
+      "SE_USA_EQ": 0.4107142857142857
     },
-    "volatility": 0.1487064265303283,
-    "worst_year": 2000,
-    "worst_year_return": -0.1449998867468667
+    "volatility": 0.14515455866564994,
+    "worst_year": 2008,
+    "worst_year_return": -0.22510296503179572
   },
   "notes": [
-    "NOT GEM. As REGIONAL_SEK_FF_PROXY_OMRX_V1 with synthetic SSVX cash (PROXY, longer history)."
+    "NOT GEM. Regions = Ken French US (CRSP all US stocks), Developed Europe and Emerging markets portfolios (value-weighted, USD -> SEK with Riksbank SEKUSDPMI); Swedish cash = SE_CASH_SSVX_SYNTH_V1 (PROXY)."
   ],
   "provenance": {
     "run_id": "REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1",
@@ -49,7 +49,7 @@
         "provider": "Kenneth R. French Data Library",
         "provider_series_id": "Developed_3_Factors (Mkt-RF + RF)",
         "quality_status": "PROXY",
-        "retrieved_at": "2026-10-31T08:22:39Z",
+        "retrieved_at": "2026-10-31T08:34:58Z",
         "sha256": "3f99cfdeddd1914e3d8f84ce51d775aeed3e98ed0c290957e88f4df9912f8a23",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -60,7 +60,7 @@
         "provider": "Kenneth R. French Data Library",
         "provider_series_id": "Emerging_5_Factors (Mkt-RF + RF)",
         "quality_status": "PROXY",
-        "retrieved_at": "2026-10-31T08:22:40Z",
+        "retrieved_at": "2026-10-31T08:34:59Z",
         "sha256": "0573fd60948178daad54f577a6c87d1e5a183dfdc4a1a89ced3991cc95fd8ad3",
         "verification": "ASSUMPTION"
       },
@@ -71,7 +71,7 @@
         "provider": "Kenneth R. French Data Library",
         "provider_series_id": "Europe_3_Factors (Mkt-RF + RF)",
         "quality_status": "PROXY",
-        "retrieved_at": "2026-10-31T08:22:41Z",
+        "retrieved_at": "2026-10-31T08:35:00Z",
         "sha256": "842332540d9c86681cbda628c6acc9d75d0c1563e364a2bf6a535072f651471e",
         "verification": "ASSUMPTION"
       },
@@ -82,20 +82,20 @@
         "provider": "Kenneth R. French Data Library",
         "provider_series_id": "F-F_Research_Data_Factors (Mkt-RF + RF)",
         "quality_status": "PROXY",
-        "retrieved_at": "2026-10-31T08:22:42Z",
+        "retrieved_at": "2026-10-31T08:35:01Z",
         "sha256": "b03d39e4bb253dda0f14893db3b78e64b40b8d6549a0fc0fd4111dae84c98618",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
       {
-        "class": "THIRD_PARTY",
-        "data_period": "1971-01-04..2026-10-23",
-        "id": "H10_SEK_PER_USD",
-        "provider": "datahub.io core datasets (GitHub mirror of FRED)",
-        "provider_series_id": "exchange-rates/data/daily.csv, Country=Sweden",
+        "class": "PRIMARY_SOURCE_VERIFIED",
+        "data_period": "1993-01-04..2026-10-30",
+        "id": "RB_SEK_PER_USD",
+        "provider": "Sveriges Riksbank SWEA API",
+        "provider_series_id": "SEKUSDPMI",
         "quality_status": "VERIFIED",
-        "retrieved_at": "2026-10-31T08:28:44Z",
-        "sha256": "5f82c543467ae6398e766fb110fe57abe446b95c4ad13b2eaca8954911c6259d",
-        "verification": "VERIFIED FROM SECONDARY SOURCE"
+        "retrieved_at": "2026-10-31T08:41:03Z",
+        "sha256": "58d9b62ce7ef1a8f9884ea0dde96696e1acfe9de7cd56ce16e0202484d3c5079",
+        "verification": "VERIFIED FROM PRIMARY SOURCE"
       },
       {
         "class": "PROXY",
@@ -104,7 +104,7 @@
         "provider": "Sveriges Riksbank SWEA API",
         "provider_series_id": "SETB3MBENCH",
         "quality_status": "PROXY",
-        "retrieved_at": "2026-10-31T08:28:49Z",
+        "retrieved_at": "2026-10-31T08:41:06Z",
         "sha256": "45daac754529587fe08b0c7cbff8b3ccc07f0a541df4b9e8fae03304631314ff",
         "verification": "VERIFIED FROM PRIMARY SOURCE"
       }
@@ -112,7 +112,7 @@
     "strategy_id": "REGIONAL_SEK",
     "strategy_version": "1.0.0",
     "tier": "SWEDISH",
-    "weakest_class": "THIRD_PARTY"
+    "weakest_class": "PROXY"
   },
   "run_id": "REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1__FULL__IDEALIZED_CLOSE__COST_0",
   "stop_reason": "stopped before 2026-10-31: no return for held asset(s) ['SE_EM_EQ']",

@@ -4,33 +4,33 @@
   "execution": "NEXT_MONTH_CLOSE",
   "lookahead_free": true,
   "metrics": {
-    "annual_turnover": 0.07929850556741136,
-    "average_holding_period_months": 434.0,
-    "best_year": 1993,
-    "best_year_return": 0.32425324352133456,
-    "cagr": 0.08232253903436892,
-    "calmar": 0.24334642820370075,
+    "annual_turnover": 0.07740561607813211,
+    "average_holding_period_months": 403.0,
+    "best_year": 1999,
+    "best_year_return": 0.26016608731215163,
+    "cagr": 0.0792861416461157,
+    "calmar": 0.23491047002704216,
     "end_date": "2026-09-30",
-    "end_value": 174810.4578754406,
+    "end_value": 129669.4009174729,
     "longest_drawdown_months": 68,
     "longest_drawdown_span": "2007-05-31..2013-01-31",
-    "max_drawdown": -0.3382935991378442,
-    "months": 434,
-    "no_signal_count": 90,
+    "max_drawdown": -0.3375164233292306,
+    "months": 403,
+    "no_signal_count": 121,
     "number_of_switches": 0,
-    "sharpe": 0.5312974352410662,
+    "sharpe": 0.5993714003925733,
     "sharpe_rf": "hurdle/T-bill series of the run",
-    "sortino": 0.8013797310592015,
-    "start_date": "1990-08-31",
+    "sortino": 0.9008584442512997,
+    "start_date": "1993-03-31",
     "start_value": 10000.0,
     "switches_per_year": 0.0,
     "time_in_asset": {
       "GLOBAL_EQ_SEK": 1.0,
       "SE_SHORT_RATE": 1.0
     },
-    "volatility": 0.09832870617856726,
+    "volatility": 0.09329437297549535,
     "worst_year": 2002,
-    "worst_year_return": -0.2158693884041022
+    "worst_year_return": -0.2188421483132338
   },
   "notes": [
     "70 % global equity (FF Developed, SEK) / 30 % Swedish short rate, monthly rebalanced. The 30 % leg is Swedish cash, not bonds - the defensive asset a Swedish investor actually uses here."
@@ -45,20 +45,20 @@
         "provider": "Kenneth R. French Data Library",
         "provider_series_id": "Developed_3_Factors (Mkt-RF + RF)",
         "quality_status": "PROXY",
-        "retrieved_at": "2026-10-31T08:22:39Z",
+        "retrieved_at": "2026-10-31T08:34:58Z",
         "sha256": "3f99cfdeddd1914e3d8f84ce51d775aeed3e98ed0c290957e88f4df9912f8a23",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
       {
-        "class": "THIRD_PARTY",
-        "data_period": "1971-01-04..2026-10-23",
-        "id": "H10_SEK_PER_USD",
-        "provider": "datahub.io core datasets (GitHub mirror of FRED)",
-        "provider_series_id": "exchange-rates/data/daily.csv, Country=Sweden",
+        "class": "PRIMARY_SOURCE_VERIFIED",
+        "data_period": "1993-01-04..2026-10-30",
+        "id": "RB_SEK_PER_USD",
+        "provider": "Sveriges Riksbank SWEA API",
+        "provider_series_id": "SEKUSDPMI",
         "quality_status": "VERIFIED",
-        "retrieved_at": "2026-10-31T08:28:44Z",
-        "sha256": "5f82c543467ae6398e766fb110fe57abe446b95c4ad13b2eaca8954911c6259d",
-        "verification": "VERIFIED FROM SECONDARY SOURCE"
+        "retrieved_at": "2026-10-31T08:41:03Z",
+        "sha256": "58d9b62ce7ef1a8f9884ea0dde96696e1acfe9de7cd56ce16e0202484d3c5079",
+        "verification": "VERIFIED FROM PRIMARY SOURCE"
       },
       {
         "class": "PROXY",
@@ -67,7 +67,7 @@
         "provider": "Sveriges Riksbank SWEA API",
         "provider_series_id": "SETB3MBENCH",
         "quality_status": "PROXY",
-        "retrieved_at": "2026-10-31T08:28:49Z",
+        "retrieved_at": "2026-10-31T08:41:06Z",
         "sha256": "45daac754529587fe08b0c7cbff8b3ccc07f0a541df4b9e8fae03304631314ff",
         "verification": "VERIFIED FROM PRIMARY SOURCE"
       }
@@ -75,7 +75,7 @@
     "strategy_id": "STATIC_70_30",
     "strategy_version": "1.0.0",
     "tier": "BENCHMARK",
-    "weakest_class": "THIRD_PARTY"
+    "weakest_class": "PROXY"
   },
   "run_id": "STATIC_70_30_SEK_FF_DEV_PROXY_V1__SE_OPEN_SSVX__FULL__NEXT_MONTH_CLOSE__COST_0",
   "stop_reason": "stopped before 2026-10-31: no return for held asset(s) ['GLOBAL_EQ_SEK']",
