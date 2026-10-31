@@ -1,0 +1,684 @@
+{
+ "exported_at": "2026-10-31T19:31:39Z",
+ "research_commit": "a88de13",
+ "source": "research/reports/generated (GitHub Actions workflow 'GEM phase 2 research')",
+ "investable": {
+  "description": "REGIONAL_SEK on real Avanza fund NAVs: signal from the live function, execution on NAV with each fund's cut-off/NAV/settlement rules. Sharpe uses rf = 0.",
+  "variants": {
+   "HYBRID_SYNTH_CASH": {
+    "start": "2021-02-28",
+    "scenarios": {
+     "A_PUBLISHED_CLOSE": {
+      "label": "LOOKAHEAD_REFERENCE_ONLY",
+      "metrics": {
+       "start_date": "2021-04-30",
+       "end_date": "2026-10-31",
+       "months": 67.0,
+       "cagr": 0.11513594744127853,
+       "volatility": 0.16054686338044363,
+       "max_drawdown": -0.1898460130001729,
+       "sharpe": 0.7610778768108095,
+       "sortino": 1.2396337987165356,
+       "calmar": 0.6064701892958567,
+       "number_of_switches": 12.0,
+       "number_of_trades": 11.0,
+       "longest_drawdown_months": 25.0,
+       "best_year": 2024.0,
+       "best_year_return": 0.2663496970045416,
+       "worst_year": 2022.0,
+       "worst_year_return": -0.08957489878542546,
+       "avg_bdays_signal_to_execution": 0.25
+      }
+     },
+     "B_NEXT_TRADABLE": {
+      "label": "MAIN",
+      "metrics": {
+       "start_date": "2021-04-30",
+       "end_date": "2026-10-31",
+       "months": 67.0,
+       "cagr": 0.10783822263002518,
+       "volatility": 0.15944012582192074,
+       "max_drawdown": -0.17954607838261216,
+       "sharpe": 0.7238182867240056,
+       "sortino": 1.1609657499896555,
+       "calmar": 0.6006158619639814,
+       "number_of_switches": 11.0,
+       "number_of_trades": 11.0,
+       "longest_drawdown_months": 25.0,
+       "best_year": 2024.0,
+       "best_year_return": 0.2510587742751915,
+       "worst_year": 2022.0,
+       "worst_year_return": -0.08957489878542513,
+       "avg_bdays_signal_to_execution": 1.6666666666666667
+      }
+     },
+     "C_CONSERVATIVE": {
+      "label": "CONSERVATIVE",
+      "metrics": {
+       "start_date": "2021-04-30",
+       "end_date": "2026-10-31",
+       "months": 67.0,
+       "cagr": 0.11347021652276523,
+       "volatility": 0.1585070961840757,
+       "max_drawdown": -0.1667883368402976,
+       "sharpe": 0.7594811183775614,
+       "sortino": 1.215850732603085,
+       "calmar": 0.6803246478284313,
+       "number_of_switches": 11.0,
+       "number_of_trades": 11.0,
+       "longest_drawdown_months": 25.0,
+       "best_year": 2024.0,
+       "best_year_return": 0.2722775652161955,
+       "worst_year": 2022.0,
+       "worst_year_return": -0.08957489878542557,
+       "avg_bdays_signal_to_execution": 4.416666666666667
+      }
+     }
+    }
+   },
+   "PURE_AVANZA_FUNDS": {
+    "start": "2023-12-14",
+    "scenarios": {
+     "A_PUBLISHED_CLOSE": {
+      "label": "LOOKAHEAD_REFERENCE_ONLY",
+      "metrics": {
+       "start_date": "2024-01-31",
+       "end_date": "2026-10-31",
+       "months": 34.0,
+       "cagr": 0.1643460800068528,
+       "volatility": 0.17861681053764739,
+       "max_drawdown": -0.18984601300017334,
+       "sharpe": 0.944509416352659,
+       "sortino": 1.5552145293168045,
+       "calmar": 0.8656809664298968,
+       "number_of_switches": 6.0,
+       "number_of_trades": 6.0,
+       "longest_drawdown_months": 11.0,
+       "best_year": 2024.0,
+       "best_year_return": 0.26634969700454203,
+       "worst_year": 2025.0,
+       "worst_year_return": -0.014829047312221011,
+       "avg_bdays_signal_to_execution": 0.42857142857142855
+      }
+     },
+     "B_NEXT_TRADABLE": {
+      "label": "MAIN",
+      "metrics": {
+       "start_date": "2024-01-31",
+       "end_date": "2026-10-31",
+       "months": 34.0,
+       "cagr": 0.1649770602902323,
+       "volatility": 0.17728711922364504,
+       "max_drawdown": -0.1795460783826126,
+       "sharpe": 0.9534645717299642,
+       "sortino": 1.5576634267747302,
+       "calmar": 0.9188563837003795,
+       "number_of_switches": 5.0,
+       "number_of_trades": 6.0,
+       "longest_drawdown_months": 8.0,
+       "best_year": 2024.0,
+       "best_year_return": 0.2510587742751904,
+       "worst_year": 2025.0,
+       "worst_year_return": -0.0012559932017371933,
+       "avg_bdays_signal_to_execution": 1.7142857142857142
+      }
+     },
+     "C_CONSERVATIVE": {
+      "label": "CONSERVATIVE",
+      "metrics": {
+       "start_date": "2024-01-31",
+       "end_date": "2026-10-31",
+       "months": 34.0,
+       "cagr": 0.19226269118591754,
+       "volatility": 0.17576707978547293,
+       "max_drawdown": -0.1667883368402976,
+       "sharpe": 1.0938357864653705,
+       "sortino": 1.7998813043400284,
+       "calmar": 1.1527346265825051,
+       "number_of_switches": 5.0,
+       "number_of_trades": 6.0,
+       "longest_drawdown_months": 7.0,
+       "best_year": 2024.0,
+       "best_year_return": 0.2722775652161966,
+       "worst_year": 2025.0,
+       "worst_year_return": 0.04866798110191706,
+       "avg_bdays_signal_to_execution": 4.428571428571429
+      }
+     }
+    }
+   }
+  },
+  "benchmarks_same_window": {
+   "HYBRID_SYNTH_CASH": {
+    "BUY_HOLD_AVANZA_GLOBAL": {
+     "start_date": "2021-04-30",
+     "end_date": "2026-10-31",
+     "months": 67.0,
+     "cagr": 0.13974642147965644,
+     "volatility": 0.1277703869582409,
+     "max_drawdown": -0.1778948262679465,
+     "sharpe": 1.0926411151277058,
+     "sortino": 1.817104962378341,
+     "calmar": 0.7855564122430932,
+     "longest_drawdown_months": 14.0,
+     "best_year": 2024.0,
+     "best_year_return": 0.30507415194045073,
+     "worst_year": 2022.0,
+     "worst_year_return": -0.061096538929051425
+    },
+    "STATIC_70_30_AVANZA_GLOBAL_RANTA_KORT": {
+     "status": "incomplete window"
+    },
+    "STATIC_REGIONAL_EQUAL_AVANZA": {
+     "status": "incomplete window"
+    }
+   },
+   "PURE_AVANZA_FUNDS": {
+    "BUY_HOLD_AVANZA_GLOBAL": {
+     "start_date": "2024-01-31",
+     "end_date": "2026-10-31",
+     "months": 34.0,
+     "cagr": 0.16115964704330388,
+     "volatility": 0.1285161900833507,
+     "max_drawdown": -0.17789482626794662,
+     "sharpe": 1.2332360945402427,
+     "sortino": 2.0149679317610896,
+     "calmar": 0.9059265546068435,
+     "longest_drawdown_months": 14.0,
+     "best_year": 2024.0,
+     "best_year_return": 0.30507415194045073,
+     "worst_year": 2025.0,
+     "worst_year_return": -0.009839777081156353
+    },
+    "STATIC_70_30_AVANZA_GLOBAL_RANTA_KORT": {
+     "start_date": "2024-01-31",
+     "end_date": "2026-10-31",
+     "months": 34.0,
+     "cagr": 0.12185100863144305,
+     "volatility": 0.09038595234497633,
+     "max_drawdown": -0.12476462458839144,
+     "sharpe": 1.3224836653543028,
+     "sortino": 2.2009864014384632,
+     "calmar": 0.9766470987544695,
+     "longest_drawdown_months": 14.0,
+     "best_year": 2024.0,
+     "best_year_return": 0.21974064967792728,
+     "worst_year": 2025.0,
+     "worst_year_return": 0.0044478264199907525
+    },
+    "STATIC_REGIONAL_EQUAL_AVANZA": {
+     "status": "incomplete window"
+    }
+   }
+  },
+  "index_same_window": {
+   "HYBRID_SYNTH_CASH": {
+    "INDEX_IDEALIZED_CLOSE": {
+     "start_date": "2021-04-30",
+     "end_date": "2026-09-30",
+     "months": 66.0,
+     "cagr": 0.1225569797008752,
+     "volatility": 0.1462324659285798,
+     "max_drawdown": -0.1643496510244452,
+     "sharpe": 0.8665665133476815,
+     "sortino": 1.4207200036749166,
+     "calmar": 0.7457087918163343,
+     "longest_drawdown_months": 17.0,
+     "best_year": 2024.0,
+     "best_year_return": 0.3692659298901111,
+     "worst_year": 2022.0,
+     "worst_year_return": -0.07578045587911242
+    },
+    "INDEX_NEXT_MONTH_CLOSE": {
+     "start_date": "2021-04-30",
+     "end_date": "2026-09-30",
+     "months": 66.0,
+     "cagr": 0.10972754013859021,
+     "volatility": 0.14978842347808902,
+     "max_drawdown": -0.20031495705440816,
+     "sharpe": 0.7720287993702883,
+     "sortino": 1.2473432367069475,
+     "calmar": 0.5477750725762669,
+     "longest_drawdown_months": 15.0,
+     "best_year": 2024.0,
+     "best_year_return": 0.3692659298901111,
+     "worst_year": 2022.0,
+     "worst_year_return": -0.07578045587911242
+    }
+   },
+   "PURE_AVANZA_FUNDS": {
+    "INDEX_IDEALIZED_CLOSE": {
+     "start_date": "2024-01-31",
+     "end_date": "2026-09-30",
+     "months": 33.0,
+     "cagr": 0.1903239264908967,
+     "volatility": 0.16724371320985873,
+     "max_drawdown": -0.1643496510244452,
+     "sharpe": 1.1310267786015047,
+     "sortino": 1.888121181397675,
+     "calmar": 1.1580427783359764,
+     "longest_drawdown_months": 14.0,
+     "best_year": 2024.0,
+     "best_year_return": 0.3692659298901111,
+     "worst_year": 2025.0,
+     "worst_year_return": -0.05402717950830582
+    },
+    "INDEX_NEXT_MONTH_CLOSE": {
+     "start_date": "2024-01-31",
+     "end_date": "2026-09-30",
+     "months": 33.0,
+     "cagr": 0.17458992713531063,
+     "volatility": 0.167911692443979,
+     "max_drawdown": -0.20031495705440805,
+     "sharpe": 1.0469219397054486,
+     "sortino": 1.708319065240588,
+     "calmar": 0.8715770889134845,
+     "longest_drawdown_months": 15.0,
+     "best_year": 2024.0,
+     "best_year_return": 0.3692659298901111,
+     "worst_year": 2025.0,
+     "worst_year_return": -0.07178051269991459
+    }
+   }
+  },
+  "equity_curve_hybrid_b_monthly_returns": [
+   [
+    "2021-04-30",
+    -0.009536445808
+   ],
+   [
+    "2021-05-31",
+    0.006697923644
+   ],
+   [
+    "2021-06-30",
+    0.03293413174
+   ],
+   [
+    "2021-07-31",
+    -0.0001464326784
+   ],
+   [
+    "2021-08-31",
+    0.035561236
+   ],
+   [
+    "2021-09-30",
+    -0.0593786519
+   ],
+   [
+    "2021-10-31",
+    0.07193957347
+   ],
+   [
+    "2021-11-30",
+    0.04731511031
+   ],
+   [
+    "2021-12-31",
+    0.04716481187
+   ],
+   [
+    "2022-01-31",
+    -0.03928390688
+   ],
+   [
+    "2022-02-28",
+    -0.01751497992
+   ],
+   [
+    "2022-03-31",
+    0.01420816299
+   ],
+   [
+    "2022-04-30",
+    -0.03568360537
+   ],
+   [
+    "2022-05-31",
+    -0.01288288906
+   ],
+   [
+    "2022-06-30",
+    -0.03325234294
+   ],
+   [
+    "2022-07-31",
+    0.08918569582
+   ],
+   [
+    "2022-08-31",
+    -0.006197257384
+   ],
+   [
+    "2022-09-30",
+    -0.05154570784
+   ],
+   [
+    "2022-10-31",
+    0.07316220186
+   ],
+   [
+    "2022-11-30",
+    0.0273740468
+   ],
+   [
+    "2022-12-31",
+    -0.08697582947
+   ],
+   [
+    "2023-01-31",
+    0.01006691792
+   ],
+   [
+    "2023-02-28",
+    -0.01372761579
+   ],
+   [
+    "2023-03-31",
+    0.03069242102
+   ],
+   [
+    "2023-04-30",
+    0.02906376558
+   ],
+   [
+    "2023-05-31",
+    -0.002083494097
+   ],
+   [
+    "2023-06-30",
+    0.03069904114
+   ],
+   [
+    "2023-07-31",
+    -0.0002250731488
+   ],
+   [
+    "2023-08-31",
+    0.001725949272
+   ],
+   [
+    "2023-09-30",
+    -0.05775713537
+   ],
+   [
+    "2023-10-31",
+    -0.001828589601
+   ],
+   [
+    "2023-11-30",
+    0.04372759857
+   ],
+   [
+    "2023-12-31",
+    0.002594627595
+   ],
+   [
+    "2024-01-31",
+    0.01724563348
+   ],
+   [
+    "2024-02-29",
+    0.04182808377
+   ],
+   [
+    "2024-03-31",
+    0.05275921535
+   ],
+   [
+    "2024-04-30",
+    -0.03363194267
+   ],
+   [
+    "2024-05-31",
+    0.0133488717
+   ],
+   [
+    "2024-06-30",
+    0.05431259801
+   ],
+   [
+    "2024-07-31",
+    0.02003074024
+   ],
+   [
+    "2024-08-31",
+    -0.02342876586
+   ],
+   [
+    "2024-09-30",
+    -0.02936364202
+   ],
+   [
+    "2024-10-31",
+    0.04295408836
+   ],
+   [
+    "2024-11-30",
+    0.08242898934
+   ],
+   [
+    "2024-12-31",
+    -0.005012859073
+   ],
+   [
+    "2025-01-31",
+    0.02019626741
+   ],
+   [
+    "2025-02-28",
+    -0.04955554601
+   ],
+   [
+    "2025-03-31",
+    -0.1233452311
+   ],
+   [
+    "2025-04-30",
+    -0.0153115254
+   ],
+   [
+    "2025-05-31",
+    0.01556489633
+   ],
+   [
+    "2025-06-30",
+    0.05123731644
+   ],
+   [
+    "2025-07-31",
+    0.02981549815
+   ],
+   [
+    "2025-08-31",
+    -0.01569442454
+   ],
+   [
+    "2025-09-30",
+    0.07819439388
+   ],
+   [
+    "2025-10-31",
+    0.05118509015
+   ],
+   [
+    "2025-11-30",
+    -0.03032054988
+   ],
+   [
+    "2025-12-31",
+    0.002583636966
+   ],
+   [
+    "2026-01-31",
+    0.04896260077
+   ],
+   [
+    "2026-02-28",
+    0.07294488189
+   ],
+   [
+    "2026-03-31",
+    -0.06933599483
+   ],
+   [
+    "2026-04-30",
+    0.1000504668
+   ],
+   [
+    "2026-05-31",
+    0.09404748251
+   ],
+   [
+    "2026-06-30",
+    0.03333682776
+   ],
+   [
+    "2026-07-31",
+    -0.04519630719
+   ],
+   [
+    "2026-08-31",
+    0.03894172024
+   ],
+   [
+    "2026-09-30",
+    0.02633462876
+   ],
+   [
+    "2026-10-31",
+    -0.06985202531
+   ]
+  ],
+  "benchmark_monthly_returns": {},
+  "signal_agreement_index_vs_nav": {
+   "agreement_pct": 0.8181818181818181,
+   "different": 12,
+   "different_region_both_risk_on": 11,
+   "different_risk_on_off": 1,
+   "identical": 54,
+   "index_switches": 14,
+   "months": 66,
+   "nav_switches": 11
+  },
+  "tracking_difference": {
+   "AVANZA_EM": {
+    "correlation": 0.9697171577187018,
+    "fund_cagr": 0.09732266846716198,
+    "index_cagr": 0.11093834187892204,
+    "months": 88,
+    "period": "2019-04-30..2026-09-30",
+    "tracking_difference": -0.013615673411760065,
+    "tracking_error_ann": 0.03687427673780659
+   },
+   "AVANZA_EUROPA": {
+    "correlation": 0.9395271894671294,
+    "fund_cagr": 0.103875417189218,
+    "index_cagr": 0.117976611389073,
+    "months": 79,
+    "period": "2020-03-31..2026-09-30",
+    "tracking_difference": -0.014101194199855005,
+    "tracking_error_ann": 0.04595663443083532
+   },
+   "AVANZA_USA": {
+    "correlation": 0.9664262883160235,
+    "fund_cagr": 0.15539332408322393,
+    "index_cagr": 0.16140284981835995,
+    "months": 81,
+    "period": "2020-01-31..2026-09-30",
+    "tracking_difference": -0.006009525735136023,
+    "tracking_error_ann": 0.04072332813221495
+   }
+  }
+ },
+ "research_long": {
+  "window": "COMMON_SE_FF_SSVX",
+  "description": "Research index model: Ken French USA/Europe/EM in SEK (Riksbank FX), Riksbank synthetic cash. Monthly data.",
+  "REGIONAL_SEK_LOOKAHEAD_REFERENCE": {
+   "start_date": "1994-03-31",
+   "end_date": "2026-09-30",
+   "months": 391.0,
+   "cagr": 0.116443,
+   "volatility": 0.145318,
+   "max_drawdown": -0.270934,
+   "sharpe": 0.674352,
+   "sortino": 1.04902,
+   "calmar": 0.429784,
+   "number_of_switches": 81.0,
+   "longest_drawdown_months": 64.0,
+   "best_year": 2005.0,
+   "best_year_return": 0.639938,
+   "worst_year": 2008.0,
+   "worst_year_return": -0.225103
+  },
+  "REGIONAL_SEK_ONE_MONTH_DELAY": {
+   "start_date": "1994-03-31",
+   "end_date": "2026-09-30",
+   "months": 391.0,
+   "cagr": 0.104024,
+   "volatility": 0.151712,
+   "max_drawdown": -0.393642,
+   "sharpe": 0.57831,
+   "sortino": 0.874361,
+   "calmar": 0.264261,
+   "number_of_switches": 81.0,
+   "longest_drawdown_months": 63.0,
+   "best_year": 2005.0,
+   "best_year_return": 0.586702,
+   "worst_year": 2008.0,
+   "worst_year_return": -0.207238
+  },
+  "BUY_HOLD_GLOBAL": {
+   "start_date": "1994-03-31",
+   "end_date": "2026-09-30",
+   "months": 391.0,
+   "cagr": 0.0947541,
+   "volatility": 0.133521,
+   "max_drawdown": -0.474983,
+   "sharpe": 0.572395,
+   "sortino": 0.852849,
+   "calmar": 0.199489,
+   "number_of_switches": 0.0,
+   "longest_drawdown_months": 76.0,
+   "best_year": 1999.0,
+   "best_year_return": 0.368693,
+   "worst_year": 2002.0,
+   "worst_year_return": -0.314433
+  },
+  "STATIC_70_30": {
+   "start_date": "1994-03-31",
+   "end_date": "2026-09-30",
+   "months": 391.0,
+   "cagr": 0.0748537,
+   "volatility": 0.093301,
+   "max_drawdown": -0.337516,
+   "sharpe": 0.572395,
+   "sortino": 0.852849,
+   "calmar": 0.221778,
+   "number_of_switches": 0.0,
+   "longest_drawdown_months": 68.0,
+   "best_year": 1999.0,
+   "best_year_return": 0.260166,
+   "worst_year": 2002.0,
+   "worst_year_return": -0.218842
+  },
+  "STATIC_REGIONAL_EQUAL": {
+   "start_date": "1994-03-31",
+   "end_date": "2026-09-30",
+   "months": 391.0,
+   "cagr": 0.095404,
+   "volatility": 0.141381,
+   "max_drawdown": -0.444144,
+   "sharpe": 0.552872,
+   "sortino": 0.803712,
+   "calmar": 0.214804,
+   "number_of_switches": 0.0,
+   "longest_drawdown_months": 65.0,
+   "best_year": 1999.0,
+   "best_year_return": 0.433035,
+   "worst_year": 2008.0,
+   "worst_year_return": -0.347906
+  }
+ }
+}

@@ -4,9 +4,9 @@ Pure function: same inputs -> same output. No trading, no account access.
 
 Steps at each month change (as_of = the moment the signal is computed):
   1. signal_period_end = last calendar month end strictly before as_of
-  2. every fund must have a NAV for the LAST COMMON NAV DATE of that month, and
-     that date must be within `max_stale_bdays` business days of the month end
-     (otherwise the month is not complete -> NO_SIGNAL)
+  2. per fund: its last NAV in the month must be within `max_stale_bdays`
+     business days of the month's last business day (otherwise the month is not
+     complete for that fund -> NO_SIGNAL); funds need not share the same NAV date
   3. 12-month NAV return per region: NAV(month end t) / NAV(month end t-12) - 1
   4. Swedish cash hurdle: SE_CASH_SSVX_SYNTH_V1 from Riksbank SETB3MBENCH,
      12-month product of r_m = y_{m-1}/1200 (never the Ränta Kort fund NAV)

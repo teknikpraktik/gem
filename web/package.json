@@ -1,0 +1,35 @@
+{
+  "name": "gem-signal-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "REGIONAL_SEK live signal monitor (PWA). Research/monitoring only - no trading.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "db:migrate": "node scripts/migrate.mjs"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "1.0.2",
+    "next": "15.5.28",
+    "react": "19.1.10",
+    "react-dom": "19.1.10"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.10",
+    "@eslint/eslintrc": "3.3.1",
+    "@types/node": "22.18.0",
+    "@types/react": "19.1.13",
+    "@types/react-dom": "19.1.9",
+    "eslint": "9.39.5",
+    "eslint-config-next": "15.5.28",
+    "typescript": "5.9.3",
+    "vitest": "3.2.7"
+  }
+}

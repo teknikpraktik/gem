@@ -1,0 +1,291 @@
+{
+ "exported_at": "2026-10-31T19:31:39Z",
+ "research_commit": "a88de13",
+ "source": "research/reports/generated (GitHub Actions workflow 'GEM phase 2 research')",
+ "gem_sek": {
+  "window": "1994-03..2026-09 (COMMON_SE_FF_SSVX)",
+  "monthly": {
+   "GEM_SEK_LOOKAHEAD_REFERENCE": {
+    "start_date": "1994-03-31",
+    "end_date": "2026-09-30",
+    "months": 391.0,
+    "cagr": 0.11728,
+    "volatility": 0.1231,
+    "max_drawdown": -0.167862,
+    "sharpe": 0.778575,
+    "sortino": 1.28579,
+    "calmar": 0.698669,
+    "number_of_switches": 65.0,
+    "longest_drawdown_months": 57.0,
+    "best_year": 1997.0,
+    "best_year_return": 0.503514,
+    "worst_year": 2000.0,
+    "worst_year_return": -0.0662806
+   },
+   "GEM_SEK_ONE_MONTH_DELAY": {
+    "start_date": "1994-03-31",
+    "end_date": "2026-09-30",
+    "months": 391.0,
+    "cagr": 0.112965,
+    "volatility": 0.123346,
+    "max_drawdown": -0.200315,
+    "sharpe": 0.746215,
+    "sortino": 1.21989,
+    "calmar": 0.563937,
+    "number_of_switches": 65.0,
+    "longest_drawdown_months": 37.0,
+    "best_year": 1997.0,
+    "best_year_return": 0.503514,
+    "worst_year": 2000.0,
+    "worst_year_return": -0.11647
+   },
+   "GEM_ORIGINAL_FF_ONE_MONTH_DELAY": {
+    "start_date": "1994-03-31",
+    "end_date": "2026-09-30",
+    "months": 391.0,
+    "cagr": 0.102611,
+    "volatility": 0.127594,
+    "max_drawdown": -0.231609,
+    "sharpe": 0.64231,
+    "sortino": 0.979323,
+    "calmar": 0.443034,
+    "number_of_switches": 51.0,
+    "longest_drawdown_months": 45.0,
+    "best_year": 1997.0,
+    "best_year_return": 0.312471,
+    "worst_year": 2000.0,
+    "worst_year_return": -0.210059
+   }
+  },
+  "daily_b": {
+   "start_date": "1994-04-30",
+   "end_date": "2026-09-30",
+   "months": 390.0,
+   "cagr": 0.11392561541144008,
+   "volatility": 0.12432905677470127,
+   "max_drawdown": -0.21307272613295114,
+   "sharpe": 0.749173991041066,
+   "sortino": 1.2194670877313094,
+   "calmar": 0.5346794846955393,
+   "number_of_switches": 64.0,
+   "number_of_trades": 65.0,
+   "longest_drawdown_months": 57.0,
+   "best_year": 1997.0,
+   "best_year_return": 0.5022342595932587,
+   "worst_year": 2000.0,
+   "worst_year_return": -0.07004768038381304,
+   "avg_bdays_signal_to_execution": 1.1515151515151516
+  },
+  "daily_a": {
+   "start_date": "1994-04-30",
+   "end_date": "2026-09-30",
+   "months": 390.0,
+   "cagr": 0.11928512964108773,
+   "volatility": 0.12289805023117299,
+   "max_drawdown": -0.16662601979178393,
+   "sharpe": 0.7956860135052957,
+   "sortino": 1.3194939691833858,
+   "calmar": 0.715885368864638,
+   "number_of_switches": 63.0,
+   "number_of_trades": 65.0,
+   "longest_drawdown_months": 57.0,
+   "best_year": 1997.0,
+   "best_year_return": 0.5022342595932592,
+   "worst_year": 2000.0,
+   "worst_year_return": -0.06622608620678128,
+   "avg_bdays_signal_to_execution": 0.030303030303030304
+  },
+  "daily_c": {
+   "start_date": "1994-04-30",
+   "end_date": "2026-09-30",
+   "months": 390.0,
+   "cagr": 0.11283581294974576,
+   "volatility": 0.12248593750865329,
+   "max_drawdown": -0.2196141839031679,
+   "sharpe": 0.7505323980487401,
+   "sortino": 1.2181210472779742,
+   "calmar": 0.5137910992101368,
+   "number_of_switches": 64.0,
+   "number_of_trades": 65.0,
+   "longest_drawdown_months": 60.0,
+   "best_year": 1997.0,
+   "best_year_return": 0.5022342595932545,
+   "worst_year": 2000.0,
+   "worst_year_return": -0.09253181969017155,
+   "avg_bdays_signal_to_execution": 4.015151515151516
+  },
+  "agreement_vs_original": {
+   "months": 391,
+   "identical": 332,
+   "different": 59,
+   "agreement_pct": 0.8491048593350383,
+   "differences_absolute_momentum": 59,
+   "differences_relative_momentum": 0,
+   "top_years": [
+    2022,
+    2007,
+    2023,
+    2004,
+    2005
+   ]
+  },
+  "ranking_invariance": {
+   "mismatch_months": [],
+   "months": 393,
+   "ranking_mismatches": 0
+  }
+ },
+ "omrx_validation": {
+  "series": {
+   "assessment": "accumulating index level (no coupons to add); monthly returns small and mostly positive; negative months expected in 2015-2019 negative-rate period",
+   "cagr": 0.007140141665163524,
+   "first_observation": "2008-11-17",
+   "frequency_inferred": "daily (business days)",
+   "largest_daily_move": 0.0016469897593112126,
+   "largest_daily_move_date": "2008-12-04",
+   "last_observation": "2026-10-29",
+   "level_first": 3060.07,
+   "level_last": 3476.84,
+   "max_gap_days": 6,
+   "median_gap_days": 1.0,
+   "missing_values_in_raw": 193,
+   "months": 215,
+   "negative_months": 90,
+   "observations": 4491,
+   "stale_month_ends": [],
+   "status": "OK"
+  },
+  "hurdle_sensitivity": {
+   "GEM_SEK_FF_OMRX_VERIFIED_V1 vs GEM_SEK_FF_PROXY_SSVXSYNTH_V1__OMRX_WINDOW": {
+    "window": "COMMON_SE_OMRX_CHECK",
+    "months": 201,
+    "signals_changed": 0,
+    "signal_agreement_pct": 1.0,
+    "NEXT_MONTH_CLOSE": {
+     "cagr_diff_omrx_minus_proxy": -0.00010884361506535711,
+     "maxdd_diff_omrx_minus_proxy": 0.0,
+     "omrx": {
+      "cagr": 0.11835489641440589,
+      "max_drawdown": -0.20031495705440805,
+      "number_of_switches": 36,
+      "sharpe": 0.8693321486661655
+     },
+     "proxy": {
+      "cagr": 0.11846374002947124,
+      "max_drawdown": -0.20031495705440805,
+      "number_of_switches": 36,
+      "sharpe": 0.8637931785947247
+     }
+    }
+   },
+   "REGIONAL_SEK_FF_PROXY_OMRX_V1 vs REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1__OMRX_WINDOW": {
+    "window": "COMMON_SE_OMRX_CHECK",
+    "months": 201,
+    "signals_changed": 0,
+    "signal_agreement_pct": 1.0,
+    "NEXT_MONTH_CLOSE": {
+     "cagr_diff_omrx_minus_proxy": -4.725709294417513e-05,
+     "maxdd_diff_omrx_minus_proxy": -2.220446049250313e-16,
+     "omrx": {
+      "cagr": 0.10588901648509008,
+      "max_drawdown": -0.20031495705440816,
+      "number_of_switches": 40,
+      "sharpe": 0.7533813678003158
+     },
+     "proxy": {
+      "cagr": 0.10593627357803426,
+      "max_drawdown": -0.20031495705440794,
+      "number_of_switches": 40,
+      "sharpe": 0.7473783869512571
+     }
+    }
+   }
+  },
+  "omrx_daily_b": {
+   "start_date": "2010-03-31",
+   "end_date": "2026-09-30",
+   "months": 199.0,
+   "cagr": 0.12534732021628647,
+   "volatility": 0.12830854556675958,
+   "max_drawdown": -0.2131114508457549,
+   "sharpe": 0.9349243752312864,
+   "sortino": 1.5410759219212002,
+   "calmar": 0.5881773115373793,
+   "number_of_switches": 36.0,
+   "number_of_trades": 36.0,
+   "longest_drawdown_months": 20.0,
+   "best_year": 2024.0,
+   "best_year_return": 0.3679000519625597,
+   "worst_year": 2020.0,
+   "worst_year_return": -0.05455853533640975,
+   "avg_bdays_signal_to_execution": 1.0810810810810811
+  },
+  "proxy_daily_b": {
+   "start_date": "2010-03-31",
+   "end_date": "2026-09-30",
+   "months": 199.0,
+   "cagr": 0.12542531661868606,
+   "volatility": 0.12830049861033033,
+   "max_drawdown": -0.21307272613295192,
+   "sharpe": 0.9286857532257455,
+   "sortino": 1.5276039941024515,
+   "calmar": 0.5886502646069487,
+   "number_of_switches": 36.0,
+   "number_of_trades": 36.0,
+   "longest_drawdown_months": 20.0,
+   "best_year": 2024.0,
+   "best_year_return": 0.3679000519625619,
+   "worst_year": 2020.0,
+   "worst_year_return": -0.054524309662792425,
+   "avg_bdays_signal_to_execution": 1.0810810810810811
+  }
+ },
+ "gem_original_reproduction": {
+  "reference": {
+   "source": "Antonacci (2014), 1974-2013, via secondary sources",
+   "cagr": 0.1743,
+   "volatility": 0.1264,
+   "max_drawdown": -0.2272,
+   "sharpe": 0.87
+  },
+  "ours": [
+   {
+    "start_date": "1974-01-31",
+    "end_date": "2013-12-31",
+    "months": 480.0,
+    "cagr": 0.15841,
+    "volatility": 0.12658,
+    "max_drawdown": -0.191891,
+    "sharpe": 0.82456,
+    "sortino": 1.3494,
+    "calmar": 0.82552,
+    "number_of_switches": 56.0,
+    "longest_drawdown_months": 37.0,
+    "best_year": 1986.0,
+    "best_year_return": 0.658409,
+    "worst_year": 2000.0,
+    "worst_year_return": -0.181573,
+    "execution": "NEXT_MONTH_CLOSE"
+   },
+   {
+    "start_date": "1974-01-31",
+    "end_date": "2013-12-31",
+    "months": 480.0,
+    "cagr": 0.168029,
+    "volatility": 0.124937,
+    "max_drawdown": -0.189601,
+    "sharpe": 0.901823,
+    "sortino": 1.5122,
+    "calmar": 0.886222,
+    "number_of_switches": 56.0,
+    "longest_drawdown_months": 37.0,
+    "best_year": 1986.0,
+    "best_year_return": 0.658409,
+    "worst_year": 2000.0,
+    "worst_year_return": -0.168097,
+    "execution": "IDEALIZED_CLOSE"
+   }
+  ],
+  "data_note": "third-party compilation (alexjansenhome/GEM), ends 2016 - research only"
+ }
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Offline – Signalmonitor</title>
+<style>
+  :root { color-scheme: light dark; --bg:#f6f6f4; --s:#fff; --b:#dedcd6; --t:#16161a; --m:#74726c; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#121212; --s:#1b1b1a; --b:#353532; --t:#f0efec; --m:#9a988f; } }
+  body { margin:0; background:var(--bg); color:var(--t); font-family: system-ui, sans-serif; }
+  .w { max-width:640px; margin:0 auto; padding:24px 16px; }
+  .c { background:var(--s); border:1px dashed var(--b); border-radius:10px; padding:18px; margin:16px 0; }
+  .m { color:var(--m); font-size:14px; }
+</style>
+</head>
+<body><div class="w">
+  <h1>Offline</h1>
+  <p id="sync">Senast synkroniserad: okänt</p>
+  <div class="c">
+    <p class="m">Senast kända signal · INTE AKTUELL</p>
+    <p id="sig">Ingen sparad signal.</p>
+    <p class="m">Signalen kan ha ändrats sedan dess. Anslut till nätet för aktuell status.</p>
+  </div>
+</div>
+<script>
+  try {
+    var r = JSON.parse(localStorage.getItem("gem-signal-last-sync") || "null");
+    if (r) {
+      document.getElementById("sync").textContent = "Senast synkroniserad: " + new Date(r.syncedAt).toLocaleString("sv-SE");
+      document.getElementById("sig").textContent = "Status " + r.status + ", period " + r.period + (r.fund ? ", fond " + r.fund : "");
+    }
+  } catch (e) {}
+</script>
+</body></html>
