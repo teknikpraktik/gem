@@ -40,7 +40,10 @@ def regional_live_signal(as_of: date, navs: dict[str, pd.Series], ssvx_3m_yield:
     period_end = (as_of_ts.normalize().replace(day=1) - pd.offsets.Day(1)).normalize()  # previous month end
     out = {"strategy": STRATEGY.strategy_id, "strategy_version": STRATEGY.version, "as_of": str(as_of),
            "signal_period_end": str(period_end.date()), "status": NO_SIGNAL, "target": None,
-           "returns": {}, "nav_dates": {}, "sources": nav_sources or {}, "reason": ""}
+           "returns": {}, "nav_dates": {}, "sources": nav_sources or {}, "reason": "",
+           # intermediate values (no effect on the decision; compared by the TS differential test)
+           "diagnostics": {"endpoints": {}, "cash_window": []}}
+    diag = out["diagnostics"]
 
     # 2. completeness, PER FUND: the fund's last NAV in the month must lie within
     #    max_stale_bdays of the month's last business day. Funds may legitimately carry
@@ -66,6 +69,8 @@ def regional_live_signal(as_of: date, navs: dict[str, pd.Series], ssvx_3m_yield:
         v_now, d_now = endpoint(s, period_end)
         out["nav_dates"][iid] = str(d_now.date()) if d_now is not None else None
         if v_now is None:
+            diag["endpoints"][iid] = {"start_date": None, "start_nav": None,
+                                      "end_date": str(d_now.date()) if d_now is not None else None, "end_nav": None}
             out["reason"] = (f"month {period_end:%Y-%m} not complete for {iid}: last NAV "
                              f"{d_now.date() if d_now is not None else 'none'} (> {max_stale_bdays} bdays before {last_bday.date()})")
             return out
@@ -73,11 +78,14 @@ def regional_live_signal(as_of: date, navs: dict[str, pd.Series], ssvx_3m_yield:
         #    months are not needed). The start endpoint gets the same staleness test.
         v_then, d_then = endpoint(s, period_end - pd.offsets.MonthEnd(12))
         rets[region] = None if v_then is None else v_now / v_then - 1
+        diag["endpoints"][iid] = {"start_date": str(d_then.date()) if d_then is not None else None, "start_nav": v_then,
+                                  "end_date": str(d_now.date()), "end_nav": v_now}
     # 4. cash hurdle from Riksbank yields (month-end sampled, prior-month rule)
     y = to_month_end(ssvx_3m_yield[ssvx_3m_yield.index <= period_end])["value"]
     r_cash = yield_to_monthly_return(y).dropna()
     window = r_cash[(r_cash.index > period_end - pd.offsets.MonthEnd(12)) & (r_cash.index <= period_end)]
     cash = float((1 + window).prod() - 1) if len(window) == 12 else None
+    diag["cash_window"] = [[str(d.date()), float(v)] for d, v in window.items()]
     out["returns"] = {**rets, "cash": cash}
 
     sig = STRATEGY.evaluate(period_end.date(), {k: rets[k] for k in ("usa", "europe", "em")}, cash)

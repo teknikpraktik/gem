@@ -15,7 +15,7 @@
  *   3. 12-month NAV return per region, point to point, both endpoints
  *      staleness-checked
  *   4. cash hurdle: Riksbank SETB3MBENCH, month-end sampled (stale > 5 bdays),
- *      12-month product of r_m = y_{m-1}/1200
+ *      12-month product of r_m = (y_{m-1}/100)/12 (operation order as in Python)
  *   5. best of USA / Europe / EM (strict >, earlier region wins ties);
  *      winner must be strictly above the hurdle, else Avanza Ränta Kort
  */
@@ -58,6 +58,8 @@ export interface EngineResult {
   /** Diagnostics used by the pipeline (not part of the Python output). */
   endpoints: Record<string, { start_date: ISODate | null; start_nav: number | null; end_date: ISODate | null; end_nav: number | null }>;
   incomplete_instrument: string | null;
+  /** Monthly cash returns inside the 12-month hurdle window (Python: diagnostics.cash_window). */
+  cash_window: [ISODate, number][];
 }
 
 function sortPoints(s: Point[]): Point[] {
@@ -82,8 +84,14 @@ function endpoint(s: Point[], me: ISODate): { value: number | null; date: ISODat
  * returns.to_month_end + yield_to_monthly_return + 12-month window in Python.
  */
 export function cashHurdle12m(yields: Point[], periodEnd: ISODate): number | null {
+  return cashHurdleDetail(yields, periodEnd).value;
+}
+
+/** Same as cashHurdle12m plus the monthly returns in the 12-month window (diagnostics). */
+export function cashHurdleDetail(yields: Point[], periodEnd: ISODate): { value: number | null; window: [ISODate, number][] } {
+  const none = { value: null, window: [] as [ISODate, number][] };
   const s = sortPoints(yields).filter((p) => p.date <= periodEnd);
-  if (s.length === 0) return null;
+  if (s.length === 0) return none;
   // month-end sampling on a complete month grid between first and last observed month
   const lastByMonth = new Map<string, Point>();
   for (const p of s) lastByMonth.set(monthKey(p.date), p);
@@ -103,18 +111,20 @@ export function cashHurdle12m(yields: Point[], periodEnd: ISODate): number | nul
   }
   // regularize_monthly: the grid runs from the first to the last NON-missing month
   const valid = grid.filter((me) => yAt.get(me) !== null);
-  if (valid.length === 0) return null;
+  if (valid.length === 0) return none;
   const g = grid.filter((me) => me >= valid[0] && me <= valid[valid.length - 1]);
   // r_m = y_{m-1}/1200 for m in grid (excluding the first), NaN dropped
   const rets: { me: ISODate; r: number }[] = [];
   for (let i = 1; i < g.length; i++) {
     const prev = yAt.get(g[i - 1]);
-    if (prev !== null && prev !== undefined) rets.push({ me: g[i], r: prev / 1200 });
+    // Same operation order as Python (y / 100.0, then / 12.0): prev / 1200 differs in the last bit.
+    if (prev !== null && prev !== undefined) rets.push({ me: g[i], r: prev / 100 / 12 });
   }
   const from = monthEndMinus(periodEnd, LOOKBACK_MONTHS);
   const window = rets.filter((x) => x.me > from && x.me <= periodEnd);
-  if (window.length !== LOOKBACK_MONTHS) return null;
-  return window.reduce((acc, x) => acc * (1 + x.r), 1) - 1;
+  const w: [ISODate, number][] = window.map((x) => [x.me, x.r]);
+  if (window.length !== LOOKBACK_MONTHS) return { value: null, window: w };
+  return { value: window.reduce((acc, x) => acc * (1 + x.r), 1) - 1, window: w };
 }
 
 function isNum(x: number | null | undefined): x is number {
@@ -140,6 +150,7 @@ export function computeRegionalSignal(
     reason: "",
     endpoints: {},
     incomplete_instrument: null,
+    cash_window: [],
   };
 
   const rets: Partial<Record<Region, number | null>> = {};
@@ -164,7 +175,9 @@ export function computeRegionalSignal(
     rets[region] = then.value === null ? null : now.value / then.value - 1;
     out.endpoints[iid] = { start_date: then.date, start_nav: then.value, end_date: now.date, end_nav: now.value };
   }
-  const cash = cashHurdle12m(ssvx3mYield, periodEnd);
+  const hurdle = cashHurdleDetail(ssvx3mYield, periodEnd);
+  const cash = hurdle.value;
+  out.cash_window = hurdle.window;
   out.returns = { usa: rets.usa ?? null, europe: rets.europe ?? null, em: rets.em ?? null, cash };
 
   // RegionalMomentumStrategy.evaluate (research/src/gem/strategies.py)
