@@ -220,7 +220,11 @@ def regional_nav_implementation(navs: dict, ssvx_yield: pd.Series, rules: dict, 
     for vname, rr in (("PURE_AVANZA_FUNDS", pure_b), ("HYBRID_SYNTH_CASH", hyb_b)):
         months = rr.monthly_returns.index
         out["nav_benchmarks_same_window"][vname] = {
-            k: (compute_metrics(v.reindex(months)) if v.reindex(months).notna().all() else {"status": "incomplete window"})
+            k: (compute_metrics(v.reindex(months)) if v.reindex(months).notna().all() else
+                {"status": "incomplete window",
+                 "missing_months": [str(d.date()) for d in months[v.reindex(months).isna()]][:24],
+                 "missing_by_fund": {c: [str(d.date()) for d in months[mr[c].reindex(months).isna()]][:12]
+                                     for c in mr.columns}})
             for k, v in bench.items()}
     out["fees"] = fees
     return out

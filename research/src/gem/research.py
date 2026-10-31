@@ -221,7 +221,9 @@ def investable_model(runs, results, data, status, catalog, instruments, gen: Pat
                               "weight": h.get("y")} for h in v[:3]]
         facts[iid] = {"orderbook": doc.get("orderbook"), **{k: scal.get(k) for k in
                       ("isin", "name", "currency", "nav", "navDate", "productFee", "managementFee", "indexFund",
-                       "fundTypeName", "startDate", "risk") if k in scal}, "top_holdings": holdings,
+                       "fundTypeName", "fundType", "startDate", "risk", "primaryBenchmark", "pricingFrequency",
+                       "prospectusLink", "ppmCode", "portfolioDate", "ucitsFund", "hedgeFund", "capital")
+                      if k in scal}, "top_holdings": holdings,
                       "other_fields": sorted(k for k in scal if k not in ("isin", "name", "currency", "nav", "navDate"))}
         if g.get("navDate") and doc.get("guide_retrieved_at") and sid in data:
             ret = pd.Timestamp(doc["guide_retrieved_at"]).tz_convert("Europe/Stockholm")
