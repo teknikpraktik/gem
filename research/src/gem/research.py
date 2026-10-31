@@ -232,6 +232,14 @@ def investable_model(runs, results, data, status, catalog, instruments, gen: Pat
                         "bdays_between_nav_date_and_retrieval": _bdays(nd, ret.tz_localize(None).normalize()),
                         "chart_last_date": str(data[sid].index.max().date())}
 
+    # NAV gaps (> 4 business days between consecutive NAV dates) per fund - data quality
+    nav_gaps = {}
+    for iid, sid in {**NAV_SERIES_OF_INSTRUMENT, "AVANZA_GLOBAL": "AVZ_NAV_GLOBAL"}.items():
+        if sid in data:
+            idx = data[sid].index
+            g = [(a, b) for a, b in zip(idx[:-1], idx[1:]) if _bdays(a, b) > 4]
+            nav_gaps[iid] = [{"from": str(a.date()), "to": str(b.date()), "bdays": _bdays(a, b)} for a, b in g]
+
     # trading rules per instrument from investable_instruments.yaml
     rules = {}
     for it in instruments:
@@ -267,7 +275,7 @@ def investable_model(runs, results, data, status, catalog, instruments, gen: Pat
     live = regional_live_signal(as_of, navs, data["RB_SSVX_3M"],
                                 nav_sources={iid: catalog[sid]["provider"] for iid, sid in NAV_SERIES_OF_INSTRUMENT.items()})
     (gen / "live_signal.json").write_text(json.dumps(live, indent=2, sort_keys=True, default=str))
-    out.update({"status": "OK", "fund_facts": facts, "publication_lag": lag, "trading_rules":
+    out.update({"status": "OK", "fund_facts": facts, "publication_lag": lag, "nav_gaps": nav_gaps, "trading_rules":
                 {k: {"cutoff": str(v.cutoff), "nav_lag_bdays": v.nav_lag_bdays, "settlement_bdays": v.settlement_bdays,
                      "source": v.source} for k, v in rules.items()}, "live_signal": live})
     return out

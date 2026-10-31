@@ -37,9 +37,30 @@ def test_live_signal_defensive_when_all_below_cash():
 
 def test_incomplete_month_gives_no_signal():
     n = navs()
-    n["AVANZA_EM"] = n["AVANZA_EM"][:"2024-10-24"]  # EM NAV for month end not yet published
+    n["AVANZA_EM"] = n["AVANZA_EM"][:"2024-10-24"]  # EM NAV 5 bdays stale at month end
     s = regional_live_signal(date(2024, 11, 1), n, YIELD)
-    assert s["status"] == "NO_SIGNAL" and "differ" in s["reason"]
+    assert s["status"] == "NO_SIGNAL" and "not complete" in s["reason"]
+
+
+def test_funds_may_have_different_last_nav_dates():
+    # regression (Actions run on 2026-10-31): feeder/next-day priced funds end a month one
+    # day earlier than the others; that is a complete month, not a missing one
+    n = navs()
+    n["AVANZA_EM"] = n["AVANZA_EM"][:"2024-10-30"]
+    n["AVANZA_EUROPA"] = n["AVANZA_EUROPA"][:"2024-10-29"]
+    s = regional_live_signal(date(2024, 11, 1), n, YIELD)
+    assert s["status"] == "VALID"
+
+
+def test_gap_in_intermediate_months_does_not_block_12m_return():
+    # regression: one stale month-end in Jan 2024 must not void EM momentum for a year
+    n = navs()
+    em = n["AVANZA_EM"]
+    n["AVANZA_EM"] = em[(em.index < "2024-01-22") | (em.index > "2024-02-05")]
+    s = regional_live_signal(date(2024, 11, 1), n, YIELD)
+    assert s["status"] == "VALID" and s["returns"]["em"] is not None
+    jan = regional_live_signal(date(2024, 2, 1), n, YIELD)  # the stale month itself
+    assert jan["status"] == "NO_SIGNAL"
 
 
 def test_signal_uses_only_data_up_to_period_end():
@@ -55,7 +76,7 @@ def test_signal_uses_only_data_up_to_period_end():
 def test_needs_12_months_of_nav():
     short = {k: v["2024-03":] for k, v in navs().items()}
     s = regional_live_signal(date(2024, 11, 1), short, YIELD)
-    assert s["status"] == "NO_SIGNAL" and "missing" in s["reason"]
+    assert s["status"] == "NO_SIGNAL" and ("missing" in s["reason"] or "not complete" in s["reason"])
 
 
 def test_nav_validation_refuses_bad_series():

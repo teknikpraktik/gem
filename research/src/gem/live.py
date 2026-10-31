@@ -21,7 +21,7 @@ from datetime import date
 import numpy as np
 import pandas as pd
 
-from .returns import to_month_end, trailing_return, yield_to_monthly_return
+from .returns import to_month_end, yield_to_monthly_return
 from .strategies import NO_SIGNAL, RegionalMomentumStrategy
 
 REGION_TO_INSTRUMENT = {"usa": "AVANZA_USA", "europe": "AVANZA_EUROPA", "em": "AVANZA_EM"}
@@ -42,35 +42,37 @@ def regional_live_signal(as_of: date, navs: dict[str, pd.Series], ssvx_3m_yield:
            "signal_period_end": str(period_end.date()), "status": NO_SIGNAL, "target": None,
            "returns": {}, "nav_dates": {}, "sources": nav_sources or {}, "reason": ""}
 
-    # 2. completeness: NAVs available up to the last common NAV date of the month
-    last_in_month = {}
+    # 2. completeness, PER FUND: the fund's last NAV in the month must lie within
+    #    max_stale_bdays of the month's last business day. Funds may legitimately carry
+    #    different last NAV dates (feeder next-day pricing, different holiday calendars).
+    last_bday = period_end if period_end.weekday() < 5 else period_end - pd.offsets.BDay(1)
+
+    def endpoint(s: pd.Series, month_end: pd.Timestamp):
+        s = s[s.index <= month_end]
+        if s.empty:
+            return None, None
+        d = s.index.max()
+        lb = month_end if month_end.weekday() < 5 else month_end - pd.offsets.BDay(1)
+        if _bdays_between(d, lb) > max_stale_bdays:
+            return None, d
+        return float(s.iloc[-1]), d
+
+    rets = {}
     for region, iid in REGION_TO_INSTRUMENT.items():
         s = navs.get(iid)
         if s is None or s.empty:
             out["reason"] = f"no NAV series for {iid}"
             return out
-        s = s[s.index <= period_end]
-        if s.empty or s.index.max() < period_end - pd.offsets.MonthEnd(1):
-            out["reason"] = f"{iid}: no NAV in {period_end:%Y-%m}"
+        v_now, d_now = endpoint(s, period_end)
+        out["nav_dates"][iid] = str(d_now.date()) if d_now is not None else None
+        if v_now is None:
+            out["reason"] = (f"month {period_end:%Y-%m} not complete for {iid}: last NAV "
+                             f"{d_now.date() if d_now is not None else 'none'} (> {max_stale_bdays} bdays before {last_bday.date()})")
             return out
-        last_in_month[iid] = s.index.max()
-        out["nav_dates"][iid] = str(s.index.max().date())
-    common = min(last_in_month.values())
-    if any(d != common for d in last_in_month.values()):
-        out["reason"] = f"NAV dates differ at month end: {out['nav_dates']}"
-        return out
-    last_bday = period_end if period_end.weekday() < 5 else period_end - pd.offsets.BDay(1)
-    if _bdays_between(common, last_bday) > max_stale_bdays:
-        out["reason"] = f"month {period_end:%Y-%m} not complete: last common NAV {common.date()}"
-        return out
-
-    # 3. 12 m NAV momentum
-    rets = {}
-    for region, iid in REGION_TO_INSTRUMENT.items():
-        me = to_month_end(navs[iid][navs[iid].index <= period_end])["value"]
-        tr = trailing_return(me.dropna(), 12)
-        v = tr.get(period_end, np.nan)
-        rets[region] = None if pd.isna(v) else float(v)
+        # 3. 12 m NAV momentum, point to point (NAV is an accumulating price; intermediate
+        #    months are not needed). The start endpoint gets the same staleness test.
+        v_then, d_then = endpoint(s, period_end - pd.offsets.MonthEnd(12))
+        rets[region] = None if v_then is None else v_now / v_then - 1
     # 4. cash hurdle from Riksbank yields (month-end sampled, prior-month rule)
     y = to_month_end(ssvx_3m_yield[ssvx_3m_yield.index <= period_end])["value"]
     r_cash = yield_to_monthly_return(y).dropna()
