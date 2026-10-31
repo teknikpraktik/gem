@@ -1,4 +1,4 @@
-retrieved_at: 2026-10-31T11:42:49Z
+retrieved_at: 2026-10-31T11:47:40Z
 GET https://www.avanzafonder.se/
 body: null
 {

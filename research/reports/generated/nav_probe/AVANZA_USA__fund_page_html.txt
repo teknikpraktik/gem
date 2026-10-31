@@ -1,4 +1,4 @@
-retrieved_at: 2026-10-31T11:42:55Z
+retrieved_at: 2026-10-31T11:47:46Z
 GET https://www.avanza.se/fonder/om-fonden.html/1025150/avanza-usa
 body: null
 {

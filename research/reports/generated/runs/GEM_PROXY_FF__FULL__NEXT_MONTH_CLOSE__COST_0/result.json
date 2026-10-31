@@ -48,7 +48,7 @@
         "provider": "Kenneth R. French Data Library",
         "provider_series_id": "Developed_ex_US_3_Factors (Mkt-RF + RF)",
         "quality_status": "EXPERIMENTAL",
-        "retrieved_at": "2026-10-31T11:44:31Z",
+        "retrieved_at": "2026-10-31T11:49:13Z",
         "sha256": "689c242b62e430fecbb8b3cc98269761b38d1d3f7ca15a22c3fb79771c932aee",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -59,7 +59,7 @@
         "provider": "Kenneth R. French Data Library",
         "provider_series_id": "F-F_Research_Data_Factors (RF)",
         "quality_status": "PROXY",
-        "retrieved_at": "2026-10-31T11:44:34Z",
+        "retrieved_at": "2026-10-31T11:49:15Z",
         "sha256": "b03d39e4bb253dda0f14893db3b78e64b40b8d6549a0fc0fd4111dae84c98618",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -70,7 +70,7 @@
         "provider": "Kenneth R. French Data Library",
         "provider_series_id": "F-F_Research_Data_Factors (Mkt-RF + RF)",
         "quality_status": "PROXY",
-        "retrieved_at": "2026-10-31T11:44:34Z",
+        "retrieved_at": "2026-10-31T11:49:15Z",
         "sha256": "b03d39e4bb253dda0f14893db3b78e64b40b8d6549a0fc0fd4111dae84c98618",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -81,7 +81,7 @@
         "provider": "FRED",
         "provider_series_id": "GS5",
         "quality_status": "EXPERIMENTAL",
-        "retrieved_at": "2026-10-31T11:44:36Z",
+        "retrieved_at": "2026-10-31T11:49:17Z",
         "sha256": "e4c0186a43a35524ff6e06bebe14ad38c67d309da8beff9e4af0c74283df3afb",
         "verification": "ASSUMPTION"
       }

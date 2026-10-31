@@ -1386,8 +1386,11 @@
     "first_valid_nav_signal": "2021-02-28",
     "fund_facts": {
       "AVANZA_EM": {
+        "capital": 10256981337.0,
         "currency": "SEK",
+        "fundType": "EQUITY_FUND",
         "fundTypeName": "Aktiefond",
+        "hedgeFund": false,
         "indexFund": true,
         "isin": "SE0012454338",
         "managementFee": 0.15,
@@ -1439,7 +1442,12 @@
           "svanen",
           "ucitsFund"
         ],
+        "portfolioDate": "2026-10-26",
+        "ppmCode": "715955",
+        "pricingFrequency": "Dagligen",
+        "primaryBenchmark": null,
         "productFee": 0.3,
+        "prospectusLink": "/_api/fund-reference/reference/944976/prospectus",
         "risk": 4,
         "startDate": "2019-04-01",
         "top_holdings": [
@@ -1506,11 +1514,15 @@
             "type": "",
             "weight": 7.5
           }
-        ]
+        ],
+        "ucitsFund": true
       },
       "AVANZA_EUROPA": {
+        "capital": 3311054559.0,
         "currency": "SEK",
+        "fundType": "EQUITY_FUND",
         "fundTypeName": "Aktiefond",
+        "hedgeFund": false,
         "indexFund": true,
         "isin": "SE0013718699",
         "managementFee": 0.17,
@@ -1562,7 +1574,12 @@
           "svanen",
           "ucitsFund"
         ],
+        "portfolioDate": "2026-09-30",
+        "ppmCode": null,
+        "pricingFrequency": "Dagligen",
+        "primaryBenchmark": "Morningstar Dev Eur TME PAB Sust NR SEK",
         "productFee": 0.31,
+        "prospectusLink": "/_api/fund-reference/reference/1041067/prospectus",
         "risk": 4,
         "startDate": "2020-02-05",
         "top_holdings": [
@@ -1629,11 +1646,15 @@
             "type": "",
             "weight": 15.23
           }
-        ]
+        ],
+        "ucitsFund": true
       },
       "AVANZA_GLOBAL": {
+        "capital": 64593721438.0,
         "currency": "SEK",
+        "fundType": "EQUITY_FUND",
         "fundTypeName": "Aktiefond",
+        "hedgeFund": false,
         "indexFund": true,
         "isin": "SE0011527613",
         "managementFee": 0.08,
@@ -1685,7 +1706,12 @@
           "svanen",
           "ucitsFund"
         ],
+        "portfolioDate": "2026-09-30",
+        "ppmCode": null,
+        "pricingFrequency": "Dagligen",
+        "primaryBenchmark": "Morningstar DM TME PAB Sust NR SEK",
         "productFee": 0.1,
+        "prospectusLink": "/_api/fund-reference/reference/878733/prospectus",
         "risk": 4,
         "startDate": "2018-08-27",
         "top_holdings": [
@@ -1752,11 +1778,15 @@
             "type": "",
             "weight": 9.77
           }
-        ]
+        ],
+        "ucitsFund": true
       },
       "AVANZA_RANTA_KORT": {
+        "capital": 2419846077.0,
         "currency": "SEK",
+        "fundType": "INTEREST_FUND",
         "fundTypeName": "R\u00e4ntefond",
+        "hedgeFund": false,
         "indexFund": false,
         "isin": "SE0021021425",
         "managementFee": 0.03,
@@ -1808,7 +1838,12 @@
           "svanen",
           "ucitsFund"
         ],
+        "portfolioDate": "2026-09-30",
+        "ppmCode": null,
+        "pricingFrequency": "Dagligen",
+        "primaryBenchmark": null,
         "productFee": 0.09,
+        "prospectusLink": "/_api/fund-reference/reference/1684019/prospectus",
         "risk": 1,
         "startDate": "2023-12-14",
         "top_holdings": [
@@ -1819,11 +1854,15 @@
             "type": "HOLDING_TYPE_FUND",
             "weight": 99.65
           }
-        ]
+        ],
+        "ucitsFund": true
       },
       "AVANZA_USA": {
+        "capital": 3534572322.0,
         "currency": "SEK",
+        "fundType": "EQUITY_FUND",
         "fundTypeName": "Aktiefond",
+        "hedgeFund": false,
         "indexFund": true,
         "isin": "SE0012741163",
         "managementFee": 0.17,
@@ -1875,7 +1914,12 @@
           "svanen",
           "ucitsFund"
         ],
+        "portfolioDate": "2026-09-30",
+        "ppmCode": null,
+        "pricingFrequency": "Dagligen",
+        "primaryBenchmark": "Morningstar US TME PAB Sust NR SEK",
         "productFee": 0.18,
+        "prospectusLink": "/_api/fund-reference/reference/1025150/prospectus",
         "risk": 4,
         "startDate": "2019-12-17",
         "top_holdings": [
@@ -1942,7 +1986,8 @@
             "type": "",
             "weight": 10.7
           }
-        ]
+        ],
+        "ucitsFund": true
       }
     },
     "index_same_window": {
@@ -2080,9 +2125,85 @@
           "worst_year_return": -0.061096538929051425
         },
         "STATIC_70_30_AVANZA_GLOBAL_RANTA_KORT": {
+          "missing_by_fund": {
+            "AVANZA_EM": [
+              "2025-01-31",
+              "2025-02-28"
+            ],
+            "AVANZA_EUROPA": [],
+            "AVANZA_GLOBAL": [],
+            "AVANZA_RANTA_KORT": [
+              "2021-04-30",
+              "2021-05-31",
+              "2021-06-30",
+              "2021-07-31",
+              "2021-08-31",
+              "2021-09-30",
+              "2021-10-31",
+              "2021-11-30",
+              "2021-12-31",
+              "2022-01-31",
+              "2022-02-28",
+              "2022-03-31"
+            ],
+            "AVANZA_USA": []
+          },
+          "missing_months": [
+            "2021-04-30",
+            "2021-05-31",
+            "2021-06-30",
+            "2021-07-31",
+            "2021-08-31",
+            "2021-09-30",
+            "2021-10-31",
+            "2021-11-30",
+            "2021-12-31",
+            "2022-01-31",
+            "2022-02-28",
+            "2022-03-31",
+            "2022-04-30",
+            "2022-05-31",
+            "2022-06-30",
+            "2022-07-31",
+            "2022-08-31",
+            "2022-09-30",
+            "2022-10-31",
+            "2022-11-30",
+            "2022-12-31",
+            "2023-01-31",
+            "2023-02-28",
+            "2023-03-31"
+          ],
           "status": "incomplete window"
         },
         "STATIC_REGIONAL_EQUAL_AVANZA": {
+          "missing_by_fund": {
+            "AVANZA_EM": [
+              "2025-01-31",
+              "2025-02-28"
+            ],
+            "AVANZA_EUROPA": [],
+            "AVANZA_GLOBAL": [],
+            "AVANZA_RANTA_KORT": [
+              "2021-04-30",
+              "2021-05-31",
+              "2021-06-30",
+              "2021-07-31",
+              "2021-08-31",
+              "2021-09-30",
+              "2021-10-31",
+              "2021-11-30",
+              "2021-12-31",
+              "2022-01-31",
+              "2022-02-28",
+              "2022-03-31"
+            ],
+            "AVANZA_USA": []
+          },
+          "missing_months": [
+            "2025-01-31",
+            "2025-02-28"
+          ],
           "status": "incomplete window"
         }
       },
@@ -2128,6 +2249,20 @@
           "worst_year_return": 0.0044478264199907525
         },
         "STATIC_REGIONAL_EQUAL_AVANZA": {
+          "missing_by_fund": {
+            "AVANZA_EM": [
+              "2025-01-31",
+              "2025-02-28"
+            ],
+            "AVANZA_EUROPA": [],
+            "AVANZA_GLOBAL": [],
+            "AVANZA_RANTA_KORT": [],
+            "AVANZA_USA": []
+          },
+          "missing_months": [
+            "2025-01-31",
+            "2025-02-28"
+          ],
           "status": "incomplete window"
         }
       }
@@ -2136,31 +2271,31 @@
       "AVANZA_EM": {
         "bdays_between_nav_date_and_retrieval": 2,
         "chart_last_date": "2026-10-29",
-        "guide_retrieved_at_stockholm": "2026-10-31 12:43:55+01:00",
+        "guide_retrieved_at_stockholm": "2026-10-31 12:48:42+01:00",
         "latest_nav_date": "2026-10-29"
       },
       "AVANZA_EUROPA": {
         "bdays_between_nav_date_and_retrieval": 2,
         "chart_last_date": "2026-10-29",
-        "guide_retrieved_at_stockholm": "2026-10-31 12:44:05+01:00",
+        "guide_retrieved_at_stockholm": "2026-10-31 12:48:50+01:00",
         "latest_nav_date": "2026-10-29"
       },
       "AVANZA_GLOBAL": {
         "bdays_between_nav_date_and_retrieval": 2,
         "chart_last_date": "2026-10-29",
-        "guide_retrieved_at_stockholm": "2026-10-31 12:44:16+01:00",
+        "guide_retrieved_at_stockholm": "2026-10-31 12:49:00+01:00",
         "latest_nav_date": "2026-10-29"
       },
       "AVANZA_RANTA_KORT": {
         "bdays_between_nav_date_and_retrieval": 2,
         "chart_last_date": "2026-10-29",
-        "guide_retrieved_at_stockholm": "2026-10-31 12:44:21+01:00",
+        "guide_retrieved_at_stockholm": "2026-10-31 12:49:04+01:00",
         "latest_nav_date": "2026-10-29"
       },
       "AVANZA_USA": {
         "bdays_between_nav_date_and_retrieval": 2,
         "chart_last_date": "2026-10-29",
-        "guide_retrieved_at_stockholm": "2026-10-31 12:44:30+01:00",
+        "guide_retrieved_at_stockholm": "2026-10-31 12:49:13+01:00",
         "latest_nav_date": "2026-10-29"
       }
     },

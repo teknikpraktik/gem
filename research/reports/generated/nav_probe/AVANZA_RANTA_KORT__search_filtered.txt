@@ -1,4 +1,4 @@
-retrieved_at: 2026-10-31T11:43:20Z
+retrieved_at: 2026-10-31T11:48:09Z
 POST https://www.avanza.se/_api/search/filtered-search
 body: {"query": "SE0021021425", "searchFilter": {"types": ["FUND"]}, "pagination": {"from": 0, "size": 5}}
 {

@@ -374,8 +374,17 @@ Fund facts (avanza.se fund guide) and measured NAV publication lag:
    "managementFee": 0.17,
    "indexFund": true,
    "fundTypeName": "Aktiefond",
+   "fundType": "EQUITY_FUND",
    "startDate": "2019-12-17",
    "risk": 4,
+   "primaryBenchmark": "Morningstar US TME PAB Sust NR SEK",
+   "pricingFrequency": "Dagligen",
+   "prospectusLink": "/_api/fund-reference/reference/1025150/prospectus",
+   "ppmCode": null,
+   "portfolioDate": "2026-09-30",
+   "ucitsFund": true,
+   "hedgeFund": false,
+   "capital": 3534572322.0,
    "top_holdings": [
     {
      "list": "countryChartData",
@@ -497,8 +506,17 @@ Fund facts (avanza.se fund guide) and measured NAV publication lag:
    "managementFee": 0.17,
    "indexFund": true,
    "fundTypeName": "Aktiefond",
+   "fundType": "EQUITY_FUND",
    "startDate": "2020-02-05",
    "risk": 4,
+   "primaryBenchmark": "Morningstar Dev Eur TME PAB Sust NR SEK",
+   "pricingFrequency": "Dagligen",
+   "prospectusLink": "/_api/fund-reference/reference/1041067/prospectus",
+   "ppmCode": null,
+   "portfolioDate": "2026-09-30",
+   "ucitsFund": true,
+   "hedgeFund": false,
+   "capital": 3311054559.0,
    "top_holdings": [
     {
      "list": "countryChartData",
@@ -620,8 +638,17 @@ Fund facts (avanza.se fund guide) and measured NAV publication lag:
    "managementFee": 0.15,
    "indexFund": true,
    "fundTypeName": "Aktiefond",
+   "fundType": "EQUITY_FUND",
    "startDate": "2019-04-01",
    "risk": 4,
+   "primaryBenchmark": null,
+   "pricingFrequency": "Dagligen",
+   "prospectusLink": "/_api/fund-reference/reference/944976/prospectus",
+   "ppmCode": "715955",
+   "portfolioDate": "2026-10-26",
+   "ucitsFund": true,
+   "hedgeFund": false,
+   "capital": 10256981337.0,
    "top_holdings": [
     {
      "list": "countryChartData",
@@ -743,8 +770,17 @@ Fund facts (avanza.se fund guide) and measured NAV publication lag:
    "managementFee": 0.03,
    "indexFund": false,
    "fundTypeName": "Räntefond",
+   "fundType": "INTEREST_FUND",
    "startDate": "2023-12-14",
    "risk": 1,
+   "primaryBenchmark": null,
+   "pricingFrequency": "Dagligen",
+   "prospectusLink": "/_api/fund-reference/reference/1684019/prospectus",
+   "ppmCode": null,
+   "portfolioDate": "2026-09-30",
+   "ucitsFund": true,
+   "hedgeFund": false,
+   "capital": 2419846077.0,
    "top_holdings": [
     {
      "list": "holdingChartData",
@@ -810,8 +846,17 @@ Fund facts (avanza.se fund guide) and measured NAV publication lag:
    "managementFee": 0.08,
    "indexFund": true,
    "fundTypeName": "Aktiefond",
+   "fundType": "EQUITY_FUND",
    "startDate": "2018-08-27",
    "risk": 4,
+   "primaryBenchmark": "Morningstar DM TME PAB Sust NR SEK",
+   "pricingFrequency": "Dagligen",
+   "prospectusLink": "/_api/fund-reference/reference/878733/prospectus",
+   "ppmCode": null,
+   "portfolioDate": "2026-09-30",
+   "ucitsFund": true,
+   "hedgeFund": false,
+   "capital": 64593721438.0,
    "top_holdings": [
     {
      "list": "countryChartData",
@@ -925,31 +970,31 @@ Fund facts (avanza.se fund guide) and measured NAV publication lag:
  },
  "publication_lag": {
   "AVANZA_USA": {
-   "guide_retrieved_at_stockholm": "2026-10-31 12:44:30+01:00",
+   "guide_retrieved_at_stockholm": "2026-10-31 12:49:13+01:00",
    "latest_nav_date": "2026-10-29",
    "bdays_between_nav_date_and_retrieval": 2,
    "chart_last_date": "2026-10-29"
   },
   "AVANZA_EUROPA": {
-   "guide_retrieved_at_stockholm": "2026-10-31 12:44:05+01:00",
+   "guide_retrieved_at_stockholm": "2026-10-31 12:48:50+01:00",
    "latest_nav_date": "2026-10-29",
    "bdays_between_nav_date_and_retrieval": 2,
    "chart_last_date": "2026-10-29"
   },
   "AVANZA_EM": {
-   "guide_retrieved_at_stockholm": "2026-10-31 12:43:55+01:00",
+   "guide_retrieved_at_stockholm": "2026-10-31 12:48:42+01:00",
    "latest_nav_date": "2026-10-29",
    "bdays_between_nav_date_and_retrieval": 2,
    "chart_last_date": "2026-10-29"
   },
   "AVANZA_RANTA_KORT": {
-   "guide_retrieved_at_stockholm": "2026-10-31 12:44:21+01:00",
+   "guide_retrieved_at_stockholm": "2026-10-31 12:49:04+01:00",
    "latest_nav_date": "2026-10-29",
    "bdays_between_nav_date_and_retrieval": 2,
    "chart_last_date": "2026-10-29"
   },
   "AVANZA_GLOBAL": {
-   "guide_retrieved_at_stockholm": "2026-10-31 12:44:16+01:00",
+   "guide_retrieved_at_stockholm": "2026-10-31 12:49:00+01:00",
    "latest_nav_date": "2026-10-29",
    "bdays_between_nav_date_and_retrieval": 2,
    "chart_last_date": "2026-10-29"
