@@ -223,7 +223,7 @@ def investable_model(runs, results, data, status, catalog, instruments, gen: Pat
                       ("isin", "name", "currency", "nav", "navDate", "productFee", "managementFee", "indexFund",
                        "fundTypeName", "startDate", "risk") if k in scal}, "top_holdings": holdings,
                       "other_fields": sorted(k for k in scal if k not in ("isin", "name", "currency", "nav", "navDate"))}
-        if g.get("navDate") and doc.get("guide_retrieved_at"):
+        if g.get("navDate") and doc.get("guide_retrieved_at") and sid in data:
             ret = pd.Timestamp(doc["guide_retrieved_at"]).tz_convert("Europe/Stockholm")
             nd = pd.Timestamp(g["navDate"][:10])
             lag[iid] = {"guide_retrieved_at_stockholm": str(ret), "latest_nav_date": str(nd.date()),

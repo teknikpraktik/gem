@@ -6,3 +6,4 @@ request: 2026-10-31T09:01:19Z run 3 - OMRX via FRED API, OMRX vs Riksbank check,
 request: 2026-10-31T09:34:01Z run 4 - FRED month-start fix, robust agreement, NAV probe with orderbook resolution
 request: 2026-10-31T11:15:18Z run 5 - Avanza NAV provider, investable implementation model, live signal, OMRX check
 request: 2026-10-31T11:21:02Z run 6 - NAV window fix (median spacing)
+request: 2026-10-31T11:26:31Z run 7 - Global first-NAV date, robust fund facts

@@ -1090,7 +1090,7 @@ series:
   currency: SEK
   frequency: daily (Swedish banking days)
   is_total_return: true
-  start_date: "2018-08-27"
+  start_date: "2018-08-21 (first NAV in avanza.se data; secondary sources say first trading day 2018-08-27)"
   end_date: ongoing
   license_notes: Public avanza.se data via an UNDOCUMENTED endpoint - not an official API; Avanza terms apply; may change without notice.
   retrieval_method: "GET /_api/fund-guide/chart/878733/{from}/{to}?raw=true in daily windows + /_api/fund-guide/guide/878733"
@@ -1103,4 +1103,4 @@ series:
     ISIN -> orderBookId confirmed by avanza.se search (exactly one hit). The chart API returns null before the
     fund's first NAV, so no pre-launch value can enter. Accumulating share class (NAV includes reinvested income).
     Quality UNDOCUMENTED_ENDPOINT: replace with an official feed when one exists (see gem/nav.py).
-  fetch: {provider: avanza_chart, orderbook: "878733", isin: SE0011527613, history_from: "2018-06-01", launch_date: "2018-08-27"}
+  fetch: {provider: avanza_chart, orderbook: "878733", isin: SE0011527613, history_from: "2018-06-01"}

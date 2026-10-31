@@ -100,7 +100,7 @@ instruments:
   instrument_id: AVANZA_GLOBAL
   orderbook_id: "878733"   # avanza.se, confirmed by ISIN search 2026-10-31
   nav_currency: SEK
-  launch_date_iso: "2018-08-27"
+  launch_date_iso: "2018-08-21"   # first NAV in avanza.se data (blog: first trading day 2018-08-27)
   isin: SE0011527613                       # secondary (several fund sites, Morningstar)
   provider: Avanza Fonder AB
   category: Equity - Global developed, index
