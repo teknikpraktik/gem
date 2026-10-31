@@ -1,4 +1,4 @@
-retrieved_at: 2026-10-31T11:47:42Z
+retrieved_at: 2026-10-31T11:54:17Z
 GET https://investors.avanza.se/sv/om-avanza/avanza-fonder/
 body: null
 {

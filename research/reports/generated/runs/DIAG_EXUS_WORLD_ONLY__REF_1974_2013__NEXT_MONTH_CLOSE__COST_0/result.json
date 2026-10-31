@@ -49,7 +49,7 @@
         "provider": "alexjansenhome/GEM (GitHub), labelled source Ibbotson",
         "provider_series_id": "msci_all_gross.csv: Mid-Treasuries",
         "quality_status": "EXPERIMENTAL",
-        "retrieved_at": "2026-10-31T11:48:32Z",
+        "retrieved_at": "2026-10-31T11:55:08Z",
         "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -60,7 +60,7 @@
         "provider": "alexjansenhome/GEM (GitHub), labelled source Ibbotson",
         "provider_series_id": "msci_all_gross.csv: Large Caps",
         "quality_status": "EXPERIMENTAL",
-        "retrieved_at": "2026-10-31T11:48:32Z",
+        "retrieved_at": "2026-10-31T11:55:08Z",
         "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -71,7 +71,7 @@
         "provider": "alexjansenhome/GEM (GitHub), labelled source MSCI",
         "provider_series_id": "msci_all_gross.csv: WORLD ex USA",
         "quality_status": "EXPERIMENTAL",
-        "retrieved_at": "2026-10-31T11:48:32Z",
+        "retrieved_at": "2026-10-31T11:55:08Z",
         "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -82,7 +82,7 @@
         "provider": "alexjansenhome/GEM (GitHub), labelled source Yahoo",
         "provider_series_id": "msci_all_gross.csv: SP500TR",
         "quality_status": "EXPERIMENTAL",
-        "retrieved_at": "2026-10-31T11:48:32Z",
+        "retrieved_at": "2026-10-31T11:55:08Z",
         "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -93,7 +93,7 @@
         "provider": "alexjansenhome/GEM (GitHub), labelled source FRED (TB3MS)",
         "provider_series_id": "msci_all_gross.csv: 3 MONTH",
         "quality_status": "EXPERIMENTAL",
-        "retrieved_at": "2026-10-31T11:48:32Z",
+        "retrieved_at": "2026-10-31T11:55:08Z",
         "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -104,7 +104,7 @@
         "provider": "alexjansenhome/GEM (GitHub), labelled source Morningstar",
         "provider_series_id": "msci_all_gross.csv: AGG",
         "quality_status": "EXPERIMENTAL",
-        "retrieved_at": "2026-10-31T11:48:32Z",
+        "retrieved_at": "2026-10-31T11:55:08Z",
         "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       }

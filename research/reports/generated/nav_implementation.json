@@ -905,41 +905,69 @@
       }
     }
   },
+  "nav_gaps": {
+    "AVANZA_EM": [
+      {
+        "bdays": 5,
+        "from": "2022-01-28",
+        "to": "2022-02-04"
+      },
+      {
+        "bdays": 8,
+        "from": "2025-01-22",
+        "to": "2025-02-03"
+      },
+      {
+        "bdays": 6,
+        "from": "2025-09-30",
+        "to": "2025-10-08"
+      },
+      {
+        "bdays": 8,
+        "from": "2026-02-11",
+        "to": "2026-02-23"
+      }
+    ],
+    "AVANZA_EUROPA": [],
+    "AVANZA_GLOBAL": [],
+    "AVANZA_RANTA_KORT": [],
+    "AVANZA_USA": []
+  },
   "publication_lag": {
     "AVANZA_EM": {
       "bdays_between_nav_date_and_retrieval": 2,
       "chart_last_date": "2026-10-29",
-      "guide_retrieved_at_stockholm": "2026-10-31 12:48:42+01:00",
+      "guide_retrieved_at_stockholm": "2026-10-31 12:55:18+01:00",
       "latest_nav_date": "2026-10-29"
     },
     "AVANZA_EUROPA": {
       "bdays_between_nav_date_and_retrieval": 2,
       "chart_last_date": "2026-10-29",
-      "guide_retrieved_at_stockholm": "2026-10-31 12:48:50+01:00",
+      "guide_retrieved_at_stockholm": "2026-10-31 12:55:27+01:00",
       "latest_nav_date": "2026-10-29"
     },
     "AVANZA_GLOBAL": {
       "bdays_between_nav_date_and_retrieval": 2,
       "chart_last_date": "2026-10-29",
-      "guide_retrieved_at_stockholm": "2026-10-31 12:49:00+01:00",
+      "guide_retrieved_at_stockholm": "2026-10-31 12:55:37+01:00",
       "latest_nav_date": "2026-10-29"
     },
     "AVANZA_RANTA_KORT": {
       "bdays_between_nav_date_and_retrieval": 2,
       "chart_last_date": "2026-10-29",
-      "guide_retrieved_at_stockholm": "2026-10-31 12:49:04+01:00",
+      "guide_retrieved_at_stockholm": "2026-10-31 12:55:42+01:00",
       "latest_nav_date": "2026-10-29"
     },
     "AVANZA_USA": {
       "bdays_between_nav_date_and_retrieval": 2,
       "chart_last_date": "2026-10-29",
-      "guide_retrieved_at_stockholm": "2026-10-31 12:49:13+01:00",
+      "guide_retrieved_at_stockholm": "2026-10-31 12:55:50+01:00",
       "latest_nav_date": "2026-10-29"
     }
   },
   "ranta_kort_first_nav": "2023-12-14",
   "signal_agreement": {
-    "agreement_pct": 0.9148936170212766,
+    "agreement_pct": 0.8181818181818181,
     "differences": [
       {
         "date": "2021-02-28",
@@ -960,19 +988,59 @@
         "date": "2024-08-31",
         "index": "AVANZA_USA",
         "nav": "AVANZA_EUROPA"
+      },
+      {
+        "date": "2025-03-31",
+        "index": "AVANZA_RANTA_KORT",
+        "nav": "AVANZA_EM"
+      },
+      {
+        "date": "2025-05-31",
+        "index": "AVANZA_USA",
+        "nav": "AVANZA_EM"
+      },
+      {
+        "date": "2025-06-30",
+        "index": "AVANZA_EUROPA",
+        "nav": "AVANZA_EM"
+      },
+      {
+        "date": "2025-07-31",
+        "index": "AVANZA_USA",
+        "nav": "AVANZA_EM"
+      },
+      {
+        "date": "2025-08-31",
+        "index": "AVANZA_USA",
+        "nav": "AVANZA_EM"
+      },
+      {
+        "date": "2025-09-30",
+        "index": "AVANZA_USA",
+        "nav": "AVANZA_EM"
+      },
+      {
+        "date": "2025-11-30",
+        "index": "AVANZA_EUROPA",
+        "nav": "AVANZA_EM"
+      },
+      {
+        "date": "2025-12-31",
+        "index": "AVANZA_EUROPA",
+        "nav": "AVANZA_EM"
       }
     ],
-    "different": 4,
-    "different_region_both_risk_on": 4,
-    "different_risk_on_off": 0,
-    "identical": 43,
-    "index_switches": 7,
-    "months": 47,
-    "nav_switches": 8
+    "different": 12,
+    "different_region_both_risk_on": 11,
+    "different_risk_on_off": 1,
+    "identical": 54,
+    "index_switches": 14,
+    "months": 66,
+    "nav_switches": 11
   },
   "signals": [
     {
-      "reason": "AVANZA_EUROPA: no NAV in 2020-01",
+      "reason": "month 2020-01 not complete for AVANZA_EUROPA: last NAV none (> 3 bdays before 2020-01-31)",
       "returns": {},
       "signal_period_end": "2020-01-31",
       "target": "NO_SIGNAL"
@@ -1044,8 +1112,13 @@
       "target": "NO_SIGNAL"
     },
     {
-      "reason": "NAV dates differ at month end: {'AVANZA_USA': '2020-08-31', 'AVANZA_EUROPA': '2020-08-28', 'AVANZA_EM': '2020-08-31'}",
-      "returns": {},
+      "reason": "missing input(s): usa_return, europe_return",
+      "returns": {
+        "cash": -0.002534650508199232,
+        "em": -0.0013137948458818993,
+        "europe": null,
+        "usa": null
+      },
       "signal_period_end": "2020-08-31",
       "target": "NO_SIGNAL"
     },
@@ -1083,8 +1156,13 @@
       "target": "NO_SIGNAL"
     },
     {
-      "reason": "NAV dates differ at month end: {'AVANZA_USA': '2020-12-30', 'AVANZA_EUROPA': '2020-12-29', 'AVANZA_EM': '2020-12-30'}",
-      "returns": {},
+      "reason": "missing input(s): europe_return",
+      "returns": {
+        "cash": -0.0014773509733959633,
+        "em": 0.03439895307534102,
+        "europe": null,
+        "usa": 0.07792078220093779
+      },
       "signal_period_end": "2020-12-31",
       "target": "NO_SIGNAL"
     },
@@ -1133,10 +1211,15 @@
       "target": "AVANZA_EM"
     },
     {
-      "reason": "NAV dates differ at month end: {'AVANZA_USA': '2021-05-28', 'AVANZA_EUROPA': '2021-05-28', 'AVANZA_EM': '2021-05-31'}",
-      "returns": {},
+      "reason": "em best and > hurdle",
+      "returns": {
+        "cash": -0.0012850795630970913,
+        "em": 0.3248126928162185,
+        "europe": 0.23843046739757634,
+        "usa": 0.2530989636252794
+      },
       "signal_period_end": "2021-05-31",
-      "target": "NO_SIGNAL"
+      "target": "AVANZA_EM"
     },
     {
       "reason": "usa best and > hurdle",
@@ -1205,16 +1288,26 @@
       "target": "AVANZA_USA"
     },
     {
-      "reason": "NAV dates differ at month end: {'AVANZA_USA': '2021-12-30', 'AVANZA_EUROPA': '2021-12-29', 'AVANZA_EM': '2021-12-30'}",
-      "returns": {},
+      "reason": "usa best and > hurdle",
+      "returns": {
+        "cash": -0.0018401321173169283,
+        "em": 0.06732333273088753,
+        "europe": 0.2910955320707336,
+        "usa": 0.46316179192891527
+      },
       "signal_period_end": "2021-12-31",
-      "target": "NO_SIGNAL"
+      "target": "AVANZA_USA"
     },
     {
-      "reason": "NAV dates differ at month end: {'AVANZA_USA': '2022-01-31', 'AVANZA_EUROPA': '2022-01-31', 'AVANZA_EM': '2022-01-28'}",
-      "returns": {},
+      "reason": "usa best and > hurdle",
+      "returns": {
+        "cash": -0.00200318976202829,
+        "em": 0.0273747841105354,
+        "europe": 0.24377429862351585,
+        "usa": 0.3735190377136657
+      },
       "signal_period_end": "2022-01-31",
-      "target": "NO_SIGNAL"
+      "target": "AVANZA_USA"
     },
     {
       "reason": "usa best and > hurdle",
@@ -1327,10 +1420,15 @@
       "target": "AVANZA_USA"
     },
     {
-      "reason": "NAV dates differ at month end: {'AVANZA_USA': '2022-12-30', 'AVANZA_EUROPA': '2022-12-29', 'AVANZA_EM': '2022-12-30'}",
-      "returns": {},
+      "reason": "best region europe <= hurdle -> defensive",
+      "returns": {
+        "cash": 0.006489169686413998,
+        "em": -0.07484548302429939,
+        "europe": -0.07010292568279441,
+        "usa": -0.08957489878542524
+      },
       "signal_period_end": "2022-12-31",
-      "target": "NO_SIGNAL"
+      "target": "AVANZA_RANTA_KORT"
     },
     {
       "reason": "europe best and > hurdle",
@@ -1421,10 +1519,15 @@
       "target": "AVANZA_EUROPA"
     },
     {
-      "reason": "NAV dates differ at month end: {'AVANZA_USA': '2023-09-29', 'AVANZA_EUROPA': '2023-09-29', 'AVANZA_EM': '2023-09-28'}",
-      "returns": {},
+      "reason": "europe best and > hurdle",
+      "returns": {
+        "cash": 0.029255616048150968,
+        "em": 0.08066339992461358,
+        "europe": 0.24080102594455943,
+        "usa": 0.17129467720500813
+      },
       "signal_period_end": "2023-09-30",
-      "target": "NO_SIGNAL"
+      "target": "AVANZA_EUROPA"
     },
     {
       "reason": "europe best and > hurdle",
@@ -1449,10 +1552,15 @@
       "target": "AVANZA_EUROPA"
     },
     {
-      "reason": "NAV dates differ at month end: {'AVANZA_USA': '2023-12-29', 'AVANZA_EUROPA': '2023-12-28', 'AVANZA_EM': '2023-12-29'}",
-      "returns": {},
+      "reason": "usa best and > hurdle",
+      "returns": {
+        "cash": 0.03523182725652063,
+        "em": 0.049510387114487076,
+        "europe": 0.14502353146243685,
+        "usa": 0.21400778210116744
+      },
       "signal_period_end": "2023-12-31",
-      "target": "NO_SIGNAL"
+      "target": "AVANZA_USA"
     },
     {
       "reason": "usa best and > hurdle",
@@ -1587,116 +1695,131 @@
       "target": "AVANZA_USA"
     },
     {
-      "reason": "NAV dates differ at month end: {'AVANZA_USA': '2025-01-31', 'AVANZA_EUROPA': '2025-01-31', 'AVANZA_EM': '2025-01-22'}",
+      "reason": "month 2025-01 not complete for AVANZA_EM: last NAV 2025-01-22 (> 3 bdays before 2025-01-31)",
       "returns": {},
       "signal_period_end": "2025-01-31",
       "target": "NO_SIGNAL"
     },
     {
-      "reason": "NAV dates differ at month end: {'AVANZA_USA': '2025-02-28', 'AVANZA_EUROPA': '2025-02-28', 'AVANZA_EM': '2025-02-27'}",
-      "returns": {},
+      "reason": "usa best and > hurdle",
+      "returns": {
+        "cash": 0.03313720406184295,
+        "em": 0.16807005725833601,
+        "europe": 0.10569511846988289,
+        "usa": 0.19276783789609842
+      },
       "signal_period_end": "2025-02-28",
-      "target": "NO_SIGNAL"
+      "target": "AVANZA_USA"
     },
     {
-      "reason": "NAV dates differ at month end: {'AVANZA_USA': '2025-03-31', 'AVANZA_EUROPA': '2025-03-31', 'AVANZA_EM': '2025-03-28'}",
-      "returns": {},
+      "reason": "em best and > hurdle",
+      "returns": {
+        "cash": 0.031639875163830045,
+        "em": 0.041559070367979345,
+        "europe": -0.03720459149223487,
+        "usa": -0.00675710263629381
+      },
       "signal_period_end": "2025-03-31",
-      "target": "NO_SIGNAL"
+      "target": "AVANZA_EM"
     },
     {
-      "reason": "missing input(s): em_return",
+      "reason": "best region usa <= hurdle -> defensive",
       "returns": {
         "cash": 0.030161858977667988,
-        "em": null,
+        "em": -0.031091320990547566,
         "europe": -0.03039924339660882,
         "usa": -0.02304269520076274
       },
       "signal_period_end": "2025-04-30",
-      "target": "NO_SIGNAL"
+      "target": "AVANZA_RANTA_KORT"
     },
     {
-      "reason": "NAV dates differ at month end: {'AVANZA_USA': '2025-05-30', 'AVANZA_EUROPA': '2025-05-30', 'AVANZA_EM': '2025-05-28'}",
-      "returns": {},
+      "reason": "em best and > hurdle",
+      "returns": {
+        "cash": 0.028796166273434842,
+        "em": 0.04061198333867355,
+        "europe": -0.011079223119535686,
+        "usa": 0.02268687924725543
+      },
       "signal_period_end": "2025-05-31",
-      "target": "NO_SIGNAL"
+      "target": "AVANZA_EM"
     },
     {
-      "reason": "missing input(s): em_return",
+      "reason": "em best and > hurdle",
       "returns": {
         "cash": 0.027552632818762968,
-        "em": null,
+        "em": 0.037439705994946726,
         "europe": -0.008692744901370841,
         "usa": 0.01046159948435732
       },
       "signal_period_end": "2025-06-30",
-      "target": "NO_SIGNAL"
+      "target": "AVANZA_EM"
     },
     {
-      "reason": "missing input(s): em_return",
+      "reason": "em best and > hurdle",
       "returns": {
         "cash": 0.026263516848047397,
-        "em": null,
+        "em": 0.05297313613039534,
         "europe": -0.04311980632074852,
         "usa": 0.03898313323287805
       },
       "signal_period_end": "2025-07-31",
-      "target": "NO_SIGNAL"
+      "target": "AVANZA_EM"
     },
     {
-      "reason": "missing input(s): em_return",
+      "reason": "em best and > hurdle",
       "returns": {
         "cash": 0.02502536474652528,
-        "em": null,
+        "em": 0.06712765130914455,
         "europe": -0.03988492219170914,
         "usa": 0.05345677168881591
       },
       "signal_period_end": "2025-08-31",
-      "target": "NO_SIGNAL"
+      "target": "AVANZA_EM"
     },
     {
-      "reason": "missing input(s): em_return",
+      "reason": "em best and > hurdle",
       "returns": {
         "cash": 0.023955431133189764,
-        "em": null,
+        "em": 0.09009937430990078,
         "europe": -0.010714048046849056,
         "usa": 0.07366400944788909
       },
       "signal_period_end": "2025-09-30",
-      "target": "NO_SIGNAL"
+      "target": "AVANZA_EM"
     },
     {
-      "reason": "missing input(s): em_return",
+      "reason": "em best and > hurdle",
       "returns": {
         "cash": 0.02307100627848513,
-        "em": null,
+        "em": 0.13511739827913094,
         "europe": 0.025826516124670462,
         "usa": 0.06766065867698412
       },
       "signal_period_end": "2025-10-31",
-      "target": "NO_SIGNAL"
+      "target": "AVANZA_EM"
     },
     {
-      "reason": "missing input(s): em_return",
+      "reason": "em best and > hurdle",
       "returns": {
         "cash": 0.022240009502460634,
-        "em": null,
+        "em": 0.13864373538507957,
         "europe": 0.0358255451713394,
         "usa": -0.0259796870232335
       },
       "signal_period_end": "2025-11-30",
-      "target": "NO_SIGNAL"
+      "target": "AVANZA_EM"
     },
     {
-      "reason": "missing input(s): em_return",
+      "reason": "em best and > hurdle",
       "returns": {
         "cash": 0.02164158944692285,
-        "em": null,
+        "em": 0.10814966683751925,
         "europe": 0.06726643598615922,
         "usa": -0.032287742048541124
       },
       "signal_period_end": "2025-12-31",
-      "target": "NO_SIGNAL"
+      "target": "AVANZA_EM"
     },
     {
       "reason": "missing input(s): em_return",
@@ -1710,16 +1833,26 @@
       "target": "NO_SIGNAL"
     },
     {
-      "reason": "NAV dates differ at month end: {'AVANZA_USA': '2026-02-27', 'AVANZA_EUROPA': '2026-02-27', 'AVANZA_EM': '2026-02-26'}",
-      "returns": {},
+      "reason": "em best and > hurdle",
+      "returns": {
+        "cash": 0.02095600528243291,
+        "em": 0.2278690888119954,
+        "europe": 0.04247079326147274,
+        "usa": -0.033795689694121944
+      },
       "signal_period_end": "2026-02-28",
-      "target": "NO_SIGNAL"
+      "target": "AVANZA_EM"
     },
     {
-      "reason": "NAV dates differ at month end: {'AVANZA_USA': '2026-03-31', 'AVANZA_EUROPA': '2026-03-31', 'AVANZA_EM': '2026-03-30'}",
-      "returns": {},
+      "reason": "em best and > hurdle",
+      "returns": {
+        "cash": 0.02060784074019928,
+        "em": 0.22817076005268477,
+        "europe": 0.05112560488112772,
+        "usa": 0.09812915528526522
+      },
       "signal_period_end": "2026-03-31",
-      "target": "NO_SIGNAL"
+      "target": "AVANZA_EM"
     },
     {
       "reason": "em best and > hurdle",
@@ -1856,28 +1989,28 @@
         "A_PUBLISHED_CLOSE": {
           "label": "LOOKAHEAD_REFERENCE_ONLY",
           "metrics": {
-            "average_holding_period_months": 7.444444444444445,
-            "avg_bdays_out_of_market_per_switch": 0.0,
-            "avg_bdays_signal_to_execution": 0.0,
+            "average_holding_period_months": 5.153846153846154,
+            "avg_bdays_out_of_market_per_switch": 0.18181818181818182,
+            "avg_bdays_signal_to_execution": 0.25,
             "best_year": 2024,
-            "best_year_return": 0.295100673017034,
-            "cagr": 0.11086145552361382,
-            "calmar": 0.5329543176668837,
+            "best_year_return": 0.2663496970045416,
+            "cagr": 0.11513594744127853,
+            "calmar": 0.6064701892958567,
             "end_date": "2026-10-31",
-            "end_value": 17985.99342259243,
-            "longest_drawdown_months": 15,
-            "longest_drawdown_span": "2025-01-31..2026-04-30",
-            "max_drawdown": -0.2080130544939245,
+            "end_value": 18375.830331347486,
+            "longest_drawdown_months": 25,
+            "longest_drawdown_span": "2021-12-31..2024-01-31",
+            "max_drawdown": -0.1898460130001729,
             "months": 67,
-            "number_of_switches": 8,
-            "number_of_trades": 8,
-            "sharpe": 0.7571456707214335,
+            "number_of_switches": 12,
+            "number_of_trades": 11,
+            "sharpe": 0.7610778768108095,
             "sharpe_rf": "none (rf=0)",
-            "sortino": 1.221758775982074,
+            "sortino": 1.2396337987165356,
             "start_date": "2021-04-30",
             "start_value": 10000.0,
-            "switches_per_year": 1.4328358208955225,
-            "volatility": 0.1551881213725978,
+            "switches_per_year": 2.1492537313432836,
+            "volatility": 0.16054686338044363,
             "worst_year": 2022,
             "worst_year_return": -0.08957489878542546
           }
@@ -1885,28 +2018,28 @@
         "B_NEXT_TRADABLE": {
           "label": "MAIN",
           "metrics": {
-            "average_holding_period_months": 7.444444444444445,
-            "avg_bdays_out_of_market_per_switch": 0.25,
-            "avg_bdays_signal_to_execution": 1.5555555555555556,
+            "average_holding_period_months": 5.583333333333333,
+            "avg_bdays_out_of_market_per_switch": 0.18181818181818182,
+            "avg_bdays_signal_to_execution": 1.6666666666666667,
             "best_year": 2024,
-            "best_year_return": 0.2538233636132714,
-            "cagr": 0.08608336912715897,
-            "calmar": 0.4138363783782307,
+            "best_year_return": 0.2510587742751915,
+            "cagr": 0.10783822263002518,
+            "calmar": 0.6006158619639814,
             "end_date": "2026-10-31",
-            "end_value": 15857.546600876116,
-            "longest_drawdown_months": 15,
-            "longest_drawdown_span": "2025-01-31..2026-04-30",
-            "max_drawdown": -0.20801305449392382,
+            "end_value": 17714.392375685107,
+            "longest_drawdown_months": 25,
+            "longest_drawdown_span": "2021-12-31..2024-01-31",
+            "max_drawdown": -0.17954607838261216,
             "months": 67,
-            "number_of_switches": 8,
-            "number_of_trades": 8,
-            "sharpe": 0.6251577961408419,
+            "number_of_switches": 11,
+            "number_of_trades": 11,
+            "sharpe": 0.7238182867240056,
             "sharpe_rf": "none (rf=0)",
-            "sortino": 0.9664500308209087,
+            "sortino": 1.1609657499896555,
             "start_date": "2021-04-30",
             "start_value": 10000.0,
-            "switches_per_year": 1.4328358208955225,
-            "volatility": 0.15052011594161474,
+            "switches_per_year": 1.9701492537313434,
+            "volatility": 0.15944012582192074,
             "worst_year": 2022,
             "worst_year_return": -0.08957489878542513
           }
@@ -1914,28 +2047,28 @@
         "C_CONSERVATIVE": {
           "label": "CONSERVATIVE",
           "metrics": {
-            "average_holding_period_months": 7.444444444444445,
-            "avg_bdays_out_of_market_per_switch": 2.125,
-            "avg_bdays_signal_to_execution": 4.333333333333333,
+            "average_holding_period_months": 5.583333333333333,
+            "avg_bdays_out_of_market_per_switch": 2.1818181818181817,
+            "avg_bdays_signal_to_execution": 4.416666666666667,
             "best_year": 2024,
-            "best_year_return": 0.24699873458626898,
-            "cagr": 0.07826652972513681,
-            "calmar": 0.37625777822239026,
+            "best_year_return": 0.2722775652161955,
+            "cagr": 0.11347021652276523,
+            "calmar": 0.6803246478284313,
             "end_date": "2026-10-31",
-            "end_value": 15230.735008936786,
-            "longest_drawdown_months": 15,
-            "longest_drawdown_span": "2025-01-31..2026-04-30",
-            "max_drawdown": -0.20801305449392393,
+            "end_value": 18223.09799164547,
+            "longest_drawdown_months": 25,
+            "longest_drawdown_span": "2021-12-31..2024-01-31",
+            "max_drawdown": -0.1667883368402976,
             "months": 67,
-            "number_of_switches": 8,
-            "number_of_trades": 8,
-            "sharpe": 0.5836211302967994,
+            "number_of_switches": 11,
+            "number_of_trades": 11,
+            "sharpe": 0.7594811183775614,
             "sharpe_rf": "none (rf=0)",
-            "sortino": 0.8935586541760128,
+            "sortino": 1.215850732603085,
             "start_date": "2021-04-30",
             "start_value": 10000.0,
-            "switches_per_year": 1.4328358208955225,
-            "volatility": 0.1481968479763552,
+            "switches_per_year": 1.9701492537313434,
+            "volatility": 0.1585070961840757,
             "worst_year": 2022,
             "worst_year_return": -0.08957489878542557
           }
@@ -1948,88 +2081,88 @@
         "A_PUBLISHED_CLOSE": {
           "label": "LOOKAHEAD_REFERENCE_ONLY",
           "metrics": {
-            "average_holding_period_months": 8.5,
-            "avg_bdays_out_of_market_per_switch": 0.0,
-            "avg_bdays_signal_to_execution": 0.0,
+            "average_holding_period_months": 4.857142857142857,
+            "avg_bdays_out_of_market_per_switch": 0.3333333333333333,
+            "avg_bdays_signal_to_execution": 0.42857142857142855,
             "best_year": 2024,
-            "best_year_return": 0.29510067301703513,
-            "cagr": 0.12293307059870662,
-            "calmar": 0.5909872863402309,
+            "best_year_return": 0.26634969700454203,
+            "cagr": 0.1643460800068528,
+            "calmar": 0.8656809664298968,
             "end_date": "2026-10-31",
-            "end_value": 13888.946474668785,
-            "longest_drawdown_months": 15,
-            "longest_drawdown_span": "2025-01-31..2026-04-30",
-            "max_drawdown": -0.20801305449392382,
+            "end_value": 15389.78580081435,
+            "longest_drawdown_months": 11,
+            "longest_drawdown_span": "2025-01-31..2025-12-31",
+            "max_drawdown": -0.18984601300017334,
             "months": 34,
-            "number_of_switches": 3,
-            "number_of_trades": 4,
-            "sharpe": 0.7942633513507703,
+            "number_of_switches": 6,
+            "number_of_trades": 6,
+            "sharpe": 0.944509416352659,
             "sharpe_rf": "none (rf=0)",
-            "sortino": 1.2440252080642586,
+            "sortino": 1.5552145293168045,
             "start_date": "2024-01-31",
             "start_value": 10000.0,
-            "switches_per_year": 1.0588235294117647,
-            "volatility": 0.16313216384640572,
+            "switches_per_year": 2.1176470588235294,
+            "volatility": 0.17861681053764739,
             "worst_year": 2025,
-            "worst_year_return": -0.03228774204854157
+            "worst_year_return": -0.014829047312221011
           }
         },
         "B_NEXT_TRADABLE": {
           "label": "MAIN",
           "metrics": {
-            "average_holding_period_months": 6.8,
-            "avg_bdays_out_of_market_per_switch": 0.5,
-            "avg_bdays_signal_to_execution": 1.6,
+            "average_holding_period_months": 5.666666666666667,
+            "avg_bdays_out_of_market_per_switch": 0.3333333333333333,
+            "avg_bdays_signal_to_execution": 1.7142857142857142,
             "best_year": 2024,
-            "best_year_return": 0.25382336361327185,
-            "cagr": 0.0880428496708936,
-            "calmar": 0.42325636669820277,
+            "best_year_return": 0.2510587742751904,
+            "cagr": 0.1649770602902323,
+            "calmar": 0.9188563837003795,
             "end_date": "2026-10-31",
-            "end_value": 12700.778181361351,
-            "longest_drawdown_months": 15,
-            "longest_drawdown_span": "2025-01-31..2026-04-30",
-            "max_drawdown": -0.20801305449392415,
+            "end_value": 15413.427553393127,
+            "longest_drawdown_months": 8,
+            "longest_drawdown_span": "2025-01-31..2025-09-30",
+            "max_drawdown": -0.1795460783826126,
             "months": 34,
-            "number_of_switches": 4,
-            "number_of_trades": 4,
-            "sharpe": 0.6214127706447988,
+            "number_of_switches": 5,
+            "number_of_trades": 6,
+            "sharpe": 0.9534645717299642,
             "sharpe_rf": "none (rf=0)",
-            "sortino": 0.9192420350259108,
+            "sortino": 1.5576634267747302,
             "start_date": "2024-01-31",
             "start_value": 10000.0,
-            "switches_per_year": 1.4117647058823528,
-            "volatility": 0.15546322512428729,
+            "switches_per_year": 1.7647058823529411,
+            "volatility": 0.17728711922364504,
             "worst_year": 2025,
-            "worst_year_return": -0.032287742048542234
+            "worst_year_return": -0.0012559932017371933
           }
         },
         "C_CONSERVATIVE": {
           "label": "CONSERVATIVE",
           "metrics": {
-            "average_holding_period_months": 6.8,
-            "avg_bdays_out_of_market_per_switch": 2.25,
-            "avg_bdays_signal_to_execution": 4.2,
+            "average_holding_period_months": 5.666666666666667,
+            "avg_bdays_out_of_market_per_switch": 2.3333333333333335,
+            "avg_bdays_signal_to_execution": 4.428571428571429,
             "best_year": 2024,
-            "best_year_return": 0.24699873458626986,
-            "cagr": 0.08549158345420338,
-            "calmar": 0.41099143350496103,
+            "best_year_return": 0.2722775652161966,
+            "cagr": 0.19226269118591754,
+            "calmar": 1.1527346265825051,
             "end_date": "2026-10-31",
-            "end_value": 12616.57976856651,
-            "longest_drawdown_months": 15,
-            "longest_drawdown_span": "2025-01-31..2026-04-30",
-            "max_drawdown": -0.20801305449392393,
+            "end_value": 16458.384462654878,
+            "longest_drawdown_months": 7,
+            "longest_drawdown_span": "2025-01-31..2025-08-31",
+            "max_drawdown": -0.1667883368402976,
             "months": 34,
-            "number_of_switches": 4,
-            "number_of_trades": 4,
-            "sharpe": 0.6143715076898966,
+            "number_of_switches": 5,
+            "number_of_trades": 6,
+            "sharpe": 1.0938357864653705,
             "sharpe_rf": "none (rf=0)",
-            "sortino": 0.904551221360426,
+            "sortino": 1.7998813043400284,
             "start_date": "2024-01-31",
             "start_value": 10000.0,
-            "switches_per_year": 1.4117647058823528,
-            "volatility": 0.15273250842037775,
+            "switches_per_year": 1.7647058823529411,
+            "volatility": 0.17576707978547293,
             "worst_year": 2025,
-            "worst_year_return": -0.03228774204854168
+            "worst_year_return": 0.04866798110191706
           }
         }
       },

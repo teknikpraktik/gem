@@ -1,4 +1,4 @@
-retrieved_at: 2026-10-31T11:48:11Z
+retrieved_at: 2026-10-31T11:54:47Z
 GET https://www.avanza.se/fonder/om-fonden.html/1684019/avanza-ranta-kort
 body: null
 {

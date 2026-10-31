@@ -1,4 +1,4 @@
-retrieved_at: 2026-10-31T11:48:21Z
+retrieved_at: 2026-10-31T11:54:57Z
 POST https://www.avanza.se/_api/search/filtered-search
 body: {"query": "SE0011527613", "searchFilter": {"types": ["FUND"]}, "pagination": {"from": 0, "size": 5}}
 {

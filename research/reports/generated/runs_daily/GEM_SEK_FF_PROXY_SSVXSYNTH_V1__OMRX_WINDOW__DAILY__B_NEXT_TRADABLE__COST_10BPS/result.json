@@ -44,7 +44,7 @@
         "provider": "Kenneth R. French Data Library",
         "provider_series_id": "Developed_3_Factors (Mkt-RF + RF)",
         "quality_status": "PROXY",
-        "retrieved_at": "2026-10-31T11:49:13Z",
+        "retrieved_at": "2026-10-31T11:55:51Z",
         "sha256": "3f99cfdeddd1914e3d8f84ce51d775aeed3e98ed0c290957e88f4df9912f8a23",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -55,7 +55,7 @@
         "provider": "Kenneth R. French Data Library",
         "provider_series_id": "Developed_ex_US_3_Factors (Mkt-RF + RF)",
         "quality_status": "EXPERIMENTAL",
-        "retrieved_at": "2026-10-31T11:49:13Z",
+        "retrieved_at": "2026-10-31T11:55:51Z",
         "sha256": "689c242b62e430fecbb8b3cc98269761b38d1d3f7ca15a22c3fb79771c932aee",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -66,7 +66,7 @@
         "provider": "Kenneth R. French Data Library",
         "provider_series_id": "F-F_Research_Data_Factors (Mkt-RF + RF)",
         "quality_status": "PROXY",
-        "retrieved_at": "2026-10-31T11:49:15Z",
+        "retrieved_at": "2026-10-31T11:55:53Z",
         "sha256": "b03d39e4bb253dda0f14893db3b78e64b40b8d6549a0fc0fd4111dae84c98618",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -77,7 +77,7 @@
         "provider": "Sveriges Riksbank SWEA API",
         "provider_series_id": "SEKUSDPMI",
         "quality_status": "VERIFIED",
-        "retrieved_at": "2026-10-31T11:49:19Z",
+        "retrieved_at": "2026-10-31T11:55:56Z",
         "sha256": "58d9b62ce7ef1a8f9884ea0dde96696e1acfe9de7cd56ce16e0202484d3c5079",
         "verification": "VERIFIED FROM PRIMARY SOURCE"
       },
@@ -88,7 +88,7 @@
         "provider": "Sveriges Riksbank SWEA API",
         "provider_series_id": "SETB3MBENCH",
         "quality_status": "PROXY",
-        "retrieved_at": "2026-10-31T11:49:20Z",
+        "retrieved_at": "2026-10-31T11:55:58Z",
         "sha256": "45daac754529587fe08b0c7cbff8b3ccc07f0a541df4b9e8fae03304631314ff",
         "verification": "VERIFIED FROM PRIMARY SOURCE"
       }

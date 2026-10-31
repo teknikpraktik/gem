@@ -1,4 +1,4 @@
-retrieved_at: 2026-10-31T11:48:00Z
+retrieved_at: 2026-10-31T11:54:36Z
 GET https://www.avanza.se/fonder/om-fonden.html/944976/avanza-emerging-markets
 body: null
 {
