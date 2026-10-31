@@ -925,31 +925,31 @@ Fund facts (avanza.se fund guide) and measured NAV publication lag:
  },
  "publication_lag": {
   "AVANZA_USA": {
-   "guide_retrieved_at_stockholm": "2026-10-31 12:38:06+01:00",
+   "guide_retrieved_at_stockholm": "2026-10-31 12:44:30+01:00",
    "latest_nav_date": "2026-10-29",
    "bdays_between_nav_date_and_retrieval": 2,
    "chart_last_date": "2026-10-29"
   },
   "AVANZA_EUROPA": {
-   "guide_retrieved_at_stockholm": "2026-10-31 12:37:42+01:00",
+   "guide_retrieved_at_stockholm": "2026-10-31 12:44:05+01:00",
    "latest_nav_date": "2026-10-29",
    "bdays_between_nav_date_and_retrieval": 2,
    "chart_last_date": "2026-10-29"
   },
   "AVANZA_EM": {
-   "guide_retrieved_at_stockholm": "2026-10-31 12:37:32+01:00",
+   "guide_retrieved_at_stockholm": "2026-10-31 12:43:55+01:00",
    "latest_nav_date": "2026-10-29",
    "bdays_between_nav_date_and_retrieval": 2,
    "chart_last_date": "2026-10-29"
   },
   "AVANZA_RANTA_KORT": {
-   "guide_retrieved_at_stockholm": "2026-10-31 12:37:57+01:00",
+   "guide_retrieved_at_stockholm": "2026-10-31 12:44:21+01:00",
    "latest_nav_date": "2026-10-29",
    "bdays_between_nav_date_and_retrieval": 2,
    "chart_last_date": "2026-10-29"
   },
   "AVANZA_GLOBAL": {
-   "guide_retrieved_at_stockholm": "2026-10-31 12:37:52+01:00",
+   "guide_retrieved_at_stockholm": "2026-10-31 12:44:16+01:00",
    "latest_nav_date": "2026-10-29",
    "bdays_between_nav_date_and_retrieval": 2,
    "chart_last_date": "2026-10-29"

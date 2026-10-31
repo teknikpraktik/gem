@@ -1,4 +1,4 @@
-retrieved_at: 2026-10-31T11:37:12Z
+retrieved_at: 2026-10-31T11:43:34Z
 GET https://www.avanza.se/_api/search/global-search?query=SE0011527613
 body: null
 {
@@ -12,4 +12,4 @@ body: null
  ]
 }
 ---
-{"statusCode":"NOT_FOUND","traceId":"00dce02decbc71c58fc534fb335539c0"}
+{"statusCode":"NOT_FOUND","traceId":"2fd4ac873ff925180fe452c8e627fc21"}

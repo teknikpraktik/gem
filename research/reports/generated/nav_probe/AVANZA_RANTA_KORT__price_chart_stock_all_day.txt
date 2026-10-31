@@ -1,4 +1,4 @@
-retrieved_at: 2026-10-31T11:37:03Z
+retrieved_at: 2026-10-31T11:43:24Z
 GET https://www.avanza.se/_api/price-chart/stock/1684019?timePeriod=all_time&resolution=day
 body: null
 {
@@ -16,4 +16,4 @@ body: null
  ]
 }
 ---
-{"traceId":"142d80652475e95302f647ff6038fdc2","statusCode":400,"message":"Bad request","time":"2026-10-31T12:37:03.616318579","errors":null,"additional":null}
+{"traceId":"01a08186a41c8085b33d021f259a821a","statusCode":400,"message":"Bad request","time":"2026-10-31T12:43:25.055238431","errors":null,"additional":null}

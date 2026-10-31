@@ -47,7 +47,7 @@
         "provider": "Kenneth R. French Data Library",
         "provider_series_id": "Developed_3_Factors (Mkt-RF + RF)",
         "quality_status": "PROXY",
-        "retrieved_at": "2026-10-31T11:38:07Z",
+        "retrieved_at": "2026-10-31T11:44:31Z",
         "sha256": "3f99cfdeddd1914e3d8f84ce51d775aeed3e98ed0c290957e88f4df9912f8a23",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -58,7 +58,7 @@
         "provider": "Kenneth R. French Data Library",
         "provider_series_id": "F-F_Research_Data_Factors (Mkt-RF + RF)",
         "quality_status": "PROXY",
-        "retrieved_at": "2026-10-31T11:38:09Z",
+        "retrieved_at": "2026-10-31T11:44:34Z",
         "sha256": "b03d39e4bb253dda0f14893db3b78e64b40b8d6549a0fc0fd4111dae84c98618",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -69,7 +69,7 @@
         "provider": "FRED (Nasdaq, Inc.)",
         "provider_series_id": "NASDAQNQGXUSLMN",
         "quality_status": "PROXY",
-        "retrieved_at": "2026-10-31T11:38:11Z",
+        "retrieved_at": "2026-10-31T11:44:36Z",
         "sha256": "febe8e1d43e2ea288edf359b709531e73f5d414b02c353c051f0e41003602b90",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -80,7 +80,7 @@
         "provider": "FRED (Nasdaq, Inc.)",
         "provider_series_id": "NASDAQOMRXTBILL",
         "quality_status": "VERIFIED",
-        "retrieved_at": "2026-10-31T11:38:12Z",
+        "retrieved_at": "2026-10-31T11:44:37Z",
         "sha256": "4409893008aaaa382139ae417a6a99a8d25efcd0079f8139e8e10388da6fe030",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -91,7 +91,7 @@
         "provider": "Sveriges Riksbank SWEA API",
         "provider_series_id": "SEKUSDPMI",
         "quality_status": "VERIFIED",
-        "retrieved_at": "2026-10-31T11:38:13Z",
+        "retrieved_at": "2026-10-31T11:44:38Z",
         "sha256": "58d9b62ce7ef1a8f9884ea0dde96696e1acfe9de7cd56ce16e0202484d3c5079",
         "verification": "VERIFIED FROM PRIMARY SOURCE"
       }

@@ -774,31 +774,31 @@
     "AVANZA_EM": {
       "bdays_between_nav_date_and_retrieval": 2,
       "chart_last_date": "2026-10-29",
-      "guide_retrieved_at_stockholm": "2026-10-31 12:37:32+01:00",
+      "guide_retrieved_at_stockholm": "2026-10-31 12:43:55+01:00",
       "latest_nav_date": "2026-10-29"
     },
     "AVANZA_EUROPA": {
       "bdays_between_nav_date_and_retrieval": 2,
       "chart_last_date": "2026-10-29",
-      "guide_retrieved_at_stockholm": "2026-10-31 12:37:42+01:00",
+      "guide_retrieved_at_stockholm": "2026-10-31 12:44:05+01:00",
       "latest_nav_date": "2026-10-29"
     },
     "AVANZA_GLOBAL": {
       "bdays_between_nav_date_and_retrieval": 2,
       "chart_last_date": "2026-10-29",
-      "guide_retrieved_at_stockholm": "2026-10-31 12:37:52+01:00",
+      "guide_retrieved_at_stockholm": "2026-10-31 12:44:16+01:00",
       "latest_nav_date": "2026-10-29"
     },
     "AVANZA_RANTA_KORT": {
       "bdays_between_nav_date_and_retrieval": 2,
       "chart_last_date": "2026-10-29",
-      "guide_retrieved_at_stockholm": "2026-10-31 12:37:57+01:00",
+      "guide_retrieved_at_stockholm": "2026-10-31 12:44:21+01:00",
       "latest_nav_date": "2026-10-29"
     },
     "AVANZA_USA": {
       "bdays_between_nav_date_and_retrieval": 2,
       "chart_last_date": "2026-10-29",
-      "guide_retrieved_at_stockholm": "2026-10-31 12:38:06+01:00",
+      "guide_retrieved_at_stockholm": "2026-10-31 12:44:30+01:00",
       "latest_nav_date": "2026-10-29"
     }
   },
@@ -1665,7 +1665,7 @@
       "tracking_error_ann": 0.03687427673780659
     },
     "AVANZA_EUROPA": {
-      "correlation": 0.9395271894671295,
+      "correlation": 0.9395271894671294,
       "fund_cagr": 0.103875417189218,
       "index_cagr": 0.117976611389073,
       "months": 79,
