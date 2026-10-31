@@ -1,0 +1,46 @@
+{
+  "cost_per_side_bps": 10.0,
+  "data_tier": "DIAGNOSTIC",
+  "execution": "IDEALIZED_CLOSE",
+  "lookahead_free": false,
+  "metrics": {
+    "annual_turnover": 1.4,
+    "average_holding_period_months": 8.421052631578947,
+    "best_year": 1986,
+    "best_year_return": 0.6584085012659209,
+    "cagr": 0.16418295998420995,
+    "calmar": 0.8585992708838011,
+    "end_date": "2013-12-31",
+    "end_value": 4373705.441731046,
+    "longest_drawdown_months": 37,
+    "longest_drawdown_span": "2007-10-31..2010-11-30",
+    "longest_underperformance_span": "1974-09-30..1984-02-29",
+    "longest_underperformance_vs_benchmark_months": 113,
+    "max_drawdown": -0.19122187212575648,
+    "months": 480,
+    "no_signal_count": 557,
+    "number_of_switches": 56,
+    "sharpe": 0.8821994560577862,
+    "sharpe_rf": "hurdle/T-bill series of the run",
+    "sortino": 1.4701479788120535,
+    "start_date": "1974-01-31",
+    "start_value": 10000.0,
+    "switches_per_year": 1.4,
+    "time_in_asset": {
+      "EX_US_EQUITIES": 0.29791666666666666,
+      "US_AGG_BONDS": 0.29375,
+      "US_EQUITIES": 0.4083333333333333
+    },
+    "volatility": 0.1252020210125855,
+    "worst_year": 2000,
+    "worst_year_return": -0.17142113554540994
+  },
+  "notes": [
+    "Hurdle = Ken French RF (realised 1-month bill return) instead of 3m bill index.",
+    "Diagnostic only - not a model."
+  ],
+  "run_id": "DIAG_HURDLE_FF_RF_1M__REF_1974_2013__IDEALIZED_CLOSE__COST_10BPS",
+  "stop_reason": null,
+  "strategy_id": "GEM_ORIGINAL",
+  "strategy_version": "1.0.0"
+}

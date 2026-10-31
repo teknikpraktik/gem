@@ -1,0 +1,45 @@
+{
+  "cost_per_side_bps": 10.0,
+  "data_tier": "STRICT_3P",
+  "execution": "NEXT_MONTH_CLOSE",
+  "lookahead_free": true,
+  "metrics": {
+    "annual_turnover": 1.0778443113772456,
+    "average_holding_period_months": 10.774193548387096,
+    "best_year": 1997,
+    "best_year_return": 0.3336276825136051,
+    "cagr": 0.13162978401393177,
+    "calmar": 0.6802313346461674,
+    "end_date": "2016-12-31",
+    "end_value": 312443.5865499211,
+    "longest_drawdown_months": 37,
+    "longest_drawdown_span": "2000-03-31..2003-04-30",
+    "longest_underperformance_span": "1989-02-28..2001-07-31",
+    "longest_underperformance_vs_benchmark_months": 149,
+    "max_drawdown": -0.19350738095945108,
+    "months": 334,
+    "no_signal_count": 233,
+    "number_of_switches": 30,
+    "sharpe": 0.8413587640306558,
+    "sharpe_rf": "hurdle/T-bill series of the run",
+    "sortino": 1.352410686366356,
+    "start_date": "1989-03-31",
+    "start_value": 10000.0,
+    "switches_per_year": 1.0778443113772456,
+    "time_in_asset": {
+      "EX_US_EQUITIES": 0.2694610778443114,
+      "US_AGG_BONDS": 0.20958083832335328,
+      "US_EQUITIES": 0.5209580838323353
+    },
+    "volatility": 0.12100556184091281,
+    "worst_year": 2000,
+    "worst_year_return": -0.184843221100079
+  },
+  "notes": [
+    "Same index definitions as GEM_ORIGINAL; values from an unverified third-party compilation (alexjansenhome/GEM). Not presented as verified GEM."
+  ],
+  "run_id": "GEM_ORIGINAL_STRICT_3P__FULL__NEXT_MONTH_CLOSE__COST_10BPS",
+  "stop_reason": "stopped before 2017-01-31: no return for held asset(s) ['US_EQUITIES']",
+  "strategy_id": "GEM_ORIGINAL",
+  "strategy_version": "1.0.0"
+}

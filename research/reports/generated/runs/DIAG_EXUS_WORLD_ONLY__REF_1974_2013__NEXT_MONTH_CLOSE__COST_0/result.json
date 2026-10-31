@@ -1,0 +1,46 @@
+{
+  "cost_per_side_bps": 0.0,
+  "data_tier": "DIAGNOSTIC",
+  "execution": "NEXT_MONTH_CLOSE",
+  "lookahead_free": true,
+  "metrics": {
+    "annual_turnover": 1.5,
+    "average_holding_period_months": 7.868852459016393,
+    "best_year": 1986,
+    "best_year_return": 0.6584085012659209,
+    "cagr": 0.15194787350350936,
+    "calmar": 0.8273488551608158,
+    "end_date": "2013-12-31",
+    "end_value": 2866243.5825450164,
+    "longest_drawdown_months": 36,
+    "longest_drawdown_span": "2000-03-31..2003-03-31",
+    "longest_underperformance_span": "1987-11-30..2002-05-31",
+    "longest_underperformance_vs_benchmark_months": 174,
+    "max_drawdown": -0.18365635312805806,
+    "months": 480,
+    "no_signal_count": 16,
+    "number_of_switches": 60,
+    "sharpe": 0.7791944440134404,
+    "sharpe_rf": "hurdle/T-bill series of the run",
+    "sortino": 1.2581471205550752,
+    "start_date": "1974-01-31",
+    "start_value": 10000.0,
+    "switches_per_year": 1.5,
+    "time_in_asset": {
+      "EX_US_EQUITIES": 0.29791666666666666,
+      "US_AGG_BONDS": 0.3,
+      "US_EQUITIES": 0.40208333333333335
+    },
+    "volatility": 0.12690428476901378,
+    "worst_year": 2000,
+    "worst_year_return": -0.1720904693186196
+  },
+  "notes": [
+    "ex-US = MSCI World ex USA (developed only) for the whole period.",
+    "Diagnostic only - not a model."
+  ],
+  "run_id": "DIAG_EXUS_WORLD_ONLY__REF_1974_2013__NEXT_MONTH_CLOSE__COST_0",
+  "stop_reason": null,
+  "strategy_id": "GEM_ORIGINAL",
+  "strategy_version": "1.0.0"
+}

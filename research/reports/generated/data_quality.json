@@ -1,0 +1,618 @@
+{
+  "cross_validation": [
+    {
+      "a": "AJ_IBBOTSON_TBILL_30D",
+      "b": "ARCH_FF_RF",
+      "cagr_a": 0.052934857547152436,
+      "cagr_b": 0.052935644597626785,
+      "cagr_diff": -7.870504743490159e-07,
+      "correlation": 0.018945735745533446,
+      "label": "Ibbotson 30d bill (compilation) vs Ken French RF (arch snapshot)",
+      "max_abs_diff_month": "1990-12-31",
+      "max_abs_monthly_diff": 27.488535519125683,
+      "mean_abs_monthly_diff": 0.09297387901064244,
+      "overlap": "1970-01-31..2012-12-31",
+      "overlap_months": 516,
+      "tracking_error_ann": 4.619119881300065
+    },
+    {
+      "a": "AJ_TBILL_3M_TR",
+      "b": "ARCH_FF_RF",
+      "cagr_a": 0.0490924340521135,
+      "cagr_b": 0.04805920646349504,
+      "cagr_diff": 0.0010332275886184572,
+      "correlation": 0.9862592735577853,
+      "label": "3m bill TR (compilation, from TB3MS) vs Ken French RF (1m)",
+      "max_abs_diff_month": "1982-01-31",
+      "max_abs_monthly_diff": 0.0021814142910032697,
+      "mean_abs_monthly_diff": 0.0003075189713522572,
+      "overlap": "1970-01-31..2017-04-30",
+      "overlap_months": 568,
+      "tracking_error_ann": 0.001630448042194554
+    },
+    {
+      "a": "AJ_IBBOTSON_LARGE",
+      "b": "ARCH_FF_US_MKT_TR",
+      "cagr_a": 0.09938912024324043,
+      "cagr_b": 0.09916156048396596,
+      "cagr_diff": 0.00022755975927446492,
+      "correlation": 0.988239950464783,
+      "label": "Ibbotson Large Co. vs CRSP US market (FF)",
+      "max_abs_diff_month": "2000-02-29",
+      "max_abs_monthly_diff": 0.0477293296410185,
+      "mean_abs_monthly_diff": 0.005140016556967435,
+      "overlap": "1970-01-31..2012-12-31",
+      "overlap_months": 516,
+      "tracking_error_ann": 0.024890070458502493
+    },
+    {
+      "a": "AJ_SP500TR",
+      "b": "AJ_IBBOTSON_LARGE",
+      "cagr_a": 0.09559875916013061,
+      "cagr_b": 0.09559845786896926,
+      "cagr_diff": 3.012911613531344e-07,
+      "correlation": 0.9999996606375663,
+      "label": "S&P 500 TR (Yahoo) vs Ibbotson Large Co. (both S&P 500 TR)",
+      "max_abs_diff_month": "1990-11-30",
+      "max_abs_monthly_diff": 0.00043782839287698216,
+      "mean_abs_monthly_diff": 6.562026983589831e-06,
+      "overlap": "1988-02-29..2012-12-31",
+      "overlap_months": 299,
+      "tracking_error_ann": 0.000122288586502641
+    },
+    {
+      "a": "AJ_SP500TR",
+      "b": "ARCH_FF_US_MKT_TR",
+      "cagr_a": 0.10207283838317194,
+      "cagr_b": 0.1031008132885809,
+      "cagr_diff": -0.001027974905408957,
+      "correlation": 0.9861390145043422,
+      "label": "S&P 500 TR vs CRSP US market (FF)",
+      "max_abs_diff_month": "2000-02-29",
+      "max_abs_monthly_diff": 0.04772866072172666,
+      "mean_abs_monthly_diff": 0.004794645093479091,
+      "overlap": "1988-02-29..2016-12-31",
+      "overlap_months": 347,
+      "tracking_error_ann": 0.02433151183636293
+    },
+    {
+      "a": "AJ_MSCI_USA_GR",
+      "b": "AJ_SP500TR",
+      "cagr_a": 0.10291910884345801,
+      "cagr_b": 0.10207283838317194,
+      "cagr_diff": 0.0008462704602860693,
+      "correlation": 0.9986749455394697,
+      "label": "MSCI USA gross vs S&P 500 TR",
+      "max_abs_diff_month": "1999-12-31",
+      "max_abs_monthly_diff": 0.010864480951759514,
+      "mean_abs_monthly_diff": 0.0015160552636676295,
+      "overlap": "1988-02-29..2016-12-31",
+      "overlap_months": 347,
+      "tracking_error_ann": 0.007392726915830459
+    },
+    {
+      "a": "SHILLER_SP_TR",
+      "b": "AJ_SP500TR",
+      "cagr_a": 0.1025028143357114,
+      "cagr_b": 0.10207283838317194,
+      "cagr_diff": 0.0004299759525394631,
+      "correlation": 0.6429187479539565,
+      "label": "Shiller S&P (monthly-average prices) vs S&P 500 TR month-end",
+      "max_abs_diff_month": "2009-03-31",
+      "max_abs_monthly_diff": 0.14451134035324686,
+      "mean_abs_monthly_diff": 0.024325631101255882,
+      "overlap": "1988-02-29..2016-12-31",
+      "overlap_months": 347,
+      "tracking_error_ann": 0.11296679051403224
+    },
+    {
+      "a": "AJ_MSCI_ACWI_EXUS_GR",
+      "b": "AJ_MSCI_WORLD_EXUS_GR",
+      "cagr_a": 0.05687277675650049,
+      "cagr_b": 0.0551169168254686,
+      "cagr_diff": 0.001755859931031889,
+      "correlation": 0.995071397932902,
+      "label": "ACWI ex USA vs World ex USA (EM effect)",
+      "max_abs_diff_month": "2015-07-31",
+      "max_abs_monthly_diff": 0.01851745732061738,
+      "mean_abs_monthly_diff": 0.0036841446160225085,
+      "overlap": "1988-01-31..2016-12-31",
+      "overlap_months": 348,
+      "tracking_error_ann": 0.017124664707323888
+    },
+    {
+      "a": "AJ_US_AGG",
+      "b": "AJ_IBBOTSON_IT_GOVT",
+      "cagr_a": 0.09238698030015025,
+      "cagr_b": 0.08828581110529643,
+      "cagr_diff": 0.004101169194853815,
+      "correlation": 0.9559904925683016,
+      "label": "US Aggregate vs Ibbotson IT Govt (splice check, 1976-1999)",
+      "max_abs_diff_month": "1980-06-30",
+      "max_abs_monthly_diff": 0.026530376207311246,
+      "mean_abs_monthly_diff": 0.0036893628284458352,
+      "overlap": "1976-01-31..1999-12-31",
+      "overlap_months": 288,
+      "tracking_error_ann": 0.018667356608737022
+    },
+    {
+      "a": "tr_index",
+      "b": "yield_simple_prior",
+      "cagr_a": 0.0490924340521135,
+      "cagr_b": 0.049226561307792904,
+      "cagr_diff": -0.00013412725567940598,
+      "correlation": 0.9903570604249052,
+      "label": "T-bill TR index vs TB3MS transformed (simple_prior)",
+      "max_abs_diff_month": "1980-05-31",
+      "max_abs_monthly_diff": 0.003927218799908752,
+      "mean_abs_monthly_diff": 0.00021182771912528177,
+      "overlap": "1970-01-31..2017-04-30",
+      "overlap_months": 568,
+      "tracking_error_ann": 0.001369781469429744
+    },
+    {
+      "a": "tr_index",
+      "b": "yield_compound_prior",
+      "cagr_a": 0.0490924340521135,
+      "cagr_b": 0.04764822414564018,
+      "cagr_diff": 0.001444209906473315,
+      "correlation": 0.9904768895694737,
+      "label": "T-bill TR index vs TB3MS transformed (compound_prior)",
+      "max_abs_diff_month": "1980-05-31",
+      "max_abs_monthly_diff": 0.0033129449067852423,
+      "mean_abs_monthly_diff": 0.00023937644910822134,
+      "overlap": "1970-01-31..2017-04-30",
+      "overlap_months": 568,
+      "tracking_error_ann": 0.0014153754085831438
+    },
+    {
+      "a": "tr_index",
+      "b": "yield_same_month",
+      "cagr_a": 0.0490924340521135,
+      "cagr_b": 0.049097357445983425,
+      "cagr_diff": -4.923393869926684e-06,
+      "correlation": 0.999699815626775,
+      "label": "T-bill TR index vs TB3MS transformed (simple_same_month)",
+      "max_abs_diff_month": "1971-03-31",
+      "max_abs_monthly_diff": 0.00031978776529337704,
+      "mean_abs_monthly_diff": 4.538477804579297e-05,
+      "overlap": "1970-01-31..2017-04-30",
+      "overlap_months": 568,
+      "tracking_error_ann": 0.00024179876353348128
+    }
+  ],
+  "quality": {
+    "AJ_IBBOTSON_IT_GOVT": {
+      "extreme_moves": {
+        "1980-04-30": 0.1197
+      },
+      "id": "AJ_IBBOTSON_IT_GOVT",
+      "is_total_return": true,
+      "missing_month_ends": [],
+      "month_end_first": "1969-12-31",
+      "month_end_last": "1999-12-31",
+      "month_ends": 361,
+      "non_positive": 0,
+      "quality_status": "EXPERIMENTAL",
+      "raw_duplicates": 0,
+      "raw_first": "1969-12-31",
+      "raw_last": "1999-12-31",
+      "raw_nan": 0,
+      "raw_obs": 361,
+      "stale_month_ends": [],
+      "verification": "VERIFIED FROM SECONDARY SOURCE"
+    },
+    "AJ_IBBOTSON_LARGE": {
+      "extreme_moves": {},
+      "id": "AJ_IBBOTSON_LARGE",
+      "is_total_return": true,
+      "missing_month_ends": [],
+      "month_end_first": "1969-12-31",
+      "month_end_last": "2012-12-31",
+      "month_ends": 517,
+      "non_positive": 0,
+      "quality_status": "EXPERIMENTAL",
+      "raw_duplicates": 0,
+      "raw_first": "1969-12-31",
+      "raw_last": "2012-12-31",
+      "raw_nan": 0,
+      "raw_obs": 517,
+      "stale_month_ends": [],
+      "verification": "VERIFIED FROM SECONDARY SOURCE"
+    },
+    "AJ_IBBOTSON_TBILL_30D": {
+      "extreme_moves": {
+        "1990-11-30": -0.9645,
+        "1990-12-31": 27.4945,
+        "1991-11-30": -0.9112,
+        "1991-12-31": 10.3526,
+        "1992-11-30": -0.8795,
+        "1992-12-31": 7.3441
+      },
+      "id": "AJ_IBBOTSON_TBILL_30D",
+      "is_total_return": true,
+      "missing_month_ends": [],
+      "month_end_first": "1969-12-31",
+      "month_end_last": "2012-12-31",
+      "month_ends": 517,
+      "non_positive": 0,
+      "quality_status": "UNUSABLE",
+      "raw_duplicates": 0,
+      "raw_first": "1969-12-31",
+      "raw_last": "2012-12-31",
+      "raw_nan": 0,
+      "raw_obs": 517,
+      "stale_month_ends": [],
+      "verification": "VERIFIED FROM SECONDARY SOURCE"
+    },
+    "AJ_MSCI_ACWI_EXUS_GR": {
+      "extreme_moves": {},
+      "id": "AJ_MSCI_ACWI_EXUS_GR",
+      "is_total_return": true,
+      "missing_month_ends": [],
+      "month_end_first": "1987-12-31",
+      "month_end_last": "2016-12-31",
+      "month_ends": 349,
+      "non_positive": 0,
+      "quality_status": "EXPERIMENTAL",
+      "raw_duplicates": 0,
+      "raw_first": "1987-12-31",
+      "raw_last": "2016-12-30",
+      "raw_nan": 0,
+      "raw_obs": 349,
+      "stale_month_ends": [],
+      "verification": "VERIFIED FROM SECONDARY SOURCE"
+    },
+    "AJ_MSCI_USA_GR": {
+      "extreme_moves": {},
+      "id": "AJ_MSCI_USA_GR",
+      "is_total_return": true,
+      "missing_month_ends": [],
+      "month_end_first": "1969-12-31",
+      "month_end_last": "2016-12-31",
+      "month_ends": 565,
+      "non_positive": 0,
+      "quality_status": "EXPERIMENTAL",
+      "raw_duplicates": 0,
+      "raw_first": "1969-12-31",
+      "raw_last": "2016-12-30",
+      "raw_nan": 0,
+      "raw_obs": 565,
+      "stale_month_ends": [],
+      "verification": "VERIFIED FROM SECONDARY SOURCE"
+    },
+    "AJ_MSCI_WORLD_EXUS_GR": {
+      "extreme_moves": {},
+      "id": "AJ_MSCI_WORLD_EXUS_GR",
+      "is_total_return": true,
+      "missing_month_ends": [],
+      "month_end_first": "1969-12-31",
+      "month_end_last": "2016-12-31",
+      "month_ends": 565,
+      "non_positive": 0,
+      "quality_status": "EXPERIMENTAL",
+      "raw_duplicates": 0,
+      "raw_first": "1969-12-31",
+      "raw_last": "2016-12-30",
+      "raw_nan": 0,
+      "raw_obs": 565,
+      "stale_month_ends": [],
+      "verification": "VERIFIED FROM SECONDARY SOURCE"
+    },
+    "AJ_SP500TR": {
+      "extreme_moves": {},
+      "id": "AJ_SP500TR",
+      "is_total_return": true,
+      "missing_month_ends": [],
+      "month_end_first": "1988-01-31",
+      "month_end_last": "2016-12-31",
+      "month_ends": 348,
+      "non_positive": 0,
+      "quality_status": "EXPERIMENTAL",
+      "raw_duplicates": 0,
+      "raw_first": "1988-01-29",
+      "raw_last": "2016-12-30",
+      "raw_nan": 0,
+      "raw_obs": 348,
+      "stale_month_ends": [],
+      "verification": "VERIFIED FROM SECONDARY SOURCE"
+    },
+    "AJ_TB3MS_YIELD": {
+      "extreme_moves": {
+        "1980-05-31": -4.62
+      },
+      "id": "AJ_TB3MS_YIELD",
+      "is_total_return": false,
+      "missing_month_ends": [],
+      "month_end_first": "1969-12-31",
+      "month_end_last": "2017-04-30",
+      "month_ends": 569,
+      "non_positive": 0,
+      "quality_status": "EXPERIMENTAL",
+      "raw_duplicates": 0,
+      "raw_first": "1969-12-31",
+      "raw_last": "2017-04-28",
+      "raw_nan": 0,
+      "raw_obs": 569,
+      "stale_month_ends": [],
+      "verification": "VERIFIED FROM SECONDARY SOURCE"
+    },
+    "AJ_TBILL_3M_TR": {
+      "extreme_moves": {},
+      "id": "AJ_TBILL_3M_TR",
+      "is_total_return": true,
+      "missing_month_ends": [],
+      "month_end_first": "1969-12-31",
+      "month_end_last": "2017-04-30",
+      "month_ends": 570,
+      "non_positive": 0,
+      "quality_status": "EXPERIMENTAL",
+      "raw_duplicates": 0,
+      "raw_first": "1969-12-31",
+      "raw_last": "2017-05-12",
+      "raw_nan": 0,
+      "raw_obs": 570,
+      "stale_month_ends": [
+        "2017-05-31"
+      ],
+      "verification": "VERIFIED FROM SECONDARY SOURCE"
+    },
+    "AJ_US_AGG": {
+      "extreme_moves": {
+        "1980-04-30": 0.1134,
+        "1981-11-30": 0.0852
+      },
+      "id": "AJ_US_AGG",
+      "is_total_return": true,
+      "missing_month_ends": [],
+      "month_end_first": "1975-12-31",
+      "month_end_last": "2016-12-31",
+      "month_ends": 493,
+      "non_positive": 0,
+      "quality_status": "EXPERIMENTAL",
+      "raw_duplicates": 0,
+      "raw_first": "1975-12-31",
+      "raw_last": "2016-12-30",
+      "raw_nan": 0,
+      "raw_obs": 493,
+      "stale_month_ends": [],
+      "verification": "VERIFIED FROM SECONDARY SOURCE"
+    },
+    "ARCH_FF_RF": {
+      "extreme_moves": {},
+      "id": "ARCH_FF_RF",
+      "is_total_return": true,
+      "missing_month_ends": [],
+      "month_end_first": "1926-06-30",
+      "month_end_last": "2018-11-30",
+      "month_ends": 1110,
+      "non_positive": 0,
+      "quality_status": "PROXY",
+      "raw_duplicates": 0,
+      "raw_first": "1926-06-30",
+      "raw_last": "2018-11-30",
+      "raw_nan": 0,
+      "raw_obs": 1110,
+      "stale_month_ends": [],
+      "verification": "VERIFIED FROM SECONDARY SOURCE"
+    },
+    "ARCH_FF_US_MKT_TR": {
+      "extreme_moves": {
+        "1931-09-30": -0.291,
+        "1932-07-31": 0.3387,
+        "1932-08-31": 0.3709,
+        "1933-04-30": 0.3895
+      },
+      "id": "ARCH_FF_US_MKT_TR",
+      "is_total_return": true,
+      "missing_month_ends": [],
+      "month_end_first": "1926-06-30",
+      "month_end_last": "2018-11-30",
+      "month_ends": 1110,
+      "non_positive": 0,
+      "quality_status": "PROXY",
+      "raw_duplicates": 0,
+      "raw_first": "1926-06-30",
+      "raw_last": "2018-11-30",
+      "raw_nan": 0,
+      "raw_obs": 1110,
+      "stale_month_ends": [],
+      "verification": "VERIFIED FROM SECONDARY SOURCE"
+    },
+    "H10_SEK_PER_USD": {
+      "extreme_moves": {
+        "1982-10-31": 0.1873,
+        "1992-11-30": 0.1784
+      },
+      "id": "H10_SEK_PER_USD",
+      "is_total_return": false,
+      "missing_month_ends": [],
+      "month_end_first": "1971-01-31",
+      "month_end_last": "2026-10-31",
+      "month_ends": 670,
+      "non_positive": 0,
+      "quality_status": "VERIFIED",
+      "raw_duplicates": 0,
+      "raw_first": "1971-01-04",
+      "raw_last": "2026-10-23",
+      "raw_nan": 0,
+      "raw_obs": 13994,
+      "stale_month_ends": [],
+      "verification": "VERIFIED FROM SECONDARY SOURCE"
+    },
+    "SHILLER_SP_TR": {
+      "extreme_moves": {
+        "1929-11-30": -0.2619,
+        "1932-08-31": 0.5131,
+        "1933-05-31": 0.2931
+      },
+      "id": "SHILLER_SP_TR",
+      "is_total_return": true,
+      "missing_month_ends": [],
+      "month_end_first": "1871-01-31",
+      "month_end_last": "2023-06-30",
+      "month_ends": 1830,
+      "non_positive": 0,
+      "quality_status": "PROXY",
+      "raw_duplicates": 0,
+      "raw_first": "1871-01-31",
+      "raw_last": "2023-06-30",
+      "raw_nan": 0,
+      "raw_obs": 1830,
+      "stale_month_ends": [],
+      "verification": "VERIFIED FROM SECONDARY SOURCE"
+    }
+  },
+  "status": {
+    "AJ_IBBOTSON_IT_GOVT": {
+      "fetch": "CACHED",
+      "retrieved_at": "2026-10-31T07:24:55Z",
+      "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+      "status": "OK",
+      "url": "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv"
+    },
+    "AJ_IBBOTSON_LARGE": {
+      "fetch": "CACHED",
+      "retrieved_at": "2026-10-31T07:24:55Z",
+      "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+      "status": "OK",
+      "url": "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv"
+    },
+    "AJ_IBBOTSON_TBILL_30D": {
+      "fetch": "CACHED",
+      "retrieved_at": "2026-10-31T07:24:55Z",
+      "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+      "status": "OK",
+      "url": "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv"
+    },
+    "AJ_MSCI_ACWI_EXUS_GR": {
+      "fetch": "CACHED",
+      "retrieved_at": "2026-10-31T07:24:55Z",
+      "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+      "status": "OK",
+      "url": "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv"
+    },
+    "AJ_MSCI_USA_GR": {
+      "fetch": "CACHED",
+      "retrieved_at": "2026-10-31T07:24:55Z",
+      "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+      "status": "OK",
+      "url": "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv"
+    },
+    "AJ_MSCI_WORLD_EXUS_GR": {
+      "fetch": "CACHED",
+      "retrieved_at": "2026-10-31T07:24:55Z",
+      "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+      "status": "OK",
+      "url": "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv"
+    },
+    "AJ_SP500TR": {
+      "fetch": "CACHED",
+      "retrieved_at": "2026-10-31T07:24:55Z",
+      "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+      "status": "OK",
+      "url": "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv"
+    },
+    "AJ_TB3MS_YIELD": {
+      "fetch": "CACHED",
+      "retrieved_at": "2026-10-31T07:24:55Z",
+      "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+      "status": "OK",
+      "url": "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv"
+    },
+    "AJ_TBILL_3M_TR": {
+      "fetch": "CACHED",
+      "retrieved_at": "2026-10-31T07:24:55Z",
+      "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+      "status": "OK",
+      "url": "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv"
+    },
+    "AJ_US_AGG": {
+      "fetch": "CACHED",
+      "retrieved_at": "2026-10-31T07:24:55Z",
+      "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+      "status": "OK",
+      "url": "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv"
+    },
+    "ARCH_FF_RF": {
+      "fetch": "CACHED",
+      "retrieved_at": "2026-10-31T07:24:56Z",
+      "sha256": "f23436727b01d879e1372e3ee277514b0962a23d2b158f1aee6a402a90994f52",
+      "status": "OK",
+      "url": "pypi://arch==8.0.0/arch/data/frenchdata/frenchdata.csv.gz"
+    },
+    "ARCH_FF_US_MKT_TR": {
+      "fetch": "CACHED",
+      "retrieved_at": "2026-10-31T07:24:56Z",
+      "sha256": "f23436727b01d879e1372e3ee277514b0962a23d2b158f1aee6a402a90994f52",
+      "status": "OK",
+      "url": "pypi://arch==8.0.0/arch/data/frenchdata/frenchdata.csv.gz"
+    },
+    "BBG_US_AGG_OFFICIAL": {
+      "error": "manual file not supplied: /home/user/gem/research/data/manual/us_agg.csv",
+      "status": "UNAVAILABLE"
+    },
+    "FF_DEV_EXUS_MKT_TR": {
+      "error": "offline and no cache for french/FF_DEV_EXUS_MKT_TR",
+      "status": "UNAVAILABLE"
+    },
+    "FF_EMERGING_MKT_TR": {
+      "error": "offline and no cache for french/FF_EMERGING_MKT_TR",
+      "status": "UNAVAILABLE"
+    },
+    "FF_EUROPE_MKT_TR": {
+      "error": "offline and no cache for french/FF_EUROPE_MKT_TR",
+      "status": "UNAVAILABLE"
+    },
+    "FF_RF": {
+      "error": "offline and no cache for french/ff_factors",
+      "status": "UNAVAILABLE"
+    },
+    "FF_US_MKT_TR": {
+      "error": "offline and no cache for french/ff_factors",
+      "status": "UNAVAILABLE"
+    },
+    "FRED_DTB3": {
+      "error": "offline and no cache for fred/FRED_DTB3",
+      "status": "UNAVAILABLE"
+    },
+    "FRED_GS5": {
+      "error": "offline and no cache for fred/FRED_GS5",
+      "status": "UNAVAILABLE"
+    },
+    "FRED_OMRXTBILL": {
+      "error": "offline and no cache for fred/FRED_OMRXTBILL",
+      "status": "UNAVAILABLE"
+    },
+    "H10_SEK_PER_USD": {
+      "fetch": "CACHED",
+      "retrieved_at": "2026-10-31T07:24:58Z",
+      "sha256": "5f82c543467ae6398e766fb110fe57abe446b95c4ad13b2eaca8954911c6259d",
+      "status": "OK",
+      "url": "https://raw.githubusercontent.com/datasets/exchange-rates/main/data/daily.csv"
+    },
+    "MSCI_ACWI_EXUS_OFFICIAL": {
+      "error": "manual file not supplied: /home/user/gem/research/data/manual/msci_acwi_exus.csv",
+      "status": "UNAVAILABLE"
+    },
+    "MSCI_ACWI_OFFICIAL": {
+      "error": "manual file not supplied: /home/user/gem/research/data/manual/msci_acwi.csv",
+      "status": "UNAVAILABLE"
+    },
+    "RB_SSVX_3M": {
+      "error": "offline and no cache for riksbank/RB_SSVX_3M",
+      "status": "UNAVAILABLE"
+    },
+    "SHILLER_SP_TR": {
+      "fetch": "CACHED",
+      "retrieved_at": "2026-10-31T07:24:59Z",
+      "sha256": "3a45dffabc414afc298c12159abc84c2875f88175ff3d4473ef7417e725ecac6",
+      "status": "OK",
+      "url": "https://raw.githubusercontent.com/datasets/s-and-p-500/main/data/data.csv"
+    },
+    "SPX_TR_OFFICIAL": {
+      "error": "manual file not supplied: /home/user/gem/research/data/manual/spx_tr.csv",
+      "status": "UNAVAILABLE"
+    }
+  }
+}

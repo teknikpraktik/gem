@@ -1,0 +1,775 @@
+# Data catalog - every series the research engine may use.
+#
+# No series may be used unless it is listed here. Fields:
+#   quality_status : VERIFIED | PROXY | EXPERIMENTAL | UNUSABLE | LICENSE_RESTRICTED
+#   verification   : VERIFIED FROM PRIMARY SOURCE | VERIFIED FROM SECONDARY SOURCE |
+#                    ASSUMPTION | UNRESOLVED   (applies to the metadata in this entry)
+#   build_env      : REACHABLE | BLOCKED  - whether the host could be reached from the
+#                    environment this catalog was built in (2026-10-31). BLOCKED means
+#                    the provider code exists but has never been run against the live source.
+#   start_date / end_date : documented/expected coverage. Observed coverage of cached data
+#                    is written by the pipeline to reports/data_quality.md.
+#
+# Verification note (2026-10-31): the build environment could only reach
+# raw.githubusercontent.com and PyPI. Primary documentation was consulted through web
+# search result extracts, not by opening the pages; every fact taken that way is marked
+# "search extract" and must be re-checked against the page itself before production use.
+
+catalog_version: 1
+built_at: "2026-10-31"
+
+series:
+
+# =====================================================================================
+# A. PRIMARY / OFFICIAL SOURCES (provider code implemented; BLOCKED in build env)
+# =====================================================================================
+
+- id: FRED_TB3MS
+  name: 3-Month Treasury Bill Secondary Market Rate, Discount Basis (monthly average)
+  provider: FRED (Board of Governors H.15 via St. Louis Fed)
+  provider_series_id: TB3MS
+  source_url: https://fred.stlouisfed.org/series/TB3MS
+  asset_class: money_market_yield
+  region: US
+  currency: USD
+  frequency: monthly (average of daily rates)
+  is_total_return: false
+  start_date: "1934-01"
+  end_date: ongoing
+  license_notes: H.15 is US public-domain government data; FRED terms of use apply.
+  retrieval_method: HTTPS GET fredgraph.csv (no key)
+  proxy_for: US 3-month T-bill total return (after yield->return transformation)
+  quality_status: PROXY
+  verification: ASSUMPTION
+  build_env: BLOCKED
+  notes: >-
+    A YIELD, not a total-return index. Converted with returns.yield_to_monthly_return
+    (r_t = y_{t-1}/1200). Discount basis, monthly average -> documented approximation error.
+  fetch: {provider: fred}
+
+- id: FRED_DTB3
+  name: 3-Month Treasury Bill Secondary Market Rate, Discount Basis (daily)
+  provider: FRED
+  provider_series_id: DTB3
+  source_url: https://fred.stlouisfed.org/series/DTB3
+  asset_class: money_market_yield
+  region: US
+  currency: USD
+  frequency: daily
+  is_total_return: false
+  start_date: "1954-01-04"
+  end_date: ongoing
+  license_notes: Public-domain government data.
+  retrieval_method: HTTPS GET fredgraph.csv
+  proxy_for: US 3-month T-bill total return (month-end yield -> next-month return)
+  quality_status: PROXY
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: BLOCKED
+  notes: Start date from FRED search extract (1954-01-04). Preferred over TB3MS because month-end yields can be sampled.
+  fetch: {provider: fred}
+
+- id: FRED_DEXSDUS
+  name: Swedish Kronor to One U.S. Dollar (H.10 noon buying rate, New York)
+  provider: FRED (Federal Reserve H.10)
+  provider_series_id: DEXSDUS
+  source_url: https://fred.stlouisfed.org/series/DEXSDUS
+  asset_class: fx
+  region: SE/US
+  currency: SEK per USD
+  frequency: daily
+  is_total_return: false
+  start_date: "1971-01-04"
+  end_date: ongoing
+  license_notes: Public-domain government data.
+  retrieval_method: HTTPS GET fredgraph.csv
+  proxy_for: null
+  quality_status: VERIFIED
+  verification: ASSUMPTION
+  build_env: BLOCKED
+  notes: Quote convention SEK per 1 USD (same as Riksbank SEKUSDPMI). The GitHub mirror H10_SEK_PER_USD is used in the build env.
+  fetch: {provider: fred}
+
+- id: FRED_GS5
+  name: Market Yield on U.S. Treasury Securities at 5-Year Constant Maturity (monthly)
+  provider: FRED
+  provider_series_id: GS5
+  source_url: https://fred.stlouisfed.org/series/GS5
+  asset_class: bond_yield
+  region: US
+  currency: USD
+  frequency: monthly (average)
+  is_total_return: false
+  start_date: "1953-04"
+  end_date: ongoing
+  license_notes: Public-domain government data.
+  retrieval_method: HTTPS GET fredgraph.csv
+  proxy_for: US intermediate government bond total return (synthetic par-bond model)
+  quality_status: EXPERIMENTAL
+  verification: ASSUMPTION
+  build_env: BLOCKED
+  notes: Last-resort synthetic bond proxy only (returns.par_bond_monthly_return). Not used in any current run.
+  fetch: {provider: fred}
+
+- id: FRED_NASDAQ_GLOBAL_EXUS_LM_NTR
+  name: NASDAQ Global ex United States Large Mid Cap Net Total Return Index
+  provider: FRED (Nasdaq, Inc.)
+  provider_series_id: NASDAQNQGXUSLMN
+  source_url: https://fred.stlouisfed.org/series/NASDAQNQGXUSLMN
+  asset_class: equity
+  region: Global ex US (developed + emerging)
+  currency: USD
+  frequency: daily
+  is_total_return: true
+  start_date: "2001-03"
+  end_date: ongoing
+  license_notes: Nasdaq data on FRED - Nasdaq terms; verify redistribution rights before any production use.
+  retrieval_method: HTTPS GET fredgraph.csv
+  proxy_for: MSCI ACWI ex USA (net) total return
+  quality_status: PROXY
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: BLOCKED
+  notes: >-
+    Best open candidate for the ex-US leg after 2001 (covers DM+EM like ACWI ex USA, different
+    index provider). Start 2001-03 per FRED search extract; full history availability on FRED
+    must be confirmed (FRED sometimes truncates Nasdaq history).
+  fetch: {provider: fred}
+
+- id: FRED_NASDAQ_US500_LC_TR
+  name: Nasdaq US 500 Large Cap Total Return Index
+  provider: FRED (Nasdaq, Inc.)
+  provider_series_id: NASDAQNQUS500LCT
+  source_url: https://fred.stlouisfed.org/series/NASDAQNQUS500LCT
+  asset_class: equity
+  region: US
+  currency: USD
+  frequency: daily
+  is_total_return: true
+  start_date: UNRESOLVED (2011-06-06 or 2016-01-11 - conflicting FRED extracts)
+  end_date: ongoing
+  license_notes: Nasdaq terms.
+  retrieval_method: HTTPS GET fredgraph.csv
+  proxy_for: S&P 500 total return
+  quality_status: PROXY
+  verification: UNRESOLVED
+  build_env: BLOCKED
+  notes: Modern proxy for the US leg; too short for the main backtest.
+  fetch: {provider: fred}
+
+- id: FRED_OMRXTBILL
+  name: OMRX Treasury Bill Index
+  provider: FRED (Nasdaq, Inc.)
+  provider_series_id: NASDAQOMRXTBILL
+  source_url: https://fred.stlouisfed.org/series/NASDAQOMRXTBILL
+  asset_class: money_market_index
+  region: SE
+  currency: SEK
+  frequency: daily
+  is_total_return: true
+  start_date: "2008-11-17"
+  end_date: ongoing
+  license_notes: Nasdaq terms via FRED. Full history (pre-2008) only from Nasdaq (indexes.nasdaq.com) - licence/terms unresolved.
+  retrieval_method: HTTPS GET fredgraph.csv
+  proxy_for: null
+  quality_status: VERIFIED
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: BLOCKED
+  notes: >-
+    Primary Swedish hurdle candidate. FRED coverage starts 2008-11-17 (search extract) -> GEM_SEK
+    before 2008-11 needs NASDAQ_OMRXTBILL_FULL (manual) or the synthetic RB_SSVX_3M proxy.
+    Index methodology: indexes.nasdaq.com/docs/Methodology_OMRX.pdf (search extract).
+  fetch: {provider: fred}
+
+- id: FRED_BAML_US_CORP_TR
+  name: ICE BofA US Corporate Index Total Return Index Value
+  provider: FRED (ICE Data Indices)
+  provider_series_id: BAMLCC0A0CMTRIV
+  source_url: https://fred.stlouisfed.org/series/BAMLCC0A0CMTRIV
+  asset_class: bond
+  region: US
+  currency: USD
+  frequency: daily
+  is_total_return: true
+  start_date: "1972-12-31 (UNRESOLVED - ALFRED extract ambiguous)"
+  end_date: ongoing
+  license_notes: ICE terms on FRED - internal use only, no redistribution without ICE approval.
+  retrieval_method: HTTPS GET fredgraph.csv
+  proxy_for: part of US aggregate bonds (credit sleeve only)
+  quality_status: LICENSE_RESTRICTED
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: BLOCKED
+  notes: Corporate only - not a substitute for the Aggregate. Not used.
+  fetch: {provider: fred}
+
+- id: FF_US_MKT_TR
+  name: Fama/French US market (CRSP value-weighted) total return = Mkt-RF + RF
+  provider: Kenneth R. French Data Library
+  provider_series_id: F-F_Research_Data_Factors (Mkt-RF + RF)
+  source_url: https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html
+  asset_class: equity
+  region: US
+  currency: USD
+  frequency: monthly
+  is_total_return: true
+  start_date: "1926-07"
+  end_date: ongoing (monthly updates, ~1-2 month lag)
+  license_notes: Freely available for research; CRSP-derived. Files are revised over time (keep snapshots).
+  retrieval_method: HTTPS GET zip
+  proxy_for: S&P 500 total return
+  quality_status: PROXY
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: BLOCKED
+  notes: All-US-stocks market, not S&P 500. Used only in GEM_PROXY_FF.
+  fetch: {provider: french, file: F-F_Research_Data_Factors_CSV.zip, returns: "Mkt-RF + RF", cache_key: ff_factors}
+
+- id: FF_RF
+  name: Fama/French risk-free rate (one-month T-bill return)
+  provider: Kenneth R. French Data Library
+  provider_series_id: F-F_Research_Data_Factors (RF)
+  source_url: https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html
+  asset_class: money_market_return
+  region: US
+  currency: USD
+  frequency: monthly
+  is_total_return: true
+  start_date: "1926-07"
+  end_date: ongoing
+  license_notes: Freely available for research (RF is Ibbotson/ICE 1-month T-bill).
+  retrieval_method: HTTPS GET zip
+  proxy_for: US 3-month T-bill total return
+  quality_status: PROXY
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: BLOCKED
+  notes: 1-month (not 3-month) bills; genuine realised return series, no yield transformation needed.
+  fetch: {provider: french, file: F-F_Research_Data_Factors_CSV.zip, returns: "RF", cache_key: ff_factors}
+
+- id: FF_DEV_EXUS_MKT_TR
+  name: Fama/French Developed ex US market total return (USD)
+  provider: Kenneth R. French Data Library
+  provider_series_id: Developed_ex_US_3_Factors (Mkt-RF + RF)
+  source_url: https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_3developed.html
+  asset_class: equity
+  region: Developed ex US (NO emerging markets)
+  currency: USD
+  frequency: monthly
+  is_total_return: true
+  start_date: "1990-07"
+  end_date: ongoing
+  license_notes: Freely available for research.
+  retrieval_method: HTTPS GET zip
+  proxy_for: MSCI ACWI ex USA (developed-only approximation)
+  quality_status: EXPERIMENTAL
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: BLOCKED
+  notes: Lacks EM - a named approximation only, never a silent substitute for ACWI ex USA.
+  fetch: {provider: french, file: Developed_ex_US_3_Factors_CSV.zip, returns: "Mkt-RF + RF"}
+
+- id: FF_EUROPE_MKT_TR
+  name: Fama/French Europe market total return (USD)
+  provider: Kenneth R. French Data Library
+  provider_series_id: Europe_3_Factors (Mkt-RF + RF)
+  source_url: https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html
+  asset_class: equity
+  region: Europe (developed)
+  currency: USD
+  frequency: monthly
+  is_total_return: true
+  start_date: "1990-07"
+  end_date: ongoing
+  license_notes: Freely available for research.
+  retrieval_method: HTTPS GET zip
+  proxy_for: Europe equity region for REGIONAL_SEK
+  quality_status: PROXY
+  verification: ASSUMPTION
+  build_env: BLOCKED
+  notes: File name and start date from memory of the library layout - UNRESOLVED until fetched.
+  fetch: {provider: french, file: Europe_3_Factors_CSV.zip, returns: "Mkt-RF + RF"}
+
+- id: FF_EMERGING_MKT_TR
+  name: Fama/French Emerging Markets market total return (USD)
+  provider: Kenneth R. French Data Library
+  provider_series_id: Emerging_5_Factors (Mkt-RF + RF)
+  source_url: https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html
+  asset_class: equity
+  region: Emerging markets
+  currency: USD
+  frequency: monthly
+  is_total_return: true
+  start_date: UNRESOLVED (~1990s)
+  end_date: ongoing
+  license_notes: Freely available for research.
+  retrieval_method: HTTPS GET zip
+  proxy_for: EM equity region for REGIONAL_SEK
+  quality_status: PROXY
+  verification: ASSUMPTION
+  build_env: BLOCKED
+  notes: File name from memory - UNRESOLVED until fetched.
+  fetch: {provider: french, file: Emerging_5_Factors_CSV.zip, returns: "Mkt-RF + RF"}
+
+- id: RB_SEK_PER_USD
+  name: Riksbank USD/SEK fixing (SEK per 1 USD)
+  provider: Sveriges Riksbank SWEA API
+  provider_series_id: SEKUSDPMI
+  source_url: https://www.riksbank.se/en-gb/statistics/interest-rates-and-exchange-rates/retrieving-interest-rates-and-exchange-rates-via-api/
+  asset_class: fx
+  region: SE
+  currency: SEK per USD
+  frequency: daily (Swedish banking days)
+  is_total_return: false
+  start_date: UNRESOLVED
+  end_date: ongoing
+  license_notes: Riksbank open data; API terms and rate limits apply (optional key via Ocp-Apim-Subscription-Key).
+  retrieval_method: HTTPS GET /swea/v1/Observations/{id}/{from}/{to}
+  proxy_for: null
+  quality_status: VERIFIED
+  verification: VERIFIED FROM PRIMARY SOURCE
+  build_env: BLOCKED
+  notes: >-
+    Series id and convention ("how many SEK for one unit") confirmed in the Riksbank API FAQ
+    (search extract). The Observations/{id}/{from}/{to} path pattern is from a secondary R client.
+  fetch: {provider: riksbank, from: "1993-01-01"}
+
+- id: RB_SSVX_3M
+  name: Swedish Treasury bill 3-month yield (Riksbank)
+  provider: Sveriges Riksbank SWEA API
+  provider_series_id: SETB3MBENCH
+  source_url: https://www.riksbank.se/en-gb/statistics/interest-rates-and-exchange-rates/
+  asset_class: money_market_yield
+  region: SE
+  currency: SEK
+  frequency: daily
+  is_total_return: false
+  start_date: UNRESOLVED (target ~1983)
+  end_date: ongoing
+  license_notes: Riksbank open data.
+  retrieval_method: HTTPS GET /swea/v1/Observations/{id}/{from}/{to}
+  proxy_for: OMRX Treasury Bill Index (pre-2008 synthetic splice only)
+  quality_status: PROXY
+  verification: ASSUMPTION
+  build_env: BLOCKED
+  notes: >-
+    Series id is an ASSUMPTION - confirm via /swea/v1/Series. A yield; NEVER used directly as a
+    total-return index. Only allowed after yield_to_monthly_return() and only as a labelled proxy.
+  fetch: {provider: riksbank, from: "1983-01-01"}
+
+# --- licensed sources: supported via manual CSV export placed in data/manual/ -------
+
+- id: SPX_TR_OFFICIAL
+  name: S&P 500 Total Return Index (official, S&P Dow Jones Indices)
+  provider: S&P Dow Jones Indices
+  provider_series_id: SPXT
+  source_url: https://www.spglobal.com/spdji/en/indices/equity/sp-500/
+  asset_class: equity
+  region: US
+  currency: USD
+  frequency: daily
+  is_total_return: true
+  start_date: UNRESOLVED (daily TR officially from 1988; monthly back-calculations earlier)
+  end_date: ongoing
+  license_notes: Proprietary. No open API. Requires licence or manual export for personal research.
+  retrieval_method: manual CSV (date,value) -> data/manual/spx_tr.csv
+  proxy_for: null
+  quality_status: LICENSE_RESTRICTED
+  verification: UNRESOLVED
+  build_env: BLOCKED
+  notes: Required for GEM_ORIGINAL_STRICT.
+  fetch: {provider: local_csv, file: spx_tr.csv}
+
+- id: MSCI_ACWI_EXUS_OFFICIAL
+  name: MSCI ACWI ex USA (USD, gross or net - record which)
+  provider: MSCI
+  provider_series_id: "MSCI ACWI ex USA (index code 891800 per msci.com URL - UNRESOLVED)"
+  source_url: https://www.msci.com/end-of-day-history
+  asset_class: equity
+  region: ACWI ex USA (developed + emerging)
+  currency: USD
+  frequency: monthly/daily
+  is_total_return: true
+  start_date: UNRESOLVED (ACWI ex USA series starts 1987-12-31 in the third-party compilation; MSCI factsheets show performance from 2000-12-29)
+  end_date: ongoing
+  license_notes: Proprietary. MSCI end-of-day tool permits viewing/download for personal use; redistribution not allowed.
+  retrieval_method: manual CSV (date,value) -> data/manual/msci_acwi_exus.csv
+  proxy_for: null
+  quality_status: LICENSE_RESTRICTED
+  verification: UNRESOLVED
+  build_env: BLOCKED
+  notes: Required for GEM_ORIGINAL_STRICT.
+  fetch: {provider: local_csv, file: msci_acwi_exus.csv}
+
+- id: MSCI_ACWI_OFFICIAL
+  name: MSCI ACWI (USD) - global benchmark
+  provider: MSCI
+  provider_series_id: MSCI ACWI
+  source_url: https://www.msci.com/end-of-day-history
+  asset_class: equity
+  region: Global
+  currency: USD
+  frequency: monthly
+  is_total_return: true
+  start_date: UNRESOLVED
+  end_date: ongoing
+  license_notes: Proprietary (see above).
+  retrieval_method: manual CSV -> data/manual/msci_acwi.csv
+  proxy_for: null
+  quality_status: LICENSE_RESTRICTED
+  verification: UNRESOLVED
+  build_env: BLOCKED
+  notes: Needed for BUY_HOLD_GLOBAL / STATIC_70_30. No open substitute was found in the build env.
+  fetch: {provider: local_csv, file: msci_acwi.csv}
+
+- id: BBG_US_AGG_OFFICIAL
+  name: Bloomberg US Aggregate Bond Index total return
+  provider: Bloomberg Index Services
+  provider_series_id: LBUSTRUU
+  source_url: https://www.bloomberg.com/professional/products/indices/
+  asset_class: bond
+  region: US
+  currency: USD
+  frequency: monthly
+  is_total_return: true
+  start_date: "1976-01 (index inception; consistent with third-party compilation)"
+  end_date: ongoing
+  license_notes: Proprietary - licence required.
+  retrieval_method: manual CSV -> data/manual/us_agg.csv
+  proxy_for: null
+  quality_status: LICENSE_RESTRICTED
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: BLOCKED
+  notes: Required for GEM_ORIGINAL_STRICT.
+  fetch: {provider: local_csv, file: us_agg.csv}
+
+- id: NASDAQ_OMRXTBILL_FULL
+  name: OMRX Treasury Bill Index - full history from Nasdaq
+  provider: Nasdaq Global Indexes
+  provider_series_id: OMRXTBILL
+  source_url: https://indexes.nasdaq.com/Index/History/OMRXTBILL
+  asset_class: money_market_index
+  region: SE
+  currency: SEK
+  frequency: daily
+  is_total_return: true
+  start_date: UNRESOLVED (base date not confirmed)
+  end_date: ongoing
+  license_notes: Nasdaq index data terms - UNRESOLVED; no documented open API.
+  retrieval_method: manual CSV export -> data/manual/omrxtbill.csv
+  proxy_for: null
+  quality_status: LICENSE_RESTRICTED
+  verification: UNRESOLVED
+  build_env: BLOCKED
+  notes: Needed to run GEM_SEK before 2008-11 without a synthetic proxy.
+  fetch: {provider: local_csv, file: omrxtbill.csv}
+
+# =====================================================================================
+# B. SECONDARY MIRRORS / THIRD-PARTY COMPILATIONS (REACHABLE in build env)
+# =====================================================================================
+
+- id: H10_SEK_PER_USD
+  name: SEK per USD, H.10 daily (datahub 'exchange-rates' mirror of FRED DEXSDUS)
+  provider: datahub.io core datasets (GitHub mirror of FRED)
+  provider_series_id: "exchange-rates/data/daily.csv, Country=Sweden"
+  source_url: https://github.com/datasets/exchange-rates
+  asset_class: fx
+  region: SE/US
+  currency: SEK per USD
+  frequency: daily
+  is_total_return: false
+  start_date: "1971-01-04"
+  end_date: ongoing (mirror auto-updated)
+  license_notes: Underlying data public domain (Federal Reserve); mirror PDDL.
+  retrieval_method: HTTPS GET raw.githubusercontent.com
+  proxy_for: FRED_DEXSDUS
+  quality_status: VERIFIED
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: REACHABLE
+  notes: README states Sweden is quoted currency/USD (= SEK per USD). Cross-check vs FRED_DEXSDUS once FRED is reachable.
+  fetch: {provider: github_h10, country: Sweden, url: "https://raw.githubusercontent.com/datasets/exchange-rates/main/data/daily.csv"}
+
+- id: SHILLER_SP_TR
+  name: S&P Composite total return from Shiller data (datahub 's-and-p-500' mirror)
+  provider: Robert Shiller (Yale) via datahub.io GitHub mirror
+  provider_series_id: "s-and-p-500/data/data.csv (SP500, Dividend)"
+  source_url: https://github.com/datasets/s-and-p-500
+  asset_class: equity
+  region: US
+  currency: USD
+  frequency: monthly
+  is_total_return: true
+  start_date: "1871-01"
+  end_date: "2023-06 (dividends end; later rows price-only and dropped)"
+  license_notes: Shiller data publicly available; mirror PDDL.
+  retrieval_method: HTTPS GET raw.githubusercontent.com
+  proxy_for: S&P 500 total return
+  quality_status: PROXY
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: REACHABLE
+  notes: >-
+    Prices are MONTHLY AVERAGES of daily closes (not month-end) and dividends are interpolated.
+    This smooths returns and shifts timing by ~half a month -> unsuitable for signals; used only
+    for cross-validation of other US equity series.
+  fetch: {provider: github_shiller, url: "https://raw.githubusercontent.com/datasets/s-and-p-500/main/data/data.csv"}
+
+- id: ARCH_FF_US_MKT_TR
+  name: Fama/French US market TR (Mkt-RF + RF), snapshot bundled in PyPI 'arch' 8.0.0
+  provider: Kenneth R. French Data Library via the arch package
+  provider_series_id: "arch/data/frenchdata/frenchdata.csv.gz (Mkt-RF + RF)"
+  source_url: https://pypi.org/project/arch/
+  asset_class: equity
+  region: US
+  currency: USD
+  frequency: monthly
+  is_total_return: true
+  start_date: "1926-07"
+  end_date: "2018-11"
+  license_notes: Ken French data, redistributed in an NCSA-licensed package.
+  retrieval_method: installed package file
+  proxy_for: FF_US_MKT_TR
+  quality_status: PROXY
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: REACHABLE
+  notes: Stale snapshot (Ken French revises files). Cross-validation only.
+  fetch: {provider: pypi_arch_french, returns: "Mkt-RF + RF"}
+
+- id: ARCH_FF_RF
+  name: Fama/French RF (1-month T-bill return), snapshot bundled in PyPI 'arch' 8.0.0
+  provider: Kenneth R. French Data Library via the arch package
+  provider_series_id: "arch/data/frenchdata/frenchdata.csv.gz (RF)"
+  source_url: https://pypi.org/project/arch/
+  asset_class: money_market_return
+  region: US
+  currency: USD
+  frequency: monthly
+  is_total_return: true
+  start_date: "1926-07"
+  end_date: "2018-11"
+  license_notes: As above.
+  retrieval_method: installed package file
+  proxy_for: FF_RF
+  quality_status: PROXY
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: REACHABLE
+  notes: Cross-validation of T-bill series only.
+  fetch: {provider: pypi_arch_french, returns: "RF"}
+
+# --- alexjansenhome/GEM third-party compilation (one file, many columns) --------------
+# File: msci_all_gross.csv, last row 2017-05-12. Header rows name the source of each
+# column (MSCI, Morningstar, Yahoo, Ibbotson, FRED). The compiler, extraction dates and
+# exact index variants are NOT documented -> every column is EXPERIMENTAL at best.
+# Ibbotson (SBBI) and Bloomberg/Morningstar data are proprietary; the redistribution
+# status of this file is unclear -> raw file is cached locally, never committed.
+
+- id: AJ_MSCI_ACWI_EXUS_GR
+  name: MSCI ACWI ex USA gross (USD) - third-party compilation column 'ACWI ex USA'
+  provider: alexjansenhome/GEM (GitHub), labelled source MSCI
+  provider_series_id: "msci_all_gross.csv: ACWI ex USA"
+  source_url: https://github.com/alexjansenhome/GEM
+  asset_class: equity
+  region: ACWI ex USA
+  currency: USD
+  frequency: monthly
+  is_total_return: true
+  start_date: "1987-12-31 (base 100)"
+  end_date: "2016-12-30"
+  license_notes: MSCI proprietary; third-party redistribution - research use only, do not publish raw values.
+  retrieval_method: HTTPS GET raw.githubusercontent.com
+  proxy_for: MSCI_ACWI_EXUS_OFFICIAL
+  quality_status: EXPERIMENTAL
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: REACHABLE
+  notes: Exactly the index GEM specifies, but unverified copy. 'Gross' per file name.
+  fetch: {provider: github_aj, column: "ACWI ex USA", cache_key: aj_msci_all_gross, url: "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv"}
+
+- id: AJ_MSCI_WORLD_EXUS_GR
+  name: MSCI World ex USA gross (USD) - compilation column 'WORLD ex USA'
+  provider: alexjansenhome/GEM (GitHub), labelled source MSCI
+  provider_series_id: "msci_all_gross.csv: WORLD ex USA"
+  source_url: https://github.com/alexjansenhome/GEM
+  asset_class: equity
+  region: World ex USA (developed only)
+  currency: USD
+  frequency: monthly
+  is_total_return: true
+  start_date: "1969-12-31"
+  end_date: "2016-12-30"
+  license_notes: MSCI proprietary; research use only.
+  retrieval_method: HTTPS GET raw.githubusercontent.com
+  proxy_for: MSCI ACWI ex USA (pre-1988 splice only)
+  quality_status: EXPERIMENTAL
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: REACHABLE
+  notes: Developed-only; used as the pre-1988 ex-US proxy in GEM_ORIGINAL_PROXY_3P (EM weight was small before 1988).
+  fetch: {provider: github_aj, column: "WORLD ex USA", cache_key: aj_msci_all_gross, url: "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv"}
+
+- id: AJ_MSCI_USA_GR
+  name: MSCI USA gross (USD) - compilation column 'USA'
+  provider: alexjansenhome/GEM (GitHub), labelled source MSCI
+  provider_series_id: "msci_all_gross.csv: USA"
+  source_url: https://github.com/alexjansenhome/GEM
+  asset_class: equity
+  region: US
+  currency: USD
+  frequency: monthly
+  is_total_return: true
+  start_date: "1969-12-31"
+  end_date: "2016-12-30"
+  license_notes: MSCI proprietary; research use only.
+  retrieval_method: HTTPS GET raw.githubusercontent.com
+  proxy_for: S&P 500 total return (cross-check only)
+  quality_status: EXPERIMENTAL
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: REACHABLE
+  notes: Cross-validation only.
+  fetch: {provider: github_aj, column: "USA", cache_key: aj_msci_all_gross, url: "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv"}
+
+- id: AJ_SP500TR
+  name: S&P 500 total return (Yahoo ^SP500TR) - compilation column 'SP500TR'
+  provider: alexjansenhome/GEM (GitHub), labelled source Yahoo
+  provider_series_id: "msci_all_gross.csv: SP500TR"
+  source_url: https://github.com/alexjansenhome/GEM
+  asset_class: equity
+  region: US
+  currency: USD
+  frequency: monthly
+  is_total_return: true
+  start_date: "1988-01-29"
+  end_date: "2016-12-30"
+  license_notes: S&P DJI proprietary; research use only.
+  retrieval_method: HTTPS GET raw.githubusercontent.com
+  proxy_for: SPX_TR_OFFICIAL
+  quality_status: EXPERIMENTAL
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: REACHABLE
+  notes: Exactly the index GEM specifies, unverified copy.
+  fetch: {provider: github_aj, column: "SP500TR", cache_key: aj_msci_all_gross, url: "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv"}
+
+- id: AJ_IBBOTSON_LARGE
+  name: Ibbotson SBBI US Large Company Stocks TR - compilation column 'Large Caps'
+  provider: alexjansenhome/GEM (GitHub), labelled source Ibbotson
+  provider_series_id: "msci_all_gross.csv: Large Caps"
+  source_url: https://github.com/alexjansenhome/GEM
+  asset_class: equity
+  region: US
+  currency: USD
+  frequency: monthly
+  is_total_return: true
+  start_date: "1969-12-31"
+  end_date: "2012-12-31"
+  license_notes: Ibbotson/Morningstar proprietary; research use only.
+  retrieval_method: HTTPS GET raw.githubusercontent.com
+  proxy_for: S&P 500 total return (pre-1988 splice)
+  quality_status: EXPERIMENTAL
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: REACHABLE
+  notes: SBBI Large Company Stocks is essentially S&P 500 TR (S&P 90 before 1957).
+  fetch: {provider: github_aj, column: "Large Caps", cache_key: aj_msci_all_gross, url: "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv"}
+
+- id: AJ_US_AGG
+  name: US Aggregate bond TR (Morningstar) - compilation column 'AGG'
+  provider: alexjansenhome/GEM (GitHub), labelled source Morningstar
+  provider_series_id: "msci_all_gross.csv: AGG"
+  source_url: https://github.com/alexjansenhome/GEM
+  asset_class: bond
+  region: US
+  currency: USD
+  frequency: monthly
+  is_total_return: true
+  start_date: "1975-12-31 (base 100)"
+  end_date: "2016-12-30"
+  license_notes: Bloomberg/Morningstar proprietary; research use only.
+  retrieval_method: HTTPS GET raw.githubusercontent.com
+  proxy_for: BBG_US_AGG_OFFICIAL
+  quality_status: EXPERIMENTAL
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: REACHABLE
+  notes: Presumed Bloomberg (Barclays) US Aggregate TR; exact variant undocumented.
+  fetch: {provider: github_aj, column: "AGG", cache_key: aj_msci_all_gross, url: "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv"}
+
+- id: AJ_IBBOTSON_IT_GOVT
+  name: Ibbotson SBBI Intermediate-Term Government Bonds TR - column 'Mid-Treasuries'
+  provider: alexjansenhome/GEM (GitHub), labelled source Ibbotson
+  provider_series_id: "msci_all_gross.csv: Mid-Treasuries"
+  source_url: https://github.com/alexjansenhome/GEM
+  asset_class: bond
+  region: US
+  currency: USD
+  frequency: monthly
+  is_total_return: true
+  start_date: "1969-12-31"
+  end_date: "1999-12-31"
+  license_notes: Ibbotson proprietary; research use only.
+  retrieval_method: HTTPS GET raw.githubusercontent.com
+  proxy_for: US aggregate bonds (pre-1976 splice)
+  quality_status: EXPERIMENTAL
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: REACHABLE
+  notes: Antonacci reports using Ibbotson Intermediate Government bonds to extend GEM to 1970 (optimalmomentum.com, search extract).
+  fetch: {provider: github_aj, column: "Mid-Treasuries", cache_key: aj_msci_all_gross, url: "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv"}
+
+- id: AJ_TBILL_3M_TR
+  name: 3-month T-bill TR index built from TB3MS - compilation column '3 MONTH'
+  provider: alexjansenhome/GEM (GitHub), labelled source FRED (TB3MS)
+  provider_series_id: "msci_all_gross.csv: 3 MONTH"
+  source_url: https://github.com/alexjansenhome/GEM
+  asset_class: money_market_return
+  region: US
+  currency: USD
+  frequency: monthly
+  is_total_return: true
+  start_date: "1969-12-31"
+  end_date: "2017-05-12"
+  license_notes: Derived from public-domain FRED data.
+  retrieval_method: HTTPS GET raw.githubusercontent.com
+  proxy_for: US 3-month T-bill total return
+  quality_status: EXPERIMENTAL
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: REACHABLE
+  notes: >-
+    Construction reverse-engineered in reports/generated/data_quality.md: monthly return = TB3MS
+    of the SAME month / 1200 (corr 0.9997 vs 0.990 for the prior-month rule). The month's average
+    yield is known at that month end, so this is not look-ahead for a month-end signal, but it is a
+    timing approximation of the realised bill return. Agrees with Ken French RF (1-month bills)
+    to 0.16%/yr tracking error.
+  fetch: {provider: github_aj, column: "3 MONTH", cache_key: aj_msci_all_gross, url: "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv"}
+
+- id: AJ_TB3MS_YIELD
+  name: TB3MS yield (percent) - compilation column '3-Month Bill'
+  provider: alexjansenhome/GEM (GitHub), labelled source FRED (TB3MS)
+  provider_series_id: "msci_all_gross.csv: 3-Month Bill"
+  source_url: https://github.com/alexjansenhome/GEM
+  asset_class: money_market_yield
+  region: US
+  currency: USD
+  frequency: monthly
+  is_total_return: false
+  start_date: "1969-12-31"
+  end_date: "2017-04-28"
+  license_notes: Public-domain FRED data.
+  retrieval_method: HTTPS GET raw.githubusercontent.com
+  proxy_for: FRED_TB3MS
+  quality_status: EXPERIMENTAL
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: REACHABLE
+  notes: Used only to test the yield->return transformation.
+  fetch: {provider: github_aj, column: "3-Month Bill", cache_key: aj_msci_all_gross, url: "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv"}
+
+- id: AJ_IBBOTSON_TBILL_30D
+  name: Ibbotson 30-day T-bill TR - compilation column '30 day Treas Bills'
+  provider: alexjansenhome/GEM (GitHub), labelled source Ibbotson
+  provider_series_id: "msci_all_gross.csv: 30 day Treas Bills"
+  source_url: https://github.com/alexjansenhome/GEM
+  asset_class: money_market_return
+  region: US
+  currency: USD
+  frequency: monthly
+  is_total_return: true
+  start_date: "1969-12-31"
+  end_date: "2012-12-31"
+  license_notes: Ibbotson proprietary; research use only.
+  retrieval_method: HTTPS GET raw.githubusercontent.com
+  proxy_for: US T-bill total return (cross-check)
+  quality_status: UNUSABLE
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: REACHABLE
+  notes: >-
+    UNUSABLE: transcription errors detected by the quality checks - the Nov 1990, Nov 1991 and
+    Nov 1992 levels lost their leading digit (e.g. 0.366 instead of 10.366), producing -96% / +2749%
+    monthly "returns". Evidence that the compilation was assembled by hand. Not used in any run.
+  fetch: {provider: github_aj, column: "30 day Treas Bills", cache_key: aj_msci_all_gross, url: "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv"}

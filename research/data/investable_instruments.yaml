@@ -1,0 +1,101 @@
+# Candidate investable instruments (Avanza funds). RESEARCH ONLY - no trading.
+#
+# Verification (2026-10-31): avanza.se and investors.avanza.se could NOT be opened from the
+# build environment. Facts below come from web-search extracts of official Avanza pages and
+# PDFs (marked "primary, search extract") or from third-party fund sites (marked "secondary").
+# Every field must be re-verified against the current information brochure (informationsbroschyr)
+# and KID/PRIIP document before real money is used.
+#
+# IMPORTANT: a fund is an INVESTABLE_INSTRUMENT, never a SIGNAL_INDEX. Fund NAV must not be
+# used before launch_date (enforced by execution.assert_not_before_launch).
+
+verified_at: "2026-10-31"
+general:
+  nav_publication: "NAV for all Avanza funds published one banking day after the trade date (T+1) - Avanza FAQ 'När sätts fondkursen?' (primary, search extract)"
+  generic_cutoff: "Avanza FAQ: fund trading cut-off usually 13:00, 10:00 on half days; fund-specific times override (primary, search extract)"
+  faq_source: https://www.avanza.se/kundservice.html/588/nar-satts-fondkursen/
+
+instruments:
+
+- name: Avanza USA
+  isin: SE0012741163                       # secondary (insidevoice.se, borskollen.se)
+  provider: Avanza Fonder AB
+  category: Equity - USA, index
+  benchmark: "Morningstar US TME Paris Aligned Benchmark Sustainability Select (primary, search extract of Avanza fund page)"
+  replication: "Direct replication since spring 2024 (previously feeder into an Amundi index fund) - Avanza blog, search extract"
+  currency: SEK
+  ongoing_charge: "0.18% total, 0.17% management fee (Avanza fund page, search extract)"
+  launch_date: UNRESOLVED
+  cutoff_time: "UNRESOLVED (possibly 15:00, 12:00 day before holiday - garbled brochure extract)"
+  settlement_notes: "Forward pricing; NAV published T+1. Sell->buy switch settlement lag UNRESOLVED."
+  signal_index_mapping: "US leg of GEM_SEK / REGIONAL_SEK. NOT the S&P 500: ESG/Paris-aligned selection (~330-500 stocks, sources disagree). Tracking vs S&P 500 TR must be measured."
+  source:
+    - https://www.avanza.se/fonder/om-fonden.html/1025150/avanza-usa
+    - https://investors.avanza.se/files/Avanza_fonder/Informationsbroschyr/informationsbroschyr_avanza-usa_2026-02-02.pdf
+  verified_at: "2026-10-31 (search extract only)"
+
+- name: Avanza Europa
+  isin: UNRESOLVED
+  provider: Avanza Fonder AB
+  category: Equity - Europe, index
+  benchmark: "Morningstar Developed Europe TME Paris Aligned Benchmark Sustainability Select (primary, search extract of 2026 brochure)"
+  replication: "Direct replication since spring 2024 (previously Amundi feeder)"
+  currency: SEK
+  ongoing_charge: "management fee 0.16% (2026 brochure, search extract); total ongoing charge UNRESOLVED"
+  launch_date: "2020-02-05"               # primary, search extract of 2023 Avanza brochure
+  cutoff_time: UNRESOLVED
+  settlement_notes: "Forward pricing; NAV T+1."
+  signal_index_mapping: "Europe leg of REGIONAL_SEK. Not MSCI Europe."
+  source:
+    - https://investors.avanza.se/files/Avanza_fonder/Informationsbroschyr/informationsbroschyr_avanza-europa_2026-05-26.pdf
+  verified_at: "2026-10-31 (search extract only)"
+
+- name: Avanza Emerging Markets
+  isin: SE0012454338                       # primary, search extract of May 2026 factsheet
+  provider: Avanza Fonder AB
+  category: Equity - Emerging markets, feeder fund
+  benchmark: "Feeder (>=85%) into Amundi Core MSCI Emerging Markets (share class I13SK) -> MSCI Emerging Markets; exact NR/GR variant UNRESOLVED"
+  replication: "Feeder fund"
+  currency: SEK
+  ongoing_charge: "0.30% total, 0.15% management fee (Avanza fund page, search extract); 2026 brochure: management 0.15%"
+  launch_date: "2019 (exact date UNRESOLVED)"
+  cutoff_time: UNRESOLVED
+  settlement_notes: "Feeder structure may add a day to order handling - UNRESOLVED."
+  signal_index_mapping: "EM leg of REGIONAL_SEK."
+  source:
+    - https://investors.avanza.se/files/Avanza_fonder/Faktablad/sv_20260526-1611-avanza_emerging_markets.pdf
+    - https://investors.avanza.se/files/Avanza_fonder/Informationsbroschyr/informationsbroschyr_avanza-emerging-markets_2026-03-09.pdf
+  verified_at: "2026-10-31 (search extract only)"
+
+- name: Avanza Global
+  isin: SE0011527613                       # secondary (several fund sites)
+  provider: Avanza Fonder AB
+  category: Equity - Global developed, index
+  benchmark: "Morningstar Developed Markets TME Paris Aligned Benchmark Sustainability Select (primary, search extract of 2026 brochure). NOT MSCI World (older feeder structure tracked Amundi Index MSCI World)."
+  replication: "Direct replication since 2024"
+  currency: SEK
+  ongoing_charge: "UNRESOLVED - sources give 0.05%-0.11%"
+  launch_date: UNRESOLVED
+  cutoff_time: "12:00 (10:30 day before holiday) per 2024 brochure (search extract) - re-verify"
+  settlement_notes: "Forward pricing; NAV T+1."
+  signal_index_mapping: "Developed markets incl. USA, NO emerging markets -> NOT a substitute for the ex-US leg and NOT MSCI ACWI. Candidate implementation for BUY_HOLD_GLOBAL only (with that caveat)."
+  source:
+    - https://investors.avanza.se/files/Avanza_fonder/Informationsbroschyr/informationsbroschyr_avanza-global_2026-05-04.pdf
+  verified_at: "2026-10-31 (search extract only)"
+
+- name: Avanza Ränta Kort
+  isin: SE0021021425                       # secondary (borskollen.se)
+  provider: Avanza Fonder AB
+  category: Fixed income - short SEK, feeder fund
+  benchmark: "None - brochure states no representative benchmark exists (primary, search extract)"
+  replication: "Feeder (>=85%) into Captor Perenne Short Term Bond; mainly Swedish AAA covered bonds (bostadsobligationer), expected average maturity < 1 year"
+  currency: SEK
+  ongoing_charge: "0.09% total, 0.03% management fee (Avanza fund page / Feb-2026 brochure, search extract); max management fee 0.25%"
+  launch_date: "2023 (exact date UNRESOLVED)"
+  cutoff_time: UNRESOLVED
+  settlement_notes: "Forward pricing; NAV T+1."
+  signal_index_mapping: "Defensive asset for GEM_SEK / REGIONAL_SEK. Holds covered bonds, not T-bills: carries credit/spread risk that the OMRX T-bill hurdle does not. Expected to differ from OMRXTBILL."
+  source:
+    - https://www.avanza.se/fonder/om-fonden.html/1684019/avanza-ranta-kort
+    - https://investors.avanza.se/files/Avanza_fonder/Informationsbroschyr/informationsbroschyr_avanza-ranta-kort_2026-03-09.pdf
+  verified_at: "2026-10-31 (search extract only)"

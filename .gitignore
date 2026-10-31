@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/
+# Raw and processed market data are NOT committed: several sources are
+# licensed (MSCI, Ibbotson/Morningstar, S&P, Nasdaq). They are re-downloaded
+# and checksum-verified by `python -m gem.research`. Manifests ARE committed.
+research/data/raw/**
+!research/data/raw/.gitkeep
+research/data/processed/**
+!research/data/processed/.gitkeep
+# Per-run monthly series of benchmark runs are effectively redistributed index
+# returns (MSCI/S&P/Bloomberg) -> not committed. Summary metrics, annual returns,
+# signal histories and regime changes of strategy runs ARE committed.
+research/reports/generated/runs/**/monthly.csv
+research/reports/generated/runs/BUY_HOLD_*/**
+research/reports/generated/runs/STATIC_*/**
+research/data/manual/**

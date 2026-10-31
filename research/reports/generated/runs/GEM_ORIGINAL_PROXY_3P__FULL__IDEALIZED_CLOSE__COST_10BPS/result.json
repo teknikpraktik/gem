@@ -1,0 +1,48 @@
+{
+  "cost_per_side_bps": 10.0,
+  "data_tier": "EXTENDED_PROXY",
+  "execution": "IDEALIZED_CLOSE",
+  "lookahead_free": false,
+  "metrics": {
+    "annual_turnover": 1.3695652173913044,
+    "average_holding_period_months": 8.625,
+    "best_year": 1986,
+    "best_year_return": 0.6584085012659209,
+    "cagr": 0.16069234971791424,
+    "calmar": 0.8403450292142063,
+    "end_date": "2016-12-31",
+    "end_value": 9483914.06175252,
+    "longest_drawdown_months": 37,
+    "longest_drawdown_span": "2007-10-31..2010-11-30",
+    "longest_underperformance_span": "1974-09-30..1984-02-29",
+    "longest_underperformance_vs_benchmark_months": 113,
+    "max_drawdown": -0.1912218721257567,
+    "months": 552,
+    "no_signal_count": 16,
+    "number_of_switches": 63,
+    "sharpe": 0.8752415946299327,
+    "sharpe_rf": "hurdle/T-bill series of the run",
+    "sortino": 1.485799300621207,
+    "start_date": "1971-01-31",
+    "start_value": 10000.0,
+    "switches_per_year": 1.3695652173913044,
+    "time_in_asset": {
+      "EX_US_EQUITIES": 0.286231884057971,
+      "US_AGG_BONDS": 0.2807971014492754,
+      "US_EQUITIES": 0.4329710144927536
+    },
+    "volatility": 0.125268585324953,
+    "worst_year": 2000,
+    "worst_year_return": -0.17142113554540994
+  },
+  "notes": [
+    "US: Ibbotson Large Co. TR to 1988-01, then S&P 500 TR.",
+    "ex-US: MSCI World ex USA (developed only) to 1987-12, then MSCI ACWI ex USA.",
+    "Bonds: Ibbotson Intermediate Government to 1975-12, then US Aggregate.",
+    "All from the unverified third-party compilation."
+  ],
+  "run_id": "GEM_ORIGINAL_PROXY_3P__FULL__IDEALIZED_CLOSE__COST_10BPS",
+  "stop_reason": "stopped before 2017-01-31: no return for held asset(s) ['US_EQUITIES']",
+  "strategy_id": "GEM_ORIGINAL",
+  "strategy_version": "1.0.0"
+}
