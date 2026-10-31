@@ -209,3 +209,17 @@ def test_panel_leg_uses_level_based_conversion():
     r, _ = leg_returns(Leg((("U", None),), fx_to_sek="FX"), data, cat)
     assert r.loc["2020-02-29"] == pytest.approx(1210 / 1000 - 1)
     assert r.loc["2020-03-31"] == pytest.approx(99 * 11 / 1210 - 1)
+
+
+def test_daily_cash_from_yield_uses_previous_quote_act365():
+    from gem.panel import daily_cash_level_from_yield
+    y = pd.Series([3.65, 10.0, 3.65], index=pd.to_datetime(["2024-01-01", "2024-01-02", "2024-01-05"]))
+    lv = daily_cash_level_from_yield(y)
+    assert lv.iloc[1] == pytest.approx(100 * (1 + 0.0365 / 365))          # yield of day 0, not day 1
+    assert lv.iloc[2] == pytest.approx(lv.iloc[1] * (1 + 0.10 * 3 / 365))  # 3 calendar days at prior yield
+
+
+def test_daily_cash_gap_not_bridged():
+    from gem.panel import daily_cash_level_from_yield
+    y = pd.Series([3.0, 3.0], index=pd.to_datetime(["2024-01-01", "2024-01-20"]))
+    assert np.isnan(daily_cash_level_from_yield(y).iloc[1])

@@ -280,8 +280,10 @@ series:
   proxy_for: Europe equity region for REGIONAL_SEK
   quality_status: PROXY
   verification: ASSUMPTION
-  build_env: BLOCKED
-  notes: File name and start date from memory of the library layout - UNRESOLVED until fetched.
+  build_env: REACHABLE
+  notes: >-
+    Fetched 2026-10-31 (GitHub Actions). File header: 'created using the ... Bloomberg database';
+    monthly percent returns, -99.99 = missing; observed 1990-07 onwards.
   fetch: {provider: french, file: Europe_3_Factors_CSV.zip, returns: "Mkt-RF + RF"}
 
 - id: FF_EMERGING_MKT_TR
@@ -913,7 +915,7 @@ series:
   fetch: {provider: french, file: Europe_3_Factors_Daily_CSV.zip, returns: "Mkt-RF + RF", daily: true}
 
 - id: FF_EMERGING_MKT_TR_DAILY
-  name: Fama/French Emerging markets TR daily (USD)
+  name: Fama/French Emerging markets TR daily (USD) - DOES NOT EXIST
   provider: Kenneth R. French Data Library
   provider_series_id: Emerging_5_Factors_Daily (Mkt-RF + RF)
   source_url: https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html
@@ -922,16 +924,40 @@ series:
   currency: USD
   frequency: daily
   is_total_return: true
-  start_date: UNRESOLVED
-  end_date: ongoing
+  start_date: n/a
+  end_date: n/a
   license_notes: Freely available for research.
   retrieval_method: HTTPS GET zip
   proxy_for: EM region (daily execution model)
-  quality_status: PROXY
-  verification: ASSUMPTION
-  build_env: BLOCKED
-  notes: File name ASSUMPTION.
+  quality_status: UNUSABLE
+  verification: VERIFIED FROM PRIMARY SOURCE
+  build_env: REACHABLE
+  notes: >-
+    HTTP 404 from the Ken French server on 2026-10-31 (GitHub Actions run 41184283853): the library
+    publishes Emerging-market factors MONTHLY only. No open daily EM series is known, so
+    REGIONAL_SEK cannot be evaluated in daily scenarios B/C with Ken French data.
   fetch: {provider: french, file: Emerging_5_Factors_Daily_CSV.zip, returns: "Mkt-RF + RF", daily: true}
+
+- id: FF_DEV_EXUS_MKT_TR_DAILY
+  name: Fama/French Developed ex US market TR daily (USD) = Mkt-RF + RF
+  provider: Kenneth R. French Data Library
+  provider_series_id: Developed_ex_US_3_Factors_Daily (Mkt-RF + RF)
+  source_url: https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_3developed.html
+  asset_class: equity
+  region: Developed ex US (NO emerging markets)
+  currency: USD
+  frequency: daily
+  is_total_return: true
+  start_date: "1990-07-02"
+  end_date: ongoing
+  license_notes: Freely available for research.
+  retrieval_method: HTTPS GET zip
+  proxy_for: ex-US leg (daily execution model, developed-only)
+  quality_status: EXPERIMENTAL
+  verification: ASSUMPTION
+  build_env: REACHABLE
+  notes: File name ASSUMPTION (monthly counterpart exists).
+  fetch: {provider: french, file: Developed_ex_US_3_Factors_Daily_CSV.zip, returns: "Mkt-RF + RF", daily: true}
 
 - id: RB_SEK_PER_USD_DAILY_H10
   name: SEK per USD daily (H.10 mirror) - same raw file as H10_SEK_PER_USD

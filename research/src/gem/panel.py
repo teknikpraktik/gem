@@ -107,9 +107,12 @@ def daily_level(leg: Leg, data: dict[str, pd.Series], catalog: dict[str, dict], 
         raise ValueError("daily legs must have exactly one segment")
     sid = leg.segments[0][0]
     e = catalog[sid]
-    if not e["is_total_return"]:
-        raise ValueError(f"{sid}: daily execution needs a total-return level series")
-    lv = data[sid].sort_index()
+    if e["is_total_return"]:
+        lv = data[sid].sort_index()
+    elif e["asset_class"] == "money_market_yield":
+        lv = daily_cash_level_from_yield(data[sid])
+    else:
+        raise ValueError(f"{sid}: daily execution needs a total-return level or a money-market yield")
     if leg.fx_to_sek:
         fx = data[leg.fx_to_sek].sort_index()
         check_sek_per_usd(fx)
@@ -119,6 +122,27 @@ def daily_level(leg: Leg, data: dict[str, pd.Series], catalog: dict[str, dict], 
         fx_on = fx_on.where(age <= max_fx_gap_days)
         lv = lv * fx_on.reindex(lv.index)
     return lv.dropna().rename(sid)
+
+
+def daily_cash_level_from_yield(y_pct: pd.Series, base: float = 100.0) -> pd.Series:
+    """Daily synthetic cash index (SE_CASH_SSVX_SYNTH_V1, daily form).
+
+    Between consecutive quote dates d0 < d1 the index accrues the yield known at d0:
+        L(d1) = L(d0) * (1 + y(d0)/100 * (d1 - d0).days / 365)
+    ACT/365 keeps it consistent with the monthly model r_t = y_{t-1}/12. Only the
+    yield of the previous quote date is used (no look-ahead). Gaps longer than 7
+    calendar days break the series (NaN), they are not bridged.
+    """
+    y = y_pct.dropna().sort_index()
+    out = [base]
+    for i in range(1, len(y)):
+        days = (y.index[i] - y.index[i - 1]).days
+        if days > 7:
+            out.append(float("nan"))
+            continue
+        prev = out[-1] if out[-1] == out[-1] else base
+        out.append(prev * (1 + y.iloc[i - 1] / 100 * days / 365))
+    return pd.Series(out, index=y.index, name=y.name)
 
 
 def build_daily_levels(run: RunSpec, data: dict[str, pd.Series], catalog: dict[str, dict]) -> pd.DataFrame:

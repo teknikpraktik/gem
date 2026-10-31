@@ -30,10 +30,32 @@ from .base import FetchError, RawFile, RawStore
 # --------------------------------------------------------------------------
 
 def fred_url(entry: dict) -> str:
-    return f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={entry['provider_series_id']}"
+    """Official FRED API (api.stlouisfed.org) when FRED_API_KEY is set, else fredgraph.csv.
+
+    fredgraph.csv timed out from GitHub-hosted runners (2026-10-31); the documented
+    API with a free key is the supported programmatic route. The key is read from the
+    environment (GitHub Actions secret) and redacted from every log/manifest.
+    """
+    import os
+
+    sid = entry["provider_series_id"]
+    key = os.environ.get("FRED_API_KEY")
+    if key:
+        return ("https://api.stlouisfed.org/fred/series/observations"
+                f"?series_id={sid}&api_key={key}&file_type=json&observation_start=1776-07-04")
+    return f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={sid}"
 
 
 def parse_fred_csv(raw: bytes, entry: dict) -> pd.Series:
+    """Parses both fredgraph.csv and the official API JSON (observations[].date/value, '.' = missing)."""
+    if raw.lstrip()[:1] == b"{":
+        doc = json.loads(raw)
+        if "observations" not in doc:
+            raise ValueError(f"FRED API error: {str(doc)[:200]}")
+        obs = doc["observations"]
+        s = pd.Series([pd.to_numeric(o["value"], errors="coerce") for o in obs],
+                      index=pd.to_datetime([o["date"] for o in obs]), name=entry["id"], dtype=float)
+        return s.dropna()
     df = pd.read_csv(io.BytesIO(raw), na_values=["."])
     date_col = df.columns[0]
     if date_col.upper() not in ("DATE", "OBSERVATION_DATE"):

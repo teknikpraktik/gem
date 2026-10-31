@@ -38,6 +38,10 @@ jobs:
       PYTHONUNBUFFERED: "1"
       # Optional: higher Riksbank rate limits. Set in Settings > Secrets > Actions if needed.
       RIKSBANK_API_KEY: ${{ secrets.RIKSBANK_API_KEY }}
+      # Optional: free FRED API key (https://fred.stlouisfed.org/docs/api/api_key.html).
+      # fredgraph.csv times out from GitHub-hosted runners; with this secret the engine
+      # uses the official api.stlouisfed.org endpoint instead. Never printed (redacted).
+      FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -71,6 +75,8 @@ jobs:
           }
           check FRED_HOME       "https://fred.stlouisfed.org/"
           check FRED_OMRX       "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NASDAQOMRXTBILL"
+          check FRED_API_NOKEY  "https://api.stlouisfed.org/fred/series?series_id=DTB3&file_type=json"
+          echo "| FRED_API_KEY secret | configured: $([ -n "$FRED_API_KEY" ] && echo yes || echo no) | | | |" >> $out
           check RIKSBANK_HOME   "https://api.riksbank.se/swea/v1/Series"
           check RIKSBANK_SSVX3M "https://api.riksbank.se/swea/v1/Observations/SETB3MBENCH/2024-01-01/2024-01-31"
           check KEN_FRENCH_HOME "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html"

@@ -180,6 +180,23 @@ def write_result_checksums(gen: Path) -> None:
     (gen / "checksums.sha256").write_text("\n".join(lines) + "\n")
 
 
+def write_fx_diagnostics(data: dict, out_dir: Path) -> None:
+    """Month-end USD/SEK from Riksbank (Stockholm fixing) vs H.10 (New York noon)."""
+    if "RB_SEK_PER_USD" not in data or "H10_SEK_PER_USD" not in data:
+        return
+    out_dir.mkdir(parents=True, exist_ok=True)
+    a = to_month_end(data["RB_SEK_PER_USD"])
+    b = to_month_end(data["H10_SEK_PER_USD"])
+    df = pd.DataFrame({"riksbank": a["value"], "riksbank_obs_date": a["obs_date"],
+                       "h10": b["value"], "h10_obs_date": b["obs_date"]}).dropna()
+    df["level_diff_pct"] = df["riksbank"] / df["h10"] - 1
+    df["ret_riksbank"] = df["riksbank"].pct_change()
+    df["ret_h10"] = df["h10"].pct_change()
+    df["ret_diff"] = df["ret_riksbank"] - df["ret_h10"]
+    df.index = df.index.strftime("%Y-%m-%d")
+    df.to_csv(out_dir / "fx_riksbank_vs_h10.csv", float_format="%.6g")
+
+
 def write_raw_samples(catalog: dict, status: dict, out_dir: Path, nbytes: int = 1500) -> None:
     """Small excerpt of every primary-source raw response (debugging format changes).
 
@@ -301,6 +318,7 @@ def main(argv=None) -> int:
             "level (total-return index)" if catalog[sid]["is_total_return"] else "none (not a return series)")
     quality = {sid: quality_report(s, catalog[sid]) for sid, s in data.items()}
     xval = cross_validation(data)
+    write_fx_diagnostics(data, root / "reports" / "generated" / "diagnostics")
 
     gen = root / "reports" / "generated"
     gen.mkdir(parents=True, exist_ok=True)

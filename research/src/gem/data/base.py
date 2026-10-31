@@ -47,6 +47,10 @@ class FetchError(RuntimeError):
 RETRY_STATUS = {429, 500, 502, 503, 504}
 
 
+def redact_url(url: str) -> str:
+    return re.sub(r"(api_key=)[^&]+", r"\1REDACTED", url)
+
+
 def _get_with_retry(url: str, headers: dict, timeout: int, attempts: int = 4, sleep=None):
     """GET with bounded retries on rate limiting / transient server errors.
 
@@ -106,6 +110,7 @@ class RawStore:
 
     def fetch(self, provider: str, key: str, url: str, *, refresh: bool = False, offline: bool = False,
               timeout: int = 60, headers: dict | None = None) -> RawFile:
+        fetch_url, url = url, redact_url(url)  # never persist API keys in manifests/caches
         cached = self.latest_cached(provider, key)
         if cached is not None and not refresh:
             return cached
@@ -116,7 +121,7 @@ class RawStore:
         h = {"User-Agent": USER_AGENT, **(headers or {})}
         now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
         try:
-            resp = _get_with_retry(url, h, timeout)
+            resp = _get_with_retry(fetch_url, h, timeout)
             resp.raise_for_status()
         except Exception as e:  # network policy, DNS, HTTP error ...
             self._log({"retrieved_at": now, "provider": provider, "key": key, "url": url,

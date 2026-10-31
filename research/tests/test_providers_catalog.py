@@ -197,3 +197,18 @@ def test_get_with_retry_honours_429(monkeypatch):
     waits = []
     r = base._get_with_retry("https://x", {}, 5, sleep=waits.append)
     assert r.status_code == 200 and waits == [3.0, 4]
+
+
+def test_fred_api_json_and_key_redaction(monkeypatch):
+    from gem.data.base import redact_url
+    from gem.data.providers import fred_url
+    raw = b'{"observations":[{"date":"2024-01-02","value":"5.25"},{"date":"2024-01-03","value":"."}]}'
+    s = parse_fred_csv(raw, {"id": "X", "provider_series_id": "DTB3"})
+    assert list(s.values) == [5.25]
+    with pytest.raises(ValueError):
+        parse_fred_csv(b'{"error_code":400,"error_message":"Bad Request"}', {"id": "X", "provider_series_id": "DTB3"})
+    monkeypatch.setenv("FRED_API_KEY", "secret123")
+    u = fred_url({"provider_series_id": "DTB3"})
+    assert "api.stlouisfed.org" in u and "secret123" not in redact_url(u)
+    monkeypatch.delenv("FRED_API_KEY")
+    assert "fredgraph.csv" in fred_url({"provider_series_id": "DTB3"})
