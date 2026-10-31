@@ -3,7 +3,9 @@
 Forskningsmotor för en framtida svensk tjänst med månadsvis signal baserad på
 Global Equities Momentum (GEM). **Ingen frontend, ingen handel, inga konton.**
 
-Slutsatser och beslut: [`reports/final_report.md`](reports/final_report.md).
+Slutsatser och beslut: fas 1 [`reports/final_report.md`](reports/final_report.md),
+fas 2 [`reports/phase2_report.md`](reports/phase2_report.md) (status: **BLOCKED** – svensk
+data ej nåbar från byggmiljön; `BUILD_PWA = NO`).
 
 ## Snabbstart
 
@@ -11,7 +13,7 @@ Slutsatser och beslut: [`reports/final_report.md`](reports/final_report.md).
 cd research
 pip install -e '.[test]'           # pandas, numpy, PyYAML, requests, pytest
 pip install arch                   # valfritt: Ken French-snapshot för korsvalidering
-python -m pytest                   # 65 tester
+python -m pytest                   # 87 tester (inkl. end-to-end på syntetisk data)
 python -m gem.research             # hämta/cacha -> validera -> backtesta -> rapporter
 python -m gem.research --offline   # bara cache, ingen nätverkstrafik
 python -m gem.research --refresh   # ladda ned allt nåbart igen (revisioner loggas)
@@ -28,8 +30,8 @@ automatiskt och checkas aldrig in.
 |---|---|---|
 | `GEM_ORIGINAL` | Antonacci GEM i USD: S&P 500 TR, MSCI ACWI ex USA, 3m T-bills, US Agg | Motor klar. Körd på tredjepartsdata (`*_3P`). Strikt körning blockerad (licensdata saknas). |
 | `GEM_PROXY_FF` | Öppna proxyer (CRSP US, FF Developed ex US, syntetisk 5y-obligation, FF RF) | Motor klar, data blockerad i byggmiljön |
-| `GEM_SEK` | Samma regel, SEK-ben, svensk kort ränta som hurdle/defensiv. **Inte GEM.** | Motor klar, svensk räntedata blockerad |
-| `REGIONAL_SEK` | Bästa av USA/Europa/EM i SEK mot svensk hurdle. **Inte GEM.** | Motor klar, data blockerad |
+| `GEM_SEK` | Samma regel, SEK-ben, svensk kort ränta som hurdle/defensiv. **Inte GEM.** Run-ID: `GEM_SEK_OPEN_OMRX_V1`, `GEM_SEK_OPEN_SSVXSYNTH_V1`, `GEM_SEK_3P_SSVXSYNTH_V1`, `GEM_SEK_STRICT_V1` | Implementerad, BLOCKED (svensk räntedata) |
+| `REGIONAL_SEK` | Bästa av USA/Europa/EM i SEK mot svensk hurdle. **Inte GEM.** Run-ID: `REGIONAL_SEK_FF_PROXY_OMRX_V1`, `REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1` | Implementerad, BLOCKED |
 | `BUY_HOLD_GLOBAL`, `STATIC_70_30` | Benchmarks (MSCI ACWI, 70/30 ACWI/Agg) | Blockerade (MSCI ACWI saknas) |
 | `BUY_HOLD_US/EXUS/US_AGG`, `STATIC_70_30_US` | Benchmarks på samma tredjepartsdata som GEM | Körda |
 
@@ -44,7 +46,10 @@ research/
     strategies.py   ren beslutslogik (ingen datakunskap)
     returns.py      månadsslut, avkastning, 12m-avkastning, yield->avkastning
     fx.py           USD->SEK (SEK per USD), konventionsvakt
-    execution.py    signal_date/data_available/order/execution, fond-cutoff, fondstartsvakt
+    execution.py    månadskonventioner, fond-cutoff, fondstartsvakt
+    daily.py        explicit tidsmodell på dagsdata: scenario A/B/C, handelsregler per fond
+    analysis.py     signalöverensstämmelse GEM_ORIGINAL vs GEM_SEK
+    implementation.py  implementationsgap indexsignal vs Avanza-fond-NAV
     backtest.py     generisk månadsmotor, kostnader, NO_SIGNAL-hantering
     metrics.py      CAGR, vol, Sharpe, Sortino, Calmar, drawdowns, turnover ...
     validation.py   datakvalitet + korsvalidering mellan källor
