@@ -34,7 +34,7 @@
     "AVANZA_EM": "TradingRules(cutoff=datetime.time(12, 0), nav_lag_bdays=1, settlement_bdays=2, source='2026 brochure table (search extract)')",
     "AVANZA_EUROPA": "TradingRules(cutoff=datetime.time(15, 0), nav_lag_bdays=0, settlement_bdays=2, source='ASSUMPTION - main schedule')",
     "AVANZA_GLOBAL": "TradingRules(cutoff=datetime.time(12, 0), nav_lag_bdays=0, settlement_bdays=2, source='2024 brochure (search extract)')",
-    "AVANZA_RANTA_KORT": "TradingRules(cutoff=datetime.time(12, 0), nav_lag_bdays=0, settlement_bdays=2, source='ASSUMPTION - conservative 12:00')",
+    "AVANZA_RANTA_KORT": "TradingRules(cutoff=datetime.time(12, 0), nav_lag_bdays=0, settlement_bdays=2, source='CONSERVATIVE ASSUMPTION 12:00 (documented cut-off 15:00, see cutoff_time) - kept so published results are unchanged')",
     "AVANZA_USA": "TradingRules(cutoff=datetime.time(15, 0), nav_lag_bdays=0, settlement_bdays=2, source='2026 brochure table (search extract)')"
   },
   "variant": "PURE_AVANZA_FUNDS"
