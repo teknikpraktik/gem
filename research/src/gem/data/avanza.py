@@ -26,7 +26,7 @@ import pandas as pd
 
 BASE = "https://www.avanza.se"
 STOCKHOLM = ZoneInfo("Europe/Stockholm")
-MAX_DAILY_GAP_DAYS = 5  # spacing above this => window was downsampled -> split
+MAX_MEDIAN_GAP_DAYS = 3  # median spacing above this => window was downsampled -> split
 
 
 def chart_url(orderbook: str, start: date, end: date) -> str:
@@ -56,7 +56,9 @@ def is_daily(s: pd.Series, window_days: int | None = None) -> bool:
         return True
     if len(s) == 1:
         return window_days is None or window_days <= 31
-    return int(pd.Series(s.index).diff().dt.days.max()) <= MAX_DAILY_GAP_DAYS
+    # Downsampled responses are spaced ~monthly; real daily NAV series have isolated longer
+    # gaps (Christmas, days the fund is closed). Judge by the MEDIAN spacing, not the max.
+    return float(pd.Series(s.index).diff().dt.days.median()) <= MAX_MEDIAN_GAP_DAYS
 
 
 def fetch_daily_history(get, orderbook: str, start: date, end: date, window_days: int = 365) -> tuple[pd.Series, list]:

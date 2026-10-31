@@ -58,3 +58,13 @@ def test_parse_avanza_nav_checks_isin_and_launch():
         parse_avanza_nav(json.dumps(doc).encode(), {**e, "fetch": {"isin": "SE0000000000"}})
     with pytest.raises(ValueError):
         parse_avanza_nav(json.dumps(doc).encode(), {**e, "fetch": {"isin": "SE0012741163", "launch_date": "2026-10-01"}})
+
+
+def test_holiday_gaps_are_still_daily():
+    # regression (Actions run 41196091780): Christmas / closed days made real daily windows
+    # look downsampled under a max-gap rule
+    days = pd.to_datetime(["2020-12-21", "2020-12-22", "2020-12-23", "2020-12-28", "2020-12-29",
+                           "2020-12-30", "2021-01-04", "2021-01-05", "2021-01-07", "2021-01-08"])
+    assert is_daily(pd.Series(range(len(days)), index=days), 24)
+    monthly = pd.to_datetime(["2020-01-01", "2020-02-01", "2020-03-01"])
+    assert not is_daily(pd.Series([1, 2, 3], index=monthly), 90)
