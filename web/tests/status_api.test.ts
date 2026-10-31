@@ -5,7 +5,7 @@ import { GET as signalGET } from "@/app/api/signal/route";
 import { GET as statusGET } from "@/app/api/status/route";
 import { authorizeCron } from "@/lib/cronAuth";
 import { setDepsForTests } from "@/lib/deps";
-import { STRATEGY_ID } from "@/lib/engine/regional";
+import { STRATEGY_ID, STRATEGY_VERSION } from "@/lib/engine/regional";
 import { runMonthlySignal } from "@/lib/pipeline";
 import { deriveStatus, loadSignalState, offlineDisplay } from "@/lib/status";
 import { MemoryStore } from "@/lib/store/memory";
@@ -15,10 +15,11 @@ import { FakeNavProvider, FakeYieldProvider, NOW, providerDown } from "./helpers
 const SECRET = "test-secret-0123456789abcdef";
 
 function rec(period: string, status: "VALID" | "NO_SIGNAL" = "VALID", fund: string | null = "AVANZA_USA"): SignalRecord {
-  return { strategyId: STRATEGY_ID, strategyVersion: "1.0.0", signalPeriod: period, generatedAt: `${period}T00:00:00Z`, status,
+  return { strategyId: STRATEGY_ID, strategyVersion: STRATEGY_VERSION, signalPeriod: period, generatedAt: `${period}T00:00:00Z`, status,
            selectedAsset: fund ? "usa" : null, selectedFund: status === "VALID" ? fund : null,
            returns: { usa: 0.1, europe: 0.05, em: 0.02, cash: 0.02 }, cashHurdle: 0.02, reason: "test", inputDates: {}, inputSources: {},
-           dataQuality: {}, providerVersions: {}, inputs: [], origin: "live" };
+           dataQuality: {}, providerVersions: {}, inputs: [], origin: "live",
+           dataAsOf: period, inputDataChecksum: null, codeVersion: "test", engineVersion: "test", referenceImplementation: "test", inputPayload: null };
 }
 
 afterEach(() => { setDepsForTests(null); delete process.env.CRON_SECRET; });

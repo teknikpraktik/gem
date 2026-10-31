@@ -25,7 +25,8 @@ import {
 } from "./dates";
 
 export const STRATEGY_ID = "REGIONAL_SEK";
-export const STRATEGY_VERSION = "1.0.0";
+/** Explicit, machine-readable rule version (Python: gem.live STRATEGY_VERSION). */
+export const STRATEGY_VERSION = "regional-sek-v1.0.0";
 export const LOOKBACK_MONTHS = 12;
 export const MAX_STALE_BDAYS_NAV = 3;
 export const MAX_STALE_BDAYS_YIELD = 5;

@@ -13,7 +13,7 @@ lib/engine/       rule engine: TypeScript port of research/src/gem/live.py
 lib/providers/    NavProvider / YieldProvider interfaces + Avanza (UNDOCUMENTED_ENDPOINT) and Riksbank SWEA
 lib/pipeline.ts   monthly job: period -> fetch -> validate -> engine -> classify -> immutable snapshot
 lib/status.ts     read-time status: VALID | WAITING_FOR_DATA | NO_SIGNAL | DATA_ERROR | STALE_DATA
-lib/store/        SignalStore: Postgres (db/schema.sql) or in-memory/read-only bootstrap
+lib/store/        SignalStore: Postgres (db/migrations/) or in-memory/read-only bootstrap
 app/              pages (/, /history, /backtest, /research) and API routes - no investment logic
 data/*.json       static exports of the research pipeline (scripts: research/scripts/export_app_data.py)
 ```
@@ -28,11 +28,38 @@ The frontend only displays stored snapshots; it never computes a signal.
 | `GET /api/history` | signal history (live snapshots override the research backfill) |
 | `GET /api/status` | store, last attempts, providers |
 | `GET /api/backtest` | static backtest export |
+| `GET /api/audit?period=YYYY-MM-DD` | one snapshot with provenance, its exact engine input, checksum re-computation and an independent re-run |
 | `GET/POST /api/cron/monthly-signal` | monthly job; requires `Authorization: Bearer $CRON_SECRET` |
 
 There is no public write endpoint.
 
 ## Monthly job
+
+### Statuses and fail-closed rules
+
+Before the rule is applied every series is classified (`lib/freshness.ts`, stored per run):
+`FRESH`, `CLOSED_PROVEN` (gap ≤ tolerance and a later observation proves a closure),
+`NOT_YET_PUBLISHED` → `WAITING_FOR_DATA`, `STALE` / `EMPTY` / `TRUNCATED` / provider error /
+timeout / schema change → `DATA_ERROR` (this is the "data unavailable" state; retried, never final),
+`GAP_TOO_LONG` → engine gives final `NO_SIGNAL`. An older signal is never shown as current.
+
+### Audit trail
+
+Each live snapshot stores `strategy_version` (`regional-sek-v1.0.0`), `signal_period`, `generated_at`,
+`data_as_of`, result, `input_data_checksum` (`sha256:` over the canonical JSON of the exact engine
+input), `code_version` (Vercel `VERCEL_GIT_COMMIT_SHA`), engine and reference versions, and the
+exact input itself (`signal_input_snapshots`). Signals, inputs, input snapshots and the run log are
+append-only (DB triggers). Schema changes go into new files in `db/migrations/`; the runner records
+each file's sha256 and refuses to continue if an applied migration was edited.
+
+### Engine verification
+
+`tests/engine.conformance.test.ts` (18 fixed cases) and `tests/engine.differential.test.ts`
+(1000 seeded random scenarios, seed 20261031) compare the TypeScript engine with the Python
+reference, including intermediate values. The differential test runs Python
+(`research/scripts/differential_cases.py`, needs pandas/numpy: `pip install -e ../research`);
+`SKIP_PY_DIFFERENTIAL=1` skips it explicitly. Passing means: identical for this test set,
+not proven identical in general.
 
 `vercel.json` calls `/api/cron/monthly-signal` at 05:15, 10:15 and 16:15 UTC on days 1–10.
 Each call is idempotent: once the month's final snapshot (VALID or NO_SIGNAL) exists it
@@ -57,7 +84,7 @@ npm run typecheck && npm run lint && npm run build
    - `CRON_SECRET` – random, ≥ 16 chars (`openssl rand -hex 32`)
    - `RIKSBANK_API_KEY` – optional
    - (`FRED_API_KEY` is **not** needed here; it is a GitHub Actions secret for research only.)
-4. Create the schema once: `DATABASE_URL=... npm run db:migrate` (idempotent; runs `db/schema.sql`).
+4. Create/upgrade the schema: `DATABASE_URL=... npm run db:migrate` (applies pending `db/migrations/*.sql`).
 5. Deploy. Cron jobs are registered from `vercel.json` on production deployments.
 6. Optional first run: `curl -H "Authorization: Bearer $CRON_SECRET" https://<app>/api/cron/monthly-signal`.
 

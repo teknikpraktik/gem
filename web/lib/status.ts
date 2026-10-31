@@ -14,7 +14,8 @@ import { STRATEGY_ID, STRATEGY_VERSION } from "./engine/regional";
 import { stockholmDate } from "./pipeline";
 import type { AttemptRecord, SignalRecord, SignalStore } from "./store/types";
 
-export type DisplayStatus = "VALID" | "WAITING_FOR_DATA" | "NO_SIGNAL" | "DATA_ERROR" | "STALE_DATA";
+import type { DisplayStatus } from "./offline";
+export type { DisplayStatus } from "./offline";
 
 /** Business days after the period's last business day before a missing signal counts as stale. */
 export const STALE_AFTER_BDAYS = 6;
@@ -68,12 +69,4 @@ export async function loadSignalState(store: SignalStore, now: Date): Promise<Si
   return deriveStatus(now, forPeriod, latestValid, lastAttempt);
 }
 
-/** Client-side: what to show when the device is offline or data is old. */
-export function offlineDisplay(online: boolean, lastSyncedAt: string | null, payloadStatus: DisplayStatus) {
-  if (online) return { banner: null as string | null, treatAsCurrent: payloadStatus === "VALID", label: payloadStatus };
-  return {
-    banner: `Offline · Senast synkroniserad ${lastSyncedAt ? new Date(lastSyncedAt).toLocaleString("sv-SE", { timeZone: "Europe/Stockholm" }) : "okänt"}`,
-    treatAsCurrent: false,
-    label: "OFFLINE_CACHED" as const,
-  };
-}
+export { offlineDisplay } from "./offline";

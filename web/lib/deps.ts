@@ -32,7 +32,8 @@ export function bootstrapRecord(): SignalRecord | null {
   const navDates = (s.nav_dates ?? {}) as Record<string, string | null>;
   return {
     strategyId: STRATEGY_ID,
-    strategyVersion: String(s.strategy_version ?? STRATEGY_VERSION),
+    // research exports before the explicit version tag carried the bare semver "1.0.0" of the same rule
+    strategyVersion: s.strategy_version === "1.0.0" || s.strategy_version === undefined ? STRATEGY_VERSION : String(s.strategy_version),
     signalPeriod: String(s.signal_period_end),
     generatedAt: String((bootstrap as { exported_at?: string }).exported_at ?? ""),
     status: s.status as SignalRecord["status"],
@@ -48,6 +49,12 @@ export function bootstrapRecord(): SignalRecord | null {
     providerVersions: { engine: "research/src/gem/live.py" },
     inputs: [],
     origin: "research_pipeline",
+    dataAsOf: Object.values(navDates).filter((d): d is string => !!d).sort().at(-1) ?? null,
+    inputDataChecksum: null, // the research pipeline does not record the exact live input; labelled as bootstrap
+    codeVersion: String((bootstrap as { research_commit?: string }).research_commit ?? "unknown"),
+    engineVersion: "research/src/gem/live.py",
+    referenceImplementation: "research/src/gem/live.py::regional_live_signal",
+    inputPayload: null,
   };
 }
 

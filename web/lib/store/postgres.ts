@@ -9,7 +9,7 @@ function toDate(v: unknown): string {
   return String(v).slice(0, 10);
 }
 
-function rowToSignal(r: Row, inputs: Row[]): SignalRecord {
+function rowToSignal(r: Row, inputs: Row[], snap: Row | undefined): SignalRecord {
   return {
     strategyId: String(r.strategy_id),
     strategyVersion: String(r.strategy_version),
@@ -26,6 +26,12 @@ function rowToSignal(r: Row, inputs: Row[]): SignalRecord {
     dataQuality: r.data_quality as SignalRecord["dataQuality"],
     providerVersions: r.provider_versions as SignalRecord["providerVersions"],
     origin: (r.origin as SignalRecord["origin"]) ?? "live",
+    dataAsOf: r.data_as_of ? toDate(r.data_as_of) : null,
+    inputDataChecksum: (r.input_data_checksum as string) ?? null,
+    codeVersion: (r.code_version as string) ?? "unknown",
+    engineVersion: (r.engine_version as string) ?? "unknown",
+    referenceImplementation: (r.reference_implementation as string) ?? "unknown",
+    inputPayload: snap ? (snap.payload as SignalRecord["inputPayload"]) : null,
     inputs: inputs.map((i) => ({
       instrumentId: String(i.instrument_id),
       startDate: i.start_date ? toDate(i.start_date) : null,
@@ -37,7 +43,7 @@ function rowToSignal(r: Row, inputs: Row[]): SignalRecord {
   };
 }
 
-/** Postgres (Neon serverless HTTP driver). Schema: db/schema.sql. */
+/** Postgres (Neon serverless HTTP driver). Schema: db/migrations/. */
 export type QueryFn = (text: string, params: unknown[]) => Promise<Row[]>;
 
 export class PostgresStore implements SignalStore {
@@ -63,7 +69,9 @@ export class PostgresStore implements SignalStore {
     if (!rows.length) return [];
     const ids = rows.map((r) => r.signal_id);
     const inputs = await this.q("SELECT * FROM signal_inputs WHERE signal_id = ANY($1)", [ids]);
-    return rows.map((r) => rowToSignal(r, inputs.filter((i) => String(i.signal_id) === String(r.signal_id))));
+    const snaps = await this.q("SELECT signal_id, payload FROM signal_input_snapshots WHERE signal_id = ANY($1)", [ids]);
+    return rows.map((r) => rowToSignal(r, inputs.filter((i) => String(i.signal_id) === String(r.signal_id)),
+                                       snaps.find((x) => String(x.signal_id) === String(r.signal_id))));
   }
 
   async getSignal(strategyId: string, period: string, version: string) {
@@ -78,8 +86,9 @@ export class PostgresStore implements SignalStore {
     const rows = await this.q(
       `WITH ins AS (
          INSERT INTO signals (strategy_id, strategy_version, signal_period, generated_at, status, selected_asset,
-           selected_fund, returns, cash_hurdle, reason, input_dates, input_sources, data_quality, provider_versions, origin)
-         VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15)
+           selected_fund, returns, cash_hurdle, reason, input_dates, input_sources, data_quality, provider_versions, origin,
+           data_as_of, input_data_checksum, code_version, engine_version, reference_implementation)
+         VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$17,$18,$19,$20,$21)
          ON CONFLICT ON CONSTRAINT signals_unique_period DO NOTHING
          RETURNING signal_id
        ), inp AS (
@@ -88,6 +97,10 @@ export class PostgresStore implements SignalStore {
          FROM ins, jsonb_to_recordset($16::jsonb) AS x(instrument_id text, start_date date, start_nav float8,
            end_date date, end_nav float8, return_12m float8)
          RETURNING 1
+       ), snap AS (
+         INSERT INTO signal_input_snapshots (signal_id, input_data_checksum, payload)
+         SELECT ins.signal_id, $18, $22::jsonb FROM ins WHERE $22::jsonb IS NOT NULL
+         RETURNING 1
        )
        SELECT (SELECT count(*) FROM ins) AS inserted`,
       [rec.strategyId, rec.strategyVersion, rec.signalPeriod, rec.generatedAt, rec.status, rec.selectedAsset,
@@ -95,7 +108,9 @@ export class PostgresStore implements SignalStore {
        JSON.stringify(rec.inputSources), JSON.stringify(rec.dataQuality), JSON.stringify(rec.providerVersions),
        rec.origin,
        JSON.stringify(rec.inputs.map((i) => ({ instrument_id: i.instrumentId, start_date: i.startDate, start_nav: i.startNav,
-                                                end_date: i.endDate, end_nav: i.endNav, return_12m: i.return12m })))]);
+                                                end_date: i.endDate, end_nav: i.endNav, return_12m: i.return12m }))),
+       rec.dataAsOf, rec.inputDataChecksum, rec.codeVersion, rec.engineVersion, rec.referenceImplementation,
+       rec.inputPayload ? JSON.stringify(rec.inputPayload) : null]);
     const inserted = Number(rows[0]?.inserted ?? 0) > 0;
     const record = (await this.getSignal(rec.strategyId, rec.signalPeriod, rec.strategyVersion)) ?? rec;
     return { inserted, record };
@@ -115,8 +130,9 @@ export class PostgresStore implements SignalStore {
 
   async recordAttempt(a: AttemptRecord) {
     await this.q(
-      "INSERT INTO data_source_status (strategy_id, signal_period, checked_at, status, detail, sources) VALUES ($1,$2,$3,$4,$5,$6)",
-      [a.strategyId, a.signalPeriod, a.checkedAt, a.status, a.detail.slice(0, 2000), JSON.stringify(a.sources)]);
+      "INSERT INTO data_source_status (strategy_id, signal_period, checked_at, status, detail, sources, freshness) VALUES ($1,$2,$3,$4,$5,$6,$7)",
+      [a.strategyId, a.signalPeriod, a.checkedAt, a.status, a.detail.slice(0, 2000), JSON.stringify(a.sources),
+       JSON.stringify(a.freshness ?? [])]);
   }
 
   async latestAttempt(strategyId: string, period: string) {
@@ -126,7 +142,8 @@ export class PostgresStore implements SignalStore {
     const r = rows[0];
     if (!r) return null;
     return { strategyId: String(r.strategy_id), signalPeriod: toDate(r.signal_period), checkedAt: new Date(String(r.checked_at)).toISOString(),
-             status: r.status as AttemptRecord["status"], detail: String(r.detail), sources: r.sources as Record<string, string> };
+             status: r.status as AttemptRecord["status"], detail: String(r.detail), sources: r.sources as Record<string, string>,
+             freshness: (r.freshness as AttemptRecord["freshness"]) ?? [] };
   }
 
   async saveNavObservations(points: NavPoint[]) {

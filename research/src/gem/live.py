@@ -28,6 +28,8 @@ REGION_TO_INSTRUMENT = {"usa": "AVANZA_USA", "europe": "AVANZA_EUROPA", "em": "A
 DEFENSIVE_INSTRUMENT = "AVANZA_RANTA_KORT"
 STRATEGY = RegionalMomentumStrategy("REGIONAL_SEK", "1.0.0", regions=("usa", "europe", "em"),
                                     defensive_asset="cash")
+# Explicit, machine-readable version of the live rule (identity of stored live snapshots).
+STRATEGY_VERSION = f"regional-sek-v{STRATEGY.version}"
 
 
 def _bdays_between(a: pd.Timestamp, b: pd.Timestamp) -> int:
@@ -38,7 +40,7 @@ def regional_live_signal(as_of: date, navs: dict[str, pd.Series], ssvx_3m_yield:
                          *, nav_sources: dict[str, str] | None = None, max_stale_bdays: int = 3) -> dict:
     as_of_ts = pd.Timestamp(as_of)
     period_end = (as_of_ts.normalize().replace(day=1) - pd.offsets.Day(1)).normalize()  # previous month end
-    out = {"strategy": STRATEGY.strategy_id, "strategy_version": STRATEGY.version, "as_of": str(as_of),
+    out = {"strategy": STRATEGY.strategy_id, "strategy_version": STRATEGY_VERSION, "as_of": str(as_of),
            "signal_period_end": str(period_end.date()), "status": NO_SIGNAL, "target": None,
            "returns": {}, "nav_dates": {}, "sources": nav_sources or {}, "reason": "",
            # intermediate values (no effect on the decision; compared by the TS differential test)

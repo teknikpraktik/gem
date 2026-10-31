@@ -30,7 +30,7 @@ interface Case {
   navs: Record<string, Pair[]>;
   yields: Pair[];
   expected: {
-    signal_period_end: string; status: string; target: string | null; reason: string;
+    strategy_version: string; signal_period_end: string; status: string; target: string | null; reason: string;
     returns: Record<string, number | null>; nav_dates: Record<string, string | null>;
     diagnostics: { endpoints: EngineResult["endpoints"]; cash_window: [string, number][] };
   };
@@ -45,6 +45,7 @@ export function compare(c: Case, r: EngineResult, stats: { maxRetDiff: number })
   const eq = (name: string, a: unknown, b: unknown) => {
     if (JSON.stringify(a) !== JSON.stringify(b)) d.push(`${name}: python=${JSON.stringify(a)} ts=${JSON.stringify(b)}`);
   };
+  eq("strategy_version", e.strategy_version, r.strategy_version);
   eq("signal_period_end", e.signal_period_end, r.signal_period_end);
   eq("status", e.status, r.status);
   eq("target", e.target, r.target);

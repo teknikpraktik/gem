@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { offlineDisplay, type DisplayStatus } from "@/lib/status";
+import { offlineDisplay, type DisplayStatus } from "@/lib/offline";
 
 const KEY = "gem-signal-last-sync";
 

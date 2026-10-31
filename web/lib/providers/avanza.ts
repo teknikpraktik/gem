@@ -24,6 +24,14 @@ const WINDOW_DAYS = 40;
 
 export type Fetcher = (url: string, init?: RequestInit) => Promise<Response>;
 
+/** Per-request timeout. A hanging provider must fail (DATA_ERROR), not stall the cron. */
+export const PROVIDER_TIMEOUT_MS = 15_000;
+
+export function describeFetchError(e: unknown): string {
+  const n = (e as { name?: string })?.name;
+  return n === "TimeoutError" || n === "AbortError" ? "timeout" : `network error: ${(e as Error)?.message ?? String(e)}`;
+}
+
 function stockholmDate(epochMs: number): ISODate {
   // en-CA formats as YYYY-MM-DD
   return new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Stockholm", year: "numeric", month: "2-digit", day: "2-digit" })
@@ -36,7 +44,11 @@ export function parseChart(body: unknown, inst: Instrument, retrievedAt: string)
   }
   const pts: NavPoint[] = [];
   for (const p of (body as { dataSerie: { x: unknown; y: unknown }[] }).dataSerie) {
-    if (p.y === null || p.y === undefined) continue; // null before launch / no NAV that day
+    if (!p || typeof p !== "object" || !("x" in p) || !("y" in p)) {
+      // a MISSING field is a schema change; only an explicit null means "no NAV that day"
+      throw new ProviderError(SOURCE, `chart point without x/y for ${inst.instrumentId} (schema change?)`, p);
+    }
+    if (p.y === null) continue; // null before launch / no NAV that day
     if (typeof p.x !== "number" || typeof p.y !== "number") {
       throw new ProviderError(SOURCE, `non-numeric chart point for ${inst.instrumentId}`, p);
     }
@@ -57,7 +69,8 @@ export class AvanzaNavProvider implements NavProvider {
   readonly version = "avanza_fund_guide/1";
   readonly quality = "UNDOCUMENTED_ENDPOINT" as const;
 
-  constructor(private readonly fetcher: Fetcher = fetch, private readonly now: () => Date = () => new Date()) {}
+  constructor(private readonly fetcher: Fetcher = fetch, private readonly now: () => Date = () => new Date(),
+              private readonly timeoutMs = PROVIDER_TIMEOUT_MS) {}
 
   private async getJson(url: string): Promise<unknown> {
     let res: Response;
@@ -65,13 +78,21 @@ export class AvanzaNavProvider implements NavProvider {
       res = await this.fetcher(url, {
         headers: { Accept: "application/json", "User-Agent": "gem-signal-monitor/1 (no trading)" },
         cache: "no-store",
+        signal: AbortSignal.timeout(this.timeoutMs),
       });
     } catch (e) {
-      throw new ProviderError(SOURCE, `network error for ${url}: ${(e as Error).message}`);
+      throw new ProviderError(SOURCE, `${describeFetchError(e)} for ${url}`);
     }
     if (!res.ok) throw new ProviderError(SOURCE, `HTTP ${res.status} for ${url}`);
+    let text: string;
     try {
-      return await res.json();
+      text = await res.text();
+    } catch (e) {
+      throw new ProviderError(SOURCE, `${describeFetchError(e)} reading body of ${url}`);
+    }
+    if (!text.trim()) throw new ProviderError(SOURCE, `empty response from ${url}`);
+    try {
+      return JSON.parse(text);
     } catch {
       throw new ProviderError(SOURCE, `invalid JSON from ${url}`);
     }

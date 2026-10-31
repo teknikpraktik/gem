@@ -6,11 +6,20 @@
 import backtest from "@/data/backtest.json";
 import history from "@/data/history.json";
 import research from "@/data/research.json";
+import { verifySnapshot, VerificationResult } from "./audit";
 import { STRATEGY_ID, STRATEGY_VERSION } from "./engine/regional";
 import { Deps, getDeps } from "./deps";
 import { explainSignal } from "./explain";
 import { INSTRUMENTS } from "./instruments";
 import { loadSignalState, SignalState } from "./status";
+import type { SignalRecord } from "./store/types";
+
+/** Public view of a snapshot: everything except the (large) raw input payload, which /api/audit serves. */
+export function publicRecord(r: SignalRecord | null): (Omit<SignalRecord, "inputPayload"> & { hasInputPayload: boolean }) | null {
+  if (!r) return null;
+  const { inputPayload, ...rest } = r;
+  return { ...rest, hasInputPayload: inputPayload !== null };
+}
 
 export const DISCLAIMER =
   "Regelbaserad signalmonitor för forskning och beslutsstöd. Ingen investeringsrådgivning och ingen automatisk handel. " +
@@ -27,7 +36,8 @@ export interface SignalPayload {
 
 export async function getSignalPayload(deps: Deps = getDeps()): Promise<SignalPayload> {
   const now = deps.now();
-  const state = await loadSignalState(deps.store, now);
+  const raw = await loadSignalState(deps.store, now);
+  const state = { ...raw, current: publicRecord(raw.current) as SignalRecord | null, lastValid: publicRecord(raw.lastValid) as SignalRecord | null };
   const latestNavs = await deps.store.latestNavs();
   return {
     state,
@@ -79,6 +89,8 @@ export async function getStatus(deps: Deps = getDeps()) {
     status: p.state.status,
     statusDetail: p.state.statusDetail,
     lastAttempt: p.state.lastAttempt,
+    // provider, instrument, latest observation, retrieval time, fresh?, why not - per series
+    freshness: p.state.lastAttempt?.freshness ?? (p.state.current?.dataQuality?.freshness as unknown) ?? [],
     signalGeneratedAt: p.state.current?.generatedAt ?? null,
     signalOrigin: p.state.current?.origin ?? null,
     latestNavs: p.latestNavs,
@@ -90,6 +102,19 @@ export async function getStatus(deps: Deps = getDeps()) {
     store: p.store,
     serverTime: p.serverTime,
   };
+}
+
+/** Audit view of one stored snapshot: provenance, exact input and an independent re-run. */
+export async function getAudit(period: string, deps: Deps = getDeps()): Promise<
+  { found: false } | { found: true; record: SignalRecord; verification: VerificationResult | null; note: string }> {
+  const rec = await deps.store.getSignal(STRATEGY_ID, period, STRATEGY_VERSION);
+  if (!rec) return { found: false };
+  if (!rec.inputPayload) {
+    return { found: true, record: rec, verification: null,
+             note: "no recorded engine input (research-pipeline bootstrap record); not independently verifiable here" };
+  }
+  return { found: true, record: rec, verification: verifySnapshot(rec, rec.inputPayload),
+           note: "checksum recomputed over the stored input and the rule re-run on it" };
 }
 
 export function getBacktest() {

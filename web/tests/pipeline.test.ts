@@ -38,7 +38,7 @@ describe("monthly pipeline", () => {
 
   it("missing month-end NAV before publication -> WAITING_FOR_DATA, nothing stored, no fallback", async () => {
     const store = new MemoryStore();
-    const r = await runMonthlySignal(deps({ store, navProvider: new FakeNavProvider({ publishedThrough: "2026-09-24" }) }));
+    const r = await runMonthlySignal(deps({ store, navProvider: new FakeNavProvider({ publishedThrough: "2026-09-29" }) }));
     expect(r.outcome).toBe("WAITING_FOR_DATA");
     expect(r.record).toBeUndefined();
     expect(await store.listSignals(STRATEGY_ID)).toHaveLength(0);
@@ -60,9 +60,21 @@ describe("monthly pipeline", () => {
     expect(r.record!.inputDates.AVANZA_EM.end).toBe("2026-09-28");
   });
 
-  it("hurdle yields not yet available -> WAITING_FOR_DATA", async () => {
-    const r = await runMonthlySignal(deps({ yieldProvider: new FakeYieldProvider(2, "2026-09-10") }));
+  it("hurdle yield for the month end not yet available -> WAITING_FOR_DATA", async () => {
+    const r = await runMonthlySignal(deps({ yieldProvider: new FakeYieldProvider(2, "2026-09-29") }));
     expect(r.outcome).toBe("WAITING_FOR_DATA");
+  });
+
+  it("NAV series that stops well before the month end (stale provider) -> DATA_ERROR, not WAITING", async () => {
+    const r = await runMonthlySignal(deps({ navProvider: new FakeNavProvider({ publishedThrough: "2026-09-24" }) }));
+    expect(r.outcome).toBe("DATA_ERROR");
+    expect(r.detail).toMatch(/STALE/);
+  });
+
+  it("yield series that stops well before the month end -> DATA_ERROR", async () => {
+    const r = await runMonthlySignal(deps({ yieldProvider: new FakeYieldProvider(2, "2026-09-10") }));
+    expect(r.outcome).toBe("DATA_ERROR");
+    expect(r.detail).toMatch(/SETB3MBENCH: STALE/);
   });
 
   it("provider failure -> DATA_ERROR, logged, nothing stored", async () => {

@@ -220,7 +220,7 @@ def make_case(rng, i: int) -> dict:
 
     return {"id": i, "tags": tags, "as_of": str(as_of),
             "navs": {k: enc(v, False) for k, v in ser.items()}, "yields": enc(y, True),
-            "expected": {k: out[k] for k in ("signal_period_end", "status", "target", "returns", "nav_dates",
+            "expected": {k: out[k] for k in ("strategy_version", "signal_period_end", "status", "target", "returns", "nav_dates",
                                              "reason", "diagnostics")}}
 
 
