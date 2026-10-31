@@ -1,0 +1,41 @@
+{
+  "label": "CONSERVATIVE",
+  "lookahead_free": true,
+  "metrics": {
+    "average_holding_period_months": 6.8,
+    "avg_bdays_out_of_market_per_switch": 2.25,
+    "avg_bdays_signal_to_execution": 4.2,
+    "best_year": 2024,
+    "best_year_return": 0.24699873458626986,
+    "cagr": 0.08549158345420338,
+    "calmar": 0.41099143350496103,
+    "end_date": "2026-10-31",
+    "end_value": 12616.57976856651,
+    "longest_drawdown_months": 15,
+    "longest_drawdown_span": "2025-01-31..2026-04-30",
+    "max_drawdown": -0.20801305449392393,
+    "months": 34,
+    "number_of_switches": 4,
+    "number_of_trades": 4,
+    "sharpe": 0.6143715076898966,
+    "sharpe_rf": "none (rf=0)",
+    "sortino": 0.904551221360426,
+    "start_date": "2024-01-31",
+    "start_value": 10000.0,
+    "switches_per_year": 1.4117647058823528,
+    "volatility": 0.15273250842037775,
+    "worst_year": 2025,
+    "worst_year_return": -0.03228774204854168
+  },
+  "model": "INVESTABLE_IMPLEMENTATION",
+  "run_id": "REGIONAL_SEK_NAV_IMPL__PURE_AVANZA_FUNDS__C_CONSERVATIVE",
+  "scenario": "C_CONSERVATIVE",
+  "trading_rules": {
+    "AVANZA_EM": "TradingRules(cutoff=datetime.time(12, 0), nav_lag_bdays=1, settlement_bdays=2, source='2026 brochure table (search extract)')",
+    "AVANZA_EUROPA": "TradingRules(cutoff=datetime.time(15, 0), nav_lag_bdays=0, settlement_bdays=2, source='ASSUMPTION - main schedule')",
+    "AVANZA_GLOBAL": "TradingRules(cutoff=datetime.time(12, 0), nav_lag_bdays=0, settlement_bdays=2, source='2024 brochure (search extract)')",
+    "AVANZA_RANTA_KORT": "TradingRules(cutoff=datetime.time(12, 0), nav_lag_bdays=0, settlement_bdays=2, source='ASSUMPTION - conservative 12:00')",
+    "AVANZA_USA": "TradingRules(cutoff=datetime.time(15, 0), nav_lag_bdays=0, settlement_bdays=2, source='2026 brochure table (search extract)')"
+  },
+  "variant": "PURE_AVANZA_FUNDS"
+}

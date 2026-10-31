@@ -47,7 +47,7 @@
         "provider": "Kenneth R. French Data Library",
         "provider_series_id": "F-F_Research_Data_Factors (RF)",
         "quality_status": "PROXY",
-        "retrieved_at": "2026-10-31T09:35:51Z",
+        "retrieved_at": "2026-10-31T11:29:23Z",
         "sha256": "b03d39e4bb253dda0f14893db3b78e64b40b8d6549a0fc0fd4111dae84c98618",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -58,7 +58,7 @@
         "provider": "Kenneth R. French Data Library",
         "provider_series_id": "F-F_Research_Data_Factors (Mkt-RF + RF)",
         "quality_status": "PROXY",
-        "retrieved_at": "2026-10-31T09:35:51Z",
+        "retrieved_at": "2026-10-31T11:29:23Z",
         "sha256": "b03d39e4bb253dda0f14893db3b78e64b40b8d6549a0fc0fd4111dae84c98618",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -69,8 +69,8 @@
         "provider": "FRED",
         "provider_series_id": "GS5",
         "quality_status": "EXPERIMENTAL",
-        "retrieved_at": "2026-10-31T09:35:54Z",
-        "sha256": "e4c0186a43a35524ff6e06bebe14ad38c67d309da8beff9e4af0c74283df3afb",
+        "retrieved_at": "2026-10-31T11:29:24Z",
+        "sha256": "8e9e7d9a02e36de5e132111ce354ca4633e2673c46cea75dff0eb5c9d77af722",
         "verification": "ASSUMPTION"
       },
       {
@@ -80,7 +80,7 @@
         "provider": "FRED (Nasdaq, Inc.)",
         "provider_series_id": "NASDAQNQGXUSLMN",
         "quality_status": "PROXY",
-        "retrieved_at": "2026-10-31T09:35:54Z",
+        "retrieved_at": "2026-10-31T11:29:25Z",
         "sha256": "febe8e1d43e2ea288edf359b709531e73f5d414b02c353c051f0e41003602b90",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -91,7 +91,7 @@
         "provider": "Sveriges Riksbank SWEA API",
         "provider_series_id": "SEKUSDPMI",
         "quality_status": "VERIFIED",
-        "retrieved_at": "2026-10-31T09:35:56Z",
+        "retrieved_at": "2026-10-31T11:29:26Z",
         "sha256": "58d9b62ce7ef1a8f9884ea0dde96696e1acfe9de7cd56ce16e0202484d3c5079",
         "verification": "VERIFIED FROM PRIMARY SOURCE"
       }

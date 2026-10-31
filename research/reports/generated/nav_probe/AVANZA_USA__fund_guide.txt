@@ -1,4 +1,4 @@
-retrieved_at: 2026-10-31T09:35:07Z
+retrieved_at: 2026-10-31T11:28:05Z
 GET https://www.avanza.se/_api/fund-guide/guide/1025150
 body: null
 {

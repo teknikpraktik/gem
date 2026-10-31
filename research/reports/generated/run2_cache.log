@@ -1,8 +1,3 @@
-WARNING series AVZ_NAV_EM unavailable: manual file not supplied: /home/runner/work/gem/gem/research/data/manual/nav_SE0012454338.csv
-WARNING series AVZ_NAV_EUROPA unavailable: manual file not supplied: /home/runner/work/gem/gem/research/data/manual/nav_SE0013718699.csv
-WARNING series AVZ_NAV_GLOBAL unavailable: manual file not supplied: /home/runner/work/gem/gem/research/data/manual/nav_SE0011527613.csv
-WARNING series AVZ_NAV_RANTA_KORT unavailable: manual file not supplied: /home/runner/work/gem/gem/research/data/manual/nav_SE0021021425.csv
-WARNING series AVZ_NAV_USA unavailable: manual file not supplied: /home/runner/work/gem/gem/research/data/manual/nav_SE0012741163.csv
 WARNING series BBG_US_AGG_OFFICIAL unavailable: manual file not supplied: /home/runner/work/gem/gem/research/data/manual/us_agg.csv
 WARNING series FF_EMERGING_MKT_TR_DAILY unavailable: offline and no cache for french/FF_EMERGING_MKT_TR_DAILY
 WARNING series MSCI_ACWI_EXUS_OFFICIAL unavailable: manual file not supplied: /home/runner/work/gem/gem/research/data/manual/msci_acwi_exus.csv

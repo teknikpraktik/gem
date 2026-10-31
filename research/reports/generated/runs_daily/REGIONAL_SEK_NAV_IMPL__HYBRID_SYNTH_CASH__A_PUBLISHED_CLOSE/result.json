@@ -1,0 +1,41 @@
+{
+  "label": "LOOKAHEAD_REFERENCE_ONLY",
+  "lookahead_free": false,
+  "metrics": {
+    "average_holding_period_months": 7.444444444444445,
+    "avg_bdays_out_of_market_per_switch": 0.0,
+    "avg_bdays_signal_to_execution": 0.0,
+    "best_year": 2024,
+    "best_year_return": 0.295100673017034,
+    "cagr": 0.11086145552361382,
+    "calmar": 0.5329543176668837,
+    "end_date": "2026-10-31",
+    "end_value": 17985.99342259243,
+    "longest_drawdown_months": 15,
+    "longest_drawdown_span": "2025-01-31..2026-04-30",
+    "max_drawdown": -0.2080130544939245,
+    "months": 67,
+    "number_of_switches": 8,
+    "number_of_trades": 8,
+    "sharpe": 0.7571456707214335,
+    "sharpe_rf": "none (rf=0)",
+    "sortino": 1.221758775982074,
+    "start_date": "2021-04-30",
+    "start_value": 10000.0,
+    "switches_per_year": 1.4328358208955225,
+    "volatility": 0.1551881213725978,
+    "worst_year": 2022,
+    "worst_year_return": -0.08957489878542546
+  },
+  "model": "INVESTABLE_IMPLEMENTATION",
+  "run_id": "REGIONAL_SEK_NAV_IMPL__HYBRID_SYNTH_CASH__A_PUBLISHED_CLOSE",
+  "scenario": "A_PUBLISHED_CLOSE",
+  "trading_rules": {
+    "AVANZA_EM": "TradingRules(cutoff=datetime.time(12, 0), nav_lag_bdays=1, settlement_bdays=2, source='2026 brochure table (search extract)')",
+    "AVANZA_EUROPA": "TradingRules(cutoff=datetime.time(15, 0), nav_lag_bdays=0, settlement_bdays=2, source='ASSUMPTION - main schedule')",
+    "AVANZA_GLOBAL": "TradingRules(cutoff=datetime.time(12, 0), nav_lag_bdays=0, settlement_bdays=2, source='2024 brochure (search extract)')",
+    "AVANZA_RANTA_KORT": "TradingRules(cutoff=datetime.time(12, 0), nav_lag_bdays=0, settlement_bdays=2, source='ASSUMPTION - conservative 12:00')",
+    "AVANZA_USA": "TradingRules(cutoff=datetime.time(15, 0), nav_lag_bdays=0, settlement_bdays=2, source='2026 brochure table (search extract)')"
+  },
+  "variant": "HYBRID_SYNTH_CASH"
+}

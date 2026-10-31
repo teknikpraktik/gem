@@ -1,0 +1,26 @@
+{
+  "as_of": "2026-10-30",
+  "nav_dates": {
+    "AVANZA_EM": "2026-09-30",
+    "AVANZA_EUROPA": "2026-09-30",
+    "AVANZA_USA": "2026-09-30"
+  },
+  "reason": "em best and > hurdle",
+  "returns": {
+    "cash": 0.019474179515020396,
+    "em": 0.3553244648524545,
+    "europe": 0.16103861159693267,
+    "usa": 0.21783766442091768
+  },
+  "signal_period_end": "2026-09-30",
+  "sources": {
+    "AVANZA_EM": "Avanza Bank (avanza.se fund-guide JSON, as used by avanza.se itself)",
+    "AVANZA_EUROPA": "Avanza Bank (avanza.se fund-guide JSON, as used by avanza.se itself)",
+    "AVANZA_RANTA_KORT": "Avanza Bank (avanza.se fund-guide JSON, as used by avanza.se itself)",
+    "AVANZA_USA": "Avanza Bank (avanza.se fund-guide JSON, as used by avanza.se itself)"
+  },
+  "status": "VALID",
+  "strategy": "REGIONAL_SEK",
+  "strategy_version": "1.0.0",
+  "target": "AVANZA_EM"
+}

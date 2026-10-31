@@ -85,39 +85,39 @@
       "status": "OK"
     },
     {
-      "endpoint": "manual:nav_SE0012454338.csv",
-      "error": "manual file not supplied: /home/runner/work/gem/gem/research/data/manual/nav_SE0012454338.csv",
-      "host": "manual:nav_SE0012454338.csv",
+      "endpoint": "https://www.avanza.se/_api/fund-guide/guide/944976 + chart windows",
+      "error": "",
+      "host": "www.avanza.se",
       "series": "AVZ_NAV_EM",
-      "status": "UNAVAILABLE"
+      "status": "OK"
     },
     {
-      "endpoint": "manual:nav_SE0013718699.csv",
-      "error": "manual file not supplied: /home/runner/work/gem/gem/research/data/manual/nav_SE0013718699.csv",
-      "host": "manual:nav_SE0013718699.csv",
+      "endpoint": "https://www.avanza.se/_api/fund-guide/guide/1041067 + chart windows",
+      "error": "",
+      "host": "www.avanza.se",
       "series": "AVZ_NAV_EUROPA",
-      "status": "UNAVAILABLE"
+      "status": "OK"
     },
     {
-      "endpoint": "manual:nav_SE0011527613.csv",
-      "error": "manual file not supplied: /home/runner/work/gem/gem/research/data/manual/nav_SE0011527613.csv",
-      "host": "manual:nav_SE0011527613.csv",
+      "endpoint": "https://www.avanza.se/_api/fund-guide/guide/878733 + chart windows",
+      "error": "",
+      "host": "www.avanza.se",
       "series": "AVZ_NAV_GLOBAL",
-      "status": "UNAVAILABLE"
+      "status": "OK"
     },
     {
-      "endpoint": "manual:nav_SE0021021425.csv",
-      "error": "manual file not supplied: /home/runner/work/gem/gem/research/data/manual/nav_SE0021021425.csv",
-      "host": "manual:nav_SE0021021425.csv",
+      "endpoint": "https://www.avanza.se/_api/fund-guide/guide/1684019 + chart windows",
+      "error": "",
+      "host": "www.avanza.se",
       "series": "AVZ_NAV_RANTA_KORT",
-      "status": "UNAVAILABLE"
+      "status": "OK"
     },
     {
-      "endpoint": "manual:nav_SE0012741163.csv",
-      "error": "manual file not supplied: /home/runner/work/gem/gem/research/data/manual/nav_SE0012741163.csv",
-      "host": "manual:nav_SE0012741163.csv",
+      "endpoint": "https://www.avanza.se/_api/fund-guide/guide/1025150 + chart windows",
+      "error": "",
+      "host": "www.avanza.se",
       "series": "AVZ_NAV_USA",
-      "status": "UNAVAILABLE"
+      "status": "OK"
     },
     {
       "endpoint": "manual:us_agg.csv",

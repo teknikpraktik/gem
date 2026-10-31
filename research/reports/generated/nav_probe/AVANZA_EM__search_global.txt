@@ -1,4 +1,4 @@
-retrieved_at: 2026-10-31T09:35:20Z
+retrieved_at: 2026-10-31T11:28:17Z
 GET https://www.avanza.se/_api/search/global-search?query=SE0012454338
 body: null
 {
@@ -12,4 +12,4 @@ body: null
  ]
 }
 ---
-{"statusCode":"NOT_FOUND","traceId":"a049cfda8b8596afb129b7108f42ece4"}
+{"statusCode":"NOT_FOUND","traceId":"f8ebb97773a5cc1a5c4e92e43a2d1df6"}

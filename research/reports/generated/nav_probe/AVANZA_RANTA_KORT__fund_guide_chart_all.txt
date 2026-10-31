@@ -1,4 +1,4 @@
-retrieved_at: 2026-10-31T09:35:37Z
+retrieved_at: 2026-10-31T11:28:33Z
 GET https://www.avanza.se/_api/fund-guide/chart/1684019/all_time
 body: null
 {
@@ -16,4 +16,4 @@ body: null
  ]
 }
 ---
-{"traceId":"7e8bb2a60f4831dd0c303135f1a4342f","statusCode":400,"message":"Bad request","time":"2026-10-31T10:35:38.015013544","errors":null,"additional":null}
+{"traceId":"5b0a5d6aa2064df7d2313d12596a2d16","statusCode":400,"message":"Bad request","time":"2026-10-31T12:28:33.964276436","errors":null,"additional":null}
