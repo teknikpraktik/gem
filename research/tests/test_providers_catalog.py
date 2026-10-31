@@ -130,3 +130,56 @@ def test_instruments_schema():
     items = load_instruments(ROOT / "data" / "investable_instruments.yaml")
     names = {i["name"] for i in items}
     assert {"Avanza USA", "Avanza Europa", "Avanza Emerging Markets", "Avanza Global", "Avanza Ränta Kort"} <= names
+
+
+# ---------- phase 2: strict manual import ----------
+
+def _entry(**f):
+    return {"id": "M", "asset_class": "money_market_index", "fetch": {"provider": "local_csv", "file": "m.csv", **f}}
+
+
+def test_manual_csv_strict_schema_ok():
+    from gem.data.providers import parse_local_csv
+    s = parse_local_csv(b"date,value\n2024-01-02,100.0\n2024-01-03,100.01\n", _entry())
+    assert len(s) == 2
+
+
+@pytest.mark.parametrize("raw", [
+    b"Date,Value\n2024-01-02,100\n",                 # wrong header
+    b"date,value\n02/01/2024,100\n",                 # non-ISO date
+    b"date,value\n2024-01-03,100\n2024-01-02,101\n", # not increasing
+    b"date,value\n2024-01-02,100\n2024-01-02,101\n", # duplicate
+    b"date,value\n2024-01-02,\n",                    # missing value
+    b"date,value\n2024-01-02,-1\n",                  # non-positive level
+])
+def test_manual_csv_rejects_bad_files(raw):
+    from gem.data.providers import ManualImportError, parse_local_csv
+    with pytest.raises(ManualImportError):
+        parse_local_csv(raw, _entry())
+
+
+def test_manual_csv_rejects_data_before_launch():
+    from gem.data.providers import ManualImportError, parse_local_csv
+    with pytest.raises(ManualImportError):
+        parse_local_csv(b"date,value\n2019-11-29,100\n", _entry(launch_date="2019-12-02"))
+
+
+def test_sidecar_required(tmp_path):
+    from gem.data.providers import ManualImportError, validate_sidecar
+    f = tmp_path / "omrxtbill.csv"
+    f.write_text("date,value\n2024-01-02,100\n")
+    with pytest.raises(ManualImportError):
+        validate_sidecar(f)
+    (tmp_path / "omrxtbill.csv.source.yaml").write_text("source: Nasdaq\nsource_url: x\n")
+    with pytest.raises(ManualImportError):
+        validate_sidecar(f)
+    (tmp_path / "omrxtbill.csv.source.yaml").write_text(
+        "source: Nasdaq\nsource_url: x\nexported_at: 2026-10-31\nexported_by: me\n"
+        "licence_terms: personal\nseries_definition: OMRXTBILL\n")
+    assert validate_sidecar(f)["source"] == "Nasdaq"
+
+
+def test_french_daily_parser():
+    text = ",Mkt-RF,SMB,HML,RF\n19260701,    0.10,   -0.25,   -0.27,    0.009\n19260702,    0.45,   -0.33,   -0.06,    0.009\n"
+    df = parse_french_csv_text(text)
+    assert df.index[0] == pd.Timestamp("1926-07-01") and len(df) == 2

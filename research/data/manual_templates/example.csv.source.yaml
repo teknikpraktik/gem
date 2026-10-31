@@ -1,0 +1,7 @@
+# Copy to research/data/manual/<file>.csv.source.yaml and fill in every field.
+source: "Nasdaq Global Indexes"
+source_url: "https://indexes.nasdaq.com/Index/History/OMRXTBILL"
+exported_at: "2026-11-01"
+exported_by: "name or initials"
+licence_terms: "e.g. personal research use per Nasdaq website terms - copy the relevant clause"
+series_definition: "OMRX Treasury Bill Index, daily closing level, SEK, total return (accumulating)"

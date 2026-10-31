@@ -67,13 +67,16 @@ def parse_french_csv_text(text: str) -> pd.DataFrame:
             if len(parts) > 1 and parts[0] == "" and any(parts[1:]):
                 header = parts[1:]
             continue
-        if len(parts) > 1 and len(parts[0]) == 6 and parts[0].isdigit():
+        if len(parts) > 1 and len(parts[0]) in (6, 8) and parts[0].isdigit():
             rows.append(parts)
         elif rows:  # end of first monthly block
             break
     if header is None or not rows:
         raise ValueError("could not locate monthly block in Ken French file")
-    idx = pd.to_datetime([r[0] for r in rows], format="%Y%m") + pd.offsets.MonthEnd(0)
+    if len(rows[0][0]) == 8:  # daily file
+        idx = pd.to_datetime([r[0] for r in rows], format="%Y%m%d")
+    else:
+        idx = pd.to_datetime([r[0] for r in rows], format="%Y%m") + pd.offsets.MonthEnd(0)
     data = [[float(x) for x in r[1:len(header) + 1]] for r in rows]
     df = pd.DataFrame(data, index=idx, columns=header)
     return df.replace([-99.99, -999.0], np.nan)
@@ -97,7 +100,8 @@ def french_frame_to_level(df: pd.DataFrame, entry: dict) -> pd.Series:
 
 def returns_to_level(r: pd.Series, name: str, base: float = 100.0) -> pd.Series:
     r = r.dropna()
-    first = r.index[0] - pd.offsets.MonthEnd(1)
+    is_month_end = bool((r.index == r.index + pd.offsets.MonthEnd(0)).all())
+    first = r.index[0] - (pd.offsets.MonthEnd(1) if is_month_end else pd.offsets.BDay(1))
     lvl = pd.concat([pd.Series([base], index=[first]), base * (1 + r).cumprod()])
     return lvl.rename(name)
 
@@ -131,12 +135,57 @@ def parse_riksbank_json(raw: bytes, entry: dict) -> pd.Series:
 # data/manual/<file>; never downloaded automatically.
 # --------------------------------------------------------------------------
 
+SIDECAR_FIELDS = ("source", "source_url", "exported_at", "exported_by", "licence_terms", "series_definition")
+
+
+class ManualImportError(ValueError):
+    pass
+
+
+def validate_sidecar(csv_path) -> dict:
+    """Manual (licensed) exports must carry provenance in <file>.source.yaml."""
+    from pathlib import Path
+
+    import yaml
+
+    side = Path(str(csv_path) + ".source.yaml")
+    if not side.exists():
+        raise ManualImportError(f"missing provenance sidecar {side.name}")
+    meta = yaml.safe_load(side.read_text()) or {}
+    missing = [f for f in SIDECAR_FIELDS if not meta.get(f)]
+    if missing:
+        raise ManualImportError(f"{side.name}: missing fields {missing}")
+    return meta
+
+
 def parse_local_csv(raw: bytes, entry: dict) -> pd.Series:
+    """Strict schema: columns date,value; ISO dates; strictly increasing; no
+    duplicates; finite positive values (index levels / NAV). Anything else is
+    refused - no repair. Data before fetch.launch_date is refused."""
     f = entry.get("fetch", {})
-    df = pd.read_csv(io.BytesIO(raw))
+    df = pd.read_csv(io.BytesIO(raw), dtype=str)
     dc, vc = f.get("date_column", "date"), f.get("value_column", "value")
-    s = pd.Series(pd.to_numeric(df[vc], errors="coerce").values, index=pd.to_datetime(df[dc]), name=entry["id"])
-    return s.dropna().sort_index()
+    if list(df.columns[:2]) != [dc, vc]:
+        raise ManualImportError(f"{entry['id']}: expected columns [{dc},{vc}], got {list(df.columns)}")
+    try:
+        dates = pd.to_datetime(df[dc], format="%Y-%m-%d")
+    except Exception as e:  # noqa: BLE001
+        raise ManualImportError(f"{entry['id']}: dates must be ISO YYYY-MM-DD ({e})") from e
+    vals = pd.to_numeric(df[vc], errors="coerce")
+    if vals.isna().any():
+        raise ManualImportError(f"{entry['id']}: non-numeric/missing value at row {int(vals.isna().idxmax()) + 2}")
+    if dates.duplicated().any():
+        raise ManualImportError(f"{entry['id']}: duplicate dates")
+    if not dates.is_monotonic_increasing:
+        raise ManualImportError(f"{entry['id']}: dates not strictly increasing")
+    if entry.get("asset_class") not in ("money_market_yield", "bond_yield") and (vals <= 0).any():
+        raise ManualImportError(f"{entry['id']}: non-positive level")
+    s = pd.Series(vals.values, index=pd.DatetimeIndex(dates), name=entry["id"])
+    if f.get("launch_date"):
+        launch = pd.Timestamp(str(f["launch_date"]))
+        if s.index.min() < launch:
+            raise ManualImportError(f"{entry['id']}: data at {s.index.min().date()} precedes launch {launch.date()}")
+    return s
 
 
 # --------------------------------------------------------------------------
@@ -243,6 +292,8 @@ def fetch_raw(entry: dict, store: RawStore, *, refresh: bool, offline: bool, man
         path = Path(manual_dir or "data/manual") / entry["fetch"]["file"]
         if not path.exists():
             raise FetchError(f"manual file not supplied: {path}")
+        if entry["fetch"].get("require_sidecar"):
+            validate_sidecar(path)
         return store.register_local(p, entry["id"], path)
     if p == "pypi_arch_french":
         cached = store.latest_cached(p, "frenchdata")

@@ -86,6 +86,17 @@ def cross_validation(data: dict) -> list[dict]:
             d = compare_returns(mret(a), mret(b), a, b)
             d["label"] = label
             out.append(d)
+    # Phase 2: synthetic Swedish cash model vs OMRX T-bill index (overlap from 2008-11)
+    if "RB_SSVX_3M" in data and "FRED_OMRXTBILL" in data:
+        chk = tbill_transform_check(to_month_end(data["FRED_OMRXTBILL"])["value"],
+                                    to_month_end(data["RB_SSVX_3M"])["value"])
+        for k, v in chk.items():
+            v["label"] = f"OMRX T-bill index vs SE_CASH_SSVX_SYNTH ({k})"
+            out.append(v)
+    if "RB_SEK_PER_USD" in data and "H10_SEK_PER_USD" in data:
+        d = compare_returns(mret("RB_SEK_PER_USD"), mret("H10_SEK_PER_USD"), "RB_SEK_PER_USD", "H10_SEK_PER_USD")
+        d["label"] = "USD/SEK: Riksbank fixing vs H.10 New York noon (monthly changes)"
+        out.append(d)
     if "AJ_TBILL_3M_TR" in data and "AJ_TB3MS_YIELD" in data:
         chk = tbill_transform_check(to_month_end(data["AJ_TBILL_3M_TR"])["value"],
                                     to_month_end(data["AJ_TB3MS_YIELD"])["value"])
@@ -127,7 +138,63 @@ def run_one(run: RunSpec, data: dict, catalog: dict, window_override: dict) -> l
     return results
 
 
+def access_report(status: dict, catalog: dict, store_manifest: Path) -> list[dict]:
+    """Which hosts/endpoints failed in THIS run, and why."""
+    from urllib.parse import urlparse
+
+    from .data.providers import entry_url
+
+    rows = []
+    for sid, st in sorted(status.items()):
+        e = catalog[sid]
+        url = st.get("url") or entry_url(e) or f"manual:{e['fetch'].get('file', '')}"
+        host = urlparse(url).netloc or url
+        err = st.get("error", "")
+        import re as _re
+        m = _re.search(r"(Tunnel connection failed: [^'\")]+|NameResolutionError|Read timed out|HTTP Error \d+|\d{3} Client Error[^'\"]*)", err)
+        rows.append({"series": sid, "host": host, "endpoint": url, "status": st["status"],
+                     "fetch": st.get("fetch", ""), "error": (m.group(1) if m else err)[:200]})
+    return rows
+
+
+def _common_window(results, members) -> tuple[str, str] | None:
+    spans = []
+    for rid in members:
+        rs = [r for r in results if r.run_spec.run_id == rid and r.window == "FULL"
+              and r.execution == NEXT_MONTH_CLOSE.name and r.cost_per_side_bps == 0 and len(r.monthly)]
+        if rs:
+            spans.append((rs[0].monthly.index[0], rs[0].monthly.index[-1]))
+    if not spans:
+        return None
+    a, b = max(x for x, _ in spans), min(y for _, y in spans)
+    return (str(a.date()), str(b.date())) if a < b else None
+
+
+def run_daily(run: RunSpec, data: dict, catalog: dict, window) -> list:
+    from .daily import SCENARIOS, run_daily_backtest
+    from .panel import build_daily_levels
+
+    panels = build_panels(run, data, catalog)
+    sigs = generate_signals(run.strategy, panels["momentum"], run.roles, stale=panels["stale"])
+    lv = build_daily_levels(run, data, catalog)
+    rf = panels["returns"][run.rf_asset] if run.rf_asset else None
+    out = []
+    for sc in SCENARIOS:
+        for cname, bps in COST_SCENARIOS.items():
+            res = run_daily_backtest(f"{run.run_id}__DAILY__{sc.name}__{cname}", sigs, lv, sc,
+                                     cost_per_side_bps=bps, rf_monthly=rf,
+                                     start=window[0] if window else None, end=window[1] if window else None)
+            res.run_spec = run
+            res.cost = bps
+            out.append(res)
+    return out
+
+
 def main(argv=None) -> int:
+    from .analysis import signal_agreement, signal_roles, usd_strategy_returns_in_sek
+    from .metrics import compute_metrics
+    from .runs import AGREEMENT_PAIRS, ROLE_OF_ASSET
+
     ap = argparse.ArgumentParser(prog="python -m gem.research")
     ap.add_argument("--refresh", action="store_true")
     ap.add_argument("--offline", action="store_true")
@@ -139,32 +206,37 @@ def main(argv=None) -> int:
     instruments = load_instruments(root / "data" / "investable_instruments.yaml")
     store = RawStore(root / "data" / "raw", root / "data" / "manifests")
     runs = all_runs()
-    needed = set(CROSS_CHECK_SERIES)
+    needed = set(CROSS_CHECK_SERIES) | {"AJ_TBILL_3M_TR", "RB_SEK_PER_USD", "RB_SSVX_1M", "RB_SSVX_6M",
+                                         "FRED_OECD_SE_3M_TREASURY", "FRED_DEXSDUS"}
+    needed |= {sid for sid, e in catalog.items() if sid.startswith("AVZ_NAV_")}
     for r in runs:
-        needed |= r.series_ids
-    needed |= {"AJ_TBILL_3M_TR"}
+        needed |= r.series_ids | r.daily_series_ids
     unknown = needed - set(catalog)
     if unknown:
         raise SystemExit(f"series used but not in catalog: {sorted(unknown)}")
 
     data, status = load_all(catalog, needed, store, args.refresh, args.offline, root / "data" / "manual")
+    for sid, st in status.items():
+        st["transform"] = catalog[sid].get("transform") or (
+            "level (total-return index)" if catalog[sid]["is_total_return"] else "none (not a return series)")
     quality = {sid: quality_report(s, catalog[sid]) for sid, s in data.items()}
     xval = cross_validation(data)
 
     gen = root / "reports" / "generated"
     gen.mkdir(parents=True, exist_ok=True)
     results, blocked = [], {}
-    # 3P benchmarks are evaluated over exactly the months of the matching GEM run
     order = sorted(runs, key=lambda r: (r.tier == "BENCHMARK", r.run_id))
     window_override: dict = {}
+    ran: set[str] = set()
     for run in order:
         missing = sorted(s for s in run.series_ids if s not in data)
         if missing:
-            blocked[run.run_id] = {"tier": run.tier,
+            blocked[run.run_id] = {"tier": run.tier, "group": run.group,
                                    "missing": {m: status.get(m, {}).get("error", "not loaded") for m in missing}}
             continue
         res = run_one(run, data, catalog, window_override)
         results.extend(res)
+        ran.add(run.run_id)
         if run.run_id.startswith("GEM_ORIGINAL_") and run.run_id.endswith("_3P"):
             suffix = run.run_id.replace("GEM_ORIGINAL_", "")
             base = [x for x in res if x.window == "FULL" and x.execution == NEXT_MONTH_CLOSE.name
@@ -177,10 +249,81 @@ def main(argv=None) -> int:
                 for b in ("BUY_HOLD_US", "BUY_HOLD_EXUS", "BUY_HOLD_US_AGG", "STATIC_70_30_US"):
                     window_override[f"{b}_{suffix}"] = wins
 
+    # ---- comparison groups: rerun every member over the group's COMMON window ----
+    groups: dict[str, list[str]] = {}
+    for r in runs:
+        if r.group:
+            groups.setdefault(r.group, []).append(r.run_id)
+    group_windows = {}
+    for g, members in sorted(groups.items()):
+        ok = [m for m in members if m in ran]
+        need_swedish = any(next(x for x in runs if x.run_id == m).tier == "SWEDISH" for m in ok)
+        w = _common_window(results, ok) if need_swedish else None
+        group_windows[g] = {"members": members, "ran": ok, "common_window": w}
+        if w:
+            for m in ok:
+                spec = next(x for x in runs if x.run_id == m)
+                results.extend(run_one(spec, data, catalog, {m: [(f"COMMON_{g}", w[0], w[1])]}))
+
+    # ---- daily execution scenarios A/B/C ----
+    daily_results, daily_blocked = [], {}
+    for r in runs:
+        if not r.daily_legs:
+            continue
+        miss = sorted(s for s in (r.series_ids | r.daily_series_ids) if s not in data)
+        if miss:
+            daily_blocked[r.run_id] = {m: status.get(m, {}).get("error", "not loaded") for m in miss}
+            continue
+        w = (group_windows.get(r.group) or {}).get("common_window")
+        daily_results.extend(run_daily(r, data, catalog, w))
+
+    # ---- GEM_ORIGINAL vs GEM_SEK signal agreement ----
+    agreement = {}
+    for a_id, b_id in AGREEMENT_PAIRS:
+        if a_id not in ran or b_id not in ran:
+            agreement[f"{a_id} vs {b_id}"] = {"status": "BLOCKED",
+                                              "missing_runs": [x for x in (a_id, b_id) if x not in ran]}
+            continue
+        spec_b = next(x for x in runs if x.run_id == b_id)
+        w = (group_windows.get(spec_b.group) or {}).get("common_window")
+        pick = lambda rid, win: next(x for x in results if x.run_spec.run_id == rid and x.window == win
+                                     and x.execution == IDEALIZED_CLOSE.name and x.cost_per_side_bps == 0)
+        win = f"COMMON_{spec_b.group}" if w else "FULL"
+        ra, rb = pick(a_id, win), pick(b_id, win)
+        ag = signal_agreement(signal_roles(ra.signals, ROLE_OF_ASSET), signal_roles(rb.signals, ROLE_OF_ASSET),
+                              *(w if w else (None, None)))
+        spec_a = next(x for x in runs if x.run_id == a_id)
+        orig_sek = usd_strategy_returns_in_sek(ra.returns, data[spec_a.sek_fx_for_comparison])
+        common = orig_sek.dropna().index.intersection(rb.returns.dropna().index)
+        m_a = compute_metrics(orig_sek.loc[common])
+        m_b = compute_metrics(rb.returns.loc[common])
+        ag.update({"status": "OK", "window": win, "original_in_sek": m_a, "sek_model": m_b,
+                   "cagr_diff_sek_minus_original": m_b["cagr"] - m_a["cagr"],
+                   "maxdd_diff_sek_minus_original": m_b["max_drawdown"] - m_a["max_drawdown"]})
+        agreement[f"{a_id} vs {b_id}"] = ag
+
+    # ---- implementation gap (REGIONAL_SEK on Avanza funds) ----
+    from .implementation import implementation_gap, rules_from_instruments
+    impl = {"status": "BLOCKED", "reason": "daily index data for REGIONAL_SEK_FF_PROXY_OMRX_V1 unavailable"}
+    reg = next(x for x in runs if x.run_id == "REGIONAL_SEK_FF_PROXY_OMRX_V1")
+    if not any(k == reg.run_id for k in daily_blocked) and reg.run_id in ran:
+        from .panel import build_daily_levels
+        panels = build_panels(reg, data, catalog)
+        sigs = generate_signals(reg.strategy, panels["momentum"], reg.roles, stale=panels["stale"])
+        nav = {sid: s for sid, s in data.items() if sid.startswith("AVZ_NAV_")}
+        fees = {it["name"]: it["ongoing_charge"] for it in instruments}
+        impl = implementation_gap(reg.strategy, sigs, build_daily_levels(reg, data, catalog), nav,
+                                  rules_from_instruments(instruments), fees, reg.roles,
+                                  rf_monthly=panels["returns"]["SE_SHORT_RATE"])
+
     for r in results:
         r.export(gen / "runs" / r.run_id)
+    access = access_report(status, catalog, store.manifest)
     reporting.write_all(root, catalog, status, quality, xval, results, blocked, instruments)
-    log.info("runs completed: %d result sets, %d blocked runs", len(results), len(blocked))
+    reporting.write_phase2(root, catalog, status, access, results, blocked, group_windows, daily_results,
+                           daily_blocked, agreement, impl, runs)
+    log.info("runs completed: %d monthly result sets, %d daily result sets, %d blocked runs",
+             len(results), len(daily_results), len(blocked))
     return 0
 
 

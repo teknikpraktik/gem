@@ -329,27 +329,94 @@ series:
   fetch: {provider: riksbank, from: "1993-01-01"}
 
 - id: RB_SSVX_3M
-  name: Swedish Treasury bill 3-month yield (Riksbank)
+  name: Swedish Treasury bill 3-month yield (Riksbank benchmark)
   provider: Sveriges Riksbank SWEA API
   provider_series_id: SETB3MBENCH
-  source_url: https://www.riksbank.se/en-gb/statistics/interest-rates-and-exchange-rates/
+  source_url: https://www.riksbank.se/en-gb/statistics/interest-rates-and-exchange-rates/retrieving-interest-rates-and-exchange-rates-via-api/series-for-the-api/
+  asset_class: money_market_yield
+  region: SE
+  currency: SEK
+  frequency: daily (Swedish banking days)
+  is_total_return: false
+  start_date: "1983-01-03"
+  end_date: ongoing
+  license_notes: Riksbank open data; API terms and rate limits apply.
+  retrieval_method: HTTPS GET /swea/v1/Observations/{id}/{from}/{to}
+  proxy_for: OMRX Treasury Bill Index (synthetic cash model SE_CASH_SSVX_SYNTH_V1)
+  quality_status: PROXY
+  verification: VERIFIED FROM PRIMARY SOURCE
+  build_env: BLOCKED
+  notes: >-
+    Series id SETB3MBENCH and start 1983-01-03 confirmed on the Riksbank "Series for the API" page
+    (search extract, 2026-10-31). A YIELD - never used as a total-return index. Converted by the
+    documented cash model SE_CASH_SSVX_SYNTH_V1: month-end yield, r_t = y_{t-1}/1200 (simple, money-
+    market convention ASSUMPTION; day-count ACT/360 vs ACT/365 difference ~1.4 % of the rate is
+    ignored and documented).
+  transform: {model: SE_CASH_SSVX_SYNTH_V1, method: simple_prior, sampling: month_end_last_valid}
+  fetch: {provider: riksbank, from: "1983-01-01"}
+
+- id: RB_SSVX_1M
+  name: Swedish Treasury bill 1-month yield (Riksbank)
+  provider: Sveriges Riksbank SWEA API
+  provider_series_id: SETB1MBENCHC
+  source_url: https://www.riksbank.se/en-gb/statistics/interest-rates-and-exchange-rates/retrieving-interest-rates-and-exchange-rates-via-api/series-for-the-api/
   asset_class: money_market_yield
   region: SE
   currency: SEK
   frequency: daily
   is_total_return: false
-  start_date: UNRESOLVED (target ~1983)
+  start_date: UNRESOLVED
   end_date: ongoing
   license_notes: Riksbank open data.
   retrieval_method: HTTPS GET /swea/v1/Observations/{id}/{from}/{to}
-  proxy_for: OMRX Treasury Bill Index (pre-2008 synthetic splice only)
+  proxy_for: cross-check of the 3m cash model
   quality_status: PROXY
-  verification: ASSUMPTION
+  verification: VERIFIED FROM PRIMARY SOURCE
   build_env: BLOCKED
-  notes: >-
-    Series id is an ASSUMPTION - confirm via /swea/v1/Series. A yield; NEVER used directly as a
-    total-return index. Only allowed after yield_to_monthly_return() and only as a labelled proxy.
+  notes: Id from the Riksbank series page (search extract). Sensitivity / cross-check only.
   fetch: {provider: riksbank, from: "1983-01-01"}
+
+- id: RB_SSVX_6M
+  name: Swedish Treasury bill 6-month yield (Riksbank)
+  provider: Sveriges Riksbank SWEA API
+  provider_series_id: SETB6MBENCH
+  source_url: https://www.riksbank.se/en-gb/statistics/interest-rates-and-exchange-rates/retrieving-interest-rates-and-exchange-rates-via-api/series-for-the-api/
+  asset_class: money_market_yield
+  region: SE
+  currency: SEK
+  frequency: daily
+  is_total_return: false
+  start_date: UNRESOLVED
+  end_date: ongoing
+  license_notes: Riksbank open data.
+  retrieval_method: HTTPS GET /swea/v1/Observations/{id}/{from}/{to}
+  proxy_for: cross-check of the 3m cash model
+  quality_status: PROXY
+  verification: VERIFIED FROM PRIMARY SOURCE
+  build_env: BLOCKED
+  notes: Id from the Riksbank series page (search extract). Cross-check only.
+  fetch: {provider: riksbank, from: "1983-01-01"}
+
+- id: FRED_OECD_SE_3M_TREASURY
+  name: OECD 3-month Treasury securities rate, Sweden (monthly)
+  provider: FRED (OECD Main Economic Indicators)
+  provider_series_id: IR3TTS01SEM156N
+  source_url: https://fred.stlouisfed.org/series/IR3TTS01SEM156N
+  asset_class: money_market_yield
+  region: SE
+  currency: SEK
+  frequency: monthly
+  is_total_return: false
+  start_date: UNRESOLVED
+  end_date: "2023-12 (stale per FRED search extract)"
+  license_notes: OECD terms via FRED.
+  retrieval_method: HTTPS GET fredgraph.csv
+  proxy_for: cross-check of RB_SSVX_3M
+  quality_status: PROXY
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: BLOCKED
+  notes: Appears discontinued after 2023-12 - cross-check only, not a model input.
+  fetch: {provider: fred}
 
 # --- licensed sources: supported via manual CSV export placed in data/manual/ -------
 
@@ -372,7 +439,7 @@ series:
   verification: UNRESOLVED
   build_env: BLOCKED
   notes: Required for GEM_ORIGINAL_STRICT.
-  fetch: {provider: local_csv, file: spx_tr.csv}
+  fetch: {provider: local_csv, file: spx_tr.csv, require_sidecar: true}
 
 - id: MSCI_ACWI_EXUS_OFFICIAL
   name: MSCI ACWI ex USA (USD, gross or net - record which)
@@ -393,7 +460,7 @@ series:
   verification: UNRESOLVED
   build_env: BLOCKED
   notes: Required for GEM_ORIGINAL_STRICT.
-  fetch: {provider: local_csv, file: msci_acwi_exus.csv}
+  fetch: {provider: local_csv, file: msci_acwi_exus.csv, require_sidecar: true}
 
 - id: MSCI_ACWI_OFFICIAL
   name: MSCI ACWI (USD) - global benchmark
@@ -414,7 +481,7 @@ series:
   verification: UNRESOLVED
   build_env: BLOCKED
   notes: Needed for BUY_HOLD_GLOBAL / STATIC_70_30. No open substitute was found in the build env.
-  fetch: {provider: local_csv, file: msci_acwi.csv}
+  fetch: {provider: local_csv, file: msci_acwi.csv, require_sidecar: true}
 
 - id: BBG_US_AGG_OFFICIAL
   name: Bloomberg US Aggregate Bond Index total return
@@ -435,7 +502,7 @@ series:
   verification: VERIFIED FROM SECONDARY SOURCE
   build_env: BLOCKED
   notes: Required for GEM_ORIGINAL_STRICT.
-  fetch: {provider: local_csv, file: us_agg.csv}
+  fetch: {provider: local_csv, file: us_agg.csv, require_sidecar: true}
 
 - id: NASDAQ_OMRXTBILL_FULL
   name: OMRX Treasury Bill Index - full history from Nasdaq
@@ -455,8 +522,12 @@ series:
   quality_status: LICENSE_RESTRICTED
   verification: UNRESOLVED
   build_env: BLOCKED
-  notes: Needed to run GEM_SEK before 2008-11 without a synthetic proxy.
-  fetch: {provider: local_csv, file: omrxtbill.csv}
+  notes: >-
+    Needed to run GEM_SEK before 2008-11 without a synthetic proxy. Strict import schema: CSV with
+    columns date,value (ISO dates, strictly increasing, positive index levels) plus a sidecar
+    omrxtbill.csv.source.yaml with source, source_url, exported_at, exported_by, licence_terms,
+    series_definition. Import is refused if any field is missing.
+  fetch: {provider: local_csv, file: omrxtbill.csv, require_sidecar: true}
 
 # =====================================================================================
 # B. SECONDARY MIRRORS / THIRD-PARTY COMPILATIONS (REACHABLE in build env)
@@ -773,3 +844,227 @@ series:
     Nov 1992 levels lost their leading digit (e.g. 0.366 instead of 10.366), producing -96% / +2749%
     monthly "returns". Evidence that the compilation was assembled by hand. Not used in any run.
   fetch: {provider: github_aj, column: "30 day Treas Bills", cache_key: aj_msci_all_gross, url: "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv"}
+
+# =====================================================================================
+# C. PHASE 2 ADDITIONS
+# =====================================================================================
+
+- id: FF_DEVELOPED_MKT_TR
+  name: Fama/French Developed markets total return (USD) = Mkt-RF + RF
+  provider: Kenneth R. French Data Library
+  provider_series_id: Developed_3_Factors (Mkt-RF + RF)
+  source_url: https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_3developed.html
+  asset_class: equity
+  region: Developed markets incl. US (NO emerging markets)
+  currency: USD
+  frequency: monthly
+  is_total_return: true
+  start_date: "1990-07"
+  end_date: ongoing
+  license_notes: Freely available for research.
+  retrieval_method: HTTPS GET zip
+  proxy_for: MSCI ACWI (global benchmark, developed-only approximation)
+  quality_status: PROXY
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: BLOCKED
+  notes: Open global benchmark proxy for BUY_HOLD_GLOBAL_FF_DEV_PROXY_V1. Lacks EM (~10 % of ACWI).
+  fetch: {provider: french, file: Developed_3_Factors_CSV.zip, returns: "Mkt-RF + RF"}
+
+- id: FF_US_MKT_TR_DAILY
+  name: Fama/French US market TR daily = Mkt-RF + RF
+  provider: Kenneth R. French Data Library
+  provider_series_id: F-F_Research_Data_Factors_daily (Mkt-RF + RF)
+  source_url: https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html
+  asset_class: equity
+  region: US
+  currency: USD
+  frequency: daily
+  is_total_return: true
+  start_date: "1926-07-01"
+  end_date: ongoing
+  license_notes: Freely available for research.
+  retrieval_method: HTTPS GET zip
+  proxy_for: S&P 500 TR (daily execution model)
+  quality_status: PROXY
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: BLOCKED
+  notes: Daily series for execution scenarios B/C.
+  fetch: {provider: french, file: F-F_Research_Data_Factors_daily_CSV.zip, returns: "Mkt-RF + RF", daily: true}
+
+- id: FF_EUROPE_MKT_TR_DAILY
+  name: Fama/French Europe market TR daily (USD)
+  provider: Kenneth R. French Data Library
+  provider_series_id: Europe_3_Factors_Daily (Mkt-RF + RF)
+  source_url: https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html
+  asset_class: equity
+  region: Europe (developed)
+  currency: USD
+  frequency: daily
+  is_total_return: true
+  start_date: "1990-07-02"
+  end_date: ongoing
+  license_notes: Freely available for research.
+  retrieval_method: HTTPS GET zip
+  proxy_for: Europe region (daily execution model)
+  quality_status: PROXY
+  verification: ASSUMPTION
+  build_env: BLOCKED
+  notes: File name ASSUMPTION.
+  fetch: {provider: french, file: Europe_3_Factors_Daily_CSV.zip, returns: "Mkt-RF + RF", daily: true}
+
+- id: FF_EMERGING_MKT_TR_DAILY
+  name: Fama/French Emerging markets TR daily (USD)
+  provider: Kenneth R. French Data Library
+  provider_series_id: Emerging_5_Factors_Daily (Mkt-RF + RF)
+  source_url: https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html
+  asset_class: equity
+  region: Emerging markets
+  currency: USD
+  frequency: daily
+  is_total_return: true
+  start_date: UNRESOLVED
+  end_date: ongoing
+  license_notes: Freely available for research.
+  retrieval_method: HTTPS GET zip
+  proxy_for: EM region (daily execution model)
+  quality_status: PROXY
+  verification: ASSUMPTION
+  build_env: BLOCKED
+  notes: File name ASSUMPTION.
+  fetch: {provider: french, file: Emerging_5_Factors_Daily_CSV.zip, returns: "Mkt-RF + RF", daily: true}
+
+- id: RB_SEK_PER_USD_DAILY_H10
+  name: SEK per USD daily (H.10 mirror) - same raw file as H10_SEK_PER_USD
+  provider: datahub.io core datasets (GitHub mirror of FRED)
+  provider_series_id: "exchange-rates/data/daily.csv, Country=Sweden"
+  source_url: https://github.com/datasets/exchange-rates
+  asset_class: fx
+  region: SE/US
+  currency: SEK per USD
+  frequency: daily
+  is_total_return: false
+  start_date: "1971-01-04"
+  end_date: ongoing
+  license_notes: Public domain (Federal Reserve).
+  retrieval_method: HTTPS GET raw.githubusercontent.com
+  proxy_for: RB_SEK_PER_USD
+  quality_status: VERIFIED
+  verification: VERIFIED FROM SECONDARY SOURCE
+  build_env: REACHABLE
+  notes: Daily FX for the daily execution model (New York noon rate, not the Stockholm fixing).
+  fetch: {provider: github_h10, country: Sweden, cache_key: H10_SEK_PER_USD, url: "https://raw.githubusercontent.com/datasets/exchange-rates/main/data/daily.csv"}
+
+- id: AVZ_NAV_USA
+  name: Avanza USA NAV per unit (daily, SEK)
+  provider: Avanza Fonder AB (manual export of official NAV history)
+  provider_series_id: "SE0012741163"
+  source_url: https://www.avanza.se/fonder/
+  asset_class: fund_nav
+  region: see data/investable_instruments.yaml
+  currency: SEK
+  frequency: daily
+  is_total_return: true
+  start_date: "2019-12"
+  end_date: ongoing
+  license_notes: Avanza terms - personal research use; verify before redistribution.
+  retrieval_method: manual CSV data/manual/nav_SE0012741163.csv + .source.yaml sidecar
+  proxy_for: null
+  quality_status: EXPERIMENTAL
+  verification: UNRESOLVED
+  build_env: BLOCKED
+  notes: >-
+    INVESTABLE_INSTRUMENT, not a signal index. Accumulating share class assumed (ASSUMPTION - if
+    the class distributes, dividends must be added before use). Never used before launch date.
+  fetch: {provider: local_csv, file: nav_SE0012741163.csv, require_sidecar: true, launch_date: "2019-12"}
+
+- id: AVZ_NAV_EUROPA
+  name: Avanza Europa NAV per unit (daily, SEK)
+  provider: Avanza Fonder AB (manual export of official NAV history)
+  provider_series_id: "SE0013718699"
+  source_url: https://www.avanza.se/fonder/
+  asset_class: fund_nav
+  region: see data/investable_instruments.yaml
+  currency: SEK
+  frequency: daily
+  is_total_return: true
+  start_date: "2020-02-05"
+  end_date: ongoing
+  license_notes: Avanza terms - personal research use; verify before redistribution.
+  retrieval_method: manual CSV data/manual/nav_SE0013718699.csv + .source.yaml sidecar
+  proxy_for: null
+  quality_status: EXPERIMENTAL
+  verification: UNRESOLVED
+  build_env: BLOCKED
+  notes: >-
+    INVESTABLE_INSTRUMENT, not a signal index. Accumulating share class assumed (ASSUMPTION - if
+    the class distributes, dividends must be added before use). Never used before launch date.
+  fetch: {provider: local_csv, file: nav_SE0013718699.csv, require_sidecar: true, launch_date: "2020-02-05"}
+
+- id: AVZ_NAV_EM
+  name: Avanza Emerging Markets NAV per unit (daily, SEK)
+  provider: Avanza Fonder AB (manual export of official NAV history)
+  provider_series_id: "SE0012454338"
+  source_url: https://www.avanza.se/fonder/
+  asset_class: fund_nav
+  region: see data/investable_instruments.yaml
+  currency: SEK
+  frequency: daily
+  is_total_return: true
+  start_date: "2019"
+  end_date: ongoing
+  license_notes: Avanza terms - personal research use; verify before redistribution.
+  retrieval_method: manual CSV data/manual/nav_SE0012454338.csv + .source.yaml sidecar
+  proxy_for: null
+  quality_status: EXPERIMENTAL
+  verification: UNRESOLVED
+  build_env: BLOCKED
+  notes: >-
+    INVESTABLE_INSTRUMENT, not a signal index. Accumulating share class assumed (ASSUMPTION - if
+    the class distributes, dividends must be added before use). Never used before launch date.
+  fetch: {provider: local_csv, file: nav_SE0012454338.csv, require_sidecar: true, launch_date: "2019"}
+
+- id: AVZ_NAV_RANTA_KORT
+  name: Avanza Ränta Kort NAV per unit (daily, SEK)
+  provider: Avanza Fonder AB (manual export of official NAV history)
+  provider_series_id: "SE0021021425"
+  source_url: https://www.avanza.se/fonder/
+  asset_class: fund_nav
+  region: see data/investable_instruments.yaml
+  currency: SEK
+  frequency: daily
+  is_total_return: true
+  start_date: "2023"
+  end_date: ongoing
+  license_notes: Avanza terms - personal research use; verify before redistribution.
+  retrieval_method: manual CSV data/manual/nav_SE0021021425.csv + .source.yaml sidecar
+  proxy_for: null
+  quality_status: EXPERIMENTAL
+  verification: UNRESOLVED
+  build_env: BLOCKED
+  notes: >-
+    INVESTABLE_INSTRUMENT, not a signal index. Accumulating share class assumed (ASSUMPTION - if
+    the class distributes, dividends must be added before use). Never used before launch date.
+  fetch: {provider: local_csv, file: nav_SE0021021425.csv, require_sidecar: true, launch_date: "2023"}
+
+- id: AVZ_NAV_GLOBAL
+  name: Avanza Global NAV per unit (daily, SEK)
+  provider: Avanza Fonder AB (manual export of official NAV history)
+  provider_series_id: "SE0011527613"
+  source_url: https://www.avanza.se/fonder/
+  asset_class: fund_nav
+  region: see data/investable_instruments.yaml
+  currency: SEK
+  frequency: daily
+  is_total_return: true
+  start_date: "2018-08-27"
+  end_date: ongoing
+  license_notes: Avanza terms - personal research use; verify before redistribution.
+  retrieval_method: manual CSV data/manual/nav_SE0011527613.csv + .source.yaml sidecar
+  proxy_for: null
+  quality_status: EXPERIMENTAL
+  verification: UNRESOLVED
+  build_env: BLOCKED
+  notes: >-
+    INVESTABLE_INSTRUMENT, not a signal index. Accumulating share class assumed (ASSUMPTION - if
+    the class distributes, dividends must be added before use). Never used before launch date.
+  fetch: {provider: local_csv, file: nav_SE0011527613.csv, require_sidecar: true, launch_date: "2018-08-27"}

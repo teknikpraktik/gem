@@ -20,6 +20,7 @@ EXTREME_MONTHLY_MOVE = {
     "money_market_yield": None,  # yields: check level changes instead
     "bond_yield": None,
     "fx": 0.15,
+    "fund_nav": 0.25,
 }
 
 

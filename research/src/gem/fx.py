@@ -52,3 +52,17 @@ def convert_index_usd_to_sek(usd_index: pd.Series, sek_per_usd: pd.Series) -> pd
     check_sek_per_usd(sek_per_usd)
     a, b = usd_index.align(sek_per_usd, join="outer")
     return (a * b).rename(f"{usd_index.name}_SEK" if usd_index.name else None)
+
+
+def sek_returns_from_usd_index(usd_level: pd.Series, sek_per_usd: pd.Series) -> pd.Series:
+    """Monthly SEK returns computed from the SEK INDEX LEVEL (never by adding %).
+
+        TR_SEK(t) = TR_USD(t) * USDSEK(t)
+        r_SEK(t)  = TR_SEK(t) / TR_SEK(t-1) - 1
+
+    Both inputs month-end labelled. A missing level or FX value gives NaN.
+    """
+    check_sek_per_usd(sek_per_usd)
+    a, b = usd_level.align(sek_per_usd, join="left")
+    sek = a * b
+    return (sek / sek.shift(1) - 1).rename(usd_level.name)

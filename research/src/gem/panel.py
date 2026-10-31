@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import pandas as pd
 
-from .fx import check_sek_per_usd
+from .fx import check_sek_per_usd, sek_returns_from_usd_index
 from .returns import (
     index_from_returns, par_bond_monthly_return, simple_returns, to_month_end, trailing_return,
     yield_to_monthly_return,
@@ -48,10 +48,9 @@ def leg_returns(leg: Leg, data: dict[str, pd.Series], catalog: dict[str, dict]) 
         raise ValueError("overlapping splice segments")
     if leg.fx_to_sek:
         fx_me = to_month_end(data[leg.fx_to_sek])
-        fx = fx_me["value"]
-        check_sek_per_usd(fx)
-        fx_ret = fx / fx.shift(1)
-        r = ((1 + r) * fx_ret.reindex(r.index) - 1)
+        full = pd.date_range(r.index.min() - pd.offsets.MonthEnd(1), r.index.max(), freq="ME")
+        usd_level = chain_levels(r.reindex(full[1:])).reindex(full)
+        r = sek_returns_from_usd_index(usd_level, fx_me["value"]).reindex(r.index)
         st = st | fx_me["stale"].reindex(st.index).fillna(False).astype(bool)
     return r, st.astype(bool)
 
@@ -98,3 +97,30 @@ def build_panels(run: RunSpec, data: dict[str, pd.Series], catalog: dict[str, di
     L = pd.DataFrame({a: chain_levels(R[a]) for a in R}).reindex(full)
     M = pd.DataFrame({a: trailing_return(L[a].dropna(), LOOKBACK_MONTHS) for a in L}).reindex(full)
     return {"returns": R, "levels": L, "momentum": M, "stale": S}
+
+
+def daily_level(leg: Leg, data: dict[str, pd.Series], catalog: dict[str, dict], max_fx_gap_days: int = 5) -> pd.Series:
+    """Daily TR level for one leg (single segment). USD legs are converted with
+    TR_SEK(d) = TR_USD(d) * SEKUSD(d); FX may be carried forward at most
+    `max_fx_gap_days` calendar days (FX holidays), never further."""
+    if len(leg.segments) != 1:
+        raise ValueError("daily legs must have exactly one segment")
+    sid = leg.segments[0][0]
+    e = catalog[sid]
+    if not e["is_total_return"]:
+        raise ValueError(f"{sid}: daily execution needs a total-return level series")
+    lv = data[sid].sort_index()
+    if leg.fx_to_sek:
+        fx = data[leg.fx_to_sek].sort_index()
+        check_sek_per_usd(fx)
+        fx_on = fx.reindex(fx.index.union(lv.index)).ffill(limit=None)
+        last_obs = pd.Series(fx.index, index=fx.index).reindex(fx_on.index).ffill()
+        age = (fx_on.index - pd.DatetimeIndex(last_obs.values)).days
+        fx_on = fx_on.where(age <= max_fx_gap_days)
+        lv = lv * fx_on.reindex(lv.index)
+    return lv.dropna().rename(sid)
+
+
+def build_daily_levels(run: RunSpec, data: dict[str, pd.Series], catalog: dict[str, dict]) -> pd.DataFrame:
+    cols = {a: daily_level(leg, data, catalog) for a, leg in (run.daily_legs or {}).items()}
+    return pd.DataFrame(cols).sort_index()

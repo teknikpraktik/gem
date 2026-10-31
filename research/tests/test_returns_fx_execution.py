@@ -180,3 +180,32 @@ def test_chain_levels_never_bridges_gaps():
     bad = tr[(tr.index >= gap) & (tr.index < gap + pd.offsets.MonthEnd(13))].dropna()
     assert bad.empty
     assert tr.dropna().index[-1] == r.index[-1]
+
+
+# ---------- phase 2: level-based USD -> SEK ----------
+
+def test_sek_return_fx_unchanged_equals_usd_return():
+    from gem.fx import sek_returns_from_usd_index
+    usd = _monthly([100.0, 110.0])
+    fx = _monthly([10.0, 10.0])
+    assert sek_returns_from_usd_index(usd, fx).iloc[1] == pytest.approx(0.10)
+
+
+def test_sek_return_includes_fx_move():
+    from gem.fx import sek_returns_from_usd_index
+    usd = _monthly([100.0, 110.0])
+    fx = _monthly([10.0, 11.0])
+    # SEK level 1000 -> 1210  => +21 %, not 10 % + 10 % = 20 %
+    assert sek_returns_from_usd_index(usd, fx).iloc[1] == pytest.approx(0.21)
+
+
+def test_panel_leg_uses_level_based_conversion():
+    from gem.panel import leg_returns
+    from gem.runs import Leg
+    idx = pd.date_range("2020-01-31", periods=3, freq="ME")
+    data = {"U": pd.Series([100.0, 110.0, 99.0], idx), "FX": pd.Series([10.0, 11.0, 11.0], idx)}
+    cat = {"U": {"id": "U", "asset_class": "equity", "is_total_return": True},
+           "FX": {"id": "FX", "asset_class": "fx", "is_total_return": False}}
+    r, _ = leg_returns(Leg((("U", None),), fx_to_sek="FX"), data, cat)
+    assert r.loc["2020-02-29"] == pytest.approx(1210 / 1000 - 1)
+    assert r.loc["2020-03-31"] == pytest.approx(99 * 11 / 1210 - 1)
