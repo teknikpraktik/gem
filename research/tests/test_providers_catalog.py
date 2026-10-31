@@ -183,3 +183,17 @@ def test_french_daily_parser():
     text = ",Mkt-RF,SMB,HML,RF\n19260701,    0.10,   -0.25,   -0.27,    0.009\n19260702,    0.45,   -0.33,   -0.06,    0.009\n"
     df = parse_french_csv_text(text)
     assert df.index[0] == pd.Timestamp("1926-07-01") and len(df) == 2
+
+
+def test_get_with_retry_honours_429(monkeypatch):
+    from gem.data import base
+
+    class R:
+        def __init__(self, code, ra=""):
+            self.status_code, self.headers = code, {"Retry-After": ra} if ra else {}
+
+    seq = iter([R(429, "3"), R(503), R(200)])
+    monkeypatch.setattr(base.requests, "get", lambda *a, **k: next(seq))
+    waits = []
+    r = base._get_with_retry("https://x", {}, 5, sleep=waits.append)
+    assert r.status_code == 200 and waits == [3.0, 4]

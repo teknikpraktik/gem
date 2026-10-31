@@ -3,7 +3,6 @@
     {
       "endpoint": "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv",
       "error": "",
-      "fetch": "CACHED",
       "host": "raw.githubusercontent.com",
       "series": "AJ_IBBOTSON_IT_GOVT",
       "status": "OK"
@@ -11,7 +10,6 @@
     {
       "endpoint": "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv",
       "error": "",
-      "fetch": "CACHED",
       "host": "raw.githubusercontent.com",
       "series": "AJ_IBBOTSON_LARGE",
       "status": "OK"
@@ -19,7 +17,6 @@
     {
       "endpoint": "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv",
       "error": "",
-      "fetch": "CACHED",
       "host": "raw.githubusercontent.com",
       "series": "AJ_IBBOTSON_TBILL_30D",
       "status": "OK"
@@ -27,7 +24,6 @@
     {
       "endpoint": "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv",
       "error": "",
-      "fetch": "CACHED",
       "host": "raw.githubusercontent.com",
       "series": "AJ_MSCI_ACWI_EXUS_GR",
       "status": "OK"
@@ -35,7 +31,6 @@
     {
       "endpoint": "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv",
       "error": "",
-      "fetch": "CACHED",
       "host": "raw.githubusercontent.com",
       "series": "AJ_MSCI_USA_GR",
       "status": "OK"
@@ -43,7 +38,6 @@
     {
       "endpoint": "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv",
       "error": "",
-      "fetch": "CACHED",
       "host": "raw.githubusercontent.com",
       "series": "AJ_MSCI_WORLD_EXUS_GR",
       "status": "OK"
@@ -51,7 +45,6 @@
     {
       "endpoint": "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv",
       "error": "",
-      "fetch": "CACHED",
       "host": "raw.githubusercontent.com",
       "series": "AJ_SP500TR",
       "status": "OK"
@@ -59,7 +52,6 @@
     {
       "endpoint": "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv",
       "error": "",
-      "fetch": "CACHED",
       "host": "raw.githubusercontent.com",
       "series": "AJ_TB3MS_YIELD",
       "status": "OK"
@@ -67,7 +59,6 @@
     {
       "endpoint": "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv",
       "error": "",
-      "fetch": "CACHED",
       "host": "raw.githubusercontent.com",
       "series": "AJ_TBILL_3M_TR",
       "status": "OK"
@@ -75,7 +66,6 @@
     {
       "endpoint": "https://raw.githubusercontent.com/alexjansenhome/GEM/master/msci_all_gross.csv",
       "error": "",
-      "fetch": "CACHED",
       "host": "raw.githubusercontent.com",
       "series": "AJ_US_AGG",
       "status": "OK"
@@ -83,7 +73,6 @@
     {
       "endpoint": "pypi://arch==8.0.0/arch/data/frenchdata/frenchdata.csv.gz",
       "error": "",
-      "fetch": "CACHED",
       "host": "arch==8.0.0",
       "series": "ARCH_FF_RF",
       "status": "OK"
@@ -91,7 +80,6 @@
     {
       "endpoint": "pypi://arch==8.0.0/arch/data/frenchdata/frenchdata.csv.gz",
       "error": "",
-      "fetch": "CACHED",
       "host": "arch==8.0.0",
       "series": "ARCH_FF_US_MKT_TR",
       "status": "OK"
@@ -99,7 +87,6 @@
     {
       "endpoint": "manual:nav_SE0012454338.csv",
       "error": "manual file not supplied: /home/user/gem/research/data/manual/nav_SE0012454338.csv",
-      "fetch": "",
       "host": "manual:nav_SE0012454338.csv",
       "series": "AVZ_NAV_EM",
       "status": "UNAVAILABLE"
@@ -107,7 +94,6 @@
     {
       "endpoint": "manual:nav_SE0013718699.csv",
       "error": "manual file not supplied: /home/user/gem/research/data/manual/nav_SE0013718699.csv",
-      "fetch": "",
       "host": "manual:nav_SE0013718699.csv",
       "series": "AVZ_NAV_EUROPA",
       "status": "UNAVAILABLE"
@@ -115,7 +101,6 @@
     {
       "endpoint": "manual:nav_SE0011527613.csv",
       "error": "manual file not supplied: /home/user/gem/research/data/manual/nav_SE0011527613.csv",
-      "fetch": "",
       "host": "manual:nav_SE0011527613.csv",
       "series": "AVZ_NAV_GLOBAL",
       "status": "UNAVAILABLE"
@@ -123,7 +108,6 @@
     {
       "endpoint": "manual:nav_SE0021021425.csv",
       "error": "manual file not supplied: /home/user/gem/research/data/manual/nav_SE0021021425.csv",
-      "fetch": "",
       "host": "manual:nav_SE0021021425.csv",
       "series": "AVZ_NAV_RANTA_KORT",
       "status": "UNAVAILABLE"
@@ -131,7 +115,6 @@
     {
       "endpoint": "manual:nav_SE0012741163.csv",
       "error": "manual file not supplied: /home/user/gem/research/data/manual/nav_SE0012741163.csv",
-      "fetch": "",
       "host": "manual:nav_SE0012741163.csv",
       "series": "AVZ_NAV_USA",
       "status": "UNAVAILABLE"
@@ -139,127 +122,111 @@
     {
       "endpoint": "manual:us_agg.csv",
       "error": "manual file not supplied: /home/user/gem/research/data/manual/us_agg.csv",
-      "fetch": "",
       "host": "manual:us_agg.csv",
       "series": "BBG_US_AGG_OFFICIAL",
       "status": "UNAVAILABLE"
     },
     {
       "endpoint": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/Developed_3_Factors_CSV.zip",
-      "error": "Tunnel connection failed: 403 Forbidden",
-      "fetch": "",
+      "error": "offline and no cache for french/FF_DEVELOPED_MKT_TR",
       "host": "mba.tuck.dartmouth.edu",
       "series": "FF_DEVELOPED_MKT_TR",
       "status": "UNAVAILABLE"
     },
     {
       "endpoint": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/Developed_ex_US_3_Factors_CSV.zip",
-      "error": "Tunnel connection failed: 403 Forbidden",
-      "fetch": "",
+      "error": "offline and no cache for french/FF_DEV_EXUS_MKT_TR",
       "host": "mba.tuck.dartmouth.edu",
       "series": "FF_DEV_EXUS_MKT_TR",
       "status": "UNAVAILABLE"
     },
     {
       "endpoint": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/Emerging_5_Factors_CSV.zip",
-      "error": "Tunnel connection failed: 403 Forbidden",
-      "fetch": "",
+      "error": "offline and no cache for french/FF_EMERGING_MKT_TR",
       "host": "mba.tuck.dartmouth.edu",
       "series": "FF_EMERGING_MKT_TR",
       "status": "UNAVAILABLE"
     },
     {
       "endpoint": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/Emerging_5_Factors_Daily_CSV.zip",
-      "error": "Tunnel connection failed: 403 Forbidden",
-      "fetch": "",
+      "error": "offline and no cache for french/FF_EMERGING_MKT_TR_DAILY",
       "host": "mba.tuck.dartmouth.edu",
       "series": "FF_EMERGING_MKT_TR_DAILY",
       "status": "UNAVAILABLE"
     },
     {
       "endpoint": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/Europe_3_Factors_CSV.zip",
-      "error": "Tunnel connection failed: 403 Forbidden",
-      "fetch": "",
+      "error": "offline and no cache for french/FF_EUROPE_MKT_TR",
       "host": "mba.tuck.dartmouth.edu",
       "series": "FF_EUROPE_MKT_TR",
       "status": "UNAVAILABLE"
     },
     {
       "endpoint": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/Europe_3_Factors_Daily_CSV.zip",
-      "error": "Tunnel connection failed: 403 Forbidden",
-      "fetch": "",
+      "error": "offline and no cache for french/FF_EUROPE_MKT_TR_DAILY",
       "host": "mba.tuck.dartmouth.edu",
       "series": "FF_EUROPE_MKT_TR_DAILY",
       "status": "UNAVAILABLE"
     },
     {
       "endpoint": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip",
-      "error": "Tunnel connection failed: 403 Forbidden",
-      "fetch": "",
+      "error": "offline and no cache for french/ff_factors",
       "host": "mba.tuck.dartmouth.edu",
       "series": "FF_RF",
       "status": "UNAVAILABLE"
     },
     {
       "endpoint": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip",
-      "error": "Tunnel connection failed: 403 Forbidden",
-      "fetch": "",
+      "error": "offline and no cache for french/ff_factors",
       "host": "mba.tuck.dartmouth.edu",
       "series": "FF_US_MKT_TR",
       "status": "UNAVAILABLE"
     },
     {
       "endpoint": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_daily_CSV.zip",
-      "error": "Tunnel connection failed: 403 Forbidden",
-      "fetch": "",
+      "error": "offline and no cache for french/FF_US_MKT_TR_DAILY",
       "host": "mba.tuck.dartmouth.edu",
       "series": "FF_US_MKT_TR_DAILY",
       "status": "UNAVAILABLE"
     },
     {
       "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXSDUS",
-      "error": "Tunnel connection failed: 403 Forbidden",
-      "fetch": "",
+      "error": "offline and no cache for fred/FRED_DEXSDUS",
       "host": "fred.stlouisfed.org",
       "series": "FRED_DEXSDUS",
       "status": "UNAVAILABLE"
     },
     {
       "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DTB3",
-      "error": "Tunnel connection failed: 403 Forbidden",
-      "fetch": "",
+      "error": "offline and no cache for fred/FRED_DTB3",
       "host": "fred.stlouisfed.org",
       "series": "FRED_DTB3",
       "status": "UNAVAILABLE"
     },
     {
       "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GS5",
-      "error": "Tunnel connection failed: 403 Forbidden",
-      "fetch": "",
+      "error": "offline and no cache for fred/FRED_GS5",
       "host": "fred.stlouisfed.org",
       "series": "FRED_GS5",
       "status": "UNAVAILABLE"
     },
     {
       "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NASDAQNQGXUSLMN",
-      "error": "Tunnel connection failed: 403 Forbidden",
-      "fetch": "",
+      "error": "offline and no cache for fred/FRED_NASDAQ_GLOBAL_EXUS_LM_NTR",
       "host": "fred.stlouisfed.org",
       "series": "FRED_NASDAQ_GLOBAL_EXUS_LM_NTR",
       "status": "UNAVAILABLE"
     },
     {
       "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=IR3TTS01SEM156N",
-      "error": "Tunnel connection failed: 403 Forbidden",
-      "fetch": "",
+      "error": "offline and no cache for fred/FRED_OECD_SE_3M_TREASURY",
       "host": "fred.stlouisfed.org",
       "series": "FRED_OECD_SE_3M_TREASURY",
       "status": "UNAVAILABLE"
     },
     {
       "endpoint": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NASDAQOMRXTBILL",
-      "error": "Tunnel connection failed: 403 Forbidden",
-      "fetch": "",
+      "error": "offline and no cache for fred/FRED_OMRXTBILL",
       "host": "fred.stlouisfed.org",
       "series": "FRED_OMRXTBILL",
       "status": "UNAVAILABLE"
@@ -267,7 +234,6 @@
     {
       "endpoint": "https://raw.githubusercontent.com/datasets/exchange-rates/main/data/daily.csv",
       "error": "",
-      "fetch": "CACHED",
       "host": "raw.githubusercontent.com",
       "series": "H10_SEK_PER_USD",
       "status": "OK"
@@ -275,7 +241,6 @@
     {
       "endpoint": "manual:msci_acwi_exus.csv",
       "error": "manual file not supplied: /home/user/gem/research/data/manual/msci_acwi_exus.csv",
-      "fetch": "",
       "host": "manual:msci_acwi_exus.csv",
       "series": "MSCI_ACWI_EXUS_OFFICIAL",
       "status": "UNAVAILABLE"
@@ -283,7 +248,6 @@
     {
       "endpoint": "manual:msci_acwi.csv",
       "error": "manual file not supplied: /home/user/gem/research/data/manual/msci_acwi.csv",
-      "fetch": "",
       "host": "manual:msci_acwi.csv",
       "series": "MSCI_ACWI_OFFICIAL",
       "status": "UNAVAILABLE"
@@ -291,15 +255,13 @@
     {
       "endpoint": "manual:omrxtbill.csv",
       "error": "manual file not supplied: /home/user/gem/research/data/manual/omrxtbill.csv",
-      "fetch": "",
       "host": "manual:omrxtbill.csv",
       "series": "NASDAQ_OMRXTBILL_FULL",
       "status": "UNAVAILABLE"
     },
     {
       "endpoint": "https://api.riksbank.se/swea/v1/Observations/SEKUSDPMI/1993-01-01/2026-10-31",
-      "error": "Tunnel connection failed: 403 Forbidden",
-      "fetch": "",
+      "error": "offline and no cache for riksbank/RB_SEK_PER_USD",
       "host": "api.riksbank.se",
       "series": "RB_SEK_PER_USD",
       "status": "UNAVAILABLE"
@@ -307,31 +269,27 @@
     {
       "endpoint": "https://raw.githubusercontent.com/datasets/exchange-rates/main/data/daily.csv",
       "error": "",
-      "fetch": "CACHED",
       "host": "raw.githubusercontent.com",
       "series": "RB_SEK_PER_USD_DAILY_H10",
       "status": "OK"
     },
     {
       "endpoint": "https://api.riksbank.se/swea/v1/Observations/SETB1MBENCHC/1983-01-01/2026-10-31",
-      "error": "Tunnel connection failed: 403 Forbidden",
-      "fetch": "",
+      "error": "offline and no cache for riksbank/RB_SSVX_1M",
       "host": "api.riksbank.se",
       "series": "RB_SSVX_1M",
       "status": "UNAVAILABLE"
     },
     {
       "endpoint": "https://api.riksbank.se/swea/v1/Observations/SETB3MBENCH/1983-01-01/2026-10-31",
-      "error": "Tunnel connection failed: 403 Forbidden",
-      "fetch": "",
+      "error": "offline and no cache for riksbank/RB_SSVX_3M",
       "host": "api.riksbank.se",
       "series": "RB_SSVX_3M",
       "status": "UNAVAILABLE"
     },
     {
       "endpoint": "https://api.riksbank.se/swea/v1/Observations/SETB6MBENCH/1983-01-01/2026-10-31",
-      "error": "Tunnel connection failed: 403 Forbidden",
-      "fetch": "",
+      "error": "offline and no cache for riksbank/RB_SSVX_6M",
       "host": "api.riksbank.se",
       "series": "RB_SSVX_6M",
       "status": "UNAVAILABLE"
@@ -339,7 +297,6 @@
     {
       "endpoint": "https://raw.githubusercontent.com/datasets/s-and-p-500/main/data/data.csv",
       "error": "",
-      "fetch": "CACHED",
       "host": "raw.githubusercontent.com",
       "series": "SHILLER_SP_TR",
       "status": "OK"
@@ -347,7 +304,6 @@
     {
       "endpoint": "manual:spx_tr.csv",
       "error": "manual file not supplied: /home/user/gem/research/data/manual/spx_tr.csv",
-      "fetch": "",
       "host": "manual:spx_tr.csv",
       "series": "SPX_TR_OFFICIAL",
       "status": "UNAVAILABLE"
@@ -384,21 +340,21 @@
   },
   "daily_blocked": {
     "GEM_SEK_OPEN_OMRX_V1": {
-      "FF_DEVELOPED_MKT_TR": "french/FF_DEVELOPED_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Developed_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
-      "FF_US_MKT_TR": "french/ff_factors: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
-      "FF_US_MKT_TR_DAILY": "french/FF_US_MKT_TR_DAILY: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_daily_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
-      "FRED_NASDAQ_GLOBAL_EXUS_LM_NTR": "fred/FRED_NASDAQ_GLOBAL_EXUS_LM_NTR: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=NASDAQNQGXUSLMN (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
-      "FRED_OMRXTBILL": "fred/FRED_OMRXTBILL: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=NASDAQOMRXTBILL (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+      "FF_DEVELOPED_MKT_TR": "offline and no cache for french/FF_DEVELOPED_MKT_TR",
+      "FF_US_MKT_TR": "offline and no cache for french/ff_factors",
+      "FF_US_MKT_TR_DAILY": "offline and no cache for french/FF_US_MKT_TR_DAILY",
+      "FRED_NASDAQ_GLOBAL_EXUS_LM_NTR": "offline and no cache for fred/FRED_NASDAQ_GLOBAL_EXUS_LM_NTR",
+      "FRED_OMRXTBILL": "offline and no cache for fred/FRED_OMRXTBILL"
     },
     "REGIONAL_SEK_FF_PROXY_OMRX_V1": {
-      "FF_DEVELOPED_MKT_TR": "french/FF_DEVELOPED_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Developed_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
-      "FF_EMERGING_MKT_TR": "french/FF_EMERGING_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Emerging_5_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
-      "FF_EMERGING_MKT_TR_DAILY": "french/FF_EMERGING_MKT_TR_DAILY: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Emerging_5_Factors_Daily_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
-      "FF_EUROPE_MKT_TR": "french/FF_EUROPE_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Europe_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
-      "FF_EUROPE_MKT_TR_DAILY": "french/FF_EUROPE_MKT_TR_DAILY: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Europe_3_Factors_Daily_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
-      "FF_US_MKT_TR": "french/ff_factors: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
-      "FF_US_MKT_TR_DAILY": "french/FF_US_MKT_TR_DAILY: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_daily_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
-      "FRED_OMRXTBILL": "fred/FRED_OMRXTBILL: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=NASDAQOMRXTBILL (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+      "FF_DEVELOPED_MKT_TR": "offline and no cache for french/FF_DEVELOPED_MKT_TR",
+      "FF_EMERGING_MKT_TR": "offline and no cache for french/FF_EMERGING_MKT_TR",
+      "FF_EMERGING_MKT_TR_DAILY": "offline and no cache for french/FF_EMERGING_MKT_TR_DAILY",
+      "FF_EUROPE_MKT_TR": "offline and no cache for french/FF_EUROPE_MKT_TR",
+      "FF_EUROPE_MKT_TR_DAILY": "offline and no cache for french/FF_EUROPE_MKT_TR_DAILY",
+      "FF_US_MKT_TR": "offline and no cache for french/ff_factors",
+      "FF_US_MKT_TR_DAILY": "offline and no cache for french/FF_US_MKT_TR_DAILY",
+      "FRED_OMRXTBILL": "offline and no cache for fred/FRED_OMRXTBILL"
     }
   },
   "daily_results": [],

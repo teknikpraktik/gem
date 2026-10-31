@@ -155,6 +155,27 @@ class DailyResult:
     metrics: dict
     notes: list = field(default_factory=list)
 
+    def export(self, out_dir, extra: dict | None = None) -> None:
+        """Equity/drawdown/position per day, monthly returns, trades with all timestamps."""
+        from pathlib import Path
+
+        out = Path(out_dir)
+        out.mkdir(parents=True, exist_ok=True)
+        if not self.daily.empty:
+            d = self.daily.copy()
+            d["drawdown"] = d["value"] / d["value"].cummax() - 1
+            d.index = pd.DatetimeIndex(d.index).strftime("%Y-%m-%d")
+            d.to_csv(out / "daily.csv", float_format="%.10g")
+            m = self.monthly_returns.rename("return").to_frame()
+            m.index = m.index.strftime("%Y-%m-%d")
+            m.to_csv(out / "monthly.csv", float_format="%.10g")
+            annual_returns(self.monthly_returns).to_csv(out / "annual.csv", float_format="%.10g")
+        if len(self.trades):
+            self.trades.to_csv(out / "trades.csv", index=False)
+        meta = {"run_id": self.run_id, "scenario": self.scenario, "label": self.label,
+                "lookahead_free": self.lookahead_free, "metrics": self.metrics, **(extra or {})}
+        (out / "result.json").write_text(json.dumps(meta, indent=2, default=str, sort_keys=True))
+
 
 def run_daily_backtest(run_id: str, signals: list[Signal], levels: pd.DataFrame, scenario: ExecutionScenario,
                        rules: dict[str, TradingRules] | None = None, *, cost_per_side_bps: float = 0.0,

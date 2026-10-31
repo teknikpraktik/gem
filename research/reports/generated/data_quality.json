@@ -487,6 +487,7 @@
   "status": {
     "AJ_IBBOTSON_IT_GOVT": {
       "fetch": "CACHED",
+      "path": "/home/user/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T072455Z_11513db1bb43.csv",
       "retrieved_at": "2026-10-31T07:24:55Z",
       "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
       "status": "OK",
@@ -495,6 +496,7 @@
     },
     "AJ_IBBOTSON_LARGE": {
       "fetch": "CACHED",
+      "path": "/home/user/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T072455Z_11513db1bb43.csv",
       "retrieved_at": "2026-10-31T07:24:55Z",
       "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
       "status": "OK",
@@ -503,6 +505,7 @@
     },
     "AJ_IBBOTSON_TBILL_30D": {
       "fetch": "CACHED",
+      "path": "/home/user/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T072455Z_11513db1bb43.csv",
       "retrieved_at": "2026-10-31T07:24:55Z",
       "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
       "status": "OK",
@@ -511,6 +514,7 @@
     },
     "AJ_MSCI_ACWI_EXUS_GR": {
       "fetch": "CACHED",
+      "path": "/home/user/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T072455Z_11513db1bb43.csv",
       "retrieved_at": "2026-10-31T07:24:55Z",
       "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
       "status": "OK",
@@ -519,6 +523,7 @@
     },
     "AJ_MSCI_USA_GR": {
       "fetch": "CACHED",
+      "path": "/home/user/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T072455Z_11513db1bb43.csv",
       "retrieved_at": "2026-10-31T07:24:55Z",
       "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
       "status": "OK",
@@ -527,6 +532,7 @@
     },
     "AJ_MSCI_WORLD_EXUS_GR": {
       "fetch": "CACHED",
+      "path": "/home/user/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T072455Z_11513db1bb43.csv",
       "retrieved_at": "2026-10-31T07:24:55Z",
       "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
       "status": "OK",
@@ -535,6 +541,7 @@
     },
     "AJ_SP500TR": {
       "fetch": "CACHED",
+      "path": "/home/user/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T072455Z_11513db1bb43.csv",
       "retrieved_at": "2026-10-31T07:24:55Z",
       "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
       "status": "OK",
@@ -543,6 +550,7 @@
     },
     "AJ_TB3MS_YIELD": {
       "fetch": "CACHED",
+      "path": "/home/user/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T072455Z_11513db1bb43.csv",
       "retrieved_at": "2026-10-31T07:24:55Z",
       "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
       "status": "OK",
@@ -551,6 +559,7 @@
     },
     "AJ_TBILL_3M_TR": {
       "fetch": "CACHED",
+      "path": "/home/user/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T072455Z_11513db1bb43.csv",
       "retrieved_at": "2026-10-31T07:24:55Z",
       "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
       "status": "OK",
@@ -559,6 +568,7 @@
     },
     "AJ_US_AGG": {
       "fetch": "CACHED",
+      "path": "/home/user/gem/research/data/raw/github_aj/aj_msci_all_gross/20261031T072455Z_11513db1bb43.csv",
       "retrieved_at": "2026-10-31T07:24:55Z",
       "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
       "status": "OK",
@@ -567,6 +577,7 @@
     },
     "ARCH_FF_RF": {
       "fetch": "CACHED",
+      "path": "/home/user/gem/research/data/raw/pypi_arch_french/frenchdata/20261031T072456Z_f23436727b01.bin",
       "retrieved_at": "2026-10-31T07:24:56Z",
       "sha256": "f23436727b01d879e1372e3ee277514b0962a23d2b158f1aee6a402a90994f52",
       "status": "OK",
@@ -575,6 +586,7 @@
     },
     "ARCH_FF_US_MKT_TR": {
       "fetch": "CACHED",
+      "path": "/home/user/gem/research/data/raw/pypi_arch_french/frenchdata/20261031T072456Z_f23436727b01.bin",
       "retrieved_at": "2026-10-31T07:24:56Z",
       "sha256": "f23436727b01d879e1372e3ee277514b0962a23d2b158f1aee6a402a90994f52",
       "status": "OK",
@@ -612,82 +624,83 @@
       "transform": "level (total-return index)"
     },
     "FF_DEVELOPED_MKT_TR": {
-      "error": "french/FF_DEVELOPED_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Developed_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "error": "offline and no cache for french/FF_DEVELOPED_MKT_TR",
       "status": "UNAVAILABLE",
       "transform": "level (total-return index)"
     },
     "FF_DEV_EXUS_MKT_TR": {
-      "error": "french/FF_DEV_EXUS_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Developed_ex_US_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "error": "offline and no cache for french/FF_DEV_EXUS_MKT_TR",
       "status": "UNAVAILABLE",
       "transform": "level (total-return index)"
     },
     "FF_EMERGING_MKT_TR": {
-      "error": "french/FF_EMERGING_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Emerging_5_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "error": "offline and no cache for french/FF_EMERGING_MKT_TR",
       "status": "UNAVAILABLE",
       "transform": "level (total-return index)"
     },
     "FF_EMERGING_MKT_TR_DAILY": {
-      "error": "french/FF_EMERGING_MKT_TR_DAILY: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Emerging_5_Factors_Daily_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "error": "offline and no cache for french/FF_EMERGING_MKT_TR_DAILY",
       "status": "UNAVAILABLE",
       "transform": "level (total-return index)"
     },
     "FF_EUROPE_MKT_TR": {
-      "error": "french/FF_EUROPE_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Europe_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "error": "offline and no cache for french/FF_EUROPE_MKT_TR",
       "status": "UNAVAILABLE",
       "transform": "level (total-return index)"
     },
     "FF_EUROPE_MKT_TR_DAILY": {
-      "error": "french/FF_EUROPE_MKT_TR_DAILY: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Europe_3_Factors_Daily_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "error": "offline and no cache for french/FF_EUROPE_MKT_TR_DAILY",
       "status": "UNAVAILABLE",
       "transform": "level (total-return index)"
     },
     "FF_RF": {
-      "error": "french/ff_factors: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "error": "offline and no cache for french/ff_factors",
       "status": "UNAVAILABLE",
       "transform": "level (total-return index)"
     },
     "FF_US_MKT_TR": {
-      "error": "french/ff_factors: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "error": "offline and no cache for french/ff_factors",
       "status": "UNAVAILABLE",
       "transform": "level (total-return index)"
     },
     "FF_US_MKT_TR_DAILY": {
-      "error": "french/FF_US_MKT_TR_DAILY: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_daily_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "error": "offline and no cache for french/FF_US_MKT_TR_DAILY",
       "status": "UNAVAILABLE",
       "transform": "level (total-return index)"
     },
     "FRED_DEXSDUS": {
-      "error": "fred/FRED_DEXSDUS: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=DEXSDUS (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "error": "offline and no cache for fred/FRED_DEXSDUS",
       "status": "UNAVAILABLE",
       "transform": "none (not a return series)"
     },
     "FRED_DTB3": {
-      "error": "fred/FRED_DTB3: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=DTB3 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "error": "offline and no cache for fred/FRED_DTB3",
       "status": "UNAVAILABLE",
       "transform": "none (not a return series)"
     },
     "FRED_GS5": {
-      "error": "fred/FRED_GS5: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=GS5 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "error": "offline and no cache for fred/FRED_GS5",
       "status": "UNAVAILABLE",
       "transform": "none (not a return series)"
     },
     "FRED_NASDAQ_GLOBAL_EXUS_LM_NTR": {
-      "error": "fred/FRED_NASDAQ_GLOBAL_EXUS_LM_NTR: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=NASDAQNQGXUSLMN (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "error": "offline and no cache for fred/FRED_NASDAQ_GLOBAL_EXUS_LM_NTR",
       "status": "UNAVAILABLE",
       "transform": "level (total-return index)"
     },
     "FRED_OECD_SE_3M_TREASURY": {
-      "error": "fred/FRED_OECD_SE_3M_TREASURY: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=IR3TTS01SEM156N (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "error": "offline and no cache for fred/FRED_OECD_SE_3M_TREASURY",
       "status": "UNAVAILABLE",
       "transform": "none (not a return series)"
     },
     "FRED_OMRXTBILL": {
-      "error": "fred/FRED_OMRXTBILL: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=NASDAQOMRXTBILL (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "error": "offline and no cache for fred/FRED_OMRXTBILL",
       "status": "UNAVAILABLE",
       "transform": "level (total-return index)"
     },
     "H10_SEK_PER_USD": {
       "fetch": "CACHED",
+      "path": "/home/user/gem/research/data/raw/github_h10/H10_SEK_PER_USD/20261031T072458Z_5f82c543467a.csv",
       "retrieved_at": "2026-10-31T07:24:58Z",
       "sha256": "5f82c543467ae6398e766fb110fe57abe446b95c4ad13b2eaca8954911c6259d",
       "status": "OK",
@@ -710,12 +723,13 @@
       "transform": "level (total-return index)"
     },
     "RB_SEK_PER_USD": {
-      "error": "riksbank/RB_SEK_PER_USD: HTTPSConnectionPool(host='api.riksbank.se', port=443): Max retries exceeded with url: /swea/v1/Observations/SEKUSDPMI/1993-01-01/2026-10-31 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "error": "offline and no cache for riksbank/RB_SEK_PER_USD",
       "status": "UNAVAILABLE",
       "transform": "none (not a return series)"
     },
     "RB_SEK_PER_USD_DAILY_H10": {
       "fetch": "CACHED",
+      "path": "/home/user/gem/research/data/raw/github_h10/H10_SEK_PER_USD/20261031T072458Z_5f82c543467a.csv",
       "retrieved_at": "2026-10-31T07:24:58Z",
       "sha256": "5f82c543467ae6398e766fb110fe57abe446b95c4ad13b2eaca8954911c6259d",
       "status": "OK",
@@ -723,12 +737,12 @@
       "url": "https://raw.githubusercontent.com/datasets/exchange-rates/main/data/daily.csv"
     },
     "RB_SSVX_1M": {
-      "error": "riksbank/RB_SSVX_1M: HTTPSConnectionPool(host='api.riksbank.se', port=443): Max retries exceeded with url: /swea/v1/Observations/SETB1MBENCHC/1983-01-01/2026-10-31 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "error": "offline and no cache for riksbank/RB_SSVX_1M",
       "status": "UNAVAILABLE",
       "transform": "none (not a return series)"
     },
     "RB_SSVX_3M": {
-      "error": "riksbank/RB_SSVX_3M: HTTPSConnectionPool(host='api.riksbank.se', port=443): Max retries exceeded with url: /swea/v1/Observations/SETB3MBENCH/1983-01-01/2026-10-31 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "error": "offline and no cache for riksbank/RB_SSVX_3M",
       "status": "UNAVAILABLE",
       "transform": {
         "method": "simple_prior",
@@ -737,12 +751,13 @@
       }
     },
     "RB_SSVX_6M": {
-      "error": "riksbank/RB_SSVX_6M: HTTPSConnectionPool(host='api.riksbank.se', port=443): Max retries exceeded with url: /swea/v1/Observations/SETB6MBENCH/1983-01-01/2026-10-31 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "error": "offline and no cache for riksbank/RB_SSVX_6M",
       "status": "UNAVAILABLE",
       "transform": "none (not a return series)"
     },
     "SHILLER_SP_TR": {
       "fetch": "CACHED",
+      "path": "/home/user/gem/research/data/raw/github_shiller/SHILLER_SP_TR/20261031T072459Z_3a45dffabc41.csv",
       "retrieved_at": "2026-10-31T07:24:59Z",
       "sha256": "3a45dffabc414afc298c12159abc84c2875f88175ff3d4473ef7417e725ecac6",
       "status": "OK",

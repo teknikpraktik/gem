@@ -50,6 +50,7 @@ def load_all(catalog: dict, ids: set[str], store: RawStore, refresh: bool, offli
     data, status = {}, {}
     for sid in sorted(ids):
         e = catalog[sid]
+        raw = None
         try:
             raw = fetch_raw(e, store, refresh=refresh, offline=offline, manual_dir=manual_dir)
             s = parse(e, raw)
@@ -57,9 +58,12 @@ def load_all(catalog: dict, ids: set[str], store: RawStore, refresh: bool, offli
                 raise FetchError("parsed series is empty")
             data[sid] = s
             status[sid] = {"status": "OK", "fetch": raw.status, "sha256": raw.sha256, "url": raw.url,
-                           "retrieved_at": raw.retrieved_at}
+                           "retrieved_at": raw.retrieved_at, "path": str(raw.path)}
         except Exception as ex:  # noqa: BLE001 - reported, never hidden
             status[sid] = {"status": "UNAVAILABLE", "error": str(ex)[:300]}
+            if raw is not None:  # downloaded but not parseable -> keep pointer for diagnosis
+                status[sid].update({"path": str(raw.path), "url": raw.url, "sha256": raw.sha256,
+                                    "retrieved_at": raw.retrieved_at, "fetch": raw.status})
             log.warning("series %s unavailable: %s", sid, str(ex)[:160])
     return data, status
 
@@ -153,8 +157,54 @@ def access_report(status: dict, catalog: dict, store_manifest: Path) -> list[dic
         import re as _re
         m = _re.search(r"(Tunnel connection failed: [^'\")]+|NameResolutionError|Read timed out|HTTP Error \d+|\d{3} Client Error[^'\"]*)", err)
         rows.append({"series": sid, "host": host, "endpoint": url, "status": st["status"],
-                     "fetch": st.get("fetch", ""), "error": (m.group(1) if m else err)[:200]})
+                     "error": (m.group(1) if m else err)[:200]})
     return rows
+
+
+# Reproducibility checksums cover RESULTS only: per-run outputs, summaries and the
+# phase-2 result file. Access logs / error texts legitimately differ between a refresh
+# run and a cache run and are excluded.
+CHECKSUM_INCLUDE_TOP = {"summary.csv", "summary.json", "reproduction_table.md", "phase2_results.json"}
+
+
+def write_result_checksums(gen: Path) -> None:
+    import hashlib
+
+    lines = []
+    for p in sorted(gen.rglob("*")):
+        rel = p.relative_to(gen)
+        if not p.is_file():
+            continue
+        if rel.parts[0] in ("runs", "runs_daily") or (len(rel.parts) == 1 and p.name in CHECKSUM_INCLUDE_TOP):
+            lines.append(f"{hashlib.sha256(p.read_bytes()).hexdigest()}  {rel}")
+    (gen / "checksums.sha256").write_text("\n".join(lines) + "\n")
+
+
+def write_raw_samples(catalog: dict, status: dict, out_dir: Path, nbytes: int = 1500) -> None:
+    """Small excerpt of every primary-source raw response (debugging format changes).
+
+    Only the head of each file is written (a zip is listed and the head of its CSV
+    shown). Full raw files stay in the local cache and are never committed.
+    """
+    import io as _io
+    import zipfile as _zip
+
+    out_dir.mkdir(parents=True, exist_ok=True)
+    for sid, st in sorted(status.items()):
+        e = catalog[sid]
+        if e["fetch"]["provider"] not in ("fred", "riksbank", "french") or not st.get("path"):
+            continue
+        b = Path(st["path"]).read_bytes()
+        if b[:2] == b"PK":
+            with _zip.ZipFile(_io.BytesIO(b)) as z:
+                names = z.namelist()
+                head = z.read(names[0])[:nbytes].decode("latin-1", "replace")
+            text = f"zip members: {names}\n---\n{head}"
+        else:
+            text = b[:nbytes].decode("utf-8", "replace")
+        (out_dir / f"{sid}.txt").write_text(
+            f"series: {sid}\nurl: {st.get('url')}\nsha256: {st.get('sha256')}\nbytes: {len(b)}\n"
+            f"status: {st['status']} {st.get('error', '')}\n---\n{text}\n")
 
 
 def provenance_block(run: RunSpec, catalog: dict, status: dict, data: dict) -> dict:
@@ -165,7 +215,7 @@ def provenance_block(run: RunSpec, catalog: dict, status: dict, data: dict) -> d
         s = data.get(sid)
         series.append({"id": sid, "provider": e["provider"], "provider_series_id": e["provider_series_id"],
                        "quality_status": e["quality_status"], "verification": e["verification"],
-                       "retrieved_at": st.get("retrieved_at"), "sha256": st.get("sha256"), "fetch": st.get("fetch"),
+                       "retrieved_at": st.get("retrieved_at"), "sha256": st.get("sha256"),
                        "data_period": f"{s.index.min().date()}..{s.index.max().date()}" if s is not None else None,
                        "class": data_class(e, st)})
     return {"strategy_id": run.strategy.strategy_id, "strategy_version": run.strategy.version, "run_id": run.run_id,
@@ -370,10 +420,16 @@ def main(argv=None) -> int:
     for r in results:
         r.provenance = provenance_block(r.run_spec, catalog, status, data)
         r.export(gen / "runs" / r.run_id)
+    for r in daily_results:
+        r.export(gen / "runs_daily" / r.run_id,
+                 {"cost_per_side_bps": r.cost, "provenance": provenance_block(r.run_spec, catalog, status, data),
+                  "daily_series": sorted(r.run_spec.daily_series_ids)})
+    write_raw_samples(catalog, status, gen / "raw_samples")
     access = access_report(status, catalog, store.manifest)
     reporting.write_all(root, catalog, status, quality, xval, results, blocked, instruments)
     reporting.write_phase2(root, catalog, status, access, results, blocked, group_windows, daily_results,
                            daily_blocked, agreement, impl, runs, hurdle)
+    write_result_checksums(gen)  # last: covers every result file written above
     log.info("runs completed: %d monthly result sets, %d daily result sets, %d blocked runs",
              len(results), len(daily_results), len(blocked))
     return 0

@@ -338,6 +338,12 @@ def write_phase2(root, catalog, status, access, results, blocked, group_windows,
               f"- ongoing charges: {impl['ongoing_charges']}"]
     L.append("")
     (gen / "phase2.md").write_text("\n".join(L) + "\n")
+    (gen / "phase2_results.json").write_text(json.dumps({
+        "group_windows": group_windows, "agreement": agreement, "hurdle_sensitivity": hurdle,
+        "implementation_gap": impl,
+        "daily_results": [{"run": r.run_spec.run_id, "scenario": r.scenario, "label": r.label, "cost": r.cost,
+                           "metrics": r.metrics} for r in daily_results],
+    }, indent=2, default=str, sort_keys=True))
     (gen / "phase2.json").write_text(json.dumps({
         "access": access, "group_windows": group_windows, "agreement": agreement, "implementation_gap": impl,
         "hurdle_sensitivity": hurdle,

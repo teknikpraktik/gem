@@ -194,56 +194,56 @@ Runs that could not be executed because required series were unavailable. Nothin
 - `NASDAQ_OMRXTBILL_FULL`: manual file not supplied: /home/user/gem/research/data/manual/omrxtbill.csv
 
 ### BUY_HOLD_GLOBAL_SEK_FF_DEV_PROXY_V1__SE_3P (`BENCHMARK`)
-- `FF_DEVELOPED_MKT_TR`: french/FF_DEVELOPED_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Developed_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `RB_SSVX_3M`: riksbank/RB_SSVX_3M: HTTPSConnectionPool(host='api.riksbank.se', port=443): Max retries exceeded with url: /swea/v1/Observations/SETB3MBENCH/1983-01-01/2026-10-31 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+- `FF_DEVELOPED_MKT_TR`: offline and no cache for french/FF_DEVELOPED_MKT_TR
+- `RB_SSVX_3M`: offline and no cache for riksbank/RB_SSVX_3M
 
 ### BUY_HOLD_GLOBAL_SEK_FF_DEV_PROXY_V1__SE_OPEN_OMRX (`BENCHMARK`)
-- `FF_DEVELOPED_MKT_TR`: french/FF_DEVELOPED_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Developed_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FRED_OMRXTBILL`: fred/FRED_OMRXTBILL: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=NASDAQOMRXTBILL (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+- `FF_DEVELOPED_MKT_TR`: offline and no cache for french/FF_DEVELOPED_MKT_TR
+- `FRED_OMRXTBILL`: offline and no cache for fred/FRED_OMRXTBILL
 
 ### BUY_HOLD_GLOBAL_SEK_FF_DEV_PROXY_V1__SE_OPEN_SSVX (`BENCHMARK`)
-- `FF_DEVELOPED_MKT_TR`: french/FF_DEVELOPED_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Developed_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `RB_SSVX_3M`: riksbank/RB_SSVX_3M: HTTPSConnectionPool(host='api.riksbank.se', port=443): Max retries exceeded with url: /swea/v1/Observations/SETB3MBENCH/1983-01-01/2026-10-31 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+- `FF_DEVELOPED_MKT_TR`: offline and no cache for french/FF_DEVELOPED_MKT_TR
+- `RB_SSVX_3M`: offline and no cache for riksbank/RB_SSVX_3M
 
 ### GEM_ORIGINAL_OPEN_V1__SE_OPEN_OMRX (`EXTENDED_PROXY`)
-- `FF_RF`: french/ff_factors: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FF_US_MKT_TR`: french/ff_factors: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FRED_GS5`: fred/FRED_GS5: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=GS5 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FRED_NASDAQ_GLOBAL_EXUS_LM_NTR`: fred/FRED_NASDAQ_GLOBAL_EXUS_LM_NTR: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=NASDAQNQGXUSLMN (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+- `FF_RF`: offline and no cache for french/ff_factors
+- `FF_US_MKT_TR`: offline and no cache for french/ff_factors
+- `FRED_GS5`: offline and no cache for fred/FRED_GS5
+- `FRED_NASDAQ_GLOBAL_EXUS_LM_NTR`: offline and no cache for fred/FRED_NASDAQ_GLOBAL_EXUS_LM_NTR
 
 ### GEM_ORIGINAL_OPEN_V1__SE_OPEN_SSVX (`EXTENDED_PROXY`)
-- `FF_RF`: french/ff_factors: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FF_US_MKT_TR`: french/ff_factors: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FRED_GS5`: fred/FRED_GS5: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=GS5 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FRED_NASDAQ_GLOBAL_EXUS_LM_NTR`: fred/FRED_NASDAQ_GLOBAL_EXUS_LM_NTR: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=NASDAQNQGXUSLMN (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+- `FF_RF`: offline and no cache for french/ff_factors
+- `FF_US_MKT_TR`: offline and no cache for french/ff_factors
+- `FRED_GS5`: offline and no cache for fred/FRED_GS5
+- `FRED_NASDAQ_GLOBAL_EXUS_LM_NTR`: offline and no cache for fred/FRED_NASDAQ_GLOBAL_EXUS_LM_NTR
 
 ### GEM_ORIGINAL_STRICT (`STRICT`)
 - `BBG_US_AGG_OFFICIAL`: manual file not supplied: /home/user/gem/research/data/manual/us_agg.csv
-- `FRED_DTB3`: fred/FRED_DTB3: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=DTB3 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+- `FRED_DTB3`: offline and no cache for fred/FRED_DTB3
 - `MSCI_ACWI_EXUS_OFFICIAL`: manual file not supplied: /home/user/gem/research/data/manual/msci_acwi_exus.csv
 - `SPX_TR_OFFICIAL`: manual file not supplied: /home/user/gem/research/data/manual/spx_tr.csv
 
 ### GEM_PROXY_FF (`EXTENDED_PROXY`)
-- `FF_DEV_EXUS_MKT_TR`: french/FF_DEV_EXUS_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Developed_ex_US_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FF_RF`: french/ff_factors: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FF_US_MKT_TR`: french/ff_factors: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FRED_GS5`: fred/FRED_GS5: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=GS5 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+- `FF_DEV_EXUS_MKT_TR`: offline and no cache for french/FF_DEV_EXUS_MKT_TR
+- `FF_RF`: offline and no cache for french/ff_factors
+- `FF_US_MKT_TR`: offline and no cache for french/ff_factors
+- `FRED_GS5`: offline and no cache for fred/FRED_GS5
 
 ### GEM_SEK_3P_SSVXSYNTH_V1 (`SWEDISH`)
-- `FF_DEVELOPED_MKT_TR`: french/FF_DEVELOPED_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Developed_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `RB_SSVX_3M`: riksbank/RB_SSVX_3M: HTTPSConnectionPool(host='api.riksbank.se', port=443): Max retries exceeded with url: /swea/v1/Observations/SETB3MBENCH/1983-01-01/2026-10-31 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+- `FF_DEVELOPED_MKT_TR`: offline and no cache for french/FF_DEVELOPED_MKT_TR
+- `RB_SSVX_3M`: offline and no cache for riksbank/RB_SSVX_3M
 
 ### GEM_SEK_OPEN_OMRX_V1 (`SWEDISH`)
-- `FF_DEVELOPED_MKT_TR`: french/FF_DEVELOPED_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Developed_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FF_US_MKT_TR`: french/ff_factors: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FRED_NASDAQ_GLOBAL_EXUS_LM_NTR`: fred/FRED_NASDAQ_GLOBAL_EXUS_LM_NTR: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=NASDAQNQGXUSLMN (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FRED_OMRXTBILL`: fred/FRED_OMRXTBILL: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=NASDAQOMRXTBILL (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+- `FF_DEVELOPED_MKT_TR`: offline and no cache for french/FF_DEVELOPED_MKT_TR
+- `FF_US_MKT_TR`: offline and no cache for french/ff_factors
+- `FRED_NASDAQ_GLOBAL_EXUS_LM_NTR`: offline and no cache for fred/FRED_NASDAQ_GLOBAL_EXUS_LM_NTR
+- `FRED_OMRXTBILL`: offline and no cache for fred/FRED_OMRXTBILL
 
 ### GEM_SEK_OPEN_SSVXSYNTH_V1 (`SWEDISH`)
-- `FF_DEVELOPED_MKT_TR`: french/FF_DEVELOPED_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Developed_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FF_US_MKT_TR`: french/ff_factors: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FRED_NASDAQ_GLOBAL_EXUS_LM_NTR`: fred/FRED_NASDAQ_GLOBAL_EXUS_LM_NTR: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=NASDAQNQGXUSLMN (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `RB_SSVX_3M`: riksbank/RB_SSVX_3M: HTTPSConnectionPool(host='api.riksbank.se', port=443): Max retries exceeded with url: /swea/v1/Observations/SETB3MBENCH/1983-01-01/2026-10-31 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+- `FF_DEVELOPED_MKT_TR`: offline and no cache for french/FF_DEVELOPED_MKT_TR
+- `FF_US_MKT_TR`: offline and no cache for french/ff_factors
+- `FRED_NASDAQ_GLOBAL_EXUS_LM_NTR`: offline and no cache for fred/FRED_NASDAQ_GLOBAL_EXUS_LM_NTR
+- `RB_SSVX_3M`: offline and no cache for riksbank/RB_SSVX_3M
 
 ### GEM_SEK_STRICT_V1 (`SWEDISH`)
 - `MSCI_ACWI_EXUS_OFFICIAL`: manual file not supplied: /home/user/gem/research/data/manual/msci_acwi_exus.csv
@@ -252,44 +252,44 @@ Runs that could not be executed because required series were unavailable. Nothin
 - `SPX_TR_OFFICIAL`: manual file not supplied: /home/user/gem/research/data/manual/spx_tr.csv
 
 ### REGIONAL_SEK_FF_PROXY_OMRX_V1 (`SWEDISH`)
-- `FF_DEVELOPED_MKT_TR`: french/FF_DEVELOPED_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Developed_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FF_EMERGING_MKT_TR`: french/FF_EMERGING_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Emerging_5_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FF_EUROPE_MKT_TR`: french/FF_EUROPE_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Europe_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FF_US_MKT_TR`: french/ff_factors: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FRED_OMRXTBILL`: fred/FRED_OMRXTBILL: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=NASDAQOMRXTBILL (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+- `FF_DEVELOPED_MKT_TR`: offline and no cache for french/FF_DEVELOPED_MKT_TR
+- `FF_EMERGING_MKT_TR`: offline and no cache for french/FF_EMERGING_MKT_TR
+- `FF_EUROPE_MKT_TR`: offline and no cache for french/FF_EUROPE_MKT_TR
+- `FF_US_MKT_TR`: offline and no cache for french/ff_factors
+- `FRED_OMRXTBILL`: offline and no cache for fred/FRED_OMRXTBILL
 
 ### REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1 (`SWEDISH`)
-- `FF_DEVELOPED_MKT_TR`: french/FF_DEVELOPED_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Developed_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FF_EMERGING_MKT_TR`: french/FF_EMERGING_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Emerging_5_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FF_EUROPE_MKT_TR`: french/FF_EUROPE_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Europe_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FF_US_MKT_TR`: french/ff_factors: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `RB_SSVX_3M`: riksbank/RB_SSVX_3M: HTTPSConnectionPool(host='api.riksbank.se', port=443): Max retries exceeded with url: /swea/v1/Observations/SETB3MBENCH/1983-01-01/2026-10-31 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+- `FF_DEVELOPED_MKT_TR`: offline and no cache for french/FF_DEVELOPED_MKT_TR
+- `FF_EMERGING_MKT_TR`: offline and no cache for french/FF_EMERGING_MKT_TR
+- `FF_EUROPE_MKT_TR`: offline and no cache for french/FF_EUROPE_MKT_TR
+- `FF_US_MKT_TR`: offline and no cache for french/ff_factors
+- `RB_SSVX_3M`: offline and no cache for riksbank/RB_SSVX_3M
 
 ### STATIC_70_30_SEK_ACWI_V1 (`BENCHMARK`)
 - `MSCI_ACWI_OFFICIAL`: manual file not supplied: /home/user/gem/research/data/manual/msci_acwi.csv
 - `NASDAQ_OMRXTBILL_FULL`: manual file not supplied: /home/user/gem/research/data/manual/omrxtbill.csv
 
 ### STATIC_70_30_SEK_FF_DEV_PROXY_V1__SE_3P (`BENCHMARK`)
-- `FF_DEVELOPED_MKT_TR`: french/FF_DEVELOPED_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Developed_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `RB_SSVX_3M`: riksbank/RB_SSVX_3M: HTTPSConnectionPool(host='api.riksbank.se', port=443): Max retries exceeded with url: /swea/v1/Observations/SETB3MBENCH/1983-01-01/2026-10-31 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+- `FF_DEVELOPED_MKT_TR`: offline and no cache for french/FF_DEVELOPED_MKT_TR
+- `RB_SSVX_3M`: offline and no cache for riksbank/RB_SSVX_3M
 
 ### STATIC_70_30_SEK_FF_DEV_PROXY_V1__SE_OPEN_OMRX (`BENCHMARK`)
-- `FF_DEVELOPED_MKT_TR`: french/FF_DEVELOPED_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Developed_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FRED_OMRXTBILL`: fred/FRED_OMRXTBILL: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=NASDAQOMRXTBILL (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+- `FF_DEVELOPED_MKT_TR`: offline and no cache for french/FF_DEVELOPED_MKT_TR
+- `FRED_OMRXTBILL`: offline and no cache for fred/FRED_OMRXTBILL
 
 ### STATIC_70_30_SEK_FF_DEV_PROXY_V1__SE_OPEN_SSVX (`BENCHMARK`)
-- `FF_DEVELOPED_MKT_TR`: french/FF_DEVELOPED_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Developed_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `RB_SSVX_3M`: riksbank/RB_SSVX_3M: HTTPSConnectionPool(host='api.riksbank.se', port=443): Max retries exceeded with url: /swea/v1/Observations/SETB3MBENCH/1983-01-01/2026-10-31 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+- `FF_DEVELOPED_MKT_TR`: offline and no cache for french/FF_DEVELOPED_MKT_TR
+- `RB_SSVX_3M`: offline and no cache for riksbank/RB_SSVX_3M
 
 ### STATIC_REGIONAL_EQUAL_SEK_FF_V1__SE_OPEN_OMRX (`BENCHMARK`)
-- `FF_EMERGING_MKT_TR`: french/FF_EMERGING_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Emerging_5_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FF_EUROPE_MKT_TR`: french/FF_EUROPE_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Europe_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FF_US_MKT_TR`: french/ff_factors: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FRED_OMRXTBILL`: fred/FRED_OMRXTBILL: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/fredgraph.csv?id=NASDAQOMRXTBILL (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+- `FF_EMERGING_MKT_TR`: offline and no cache for french/FF_EMERGING_MKT_TR
+- `FF_EUROPE_MKT_TR`: offline and no cache for french/FF_EUROPE_MKT_TR
+- `FF_US_MKT_TR`: offline and no cache for french/ff_factors
+- `FRED_OMRXTBILL`: offline and no cache for fred/FRED_OMRXTBILL
 
 ### STATIC_REGIONAL_EQUAL_SEK_FF_V1__SE_OPEN_SSVX (`BENCHMARK`)
-- `FF_EMERGING_MKT_TR`: french/FF_EMERGING_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Emerging_5_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FF_EUROPE_MKT_TR`: french/FF_EUROPE_MKT_TR: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/Europe_3_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `FF_US_MKT_TR`: french/ff_factors: HTTPSConnectionPool(host='mba.tuck.dartmouth.edu', port=443): Max retries exceeded with url: /pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
-- `RB_SSVX_3M`: riksbank/RB_SSVX_3M: HTTPSConnectionPool(host='api.riksbank.se', port=443): Max retries exceeded with url: /swea/v1/Observations/SETB3MBENCH/1983-01-01/2026-10-31 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+- `FF_EMERGING_MKT_TR`: offline and no cache for french/FF_EMERGING_MKT_TR
+- `FF_EUROPE_MKT_TR`: offline and no cache for french/FF_EUROPE_MKT_TR
+- `FF_US_MKT_TR`: offline and no cache for french/ff_factors
+- `RB_SSVX_3M`: offline and no cache for riksbank/RB_SSVX_3M
 

@@ -44,6 +44,29 @@ class FetchError(RuntimeError):
     pass
 
 
+RETRY_STATUS = {429, 500, 502, 503, 504}
+
+
+def _get_with_retry(url: str, headers: dict, timeout: int, attempts: int = 4, sleep=None):
+    """GET with bounded retries on rate limiting / transient server errors.
+
+    Honours Retry-After (seconds) when present, otherwise exponential backoff
+    (2, 4, 8 s). TLS verification is never disabled.
+    """
+    import time as _time
+
+    sleep = sleep or _time.sleep
+    resp = None
+    for i in range(attempts):
+        resp = requests.get(url, headers=headers, timeout=timeout)
+        if resp.status_code not in RETRY_STATUS or i == attempts - 1:
+            return resp
+        ra = resp.headers.get("Retry-After", "")
+        wait = float(ra) if ra.replace(".", "", 1).isdigit() else 2 ** (i + 1)
+        sleep(min(wait, 60))
+    return resp
+
+
 def _sha256(b: bytes) -> str:
     return hashlib.sha256(b).hexdigest()
 
@@ -93,7 +116,7 @@ class RawStore:
         h = {"User-Agent": USER_AGENT, **(headers or {})}
         now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
         try:
-            resp = requests.get(url, headers=h, timeout=timeout)
+            resp = _get_with_retry(url, h, timeout)
             resp.raise_for_status()
         except Exception as e:  # network policy, DNS, HTTP error ...
             self._log({"retrieved_at": now, "provider": provider, "key": key, "url": url,

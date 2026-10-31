@@ -1,0 +1,92 @@
+{
+  "agreement": {
+    "GEM_ORIGINAL_OPEN_V1__SE_OPEN_OMRX vs GEM_SEK_OPEN_OMRX_V1": {
+      "missing_runs": [
+        "GEM_ORIGINAL_OPEN_V1__SE_OPEN_OMRX",
+        "GEM_SEK_OPEN_OMRX_V1"
+      ],
+      "status": "BLOCKED"
+    },
+    "GEM_ORIGINAL_OPEN_V1__SE_OPEN_SSVX vs GEM_SEK_OPEN_SSVXSYNTH_V1": {
+      "missing_runs": [
+        "GEM_ORIGINAL_OPEN_V1__SE_OPEN_SSVX",
+        "GEM_SEK_OPEN_SSVXSYNTH_V1"
+      ],
+      "status": "BLOCKED"
+    },
+    "GEM_ORIGINAL_STRICT vs GEM_SEK_STRICT_V1": {
+      "missing_runs": [
+        "GEM_ORIGINAL_STRICT",
+        "GEM_SEK_STRICT_V1"
+      ],
+      "status": "BLOCKED"
+    },
+    "GEM_ORIGINAL_STRICT_3P vs GEM_SEK_3P_SSVXSYNTH_V1": {
+      "missing_runs": [
+        "GEM_SEK_3P_SSVXSYNTH_V1"
+      ],
+      "status": "BLOCKED"
+    }
+  },
+  "daily_results": [],
+  "group_windows": {
+    "SE_3P": {
+      "common_window": null,
+      "members": [
+        "GEM_ORIGINAL_STRICT_3P",
+        "GEM_SEK_3P_SSVXSYNTH_V1",
+        "BUY_HOLD_GLOBAL_SEK_FF_DEV_PROXY_V1__SE_3P",
+        "STATIC_70_30_SEK_FF_DEV_PROXY_V1__SE_3P"
+      ],
+      "ran": [
+        "GEM_ORIGINAL_STRICT_3P"
+      ]
+    },
+    "SE_OPEN_OMRX": {
+      "common_window": null,
+      "members": [
+        "GEM_SEK_OPEN_OMRX_V1",
+        "GEM_ORIGINAL_OPEN_V1__SE_OPEN_OMRX",
+        "REGIONAL_SEK_FF_PROXY_OMRX_V1",
+        "BUY_HOLD_GLOBAL_SEK_FF_DEV_PROXY_V1__SE_OPEN_OMRX",
+        "STATIC_70_30_SEK_FF_DEV_PROXY_V1__SE_OPEN_OMRX",
+        "STATIC_REGIONAL_EQUAL_SEK_FF_V1__SE_OPEN_OMRX"
+      ],
+      "ran": []
+    },
+    "SE_OPEN_SSVX": {
+      "common_window": null,
+      "members": [
+        "GEM_SEK_OPEN_SSVXSYNTH_V1",
+        "GEM_ORIGINAL_OPEN_V1__SE_OPEN_SSVX",
+        "REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1",
+        "BUY_HOLD_GLOBAL_SEK_FF_DEV_PROXY_V1__SE_OPEN_SSVX",
+        "STATIC_70_30_SEK_FF_DEV_PROXY_V1__SE_OPEN_SSVX",
+        "STATIC_REGIONAL_EQUAL_SEK_FF_V1__SE_OPEN_SSVX"
+      ],
+      "ran": []
+    },
+    "SE_STRICT": {
+      "common_window": null,
+      "members": [
+        "GEM_ORIGINAL_STRICT",
+        "GEM_SEK_STRICT_V1",
+        "BUY_HOLD_GLOBAL_SEK_ACWI_V1",
+        "STATIC_70_30_SEK_ACWI_V1"
+      ],
+      "ran": []
+    }
+  },
+  "hurdle_sensitivity": {
+    "GEM_SEK_OPEN_OMRX_V1 vs GEM_SEK_OPEN_SSVXSYNTH_V1": {
+      "status": "BLOCKED"
+    },
+    "REGIONAL_SEK_FF_PROXY_OMRX_V1 vs REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1": {
+      "status": "BLOCKED"
+    }
+  },
+  "implementation_gap": {
+    "reason": "daily index data for REGIONAL_SEK_FF_PROXY_OMRX_V1 unavailable",
+    "status": "BLOCKED"
+  }
+}

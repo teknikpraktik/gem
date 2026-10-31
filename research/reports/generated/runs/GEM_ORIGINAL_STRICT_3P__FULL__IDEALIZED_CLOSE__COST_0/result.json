@@ -44,7 +44,6 @@
       {
         "class": "THIRD_PARTY",
         "data_period": "1987-12-31..2016-12-30",
-        "fetch": "CACHED",
         "id": "AJ_MSCI_ACWI_EXUS_GR",
         "provider": "alexjansenhome/GEM (GitHub), labelled source MSCI",
         "provider_series_id": "msci_all_gross.csv: ACWI ex USA",
@@ -56,7 +55,6 @@
       {
         "class": "THIRD_PARTY",
         "data_period": "1988-01-29..2016-12-30",
-        "fetch": "CACHED",
         "id": "AJ_SP500TR",
         "provider": "alexjansenhome/GEM (GitHub), labelled source Yahoo",
         "provider_series_id": "msci_all_gross.csv: SP500TR",
@@ -68,7 +66,6 @@
       {
         "class": "THIRD_PARTY",
         "data_period": "1969-12-31..2017-05-12",
-        "fetch": "CACHED",
         "id": "AJ_TBILL_3M_TR",
         "provider": "alexjansenhome/GEM (GitHub), labelled source FRED (TB3MS)",
         "provider_series_id": "msci_all_gross.csv: 3 MONTH",
@@ -80,7 +77,6 @@
       {
         "class": "THIRD_PARTY",
         "data_period": "1975-12-31..2016-12-30",
-        "fetch": "CACHED",
         "id": "AJ_US_AGG",
         "provider": "alexjansenhome/GEM (GitHub), labelled source Morningstar",
         "provider_series_id": "msci_all_gross.csv: AGG",
@@ -92,7 +88,6 @@
       {
         "class": "THIRD_PARTY",
         "data_period": "1971-01-04..2026-10-23",
-        "fetch": "CACHED",
         "id": "H10_SEK_PER_USD",
         "provider": "datahub.io core datasets (GitHub mirror of FRED)",
         "provider_series_id": "exchange-rates/data/daily.csv, Country=Sweden",

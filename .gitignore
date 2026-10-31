@@ -13,7 +13,12 @@ research/data/processed/**
 # Per-run monthly series of benchmark runs are effectively redistributed index
 # returns (MSCI/S&P/Bloomberg) -> not committed. Summary metrics, annual returns,
 # signal histories and regime changes of strategy runs ARE committed.
-research/reports/generated/runs/**/monthly.csv
-research/reports/generated/runs/BUY_HOLD_*/**
-research/reports/generated/runs/STATIC_*/**
+# (open-source runs - FRED, Riksbank, Ken French - ARE committed incl. monthly.csv)
+research/reports/generated/runs/*3P*/monthly.csv
+research/reports/generated/runs/DIAG_*/monthly.csv
+research/reports/generated/runs/BUY_HOLD_US_*3P*/**
+research/reports/generated/runs/BUY_HOLD_EXUS_*3P*/**
+research/reports/generated/runs/BUY_HOLD_US_AGG_*3P*/**
+research/reports/generated/runs/STATIC_70_30_US_*3P*/**
+research/.venv/
 research/data/manual/**
