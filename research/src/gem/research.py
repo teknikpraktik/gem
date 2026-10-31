@@ -253,7 +253,8 @@ def investable_model(runs, results, data, status, catalog, instruments, gen: Pat
             idx_monthly[f"INDEX_{ex}"] = rr[0].returns
     cash_daily = daily_cash_level_from_yield(data["RB_SSVX_3M"])
     out = regional_nav_implementation(navs, data["RB_SSVX_3M"], rules, fees, idx_sigs, idx_monthly,
-                                      panels["returns"][["SE_USA_EQ", "SE_EUROPE_EQ", "SE_EM_EQ"]], cash_daily)
+                                      panels["returns"][["SE_USA_EQ", "SE_EUROPE_EQ", "SE_EM_EQ"]], cash_daily,
+                                      benchmark_navs={"AVANZA_GLOBAL": data["AVZ_NAV_GLOBAL"]} if "AVZ_NAV_GLOBAL" in data else None)
     for vname, v in out["variants"].items():
         for scn, rs in v["scenarios"].items():
             r = rs.pop("_result")

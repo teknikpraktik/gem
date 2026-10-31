@@ -376,6 +376,12 @@ def write_phase2(root, catalog, status, access, results, blocked, group_windows,
             for lab, m in d.items():
                 L.append(f"| {vn} | {lab} | {_pct(m.get('cagr'))} | {_pct(m.get('volatility'))} | "
                          f"{_pct(m.get('max_drawdown'))} | {_num(m.get('sharpe'))} | {m.get('number_of_switches', 'n/a')} |")
+        L += ["", "Benchmarks on real Avanza fund NAVs over the SAME months:", "",
+              "| window of | benchmark | CAGR | vol | MDD | Sharpe |", "|---|---|---:|---:|---:|---:|"]
+        for vn, d in nb.get("nav_benchmarks_same_window", {}).items():
+            for lab, m in d.items():
+                L.append(f"| {vn} | {lab} | {_pct(m.get('cagr'))} | {_pct(m.get('volatility'))} | "
+                         f"{_pct(m.get('max_drawdown'))} | {_num(m.get('sharpe'))} |")
         sa = nb["signal_agreement"]
         L += ["", f"- signal agreement index vs NAV model: {_pct(sa['agreement_pct'], 1) if sa['agreement_pct'] is not None else 'n/a'} "
               f"({sa['identical']}/{sa['months']}); different region (both risk-on): {sa['different_region_both_risk_on']}; "

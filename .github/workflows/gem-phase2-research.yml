@@ -100,6 +100,10 @@ jobs:
         continue-on-error: true
         run: python -m gem.navprobe | tee reports/generated/nav_probe.log
 
+      - name: NAV publication observation (one snapshot per run)
+        continue-on-error: true
+        run: python -m gem.navlag reports/generated/nav_lag_observations.csv
+
       - name: "Run 1: refresh from sources"
         run: |
           set -o pipefail

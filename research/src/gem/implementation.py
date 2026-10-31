@@ -128,7 +128,7 @@ def nav_signals(navs: dict, ssvx_yield: pd.Series, month_ends) -> list:
 
 def regional_nav_implementation(navs: dict, ssvx_yield: pd.Series, rules: dict, fees: dict,
                                 index_signals: list, index_monthly: dict, index_region_returns: pd.DataFrame,
-                                cash_daily: pd.Series) -> dict:
+                                cash_daily: pd.Series, benchmark_navs: dict | None = None) -> dict:
     """navs: instrument_id -> daily NAV (SEK). index_signals: REGIONAL index-model signals
     (asset keys SE_*). index_monthly: {label: monthly return series of the index model}.
     index_region_returns: monthly SEK returns of the index legs (SE_USA_EQ, ...)."""
@@ -207,5 +207,20 @@ def regional_nav_implementation(navs: dict, ssvx_yield: pd.Series, rules: dict, 
                        "tracking_error_ann": float((x - y).std(ddof=1) * 12 ** 0.5),
                        "correlation": float(x.corr(y))}
     out["tracking_difference_vs_index_legs"] = td
+
+    # ---- benchmarks on REAL Avanza fund NAVs over exactly the months of each variant ----
+    me = {k: to_month_end(v)["value"] for k, v in {**navs, **(benchmark_navs or {})}.items()}
+    mr = pd.DataFrame({k: v.pct_change() for k, v in me.items()})
+    bench = {}
+    if "AVANZA_GLOBAL" in mr:
+        bench["BUY_HOLD_AVANZA_GLOBAL"] = mr["AVANZA_GLOBAL"]
+        bench["STATIC_70_30_AVANZA_GLOBAL_RANTA_KORT"] = 0.7 * mr["AVANZA_GLOBAL"] + 0.3 * mr["AVANZA_RANTA_KORT"]
+    bench["STATIC_REGIONAL_EQUAL_AVANZA"] = mr[["AVANZA_USA", "AVANZA_EUROPA", "AVANZA_EM"]].mean(axis=1, skipna=False)
+    out["nav_benchmarks_same_window"] = {}
+    for vname, rr in (("PURE_AVANZA_FUNDS", pure_b), ("HYBRID_SYNTH_CASH", hyb_b)):
+        months = rr.monthly_returns.index
+        out["nav_benchmarks_same_window"][vname] = {
+            k: (compute_metrics(v.reindex(months)) if v.reindex(months).notna().all() else {"status": "incomplete window"})
+            for k, v in bench.items()}
     out["fees"] = fees
     return out
