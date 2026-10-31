@@ -4,8 +4,8 @@ Forskningsmotor för en framtida svensk tjänst med månadsvis signal baserad p�
 Global Equities Momentum (GEM). **Ingen frontend, ingen handel, inga konton.**
 
 Slutsatser och beslut: fas 1 [`reports/final_report.md`](reports/final_report.md),
-fas 2 [`reports/phase2_report.md`](reports/phase2_report.md) (status: **PARTIAL** – körd på
-riktig data via GitHub Actions; `BUILD_PWA = NO` tills OMRX-verifiering och live-datakälla finns).
+fas 2 [`reports/phase2_report.md`](reports/phase2_report.md), fas 2b (OMRX-verifiering och
+investerbar REGIONAL_SEK på Avanza-NAV) [`reports/phase2b_live_report.md`](reports/phase2b_live_report.md).
 
 Forskningskörningen sker i GitHub Actions: workflow **GEM phase 2 research**
 (`.github/workflows/gem-phase2-research.yml`), startas under *Actions → GEM phase 2 research →
@@ -17,7 +17,7 @@ Run workflow*. Valfria secrets: `FRED_API_KEY`, `RIKSBANK_API_KEY`.
 cd research
 pip install -e '.[test]'           # pandas, numpy, PyYAML, requests, pytest
 pip install arch                   # valfritt: Ken French-snapshot för korsvalidering
-python -m pytest                   # 91 tester (inkl. end-to-end på syntetisk data)
+python -m pytest                   # 105 tester (inkl. end-to-end på syntetisk data)
 python -m gem.research             # hämta/cacha -> validera -> backtesta -> rapporter
 python -m gem.research --offline   # bara cache, ingen nätverkstrafik
 python -m gem.research --refresh   # ladda ned allt nåbart igen (revisioner loggas)
@@ -53,7 +53,11 @@ research/
     execution.py    månadskonventioner, fond-cutoff, fondstartsvakt
     daily.py        explicit tidsmodell på dagsdata: scenario A/B/C, handelsregler per fond
     analysis.py     signalöverensstämmelse GEM_ORIGINAL vs GEM_SEK
-    implementation.py  implementationsgap indexsignal vs Avanza-fond-NAV
+    implementation.py  implementationsgap + investerbar REGIONAL_SEK på fond-NAV
+    nav.py          FundNavProvider-interface (manuell export, Avanza-endpoint)
+    live.py         live-signal REGIONAL_SEK (ren funktion, samma kod i backtest)
+    navprobe.py     probe av NAV-källor;  navlag.py  mätning av NAV-publicering
+    data/avanza.py  avanza.se fund-guide JSON (UNDOCUMENTED_ENDPOINT)
     backtest.py     generisk månadsmotor, kostnader, NO_SIGNAL-hantering
     metrics.py      CAGR, vol, Sharpe, Sortino, Calmar, drawdowns, turnover ...
     validation.py   datakvalitet + korsvalidering mellan källor

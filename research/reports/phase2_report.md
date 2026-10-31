@@ -1,5 +1,7 @@
 # Fas 2: härdad data och validering av den svenska modellen
 
+> Fortsättning: [`phase2b_live_report.md`](phase2b_live_report.md) – OMRX-verifiering (Riksbanksproxyn ger 100 % samma signaler) och REGIONAL_SEK på riktiga Avanza-NAV.
+
 ## Körning 3 (2026-10-31, GitHub Actions): resultat på riktig data – GÄLLANDE
 
 Exekveringsmiljö: GitHub-hosted runner (`.github/workflows/gem-phase2-research.yml`).
