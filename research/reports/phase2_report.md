@@ -1,6 +1,141 @@
 # Fas 2: härdad data och validering av den svenska modellen
 
-## Körning 2 (2026-10-31): miljöverifiering – fortfarande BLOCKED
+## Körning 3 (2026-10-31, GitHub Actions): resultat på riktig data – GÄLLANDE
+
+Exekveringsmiljö: GitHub-hosted runner (`.github/workflows/gem-phase2-research.yml`).
+Riksbanken och Ken French fungerar. FRED kräver API-nyckel (se `phase2_data_validation.md`).
+Tester: 91 passed, 0 failed, 0 skipped. Refresh-körning och cachekörning: identiska
+sha256 för alla resultatfiler.
+
+**Fas 2-status: PARTIAL.** GEM_SEK har körts på riktig data utan look-ahead, är
+reproducerbar och jämförd med benchmarks. Den verifierade OMRX-varianten och
+REGIONAL_SEK i scenario B saknas.
+
+### Data
+
+| Data | Källa | Period | Klass |
+|---|---|---|---|
+| Svensk cash | Riksbanken SETB3MBENCH → `SE_CASH_SSVX_SYNTH_V1` | 1983 → 2026-10 | PROXY (räntenotering → avkastning) |
+| USD/SEK | Riksbanken SEKUSDPMI | 1993-01 → 2026-10 | PRIMARY_SOURCE_VERIFIED |
+| USA | Ken French CRSP-marknaden (mån + dag) | 1926 → 2026-09 | PROXY för S&P 500 |
+| ex-US | Ken French Developed ex US (mån + dag) | 1990-07 → 2026-09 | PROXY, **utan EM** |
+| Europa / EM | Ken French (mån; EM-dagsfil finns ej) | 1990-07 / 1989-07 → 2026-09 | PROXY |
+| Global benchmark | Ken French Developed (utan EM) | 1990-07 → 2026-09 | PROXY för MSCI ACWI |
+| Verifierad svensk cash (OMRX) | FRED NASDAQOMRXTBILL | 2008-11 → | **ej hämtad** (FRED-nyckel saknas) |
+
+USD/SEK från Riksbanken börjar 1993-01 och 12 månader behövs för momentum, så den gemensamma
+jämförelseperioden blir **1994-03-31 → 2026-09-30 (391 månader)**. Allt i SEK.
+
+### Gemensam period, 0 kostnad (grupp `SE_FF_SSVX`)
+
+| Strategi | Exekvering | CAGR | Vol | Max DD (mån) | Sharpe* | Sortino* | Calmar | Byten | Turnover/år | Snittinnehav (mån) | Längsta DD (mån) | Längsta underprestation vs global (mån) | Bästa år | Sämsta år |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---|
+| **GEM_SEK_FF_PROXY_SSVXSYNTH_V1** | **B daglig (huvud)** | **11,39 %** | 12,4 % | **−21,3 %** (dag −31,6 %) | 0,75 | 1,22 | 0,53 | 64 | ≈199 % | ≈6,0 | 57 (2000-08→2005-05) | 210 (2009-03→, mån.) | 1997 +50,2 % | 2000 −7,0 % |
+| GEM_SEK_FF_PROXY_SSVXSYNTH_V1 | mån, 1 månads fördröjning | 11,30 % | 12,3 % | −20,0 % | 0,75 | 1,22 | 0,56 | 65 | 199 % | 5,9 | 37 | 210 (2009-03→) | 1997 +50,4 % | 2000 −11,7 % |
+| GEM_SEK_FF_PROXY_SSVXSYNTH_V1 | A mån, LOOKAHEAD_REFERENCE_ONLY | 11,73 % | 12,3 % | −16,8 % | 0,78 | 1,29 | 0,70 | 65 | 199 % | 5,9 | 57 | 210 | 1997 +50,4 % | 2000 −6,6 % |
+| REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1 | A mån, LOOKAHEAD_REFERENCE_ONLY | 11,64 % | 14,5 % | −27,1 % | 0,67 | 1,05 | 0,43 | 81 | 249 % | 4,8 | 64 | 210 | 2005 +64,0 % | 2008 −22,5 % |
+| REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1 | mån, 1 månads fördröjning | 10,40 % | 15,2 % | −39,4 % | 0,58 | 0,87 | 0,26 | 81 | 249 % | 4,8 | 63 | 210 | 2005 +58,7 % | 2008 −20,7 % |
+| GEM_ORIGINAL_FF_V1 (USD) | mån, 1 månads fördröjning | 10,26 % | 12,8 % | −23,2 % | 0,64 | 0,98 | 0,44 | 51 | 157 % | 7,5 | 45 | 211 | 1997 +31,3 % | 2000 −21,0 % |
+| BUY_HOLD_GLOBAL_SEK (FF Developed) | – | 9,48 % | 13,4 % | −47,5 % | 0,57 | 0,85 | 0,20 | 0 | 0 | – | 76 | – | 1999 +36,9 % | 2002 −31,4 % |
+| STATIC_70_30_SEK (70 % global / 30 % svensk cash) | – | 7,49 % | 9,3 % | −33,8 % | 0,57 | 0,85 | 0,22 | 0 | 8 % | – | 68 | – | 1999 +26,0 % | 2002 −21,9 % |
+| STATIC_REGIONAL_EQUAL_SEK (1/3 vardera) | – | 9,54 % | 14,1 % | −44,4 % | 0,55 | 0,80 | 0,21 | 0 | 10 % | – | 65 | – | 1999 +43,3 % | 2008 −34,8 % |
+
+\* Sharpe och Sortino mot svensk cash (SSVX-syntetisk).
+
+Kostnad 10 bp/sida drar 0,3–0,6 pp CAGR. Fullständiga tal, inklusive maximal historik per
+modell, finns i `generated/phase2.md` och `generated/summary.csv`. Equity-, drawdown-,
+allokerings- och signalhistorik per körning finns i `generated/runs/` och
+`generated/runs_daily/` (CSV/JSON).
+
+### Exekvering: GEM_SEK, daglig modell (1994-04 → 2026-09)
+
+| Scenario | CAGR | Max DD (mån) | Sharpe | Bankdagar signal→exekvering | Dagar utanför marknaden per byte |
+|---|---:|---:|---:|---:|---:|
+| A publicerad close (LOOKAHEAD_REFERENCE_ONLY) | 11,93 % | −16,7 % | 0,80 | 0,0 | 0 |
+| **B nästa handelsbara (huvud)** | **11,39 %** | **−21,3 %** | **0,75** | 1,2 | 0,1 |
+| C konservativ (+1 dag, köp efter likvid T+2) | 11,28 % | −22,0 % | 0,75 | 4,0 | 2,0 |
+
+A→B kostar 0,5 pp CAGR och 4,6 pp max drawdown, nästan helt i mars–april 2020 (modellen
+låg i USA genom kraschen och gick till cash den 1 april). Resultatet kollapsar inte.
+REGIONAL_SEK kan inte köras i B/C: Ken French publicerar inte daglig EM-data (404). Den
+månatliga känsligheten är stor; en månads fördröjning försämrar max drawdown från −27 % till −39 %.
+
+### GEM_ORIGINAL vs GEM_SEK (samma ben, 1994-03 → 2026-09)
+
+* Signalöverensstämmelse **84,9 %**: 332 identiska och 59 olika månader.
+* **Alla 59 skillnader kommer från absolut momentum (risk-on/off), 0 från relativ.**
+  Programmatisk kontroll: rankingen USA/ex-US var identisk i USD och SEK i 393 av 393 månader.
+* Skillnaderna koncentreras till 2022 (8), 2007 (5), 2004–06 (4/år), 2023 och 2025 (4).
+  GEM_SEK går oftare defensivt från ex-US (28 månader) och oftare in i USA där originalet är
+  defensivt (20 månader).
+* Räknat i SEK för en svensk investerare (A-konvention): GEM_SEK 11,73 % / −16,8 % mot
+  GEM_ORIGINAL 10,57 % / −27,3 %. ΔCAGR **+1,2 pp**, Δmax DD **+10,6 pp**. Förbehåll:
+  originalets defensiva tillgång är här amerikanska T-bills i USD (ingen öppen
+  obligationsserie utan FRED), alltså med valutarisk.
+
+### Delperioder (viktigast för tolkningen)
+
+| Period | GEM_SEK B | Global buy-and-hold | REGIONAL A | 70/30 |
+|---|---|---|---|---|
+| 1994-04 → 2008-12 | 11,2 % / −20,4 % | 5,2 % / −47,5 % | 12,8 % / −27,1 % | 5,1 % / −33,8 % |
+| 2009-01 → 2026-09 | 11,6 % / −21,3 % | **13,6 % / −17,5 %** | 11,7 % / −19,6 % | 9,8 % / −12,4 % |
+| 2017-01 → 2026-09 | 12,0 % / −21,3 % | 13,7 % / −17,5 % | 12,2 % / −16,8 % | 9,9 % / −12,4 % |
+
+Hela fördelen mot global buy-and-hold kommer från 1994–2008, med undvikandet av
+2000–2002 och 2008. Under 2009–2026, den period som motsvarar den verifierbara
+OMRX-historiken, har GEM_SEK haft **lägre avkastning och djupare drawdown** än global
+buy-and-hold: Calmar 0,54 mot 0,78, avkastning/vol 0,93 mot 1,13. Därav 210 månaders
+relativ underprestation från 2009-03.
+
+### Beslut
+
+| Komponent | Beslut | Motivering |
+|---|---|---|
+| ENGINE | **GO** | Körd på riktig data i oberoende miljö, reproducerbar, 91 tester |
+| GEM_ORIGINAL | GO_WITH_LIMITATIONS (research) | Reproducerad (fas 1); FF-variant körd; ingen licensierad data |
+| GEM_SEK | **GO_WITH_LIMITATIONS** | Uppfyller A–E. F är inte fullt prövat: verifierad OMRX-variant saknas, och proxyns senaste 17 år visar ingen fördel mot buy-and-hold. |
+| REGIONAL_SEK | **NO_GO för live / research** | Ingen daglig EM-serie, så huvudscenario B kan inte köras. Stor tidskänslighet. Inte bättre än GEM_SEK på något mått i A-konventionen utom CAGR. |
+| PWA | **NO_GO (ännu)** | se nedan |
+| LIVE_MONTHLY_SIGNAL | **BLOCKED** | Ken French publiceras med cirka en månads fördröjning; en signal kan inte beräknas första bankdagen efter månadsskiftet. Kräver annan daglig källa (licensierat index eller fond-NAV) och en ny validering. |
+
+```text
+BUILD_PWA = NO
+```
+
+GEM_SEK uppfyller de formella kraven A–E: verklig data, ingen look-ahead i B,
+reproducerbar, max drawdown halverad mot global buy-and-hold och Calmar 0,53 mot 0,20, samt
+ingen kollaps A→B. Tre saker gör att en PWA ändå vore för tidig:
+
+1. **F är inte prövat på verifierad data**, och proxyn talar emot för just den perioden. Den
+   enda period där verifierad svensk cash finns (2009→) är den där modellen varit sämre än
+   buy-and-hold i både avkastning och drawdown. Produktnyttan vilar helt på två
+   björnmarknader före 2009.
+2. **Det finns ingen live-datakälla.** Signalen kan i dag inte beräknas i tid med de källor
+   backtestet bygger på.
+3. **REGIONAL_SEK**, den enda modellen som går att följa helt med Avanza-fonder, saknar
+   huvudscenario B.
+
+**Starkaste motargumentet:** reglerna kräver inte högre CAGR, och en strategi som skyddar
+mot långa björnmarknader är rationell försäkring även om den inte behövts på 17 år. 2009–2026
+saknade en utdragen nedgång, och modellen förlorade främst på V-formade återhämtningar
+(2020) och fram-och-tillbaka-byten (2022–23). Med den läsningen är `BUILD_PWA = YES` för
+GEM_SEK försvarbart, med tydlig kommunikation om att signalen kostar avkastning i
+uppåtgående marknader. Jag väger det lägre än punkt 1 och 2, eftersom båda kan avgöras med
+små steg innan något UI byggs.
+
+**Vad som krävs för att pröva gaten igen:**
+
+1. Lägg en gratis FRED-API-nyckel som secret `FRED_API_KEY` och kör workflowet. Det ger
+   `GEM_SEK_OPEN_OMRX_V1`, jämförelsen SSVX mot OMRX och hurdle-känsligheten utan
+   kodändring.
+2. Välj live-källa för månadssignalen (t.ex. Avanza-fondernas NAV eller ett licensierat
+   dagligt index) och mät signalavvikelsen mot indexsignalen.
+
+---
+
+## Körning 2 (historik)
+
+### Miljöverifiering i Claude-sandlådan – BLOCKED
 
 Uppdraget var att slutföra fas 2 på riktig data. Det gick inte, av samma skäl som förut:
 

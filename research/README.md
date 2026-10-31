@@ -4,8 +4,12 @@ Forskningsmotor för en framtida svensk tjänst med månadsvis signal baserad p�
 Global Equities Momentum (GEM). **Ingen frontend, ingen handel, inga konton.**
 
 Slutsatser och beslut: fas 1 [`reports/final_report.md`](reports/final_report.md),
-fas 2 [`reports/phase2_report.md`](reports/phase2_report.md) (status: **BLOCKED** – svensk
-data ej nåbar från byggmiljön; `BUILD_PWA = NO`).
+fas 2 [`reports/phase2_report.md`](reports/phase2_report.md) (status: **PARTIAL** – körd på
+riktig data via GitHub Actions; `BUILD_PWA = NO` tills OMRX-verifiering och live-datakälla finns).
+
+Forskningskörningen sker i GitHub Actions: workflow **GEM phase 2 research**
+(`.github/workflows/gem-phase2-research.yml`), startas under *Actions → GEM phase 2 research →
+Run workflow*. Valfria secrets: `FRED_API_KEY`, `RIKSBANK_API_KEY`.
 
 ## Snabbstart
 
@@ -13,7 +17,7 @@ data ej nåbar från byggmiljön; `BUILD_PWA = NO`).
 cd research
 pip install -e '.[test]'           # pandas, numpy, PyYAML, requests, pytest
 pip install arch                   # valfritt: Ken French-snapshot för korsvalidering
-python -m pytest                   # 87 tester (inkl. end-to-end på syntetisk data)
+python -m pytest                   # 91 tester (inkl. end-to-end på syntetisk data)
 python -m gem.research             # hämta/cacha -> validera -> backtesta -> rapporter
 python -m gem.research --offline   # bara cache, ingen nätverkstrafik
 python -m gem.research --refresh   # ladda ned allt nåbart igen (revisioner loggas)
