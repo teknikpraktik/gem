@@ -171,6 +171,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -B ci/gem-phase2-diagnostics
           git add -f research/reports/generated/*.md research/reports/generated/*.log research/reports/generated/*.txt \
-                     research/reports/generated/*.json research/reports/generated/raw_samples 2>/dev/null || true
+                     research/reports/generated/*.json research/reports/generated/raw_samples \
+                     research/reports/generated/nav_probe 2>/dev/null || true
           git commit -m "ci: phase 2 diagnostics (failed run)" -m "Run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}" || true
           git push -f origin ci/gem-phase2-diagnostics

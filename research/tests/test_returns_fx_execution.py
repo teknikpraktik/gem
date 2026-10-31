@@ -223,3 +223,18 @@ def test_daily_cash_gap_not_bridged():
     from gem.panel import daily_cash_level_from_yield
     y = pd.Series([3.0, 3.0], index=pd.to_datetime(["2024-01-01", "2024-01-20"]))
     assert np.isnan(daily_cash_level_from_yield(y).iloc[1])
+
+
+def test_fred_month_start_stamped_series_not_flagged_stale():
+    # regression: FRED monthly series (GS5, TB3MS) are dated on the 1st of the month
+    from gem.panel import monthly_returns_for_series
+    idx = pd.to_datetime(["2024-01-01", "2024-02-01", "2024-03-01"])
+    y = pd.Series([4.0, 4.1, 4.2], idx)
+    e = {"id": "GS5", "is_total_return": False, "asset_class": "money_market_yield",
+         "fetch": {"provider": "fred", "period_stamp": "month_start"}}
+    r, st = monthly_returns_for_series(y, e)
+    assert not st.any()
+    assert r.loc["2024-02-29"] == pytest.approx(0.04 / 12)
+    e2 = {**e, "fetch": {"provider": "fred"}}
+    r2, st2 = monthly_returns_for_series(y, e2)
+    assert st2.all()  # without the flag the 1st-of-month stamp IS stale - documents the bug

@@ -45,7 +45,7 @@ series:
   notes: >-
     A YIELD, not a total-return index. Converted with returns.yield_to_monthly_return
     (r_t = y_{t-1}/1200). Discount basis, monthly average -> documented approximation error.
-  fetch: {provider: fred}
+  fetch: {provider: fred, period_stamp: month_start}
 
 - id: FRED_DTB3
   name: 3-Month Treasury Bill Secondary Market Rate, Discount Basis (daily)
@@ -108,7 +108,7 @@ series:
   verification: ASSUMPTION
   build_env: BLOCKED
   notes: Last-resort synthetic bond proxy only (returns.par_bond_monthly_return). Not used in any current run.
-  fetch: {provider: fred}
+  fetch: {provider: fred, period_stamp: month_start}
 
 - id: FRED_NASDAQ_GLOBAL_EXUS_LM_NTR
   name: NASDAQ Global ex United States Large Mid Cap Net Total Return Index
@@ -418,7 +418,7 @@ series:
   verification: VERIFIED FROM SECONDARY SOURCE
   build_env: BLOCKED
   notes: Appears discontinued after 2023-12 - cross-check only, not a model input.
-  fetch: {provider: fred}
+  fetch: {provider: fred, period_stamp: month_start}
 
 # --- licensed sources: supported via manual CSV export placed in data/manual/ -------
 

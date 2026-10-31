@@ -432,6 +432,12 @@ def main(argv=None) -> int:
         spec_a = next(x for x in runs if x.run_id == a_id)
         orig_sek = usd_strategy_returns_in_sek(ra.returns, data[spec_a.sek_fx_for_comparison])
         common = orig_sek.dropna().index.intersection(rb.returns.dropna().index)
+        if len(common) < 12:
+            ag.update({"status": "INSUFFICIENT_OVERLAP", "window": win, "common_return_months": int(len(common)),
+                       "original_months": int(ra.returns.dropna().size), "sek_months": int(rb.returns.dropna().size),
+                       "original_stop_reason": ra.stop_reason, "sek_stop_reason": rb.stop_reason})
+            agreement[f"{a_id} vs {b_id}"] = ag
+            continue
         m_a = compute_metrics(orig_sek.loc[common])
         m_b = compute_metrics(rb.returns.loc[common])
         ag.update({"status": "OK", "window": win, "original_in_sek": m_a, "sek_model": m_b,

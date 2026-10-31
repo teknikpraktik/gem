@@ -153,7 +153,7 @@ def write_all(root: Path, catalog, status, quality, xval, results, blocked, inst
         for c in ("sharpe", "sortino", "calmar", "average_holding_period_months"):
             t[c] = t[c].map(_num)
         t["end_value"] = t["end_value"].map(lambda v: f"{v:,.0f}" if pd.notna(v) else "n/a")
-        lines += [_md_table(t.fillna("n/a")), ""]
+        lines += [_md_table(t.astype(object).where(t.notna(), "n/a")), ""]
     lines += ["## Blocked runs", "", "Runs that could not be executed because required series were unavailable. "
               "Nothing was substituted.", ""]
     for rid, b in sorted(blocked.items()):
@@ -283,6 +283,10 @@ def write_phase2(root, catalog, status, access, results, blocked, group_windows,
     L += ["## 4. GEM_ORIGINAL vs GEM_SEK", ""]
     for k, v in agreement.items():
         L.append(f"### {k}")
+        if v.get("status") == "INSUFFICIENT_OVERLAP":
+            L.append(f"- **INSUFFICIENT_OVERLAP**: {json.dumps({k: v[k] for k in v if k not in ('crosstab',)}, default=str)[:600]}")
+            L.append("")
+            continue
         if v.get("status") != "OK":
             L.append(f"- **BLOCKED** – runs not available: {', '.join(v.get('missing_runs', []))}")
             L.append("")

@@ -3,3 +3,4 @@
 request: 2026-10-31T00:00:00Z initial phase-2 run on primary data
 request: 2026-10-31T08:33:52Z run 2 - Riksbank FX, FF-only GEM_SEK, unified SE_FF_SSVX group, daily SSVX cash
 request: 2026-10-31T09:01:19Z run 3 - OMRX via FRED API, OMRX vs Riksbank check, NAV source probe
+request: 2026-10-31T09:34:01Z run 4 - FRED month-start fix, robust agreement, NAV probe with orderbook resolution

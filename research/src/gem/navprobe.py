@@ -46,15 +46,34 @@ def candidates(fid: str, f: dict) -> list[tuple[str, str, str, dict | None]]:
     ]
     ob = f["orderbook"]
     if ob:
+        today = f"{datetime.now(timezone.utc):%Y-%m-%d}"
         out += [
             ("fund_page_html", "GET", f"{A}/fonder/om-fonden.html/{ob}/{f['slug']}", None),
             ("fund_guide", "GET", f"{A}/_api/fund-guide/guide/{ob}", None),
             ("price_chart_stock_all_day", "GET", f"{A}/_api/price-chart/stock/{ob}?timePeriod=all_time&resolution=day", None),
             ("price_chart_fund_all", "GET", f"{A}/_api/price-chart/fund/{ob}?timePeriod=all_time", None),
             ("fund_guide_chart_all", "GET", f"{A}/_api/fund-guide/chart/{ob}/all_time", None),
-            ("fund_guide_chart_range", "GET", f"{A}/_api/fund-guide/chart/{ob}/2019-01-01/{datetime.now(timezone.utc):%Y-%m-%d}?raw=true", None),
+            ("fund_guide_chart_range_raw", "GET", f"{A}/_api/fund-guide/chart/{ob}/2015-01-01/{today}?raw=true", None),
+            ("fund_guide_chart_range", "GET", f"{A}/_api/fund-guide/chart/{ob}/2015-01-01/{today}", None),
+            ("fund_guide_chart_recent_raw", "GET", f"{A}/_api/fund-guide/chart/{ob}/2026-09-01/{today}?raw=true", None),
         ]
     return out
+
+
+def find_orderbook(doc, isin: str):
+    """Walk a search response and return the id of the hit whose isin matches (schema-agnostic)."""
+    stack = [doc]
+    while stack:
+        x = stack.pop()
+        if isinstance(x, dict):
+            if str(x.get("isin", "")).upper() == isin:
+                for k in ("orderBookId", "orderbookId", "orderbook_id", "id"):
+                    if x.get(k):
+                        return str(x[k])
+            stack.extend(x.values())
+        elif isinstance(x, list):
+            stack.extend(x)
+    return None
 
 
 def summarize(resp: requests.Response) -> dict:
@@ -88,6 +107,15 @@ def main() -> int:
     rows = []
     seen = set()
     for fid, f in FUNDS.items():
+        if not f["orderbook"]:
+            try:
+                r = s.post(f"{A}/_api/search/filtered-search", timeout=30,
+                           json={"query": f["isin"], "searchFilter": {"types": ["FUND"]}, "pagination": {"from": 0, "size": 5}})
+                f["orderbook"] = find_orderbook(r.json(), f["isin"])
+                print(f"{fid:18s} orderbook resolved via search: {f['orderbook']}")
+            except Exception as e:  # noqa: BLE001
+                print(f"{fid:18s} orderbook search failed: {e}")
+            time.sleep(1.0)
         for label, method, url, body in candidates(fid, f):
             if url in seen and label in ("avanza_fonder_site", "investors_avanza_fonder"):
                 continue

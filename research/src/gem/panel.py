@@ -15,6 +15,11 @@ from .strategies import LOOKBACK_MONTHS
 
 def monthly_returns_for_series(raw: pd.Series, entry: dict) -> tuple[pd.Series, pd.Series]:
     """Return (monthly simple returns, stale flags) for one catalog series."""
+    if entry.get("fetch", {}).get("period_stamp") == "month_start":
+        # FRED stamps monthly (average) series with the FIRST day of the month. The value
+        # describes the whole month, so it is labelled at that month's end (no staleness test).
+        raw = raw.copy()
+        raw.index = pd.DatetimeIndex(raw.index) + pd.offsets.MonthEnd(0)
     me = to_month_end(raw)
     vals, stale = me["value"], me["stale"]
     ac = entry["asset_class"]
