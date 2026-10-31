@@ -183,6 +183,93 @@ def write_result_checksums(gen: Path) -> None:
     (gen / "checksums.sha256").write_text("\n".join(lines) + "\n")
 
 
+def _bdays(a, b) -> int:
+    import numpy as np
+    return int(np.busday_count(pd.Timestamp(a).date(), pd.Timestamp(b).date()))
+
+
+def investable_model(runs, results, data, status, catalog, instruments, gen: Path) -> dict:
+    """REGIONAL_SEK on real Avanza NAVs: implementation backtest, index comparison,
+    live signal, measured NAV publication lag and fund facts. Never mixed with the
+    research index model (separate outputs under runs_daily/REGIONAL_SEK_NAV_IMPL__*)."""
+    from datetime import datetime as _dt, time as _time, timezone as _tz
+
+    from .daily import TradingRules
+    from .implementation import NAV_SERIES_OF_INSTRUMENT, regional_nav_implementation
+    from .live import regional_live_signal
+    from .panel import daily_cash_level_from_yield
+
+    need = list(NAV_SERIES_OF_INSTRUMENT.values()) + ["RB_SSVX_3M"]
+    missing = [x for x in need if x not in data]
+    if missing:
+        return {"status": "BLOCKED", "missing": {m: status.get(m, {}).get("error", "not loaded") for m in missing}}
+    navs = {iid: data[sid] for iid, sid in NAV_SERIES_OF_INSTRUMENT.items()}
+
+    # fund facts + measured publication lag from the guide payload stored with the raw data
+    facts, lag = {}, {}
+    for iid, sid in {**NAV_SERIES_OF_INSTRUMENT, "AVANZA_GLOBAL": "AVZ_NAV_GLOBAL"}.items():
+        p = status.get(sid, {}).get("path")
+        if not p:
+            continue
+        doc = json.loads(Path(p).read_bytes())
+        g = doc.get("guide", {})
+        scal = {k: v for k, v in g.items() if not isinstance(v, (list, dict)) and k not in ("description",)}
+        holdings = []
+        for k, v in g.items():
+            if isinstance(v, list) and v and isinstance(v[0], dict) and "type" in v[0] and "y" in v[0]:
+                holdings += [{"list": k, "name": h.get("name"), "isin": h.get("isin"), "type": h.get("type"),
+                              "weight": h.get("y")} for h in v[:3]]
+        facts[iid] = {"orderbook": doc.get("orderbook"), **{k: scal.get(k) for k in
+                      ("isin", "name", "currency", "nav", "navDate", "productFee", "managementFee", "indexFund",
+                       "fundTypeName", "startDate", "risk") if k in scal}, "top_holdings": holdings,
+                      "other_fields": sorted(k for k in scal if k not in ("isin", "name", "currency", "nav", "navDate"))}
+        if g.get("navDate") and doc.get("guide_retrieved_at"):
+            ret = pd.Timestamp(doc["guide_retrieved_at"]).tz_convert("Europe/Stockholm")
+            nd = pd.Timestamp(g["navDate"][:10])
+            lag[iid] = {"guide_retrieved_at_stockholm": str(ret), "latest_nav_date": str(nd.date()),
+                        "bdays_between_nav_date_and_retrieval": _bdays(nd, ret.tz_localize(None).normalize()),
+                        "chart_last_date": str(data[sid].index.max().date())}
+
+    # trading rules per instrument from investable_instruments.yaml
+    rules = {}
+    for it in instruments:
+        iid, tr = it.get("instrument_id"), it.get("trading_rules")
+        if iid and tr:
+            hh, mm = (int(x) for x in str(tr["cutoff"]).split(":"))
+            rules[iid] = TradingRules(_time(hh, mm), int(tr.get("nav_lag_bdays", 0)), int(tr.get("settlement_bdays", 2)),
+                                      str(tr.get("source", "")))
+    fees = {iid: {"productFee_pct": f.get("productFee"), "managementFee_pct": f.get("managementFee")}
+            for iid, f in facts.items()}
+
+    # research index model (same Riksbank cash) for comparison - separate model, separate numbers
+    reg = next(x for x in runs if x.run_id == "REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1")
+    panels = build_panels(reg, data, catalog)
+    idx_sigs = generate_signals(reg.strategy, panels["momentum"], reg.roles, stale=panels["stale"])
+    idx_monthly = {}
+    for ex in (IDEALIZED_CLOSE.name, NEXT_MONTH_CLOSE.name):
+        rr = [x for x in results if x.run_spec.run_id == reg.run_id and x.window == "FULL" and x.execution == ex
+              and x.cost_per_side_bps == 0]
+        if rr:
+            idx_monthly[f"INDEX_{ex}"] = rr[0].returns
+    cash_daily = daily_cash_level_from_yield(data["RB_SSVX_3M"])
+    out = regional_nav_implementation(navs, data["RB_SSVX_3M"], rules, fees, idx_sigs, idx_monthly,
+                                      panels["returns"][["SE_USA_EQ", "SE_EUROPE_EQ", "SE_EM_EQ"]], cash_daily)
+    for vname, v in out["variants"].items():
+        for scn, rs in v["scenarios"].items():
+            r = rs.pop("_result")
+            r.export(gen / "runs_daily" / r.run_id, {"model": "INVESTABLE_IMPLEMENTATION", "variant": vname,
+                                                    "trading_rules": {k: str(x) for k, x in rules.items()}})
+    # live signal as of the latest NAV date + 1 day (deterministic for a given data snapshot)
+    as_of = (max(s.index.max() for s in navs.values()) + pd.offsets.Day(1)).date()
+    live = regional_live_signal(as_of, navs, data["RB_SSVX_3M"],
+                                nav_sources={iid: catalog[sid]["provider"] for iid, sid in NAV_SERIES_OF_INSTRUMENT.items()})
+    (gen / "live_signal.json").write_text(json.dumps(live, indent=2, sort_keys=True, default=str))
+    out.update({"status": "OK", "fund_facts": facts, "publication_lag": lag, "trading_rules":
+                {k: {"cutoff": str(v.cutoff), "nav_lag_bdays": v.nav_lag_bdays, "settlement_bdays": v.settlement_bdays,
+                     "source": v.source} for k, v in rules.items()}, "live_signal": live})
+    return out
+
+
 def omrx_validation(data: dict, status: dict) -> dict:
     """Is NASDAQOMRXTBILL (FRED API) usable as a Swedish cash total-return series?"""
     sid = "FRED_OMRXTBILL"
@@ -495,6 +582,9 @@ def main(argv=None) -> int:
                                   rules_from_instruments(instruments), fees, reg.roles,
                                   rf_monthly=panels["returns"]["SE_SHORT_RATE"])
 
+    # ---- investable implementation model (Avanza fund NAVs) + live signal ----
+    nav_block = investable_model(runs, results, data, status, catalog, instruments, gen)
+
     for r in results:
         r.provenance = provenance_block(r.run_spec, catalog, status, data)
         r.export(gen / "runs" / r.run_id)
@@ -506,7 +596,7 @@ def main(argv=None) -> int:
     access = access_report(status, catalog, store.manifest)
     reporting.write_all(root, catalog, status, quality, xval, results, blocked, instruments)
     reporting.write_phase2(root, catalog, status, access, results, blocked, group_windows, daily_results,
-                           daily_blocked, agreement, impl, runs, hurdle, omrx_check)
+                           daily_blocked, agreement, impl, runs, hurdle, omrx_check, nav_block)
     write_result_checksums(gen)  # last: covers every result file written above
     log.info("runs completed: %d monthly result sets, %d daily result sets, %d blocked runs",
              len(results), len(daily_results), len(blocked))

@@ -291,6 +291,7 @@ PARSERS: dict[str, Callable[[bytes, dict], pd.Series]] = {
     "github_h10": parse_h10_mirror,
     "github_aj": parse_aj_compilation,
     "pypi_arch_french": parse_arch_french,
+    "avanza_chart": lambda raw, entry: parse_avanza_nav(raw, entry),
 }
 
 
@@ -319,6 +320,8 @@ def fetch_raw(entry: dict, store: RawStore, *, refresh: bool, offline: bool, man
         if entry["fetch"].get("require_sidecar"):
             validate_sidecar(path)
         return store.register_local(p, entry["id"], path)
+    if p == "avanza_chart":
+        return _fetch_avanza_nav(entry, store, refresh=refresh, offline=offline)
     if p == "pypi_arch_french":
         cached = store.latest_cached(p, "frenchdata")
         if cached and not refresh:
@@ -371,3 +374,70 @@ def _store_bytes(store: RawStore, provider: str, key: str, src: str, b: bytes) -
 
 def parse(entry: dict, raw: RawFile) -> pd.Series:
     return PARSERS[entry["fetch"]["provider"]](raw.read(), entry)
+
+
+# --------------------------------------------------------------------------
+# Avanza fund NAV (UNDOCUMENTED_ENDPOINT, see gem/data/avanza.py)
+# --------------------------------------------------------------------------
+
+def _fetch_avanza_nav(entry: dict, store: RawStore, *, refresh: bool, offline: bool) -> RawFile:
+    """Combined raw = {"guide": {...}, "chunks": [{"url", "body"}]}; each HTTP call is
+    cached individually (RawStore) so a refresh only re-downloads what changed."""
+    from datetime import date as _date
+
+    from .avanza import fetch_daily_history, guide_url
+
+    key = entry["id"]
+    cached = store.latest_cached("avanza_chart", key)
+    if cached is not None and not refresh:
+        return cached
+    if offline:
+        if cached is not None:
+            return cached
+        raise FetchError(f"offline and no cache for avanza_chart/{key}")
+    f = entry["fetch"]
+    ob = str(f["orderbook"])
+    chunks = []
+
+    def get(url: str) -> bytes:
+        import time as _t
+
+        _t.sleep(0.5)  # be gentle with an undocumented endpoint
+        ck = url.split("/chart/")[1].replace("/", "_").split("?")[0]
+        rf = store.fetch("avanza_chart_chunk", f"{key}_{ck}", url, refresh=refresh, offline=offline)
+        b = rf.read()
+        chunks.append({"url": url, "sha256": rf.sha256, "body": json.loads(b)})
+        return b
+
+    start = _date.fromisoformat(str(f.get("history_from", "2018-01-01")))
+    end = _date.today()
+    _, used = fetch_daily_history(get, ob, start, end)
+    g = store.fetch("avanza_guide", key, guide_url(ob), refresh=True, offline=offline)
+    doc = {"orderbook": ob, "isin": f.get("isin"), "guide": json.loads(g.read()),
+           "guide_retrieved_at": g.retrieved_at, "chunks": chunks, "windows_used": used}
+    return _store_bytes(store, "avanza_chart", key, f"{guide_url(ob)} + chart windows",
+                        json.dumps(doc, sort_keys=True).encode())
+
+
+def parse_avanza_nav(raw: bytes, entry: dict) -> pd.Series:
+    from .avanza import parse_chart
+
+    doc = json.loads(raw)
+    g = doc.get("guide", {})
+    isin = entry["fetch"].get("isin")
+    if isin and g.get("isin") and g["isin"] != isin:
+        raise ValueError(f"{entry['id']}: guide ISIN {g['isin']} != catalog {isin}")
+    if g.get("currency") and g["currency"] != entry.get("currency", "SEK"):
+        raise ValueError(f"{entry['id']}: NAV currency {g['currency']} != catalog {entry.get('currency')}")
+    parts = [parse_chart(json.dumps(c["body"]).encode()) for c in doc["chunks"]]
+    parts = [p for p in parts if not p.empty]
+    if not parts:
+        raise ValueError(f"{entry['id']}: no NAV points")
+    s = pd.concat(parts)
+    s = s[~s.index.duplicated(keep="last")].sort_index().rename(entry["id"])
+    launch = entry["fetch"].get("launch_date")
+    if launch:
+        lt = pd.Timestamp(str(launch))
+        if s.index.min() < lt:
+            raise ValueError(f"{entry['id']}: NAV at {s.index.min().date()} precedes launch {lt.date()}")
+    return s

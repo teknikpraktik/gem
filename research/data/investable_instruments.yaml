@@ -25,6 +25,10 @@ general:
 instruments:
 
 - name: Avanza USA
+  instrument_id: AVANZA_USA
+  orderbook_id: "1025150"   # avanza.se, confirmed by ISIN search 2026-10-31
+  nav_currency: SEK
+  launch_date_iso: ""
   isin: SE0012741163                       # secondary (insidevoice.se, borskollen.se)
   provider: Avanza Fonder AB
   category: Equity - USA, index
@@ -46,6 +50,10 @@ instruments:
   verified_at: "2026-10-31 (search extract only)"
 
 - name: Avanza Europa
+  instrument_id: AVANZA_EUROPA
+  orderbook_id: "1041067"   # avanza.se, confirmed by ISIN search 2026-10-31
+  nav_currency: SEK
+  launch_date_iso: "2020-02-05"
   isin: SE0013718699                       # secondary (spararnas.se, borskollen.se, investing.com)
   provider: Avanza Fonder AB
   category: Equity - Europe, index
@@ -65,6 +73,10 @@ instruments:
   verified_at: "2026-10-31 (search extract only)"
 
 - name: Avanza Emerging Markets
+  instrument_id: AVANZA_EM
+  orderbook_id: "944976"   # avanza.se, confirmed by ISIN search 2026-10-31
+  nav_currency: SEK
+  launch_date_iso: ""
   isin: SE0012454338                       # primary, search extract of May 2026 factsheet
   provider: Avanza Fonder AB
   category: Equity - Emerging markets, feeder fund
@@ -85,6 +97,10 @@ instruments:
   verified_at: "2026-10-31 (search extract only)"
 
 - name: Avanza Global
+  instrument_id: AVANZA_GLOBAL
+  orderbook_id: "878733"   # avanza.se, confirmed by ISIN search 2026-10-31
+  nav_currency: SEK
+  launch_date_iso: "2018-08-27"
   isin: SE0011527613                       # secondary (several fund sites, Morningstar)
   provider: Avanza Fonder AB
   category: Equity - Global developed, index
@@ -105,6 +121,10 @@ instruments:
   verified_at: "2026-10-31 (search extract only)"
 
 - name: Avanza Ränta Kort
+  instrument_id: AVANZA_RANTA_KORT
+  orderbook_id: "1684019"   # avanza.se, confirmed by ISIN search 2026-10-31
+  nav_currency: SEK
+  launch_date_iso: "2023-12-14"
   isin: SE0021021425                       # secondary (borskollen.se)
   provider: Avanza Fonder AB
   category: Fixed income - short SEK, feeder fund
@@ -113,7 +133,7 @@ instruments:
   currency: SEK
   currency_hedged: "n/a (SEK assets)"
   ongoing_charge: "0.09% total, 0.03% management fee (Avanza fund page / Feb-2026 brochure, search extract)"
-  launch_date: "2023 (exact date UNRESOLVED)"
+  launch_date: "2023-12-14 (avanza.se fund guide startDate, 2026-10-31)"
   cutoff_time: "UNRESOLVED (09:30 day before holiday per 2026 brochure extract; normal-day cut-off unclear)"
   trading_day: "every Swedish banking day"
   settlement_notes: "Forward pricing; NAV T+1; payment within 2 banking days."

@@ -982,115 +982,125 @@ series:
 
 - id: AVZ_NAV_USA
   name: Avanza USA NAV per unit (daily, SEK)
-  provider: Avanza Fonder AB (manual export of official NAV history)
-  provider_series_id: "SE0012741163"
-  source_url: https://www.avanza.se/fonder/
+  provider: Avanza Bank (avanza.se fund-guide JSON, as used by avanza.se itself)
+  provider_series_id: "orderBookId 1025150 / SE0012741163"
+  source_url: https://www.avanza.se/fonder/om-fonden.html/1025150
   asset_class: fund_nav
   region: see data/investable_instruments.yaml
   currency: SEK
-  frequency: daily
+  frequency: daily (Swedish banking days)
   is_total_return: true
-  start_date: "2019-12"
+  start_date: "first NAV in chart data"
   end_date: ongoing
-  license_notes: Avanza terms - personal research use; verify before redistribution.
-  retrieval_method: manual CSV data/manual/nav_SE0012741163.csv + .source.yaml sidecar
+  license_notes: Public avanza.se data via an UNDOCUMENTED endpoint - not an official API; Avanza terms apply; may change without notice.
+  retrieval_method: "GET /_api/fund-guide/chart/1025150/{from}/{to}?raw=true in daily windows + /_api/fund-guide/guide/1025150"
   proxy_for: null
   quality_status: EXPERIMENTAL
-  verification: UNRESOLVED
-  build_env: BLOCKED
+  verification: VERIFIED FROM PRIMARY SOURCE
+  build_env: REACHABLE
   notes: >-
-    INVESTABLE_INSTRUMENT, not a signal index. Accumulating share class assumed (ASSUMPTION - if
-    the class distributes, dividends must be added before use). Never used before launch date.
-  fetch: {provider: local_csv, file: nav_SE0012741163.csv, require_sidecar: true, launch_date: "2019-12"}
+    INVESTABLE_INSTRUMENT, not a signal index. Format verified from real responses (reports/generated/nav_probe).
+    ISIN -> orderBookId confirmed by avanza.se search (exactly one hit). The chart API returns null before the
+    fund's first NAV, so no pre-launch value can enter. Accumulating share class (NAV includes reinvested income).
+    Quality UNDOCUMENTED_ENDPOINT: replace with an official feed when one exists (see gem/nav.py).
+  fetch: {provider: avanza_chart, orderbook: "1025150", isin: SE0012741163, history_from: "2019-01-01"}
 
 - id: AVZ_NAV_EUROPA
   name: Avanza Europa NAV per unit (daily, SEK)
-  provider: Avanza Fonder AB (manual export of official NAV history)
-  provider_series_id: "SE0013718699"
-  source_url: https://www.avanza.se/fonder/
+  provider: Avanza Bank (avanza.se fund-guide JSON, as used by avanza.se itself)
+  provider_series_id: "orderBookId 1041067 / SE0013718699"
+  source_url: https://www.avanza.se/fonder/om-fonden.html/1041067
   asset_class: fund_nav
   region: see data/investable_instruments.yaml
   currency: SEK
-  frequency: daily
+  frequency: daily (Swedish banking days)
   is_total_return: true
   start_date: "2020-02-05"
   end_date: ongoing
-  license_notes: Avanza terms - personal research use; verify before redistribution.
-  retrieval_method: manual CSV data/manual/nav_SE0013718699.csv + .source.yaml sidecar
+  license_notes: Public avanza.se data via an UNDOCUMENTED endpoint - not an official API; Avanza terms apply; may change without notice.
+  retrieval_method: "GET /_api/fund-guide/chart/1041067/{from}/{to}?raw=true in daily windows + /_api/fund-guide/guide/1041067"
   proxy_for: null
   quality_status: EXPERIMENTAL
-  verification: UNRESOLVED
-  build_env: BLOCKED
+  verification: VERIFIED FROM PRIMARY SOURCE
+  build_env: REACHABLE
   notes: >-
-    INVESTABLE_INSTRUMENT, not a signal index. Accumulating share class assumed (ASSUMPTION - if
-    the class distributes, dividends must be added before use). Never used before launch date.
-  fetch: {provider: local_csv, file: nav_SE0013718699.csv, require_sidecar: true, launch_date: "2020-02-05"}
+    INVESTABLE_INSTRUMENT, not a signal index. Format verified from real responses (reports/generated/nav_probe).
+    ISIN -> orderBookId confirmed by avanza.se search (exactly one hit). The chart API returns null before the
+    fund's first NAV, so no pre-launch value can enter. Accumulating share class (NAV includes reinvested income).
+    Quality UNDOCUMENTED_ENDPOINT: replace with an official feed when one exists (see gem/nav.py).
+  fetch: {provider: avanza_chart, orderbook: "1041067", isin: SE0013718699, history_from: "2019-06-01", launch_date: "2020-02-05"}
 
 - id: AVZ_NAV_EM
   name: Avanza Emerging Markets NAV per unit (daily, SEK)
-  provider: Avanza Fonder AB (manual export of official NAV history)
-  provider_series_id: "SE0012454338"
-  source_url: https://www.avanza.se/fonder/
+  provider: Avanza Bank (avanza.se fund-guide JSON, as used by avanza.se itself)
+  provider_series_id: "orderBookId 944976 / SE0012454338"
+  source_url: https://www.avanza.se/fonder/om-fonden.html/944976
   asset_class: fund_nav
   region: see data/investable_instruments.yaml
   currency: SEK
-  frequency: daily
+  frequency: daily (Swedish banking days)
   is_total_return: true
-  start_date: "2019"
+  start_date: "first NAV in chart data"
   end_date: ongoing
-  license_notes: Avanza terms - personal research use; verify before redistribution.
-  retrieval_method: manual CSV data/manual/nav_SE0012454338.csv + .source.yaml sidecar
+  license_notes: Public avanza.se data via an UNDOCUMENTED endpoint - not an official API; Avanza terms apply; may change without notice.
+  retrieval_method: "GET /_api/fund-guide/chart/944976/{from}/{to}?raw=true in daily windows + /_api/fund-guide/guide/944976"
   proxy_for: null
   quality_status: EXPERIMENTAL
-  verification: UNRESOLVED
-  build_env: BLOCKED
+  verification: VERIFIED FROM PRIMARY SOURCE
+  build_env: REACHABLE
   notes: >-
-    INVESTABLE_INSTRUMENT, not a signal index. Accumulating share class assumed (ASSUMPTION - if
-    the class distributes, dividends must be added before use). Never used before launch date.
-  fetch: {provider: local_csv, file: nav_SE0012454338.csv, require_sidecar: true, launch_date: "2019"}
+    INVESTABLE_INSTRUMENT, not a signal index. Format verified from real responses (reports/generated/nav_probe).
+    ISIN -> orderBookId confirmed by avanza.se search (exactly one hit). The chart API returns null before the
+    fund's first NAV, so no pre-launch value can enter. Accumulating share class (NAV includes reinvested income).
+    Quality UNDOCUMENTED_ENDPOINT: replace with an official feed when one exists (see gem/nav.py).
+  fetch: {provider: avanza_chart, orderbook: "944976", isin: SE0012454338, history_from: "2019-01-01"}
 
 - id: AVZ_NAV_RANTA_KORT
   name: Avanza Ränta Kort NAV per unit (daily, SEK)
-  provider: Avanza Fonder AB (manual export of official NAV history)
-  provider_series_id: "SE0021021425"
-  source_url: https://www.avanza.se/fonder/
+  provider: Avanza Bank (avanza.se fund-guide JSON, as used by avanza.se itself)
+  provider_series_id: "orderBookId 1684019 / SE0021021425"
+  source_url: https://www.avanza.se/fonder/om-fonden.html/1684019
   asset_class: fund_nav
   region: see data/investable_instruments.yaml
   currency: SEK
-  frequency: daily
+  frequency: daily (Swedish banking days)
   is_total_return: true
-  start_date: "2023"
+  start_date: "2023-12-14"
   end_date: ongoing
-  license_notes: Avanza terms - personal research use; verify before redistribution.
-  retrieval_method: manual CSV data/manual/nav_SE0021021425.csv + .source.yaml sidecar
+  license_notes: Public avanza.se data via an UNDOCUMENTED endpoint - not an official API; Avanza terms apply; may change without notice.
+  retrieval_method: "GET /_api/fund-guide/chart/1684019/{from}/{to}?raw=true in daily windows + /_api/fund-guide/guide/1684019"
   proxy_for: null
   quality_status: EXPERIMENTAL
-  verification: UNRESOLVED
-  build_env: BLOCKED
+  verification: VERIFIED FROM PRIMARY SOURCE
+  build_env: REACHABLE
   notes: >-
-    INVESTABLE_INSTRUMENT, not a signal index. Accumulating share class assumed (ASSUMPTION - if
-    the class distributes, dividends must be added before use). Never used before launch date.
-  fetch: {provider: local_csv, file: nav_SE0021021425.csv, require_sidecar: true, launch_date: "2023"}
+    INVESTABLE_INSTRUMENT, not a signal index. Format verified from real responses (reports/generated/nav_probe).
+    ISIN -> orderBookId confirmed by avanza.se search (exactly one hit). The chart API returns null before the
+    fund's first NAV, so no pre-launch value can enter. Accumulating share class (NAV includes reinvested income).
+    Quality UNDOCUMENTED_ENDPOINT: replace with an official feed when one exists (see gem/nav.py).
+  fetch: {provider: avanza_chart, orderbook: "1684019", isin: SE0021021425, history_from: "2023-06-01", launch_date: "2023-12-14"}
 
 - id: AVZ_NAV_GLOBAL
   name: Avanza Global NAV per unit (daily, SEK)
-  provider: Avanza Fonder AB (manual export of official NAV history)
-  provider_series_id: "SE0011527613"
-  source_url: https://www.avanza.se/fonder/
+  provider: Avanza Bank (avanza.se fund-guide JSON, as used by avanza.se itself)
+  provider_series_id: "orderBookId 878733 / SE0011527613"
+  source_url: https://www.avanza.se/fonder/om-fonden.html/878733
   asset_class: fund_nav
   region: see data/investable_instruments.yaml
   currency: SEK
-  frequency: daily
+  frequency: daily (Swedish banking days)
   is_total_return: true
   start_date: "2018-08-27"
   end_date: ongoing
-  license_notes: Avanza terms - personal research use; verify before redistribution.
-  retrieval_method: manual CSV data/manual/nav_SE0011527613.csv + .source.yaml sidecar
+  license_notes: Public avanza.se data via an UNDOCUMENTED endpoint - not an official API; Avanza terms apply; may change without notice.
+  retrieval_method: "GET /_api/fund-guide/chart/878733/{from}/{to}?raw=true in daily windows + /_api/fund-guide/guide/878733"
   proxy_for: null
   quality_status: EXPERIMENTAL
-  verification: UNRESOLVED
-  build_env: BLOCKED
+  verification: VERIFIED FROM PRIMARY SOURCE
+  build_env: REACHABLE
   notes: >-
-    INVESTABLE_INSTRUMENT, not a signal index. Accumulating share class assumed (ASSUMPTION - if
-    the class distributes, dividends must be added before use). Never used before launch date.
-  fetch: {provider: local_csv, file: nav_SE0011527613.csv, require_sidecar: true, launch_date: "2018-08-27"}
+    INVESTABLE_INSTRUMENT, not a signal index. Format verified from real responses (reports/generated/nav_probe).
+    ISIN -> orderBookId confirmed by avanza.se search (exactly one hit). The chart API returns null before the
+    fund's first NAV, so no pre-launch value can enter. Accumulating share class (NAV includes reinvested income).
+    Quality UNDOCUMENTED_ENDPOINT: replace with an official feed when one exists (see gem/nav.py).
+  fetch: {provider: avanza_chart, orderbook: "878733", isin: SE0011527613, history_from: "2018-06-01", launch_date: "2018-08-27"}

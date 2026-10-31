@@ -118,3 +118,33 @@ def load_instruments(path: Path) -> dict[str, Instrument]:
         out[iid] = Instrument(iid, it["name"], it["isin"], it.get("nav_currency", "SEK"),
                               date.fromisoformat(ld) if ld else None, str(it.get("orderbook_id") or "") or None)
     return out
+
+
+class AvanzaChartNavProvider(FundNavProvider):
+    """avanza.se fund-guide chart JSON (UNDOCUMENTED_ENDPOINT) behind the provider interface.
+
+    Uses the same fetch/parse path as the pipeline (gem.data.providers, raw cache with
+    sha256 + manifest), so live code and backtests read identical bytes.
+    """
+
+    name = "avanza_chart"
+    quality = QUALITY_UNDOCUMENTED
+
+    def __init__(self, store, refresh: bool = False, offline: bool = False, history_from: str = "2018-01-01"):
+        self.store, self.refresh, self.offline, self.history_from = store, refresh, offline, history_from
+
+    def _entry(self, inst: Instrument) -> dict:
+        if not inst.orderbook_id:
+            raise NavError(f"{inst.instrument_id}: no orderbook id")
+        f = {"provider": "avanza_chart", "orderbook": inst.orderbook_id, "isin": inst.isin,
+             "history_from": self.history_from}
+        if inst.launch_date:
+            f["launch_date"] = inst.launch_date.isoformat()
+        return {"id": f"AVZ_NAV_{inst.instrument_id}", "currency": inst.currency, "fetch": f}
+
+    def historical_nav(self, inst: Instrument) -> pd.Series:
+        from .data.providers import fetch_raw, parse
+
+        e = self._entry(inst)
+        raw = fetch_raw(e, self.store, refresh=self.refresh, offline=self.offline)
+        return validate_nav_series(parse(e, raw), inst)

@@ -80,6 +80,15 @@ def test_phase2_pipeline_runs_end_to_end_on_synthetic_data(tmp_path, monkeypatch
             assert (run, s) in sc
     a = [d for d in p2["daily_results"] if d["label"] == "LOOKAHEAD_REFERENCE_ONLY"]
     assert a and all(d["scenario"] == "A_PUBLISHED_CLOSE" for d in a)
+    # investable implementation model (Avanza NAV) runs and is separate from the index model
+    nb = p2_res = json.loads((tmp_path / "reports" / "generated" / "phase2_results.json").read_text())["nav_implementation"]
+    assert nb["status"] == "OK", nb
+    assert set(nb["variants"]) == {"PURE_AVANZA_FUNDS", "HYBRID_SYNTH_CASH"}
+    for v in nb["variants"].values():
+        assert set(v["scenarios"]) == {"A_PUBLISHED_CLOSE", "B_NEXT_TRADABLE", "C_CONSERVATIVE"}
+    assert nb["live_signal"]["strategy"] == "REGIONAL_SEK"
+    assert (tmp_path / "reports" / "generated" / "live_signal.json").exists()
+    assert nb["signal_agreement"]["months"] > 0
     # implementation gap computed
     assert p2["implementation_gap"]["status"] == "OK"
     # B executes later than A, C later than B
