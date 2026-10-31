@@ -450,6 +450,14 @@
       "ran": []
     }
   },
+  "hurdle_sensitivity": {
+    "GEM_SEK_OPEN_OMRX_V1 vs GEM_SEK_OPEN_SSVXSYNTH_V1": {
+      "status": "BLOCKED"
+    },
+    "REGIONAL_SEK_FF_PROXY_OMRX_V1 vs REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1": {
+      "status": "BLOCKED"
+    }
+  },
   "implementation_gap": {
     "reason": "daily index data for REGIONAL_SEK_FF_PROXY_OMRX_V1 unavailable",
     "status": "BLOCKED"

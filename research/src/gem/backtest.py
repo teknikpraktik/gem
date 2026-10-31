@@ -113,6 +113,7 @@ class BacktestResult:
             "stop_reason": self.stop_reason,
             "notes": self.notes,
             "metrics": self.metrics,
+            "provenance": getattr(self, "provenance", None),
         }
         (out_dir / "result.json").write_text(json.dumps(meta, indent=2, default=str, sort_keys=True))
 

@@ -41,6 +41,99 @@
     "Bonds: Ibbotson Intermediate Government to 1975-12, then US Aggregate.",
     "All from the unverified third-party compilation."
   ],
+  "provenance": {
+    "run_id": "GEM_ORIGINAL_PROXY_3P",
+    "series": [
+      {
+        "class": "THIRD_PARTY",
+        "data_period": "1969-12-31..1999-12-31",
+        "fetch": "CACHED",
+        "id": "AJ_IBBOTSON_IT_GOVT",
+        "provider": "alexjansenhome/GEM (GitHub), labelled source Ibbotson",
+        "provider_series_id": "msci_all_gross.csv: Mid-Treasuries",
+        "quality_status": "EXPERIMENTAL",
+        "retrieved_at": "2026-10-31T07:24:55Z",
+        "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "THIRD_PARTY",
+        "data_period": "1969-12-31..2012-12-31",
+        "fetch": "CACHED",
+        "id": "AJ_IBBOTSON_LARGE",
+        "provider": "alexjansenhome/GEM (GitHub), labelled source Ibbotson",
+        "provider_series_id": "msci_all_gross.csv: Large Caps",
+        "quality_status": "EXPERIMENTAL",
+        "retrieved_at": "2026-10-31T07:24:55Z",
+        "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "THIRD_PARTY",
+        "data_period": "1987-12-31..2016-12-30",
+        "fetch": "CACHED",
+        "id": "AJ_MSCI_ACWI_EXUS_GR",
+        "provider": "alexjansenhome/GEM (GitHub), labelled source MSCI",
+        "provider_series_id": "msci_all_gross.csv: ACWI ex USA",
+        "quality_status": "EXPERIMENTAL",
+        "retrieved_at": "2026-10-31T07:24:55Z",
+        "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "THIRD_PARTY",
+        "data_period": "1969-12-31..2016-12-30",
+        "fetch": "CACHED",
+        "id": "AJ_MSCI_WORLD_EXUS_GR",
+        "provider": "alexjansenhome/GEM (GitHub), labelled source MSCI",
+        "provider_series_id": "msci_all_gross.csv: WORLD ex USA",
+        "quality_status": "EXPERIMENTAL",
+        "retrieved_at": "2026-10-31T07:24:55Z",
+        "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "THIRD_PARTY",
+        "data_period": "1988-01-29..2016-12-30",
+        "fetch": "CACHED",
+        "id": "AJ_SP500TR",
+        "provider": "alexjansenhome/GEM (GitHub), labelled source Yahoo",
+        "provider_series_id": "msci_all_gross.csv: SP500TR",
+        "quality_status": "EXPERIMENTAL",
+        "retrieved_at": "2026-10-31T07:24:55Z",
+        "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "THIRD_PARTY",
+        "data_period": "1969-12-31..2017-05-12",
+        "fetch": "CACHED",
+        "id": "AJ_TBILL_3M_TR",
+        "provider": "alexjansenhome/GEM (GitHub), labelled source FRED (TB3MS)",
+        "provider_series_id": "msci_all_gross.csv: 3 MONTH",
+        "quality_status": "EXPERIMENTAL",
+        "retrieved_at": "2026-10-31T07:24:55Z",
+        "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "THIRD_PARTY",
+        "data_period": "1975-12-31..2016-12-30",
+        "fetch": "CACHED",
+        "id": "AJ_US_AGG",
+        "provider": "alexjansenhome/GEM (GitHub), labelled source Morningstar",
+        "provider_series_id": "msci_all_gross.csv: AGG",
+        "quality_status": "EXPERIMENTAL",
+        "retrieved_at": "2026-10-31T07:24:55Z",
+        "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      }
+    ],
+    "strategy_id": "GEM_ORIGINAL",
+    "strategy_version": "1.0.0",
+    "tier": "EXTENDED_PROXY",
+    "weakest_class": "THIRD_PARTY"
+  },
   "run_id": "GEM_ORIGINAL_PROXY_3P__REF_1974_2013__NEXT_MONTH_CLOSE__COST_10BPS",
   "stop_reason": null,
   "strategy_id": "GEM_ORIGINAL",

@@ -26,6 +26,10 @@ def signal_agreement(a: pd.Series, b: pd.Series, start=None, end=None) -> dict:
     same = x == y
     by_year = (~same).groupby(x.index.year).sum()
     cross = pd.crosstab(x.rename("original"), y.rename("sek"))
+    diff = ~same
+    risk_on = {"US", "EX_US"}
+    absolute = diff & (x.eq("DEFENSIVE") | y.eq("DEFENSIVE"))      # risk-on/off decision differs
+    relative = diff & x.isin(risk_on) & y.isin(risk_on)             # both risk-on, different region
     return {
         "first_signal": str(x.index.min().date()),
         "last_signal": str(x.index.max().date()),
@@ -36,7 +40,31 @@ def signal_agreement(a: pd.Series, b: pd.Series, start=None, end=None) -> dict:
         "differences_by_year": {int(k): int(v) for k, v in by_year.items() if v > 0},
         "top_years": [int(k) for k in by_year.sort_values(ascending=False).index[:5] if by_year[k] > 0],
         "crosstab": {f"{i}->{j}": int(cross.at[i, j]) for i in cross.index for j in cross.columns},
+        "differences_absolute_momentum": int(absolute.sum()),
+        "differences_relative_momentum": int(relative.sum()),
     }
+
+
+def ranking_invariance(us_usd: pd.Series, exus_usd: pd.Series, us_sek: pd.Series, exus_sek: pd.Series) -> dict:
+    """Check that converting BOTH legs with the same USD/SEK series leaves the
+    US-vs-ex-US ranking unchanged: (1+a)k >= (1+b)k  <=>  a >= b for k > 0."""
+    df = pd.concat({"u": us_usd, "x": exus_usd, "us": us_sek, "xs": exus_sek}, axis=1).dropna()
+    usd_rank = df["u"] >= df["x"]
+    sek_rank = df["us"] >= df["xs"]
+    mism = df.index[usd_rank != sek_rank]
+    return {"months": int(len(df)), "ranking_mismatches": int(len(mism)),
+            "mismatch_months": [str(d.date()) for d in mism[:20]]}
+
+
+def hurdle_sensitivity(sig_a: pd.Series, sig_b: pd.Series) -> dict:
+    """Same strategy, two hurdle series: how many signals change on the overlap?"""
+    x, y = sig_a.align(sig_b, join="inner")
+    m = x.notna() & y.notna()
+    x, y = x[m], y[m]
+    d = x != y
+    return {"months": int(len(x)), "signals_changed": int(d.sum()),
+            "changed_pct": float(d.mean()) if len(x) else float("nan"),
+            "changed_dates": [str(t.date()) for t in x.index[d]][:40]}
 
 
 def usd_strategy_returns_in_sek(usd_returns: pd.Series, fx_raw: pd.Series) -> pd.Series:

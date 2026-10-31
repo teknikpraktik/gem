@@ -132,6 +132,11 @@ Failed endpoints:
 ### GEM_ORIGINAL_STRICT vs GEM_SEK_STRICT_V1
 - **BLOCKED** – runs not available: GEM_ORIGINAL_STRICT, GEM_SEK_STRICT_V1
 
+## 4b. Hurdle sensitivity: OMRX (verified) vs Riksbank SSVX proxy
+
+- GEM_SEK_OPEN_OMRX_V1 vs GEM_SEK_OPEN_SSVXSYNTH_V1: **BLOCKED**
+- REGIONAL_SEK_FF_PROXY_OMRX_V1 vs REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1: **BLOCKED**
+
 ## 5. Execution scenarios on daily data (A published close / B next tradable / C conservative)
 
 - `GEM_SEK_OPEN_OMRX_V1` daily scenarios **BLOCKED** – missing `FF_DEVELOPED_MKT_TR`, `FF_US_MKT_TR`, `FF_US_MKT_TR_DAILY`, `FRED_NASDAQ_GLOBAL_EXUS_LM_NTR`, `FRED_OMRXTBILL`

@@ -65,6 +65,14 @@ def test_phase2_pipeline_runs_end_to_end_on_synthetic_data(tmp_path, monkeypatch
     assert all(v["status"] == "OK" for v in p2["agreement"].values())
     for v in p2["agreement"].values():
         assert v["identical"] + v["different"] == v["months"]
+    # same FX on both legs -> ranking never changes (mathematical invariant)
+    for v in p2["agreement"].values():
+        assert v["ranking_invariance"]["ranking_mismatches"] == 0
+        assert v["differences_absolute_momentum"] + v["differences_relative_momentum"] == v["different"]
+    assert all("signals_changed" in v for v in p2["hurdle_sensitivity"].values())
+    # provenance on every result, synthetic data flagged as such
+    res = json.loads(next((tmp_path / "reports" / "generated" / "runs").glob("GEM_SEK_OPEN_OMRX_V1__FULL*/result.json")).read_text())
+    assert res["provenance"]["weakest_class"] == "SYNTHETIC_TEST_ONLY"
     # daily scenarios A/B/C for both daily-enabled runs
     sc = {(d["run"], d["scenario"]) for d in p2["daily_results"]}
     for run in ("GEM_SEK_OPEN_OMRX_V1", "REGIONAL_SEK_FF_PROXY_OMRX_V1"):

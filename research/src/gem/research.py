@@ -157,6 +157,36 @@ def access_report(status: dict, catalog: dict, store_manifest: Path) -> list[dic
     return rows
 
 
+def provenance_block(run: RunSpec, catalog: dict, status: dict, data: dict) -> dict:
+    """Exact data lineage of a run: version, series, provider, retrieval, period, quality."""
+    series = []
+    for sid in sorted(run.series_ids):
+        e, st = catalog[sid], status.get(sid, {})
+        s = data.get(sid)
+        series.append({"id": sid, "provider": e["provider"], "provider_series_id": e["provider_series_id"],
+                       "quality_status": e["quality_status"], "verification": e["verification"],
+                       "retrieved_at": st.get("retrieved_at"), "sha256": st.get("sha256"), "fetch": st.get("fetch"),
+                       "data_period": f"{s.index.min().date()}..{s.index.max().date()}" if s is not None else None,
+                       "class": data_class(e, st)})
+    return {"strategy_id": run.strategy.strategy_id, "strategy_version": run.strategy.version, "run_id": run.run_id,
+            "tier": run.tier, "series": series,
+            "weakest_class": max((x["class"] for x in series), key=DATA_CLASS_ORDER.index)}
+
+
+DATA_CLASS_ORDER = ["PRIMARY_SOURCE_VERIFIED", "PROXY", "THIRD_PARTY", "SYNTHETIC_TEST_ONLY"]
+
+
+def data_class(entry: dict, st: dict) -> str:
+    if st.get("fetch") == "SYNTHETIC":
+        return "SYNTHETIC_TEST_ONLY"
+    p = entry["fetch"]["provider"]
+    if p.startswith("github_") or p.startswith("pypi_"):
+        return "THIRD_PARTY"
+    if entry["quality_status"] == "VERIFIED" and p in ("fred", "riksbank", "french", "local_csv"):
+        return "PRIMARY_SOURCE_VERIFIED"
+    return "PROXY"
+
+
 def _common_window(results, members) -> tuple[str, str] | None:
     spans = []
     for rid in members:
@@ -300,7 +330,28 @@ def main(argv=None) -> int:
         ag.update({"status": "OK", "window": win, "original_in_sek": m_a, "sek_model": m_b,
                    "cagr_diff_sek_minus_original": m_b["cagr"] - m_a["cagr"],
                    "maxdd_diff_sek_minus_original": m_b["max_drawdown"] - m_a["max_drawdown"]})
+        # programmatic check: same FX on both legs must not change US vs ex-US ranking
+        from .analysis import ranking_invariance
+        from .panel import build_panels as _bp
+        pa, pb = _bp(spec_a, data, catalog), _bp(spec_b, data, catalog)
+        ag["ranking_invariance"] = ranking_invariance(pa["momentum"]["US_EQUITIES"], pa["momentum"]["EX_US_EQUITIES"],
+                                                      pb["momentum"]["SEK_US_EQ"], pb["momentum"]["SEK_EXUS_EQ"])
         agreement[f"{a_id} vs {b_id}"] = ag
+
+    # ---- hurdle sensitivity: OMRX (verified) vs Riksbank SSVX proxy, same strategy ----
+    from .analysis import hurdle_sensitivity
+    hurdle = {}
+    for a_id, b_id in (("GEM_SEK_OPEN_OMRX_V1", "GEM_SEK_OPEN_SSVXSYNTH_V1"),
+                       ("REGIONAL_SEK_FF_PROXY_OMRX_V1", "REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1")):
+        if a_id in ran and b_id in ran:
+            pick_full = lambda rid: next(x for x in results if x.run_spec.run_id == rid and x.window == "FULL"
+                                         and x.execution == IDEALIZED_CLOSE.name and x.cost_per_side_bps == 0)
+            sa = pick_full(a_id).signals.set_index(pd.to_datetime(pick_full(a_id).signals["signal_date"]))["target"]
+            sb = pick_full(b_id).signals.set_index(pd.to_datetime(pick_full(b_id).signals["signal_date"]))["target"]
+            sa, sb = sa[sa != "NO_SIGNAL"], sb[sb != "NO_SIGNAL"]
+            hurdle[f"{a_id} vs {b_id}"] = hurdle_sensitivity(sa, sb)
+        else:
+            hurdle[f"{a_id} vs {b_id}"] = {"status": "BLOCKED"}
 
     # ---- implementation gap (REGIONAL_SEK on Avanza funds) ----
     from .implementation import implementation_gap, rules_from_instruments
@@ -317,11 +368,12 @@ def main(argv=None) -> int:
                                   rf_monthly=panels["returns"]["SE_SHORT_RATE"])
 
     for r in results:
+        r.provenance = provenance_block(r.run_spec, catalog, status, data)
         r.export(gen / "runs" / r.run_id)
     access = access_report(status, catalog, store.manifest)
     reporting.write_all(root, catalog, status, quality, xval, results, blocked, instruments)
     reporting.write_phase2(root, catalog, status, access, results, blocked, group_windows, daily_results,
-                           daily_blocked, agreement, impl, runs)
+                           daily_blocked, agreement, impl, runs, hurdle)
     log.info("runs completed: %d monthly result sets, %d daily result sets, %d blocked runs",
              len(results), len(daily_results), len(blocked))
     return 0

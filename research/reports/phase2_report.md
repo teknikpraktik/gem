@@ -1,5 +1,38 @@
 # Fas 2: härdad data och validering av den svenska modellen
 
+## Körning 2 (2026-10-31): miljöverifiering – fortfarande BLOCKED
+
+Uppdraget var att slutföra fas 2 på riktig data. Det gick inte, av samma skäl som förut:
+
+| Kontroll | Resultat |
+|---|---|
+| Exekveringsmiljö | Anthropics molnsandlåda (`CLAUDE_CODE_REMOTE_ENVIRONMENT_TYPE=cloud_default`), inte användarens dator |
+| Lokal dator via Remote Control | Ingen kopplad (`list_computer_folders` tom) – kan inte köra i lokalt skal |
+| FRED, Riksbanken, Ken French (Python `requests`, samma miljö som motorn) | `ProxyError: Tunnel connection failed: 403 Forbidden` |
+| Proxyns egen logg | `gateway answered 403 to CONNECT (policy denial or upstream failure)` för `fred.stlouisfed.org:443`, `api.riksbank.se:443`, `mba.tuck.dartmouth.edu:443` |
+| Felets natur | Nekas vid CONNECT innan TLS/HTTP mot källan startar. URL, User-Agent, headers, API-version och TLS kan inte vara orsaken; inget i providern kan åtgärda det. |
+| Tester | 87 passed, 0 failed, 0 skipped |
+| Reproducerbarhet (cache, två körningar) | identiska sha256 för `summary.csv` och `phase2.json` |
+
+Tillagt i denna körning, och färdigt att köras när datan finns:
+
+* **Hurdle-känslighet**: antal GEM_SEK- och REGIONAL_SEK-signaler som ändras när OMRX
+  byts mot Riksbanksproxyn (§4b i `generated/phase2.md`).
+* **Klassning av signalskillnader**: GEM_ORIGINAL mot GEM_SEK delas upp i absolut
+  momentum (risk-on/off) och relativ momentum (USA/ex-US).
+* **Programmatisk kontroll** av att samma USD/SEK på båda benen inte ändrar rankingen
+  USA/ex-US. Integrationstestet kräver 0 avvikelser.
+* **Proveniensblock** i varje `result.json`: strategiversion, serier, leverantör,
+  `retrieved_at`, sha256, dataperiod, kvalitet och dataklass (`PRIMARY_SOURCE_VERIFIED` /
+  `PROXY` / `THIRD_PARTY` / `SYNTHETIC_TEST_ONLY`), samt körningens svagaste klass.
+* **`scripts/run_phase2_local.sh`**: hela körningen (nätverkskontroll, tester, refresh,
+  cachekörning, checksumjämförelse, commit) för en maskin med fri åtkomst.
+
+Inga svenska resultat har hämtats från tredjepartsspeglar eller syntetisk data. De
+svenska körningarna är BLOCKED, inte ersatta.
+
+---
+
 Datum: 2026-10-31. Branch: `claude/gem-research-engine`.
 Genererat underlag: [`generated/phase2.md`](generated/phase2.md), [`generated/phase2.json`](generated/phase2.json).
 
