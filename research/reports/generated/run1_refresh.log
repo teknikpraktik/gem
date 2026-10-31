@@ -1,0 +1,18 @@
+WARNING series AVZ_NAV_EM unavailable: manual file not supplied: /home/runner/work/gem/gem/research/data/manual/nav_SE0012454338.csv
+WARNING series AVZ_NAV_EUROPA unavailable: manual file not supplied: /home/runner/work/gem/gem/research/data/manual/nav_SE0013718699.csv
+WARNING series AVZ_NAV_GLOBAL unavailable: manual file not supplied: /home/runner/work/gem/gem/research/data/manual/nav_SE0011527613.csv
+WARNING series AVZ_NAV_RANTA_KORT unavailable: manual file not supplied: /home/runner/work/gem/gem/research/data/manual/nav_SE0021021425.csv
+WARNING series AVZ_NAV_USA unavailable: manual file not supplied: /home/runner/work/gem/gem/research/data/manual/nav_SE0012741163.csv
+WARNING series BBG_US_AGG_OFFICIAL unavailable: manual file not supplied: /home/runner/work/gem/gem/research/data/manual/us_agg.csv
+WARNING series FF_EMERGING_MKT_TR_DAILY unavailable: french/FF_EMERGING_MKT_TR_DAILY: 404 Client Error: Not Found for url: https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/Emerging_5_Factors_Daily_CSV.z
+WARNING series FRED_DEXSDUS unavailable: fred/FRED_DEXSDUS: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=60)
+WARNING series FRED_DTB3 unavailable: fred/FRED_DTB3: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=60)
+WARNING series FRED_GS5 unavailable: fred/FRED_GS5: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=60)
+WARNING series FRED_NASDAQ_GLOBAL_EXUS_LM_NTR unavailable: fred/FRED_NASDAQ_GLOBAL_EXUS_LM_NTR: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=60)
+WARNING series FRED_OECD_SE_3M_TREASURY unavailable: fred/FRED_OECD_SE_3M_TREASURY: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=60)
+WARNING series FRED_OMRXTBILL unavailable: fred/FRED_OMRXTBILL: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=60)
+WARNING series MSCI_ACWI_EXUS_OFFICIAL unavailable: manual file not supplied: /home/runner/work/gem/gem/research/data/manual/msci_acwi_exus.csv
+WARNING series MSCI_ACWI_OFFICIAL unavailable: manual file not supplied: /home/runner/work/gem/gem/research/data/manual/msci_acwi.csv
+WARNING series NASDAQ_OMRXTBILL_FULL unavailable: manual file not supplied: /home/runner/work/gem/gem/research/data/manual/omrxtbill.csv
+WARNING series SPX_TR_OFFICIAL unavailable: manual file not supplied: /home/runner/work/gem/gem/research/data/manual/spx_tr.csv
+INFO runs completed: 92 monthly result sets, 0 daily result sets, 13 blocked runs

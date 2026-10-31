@@ -1,0 +1,109 @@
+{
+  "cost_per_side_bps": 10.0,
+  "data_tier": "STRICT_3P",
+  "execution": "NEXT_MONTH_CLOSE",
+  "lookahead_free": true,
+  "metrics": {
+    "annual_turnover": 1.0977917981072556,
+    "average_holding_period_months": 10.566666666666666,
+    "best_year": 1997,
+    "best_year_return": 0.3336276825136051,
+    "cagr": 0.1315647086035454,
+    "calmar": 0.6798950404435185,
+    "end_date": "2016-12-31",
+    "end_value": 261836.7865696118,
+    "longest_drawdown_months": 37,
+    "longest_drawdown_span": "2000-03-31..2003-04-30",
+    "longest_underperformance_span": "1990-10-31..2001-07-31",
+    "longest_underperformance_vs_benchmark_months": 129,
+    "max_drawdown": -0.1935073809594512,
+    "months": 317,
+    "no_signal_count": 233,
+    "number_of_switches": 29,
+    "sharpe": 0.8677826437346093,
+    "sharpe_rf": "hurdle/T-bill series of the run",
+    "sortino": 1.3875107376693292,
+    "start_date": "1990-08-31",
+    "start_value": 10000.0,
+    "switches_per_year": 1.0977917981072556,
+    "time_in_asset": {
+      "EX_US_EQUITIES": 0.277602523659306,
+      "US_AGG_BONDS": 0.22082018927444794,
+      "US_EQUITIES": 0.501577287066246
+    },
+    "volatility": 0.12026116996796982,
+    "worst_year": 2000,
+    "worst_year_return": -0.184843221100079
+  },
+  "notes": [
+    "Same index definitions as GEM_ORIGINAL; values from an unverified third-party compilation (alexjansenhome/GEM). Not presented as verified GEM."
+  ],
+  "provenance": {
+    "run_id": "GEM_ORIGINAL_STRICT_3P",
+    "series": [
+      {
+        "class": "THIRD_PARTY",
+        "data_period": "1987-12-31..2016-12-30",
+        "id": "AJ_MSCI_ACWI_EXUS_GR",
+        "provider": "alexjansenhome/GEM (GitHub), labelled source MSCI",
+        "provider_series_id": "msci_all_gross.csv: ACWI ex USA",
+        "quality_status": "EXPERIMENTAL",
+        "retrieved_at": "2026-10-31T08:22:37Z",
+        "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "THIRD_PARTY",
+        "data_period": "1988-01-29..2016-12-30",
+        "id": "AJ_SP500TR",
+        "provider": "alexjansenhome/GEM (GitHub), labelled source Yahoo",
+        "provider_series_id": "msci_all_gross.csv: SP500TR",
+        "quality_status": "EXPERIMENTAL",
+        "retrieved_at": "2026-10-31T08:22:37Z",
+        "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "THIRD_PARTY",
+        "data_period": "1969-12-31..2017-05-12",
+        "id": "AJ_TBILL_3M_TR",
+        "provider": "alexjansenhome/GEM (GitHub), labelled source FRED (TB3MS)",
+        "provider_series_id": "msci_all_gross.csv: 3 MONTH",
+        "quality_status": "EXPERIMENTAL",
+        "retrieved_at": "2026-10-31T08:22:37Z",
+        "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "THIRD_PARTY",
+        "data_period": "1975-12-31..2016-12-30",
+        "id": "AJ_US_AGG",
+        "provider": "alexjansenhome/GEM (GitHub), labelled source Morningstar",
+        "provider_series_id": "msci_all_gross.csv: AGG",
+        "quality_status": "EXPERIMENTAL",
+        "retrieved_at": "2026-10-31T08:22:37Z",
+        "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "THIRD_PARTY",
+        "data_period": "1971-01-04..2026-10-23",
+        "id": "H10_SEK_PER_USD",
+        "provider": "datahub.io core datasets (GitHub mirror of FRED)",
+        "provider_series_id": "exchange-rates/data/daily.csv, Country=Sweden",
+        "quality_status": "VERIFIED",
+        "retrieved_at": "2026-10-31T08:28:44Z",
+        "sha256": "5f82c543467ae6398e766fb110fe57abe446b95c4ad13b2eaca8954911c6259d",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      }
+    ],
+    "strategy_id": "GEM_ORIGINAL",
+    "strategy_version": "1.0.0",
+    "tier": "STRICT_3P",
+    "weakest_class": "THIRD_PARTY"
+  },
+  "run_id": "GEM_ORIGINAL_STRICT_3P__COMMON_SE_3P__NEXT_MONTH_CLOSE__COST_10BPS",
+  "stop_reason": null,
+  "strategy_id": "GEM_ORIGINAL",
+  "strategy_version": "1.0.0"
+}

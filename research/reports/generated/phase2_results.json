@@ -22,16 +22,109 @@
       "status": "BLOCKED"
     },
     "GEM_ORIGINAL_STRICT_3P vs GEM_SEK_3P_SSVXSYNTH_V1": {
-      "missing_runs": [
-        "GEM_SEK_3P_SSVXSYNTH_V1"
+      "agreement_pct": 0.8454258675078864,
+      "cagr_diff_sek_minus_original": -0.021502500474492203,
+      "crosstab": {
+        "DEFENSIVE->DEFENSIVE": 62,
+        "DEFENSIVE->EX_US": 0,
+        "DEFENSIVE->US": 7,
+        "EX_US->DEFENSIVE": 25,
+        "EX_US->EX_US": 63,
+        "EX_US->US": 0,
+        "US->DEFENSIVE": 17,
+        "US->EX_US": 0,
+        "US->US": 143
+      },
+      "differences_absolute_momentum": 49,
+      "differences_by_year": {
+        "1991": 3,
+        "1992": 8,
+        "1994": 2,
+        "1995": 1,
+        "1996": 1,
+        "2000": 1,
+        "2001": 3,
+        "2003": 4,
+        "2004": 3,
+        "2005": 4,
+        "2006": 4,
+        "2007": 6,
+        "2009": 1,
+        "2011": 2,
+        "2012": 1,
+        "2015": 1,
+        "2016": 4
+      },
+      "differences_relative_momentum": 0,
+      "different": 49,
+      "first_signal": "1990-08-31",
+      "identical": 268,
+      "last_signal": "2016-12-31",
+      "maxdd_diff_sek_minus_original": -0.008750878092082859,
+      "months": 317,
+      "original_in_sek": {
+        "best_year": 1997,
+        "best_year_return": 0.5515023881550218,
+        "cagr": 0.15402415747495102,
+        "calmar": 0.7595427151413966,
+        "end_date": "2016-12-31",
+        "end_value": 440058.36200810963,
+        "longest_drawdown_months": 37,
+        "longest_drawdown_span": "2001-10-31..2004-11-30",
+        "max_drawdown": -0.20278537915576988,
+        "months": 317,
+        "sharpe": 1.0816099422613983,
+        "sharpe_rf": "none (rf=0)",
+        "sortino": 2.026081232898181,
+        "start_date": "1990-08-31",
+        "start_value": 10000.0,
+        "volatility": 0.14243163019557928,
+        "worst_year": 2002,
+        "worst_year_return": -0.08323815559225056
+      },
+      "ranking_invariance": {
+        "mismatch_months": [],
+        "months": 336,
+        "ranking_mismatches": 0
+      },
+      "sek_model": {
+        "best_year": 1997,
+        "best_year_return": 0.5515023881550218,
+        "cagr": 0.13252165700045881,
+        "calmar": 0.6264725429323724,
+        "end_date": "2016-12-31",
+        "end_value": 267749.57469584455,
+        "longest_drawdown_months": 42,
+        "longest_drawdown_span": "2000-08-31..2004-02-29",
+        "max_drawdown": -0.21153625724785274,
+        "months": 317,
+        "sharpe": 1.136000944018052,
+        "sharpe_rf": "none (rf=0)",
+        "sortino": 2.115145268193433,
+        "start_date": "1990-08-31",
+        "start_value": 10000.0,
+        "volatility": 0.11595243303440865,
+        "worst_year": 2000,
+        "worst_year_return": -0.0886384052711644
+      },
+      "status": "OK",
+      "top_years": [
+        1992,
+        2007,
+        2003,
+        2006,
+        2005
       ],
-      "status": "BLOCKED"
+      "window": "COMMON_SE_3P"
     }
   },
   "daily_results": [],
   "group_windows": {
     "SE_3P": {
-      "common_window": null,
+      "common_window": [
+        "1990-08-31",
+        "2016-12-31"
+      ],
       "members": [
         "GEM_ORIGINAL_STRICT_3P",
         "GEM_SEK_3P_SSVXSYNTH_V1",
@@ -39,7 +132,10 @@
         "STATIC_70_30_SEK_FF_DEV_PROXY_V1__SE_3P"
       ],
       "ran": [
-        "GEM_ORIGINAL_STRICT_3P"
+        "GEM_ORIGINAL_STRICT_3P",
+        "GEM_SEK_3P_SSVXSYNTH_V1",
+        "BUY_HOLD_GLOBAL_SEK_FF_DEV_PROXY_V1__SE_3P",
+        "STATIC_70_30_SEK_FF_DEV_PROXY_V1__SE_3P"
       ]
     },
     "SE_OPEN_OMRX": {
@@ -55,7 +151,10 @@
       "ran": []
     },
     "SE_OPEN_SSVX": {
-      "common_window": null,
+      "common_window": [
+        "1991-08-31",
+        "2026-09-30"
+      ],
       "members": [
         "GEM_SEK_OPEN_SSVXSYNTH_V1",
         "GEM_ORIGINAL_OPEN_V1__SE_OPEN_SSVX",
@@ -64,7 +163,12 @@
         "STATIC_70_30_SEK_FF_DEV_PROXY_V1__SE_OPEN_SSVX",
         "STATIC_REGIONAL_EQUAL_SEK_FF_V1__SE_OPEN_SSVX"
       ],
-      "ran": []
+      "ran": [
+        "REGIONAL_SEK_FF_PROXY_SSVXSYNTH_V1",
+        "BUY_HOLD_GLOBAL_SEK_FF_DEV_PROXY_V1__SE_OPEN_SSVX",
+        "STATIC_70_30_SEK_FF_DEV_PROXY_V1__SE_OPEN_SSVX",
+        "STATIC_REGIONAL_EQUAL_SEK_FF_V1__SE_OPEN_SSVX"
+      ]
     },
     "SE_STRICT": {
       "common_window": null,

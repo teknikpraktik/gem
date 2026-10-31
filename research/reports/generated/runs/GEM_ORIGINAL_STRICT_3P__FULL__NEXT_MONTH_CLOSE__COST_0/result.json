@@ -48,7 +48,7 @@
         "provider": "alexjansenhome/GEM (GitHub), labelled source MSCI",
         "provider_series_id": "msci_all_gross.csv: ACWI ex USA",
         "quality_status": "EXPERIMENTAL",
-        "retrieved_at": "2026-10-31T07:24:55Z",
+        "retrieved_at": "2026-10-31T08:22:37Z",
         "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -59,7 +59,7 @@
         "provider": "alexjansenhome/GEM (GitHub), labelled source Yahoo",
         "provider_series_id": "msci_all_gross.csv: SP500TR",
         "quality_status": "EXPERIMENTAL",
-        "retrieved_at": "2026-10-31T07:24:55Z",
+        "retrieved_at": "2026-10-31T08:22:37Z",
         "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -70,7 +70,7 @@
         "provider": "alexjansenhome/GEM (GitHub), labelled source FRED (TB3MS)",
         "provider_series_id": "msci_all_gross.csv: 3 MONTH",
         "quality_status": "EXPERIMENTAL",
-        "retrieved_at": "2026-10-31T07:24:55Z",
+        "retrieved_at": "2026-10-31T08:22:37Z",
         "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -81,7 +81,7 @@
         "provider": "alexjansenhome/GEM (GitHub), labelled source Morningstar",
         "provider_series_id": "msci_all_gross.csv: AGG",
         "quality_status": "EXPERIMENTAL",
-        "retrieved_at": "2026-10-31T07:24:55Z",
+        "retrieved_at": "2026-10-31T08:22:37Z",
         "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       },
@@ -92,7 +92,7 @@
         "provider": "datahub.io core datasets (GitHub mirror of FRED)",
         "provider_series_id": "exchange-rates/data/daily.csv, Country=Sweden",
         "quality_status": "VERIFIED",
-        "retrieved_at": "2026-10-31T07:24:58Z",
+        "retrieved_at": "2026-10-31T08:28:44Z",
         "sha256": "5f82c543467ae6398e766fb110fe57abe446b95c4ad13b2eaca8954911c6259d",
         "verification": "VERIFIED FROM SECONDARY SOURCE"
       }

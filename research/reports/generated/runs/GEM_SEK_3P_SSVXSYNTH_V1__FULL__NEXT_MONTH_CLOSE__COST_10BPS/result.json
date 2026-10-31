@@ -1,0 +1,108 @@
+{
+  "cost_per_side_bps": 10.0,
+  "data_tier": "SWEDISH",
+  "execution": "NEXT_MONTH_CLOSE",
+  "lookahead_free": true,
+  "metrics": {
+    "annual_turnover": 1.7604790419161678,
+    "average_holding_period_months": 6.68,
+    "best_year": 1997,
+    "best_year_return": 0.5515023881550218,
+    "cagr": 0.1230836658448411,
+    "calmar": 0.6272892912231899,
+    "end_date": "2016-12-31",
+    "end_value": 253009.65053812801,
+    "longest_drawdown_months": 60,
+    "longest_drawdown_span": "2000-08-31..2005-08-31",
+    "longest_underperformance_vs_benchmark_months": null,
+    "max_drawdown": -0.19621515553825686,
+    "months": 334,
+    "no_signal_count": 190,
+    "number_of_switches": 49,
+    "sharpe": 0.6811816968948444,
+    "sharpe_rf": "hurdle/T-bill series of the run",
+    "sortino": 1.1591370992899437,
+    "start_date": "1989-03-31",
+    "start_value": 10000.0,
+    "switches_per_year": 1.7604790419161678,
+    "time_in_asset": {
+      "SEK_EXUS_EQ": 0.19461077844311378,
+      "SEK_US_EQ": 0.47904191616766467,
+      "SE_SHORT_RATE": 0.3263473053892216
+    },
+    "volatility": 0.11570205168316913,
+    "worst_year": 2000,
+    "worst_year_return": -0.09484531217744141
+  },
+  "notes": [
+    "NOT GEM. S&P 500 TR and MSCI ACWI ex USA (third-party copies) in SEK; Swedish cash = SE_CASH_SSVX_SYNTH_V1 (3m T-bill yield -> return, PROXY)."
+  ],
+  "provenance": {
+    "run_id": "GEM_SEK_3P_SSVXSYNTH_V1",
+    "series": [
+      {
+        "class": "THIRD_PARTY",
+        "data_period": "1987-12-31..2016-12-30",
+        "id": "AJ_MSCI_ACWI_EXUS_GR",
+        "provider": "alexjansenhome/GEM (GitHub), labelled source MSCI",
+        "provider_series_id": "msci_all_gross.csv: ACWI ex USA",
+        "quality_status": "EXPERIMENTAL",
+        "retrieved_at": "2026-10-31T08:22:37Z",
+        "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "THIRD_PARTY",
+        "data_period": "1988-01-29..2016-12-30",
+        "id": "AJ_SP500TR",
+        "provider": "alexjansenhome/GEM (GitHub), labelled source Yahoo",
+        "provider_series_id": "msci_all_gross.csv: SP500TR",
+        "quality_status": "EXPERIMENTAL",
+        "retrieved_at": "2026-10-31T08:22:37Z",
+        "sha256": "11513db1bb4331ad55077ab5e867d85c78f25e0e09b4a5231fd55b92b928d931",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "1990-06-30..2026-09-30",
+        "id": "FF_DEVELOPED_MKT_TR",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "Developed_3_Factors (Mkt-RF + RF)",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T08:22:39Z",
+        "sha256": "3f99cfdeddd1914e3d8f84ce51d775aeed3e98ed0c290957e88f4df9912f8a23",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "THIRD_PARTY",
+        "data_period": "1971-01-04..2026-10-23",
+        "id": "H10_SEK_PER_USD",
+        "provider": "datahub.io core datasets (GitHub mirror of FRED)",
+        "provider_series_id": "exchange-rates/data/daily.csv, Country=Sweden",
+        "quality_status": "VERIFIED",
+        "retrieved_at": "2026-10-31T08:28:44Z",
+        "sha256": "5f82c543467ae6398e766fb110fe57abe446b95c4ad13b2eaca8954911c6259d",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "1983-01-03..2026-10-30",
+        "id": "RB_SSVX_3M",
+        "provider": "Sveriges Riksbank SWEA API",
+        "provider_series_id": "SETB3MBENCH",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T08:28:49Z",
+        "sha256": "45daac754529587fe08b0c7cbff8b3ccc07f0a541df4b9e8fae03304631314ff",
+        "verification": "VERIFIED FROM PRIMARY SOURCE"
+      }
+    ],
+    "strategy_id": "GEM_SEK",
+    "strategy_version": "1.0.0",
+    "tier": "SWEDISH",
+    "weakest_class": "THIRD_PARTY"
+  },
+  "run_id": "GEM_SEK_3P_SSVXSYNTH_V1__FULL__NEXT_MONTH_CLOSE__COST_10BPS",
+  "stop_reason": "stopped before 2017-01-31: no return for held asset(s) ['SEK_US_EQ']",
+  "strategy_id": "GEM_SEK",
+  "strategy_version": "1.0.0"
+}

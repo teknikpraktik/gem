@@ -1,0 +1,83 @@
+{
+  "cost_per_side_bps": 0.0,
+  "data_tier": "BENCHMARK",
+  "execution": "NEXT_MONTH_CLOSE",
+  "lookahead_free": true,
+  "metrics": {
+    "annual_turnover": 0.0,
+    "average_holding_period_months": 422.0,
+    "best_year": 1993,
+    "best_year_return": 0.43512116649204247,
+    "cagr": 0.10283425291334192,
+    "calmar": 0.21573672717345213,
+    "end_date": "2026-09-30",
+    "end_value": 312567.3888282593,
+    "longest_drawdown_months": 78,
+    "longest_drawdown_span": "2000-08-31..2007-02-28",
+    "max_drawdown": -0.4766654906684631,
+    "months": 422,
+    "no_signal_count": 90,
+    "number_of_switches": 0,
+    "sharpe": 0.5719264291581718,
+    "sharpe_rf": "hurdle/T-bill series of the run",
+    "sortino": 0.8763285240841568,
+    "start_date": "1991-08-31",
+    "start_value": 10000.0,
+    "switches_per_year": 0.0,
+    "time_in_asset": {
+      "GLOBAL_EQ_SEK": 1.0
+    },
+    "volatility": 0.1371596670731956,
+    "worst_year": 2002,
+    "worst_year_return": -0.3109411373683375
+  },
+  "notes": [
+    "Global buy & hold in SEK. Ken French Developed markets (incl. US, NO EM) as open proxy for MSCI ACWI."
+  ],
+  "provenance": {
+    "run_id": "BUY_HOLD_GLOBAL_SEK_FF_DEV_PROXY_V1__SE_OPEN_SSVX",
+    "series": [
+      {
+        "class": "PROXY",
+        "data_period": "1990-06-30..2026-09-30",
+        "id": "FF_DEVELOPED_MKT_TR",
+        "provider": "Kenneth R. French Data Library",
+        "provider_series_id": "Developed_3_Factors (Mkt-RF + RF)",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T08:22:39Z",
+        "sha256": "3f99cfdeddd1914e3d8f84ce51d775aeed3e98ed0c290957e88f4df9912f8a23",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "THIRD_PARTY",
+        "data_period": "1971-01-04..2026-10-23",
+        "id": "H10_SEK_PER_USD",
+        "provider": "datahub.io core datasets (GitHub mirror of FRED)",
+        "provider_series_id": "exchange-rates/data/daily.csv, Country=Sweden",
+        "quality_status": "VERIFIED",
+        "retrieved_at": "2026-10-31T08:28:44Z",
+        "sha256": "5f82c543467ae6398e766fb110fe57abe446b95c4ad13b2eaca8954911c6259d",
+        "verification": "VERIFIED FROM SECONDARY SOURCE"
+      },
+      {
+        "class": "PROXY",
+        "data_period": "1983-01-03..2026-10-30",
+        "id": "RB_SSVX_3M",
+        "provider": "Sveriges Riksbank SWEA API",
+        "provider_series_id": "SETB3MBENCH",
+        "quality_status": "PROXY",
+        "retrieved_at": "2026-10-31T08:28:49Z",
+        "sha256": "45daac754529587fe08b0c7cbff8b3ccc07f0a541df4b9e8fae03304631314ff",
+        "verification": "VERIFIED FROM PRIMARY SOURCE"
+      }
+    ],
+    "strategy_id": "BUY_HOLD_GLOBAL",
+    "strategy_version": "1.0.0",
+    "tier": "BENCHMARK",
+    "weakest_class": "THIRD_PARTY"
+  },
+  "run_id": "BUY_HOLD_GLOBAL_SEK_FF_DEV_PROXY_V1__SE_OPEN_SSVX__COMMON_SE_OPEN_SSVX__NEXT_MONTH_CLOSE__COST_0",
+  "stop_reason": null,
+  "strategy_id": "BUY_HOLD_GLOBAL",
+  "strategy_version": "1.0.0"
+}
