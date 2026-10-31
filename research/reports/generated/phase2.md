@@ -336,6 +336,17 @@ Research index model (Ken French regions + Riksbank cash) over the SAME months:
 | HYBRID_SYNTH_CASH | INDEX_IDEALIZED_CLOSE | 12.26% | 14.62% | -16.43% | 0.87 | n/a |
 | HYBRID_SYNTH_CASH | INDEX_NEXT_MONTH_CLOSE | 10.97% | 14.98% | -20.03% | 0.77 | n/a |
 
+Benchmarks on real Avanza fund NAVs over the SAME months:
+
+| window of | benchmark | CAGR | vol | MDD | Sharpe |
+|---|---|---:|---:|---:|---:|
+| PURE_AVANZA_FUNDS | BUY_HOLD_AVANZA_GLOBAL | 16.12% | 12.85% | -17.79% | 1.23 |
+| PURE_AVANZA_FUNDS | STATIC_70_30_AVANZA_GLOBAL_RANTA_KORT | 12.19% | 9.04% | -12.48% | 1.32 |
+| PURE_AVANZA_FUNDS | STATIC_REGIONAL_EQUAL_AVANZA | n/a | n/a | n/a | n/a |
+| HYBRID_SYNTH_CASH | BUY_HOLD_AVANZA_GLOBAL | 13.97% | 12.78% | -17.79% | 1.09 |
+| HYBRID_SYNTH_CASH | STATIC_70_30_AVANZA_GLOBAL_RANTA_KORT | n/a | n/a | n/a | n/a |
+| HYBRID_SYNTH_CASH | STATIC_REGIONAL_EQUAL_AVANZA | n/a | n/a | n/a | n/a |
+
 - signal agreement index vs NAV model: 91.5% (43/47); different region (both risk-on): 4; risk-on/off differs: 0; switches index 7 vs NAV 8
 - differences: [{'date': '2021-02-28', 'index': 'AVANZA_USA', 'nav': 'AVANZA_EM'}, {'date': '2021-03-31', 'index': 'AVANZA_USA', 'nav': 'AVANZA_EM'}, {'date': '2023-11-30', 'index': 'AVANZA_USA', 'nav': 'AVANZA_EUROPA'}, {'date': '2024-08-31', 'index': 'AVANZA_USA', 'nav': 'AVANZA_EUROPA'}]
 
@@ -914,31 +925,31 @@ Fund facts (avanza.se fund guide) and measured NAV publication lag:
  },
  "publication_lag": {
   "AVANZA_USA": {
-   "guide_retrieved_at_stockholm": "2026-10-31 12:29:21+01:00",
+   "guide_retrieved_at_stockholm": "2026-10-31 12:38:06+01:00",
    "latest_nav_date": "2026-10-29",
    "bdays_between_nav_date_and_retrieval": 2,
    "chart_last_date": "2026-10-29"
   },
   "AVANZA_EUROPA": {
-   "guide_retrieved_at_stockholm": "2026-10-31 12:29:00+01:00",
+   "guide_retrieved_at_stockholm": "2026-10-31 12:37:42+01:00",
    "latest_nav_date": "2026-10-29",
    "bdays_between_nav_date_and_retrieval": 2,
    "chart_last_date": "2026-10-29"
   },
   "AVANZA_EM": {
-   "guide_retrieved_at_stockholm": "2026-10-31 12:28:51+01:00",
+   "guide_retrieved_at_stockholm": "2026-10-31 12:37:32+01:00",
    "latest_nav_date": "2026-10-29",
    "bdays_between_nav_date_and_retrieval": 2,
    "chart_last_date": "2026-10-29"
   },
   "AVANZA_RANTA_KORT": {
-   "guide_retrieved_at_stockholm": "2026-10-31 12:29:13+01:00",
+   "guide_retrieved_at_stockholm": "2026-10-31 12:37:57+01:00",
    "latest_nav_date": "2026-10-29",
    "bdays_between_nav_date_and_retrieval": 2,
    "chart_last_date": "2026-10-29"
   },
   "AVANZA_GLOBAL": {
-   "guide_retrieved_at_stockholm": "2026-10-31 12:29:09+01:00",
+   "guide_retrieved_at_stockholm": "2026-10-31 12:37:52+01:00",
    "latest_nav_date": "2026-10-29",
    "bdays_between_nav_date_and_retrieval": 2,
    "chart_last_date": "2026-10-29"

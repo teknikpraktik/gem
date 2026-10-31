@@ -2057,35 +2057,110 @@
       "strategy_version": "1.0.0",
       "target": "AVANZA_EM"
     },
+    "nav_benchmarks_same_window": {
+      "HYBRID_SYNTH_CASH": {
+        "BUY_HOLD_AVANZA_GLOBAL": {
+          "best_year": 2024,
+          "best_year_return": 0.30507415194045073,
+          "cagr": 0.13974642147965644,
+          "calmar": 0.7855564122430932,
+          "end_date": "2026-10-31",
+          "end_value": 20757.704487526073,
+          "longest_drawdown_months": 14,
+          "longest_drawdown_span": "2025-01-31..2026-03-31",
+          "max_drawdown": -0.1778948262679465,
+          "months": 67,
+          "sharpe": 1.0926411151277058,
+          "sharpe_rf": "none (rf=0)",
+          "sortino": 1.817104962378341,
+          "start_date": "2021-04-30",
+          "start_value": 10000.0,
+          "volatility": 0.1277703869582409,
+          "worst_year": 2022,
+          "worst_year_return": -0.061096538929051425
+        },
+        "STATIC_70_30_AVANZA_GLOBAL_RANTA_KORT": {
+          "status": "incomplete window"
+        },
+        "STATIC_REGIONAL_EQUAL_AVANZA": {
+          "status": "incomplete window"
+        }
+      },
+      "PURE_AVANZA_FUNDS": {
+        "BUY_HOLD_AVANZA_GLOBAL": {
+          "best_year": 2024,
+          "best_year_return": 0.30507415194045073,
+          "cagr": 0.16115964704330388,
+          "calmar": 0.9059265546068435,
+          "end_date": "2026-10-31",
+          "end_value": 15270.754020114777,
+          "longest_drawdown_months": 14,
+          "longest_drawdown_span": "2025-01-31..2026-03-31",
+          "max_drawdown": -0.17789482626794662,
+          "months": 34,
+          "sharpe": 1.2332360945402427,
+          "sharpe_rf": "none (rf=0)",
+          "sortino": 2.0149679317610896,
+          "start_date": "2024-01-31",
+          "start_value": 10000.0,
+          "volatility": 0.1285161900833507,
+          "worst_year": 2025,
+          "worst_year_return": -0.009839777081156353
+        },
+        "STATIC_70_30_AVANZA_GLOBAL_RANTA_KORT": {
+          "best_year": 2024,
+          "best_year_return": 0.21974064967792728,
+          "cagr": 0.12185100863144305,
+          "calmar": 0.9766470987544695,
+          "end_date": "2026-10-31",
+          "end_value": 13851.060230372526,
+          "longest_drawdown_months": 14,
+          "longest_drawdown_span": "2025-01-31..2026-03-31",
+          "max_drawdown": -0.12476462458839144,
+          "months": 34,
+          "sharpe": 1.3224836653543028,
+          "sharpe_rf": "none (rf=0)",
+          "sortino": 2.2009864014384632,
+          "start_date": "2024-01-31",
+          "start_value": 10000.0,
+          "volatility": 0.09038595234497633,
+          "worst_year": 2025,
+          "worst_year_return": 0.0044478264199907525
+        },
+        "STATIC_REGIONAL_EQUAL_AVANZA": {
+          "status": "incomplete window"
+        }
+      }
+    },
     "publication_lag": {
       "AVANZA_EM": {
         "bdays_between_nav_date_and_retrieval": 2,
         "chart_last_date": "2026-10-29",
-        "guide_retrieved_at_stockholm": "2026-10-31 12:28:51+01:00",
+        "guide_retrieved_at_stockholm": "2026-10-31 12:37:32+01:00",
         "latest_nav_date": "2026-10-29"
       },
       "AVANZA_EUROPA": {
         "bdays_between_nav_date_and_retrieval": 2,
         "chart_last_date": "2026-10-29",
-        "guide_retrieved_at_stockholm": "2026-10-31 12:29:00+01:00",
+        "guide_retrieved_at_stockholm": "2026-10-31 12:37:42+01:00",
         "latest_nav_date": "2026-10-29"
       },
       "AVANZA_GLOBAL": {
         "bdays_between_nav_date_and_retrieval": 2,
         "chart_last_date": "2026-10-29",
-        "guide_retrieved_at_stockholm": "2026-10-31 12:29:09+01:00",
+        "guide_retrieved_at_stockholm": "2026-10-31 12:37:52+01:00",
         "latest_nav_date": "2026-10-29"
       },
       "AVANZA_RANTA_KORT": {
         "bdays_between_nav_date_and_retrieval": 2,
         "chart_last_date": "2026-10-29",
-        "guide_retrieved_at_stockholm": "2026-10-31 12:29:13+01:00",
+        "guide_retrieved_at_stockholm": "2026-10-31 12:37:57+01:00",
         "latest_nav_date": "2026-10-29"
       },
       "AVANZA_USA": {
         "bdays_between_nav_date_and_retrieval": 2,
         "chart_last_date": "2026-10-29",
-        "guide_retrieved_at_stockholm": "2026-10-31 12:29:21+01:00",
+        "guide_retrieved_at_stockholm": "2026-10-31 12:38:06+01:00",
         "latest_nav_date": "2026-10-29"
       }
     },
@@ -2952,7 +3027,7 @@
         "tracking_error_ann": 0.03687427673780659
       },
       "AVANZA_EUROPA": {
-        "correlation": 0.9395271894671294,
+        "correlation": 0.9395271894671295,
         "fund_cagr": 0.103875417189218,
         "index_cagr": 0.117976611389073,
         "months": 79,
